@@ -1,0 +1,131 @@
+<?php
+
+/*
+
+type: layout
+
+name: Partners
+
+position: 17
+
+*/
+
+?>
+
+<?php
+if (!$classes['padding_top']) {
+    $classes['padding_top'] = 'p-t-50';
+}
+if (!$classes['padding_bottom']) {
+    $classes['padding_bottom'] = 'p-b-50';
+}
+
+$layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
+?>
+
+
+<section class="section <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-skin-17-<?php print $params['id'] ?>" rel="module">
+    <div class="container">
+        <div class="row element m-b-40">
+            <div class="col-12 text-center allow-drop">
+                <h2 class="hr">Our Partners</h2>
+                <p>Onze partners bezorgen jou een topervaring merci à nos partenaires français</p>
+            </div>
+        </div>
+
+        <div class="row partners element">
+            <div class="col-6 col-sm-4 col-lg-2">
+                <div class="partner">
+                    <img src="<?php print template_url(); ?>assets/img/partners/1.png" alt=""/>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+                <div class="partner">
+                    <img src="<?php print template_url(); ?>assets/img/partners/2.png" alt=""/>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+                <div class="partner">
+                    <img src="<?php print template_url(); ?>assets/img/partners/3.png" alt=""/>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+                <div class="partner">
+                    <img src="<?php print template_url(); ?>assets/img/partners/4.png" alt=""/>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+                <div class="partner">
+                    <img src="<?php print template_url(); ?>assets/img/partners/5.png" alt=""/>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+                <div class="partner">
+                    <img src="<?php print template_url(); ?>assets/img/partners/6.png" alt=""/>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-lg-2">
+                <div class="partner">
+                    <img src="<?php print template_url(); ?>assets/img/partners/7.png" alt=""/>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+                <div class="partner">
+                    <img src="<?php print template_url(); ?>assets/img/partners/8.png" alt=""/>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+                <div class="partner">
+                    <img src="<?php print template_url(); ?>assets/img/partners/9.png" alt=""/>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+                <div class="partner">
+                    <img src="<?php print template_url(); ?>assets/img/partners/10.png" alt=""/>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+                <div class="partner">
+                    <img src="<?php print template_url(); ?>assets/img/partners/11.png" alt=""/>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+                <div class="partner">
+                    <img src="<?php print template_url(); ?>assets/img/partners/12.png" alt=""/>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-lg-2">
+                <div class="partner">
+                    <img src="<?php print template_url(); ?>assets/img/partners/13.png" alt=""/>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+                <div class="partner">
+                    <img src="<?php print template_url(); ?>assets/img/partners/14.png" alt=""/>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+                <div class="partner">
+                    <img src="<?php print template_url(); ?>assets/img/partners/15.png" alt=""/>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+                <div class="partner">
+                    <img src="<?php print template_url(); ?>assets/img/partners/16.png" alt=""/>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+                <div class="partner">
+                    <img src="<?php print template_url(); ?>assets/img/partners/17.png" alt=""/>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2">
+                <div class="partner">
+                    <img src="<?php print template_url(); ?>assets/img/partners/18.png" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

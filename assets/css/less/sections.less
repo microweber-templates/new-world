@@ -1,0 +1,769 @@
+@import "vars";
+
+/* *******************************************
+ ************** Section ************** *
+ ******************************************* */
+
+.section {
+  min-height: 100px;
+  padding: 30px 0;
+}
+
+/* *******************************************
+ ************** Section 2 ************** *
+ ******************************************* */
+
+.section-2 {
+  padding: 30px 0 0 0;
+
+  .background-image-holder {
+    min-height: 100vh;
+  }
+
+  .background-image-holder {
+    height: 100vh;
+  }
+
+  &.vh-80 {
+    .background-image-holder {
+      min-height: 80vh;
+      height: 80vh;
+    }
+  }
+
+  h1, h2, h4 {
+    color: @textLight;
+  }
+
+  .info-holder {
+    padding-bottom: 100px;
+  }
+
+  .socials-holder {
+    right: 0;
+    height: 100%;
+    text-align: right;
+
+    color: @textLight;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 320px;
+
+    ul li {
+      display: block;
+      a {
+        color: @textLight;
+        font-size: @title-sm;
+        margin: 35px 40px 35px 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .socials-holder {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .socials-holder {
+      padding-bottom: 160px;
+    }
+
+    .info-holder {
+      padding-bottom: 50px;
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 3 ************** *
+ ******************************************* */
+
+.section-3 {
+  padding: 30px 0 0 0;
+
+  .background-image-holder {
+    min-height: 70vh;
+  }
+
+  &.vh-100 {
+    .background-image-holder {
+      min-height: 100vh;
+    }
+  }
+
+  h1, h2, h4 {
+    color: @textLight;
+  }
+
+  .info-holder {
+    padding-bottom: 100px;
+  }
+
+  .socials-holder {
+    right: 0;
+    height: 100%;
+    text-align: right;
+
+    color: @textLight;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    //padding-bottom: 320px;
+    position: absolute;
+
+    ul li {
+      display: block;
+      a {
+        color: @textLight;
+        font-size: @title-sm;
+        margin: 35px 40px 35px 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .socials-holder {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .socials-holder {
+      //padding-bottom: 160px;
+    }
+
+    .info-holder {
+      padding-bottom: 50px;
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 4 ************** *
+ ******************************************* */
+
+.section-4 {
+  .bg-secondary {
+    background-clip: content-box !important;
+  }
+
+  * {
+    color: @textLight;
+  }
+
+  @media screen and (max-width: @mediaPhone) {
+    .h-100 {
+      height: auto;
+    }
+
+    //.button-6,
+    .module-btn {
+      bottom: 0;
+      position: absolute;
+    }
+  }
+
+  .info-holder {
+    padding: 40px 30px;
+
+    @media screen and (max-width: @mediaPhone) {
+      height: 370px;
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 5 ************** *
+ ******************************************* */
+
+.section-5 {
+  .picrow {
+    margin-bottom: 10px;
+  }
+
+  .photo-container {
+    position: relative;
+  }
+
+  .photo-container .image-thumb {
+    padding: 0px 5px !important;
+    width: calc(~"100% - 10px");
+    background: transparent;
+  }
+
+  @media screen and (max-width: 575px) {
+
+  }
+}
+
+/* *******************************************
+ ************** Section 6 ************** *
+ ******************************************* */
+
+.section-6 {
+  padding: 30px 0;
+
+ /* h1,h2,h3,h4,h5,h6,p{
+    color: @default;
+  }*/
+
+  .mwembed {
+    height: auto !important;
+    width: auto !important;
+  }
+
+  @media screen and (max-width: 1199px) {
+    .info-holder {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 7 ************** *
+ ******************************************* */
+
+.section-7 {
+
+  .card {
+    height: 100%;
+    background: @background;
+    border: 0;
+    padding: 40px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+
+    .stamp {
+      margin-left: 0;
+      margin-bottom: 30px;
+      color: @textLight;
+      font-size: 35px;
+
+      i {
+        color: @textDark;
+      }
+
+      @media screen and (max-width: 767px) {
+        font-size: 30px;
+        width: 80px;
+        height: 80px;
+        padding: 26px;
+      }
+    }
+
+    &.dark {
+      background: @default;
+      h1, h2, h3, h4, p {
+        color: @textLight;
+      }
+
+      i {
+        color: @textLight;
+      }
+    }
+    &:hover {
+      background: @primary;
+      h1, h2, h3, h4, p {
+        color: @textLight;
+      }
+
+      i {
+        color: @textLight;
+      }
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 8 ************** *
+ ******************************************* */
+
+.section-8 {
+  position: relative;
+  z-index: 9;
+
+  .icon-holder {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .icon {
+      margin-bottom: 35px;
+      font-size: 65px;
+      color: @primary;
+      display: block;
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 9 ************** *
+ ******************************************* */
+
+.section-9 {
+  padding: 0;
+  z-index: -1;
+  .background-image-holder {
+    position: relative;
+    height: 575px;
+    max-height: 100vh;
+    //min-height: 100vh;
+
+    /*&:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 300px;
+      background: rgba(255, 255, 255, 1);
+      background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 1%, rgba(255, 255, 255, 0.72) 29%, rgba(255, 255, 255, 0) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(1%, rgba(255, 255, 255, 1)), color-stop(29%, rgba(255, 255, 255, 0.72)), color-stop(100%, rgba(255, 255, 255, 0)));
+      background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 1%, rgba(255, 255, 255, 0.72) 29%, rgba(255, 255, 255, 0) 100%);
+      background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 1%, rgba(255, 255, 255, 0.72) 29%, rgba(255, 255, 255, 0) 100%);
+      background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 1%, rgba(255, 255, 255, 0.72) 29%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 1%, rgba(255, 255, 255, 0.72) 29%, rgba(255, 255, 255, 0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
+    }*/
+  }
+
+  .container {
+    padding: 160px 0 320px 0;
+  }
+
+  @media screen and (max-width: 1199px) {
+    .container {
+      padding: 120px 0 240px 0;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .container {
+      padding: 120px 0 240px 0;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .container {
+      padding: 80px 0 160px 0;
+    }
+  }
+
+  .blockquote-holder {
+    max-width: 680px;
+
+    padding-bottom: 400px;
+    @media screen and (min-width: 1441px) {
+      padding-bottom: 600px;
+    }
+  }
+
+}
+
+.mw-live-edit {
+  .section-9 {
+    margin-top: 0px;
+  }
+}
+
+.section-9.no-gradient {
+  margin-top: 0px;
+  .background-image-holder {
+    min-height: 70vh;
+    &:before {
+      display: none;
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 10 ************** *
+ ******************************************* */
+
+.section-10 {
+  .mwembed {
+    height: auto !important;
+  }
+
+  .ventoux-testimonials-2 .info-holder {
+    text-align: left !important;
+  }
+  .video-left {
+    .video-holder {
+      @media screen and (min-width: 992px) {
+        padding-right: 4.15%;
+      }
+    }
+  }
+  .video-right {
+    @media screen and (max-width: 991px) {
+      .left-side {
+        order: 1 !important;
+      }
+
+      .right-side {
+        order: 2 !important;
+      }
+    }
+    .video-holder {
+      @media screen and (min-width: 992px) {
+        padding-left: 4.15%;
+      }
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 11 ************** *
+ ******************************************* */
+
+.section-11 {
+  i.fab {
+    font-size: 36px;
+    color: @primary;
+    margin-bottom: 30px;
+  }
+
+  .title-holder {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+/* *******************************************
+ ************** Section 12 ************** *
+ ******************************************* */
+
+.section-12 {
+  position: relative;
+  z-index: 9;
+
+  .icon-holder {
+    margin: 50px auto;
+    .icon {
+      margin-bottom: 20px;
+      font-size: 55px;
+      color: @primary;
+      display: block;
+    }
+  }
+
+  h6 {
+    font-size: @title-md;
+    color: @textDark;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  p {
+    color: @textDark;
+  }
+
+  .button-holder:before {
+    opacity: 0;
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 991px) {
+    h6 {
+      font-size: @title-sm;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .button-holder {
+      margin-top: 30px;
+      padding: 40px 0 50px 0;
+      &:before {
+        opacity: 1;
+      }
+    }
+
+    .icon-holder {
+      margin: 20px auto;
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 13 ************** *
+ ******************************************* */
+
+.section-13 {
+  position: relative;
+  z-index: 9;
+
+  .icon-holder {
+    margin: 50px auto;
+    .icon {
+      margin-bottom: 30px;
+      font-size: 55px;
+      color: @textLight;
+      display: block;
+    }
+  }
+
+  h6 {
+    font-size: 30px;
+    color: @textLight;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  p {
+    color: @textLight;
+  }
+
+  .button-holder:before {
+    opacity: 0;
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 991px) {
+    h6 {
+      font-size: @title-sm;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .button-holder {
+      margin-top: 30px;
+      padding: 40px 0 50px 0;
+      &:before {
+        opacity: 1;
+      }
+    }
+
+    .icon-holder {
+      margin: 20px auto;
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 14 ************** *
+ ******************************************* */
+
+.section-14 {
+  .info {
+    float: left;
+    width: calc(~"100% - 50px");
+  }
+
+  .icon {
+    display: block;
+    float: left;
+    width: 50px;
+    margin-bottom: 20px;
+
+    i {
+      font-size: 38px;
+      color: @textLight;
+      opacity: 0.5;
+      margin-top: 5px;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .info,
+    .icon {
+      float: none;
+      width: 100%;
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 19 ************** *
+ ******************************************* */
+
+.section-19 {
+  padding: 30px 0 0 0;
+
+  .background-image-holder {
+    min-height: 500px;
+  }
+
+  h1, h2, h4 {
+    color: @textLight;
+  }
+
+  h2 {
+    font-size: 66px;
+  }
+
+  .info-holder {
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  blockquote:before,
+  blockquote,
+  blockquote .testimonial .name {
+    color: @textLight;
+    text-align: left;
+  }
+
+  .socials-holder {
+    right: 0;
+    height: 100%;
+    text-align: right;
+
+    color: @textLight;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+    ul li {
+      display: block;
+      a {
+        color: @textLight;
+        font-size: @title-sm;
+        margin: 35px 40px 35px 0;
+      }
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .stamp {
+      background: transparent !important;
+      width: auto;
+      height: auto;
+      max-width: 450px;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    h2 {
+      font-family: SeasideGroove;
+      font-size: 90px;
+      letter-spacing: 5.18px;
+      text-align: center;
+      font-weight: normal;
+      line-height: 1;
+    }
+
+    h4 {
+      text-align: center;
+    }
+
+    .socials-holder {
+      display: none;
+    }
+
+    .stamp {
+      padding: 35px;
+      position: absolute;
+      z-index: 999;
+      //margin-top: 80px;
+      left: 0;
+      right: 0;
+    }
+
+    .background-image-holder.cuted {
+      &:after {
+        display: block;
+        width: 100%;
+        position: absolute;
+        content: '';
+        background: url('../img/divider.svg');
+        -webkit-background-size: cover;
+        background-size: cover;
+        height: 140px;
+        z-index: 9;
+        top: calc(~"100% - 140px");
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+      }
+
+      margin-bottom: 140px;
+    }
+
+    blockquote:before,
+    blockquote,
+    blockquote .testimonial .name {
+      text-align: center;
+    }
+
+    blockquote {
+      font-size: @paragraph-lg;
+    }
+
+    blockquote:before {
+      font-size: @paragraph-xl;
+    }
+
+    .align-self-end {
+      align-self: flex-start !important;
+      text-align: center;
+    }
+
+    .info-holder {
+      padding-bottom: 10px;
+      margin: 50px auto 30px auto;
+    }
+
+  }
+
+  @media screen and (max-width: 767px) {
+    blockquote:before {
+      margin: 5px auto;
+    }
+
+    .stamp {
+      margin-top: 0;
+      width: 280px;
+      height: 280px;
+      background-repeat: no-repeat;
+    }
+
+    h2 {
+      font-size: 80px;
+    }
+
+    .info-holder {
+      padding-bottom: 10px;
+      padding-left: 0;
+      padding-right: 0;
+      margin: 30px auto 10px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

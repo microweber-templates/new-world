@@ -6,7 +6,7 @@ type: layout
 
 name: Carousel Grid Gallery
 
-position: 5
+position: 1
 
 */
 
@@ -23,7 +23,7 @@ if (!$classes['padding_bottom']) {
 $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
 ?>
 
-<section class="section-5 <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-skin-5-<?php print $params['id'] ?>" rel="module">
+<section class="section-5 <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-galleries-skin-1-<?php print $params['id'] ?>" rel="module">
     <div class="d-flex w-100">
         <div class="container align-self-centerx">
             <div class="row">

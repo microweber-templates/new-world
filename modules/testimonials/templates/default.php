@@ -21,7 +21,7 @@ description: Testimonials Default
                     centerMode: true,
                     centerPadding: '0px',
                     slidesToShow: 1,
-                    arrows: false,
+                    arrows: true,
                     dots: true,
                     responsive: [
                         {
@@ -53,26 +53,28 @@ description: Testimonials Default
                             <div class="img-holder" style="background-image: url('<?php print thumbnail($item['client_picture'], 200, 200, true); ?>');"></div>
                         <?php endif; ?>
                         <div class="info-holder">
+                            <h3 class="m-t-20 m-b-10"><?php print $item['name']; ?></h3>
+
                             <?php if (isset($item['client_website'])) { ?>
-                                <h4>
+                                <h5>
                                     <a href="<?php print $item['client_website']; ?>" target="_blank">
-                                        <?php if (isset($item["client_company"])) { ?>
+                                        <?php if (isset($item["client_company"]) OR isset($item["client_role"])) { ?>
                                             <?php print $item['client_company']; ?><?php if (isset($item["client_role"])) { ?>, <?php print $item['client_role']; ?><?php } ?>
                                         <?php } ?>
                                     </a>
-                                </h4>
+                                </h5>
                             <?php } else { ?>
-                                <h4>
-                                    <?php if (isset($item["client_company"])) { ?>
+                                <h5>
+                                    <?php if (isset($item["client_company"]) OR isset($item["client_role"])) { ?>
                                         <?php print $item['client_company']; ?>
                                         <?php if (isset($item["client_role"])) { ?>, <?php print $item['client_role']; ?><?php } ?>
                                     <?php } ?>
-                                </h4>
+                                </h5>
                             <?php } ?>
-
+                            <br/>
+                            <br/>
+                            <br/>
                             <p><?php print $item['content']; ?></p>
-
-                            <p class="m-t-20 uppercase"><?php print $item['name']; ?></p>
                         </div>
                     </div>
                 </div>

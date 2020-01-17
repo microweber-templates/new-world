@@ -21,6 +21,8 @@
     <module type="layouts" template="info-blocks/skin-3"/>
     <module type="layouts" template="info-blocks/skin-4"/>
     <module type="layouts" template="info-blocks/skin-5"/>
+    <module type="layouts" template="info-blocks/skin-6"/>
+    <module type="layouts" template="info-blocks/skin-7"/>
 
     <?php /*<h1>Home Banners</h1>
     <module type="layouts" template="home-banners/skin-1"/>
@@ -32,7 +34,7 @@
 
 */ ?>
     <!-- Videos -->
-    <h1>Videos</h1>
+<?php /* <h1>Videos</h1>
     <module type="layouts" template="videos/skin-1"/>
     <module type="layouts" template="videos/skin-2"/>
     <module type="layouts" template="videos/skin-3"/>
@@ -62,8 +64,9 @@
     <h1>Blockquotes</h1>
     <module type="layouts" template="blockquotes/skin-1"/>
     <module type="layouts" template="blockquotes/skin-2"/>
+    <module type="layouts" template="blockquotes/skin-3"/>
 
-
+*/ ?>
 
 </div>
 

@@ -6,7 +6,7 @@ type: layout
 
 name: Partners
 
-position: 17
+position: 1
 
 */
 
@@ -24,12 +24,12 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 ?>
 
 
-<section class="section <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-skin-17-<?php print $params['id'] ?>" rel="module">
+<section class="section <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-partners-skin-1-<?php print $params['id'] ?>" rel="module">
     <div class="container">
         <div class="row element m-b-40">
             <div class="col-12 text-center allow-drop">
                 <h2 class="hr">Our Partners</h2>
-                <p>Onze partners bezorgen jou een topervaring merci à nos partenaires français</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
         </div>
 

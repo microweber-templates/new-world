@@ -208,9 +208,9 @@
 .section-6 {
   padding: 30px 0;
 
- /* h1,h2,h3,h4,h5,h6,p{
-    color: @default;
-  }*/
+  /* h1,h2,h3,h4,h5,h6,p{
+     color: @default;
+   }*/
 
   .mwembed {
     height: auto !important;
@@ -586,6 +586,168 @@
     .icon {
       float: none;
       width: 100%;
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 15 ************** *
+ ******************************************* */
+
+.section-15 {
+  min-height: 100px;
+  padding: 30px 0;
+
+  background-color: @default;
+
+  .container {
+    padding: 0 10%;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 991px) {
+    .slider-wrapper {
+      max-width: 100%;
+    }
+
+  }
+}
+
+/* *******************************************
+ ************** Section 16 ************** *
+ ******************************************* */
+
+.section-16 {
+  min-height: 100px;
+  padding: 30px 0;
+
+  .info-holder{
+    z-index: 9;
+    background: #fff;
+    padding: 50px 70px;
+  }
+
+  .flexbox-container {
+    justify-content: center;
+  }
+
+  .left-side {
+    padding: 120px 60px;
+    min-height: 550px;
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  p,
+  span {
+    font-size: 16px;
+    line-height: 1.5;
+    color: @dark;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  .img-holder {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  @media screen and (max-width: 1199px) {
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    .section-4 .left-side {
+      min-height: auto;
+      padding: 60px;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .img-holder {
+      padding-top: 56.25%; /* 16:9 Aspect Ratio */
+      //padding-top: 75%; /* 4:3 Aspect Ratio */
+    }
+
+    .flexbox-container {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 17 ************** *
+ ******************************************* */
+
+.section-17 {
+  min-height: 100px;
+  padding: 30px 0;
+
+  .info-holder{
+    z-index: 9;
+    background: #fff;
+    padding: 50px 70px;
+  }
+
+  .flexbox-container {
+    //align-items: center;
+    justify-content: center;
+  }
+
+  .right-side {
+    padding: 120px 60px;
+    min-height: 550px;
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  p,
+  span {
+    font-size: 16px;
+    line-height: 1.5;
+    color: @dark;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (max-width: 991px) {
+
+    .right-side {
+      min-height: auto;
+      padding: 60px;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .flexbox-container {
+      flex-direction: column;
+    }
+  }
+
+  .img-holder {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  @media screen and (max-width: 991px) {
+    .img-holder {
+      padding-top: 56.25%; /* 16:9 Aspect Ratio */
+      //padding-top: 75%; /* 4:3 Aspect Ratio */
     }
   }
 }

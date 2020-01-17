@@ -157,104 +157,6 @@
     });
     /* ###################### Tabs ###################### */
 
-
-    /* ###################### Section 4 and 5 padding ###################### */
-
-    function setPaddingToSections() {
-        if ($window.width() > 991) {
-            var headerWidth = $('.navigation-holder').width();
-            var headerContainerWidth = $('.navigation-holder .navigation .container').width();
-            $('.section-8').each(function () {
-                var leftSide = $(this).find('.left-side');
-                leftSide.css({'padding-left': ((headerWidth - headerContainerWidth) / 2) + 10 + 'px'});
-            })
-            $('.section-5-x').each(function () {
-                var leftSide = $(this).find('.right-side');
-                leftSide.css({'padding-right': ((headerWidth - headerContainerWidth) / 2) + 10 + 'px'});
-            })
-        } else {
-            $('.section-8').each(function () {
-                var leftSide = $(this).find('.left-side');
-                leftSide.css({'padding-left': ''});
-            })
-            $('.section-5-x').each(function () {
-                var leftSide = $(this).find('.right-side');
-                leftSide.css({'padding-right': ''});
-            })
-
-        }
-    }
-
-    function setPaddingToSections() {
-        if ($window.width() > 991) {
-            var headerWidth = $('.navigation-holder').width();
-            var headerContainerWidth = $('.navigation-holder .navigation .container').width();
-            $('.section-8').each(function () {
-                var leftSide = $(this).find('.left-side');
-                leftSide.css({'padding-left': ((headerWidth - headerContainerWidth) / 2) + 10 + 'px'});
-                leftSide.css({'padding-right': 100 + 'px'});
-            })
-            $('.section-y').each(function () {
-                var leftSide = $(this).find('.right-side');
-                leftSide.css({'padding-right': ((headerWidth - headerContainerWidth ) / 2) + 10 + 'px'});
-            })
-            $('.section-11').each(function () {
-                var leftSide = $(this).find('.right-side');
-                leftSide.css({'padding-right': ((headerWidth - headerContainerWidth ) / 2) + 10 + 'px'});
-            })
-
-        } else {
-            $('.section-8').each(function () {
-                var leftSide = $(this).find('.left-side');
-                leftSide.css({'padding-left': ''});
-                leftSide.css({'padding-right': ''});
-            })
-            $('.section-y').each(function () {
-                var leftSide = $(this).find('.right-side');
-                leftSide.css({'padding-right': ''});
-            })
-            $('.section-11').each(function () {
-                var leftSide = $(this).find('.right-side');
-                leftSide.css({'padding-right': ''});
-            })
-        }
-
-        if ($window.width() > 1365) {
-            var headerWidth = $('.navigation-holder').width();
-            var headerContainerWidth = $('.navigation-holder .navigation .container').width();
-
-            $('.section-11').each(function () {
-                var leftSide = $(this).find('.right-side');
-                leftSide.css({'padding-left': 145 + 'px'});
-            })
-
-            $('.section-8').each(function () {
-                var leftSide = $(this).find('.left-side');
-                leftSide.css({'padding-left': 145 + 'px'});
-                leftSide.css({'padding-right': 100 + 'px'});
-            })
-
-        } else {
-            $('.section-11').each(function () {
-                var leftSide = $(this).find('.right-side');
-                leftSide.css({'padding-left': ''});
-            })
-
-            $('.section-8').each(function () {
-                var leftSide = $(this).find('.left-side');
-                leftSide.css({'padding-left': ''});
-                leftSide.css({'padding-right': ''});
-            })
-        }
-    }
-
-    $document.ready(function () {
-        setPaddingToSections();
-    });
-
-    $window.on('resize', function () {
-        setPaddingToSections();
-    });
     /* ###################### Section 4 and 5 padding ###################### */
 
     /* ###################### Top Top ###################### */
@@ -727,3 +629,67 @@ $(document).ready(function () {
         }
     });
 })
+
+
+function percent(num_amount, num_total) {
+    if (num_amount == 0 || num_total == 0) {
+        return 0;
+    }
+    var count1 = num_amount / num_total;
+    var count2 = count1 * 100;
+
+    count = count2;
+
+    return count;
+}
+
+
+function setPaddingToSections() {
+    if ($(window).width() > 991) {
+        var headerWidth = $('.navigation-holder').width();
+        var headerContainerWidth = $('.navigation-holder .navigation .container').width();
+        var headerContainerFluidWidth = $('.container-fluid').width();
+
+        var oneFluidColumn = headerContainerFluidWidth / 12;
+        if ($(window).width() > 1199) {
+            // oneFluidColumn = headerContainerFluidWidth / 12;
+        }
+
+        var oneColumn = 0;
+        if ($(window).width() > 1199) {
+            oneColumn = headerContainerWidth / 12;
+        }
+
+        $('.section-16').each(function () {
+            var leftSide = $(this).find('.left-side');
+            leftSide.css({'padding-left': ((headerWidth - headerContainerWidth ) / 2) + 10 + oneColumn + 'px'});
+            leftSide.find('.info-holder').css({'margin-right': '-' + oneFluidColumn + 'px'});
+        })
+
+        $('.section-17').each(function () {
+            var rightSide = $(this).find('.right-side');
+            rightSide.css({'padding-right': ((headerWidth - headerContainerWidth ) / 2) + 10 + oneColumn + 'px'});
+            rightSide.find('.info-holder').css({'margin-left': '-' + oneFluidColumn + 'px'});
+        })
+
+    } else {
+        $('.section-16').each(function () {
+            var leftSide = $(this).find('.left-side');
+            leftSide.css({'padding-left': ''});
+            leftSide.find('.info-holder').css({'margin-right': ''});
+        })
+        $('.section-17').each(function () {
+            var rightSide = $(this).find('.right-side');
+            rightSide.css({'padding-right': ''});
+            rightSide.find('.info-holder').css({'margin-left': ''});
+        })
+    }
+}
+
+$(document).ready(function () {
+    setPaddingToSections();
+});
+
+$(window).on('resize', function () {
+    setPaddingToSections();
+});

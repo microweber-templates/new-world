@@ -4,24 +4,26 @@
 
 type: layout
 
-name: Skin 1
+name:  Skin 1
 
-description: Skin 1
+description:  Skin 1
 
 */
 
 ?>
+
 <script>
     $(document).ready(function () {
-        if ($('<?php print '#' . $params['id']; ?> .slick-testimonials-2').length > 0) {
-            $('<?php print '#' . $params['id']; ?> .slick-testimonials-2').each(function () {
+        if ($('<?php print '#' . $params['id']; ?> .slick-testimonials').length > 0) {
+            $('<?php print '#' . $params['id']; ?> .slick-testimonials').each(function () {
                 var el = $(this);
                 el.slick({
                     centerMode: true,
                     centerPadding: '0px',
                     slidesToShow: 1,
                     arrows: true,
-                    dots: true
+                    dots: true,
+                    adaptiveHeight: true
                 });
             });
         }
@@ -29,7 +31,7 @@ description: Skin 1
 </script>
 
 <div class="slider-wrapper p-b-10">
-    <div class="slick-testimonials-2">
+    <div class="slick-testimonials">
         <?php if (isset($data)): ?>
             <?php foreach ($data as $item) { ?>
                 <div class="slide">
@@ -38,25 +40,27 @@ description: Skin 1
                             <div class="img-holder" style="background-image: url('<?php print thumbnail($item['client_picture'], 200, 200, true); ?>');"></div>
                         <?php endif; ?>
                         <div class="info-holder">
-                            <h3><?php print $item['name']; ?></h3>
+                            <h3 class="m-t-20 m-b-10"><?php print $item['name']; ?></h3>
 
                             <?php if (isset($item['client_website'])) { ?>
-                                <h4>
+                                <h5>
                                     <a href="<?php print $item['client_website']; ?>" target="_blank">
-                                        <?php if (isset($item["client_company"])) { ?>
+                                        <?php if (isset($item["client_company"]) OR isset($item["client_role"])) { ?>
                                             <?php print $item['client_company']; ?><?php if (isset($item["client_role"])) { ?>, <?php print $item['client_role']; ?><?php } ?>
                                         <?php } ?>
                                     </a>
-                                </h4>
+                                </h5>
                             <?php } else { ?>
-                                <h4>
-                                    <?php if (isset($item["client_company"])) { ?>
+                                <h5>
+                                    <?php if (isset($item["client_company"]) OR isset($item["client_role"])) { ?>
                                         <?php print $item['client_company']; ?>
                                         <?php if (isset($item["client_role"])) { ?>, <?php print $item['client_role']; ?><?php } ?>
                                     <?php } ?>
-                                </h4>
+                                </h5>
                             <?php } ?>
-
+                            <br/>
+                            <br/>
+                            <br/>
                             <p><?php print $item['content']; ?></p>
                         </div>
                     </div>
@@ -65,7 +69,7 @@ description: Skin 1
         <?php else: ?>
             <div class="slide">
                 <div class="slide-holder">
-                    <div class="img-holder" style="background-image: url('<?php print template_url(); ?>assets/uploads/testimonial1.png');"></div>
+                    <div class="img-holder" style="background-image: url('<?php print template_url(); ?>assets/uploads/testimonial4.png');"></div>
                     <div class="info-holder">
                         <h3>Steven Doe</h3>
                         <h4>CEO, Microweber</h4>

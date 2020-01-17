@@ -621,7 +621,7 @@
   min-height: 100px;
   padding: 30px 0;
 
-  .info-holder{
+  .info-holder {
     z-index: 9;
     background: #fff;
     padding: 50px 70px;
@@ -691,7 +691,7 @@
   min-height: 100px;
   padding: 30px 0;
 
-  .info-holder{
+  .info-holder {
     z-index: 9;
     background: #fff;
     padding: 50px 70px;
@@ -748,6 +748,34 @@
     .img-holder {
       padding-top: 56.25%; /* 16:9 Aspect Ratio */
       //padding-top: 75%; /* 4:3 Aspect Ratio */
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 18 ************** *
+ ******************************************* */
+
+.section-18 {
+  .padding-holder {
+    padding: 50px 30px;
+    @media screen and (min-width: 1200px) {
+      min-height: 680px;
+      height: 100%;
+    }
+    max-height: calc(~'100vh - 100px');
+  }
+
+  .button-holder {
+    @media screen and (max-width: 1199px) {
+      margin-top: 30px !important;
+    }
+  }
+
+  .background-image-holder .button-holder {
+    @media screen and (min-width: 1200px) {
+      bottom: 50px;
+      position: absolute;
     }
   }
 }

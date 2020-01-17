@@ -35,6 +35,9 @@
     <module type="layouts" template="info-blocks/skin-5"/>
     <module type="layouts" template="blockquotes/skin-3"/>
     <module type="layouts" template="partners/skin-2"/>
+    <module type="layouts" template="skin-3"/>
+    <module type="layouts" template="skin-10"/>
+    <module type="layouts" template="skin-3"/>
 
 </div>
 

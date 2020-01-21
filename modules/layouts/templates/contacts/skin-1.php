@@ -58,7 +58,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                                 <p>Chat with our friendly team!</p>
                                 <br />
 
-                                <module type="btn" button_style="btn-primary" text="Chat now" />
+                                <module type="btn" template="bootstrap" button_style="btn-primary" text="Chat now" />
                             </div>
                         </div>
                     </div>

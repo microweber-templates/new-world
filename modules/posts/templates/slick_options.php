@@ -12,22 +12,22 @@ if ($slides_xs === null OR $slides_xs === false OR $slides_xs == '') {
 
 $slides_sm = get_option('slides-sm', $params['id']);
 if ($slides_sm === null OR $slides_sm === false OR $slides_sm == '') {
-    $slides_sm = '2';
+    $slides_sm = '1';
 }
 
 $slides_md = get_option('slides-md', $params['id']);
 if ($slides_md === null OR $slides_md === false OR $slides_md == '') {
-    $slides_md = '3';
+    $slides_md = '2';
 }
 
 $slides_lg = get_option('slides-lg', $params['id']);
 if ($slides_lg === null OR $slides_lg === false OR $slides_lg == '') {
-    $slides_lg = '4';
+    $slides_lg = '2';
 }
 
 $slides_xl = get_option('slides-xl', $params['id']);
 if ($slides_xl === null OR $slides_xl === false OR $slides_xl == '') {
-    $slides_xl = '4';
+    $slides_xl = '2';
 }
 
 $thumb_quality = 1920 / $slides_xl;

@@ -55,7 +55,7 @@
 
 <?php if ($preloader == 'true'): ?>
     <div class="js-ajax-loading">
-        <module type="logo" id="header-logo" class="w-100"/>
+        <module type="logo" id="header-logo-loading" logo-name="header-logo" class="w-100"/>
     </div>
 <?php endif; ?>
 
@@ -73,14 +73,15 @@
                 </div>
                 <div class="d-block d-sm-none w-100">
                     <ul>
-                        <li><a href="javascript:;" class="js-show-mobile-search"><i class="fa fa-search"></i> SEARCH</a></li>
+                        <?php if ($header_search == 'true'): ?>
+                            <li><a href="javascript:;" class="js-show-mobile-search"><i class="fa fa-search"></i> SEARCH</a></li>
+                        <?php endif; ?>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 <div class="main">
     <div class="navigation-holder">
         <nav class="navigation">
@@ -139,106 +140,62 @@
                     </div>
 
                     <ul class="member-nav">
-                        <li class="btn-search">
-                            <div class="search">
-                                <form action="<?php print site_url(); ?>search" method="get">
-                                    <button type="submit"><i class="fa fa-search"></i></button>
-                                    <input type="search" placeholder="SEARCH" id="keywords" name="keywords"/>
-                                </form>
-                            </div>
-                        </li>
+                        <?php if ($header_search == 'true'): ?>
+                            <li class="btn-search">
+                                <div class="search">
+                                    <form action="<?php print site_url(); ?>search" method="get">
+                                        <button type="submit"><i class="fa fa-search"></i></button>
+                                        <input type="search" placeholder="SEARCH" id="keywords" name="keywords"/>
+                                    </form>
+                                </div>
+                            </li>
+                        <?php endif; ?>
 
-                        <li class="btn-challenges">
-                            <a href="javascript:;" class="btn btn-primary js-show-challenges">Kies je uitdaging <span class="fas fa-sort-down"></span></a>
-                        </li>
+                        <?php if ($header_login == 'true'): ?>
+                            <li class="btn-additional">
+                                <a href="javascript:;" class="btn btn-primary">Log in</a>
+                            </li>
+                        <?php endif; ?>
+
+                        <?php if ($header_signup == 'true'): ?>
+                            <li class="btn-additional">
+                                <a href="javascript:;" class="btn btn-primary">0 <span class="fas fa-shopptiong-cart"></span></a>
+                            </li>
+                        <?php endif; ?>
+
+                        <?php if ($header_posts == 'true'): ?>
+                            <li class="btn-challenges">
+                                <a href="javascript:;" class="btn btn-primary js-show-challenges">Last posts <span class="fas fa-sort-down"></span></a>
+                            </li>
+                        <?php endif; ?>
                     </ul>
 
                 </div>
 
-                <div class="challenges-menu js-challanges-menu">
-                    <div class="container p-t-40 p-b-40">
-                        <div class="row">
-                            <div class="col-lg-3 position-relative challenges-title">
-                                <div class="text-background">Challenges</div>
-                                <h3>Discover your <br/>challenge</h3>
-                            </div>
-                            <div class="col-lg-9">
-                                <div class="btn-challenges text-right d-block d-lg-none">
-                                    <a href="javascript:;" class="btn btn-primary js-show-challenges">Kies je uitdaging <span class="fas fa-times"></span></a>
+                <?php if ($header_posts == 'true'): ?>
+                    <div class="challenges-menu js-challanges-menu">
+                        <div class="container p-t-40 p-b-40">
+                            <div class="row">
+                                <div class="col-lg-3 position-relative challenges-title">
+                                    <h3>The last from<br/>blog here</h3>
                                 </div>
-
-                                <module type="posts" template="header-challenges" limit="6" />
-<?php /*
-                                <div class="events">
-                                    <div class="event">
-                                        <div class="image">
-                                            <img src="<?php print template_url(); ?>assets/img/sections/bg.jpg"/>
-                                        </div>
-                                        <div class="info">
-                                            <p class="km">21km</p>
-                                            <h5>Ladies@ventoux</h5>
-                                        </div>
+                                <div class="col-lg-9">
+                                    <div class="btn-challenges text-right d-block d-lg-none">
+                                        <a href="javascript:;" class="btn btn-primary js-show-challenges">Kies je uitdaging <span class="fas fa-times"></span></a>
                                     </div>
 
-                                    <div class="event">
-                                        <div class="image">
-                                            <img src="<?php print template_url(); ?>assets/img/sections/bg.jpg"/>
-                                        </div>
-                                        <div class="info">
-                                            <p class="km">21km</p>
-                                            <h5>Ladies@ventoux</h5>
-                                        </div>
-                                    </div>
-
-                                    <div class="event">
-                                        <div class="image">
-                                            <img src="<?php print template_url(); ?>assets/img/sections/bg.jpg"/>
-                                        </div>
-                                        <div class="info">
-                                            <p class="km">21km</p>
-                                            <h5>Ladies@ventoux</h5>
-                                        </div>
-                                    </div>
-
-                                    <div class="event">
-                                        <div class="image">
-                                            <img src="<?php print template_url(); ?>assets/img/sections/bg.jpg"/>
-                                        </div>
-                                        <div class="info">
-                                            <p class="km">21km</p>
-                                            <h5>Ladies@ventoux</h5>
-                                        </div>
-                                    </div>
-
-                                    <div class="event">
-                                        <div class="image">
-                                            <img src="<?php print template_url(); ?>assets/img/sections/bg.jpg"/>
-                                        </div>
-                                        <div class="info">
-                                            <p class="km">21km</p>
-                                            <h5>Ladies@ventoux</h5>
-                                        </div>
-                                    </div>
-
-                                    <div class="event">
-                                        <div class="image">
-                                            <img src="<?php print template_url(); ?>assets/img/sections/bg.jpg"/>
-                                        </div>
-                                        <div class="info">
-                                            <p class="km">21km</p>
-                                            <h5>Ladies@ventoux</h5>
-                                        </div>
-                                    </div>
-                                </div> */ ?>
+                                    <module type="posts" template="header-posts" limit="6"/>
+                                </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
-                </div>
+                <?php endif; ?>
             </div>
         </nav>
     </div>
 
+    <?php if ($header_search == 'true'): ?>
     <div class="mobile-search-holder">
         <a href="javascript:;" class="js-show-mobile-search close-button"><i class="material-icons">close</i></a>
         <div>
@@ -248,3 +205,4 @@
             </form>
         </div>
     </div>
+<?php endif; ?>

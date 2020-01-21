@@ -34,7 +34,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             <h2 class="m-b-30">Some title for the video section here</h2>
                             <p>Microweber is an open-source content management system and website builder and drag and drop CMS.</p>
                             <div class="element m-t-40">
-                                <module type="btn" text="Learn more" button_style="btn-primary"/>
+                                <module type="btn" template="bootstrap" text="Learn more" button_style="btn-primary"/>
                             </div>
                         </div>
 

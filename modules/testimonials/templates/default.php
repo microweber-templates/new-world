@@ -59,7 +59,7 @@ description: Testimonials Default
                                 <h5>
                                     <a href="<?php print $item['client_website']; ?>" target="_blank">
                                         <?php if (isset($item["client_company"]) OR isset($item["client_role"])) { ?>
-                                            <?php print $item['client_company']; ?><?php if (isset($item["client_role"])) { ?>, <?php print $item['client_role']; ?><?php } ?>
+                                            <?php print $item['client_company']; ?><?php if (isset($item["client_role"])) { ?><?php print $item['client_role']; ?><?php } ?>
                                         <?php } ?>
                                     </a>
                                 </h5>
@@ -67,7 +67,7 @@ description: Testimonials Default
                                 <h5>
                                     <?php if (isset($item["client_company"]) OR isset($item["client_role"])) { ?>
                                         <?php print $item['client_company']; ?>
-                                        <?php if (isset($item["client_role"])) { ?>, <?php print $item['client_role']; ?><?php } ?>
+                                        <?php if (isset($item["client_role"])) { ?><?php print $item['client_role']; ?><?php } ?>
                                     <?php } ?>
                                 </h5>
                             <?php } ?>

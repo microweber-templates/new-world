@@ -1,16 +1,3 @@
-<?php
-
-/*
-
-type: layout
-
-name: Navigation Challenges
-
-description: Navigation Challenges
-
-*/
-?>
-
 <div class="events">
     <?php if (!empty($data)): ?>
         <?php foreach ($data as $key => $item): ?>

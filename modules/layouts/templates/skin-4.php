@@ -4,7 +4,7 @@
 
 type: layout
 
-name: CTA
+name: 3 columns images with buttons
 
 position: 4
 
@@ -24,21 +24,27 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 ?>
 
 
-<section class="section-4 <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-skin-4-<?php print $params['id'] ?>" rel="module">
+<section class="section <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-skin-4-<?php print $params['id'] ?>" rel="module">
     <div class="container">
         <div class="row">
-            <div class="col-xl-10 mx-auto position-relative bg-primary">
+            <div class="col-12 col-lg-4 text-center allow-drop m-t-30 cloneable">
+                <img src="<?php print template_url(); ?>assets/img/map.jpg" alt="" style="width:100%;"/>
+                <div class="element m-t-30 nodrop">
+                    <module type="btn" template="bootstrap" button_style="btn-primary" text="CALL TO ACTION" />
+                </div>
+            </div>
 
-                <div class="row info-holder">
-                    <div class="col-9 col-sm-7 col-md-8">
-                        <div class="h-100 d-flex align-items-center justify-content-left">
-                            <h3 class="m-b-5">Call to Action Section Here</h3>
-                        </div>
-                    </div>
+            <div class="col-12 col-lg-4 text-center allow-drop m-t-30 cloneable">
+                <img src="<?php print template_url(); ?>assets/img/map.jpg" alt="" style="width:100%;"/>
+                <div class="element m-t-30 nodrop">
+                    <module type="btn" template="bootstrap" button_style="btn-primary" text="CALL TO ACTION" />
+                </div>
+            </div>
 
-                    <div class="col-sm-5 col-md-4 text-sm-right">
-                        <module type="btn" text="Call To Action"/>
-                    </div>
+            <div class="col-12 col-lg-4 text-center allow-drop m-t-30 cloneable">
+                <img src="<?php print template_url(); ?>assets/img/map.jpg" alt="" style="width:100%;"/>
+                <div class="element m-t-30 nodrop">
+                    <module type="btn" template="bootstrap" button_style="btn-primary" text="CALL TO ACTION" />
                 </div>
             </div>
         </div>

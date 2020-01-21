@@ -39,7 +39,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
         <div class="row element">
             <div class="col-12 text-center allow-drop">
                 <br />
-               <module type="btn" text="Alle blogartikelen" />
+               <module type="btn" template="bootstrap" text="Alle blogartikelen" />
             </div>
         </div>
 

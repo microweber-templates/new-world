@@ -17,27 +17,19 @@
           <?php _e("Color"); ?>
         </label>
         <select  class="mw-ui-field mw_option_field"  name="button_style">
-          <option <?php if($style==''){ print 'selected'; } ?> value="btn-default">
-          <?php _e("Default"); ?>
-          </option>
-          <option <?php if($style=='btn-primary'){ print 'selected'; } ?> value="btn-primary">
-          <?php _e("Primary"); ?>
-          </option>
-          <option <?php if($style=='btn-info'){ print 'selected'; } ?> value="btn-info">
-          <?php _e("Info"); ?>
-          </option>
-          <option <?php if($style=='btn-success'){ print 'selected'; } ?> value="btn-success">
-          <?php _e("Success"); ?>
-          </option>
-          <option <?php if($style=='btn-warning'){ print 'selected'; } ?> value="btn-warning">
-          <?php _e("Warning"); ?>
-          </option>
-          <option <?php if($style=='btn-danger'){ print 'selected'; } ?> value="btn-danger">
-          <?php _e("Danger"); ?>
-          </option>
-          <option <?php if($style=='btn-link'){ print 'selected'; } ?> value="btn-link">
-          <?php _e("Simple"); ?>
-          </option>
+          <option <?php if($style==''){ print 'selected'; } ?> value="btn-default"><?php _e("Default"); ?></option>
+          <option <?php if($style=='btn-outline-default'){ print 'selected'; } ?> value="btn-outline-default"><?php _e("Default"); ?> Outline</option>
+          <option <?php if($style=='btn-primary'){ print 'selected'; } ?> value="btn-primary"><?php _e("Primary"); ?></option>
+          <option <?php if($style=='btn-outline-primary'){ print 'selected'; } ?> value="btn-outline-primary"><?php _e("Primary"); ?> Outline</option>
+          <option <?php if($style=='btn-info'){ print 'selected'; } ?> value="btn-info"><?php _e("Info"); ?></option>
+          <option <?php if($style=='btn-outline-info'){ print 'selected'; } ?> value="btn-outline-info"><?php _e("Info"); ?> Outline</option>
+          <option <?php if($style=='btn-success'){ print 'selected'; } ?> value="btn-success"><?php _e("Success"); ?></option>
+          <option <?php if($style=='btn-outline-success'){ print 'selected'; } ?> value="btn-outline-success"><?php _e("Success"); ?> Outline</option>
+          <option <?php if($style=='btn-warning'){ print 'selected'; } ?> value="btn-warning"><?php _e("Warning"); ?></option>
+          <option <?php if($style=='btn-outline-warning'){ print 'selected'; } ?> value="btn-outline-warning"><?php _e("Warning"); ?> Outline</option>
+          <option <?php if($style=='btn-danger'){ print 'selected'; } ?> value="btn-danger"><?php _e("Danger"); ?></option>
+          <option <?php if($style=='btn-outline-danger'){ print 'selected'; } ?> value="btn-outline-danger"><?php _e("Danger"); ?> Outline</option>
+          <option <?php if($style=='btn-link'){ print 'selected'; } ?> value="btn-link"><?php _e("Simple"); ?></option>
         </select>
       </div>
     </div>

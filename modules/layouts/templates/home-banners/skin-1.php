@@ -31,7 +31,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             <br/>
             <br/>
             <div class="element d-inline-block m-3 cloneable">
-                <module type="btn" text="Call to action"/>
+                <module type="btn" template="bootstrap" text="Call to action"/>
             </div>
         </div>
 

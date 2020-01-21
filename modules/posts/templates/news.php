@@ -4,9 +4,9 @@
 
 type: layout
 
-name: News
+name: News 1
 
-description: News
+description: News 1
 
 */
 ?>

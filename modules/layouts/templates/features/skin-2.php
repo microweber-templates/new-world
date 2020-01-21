@@ -78,7 +78,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
                             <div class="allow-drop">
 
-                                <h4 class="m-b-30">Drag abd Drio</h4>
+                                <h4 class="m-b-30">Drag and Drop</h4>
                                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when .</p>
                             </div>
                         </div>

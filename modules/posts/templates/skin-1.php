@@ -13,30 +13,26 @@ description: Posts Slider
 
 <?php include('slick_options.php'); ?>
 
-<div class="row blog-posts four-columns slickslider">
+<div class="row blog-posts slickslider">
     <?php if (!empty($data)): ?>
         <?php foreach ($data as $item): ?>
-            <div>
-                <div class="col-12" itemscope itemtype="<?php print $schema_org_item_type_tag ?>">
-                    <a href="<?php print $item['link'] ?>" itemprop="url" class="post">
-                        <?php if (!isset($show_fields) or $show_fields == false or in_array('thumbnail', $show_fields)): ?>
-                            <div class="image-holder">
-                                <div class="image" style="background-image: url('<?php print thumbnail($item['image'], $thumb_quality, $thumb_quality, true); ?>');">
-                                    <div class="hover">
-                                    <span class="btn btn-default"><i class="material-icons">remove_red_eye</i>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="row m-0 post">
+                <div class="col-12 d-flex flex-column h-100" itemscope itemtype="<?php print $schema_org_item_type_tag ?>">
+                    <div class="description">
+                        <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
+                            <h3 class=" m-b-20"><?php print $item['title'] ?></h3>
                         <?php endif; ?>
-                        <div class="description">
-                            <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
-                                <h3><?php print $item['title'] ?></h3>
-                            <?php endif; ?>
-                            <?php if (!isset($show_fields) or $show_fields == false or in_array('description', $show_fields)): ?>
-                                <p itemprop="description"><?php print $item['description'] ?></p>
-                            <?php endif; ?>
-                        </div>
-                    </a>
+
+                        <p class="date m-b-10"><?php print $item['created_at'] ?></p>
+
+                        <?php if (!isset($show_fields) or $show_fields == false or in_array('description', $show_fields)): ?>
+                            <p><?php print $item['description'] ?></p>
+                        <?php endif; ?>
+                    </div>
+
+                    <div class="m-t-auto">
+                        <a href="<?php print $item['link'] ?>" class="button-8"><span>Read more</span></a>
+                    </div>
                 </div>
             </div>
         <?php endforeach; ?>

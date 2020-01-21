@@ -45,6 +45,18 @@ $config['template_settings']['profile_link']['options'] = array('false' => 'No')
 $config['template_settings']['preloader'] = array('type' => 'dropdown', 'default' => 'false', 'label' => 'Turn on preloader');
 $config['template_settings']['preloader']['options'] = array('true' => 'Yes', 'false' => 'No');
 
+$config['template_settings']['header_posts'] = array('type' => 'dropdown', 'default' => 'false', 'label' => 'Show posts button in Header');
+$config['template_settings']['header_posts']['options'] = array('true' => 'Yes', 'false' => 'No');
+
+$config['template_settings']['header_search'] = array('type' => 'dropdown', 'default' => 'false', 'label' => 'Show search in Header');
+$config['template_settings']['header_search']['options'] = array('true' => 'Yes', 'false' => 'No');
+
+$config['template_settings']['header_login'] = array('type' => 'dropdown', 'default' => 'true', 'label' => 'Show Login in Header');
+$config['template_settings']['header_login']['options'] = array('true' => 'Yes', 'false' => 'No');
+
+$config['template_settings']['header_signup'] = array('type' => 'dropdown', 'default' => 'true', 'label' => 'Show Sign Up in Header');
+$config['template_settings']['header_signup']['options'] = array('true' => 'Yes', 'false' => 'No');
+
 $config['template_settings'][] = array('type' => 'delimiter');
 
 $config['template_settings'][] = array('type' => 'title', 'label' => 'Footer Options');

@@ -941,18 +941,111 @@
   }
 }
 
+/* *******************************************
+ ************** Section 20 ************** *
+ ******************************************* */
 
+.section-20 {
+  position: relative;
+  z-index: 9;
 
+  h3 {
+    font-size: 30px;
+    margin: 10px 0;
+  }
 
+  .background-image-holder {
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
 
+  .icon-holder {
+    color: @textLight;
+    margin-top: 10px;
+    margin-bottom: 20px;
 
+    i, span {
+      font-size: 45px;
+      color: @textLight;
+      display: block;
+    }
+  }
 
+  .square {
+    position: relative;
+    width: 100%;
+    .content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 
+  .square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
 
+  .slick-dots {
+    text-align: center;
+    margin-top: 20px;
+  }
 
+  .slick-dots li {
+    display: inline-block;
+    font-size: 0px;
+    margin: 0 5px;
+  }
 
+  .slick-dots li button {
+    border: 0;
+    height: 11px;
+    width: 11px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
+    background: #c2c2c2;
+  }
 
+  .slick-dots li.slick-active button {
+    background: @default;
+    height: 16px;
+    width: 16px;
+  }
 
+  .slick-dots li button:before {
+    display: none;
+  }
+
+  @media screen and (max-width: 1199px) {
+    .slide.slick-center {
+      margin-top: 0px;
+    }
+
+    .slick-dots {
+      margin-top: 30px;
+    }
+  }
+
+}
+
+/* *******************************************
+ ************** Section 21 ************** *
+ ******************************************* */
+
+.section-21 {
+  .twitter-holder {
+    padding: 30px;
+    background: @primary;
+  }
+}
 
 
 

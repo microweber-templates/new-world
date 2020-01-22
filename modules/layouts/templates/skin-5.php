@@ -36,7 +36,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             <p class="lead"><strong>Contact us today to book your appintment with our representatives.</strong></p>
 
                             <div class="element nodrop button-holder mt-auto">
-                                <module type="btn" template="bootstrap" button_style="btn-primary" template="bootstrap" text="CALL TO ACTION"/>
+                                <module type="btn" template="bootstrap" button_style="btn-outline-primary" button_size="btn-lg" template="bootstrap" button_text="SET A MEETING"/>
                             </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             <br/>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
                             <div class="element nodrop button-holder">
-                                <module type="btn" template="bootstrap" button_style="btn-primary" button_size="btn-lg" text="CALL TO ACTION"/>
+                                <module type="btn" template="bootstrap" button_style="btn-outline-primary" button_size="btn-lg" button_text="CONTACT US"/>
                             </div>
                         </div>
                     </div>

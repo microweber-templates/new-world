@@ -41,7 +41,7 @@ h5.hr:after {
   display: block;
   content: '';
   width: 65%;
-  max-width: 231px;
+  max-width: 150px;
   height: 8px;
   background-color: @primary;
   -webkit-mask-image: url('../img/hr.svg');
@@ -574,6 +574,12 @@ h5 {
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
+}
+
+.shadow-md {
+  -webkit-box-shadow: -7px 7px 44px -13px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: -7px 7px 44px -13px rgba(0, 0, 0, 0.33);
+  box-shadow: -7px 7px 44px -13px rgba(0, 0, 0, 0.33);
 }
 
 /* Background */
@@ -1165,27 +1171,23 @@ ul.socials-2 {
 }
 
 /* Buttons */
-.btn-lg {
-  font-size: 1.1em;
-  padding: 18px 30px;
-}
 
-.btn-md {
-  font-size: 12px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
+.btn {
+  padding-left: 25px;
+  padding-right: 25px;
   text-align: center;
 }
 
-.btn-sm {
-  font-size: 0.9em;
+.btn-lg {
+  padding: .75rem 2.1rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  min-width: 250px;
 }
 
-.btn-xs {
-  font-size: 0.8em;
+[class*="btn-outline"] {
+  background: @background;
+  border: 1px solid @background;
 }
 
 .btn img {
@@ -1231,6 +1233,14 @@ ul.socials-2 {
   -webkit-border-radius: @borderRadiusButtons;
   -moz-border-radius: @borderRadiusButtons;
   border-radius: @borderRadiusButtons;
+}
+
+.btn-outline-primary {
+  color: @primary;
+  &:hover {
+    background: @primary;
+    border-color: @primary;
+  }
 }
 
 .btn-link {
@@ -5250,7 +5260,6 @@ a.dropdown-toggle::after {
   }
 
   .slide {
-
     .img-holder {
       align-items: center;
       justify-content: center;
@@ -5273,7 +5282,7 @@ a.dropdown-toggle::after {
       }
     }
 
-    .info-holder{
+    .info-holder {
       z-index: 2;
     }
 

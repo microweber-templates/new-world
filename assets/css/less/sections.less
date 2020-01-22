@@ -959,6 +959,18 @@
     background-size: cover;
     padding: 15px;
     margin-bottom: 30px;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: rgba(red(@default), green(@default), blue(@default), .5);
+      content: '';
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
   }
 
   .icon-holder {
@@ -976,6 +988,8 @@
   .square {
     position: relative;
     width: 100%;
+    z-index: 2;
+
     .content {
       position: absolute;
       width: 100%;
@@ -1047,6 +1061,72 @@
   }
 }
 
+/* *******************************************
+ ************** Section 22 ************** *
+ ******************************************* */
+
+.section-22 {
+  .box {
+    margin-bottom: 30px;
+    padding: 25px 30px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+
+    &:hover{
+      cursor: pointer;
+      background: @primary;
+      *{
+        color: @textLight;
+      }
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .icon-holder {
+      float: left;
+      font-size: 35px;
+      width: 60px;
+      text-align: left;
+    }
+    .text-holder {
+      float: left;
+      width: calc(~"100% - 60px");
+    }
+
+    p {
+      font-size: @paragraph-lg;
+      line-height: 1.35;
+    }
+  }
+
+  ul.socials {
+    margin: 0;
+    li {
+      margin-left: 7px;
+      margin-right: 0;
+
+      a {
+        background: transparent;
+        color: @textDark;
+        font-size: 20px;
+        height: 29px;
+        width: 29px;
+
+      }
+    }
+  }
+
+  .socials-holder {
+    right: 30px;
+    bottom: 47px;
+    position: absolute;
+  }
+
+}
 
 
 

@@ -34,94 +34,94 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
         </div>
 
         <div class="row partners element">
-            <div class="col-6 col-sm-4 col-lg-2">
+            <div class="col-6 col-sm-4 col-lg-2 cloneable">
                 <div class="partner">
                     <img src="<?php print template_url(); ?>assets/img/partners/1.png" alt=""/>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-lg-2">
+            <div class="col-6 col-sm-4 col-lg-2 cloneable">
                 <div class="partner">
                     <img src="<?php print template_url(); ?>assets/img/partners/2.png" alt=""/>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-lg-2">
+            <div class="col-6 col-sm-4 col-lg-2 cloneable">
                 <div class="partner">
                     <img src="<?php print template_url(); ?>assets/img/partners/3.png" alt=""/>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-lg-2">
+            <div class="col-6 col-sm-4 col-lg-2 cloneable">
                 <div class="partner">
                     <img src="<?php print template_url(); ?>assets/img/partners/4.png" alt=""/>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-lg-2">
+            <div class="col-6 col-sm-4 col-lg-2 cloneable">
                 <div class="partner">
                     <img src="<?php print template_url(); ?>assets/img/partners/5.png" alt=""/>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-lg-2">
+            <div class="col-6 col-sm-4 col-lg-2 cloneable">
                 <div class="partner">
                     <img src="<?php print template_url(); ?>assets/img/partners/6.png" alt=""/>
                 </div>
             </div>
 
-            <div class="col-6 col-sm-4 col-lg-2">
+            <div class="col-6 col-sm-4 col-lg-2 cloneable">
                 <div class="partner">
                     <img src="<?php print template_url(); ?>assets/img/partners/7.png" alt=""/>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-lg-2">
+            <div class="col-6 col-sm-4 col-lg-2 cloneable">
                 <div class="partner">
                     <img src="<?php print template_url(); ?>assets/img/partners/8.png" alt=""/>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-lg-2">
+            <div class="col-6 col-sm-4 col-lg-2 cloneable">
                 <div class="partner">
                     <img src="<?php print template_url(); ?>assets/img/partners/9.png" alt=""/>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-lg-2">
+            <div class="col-6 col-sm-4 col-lg-2 cloneable">
                 <div class="partner">
                     <img src="<?php print template_url(); ?>assets/img/partners/10.png" alt=""/>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-lg-2">
+            <div class="col-6 col-sm-4 col-lg-2 cloneable">
                 <div class="partner">
                     <img src="<?php print template_url(); ?>assets/img/partners/11.png" alt=""/>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-lg-2">
+            <div class="col-6 col-sm-4 col-lg-2 cloneable">
                 <div class="partner">
                     <img src="<?php print template_url(); ?>assets/img/partners/12.png" alt=""/>
                 </div>
             </div>
 
-            <div class="col-6 col-sm-4 col-lg-2">
+            <div class="col-6 col-sm-4 col-lg-2 cloneable">
                 <div class="partner">
                     <img src="<?php print template_url(); ?>assets/img/partners/13.png" alt=""/>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-lg-2">
+            <div class="col-6 col-sm-4 col-lg-2 cloneable">
                 <div class="partner">
                     <img src="<?php print template_url(); ?>assets/img/partners/14.png" alt=""/>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-lg-2">
+            <div class="col-6 col-sm-4 col-lg-2 cloneable">
                 <div class="partner">
                     <img src="<?php print template_url(); ?>assets/img/partners/15.png" alt=""/>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-lg-2">
+            <div class="col-6 col-sm-4 col-lg-2 cloneable">
                 <div class="partner">
                     <img src="<?php print template_url(); ?>assets/img/partners/16.png" alt=""/>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-lg-2">
+            <div class="col-6 col-sm-4 col-lg-2 cloneable">
                 <div class="partner">
                     <img src="<?php print template_url(); ?>assets/img/partners/17.png" alt=""/>
                 </div>
             </div>
-            <div class="col-6 col-sm-4 col-lg-2">
+            <div class="col-6 col-sm-4 col-lg-2 cloneable">
                 <div class="partner">
                     <img src="<?php print template_url(); ?>assets/img/partners/18.png" alt=""/>
                 </div>

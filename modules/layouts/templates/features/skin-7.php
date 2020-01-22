@@ -30,7 +30,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
                     <div class="row text-center text-white">
                         <div class="col-12 col-sm-6 col-md-4 cloneable">
-                            <div class="background-image-holder" style="background-image: url('<?php print template_url(); ?>assets/img/meeting.png');">
+                            <div class="background-image-holder" style="background-image: url('<?php print template_url(); ?>assets/img/feature-1.jpg');">
                                 <div class="square">
                                     <div class="content allow-drop">
                                         <div class="icon-holder nodrop">
@@ -44,7 +44,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                         </div>
 
                         <div class="col-12 col-sm-6 col-md-4 cloneable">
-                            <div class="background-image-holder" style="background-image: url('<?php print template_url(); ?>assets/img/meeting.png');">
+                            <div class="background-image-holder" style="background-image: url('<?php print template_url(); ?>assets/img/feature-2.jpg');">
                                 <div class="square">
                                     <div class="content allow-drop">
                                         <div class="icon-holder nodrop">
@@ -59,7 +59,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                         </div>
 
                         <div class="col-12 col-sm-6 col-md-4 cloneable">
-                            <div class="background-image-holder" style="background-image: url('<?php print template_url(); ?>assets/img/meeting.png');">
+                            <div class="background-image-holder" style="background-image: url('<?php print template_url(); ?>assets/img/feature-3.jpg');">
                                 <div class="square">
                                     <div class="content allow-drop">
                                         <div class="icon-holder nodrop">

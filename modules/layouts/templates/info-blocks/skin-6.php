@@ -36,7 +36,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
                     <div class="element">
                         <br />
-                        <module type="btn" button_style="8" />
+                        <module type="btn" button_text="More about this" button_style="8" />
                     </div>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-<div class="img-holder right" style="background-image: url('<?php print thumbnail($slide['images'][0], 1440, 656); ?>');">
+<div class="img-holder right" style="background-image: url('<?php print thumbnail($slide['images'][0], 1920, 760); ?>');">
     <div class="container info-holder">
         <h1><?php echo $slide['primaryText']; ?></h1>
         <p><?php echo $slide['secondaryText']; ?></p>

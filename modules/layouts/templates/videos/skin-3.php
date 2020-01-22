@@ -33,7 +33,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
             <div class="col-12 col-lg-6 col-xl-5 right-side" style="order: 1;">
                 <div class="testimonial-holder text-left">
-                    <div class="info-holder" style="max-width: 100%;">
+                    <div class="info-holder allow-drop" style="max-width: 100%;">
                         <h2 class="m-b-30">Watch Our Video Here</h2>
                         <h3 class="m-b-30">Learn more about the company</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>

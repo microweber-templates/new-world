@@ -31,7 +31,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                     <div class="m-b-40 col-sm-6 col-lg-4 cloneable">
                         <div class="card shadow-sm">
                             <div class="stamp">
-                                <i class="mw-micon-Monitor-2"></i>
+                                <i class="mw-micon-Monitor-2 safe-element"></i>
                             </div>
 
                             <div class="allow-drop">
@@ -45,7 +45,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                     <div class="m-b-40 col-sm-6 col-lg-4 cloneable">
                         <div class="card dark shadow-sm">
                             <div class="stamp">
-                                <i class="mw-micon-Earphones"></i>
+                                <i class="mw-micon-Earphones safe-element"></i>
                             </div>
 
                             <div class="allow-drop">
@@ -59,7 +59,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                     <div class="m-b-40 col-sm-6 col-lg-4 cloneable">
                         <div class="card shadow-sm">
                             <div class="stamp">
-                                <i class="mw-micon-Duplicate-Window"></i>
+                                <i class="mw-micon-Duplicate-Window safe-element"></i>
                             </div>
 
                             <div class="allow-drop">
@@ -73,7 +73,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                     <div class="m-b-40 col-sm-6 col-lg-4 cloneable">
                         <div class="card dark shadow-sm">
                             <div class="stamp">
-                                <i class="mw-micon-Mouse-3"></i>
+                                <i class="mw-micon-Mouse-3 safe-element"></i>
                             </div>
 
                             <div class="allow-drop">
@@ -87,7 +87,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                     <div class="m-b-40 col-sm-6 col-lg-4 cloneable">
                         <div class="card shadow-sm">
                             <div class="stamp">
-                                <i class="mw-micon-Hanger"></i>
+                                <i class="mw-micon-Hanger safe-element"></i>
                             </div>
 
                             <div class="allow-drop">
@@ -101,7 +101,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                     <div class="m-b-40 col-sm-6 col-lg-4 cloneable">
                         <div class="card dark shadow-sm">
                             <div class="stamp">
-                                <i class="mw-micon-Duplicate-Window"></i>
+                                <i class="mw-micon-Duplicate-Window safe-element"></i>
                             </div>
 
                             <div class="allow-drop">

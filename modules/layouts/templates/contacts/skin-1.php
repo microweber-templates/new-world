@@ -40,7 +40,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                                 <i class="mw-micon-Headset safe-element"></i>
                             </div>
 
-                            <div class="info">
+                            <div class="info allow-drop">
                                 <h4 class="m-b-10">Need help?</h4>
                                 <p>Contact us at +000 111 222</p>
                             </div>
@@ -53,7 +53,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                                 <i class="mw-micon-Speach-Bubble3 safe-element"></i>
                             </div>
 
-                            <div class="info">
+                            <div class="info allow-drop">
                                 <h4 class="m-b-10">Chat</h4>
                                 <p>Chat with our friendly team!</p>
                                 <br />

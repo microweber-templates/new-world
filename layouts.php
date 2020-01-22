@@ -13,9 +13,11 @@
 ?>
 <?php include template_dir() . "header.php"; ?>
 
-<div class="main-content" rel="content" field="new-world_content">
+<div class="main-content edit" rel="content" field="new-world_content">
 
-    <module type="layouts" template="galleries/skin-2"/>
+    <module type="layouts" template="contacts/skin-2"/>
+    <module type="layouts" template="contacts/skin-3"/>
+    <module type="layouts" template="contacts/skin-4"/>
 </div>
 
 <?php include template_dir() . "footer.php"; ?>

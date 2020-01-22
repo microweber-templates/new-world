@@ -13,10 +13,6 @@
 
 ?>
 
-
-
-
-
 <?php $pagerCustom = 'bxSlider-pager'; ?>
 
 <div class="bxSlider-pager icons-pager">

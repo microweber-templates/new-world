@@ -1073,10 +1073,10 @@
     flex-flow: row;
     align-items: center;
 
-    &:hover{
+    &:hover {
       cursor: pointer;
       background: @primary;
-      *{
+      * {
         color: @textLight;
       }
     }
@@ -1128,5 +1128,164 @@
 
 }
 
+/* *******************************************
+ ************** Section 23 ************** *
+ ******************************************* */
 
+.section-23 {
 
+  p {
+    font-size: @paragraph-lg;
+    line-height: 1.5;
+  }
+
+  .card {
+    height: 100%;
+    background: @background;
+    border: 0;
+    padding: 30px 10px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    text-align: center;
+
+    .stamp {
+      margin-left: 0;
+      margin-bottom: 10px;
+      color: @textLight;
+      font-size: 55px;
+
+      i {
+        color: @primary;
+      }
+
+      @media screen and (max-width: 767px) {
+        font-size: 30px;
+        width: 80px;
+        height: 80px;
+        padding: 26px;
+      }
+    }
+
+    &.dark {
+      background: @default;
+      h1, h2, h3, h4, p {
+        color: @textLight;
+      }
+
+      i {
+        color: @textLight;
+      }
+    }
+    &:hover {
+      background: @primary;
+      h1, h2, h3, h4, p {
+        color: @textLight;
+      }
+
+      i {
+        color: @textLight;
+      }
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 24 ************** *
+ ******************************************* */
+
+.section-24 {
+  position: relative;
+  z-index: 9;
+
+  .background-image-holder {
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 15px;
+    margin-bottom: 30px;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: rgba(red(@primary), green(@primary), blue(@primary), .8);
+      content: '';
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      visibility: hidden;
+    }
+  }
+
+  .icon-holder {
+    color: @textLight;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    i, span {
+      font-size: 45px;
+      color: @textLight;
+      display: block;
+    }
+  }
+
+  .square {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    visibility: hidden;
+
+    .content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        font-size: @paragraph-lg;
+      }
+    }
+  }
+
+  .square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  .background-image-holder {
+    &:hover {
+      cursor: pointer;
+      .square {
+        visibility: visible;
+      }
+      &:before {
+        visibility: visible;
+      }
+    }
+  }
+  ul.socials {
+    margin: 0 0 20px 0;
+  }
+  ul.socials li {
+    margin: 0 2px;
+  }
+  ul.socials li a,
+  ul.socials li a:hover {
+    background: transparent;
+    font-size: 24px;
+  }
+  ul.socials li a:hover {
+    color: rgba(red(@textLight), green(@textLight), blue(@textLight), 0.5)
+  }
+
+  .socials-holder {
+    position: absolute;
+    bottom: 0;
+  }
+
+}

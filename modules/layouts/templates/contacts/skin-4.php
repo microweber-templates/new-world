@@ -4,9 +4,9 @@
 
 type: layout
 
-name: Contact Information
+name: Contact Information - Form
 
-position: 3
+position: 4
 
 */
 
@@ -23,7 +23,7 @@ if (!$classes['padding_bottom']) {
 $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
 ?>
 
-<section class="section <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-contacts-skin-3-<?php print $params['id'] ?>" rel="module">
+<section class="section <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-contacts-skin-4-<?php print $params['id'] ?>" rel="module">
     <div class="container">
         <div class="row">
             <div class="col-xl-10 mx-auto allow-drop text-center">

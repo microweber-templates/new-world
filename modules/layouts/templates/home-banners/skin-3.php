@@ -44,13 +44,13 @@ if ($vimeo_url) {
         });
     });
 </script>
-<section class="section-2 js-header-transparent <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-home-banners-skin-3-<?php print $params['id'] ?>" rel="module">
+<section class="section-2 js-header-transparent <?php print $layout_classes; ?>">
     <div class="background-image-holder d-flex w-100">
         <div class="vimeo-bg-wrapper">
             <iframe class="js-video" src="https://player.vimeo.com/video/<?php echo $vimeo_url; ?>?background=1&autoplay=0&loop=1&byline=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
 
-        <div class="w-100 align-self-center text-center info-holder allow-drop">
+        <div class="w-100 align-self-center text-center info-holder allow-drop  edit safe-mode" field="layout-home-banners-skin-3-<?php print $params['id'] ?>" rel="module">
             <h4>Bicycle Challenge</h4>
             <h1>to Mont Ventoux</h1>
             <br/>

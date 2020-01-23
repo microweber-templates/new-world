@@ -33,7 +33,7 @@ description: Default
 
         <div class="row">
             <div class="col-12 text-center">
-                <module type="btn" template="bootstrap" button_action="submit" button_style="btn-primary" text="Send"/>
+                <module type="btn" template="bootstrap" button_action="submit" button_style="btn-primary" text="Send message"/>
             </div>
         </div>
     </form>

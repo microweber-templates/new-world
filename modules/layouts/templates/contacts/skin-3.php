@@ -4,7 +4,7 @@
 
 type: layout
 
-name: Contact Information
+name: Contact Information - Map
 
 position: 3
 

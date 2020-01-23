@@ -72,6 +72,22 @@ h5.hr:after {
   margin: 10px auto;
 }
 
+hr.hr {
+  display: inline-block;
+  min-height: auto !important;
+  border: 0;
+  width: 65%;
+  max-width: 150px;
+  height: 8px;
+  background-color: @primary;
+  -webkit-mask-image: url('../img/hr.svg');
+  mask-image: url('../img/hr.svg');
+  -webkit-mask-repeat: repeat-x;
+  mask-repeat: repeat-x;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
 .text-center {
   h1.hr, h2.hr, h3.hr, h4.hr, h5.hr, h6.hr {
     //text-align: center;
@@ -577,9 +593,9 @@ h5 {
 }
 
 .shadow-md {
-  -webkit-box-shadow: -7px 7px 44px -13px rgba(0, 0, 0, 0.33);
-  -moz-box-shadow: -7px 7px 44px -13px rgba(0, 0, 0, 0.33);
-  box-shadow: -7px 7px 44px -13px rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: 0 0 17px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 0 17px rgba(0,0,0,0.1);
+  box-shadow: 0 0 17px rgba(0,0,0,0.1);
 }
 
 /* Background */
@@ -682,9 +698,9 @@ h5 {
 }
 
 .form-control {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
+  -webkit-border-radius: @borderRadiusInputs;
+  -moz-border-radius: @borderRadiusInputs;
+  border-radius: @borderRadiusInputs;
   border-color: #d8d8d8;
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
@@ -693,6 +709,12 @@ h5 {
   color: @textDark;
   //font-size: @paragraph-md;
   height: calc(~"1.5em + .75rem + 4px");
+}
+
+.form-control:focus {
+  border-color: @primary;
+  -webkit-box-shadow: 0 0 10px rgba(red(@primary), green(@primary), blue(@primary), .5) !important;
+  box-shadow: 0 0 10px rgba(red(@primary), green(@primary), blue(@primary), .5) !important;
 }
 
 .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -963,6 +985,13 @@ body.page-loaded .js-ajax-loading {
  ******************************************* */
 
 @import "navigation";
+
+/* *******************************************
+ **************** Margins *************** *
+ ******************************************* */
+
+@import "margins";
+
 /* *******************************************
  **************** Socials *************** *
  ******************************************* */
@@ -3248,10 +3277,12 @@ footer .logo img {
 }
 
 footer ul li {
-  display: block;
   color: @silver;
-  width: 100%;
+  display: inline-block;
+  width: auto;
+  margin: 0 10px 0 0;
 }
+
 
 footer a {
   color: @silver;
@@ -5304,6 +5335,14 @@ a.dropdown-toggle::after {
     border: 0 !important;
   }
 
+  .bx-wrapper .bx-controls-direction {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    position: absolute;
+  }
+
   .bx-wrapper .bx-controls-direction a {
     background: none;
     font-size: 0;
@@ -5320,7 +5359,8 @@ a.dropdown-toggle::after {
   }
 
   .bx-wrapper .bx-controls-direction a.bx-next {
-    right: 5%;
+    //right: 5%;
+    right: 0%;
   }
 
   .bx-wrapper .bx-controls-direction a.bx-next:before {
@@ -5328,7 +5368,8 @@ a.dropdown-toggle::after {
   }
 
   .bx-wrapper .bx-controls-direction a.bx-prev {
-    left: 5%;
+    //left: 5%;
+    left: 0%;
   }
 
   .bx-wrapper .bx-controls-direction a.bx-prev:before {
@@ -5581,4 +5622,13 @@ a.dropdown-toggle::after {
   }
 }
 
+.breadcrumb {
+  background-color: transparent;
+  justify-content: center;
 
+  a {
+    color: @primary;
+    font-size: @paragraph-lg;
+    font-weight: bold;
+  }
+}

@@ -672,6 +672,9 @@ function setPaddingToSections() {
             rightSide.find('.info-holder').css({'margin-left': '-' + oneFluidColumn + 'px'});
         })
 
+        $('.home-slider .container.info-holder').css({'padding-left': oneColumn + 'px', 'padding-right': oneColumn + 'px'});
+        $('.home-slider .bx-controls-direction').css({'width': headerContainerWidth + 'px'});
+
     } else {
         $('.section-16').each(function () {
             var leftSide = $(this).find('.left-side');
@@ -683,6 +686,10 @@ function setPaddingToSections() {
             rightSide.css({'padding-right': ''});
             rightSide.find('.info-holder').css({'margin-left': ''});
         })
+
+        $('.home-slider .container.info-holder').css({'padding-left': +'', 'padding-right': ''});
+        $('.home-slider .bx-controls-direction').css({'width': headerContainerWidth + 'px'});
+
     }
 }
 

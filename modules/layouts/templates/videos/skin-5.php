@@ -30,16 +30,17 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             <div class="row">
                 <div class="col-12 mx-auto">
                     <div class="row">
-                        <div class="offset-xl-2 col-xl-3 info-holder allow-drop">
-                            <h2 class="m-b-30">Some title for the video section here</h2>
-                            <p>Microweber is an open-source content management system and website builder and drag and drop CMS.</p>
+                        <div class="offset-xl-1 col-xl-4 info-holder allow-drop">
+                            <p class="m-b-20" style="letter-spacing:1.5px;">Introduction Video</p>
+                            <h2 class="m-b-30">How we growth <br />our business.</h2>
+                            <p>Microweber is an open-source content management system and website builder. It is based on the PHP programming language and the Laravel 5 web application framework, using drag and drop and allowing users to quickly create content, while scheduling and managing multiple displays.</p>
                             <div class="element m-t-40">
-                                <module type="btn" template="bootstrap" text="Learn more" button_style="btn-primary"/>
+                                <module type="btn" template="bootstrap" text="Contact Us" button_style="btn-primary"/>
                             </div>
                         </div>
 
                         <div class="col-sm-10 mx-sm-auto col-xl-6 video-holder">
-                            <module type="video" url="https://vimeo.com/22439234"/>
+                            <module type="video" url="https://vimeo.com/98679934"/>
                         </div>
                     </div>
                 </div>

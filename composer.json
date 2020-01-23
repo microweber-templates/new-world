@@ -1,11 +1,11 @@
 {
-  "name": "microweber/template-ventoux",
+  "name": "microweber/template-new-world",
   "type": "microweber-template",
-  "description": "Mon Ventoux",
+  "description": "New World",
   "keywords": [
     "microweber",
     "ecommerce",
-    "modern"
+    "default"
   ],
   "homepage": "https://microweber.com/",
   "license": "Commercial",
@@ -22,7 +22,7 @@
     "docs": "http://docs.microweber.com"
   },
   "extra": {
-    "preview_url": "https://templates.microweber.com/mon-ventoux/"
+    "preview_url": "http://templates.microweber.com/new-world/"
   },
-  "target-dir": "mon-ventoux"
+  "target-dir": "new-world"
 }

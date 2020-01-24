@@ -441,55 +441,6 @@
         });
     })
 
-    /* ###################### Product Gallery ###################### */
-    /*function loadProductGallerySettings() {
-
-     return false;
-
-     if ($window.width() > 991) {
-     var productGalleryHeight = $('.shop-inner-page .product-gallery').height();
-     var productGalleryWidth = $('.shop-inner-page .product-gallery').width();
-     var productInfoHeight = $('.shop-inner-page .product-info').height();
-     $('.shop-inner-page .product-info').css({'max-width': productGalleryWidth + 'px'});
-     $('.shop-inner-page .js-in-viewport').css({'margin-top': productInfoHeight + 'px'});
-     } else {
-     if ($('.shop-inner-page .product-gallery').length > 0) {
-     $('.shop-inner-page .product-gallery').each(function () {
-     var el = $(this);
-     el.slick({
-     centerMode: true,
-     centerPadding: '0px',
-     slidesToShow: 1,
-     arrows: true,
-     dots: false,
-     adaptiveHeight: true
-     });
-     });
-     }
-     }
-     }
-
-     $document.ready(function () {
-     loadProductGallerySettings();
-     });
-
-     $document.on('resize', function () {
-     loadProductGallerySettings();
-     });
-
-     $window.on('load', function () {
-     /!* ###################### Project Gallery ###################### *!/
-
-     var pInfo = $('.product-info');
-
-     pInfo.stickySidebar({
-     containerSelector: '.product-holder',
-     innerWrapperSelector: '.product-info-content',
-     topSpacing: 115,
-     bottomSpacing: 115
-     });
-     })*/
-
     $document.ready(function () {
         /* ###################### Magnific Popup with Video ###################### */
         $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
@@ -700,3 +651,81 @@ $(document).ready(function () {
 $(window).on('resize', function () {
     setPaddingToSections();
 });
+
+
+/* ###################### Masonry Gallery with Magnific Popup ###################### */
+function istotopeFilter() {
+    var filterValue = '.masonry-holder';
+
+    $('.masonry-team .js-masonry-grid-works-filter .list-masonry-grid-works-filter__item a.list-masonry-grid-works-filter__link_active').each(function (index) {
+        filterValue = filterValue + ', ' + $(this).attr('data-filter');
+    });
+
+    if (filterValue == '.masonry-holder') {
+        $('.js-masonry-grid-works-filter li:first-of-type a').addClass('btn-primary list-masonry-grid-works-filter__link_active');
+        $('.js-masonry-grid-works-filter li:first-of-type a').removeClass('btn-outline-primary shadow-md');
+        filterValue = '*';
+    }
+
+    masonryGrid.isotope({
+        filter: filterValue
+    });
+
+    // console.log(filterValue);
+}
+
+
+var masonryGrid = $('.masonry-team .js-masonry-grid-works');
+
+
+$(window).on('load', function () {
+    // masonry grid
+    setTimeout(function () {
+        masonryGrid.masonry({
+            itemSelector: '.js-masonry-grid-works__item',
+            columnWidth: '.js-masonry-grid-works__sizer',
+            percentPosition: true
+        }).isotope();
+    }, 10);
+});
+
+
+$(document).ready(function () {
+    // isotope filtering panel
+    $('.masonry-team .js-masonry-grid-works-filter').on('click', 'a:not(.all)', function (e) {
+        e.preventDefault();
+
+        $('body').find('a.all').removeClass('btn-primary list-masonry-grid-works-filter__link_active');
+        $('body').find('a.all').addClass('btn-outline-primary shadow-md');
+
+        $(this).addClass('btn-primary list-masonry-grid-works-filter__link_active');
+        $(this).removeClass('btn-outline-primary shadow-md');
+
+        istotopeFilter();
+    });
+
+    $('.masonry-team .js-masonry-grid-works-filter').on('click', 'a.list-masonry-grid-works-filter__link_active', function (e) {
+        e.preventDefault();
+
+        $(this).removeClass('btn-primary list-masonry-grid-works-filter__link_active');
+        $(this).addClass('btn-outline-primary shadow-md');
+
+        istotopeFilter();
+    });
+
+
+    $('.masonry-team .js-masonry-grid-works-filter').on('click', 'a.all', function (e) {
+        e.preventDefault();
+
+        $('.masonry-team .js-masonry-grid-works-filter .list-masonry-grid-works-filter__item a.list-masonry-grid-works-filter__link_active').each(function (index) {
+            $(this).removeClass('btn-primary list-masonry-grid-works-filter__link_active');
+            $(this).addClass('btn-outline-primary shadow-md');
+        });
+
+        $(this).removeClass('btn-outline-primary shadow-md');
+        $(this).addClass('btn-primary list-masonry-grid-works-filter__link_active');
+
+        istotopeFilter();
+    });
+});
+/* ###################### Masonry Gallery with Magnific Popup ###################### */

@@ -13,9 +13,14 @@ description: Grid Columns
 
 <?php
 $columns = get_option('columns', $params['id']);
-if ($columns === null OR $columns === false OR $columns == '') {
+if ($columns) {
+    $columns = $columns;
+} elseif (isset($params['data-columns'])) {
+    $columns = $params['data-columns'];
+} else {
     $columns = 'col-12 col-sm-6 col-md-4 col-lg-3';
 }
+
 
 $columns_xl = get_option('columns-xl', $params['id']);
 $thumb_quality = '1920';

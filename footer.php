@@ -51,6 +51,11 @@
 </script>
 <script src="<?php print template_url(); ?>assets/js/libs/anime.min.js"></script>
 <script src="<?php print template_url(); ?>assets/js/libs/jquery.sticky-sidebar.min.js"></script>
+
+<script type="text/javascript" src="<?php print template_url(); ?>assets/plugins/masonry/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="<?php print template_url(); ?>assets/plugins/masonry/isotope.pkgd.min.js"></script>
+
+
 <script>
     mw.lib.require('slick');
     mw.lib.require('collapse_nav');

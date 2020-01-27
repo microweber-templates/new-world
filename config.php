@@ -1,7 +1,7 @@
 <?php
 
 $config = array();
-$config['name'] = "New World";
+$config['name'] = "New World - Default";
 $config['author'] = "Microweber";
 $config['version'] = 1.0;
 $config['url'] = "http://microweber.com";

@@ -23,7 +23,21 @@ description:  Skin 2
                     slidesToShow: 3,
                     arrows: true,
                     dots: false,
-                    adaptiveHeight: false
+                    adaptiveHeight: false,
+                    responsive: [
+                        {
+                            breakpoint: 992,
+                            settings: {
+                                slidesToShow: 2
+                            }
+                        },
+                        {
+                            breakpoint: 575,
+                            settings: {
+                                slidesToShow: 1
+                            }
+                        }
+                    ]
                 });
             });
         }

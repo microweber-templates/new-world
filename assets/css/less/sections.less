@@ -253,8 +253,9 @@
       @media screen and (max-width: 767px) {
         font-size: 30px;
         width: 80px;
-        height: 80px;
-        padding: 26px;
+        height: 60px;
+        padding: 0;
+        margin-bottom: 0;
       }
     }
 
@@ -665,7 +666,7 @@
 
     .section-4 .left-side {
       min-height: auto;
-      padding: 60px;
+      padding: 10px;
     }
 
     p {
@@ -679,6 +680,10 @@
 
     .flexbox-container {
       flex-direction: column-reverse;
+    }
+
+    .info-holder {
+      padding: 50px 20px;
     }
   }
 }
@@ -726,7 +731,7 @@
 
     .right-side {
       min-height: auto;
-      padding: 60px;
+      padding: 10px;
     }
 
     p {
@@ -748,6 +753,10 @@
     .img-holder {
       padding-top: 56.25%; /* 16:9 Aspect Ratio */
       //padding-top: 75%; /* 4:3 Aspect Ratio */
+    }
+
+    .info-holder {
+      padding: 50px 20px;
     }
   }
 }
@@ -1073,6 +1082,12 @@
     flex-flow: row;
     align-items: center;
 
+    @media screen and (max-width: 575px) {
+      justify-content: center;
+      flex-flow: column;
+      align-items: start;
+    }
+
     &:hover {
       cursor: pointer;
       background: @primary;
@@ -1091,6 +1106,9 @@
       font-size: 35px;
       width: 60px;
       text-align: left;
+      @media screen and (max-width: 575px) {
+        margin-bottom: 10px;
+      }
     }
     .text-holder {
       float: left;
@@ -1150,7 +1168,7 @@
     text-align: center;
 
     .stamp {
-      margin-left: 0;
+      margin: 0 auto;
       margin-bottom: 10px;
       color: @textLight;
       font-size: 55px;

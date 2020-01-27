@@ -638,7 +638,7 @@ function setPaddingToSections() {
             rightSide.find('.info-holder').css({'margin-left': ''});
         })
 
-        $('.home-slider .container.info-holder').css({'padding-left': +'', 'padding-right': ''});
+        $('.home-slider .container.info-holder').css({'padding-left': '40px', 'padding-right': '40px'});
         $('.home-slider .bx-controls-direction').css({'width': headerContainerWidth + 'px'});
 
     }
@@ -732,7 +732,7 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-    if(!$('body').hasClass('mw-live-edit')){
+    if (!$('body').hasClass('mw-live-edit')) {
         // AOS.init();
     }
 })

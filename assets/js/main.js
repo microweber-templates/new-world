@@ -729,3 +729,10 @@ $(document).ready(function () {
     });
 });
 /* ###################### Masonry Gallery with Magnific Popup ###################### */
+
+
+$(document).ready(function () {
+    if(!$('body').hasClass('mw-live-edit')){
+        // AOS.init();
+    }
+})

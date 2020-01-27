@@ -46,9 +46,7 @@
 
 <script type="text/javascript" src="<?php print template_url(); ?>assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+
 <script src="<?php print template_url(); ?>assets/js/libs/anime.min.js"></script>
 <script src="<?php print template_url(); ?>assets/js/libs/jquery.sticky-sidebar.min.js"></script>
 

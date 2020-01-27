@@ -1,10 +1,10 @@
-# Bamboo
+# New World
 
-Bamboo is a Microweber template website prepared for online stores. Fully responsive, clean and modern design. 
+New World is the Default Microweber template website prepared for online stores. Fully responsive, clean and modern design. 
 
 ## Features:
 
-* 20 Dinamic Layouts
+* 20 Dynamic Layouts
 * Sticky Menu
 * Galleries
 * Color Schemes 
@@ -27,4 +27,4 @@ Bamboo is a Microweber template website prepared for online stores. Fully respon
 * Custom Support 
 * Bootstrap 4 based
 
-![beauty.jpg](./readme_assets/ventoux_features.jpg "")
+![features.jpg](./readme_assets/features.jpg "")

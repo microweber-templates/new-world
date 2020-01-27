@@ -948,6 +948,7 @@ body.page-loaded .js-ajax-loading {
   }
 }
 
+
 @media (min-width: 1366px) and (max-width: 1439px) {
   .container {
     width: 1336px;
@@ -979,6 +980,13 @@ body.page-loaded .js-ajax-loading {
     max-width: 1440px;
   }
 }
+/*
+@media (min-width: 1650px) {
+  .container {
+    width: 1650px;
+    max-width: 1650px;
+  }
+}*/
 
 /* *******************************************
  **************** Navigation *************** *
@@ -2679,6 +2687,19 @@ ul.socials-2 {
 /* Slick slider 3 - Testimonials */
 
 .slick-testimonials-3 {
+  .slick-track {
+    display: flex;
+  }
+  .slick-track .slick-slide {
+    display: flex;
+    height: auto;
+  }
+
+  .slick-list {
+    max-width: calc(~"100% - 100px");
+    margin: 0 auto;
+  }
+
   .slick-prev:before,
   .slick-next:before {
     color: @dark;
@@ -2694,10 +2715,10 @@ ul.socials-2 {
 
   .slide-holder {
     width: auto;
-    padding-top: 45px;
     margin: 0 auto;
     max-width: 820px;
     text-align: center;
+    padding: 25px;
   }
 
   .img-holder {
@@ -2709,15 +2730,13 @@ ul.socials-2 {
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin: 0;
     border: 0;
     background-color: @light;
   }
 
   .slide .info-holder {
-    text-align: center;
+    text-align: left;
   }
 
   .slide .info-holder p {
@@ -2778,18 +2797,24 @@ ul.socials-2 {
     z-index: 4;
     font-size: 0;
     border: 0;
-    background: none;
+    background: #fff;
+    -webkit-box-shadow: 0 0 17px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 17px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 17px rgba(0, 0, 0, 0.1);
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
   }
 
   .slick-arrow:before {
     font-family: FontAwesome;
-    color: @textLight;
+    color: @textDark;
     display: block;
     font-size: 20px;
   }
 
   .slick-next {
-    right: 5%;
+    right: 0%;
   }
 
   .slick-next:before {
@@ -2797,7 +2822,7 @@ ul.socials-2 {
   }
 
   .slick-prev {
-    left: 5%;
+    left: 0%;
   }
 
   .slick-prev:before {

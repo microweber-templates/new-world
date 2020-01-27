@@ -58,17 +58,14 @@ description: Testimonials Default
                             <?php if (isset($item['client_website'])) { ?>
                                 <h5>
                                     <a href="<?php print $item['client_website']; ?>" target="_blank">
-                                        <?php if (isset($item["client_company"]) OR isset($item["client_role"])) { ?>
-                                            <?php print $item['client_company']; ?><?php if (isset($item["client_role"])) { ?><?php print $item['client_role']; ?><?php } ?>
-                                        <?php } ?>
+                                        <?php if (isset($item["client_company"])): ?><?php print $item['client_company']; ?><?php endif; ?>
+                                        <?php if (isset($item["client_role"])): ?><?php if (isset($item["client_company"])): ?>, <?php endif; ?><?php print $item['client_role']; ?><?php endif; ?>
                                     </a>
                                 </h5>
                             <?php } else { ?>
                                 <h5>
-                                    <?php if (isset($item["client_company"]) OR isset($item["client_role"])) { ?>
-                                        <?php print $item['client_company']; ?>
-                                        <?php if (isset($item["client_role"])) { ?><?php print $item['client_role']; ?><?php } ?>
-                                    <?php } ?>
+                                    <?php if (isset($item["client_company"])): ?><?php print $item['client_company']; ?><?php endif; ?>
+                                    <?php if (isset($item["client_role"])): ?><?php if (isset($item["client_company"])): ?>, <?php endif; ?><?php print $item['client_role']; ?><?php endif; ?>
                                 </h5>
                             <?php } ?>
                             <br/>

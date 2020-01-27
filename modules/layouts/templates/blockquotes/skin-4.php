@@ -4,7 +4,7 @@
 
 type: layout
 
-name: People - Team cards
+name: People - Client Opinions
 
 position:
 
@@ -22,6 +22,7 @@ if (!$classes['padding_bottom']) {
 
 $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
 ?>
+
 <section class="section bg-silver <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-blockquotes-skin-4-<?php print $params['id'] ?>" rel="module">
     <div class="d-flex w-100">
         <div class="container align-self-centerx">

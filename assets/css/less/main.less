@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
 
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: @fontFamily;
   outline: none !important;
 }
 
@@ -90,36 +90,28 @@ hr.hr {
 
 .text-center {
   h1.hr, h2.hr, h3.hr, h4.hr, h5.hr, h6.hr {
-    //text-align: center;
     margin-bottom: 10px;
+
     &:after {
-      display: inline-block;
-      margin: 0 auto;
+      display: block;
+      margin: 25px auto;
       width: 100%;
       text-align: center;
-      /*     margin-left: auto;
-           margin-right: auto;*/
     }
   }
 }
 
 .text-left {
   h1.hr, h2.hr, h3.hr, h4.hr, h5.hr, h6.hr {
-    //text-align: left;
+    margin-left: 0 !important;
 
     &:after {
-      display: inline-block;
+      display: block;
       width: 100%;
-
-      /*   display: block;
-         text-align: left;
-         margin-left: 0;
-         margin-right: 0;*/
+      margin: 25px 0;
     }
   }
 }
-
-/*
 
 @media screen and (max-width: 991px) {
   .text-lg-center {
@@ -133,7 +125,21 @@ hr.hr {
       }
     }
   }
-}*/
+}
+
+@media screen and (min-width: 991px) {
+  .text-lg-left {
+    h1.hr, h2.hr, h3.hr, h4.hr, h5.hr, h6.hr {
+      text-align: left;
+
+      &:after {
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}
 
 h1 {
   font-size: @title-xl;
@@ -256,6 +262,8 @@ h5 {
       background-clip: border-box;
     }*/
 }
+
+@import "color-loops";
 
 .cuted:after,
 .cuted-top:before,
@@ -1246,7 +1254,7 @@ ul.socials-2 {
 .btn-default.focus,
 .btn-default:focus {
   color: @textLight;
-  background: @defaultHover;
+  background-color: @defaultHover;
   border: 1px solid @defaultHover;
   -webkit-border-radius: @borderRadiusButtons;
   -moz-border-radius: @borderRadiusButtons;
@@ -1255,7 +1263,7 @@ ul.socials-2 {
 
 .btn-primary {
   color: @textLight;
-  background: @primary;
+  background-color: @primary;
   border: 1px solid @primary;
   -webkit-border-radius: @borderRadiusButtons;
   -moz-border-radius: @borderRadiusButtons;
@@ -1266,7 +1274,7 @@ ul.socials-2 {
 .btn-primary.focus,
 .btn-primary:focus {
   color: @textLight;
-  background: @primaryHover;
+  background-color: @primaryHover;
   border: 1px solid @primaryHover;
   -webkit-border-radius: @borderRadiusButtons;
   -moz-border-radius: @borderRadiusButtons;
@@ -1276,7 +1284,7 @@ ul.socials-2 {
 .btn-outline-primary {
   color: @primary;
   &:hover {
-    background: @primary;
+    background-color: @primary;
     border-color: @primary;
   }
 }
@@ -1295,6 +1303,18 @@ ul.socials-2 {
 .btn i {
   float: left;
   margin-right: 10px;
+}
+
+.btn-play {
+  width: 85px;
+  height: 85px;
+  border-radius: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  i {
+    margin: 0;
+  }
 }
 
 .button-1 {
@@ -6026,3 +6046,26 @@ a.dropdown-toggle::after {
   }
 }
 
+.small-cta {
+  background: @primary;
+  h1, h2, h3, h4, h5, h6, p, * {
+    color: @textLight;
+  }
+  text-align: center;
+  padding: 30px 70px;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+
+  .icon-holder {
+    position: absolute;
+    opacity: 0.5;
+    left: 25px;
+    i {
+      font-size: 50px;
+    }
+  }
+}

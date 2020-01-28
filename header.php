@@ -59,29 +59,32 @@
     </div>
 <?php endif; ?>
 
-<div class="top-nav">
-    <div class="container p-0 d-flex flex-row-reverse h-100">
-        <div class="row w-100 m-0">
-            <div class="col-4 col-sm-3 d-flex text-left justify-content-center align-items-center h-100">
-                <div class="d-block w-100">
-                    <module type="menu" template="simple" id="top_menu_1" name="top_menu_1"/>
+<?php if ($top_nav == 'true'): ?>
+    <div class="top-nav">
+        <div class="container p-0 d-flex flex-row-reverse h-100">
+            <div class="row w-100 m-0">
+                <div class="col-4 col-sm-3 d-flex text-left justify-content-center align-items-center h-100">
+                    <div class="d-block w-100">
+                        <module type="menu" template="simple" id="top_menu_1" name="top_menu_1"/>
+                    </div>
                 </div>
-            </div>
-            <div class="col-8 col-sm-9 d-flex text-right justify-content-center align-items-center h-100">
-                <div class="d-none d-sm-block w-100">
-                    <module type="menu" template="simple" id="top_menu_2" name="top_menu_2"/>
-                </div>
-                <div class="d-block d-sm-none w-100">
-                    <ul>
-                        <?php if ($header_search == 'true'): ?>
-                            <li><a href="javascript:;" class="js-show-mobile-search"><i class="fa fa-search"></i> SEARCH</a></li>
-                        <?php endif; ?>
-                    </ul>
+                <div class="col-8 col-sm-9 d-flex text-right justify-content-center align-items-center h-100">
+                    <div class="d-none d-sm-block w-100">
+                        <module type="menu" template="simple" id="top_menu_2" name="top_menu_2"/>
+                    </div>
+                    <div class="d-block d-sm-none w-100">
+                        <ul>
+                            <?php if ($header_search == 'true'): ?>
+                                <li><a href="javascript:;" class="js-show-mobile-search"><i class="fa fa-search"></i> SEARCH</a></li>
+                            <?php endif; ?>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+<?php endif; ?>
+
 <div class="main">
     <div class="navigation-holder">
         <nav class="navigation">

@@ -223,6 +223,18 @@
       text-align: center;
     }
   }
+
+  .div-table-cell {
+    position: relative;
+    .button-holder {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+  }
 }
 
 /* *******************************************
@@ -664,7 +676,7 @@
 
   @media screen and (max-width: 991px) {
 
-    .section-4 .left-side {
+    .left-side {
       min-height: auto;
       padding: 10px;
     }
@@ -1306,4 +1318,45 @@
     bottom: 0;
   }
 
+}
+
+/* *******************************************
+ ************** Section 25 ************** *
+ ******************************************* */
+
+.section-25 {
+  min-height: 100px;
+  padding: 30px 0;
+
+  .img-holder {
+    padding: 0 70px;
+    position: relative;
+    min-height: 500px;
+    margin-bottom: 20px;
+
+    .image-1 {
+      width: 80%;
+      height: 80%;
+
+      position: absolute;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center center;
+      top: 0;
+      left: 0;
+    }
+
+    .image-2 {
+      width: 70%;
+      height: 70%;
+
+      position: absolute;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center center;
+      border: 15px solid @background;
+      bottom: 0;
+      right: 0;
+    }
+  }
 }

@@ -30,6 +30,11 @@ $config['stylesheet_compiler']['settings']['textLight'] = array('type' => 'color
 $config['stylesheet_compiler']['settings']['silver'] = array('type' => 'color', 'default' => '#f3f3f3', 'label' => 'Silver');
 $config['stylesheet_compiler']['settings']['grey'] = array('type' => 'color', 'default' => '#bfbfbf', 'label' => 'Grey');
 
+$config['stylesheet_compiler']['settings'][] = array('type' => 'title', 'label' => 'Font Settings');
+
+$config['stylesheet_compiler']['settings']['fontFamily'] = array('type' => 'font_selector', 'default' => 'lato', 'label' => 'Choose font for your site');
+$config['stylesheet_compiler']['settings']['fontFamily']['options'] = array('lato' => 'Lato');
+
 $config['stylesheet_compiler']['settings']['bodyFontSize'] = array('type' => 'text', 'default' => '16px', 'label' => 'Body Font Size');
 
 
@@ -56,6 +61,9 @@ $config['template_settings']['header_login']['options'] = array('true' => 'Yes',
 
 $config['template_settings']['header_signup'] = array('type' => 'dropdown', 'default' => 'true', 'label' => 'Show Sign Up in Header');
 $config['template_settings']['header_signup']['options'] = array('true' => 'Yes', 'false' => 'No');
+
+$config['template_settings']['top_nav'] = array('type' => 'dropdown', 'default' => 'false', 'label' => 'Show Top Navigation');
+$config['template_settings']['top_nav']['options'] = array('true' => 'Yes', 'false' => 'No');
 
 $config['template_settings'][] = array('type' => 'delimiter');
 

@@ -23,15 +23,20 @@ if (!$classes['padding_bottom']) {
 $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
 ?>
 
-<section class="section-2 js-header-transparent <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-home-banners-skin-1-<?php print $params['id'] ?>" rel="module">
-    <div class="background-image-holder d-flex w-100" style="background-image: url('<?php print template_url(); ?>assets/img/sections/bg.jpg');">
-        <div class="w-100 align-self-center text-center info-holder allow-drop" data-aos="fade-down">
-            <h4>Bicycle Challenge</h4>
-            <h1>to Mont Ventoux</h1>
-            <br/>
-            <br/>
-            <div class="element d-inline-block m-3 cloneable">
-                <module type="btn" template="bootstrap" text="Call to action"/>
+<!--.home-slider .slide .img-holder.left-->
+
+<section class="section-2 js-header-transparent <?php print $layout_classes; ?> edit safe-mode nodrop" data-overlay="1" field="layout-home-banners-skin-1-<?php print $params['id'] ?>" rel="module">
+    <div class="background-image-holder d-flex w-100 justify-content-center" style="background-image: url('<?php print template_url(); ?>assets/img/slide-1.jpg');">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="w-100 text-left info-holder allow-drop" data-aos="fade-down">
+                <h1>This is the default <br/>template of Microweber</h1>
+                <br/>
+                <p class="lead">Drag and drop open-source website builder<br/>and CMS of new generation.</p>
+                <br/>
+                <br/>
+                <div class="element d-inline-block cloneable">
+                    <module type="btn" template="bootstrap" button_style="btn-primary" button_size="btn-lg" text="Call to action"/>
+                </div>
             </div>
         </div>
 

@@ -14,8 +14,12 @@
 <?php include template_dir() . "header.php"; ?>
 
 <div class="main-content edit" rel="content" field="new-world_content">
-    <module type="layouts" template="videos/skin-6"/>
-    <module type="layouts" template="skin-32"/>
+    <module type="layouts" template="home-banners/skin-1"/>
+    <module type="layouts" template="home-banners/skin-2"/>
+    <module type="layouts" template="home-banners/skin-3"/>
+
+    <module type="layouts" template="pricing/skin-1"/>
+    <module type="layouts" template="cta/skin-2"/>
 </div>
 
 <?php include template_dir() . "footer.php"; ?>

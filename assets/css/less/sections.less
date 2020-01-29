@@ -17,11 +17,9 @@
   padding: 30px 0 0 0;
 
   .background-image-holder {
-    min-height: 100vh;
-  }
-
-  .background-image-holder {
-    height: 100vh;
+    min-height: 50vh;
+    height: 750px;
+    max-height: 100vh;
   }
 
   &.vh-80 {
@@ -31,15 +29,14 @@
     }
   }
 
-  h1, h2, h4 {
+  p, p.lead, * {
     color: @textLight;
   }
-
-  .info-holder {
-    padding-bottom: 100px;
+  .container {
+    z-index: 9;
   }
-
   .socials-holder {
+    z-index: 9;
     right: 0;
     height: 100%;
     text-align: right;
@@ -47,9 +44,10 @@
     color: @textLight;
     display: flex;
     flex-flow: column;
+    align-self: center;
+    justify-self: center;
     align-items: center;
     justify-content: center;
-    padding-bottom: 320px;
 
     ul li {
       display: block;
@@ -64,16 +62,6 @@
   @media screen and (max-width: 991px) {
     .socials-holder {
       display: none;
-    }
-  }
-
-  @media screen and (max-width: 767px) {
-    .socials-holder {
-      padding-bottom: 160px;
-    }
-
-    .info-holder {
-      padding-bottom: 50px;
     }
   }
 }
@@ -86,7 +74,9 @@
   padding: 30px 0 0 0;
 
   .background-image-holder {
-    min-height: 70vh;
+    min-height: 20vh;
+    height: 350px;
+    max-height: 50vh;
   }
 
   &.vh-100 {
@@ -95,15 +85,15 @@
     }
   }
 
-  h1, h2, h4 {
+  h1, h2, h4, p, * {
     color: @textLight;
   }
 
-  .info-holder {
-    padding-bottom: 100px;
+  .container {
+    z-index: 9;
   }
-
   .socials-holder {
+    z-index: 9;
     right: 0;
     height: 100%;
     text-align: right;
@@ -111,10 +101,10 @@
     color: @textLight;
     display: flex;
     flex-flow: column;
+    align-self: center;
+    justify-self: center;
     align-items: center;
     justify-content: center;
-    //padding-bottom: 320px;
-    position: absolute;
 
     ul li {
       display: block;
@@ -132,15 +122,6 @@
     }
   }
 
-  @media screen and (max-width: 767px) {
-    .socials-holder {
-      //padding-bottom: 160px;
-    }
-
-    .info-holder {
-      padding-bottom: 50px;
-    }
-  }
 }
 
 /* *******************************************
@@ -1357,6 +1338,52 @@
       border: 15px solid @background;
       bottom: 0;
       right: 0;
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 8 ************** *
+ ******************************************* */
+
+.section-26 {
+  position: relative;
+  z-index: 9;
+
+  @media screen and (max-width: 576px) {
+    .features-holder > div {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (min-width: 576px) {
+    .features-holder > div:nth-child(odd) {
+      margin-top: 40px;
+    }
+  }
+
+  .icon-holder {
+    padding-top: 50px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding-bottom: 50px;
+
+    .icon {
+      margin-bottom: 15px;
+      font-size: 55px;
+      color: @primary;
+      display: block;
+    }
+
+    &:hover {
+      background-color: @primary;
+      * {
+        color: @textLight;
+      }
+      .icon {
+        color: @textLight;
+      }
     }
   }
 }

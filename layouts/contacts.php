@@ -3,7 +3,7 @@
 /*
 
 type: layout
-content_type: dynamic
+content_type: static
 name: Contacts
 position: 4
 description: Contacts

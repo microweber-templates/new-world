@@ -37,7 +37,7 @@
     <link href="<?php print template_url(); ?>assets/plugins/magnific-popup/magnific-popup.css" rel="stylesheet"/>
 
     <link href="<?php print template_url(); ?>assets/css/typography.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+<!--    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>-->
 
 
     <?php print get_template_stylesheet(); ?>

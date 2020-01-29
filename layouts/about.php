@@ -3,7 +3,7 @@
 /*
 
 type: layout
-content_type: dynamic
+content_type: static
 name: About us
 position: 2
 description: About us

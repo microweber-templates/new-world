@@ -29,7 +29,7 @@
     }
   }
 
-  p, p.lead, * {
+  h1, h2, h3, h4, h5, h6, p, p.lead {
     color: @textLight;
   }
   .container {
@@ -85,7 +85,7 @@
     }
   }
 
-  h1, h2, h4, p, * {
+  h1, h2, h3, h4, h5, h6, p, p.lead {
     color: @textLight;
   }
 
@@ -1343,7 +1343,7 @@
 }
 
 /* *******************************************
- ************** Section 8 ************** *
+ ************** Section 26 ************** *
  ******************************************* */
 
 .section-26 {
@@ -1384,6 +1384,73 @@
       .icon {
         color: @textLight;
       }
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 27 ************** *
+ ******************************************* */
+
+.section-27 {
+  padding: 30px 0 0 0;
+
+  @media screen and (min-width: 1440px) {
+    h1 {
+      font-size: 100px;
+    }
+
+    h2 {
+      font-size: 46px;
+    }
+  }
+
+  .background-image-holder {
+    min-height: 50vh;
+    height: 750px;
+    max-height: 80vh;
+  }
+
+  &.vh-80 {
+    .background-image-holder {
+      min-height: 80vh;
+      height: 80vh;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6, p, p.lead {
+    color: @textLight;
+  }
+  .container {
+    z-index: 9;
+  }
+  .socials-holder {
+    z-index: 9;
+    right: 0;
+    height: 100%;
+    text-align: right;
+
+    color: @textLight;
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+
+    ul li {
+      display: block;
+      a {
+        color: @textLight;
+        font-size: @title-sm;
+        margin: 35px 40px 35px 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .socials-holder {
+      display: none;
     }
   }
 }

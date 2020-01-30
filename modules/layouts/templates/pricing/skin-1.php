@@ -26,88 +26,84 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 <section class="section <?php echo $layout_classes; ?> edit safe-mode nodrop" field="layout-pricing-skin-1-<?php print $params['id'] ?>" rel="module">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-12 col-xl-10 mx-auto">
-                <div class="row">
-                    <div class="m-b-40 col-sm-6 col-lg-4 cloneable">
-                        <div class="card shadow-sm">
-                            <div class="stamp">
-                                <i class="mw-micon-Monitor-2 safe-element"></i>
+            <div class="col-xl-10 mx-auto">
+                <div class="row pricing-list">
+                    <div class="col-sm-6 col-md">
+                        <div class="plan">
+                            <div class="heading">
+                                <p class="safe-element">Early Bird</p>
+                                <div class="price">
+                                    <small class="safe-element">$</small>
+                                    <span class="sum safe-element">9</span><span class="period safe-element">Per month</span>
+                                </div>
                             </div>
+                            <div class="description allow-drop">
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when.</p>
 
-                            <div class="allow-drop">
-                                <h4 class="m-b-30">Beautiful Website</h4>
-
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when .</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="m-b-40 col-sm-6 col-lg-4 cloneable">
-                        <div class="card shadow-sm">
-                            <div class="stamp">
-                                <i class="mw-micon-Earphones safe-element"></i>
-                            </div>
-
-                            <div class="allow-drop">
-                                <h4 class="m-b-30">Modern Design</h4>
-
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when .</p>
+                                <div class="element button-holder">
+                                    <module type="btn" template="bootstrap" button_style="btn-outline-primary" button_size="btn-lg btn-block" class="m-t-20" button_text="Purchase Now"/>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="m-b-40 col-sm-6 col-lg-4 cloneable">
-                        <div class="card shadow-sm">
-                            <div class="stamp">
-                                <i class="mw-micon-Duplicate-Window safe-element"></i>
+                    <div class="col-sm-6 col-md">
+                        <div class="plan">
+                            <div class="heading">
+                                <p class="safe-element">Team</p>
+                                <div class="price">
+                                    <small class="safe-element">$</small>
+                                    <span class="sum safe-element">32</span><span class="period safe-element">Per month</span>
+                                </div>
                             </div>
 
-                            <div class="allow-drop">
-                                <h4 class="m-b-30">Easy Interface</h4>
+                            <div class="description allow-drop">
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when.</p>
 
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when .</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="m-b-40 col-sm-6 col-lg-4 cloneable">
-                        <div class="card shadow-sm">
-                            <div class="stamp">
-                                <i class="mw-micon-Mouse-3 safe-element"></i>
-                            </div>
-
-                            <div class="allow-drop">
-
-                                <h4 class="m-b-30">Drag and Drop</h4>
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when .</p>
+                                <div class="element button-holder">
+                                    <module type="btn" template="bootstrap" button_style="btn-outline-primary" button_size="btn-lg btn-block" class="m-t-20" button_text="Purchase Now"/>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="m-b-40 col-sm-6 col-lg-4 cloneable">
-                        <div class="card shadow-sm">
-                            <div class="stamp">
-                                <i class="mw-micon-Hanger safe-element"></i>
+                    <div class="col-sm-6 col-md">
+                        <div class="plan">
+                            <div class="heading">
+                                <p class="safe-element">Personal</p>
+                                <div class="price">
+                                    <small class="safe-element">$</small>
+                                    <span class="sum safe-element">69</span><span class="period safe-element">Per month</span>
+                                </div>
                             </div>
 
-                            <div class="allow-drop">
-                                <h4 class="m-b-30">Online Store</h4>
+                            <div class="description allow-drop">
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when.</p>
 
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when .</p>
+                                <div class="element button-holder">
+                                    <module type="btn" template="bootstrap" button_style="btn-outline-primary" button_size="btn-lg btn-block" class="m-t-20" button_text="Purchase Now"/>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="m-b-40 col-sm-6 col-lg-4 cloneable">
-                        <div class="card shadow-sm">
-                            <div class="stamp">
-                                <i class="mw-micon-Duplicate-Window safe-element"></i>
+                    <div class="col-sm-6 col-md">
+                        <div class="plan">
+                            <div class="heading ">
+                                <p class="safe-element">Gold</p>
+
+                                <div class="price">
+                                    <small class="safe-element">$</small>
+                                    <span class="sum safe-element">99</span><span class="period safe-element">Per month</span>
+                                </div>
                             </div>
 
-                            <div class="allow-drop">
-                                <h4 class="m-b-30">Easy Interface</h4>
+                            <div class="description allow-drop">
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when.</p>
 
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when .</p>
+                                <div class="element button-holder">
+                                    <module type="btn" template="bootstrap" button_style="btn-outline-primary" button_size="btn-lg btn-block" class="m-t-20" button_text="Purchase Now"/>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -115,5 +111,4 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             </div>
         </div>
     </div>
-
 </section>

@@ -7,7 +7,6 @@
                         <img src="<?php print template_url(); ?>assets/img/logo_footer.png" alt="" class="m-b-10"/>
                         <br/>
                         <br/>
-                        <p><?php print powered_by_link(); ?></p>
                     </div>
 
                     <div class="col-12 col-lg-12 col-xl-5 mx-auto text-center text-xl-left m-b-40">
@@ -29,6 +28,16 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left edit" field="new-world_footer_copyright" rel="global">
+                    <p>All Rights Reserved © <?php date('Y'); ?> - Your Brand Ltd.</p>
+                </div>
+
+                <div class="col-md-6 text-center text-md-right">
+                    <p><?php print powered_by_link(); ?></p>
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -44,6 +53,7 @@
 <!-- Plugins -->
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;language=en-GB&amp;key=AIzaSyDbN7i-eF7dlNNp-bxbERNomOGYpZld3B0"></script>
 
+<script src="<?php print template_url(); ?>assets/plugins/elevatezoom/jquery.elevatezoom.js"></script>
 <script type="text/javascript" src="<?php print template_url(); ?>assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 

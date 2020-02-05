@@ -37,6 +37,9 @@ $config['stylesheet_compiler']['settings']['fontFamily']['options'] = array('lat
 
 $config['stylesheet_compiler']['settings']['bodyFontSize'] = array('type' => 'text', 'default' => '16px', 'label' => 'Body Font Size');
 
+$config['stylesheet_compiler']['settings']['hr'] = array('type' => 'dropdown_background_image_x', 'default' => "'../img/hr.svg'", 'label' => 'Choose your prefered delimeter');
+$config['stylesheet_compiler']['settings']['hr']['options'] = array("'../img/hr.svg'" => 'Wave', "'../img/hr-zigzag.svg'" => 'Zig Zag', "'../img/hr-line.svg'" => 'Line', "'../img/hr-none.svg'" => 'None');
+
 
 //Stylesheet Settings / accept type="dropdown" and type="text" and type="title" and type="delimiter"
 $config['template_settings'][] = array('type' => 'title', 'label' => 'Header Options');
@@ -106,3 +109,15 @@ $config['layouts_css_classes']['padding-bottom'][15] = 'p-b-150';
 $config['layouts_css_classes']['padding-bottom'][20] = 'p-b-200';
 $config['layouts_css_classes']['padding-bottom'][25] = 'p-b-250';
 $config['layouts_css_classes']['padding-bottom'][30] = 'p-b-300';
+
+$config['data-fields-product'] = array();
+$config['data-fields-product'][] = array(
+    'title' => 'Label',
+    'name' => 'label',
+    'type' => 'text'
+);
+$config['data-fields-product'][] = array(
+    'title' => 'Label Color',
+    'name' => 'label-color',
+    'type' => 'color'
+);

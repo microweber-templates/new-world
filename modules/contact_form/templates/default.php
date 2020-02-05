@@ -14,7 +14,7 @@ description: Default
 
 <div class="alert alert-success margin-bottom-30" id="msg<?php print $form_id; ?>" style="display:none;">
     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-    <strong><?php _lang("Thank You", "templates/guesthouse"); ?>!</strong> <?php _lang("Your message successfully sent", "templates/guesthouse"); ?>!
+    <strong><?php _lang("Thank You", "templates/new-world"); ?>!</strong> <?php _lang("Your message successfully sent", "templates/new-world"); ?>!
 </div>
 
 

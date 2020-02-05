@@ -14,13 +14,16 @@ description: Skin 6
 
 <?php if (is_array($data)): ?>
     <div class="elevatezoom">
-        <div class="elevatezoom-holder">
-            <span class="helper"></span>
-            <?php foreach ($data as $key => $item): ?>
-                <?php if ($key == 0): ?>
-                    <img id="elevatezoom" class="main-image" src="<?php print thumbnail($item['filename'], 800, 800); ?>" data-zoom-image="<?php print thumbnail($item['filename'], 1920, 1920); ?>"/>
-                <?php endif; ?>
-            <?php endforeach; ?>
+        <div class="square">
+            <div class="content">
+                <div class="elevatezoom-holder">
+                    <?php foreach ($data as $key => $item): ?>
+                        <?php if ($key == 0): ?>
+                            <img id="elevatezoom" class="main-image" src="<?php print thumbnail($item['filename'], 800, 800); ?>" data-zoom-image="<?php print thumbnail($item['filename'], 1920, 1920); ?>"/>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+                </div>
+            </div>
         </div>
 
         <div id="elevatezoom-gallery" class="js-popup-gallery">

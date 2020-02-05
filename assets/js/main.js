@@ -4,7 +4,7 @@
     var $window = $(window),
         $document = $(document);
 
-    var ventouxTheme = {
+    var defaultTheme = {
         isElementInViewport: function (el) {
             if (typeof jQuery === "function" && el instanceof jQuery) {
                 el = el[0];
@@ -22,13 +22,13 @@
         }
     }
 
-    window.ventouxTheme = ventouxTheme;
+    window.defaultTheme = defaultTheme;
 
     $window.on('load', function () {
-        ventouxTheme.stickyNav();
+        defaultTheme.stickyNav();
 
         $window.on('scroll resize', function () {
-            ventouxTheme.stickyNav();
+            defaultTheme.stickyNav();
         });
     });
 
@@ -43,7 +43,7 @@
 
         if ($(document.body).hasClass('sticky-nav')) {
             var navHeight = $('.navigation').outerHeight();
-            ventouxTheme.stickyNav();
+            defaultTheme.stickyNav();
         }
 
         $('.js-menu-toggle').on('click', function () {
@@ -736,3 +736,69 @@ $(document).ready(function () {
         // AOS.init();
     }
 })
+
+
+
+/* ###################### Elevate Zoom ###################### */
+$(document).ready(function () {
+
+    var elevateZoomTurnOn = $(document).width() > 991 ? true : false;
+
+    if (elevateZoomTurnOn) {
+        $("#elevatezoom").elevateZoom({
+            gallery: 'elevatezoom-gallery',
+            cursor: "crosshair",
+            galleryActiveClass: 'active',
+            imageCrossfade: true,
+            zoomType: "inner"
+        });
+
+
+        //pass the images to Fancybox
+        $("#elevatezoom").bind("click", function (e) {
+            var ez = $('#elevatezoom').data('elevateZoom');
+
+            var res = [];
+            $.each(ez.getGalleryList(), function () {
+                res.push({src: this.href})
+            });
+
+            $.magnificPopup.open({
+                items: res,
+                gallery: {
+                    enabled: true
+                },
+                type: 'image'
+            });
+
+            return false;
+        });
+    }
+
+    var eGallery = $('#elevatezoom-gallery');
+    if (eGallery.length > 0) {
+        eGallery.each(function () {
+            var el = $(this);
+            el.slick({
+                centerMode: true,
+                centerPadding: '0',
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                arrows: true,
+                autoplay: false,
+                autoplaySpeed: 2000,
+                dots: false,
+                infinite: true,
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    }
+                ]
+            });
+        });
+    }
+});
+/* ###################### Elevate Zoom ###################### */

@@ -29,6 +29,16 @@ if (!isset($tn[1])) {
             <?php $categories = content_categories($item['id']); ?>
 
             <?php
+            $itemData = content_data($item['id']);
+            $itemTags = content_tags($item['id']);
+
+            if (!isset($itemData['label'])) {
+                $itemData['label'] = '';
+            }
+            if (!isset($itemData['label-color'])) {
+                $itemData['label-color'] = '';
+            }
+
             $itemCats = '';
             if ($categories) {
                 foreach ($categories as $category) {
@@ -46,39 +56,48 @@ if (!isset($tn[1])) {
                             <input type="hidden" name="content_id" value="<?php print $item['id'] ?>"/>
                             <?php break; endforeach; ?>
                     <?php endif; ?>
-                    <div class="product-label sale">Sale</div>
+
+                    <?php if ($itemData['label'] != ''): ?>
+                        <div class="product-label" style="background-color: <?php echo $itemData['label-color']; ?>;"><?php echo $itemData['label']; ?></div>
+                    <?php endif; ?>
 
                     <?php if ($show_fields == false or in_array('thumbnail', $show_fields)): ?>
                         <div class="image" style="background-image: url('<?php print thumbnail($item['image'], 450, 450); ?>');">
-                            <div class="hover">
+                            <a href="<?php print $item['link'] ?>" class="d-flex h-100 w-100"></a>
+                            <?php /*<div class="hover">
                                 <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
                                     <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-primary"><i class="material-icons">shopping_cart</i></a>
                                 <?php endif; ?>
                                 <?php if ($show_fields == false or ($show_fields != false and in_array('read_more', $show_fields))): ?>
                                     <a href="<?php print $item['link'] ?>" class="btn btn-default"><i class="material-icons">remove_red_eye</i></a>
                                 <?php endif; ?>
-                            </div>
+                            </div>*/ ?>
                         </div>
                     <?php endif; ?>
 
-                    <a href="<?php print $item['link'] ?>">
-                        <div class="description">
-                            <?php if ($show_fields == false or in_array('title', $show_fields)): ?>
-                                <h3><?php print $item['title'] ?></h3>
-                            <?php endif; ?>
 
-                            <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
-                                <div class="price">
-                                    <?php if (isset($item['prices']) and is_array($item['prices'])) { ?>
-                                        <?php
-                                        $vals2 = array_values($item['prices']);
-                                        $val1 = array_shift($vals2); ?>
-                                        <span><?php print currency_format($val1); ?></span>
-                                    <?php } ?>
+                    <div class="m-t-20">
+                        <?php if ($show_fields == false or in_array('title', $show_fields)): ?>
+                            <a href="<?php print $item['link'] ?>">
+                                <div class="heading-holder">
+                                    <h5><?php print $item['title'] ?></h5>
                                 </div>
-                            <?php endif; ?>
-                        </div>
-                    </a>
+                            </a>
+                        <?php endif; ?>
+
+                        <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p><span class="price-old"><?php print currency_format(get_product_price($item['id'])); ?></span> <span class="price"><?php print currency_format(get_product_price($item['id'])); ?></span></p>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
+                                        <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-primary"><i class="material-icons">shopping_cart</i> Add to cart</a>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
+                        <?php endif; ?>
+                    </div>
                 </div>
             </div>
         <?php endforeach; ?>

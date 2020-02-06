@@ -83,7 +83,6 @@
             }
         });
 
-        // $('.dropdown-toggle').dropdown()
     });
 
 
@@ -507,24 +506,23 @@
 })();
 
 $(document).ready(function () {
-    $('#mw-template-beauty').removeClass('module');
+    $('#mw-template-new-world').removeClass('module');
 })
 
-$(document).ready(function () {
-    $('.navigation .menu .list.menu_1').collapseNav({
+/*$(document).ready(function () {
+    $('.navigation .menu .list.menu-root').collapseNav({
         responsive: 1,
         mobile_break: 992,
         li_class: 'has-sub-menu dropdown'
     });
 
     if ($(window).width() <= 991) {
-        $('.navigation .menu .list.menu_1 .has-sub-menu a.dropdown-toggle').attr('href', 'javascript:;');
-        $('.navigation .menu .list.menu_1 .has-sub-menu').on('click', function (e) {
+        $('.navigation .menu .list.menu-root .has-sub-menu a.dropdown-toggle').attr('href', 'javascript:;');
+        $('.navigation .menu .list.menu-root .has-sub-menu').on('click', function (e) {
             // e.preventDefault();
         })
     }
-
-})
+})*/
 
 /* Ajax Loading */
 $(window).on('load', function () {

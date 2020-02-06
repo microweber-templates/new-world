@@ -37,7 +37,7 @@
     <link href="<?php print template_url(); ?>assets/plugins/magnific-popup/magnific-popup.css" rel="stylesheet"/>
 
     <link href="<?php print template_url(); ?>assets/css/typography.css" rel="stylesheet"/>
-<!--    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>-->
+    <!--    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>-->
 
 
     <?php print get_template_stylesheet(); ?>
@@ -97,7 +97,7 @@
                         <module type="menu" id="header-menu" template="navbar"/>
 
                         <ul class="list mobile-list">
-                            <?php if ($profile_link == 'true'): ?>
+                            <?php if ($header_profile_link == 'true'): ?>
                                 <li class="mobile-profile">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><i class="fa fa-user-circle-o"></i> <span>Hi <?php print user_name(); ?> <span class="caret"></span></span></a>
                                     <ul class="dropdown-menu">
@@ -119,12 +119,14 @@
                                 </li>
                             <?php endif; ?>
 
-                            <li class="mobile-search">
-                                <form action="<?php print site_url(); ?>search.php" method="get">
-                                    <input type="search" id="keywords" name="keywords" placeholder="SEARCH"/>
-                                    <button type="submit"><i class="fa fa-search"></i></button>
-                                </form>
-                            </li>
+                            <?php if ($header_search == 'true'): ?>
+                                <li class="mobile-search">
+                                    <form action="<?php print site_url(); ?>search.php" method="get">
+                                        <input type="search" id="keywords" name="keywords" placeholder="SEARCH"/>
+                                        <button type="submit"><i class="fa fa-search"></i></button>
+                                    </form>
+                                </li>
+                            <?php endif; ?>
 
                             <li class="mobile-socials">
                                 <module type="social_links" id="site_socials"/>
@@ -154,15 +156,31 @@
                             </li>
                         <?php endif; ?>
 
-                        <?php if ($header_login == 'true'): ?>
-                            <li class="btn-additional">
-                                <a href="javascript:;" class="btn btn-primary">Log in</a>
-                            </li>
+                        <?php if ($header_profile_link == 'true'): ?>
+                            <?php if (user_id()): ?>
+                                <li class="btn-additional d-none d-md-inline-block">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#loginModal" class="btn btn-primary"><?php _e("Profile"); ?></a>
+                                </li>
+                                <li class="btn-additional d-none d-md-inline-block">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#ordersModal" class="btn btn-primary"><?php _e("My Orders"); ?></a>
+                                </li>
+                            <?php else: ?>
+                                <li class="btn-additional d-none d-md-inline-block">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#loginModal" class="btn btn-primary"><?php _e("Log in"); ?></a>
+                                </li>
+                            <?php endif; ?>
                         <?php endif; ?>
 
-                        <?php if ($header_signup == 'true'): ?>
-                            <li class="btn-additional">
-                                <a href="javascript:;" class="btn btn-primary">0 <span class="fas fa-shopptiong-cart"></span></a>
+                        <?php if ($shopping_cart == 'true'): ?>
+                            <li class="btn-additional dropdown">
+                                <a href="javascript:;" class="dropdown-toggle btn btn-link" data-toggle="dropdown">
+                                    <span><span id="shopping-cart-quantity"><?php print cart_sum(false); ?></span> <span class="caret"></span></span> <i class="fas fa-shopping-cart"></i>
+                                </a>
+                                <ul class="dropdown-menu shopping-cart">
+                                    <li class="">
+                                        <module type="shop/cart" template="small_modal"/>
+                                    </li>
+                                </ul>
                             </li>
                         <?php endif; ?>
 

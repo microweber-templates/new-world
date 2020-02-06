@@ -85,7 +85,7 @@ if (!isset($tn[1])) {
 
                         <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-6 price-holder">
                                     <p><span class="price-old"><?php print currency_format(get_product_price($item['id'])); ?></span> <span class="price"><?php print currency_format(get_product_price($item['id'])); ?></span></p>
                                 </div>
                                 <div class="col-6 text-right">

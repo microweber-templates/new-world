@@ -47,9 +47,6 @@ $config['template_settings'][] = array('type' => 'title', 'label' => 'Header Opt
 $config['template_settings']['sticky_navigation'] = array('type' => 'dropdown', 'default' => 'sticky-nav', 'label' => 'Sticky Sidebar');
 $config['template_settings']['sticky_navigation']['options'] = array('sticky-nav' => 'Yes', '' => 'No');
 
-$config['template_settings']['profile_link'] = array('type' => 'dropdown', 'default' => 'false', 'label' => 'Show Profile link in header');
-$config['template_settings']['profile_link']['options'] = array('false' => 'No');
-
 $config['template_settings']['preloader'] = array('type' => 'dropdown', 'default' => 'false', 'label' => 'Turn on preloader');
 $config['template_settings']['preloader']['options'] = array('true' => 'Yes', 'false' => 'No');
 
@@ -59,11 +56,8 @@ $config['template_settings']['header_posts']['options'] = array('true' => 'Yes',
 $config['template_settings']['header_search'] = array('type' => 'dropdown', 'default' => 'false', 'label' => 'Show search in Header');
 $config['template_settings']['header_search']['options'] = array('true' => 'Yes', 'false' => 'No');
 
-$config['template_settings']['header_login'] = array('type' => 'dropdown', 'default' => 'true', 'label' => 'Show Login in Header');
-$config['template_settings']['header_login']['options'] = array('true' => 'Yes', 'false' => 'No');
-
-$config['template_settings']['header_signup'] = array('type' => 'dropdown', 'default' => 'true', 'label' => 'Show Sign Up in Header');
-$config['template_settings']['header_signup']['options'] = array('true' => 'Yes', 'false' => 'No');
+$config['template_settings']['header_profile_link'] = array('type' => 'dropdown', 'default' => 'true', 'label' => 'Show Profile link in Header');
+$config['template_settings']['header_profile_link']['options'] = array('true' => 'Yes', 'false' => 'No');
 
 $config['template_settings']['top_nav'] = array('type' => 'dropdown', 'default' => 'false', 'label' => 'Show Top Navigation');
 $config['template_settings']['top_nav']['options'] = array('true' => 'Yes', 'false' => 'No');
@@ -74,6 +68,9 @@ $config['template_settings'][] = array('type' => 'title', 'label' => 'Footer Opt
 
 $config['template_settings']['footer'] = array('type' => 'dropdown', 'default' => 'true', 'label' => 'Turn on Footer for the website', 'help' => 'You can hide the footer from your website');
 $config['template_settings']['footer']['options'] = array('true' => 'Yes', 'false' => 'No');
+
+$config['template_settings']['shopping_cart'] = array('type' => 'dropdown', 'default' => 'true', 'label' => 'Turn on Shopping cart in header', 'help' => 'You can hide the shopping cart button from your website header');
+$config['template_settings']['shopping_cart']['options'] = array('true' => 'Yes', 'false' => 'No');
 
 
 //Layouts Padding Top & Bottom classes definiton

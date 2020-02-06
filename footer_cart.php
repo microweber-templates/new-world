@@ -106,6 +106,17 @@
 </script>
 
 
+<?php if ($shopping_cart == 'true'): ?>
+
+
+    <script>
+        mw.require('shop.js');
+
+
+    </script>
+
+
+<?php endif; ?>
 
 
 <!-- Login Modal -->

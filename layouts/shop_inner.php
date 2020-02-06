@@ -83,8 +83,10 @@ $prev = prev_content();
                                             </div>
                                         </div>
 
-                                        <div class="col-12">
-                                            <p><span class="price-old"><?php print currency_format(get_product_price()); ?></span> <span class="price"><?php print currency_format(get_product_price()); ?></span></p>
+                                        <div class="row main-price">
+                                            <div class="col-12">
+                                                <p><span class="price-old"><?php print currency_format(get_product_price()); ?></span> <span class="price"><?php print currency_format(get_product_price()); ?></span></p>
+                                            </div>
                                         </div>
 
 

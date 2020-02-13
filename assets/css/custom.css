@@ -165,6 +165,7 @@ body.mw-live-edit {
     background-color: #f5f5f5 !important;
 }
 
+/*
 .navigation .menu .list.menu-root:not(.collapseNav-initialized) li {
     opacity: 0 !important;
     visibility: hidden !important;
@@ -182,3 +183,4 @@ body.mw-live-edit {
     -webkit-transition: none !important;
     -moz-transition: none !important;
 }
+*/

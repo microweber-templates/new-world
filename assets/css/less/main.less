@@ -263,6 +263,11 @@ h5 {
     }*/
 }
 
+.typography-area ul li {
+  list-style-type: circle;
+  display: list-item;
+}
+
 @import "color-loops";
 
 .cuted:after,
@@ -1007,7 +1012,9 @@ body.page-loaded .js-ajax-loading {
  **************** Navigation *************** *
  ******************************************* */
 
-@import "navigation";
+@import "nav";
+@import "mixin";
+//@import "navigation";
 
 /* *******************************************
  **************** Margins *************** *
@@ -4923,7 +4930,6 @@ a.dropdown-toggle::after {
     padding: 1.7rem;
   }
 
-
   .dropdown-menu.shopping-cart .products {
     padding-bottom: 0;
   }
@@ -5877,6 +5883,7 @@ a.dropdown-toggle::after {
   .bx-wrapper .bx-controls-direction a.bx-prev {
     //left: 5%;
     left: 0%;
+    text-align: right;
   }
 
   .bx-wrapper .bx-controls-direction a.bx-prev:before {

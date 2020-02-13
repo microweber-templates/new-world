@@ -15,6 +15,10 @@
 
 
 <div class="edit main-content" rel="content" field="new-world_content">
+    <module type="layouts" template="skin-1"/>
+
+
+
 
     <module type="layouts" template="skin-2"/>
     <module type="layouts" template="skin-69"/>

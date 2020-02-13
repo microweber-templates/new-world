@@ -125,7 +125,7 @@ $config['stylesheet_compiler']['settings'][] = array('type' => 'title', 'label' 
 $config['stylesheet_compiler']['settings']['header-background-color'] = array('type' => 'color', 'default' => '#fff', 'label' => 'Header background color');
 
 
-$config['template_settings']['header_style'] = array('type' => 'dropdown_image', 'default' => 'header_style_8', 'label' => 'Header Style');
+$config['template_settings']['header_style'] = array('type' => 'dropdown_image', 'default' => 'header_style_2', 'label' => 'Header Style');
 $config['template_settings']['header_style']['options'] = array(
     'header_style_1' => 'Header 1: One row - Left logo & Right navigation',
     'header_style_2' => 'Header 2: One row - Left logo & Center navigation',
@@ -133,8 +133,8 @@ $config['template_settings']['header_style']['options'] = array(
     'header_style_4' => 'Header 4: One row - Center logo & Right navigation',
     'header_style_5' => 'Header 5: Two rows - Center logo & Center navigation & Socials',
     'header_style_6' => 'Header 6: Two rows - Center logo & Center navigation & Contacts',
-    'header_style_7' => 'Header: Two rows - 3',
-    'header_style_8' => 'Header: Two rows - 4',
+    'header_style_7' => 'Header 7: One row - Left logo & Left navigation & Primary Background',
+    'header_style_8' => 'Header 8: Two rows - Left logo & Center navigation',
     'header_style_9' => 'Header 9: One row - Sidebar with Burger');
 
 $config['template_settings']['profile_link'] = array('type' => 'dropdown', 'default' => 'true', 'label' => 'Show Profile link in header');

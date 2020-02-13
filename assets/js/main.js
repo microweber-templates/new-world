@@ -45,8 +45,6 @@
             var navHeight = $('.navigation').outerHeight();
             defaultTheme.stickyNav();
         }
-
-
     });
 
 
@@ -495,50 +493,25 @@ $(window).on('load', function () {
     }, 900);
 })
 
-$(document).ready(function () {
-    $('.member-nav .search input').on('keyup', function () {
-        if ($(this).val() != '') {
-            $(this).parent().parent().addClass('focused');
-        } else {
-            $(this).parent().parent().removeClass('focused');
-        }
-    });
-
-    if ($('.member-nav .search input').val() != '') {
-        $(this).parent().parent().addClass('focused');
-    } else {
-        $(this).parent().parent().removeClass('focused');
-    }
-})
 
 $(document).ready(function () {
-    $('.js-show-challenges').on('click', function () {
+    $('.js-show-posts').on('click', function () {
         if ($(window).width() >= 992) {
-            if ($('.js-challanges-menu').hasClass('opened')) {
-                $('.js-challanges-menu').slideUp('slow');
-                $('.js-challanges-menu').removeClass('opened');
+            if ($('.js-posts-menu').hasClass('opened')) {
+                $('.js-posts-menu').slideUp('slow');
+                $('.js-posts-menu').removeClass('opened');
             } else {
-                $('.js-challanges-menu').slideDown('slow');
-                $('.js-challanges-menu').addClass('opened');
+                $('.js-posts-menu').slideDown('slow');
+                $('.js-posts-menu').addClass('opened');
             }
         } else {
-            if ($('.js-challanges-menu').hasClass('opened')) {
-                $('.js-challanges-menu').hide("slide", {direction: "right"}, 500);
-                $('.js-challanges-menu').removeClass('opened');
+            if ($('.js-posts-menu').hasClass('opened')) {
+                $('.js-posts-menu').hide("slide", {direction: "right"}, 500);
+                $('.js-posts-menu').removeClass('opened');
             } else {
-                $('.js-challanges-menu').show("slide", {direction: "right"}, 500);
-                $('.js-challanges-menu').addClass('opened');
+                $('.js-posts-menu').show("slide", {direction: "right"}, 500);
+                $('.js-posts-menu').addClass('opened');
             }
-        }
-    });
-
-    $('.js-show-mobile-search').on('click', function () {
-        if ($('.mobile-search-holder').hasClass('mobile-opened')) {
-            $('.mobile-search-holder').slideUp('slow');
-            $('.mobile-search-holder').removeClass('mobile-opened');
-        } else {
-            $('.mobile-search-holder').slideDown('slow');
-            $('.mobile-search-holder').addClass('mobile-opened');
         }
     });
 })

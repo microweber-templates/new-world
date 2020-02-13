@@ -7,8 +7,15 @@
             <form class="d-flex flex-nowrap" action="<?php print site_url(); ?>search" method="get">
                 <i class="fa fa-search"></i>
                 <input type="search" placeholder="" id="keywords" name="keywords"/>
-                <button class="btn btn-primary btn-sm d-flex flex-center" type="submit"> Search </button>            
+                <button class="btn btn-primary btn-sm d-flex flex-center" type="submit"> Search</button>
             </form>
         </div>
     </li>
 <?php endif; ?>
+
+<?php if ($header_posts == 'true'): ?>
+    <li class="btn-posts ml-4">
+        <a href="javascript:;" class="dropdown-toggle js-show-posts"><i class="fas fa-blog"></i></a>
+    </li>
+<?php endif; ?>
+

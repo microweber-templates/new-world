@@ -21,13 +21,15 @@ position: 4
         <div class="row">
             <div class="col-xl-12 mx-auto">
                 <div class="row justify-content-between">
-                    <div class="col-sm-12 col-md-8 col-lg-9 col-xl-9">
-                        <module type="shop/products"/>
+                    <div class="<?php if ($shop_sidebar == 'true'): ?>col-sm-12 col-md-8 col-lg-9 col-xl-9<?php else: ?>col-12<?php endif; ?>">
+                        <module type="shop/products" <?php if ($shop_sidebar == 'false'): ?>template="skin-1"<?php endif; ?>/>
                     </div>
 
-                    <div class="col-sm-12 col-md-4 col-lg-3 col-xl-2">
-                        <?php include('shop_sidebar.php'); ?>
-                    </div>
+                    <?php if ($shop_sidebar == 'true'): ?>
+                        <div class="col-sm-12 col-md-4 col-lg-3 col-xl-2">
+                            <?php include('shop_sidebar.php'); ?>
+                        </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>

@@ -32,4 +32,5 @@
             </div>
         </div>
     </div>
+    <?php include('parts/header_posts_holder.php'); ?>
 </nav>

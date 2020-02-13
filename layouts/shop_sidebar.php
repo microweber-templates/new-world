@@ -1,4 +1,4 @@
-<div class="edit allow-drop" field="active_shop_sidebar" rel="inherit">
+<div class="edit allow-drop" field="new-world_shop_sidebar" rel="inherit">
     <div class="sidebar">
         <div class="sidebar__widget search-holder">
             <module type="search" data-search-type="shop"/>

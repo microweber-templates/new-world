@@ -4,19 +4,6 @@
             <?php
             $itemData = content_data($item['id']);
             $itemTags = content_tags($item['id']);
-
-            if (!isset($itemData['challenge-type'])) {
-                $itemData['challenge-type'] = '';
-            }
-            if (!isset($itemData['challenge-distance'])) {
-                $itemData['challenge-distance'] = '';
-            }
-            if (!isset($itemData['challenge-difficulty'])) {
-                $itemData['challenge-difficulty'] = '';
-            }
-            if (!isset($itemData['challenge-short-description'])) {
-                $itemData['challenge-short-description'] = '';
-            }
             ?>
 
             <div class="event">
@@ -29,7 +16,6 @@
                 <?php endif; ?>
 
                 <div class="info">
-                    <p class="km"><?php print $itemData['challenge-distance'] ?></p>
                     <h5><?php print $item['title'] ?></h5>
                 </div>
             </div>

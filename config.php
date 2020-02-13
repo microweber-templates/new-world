@@ -14,21 +14,28 @@ $config['is_default'] = 0; //if you set this parameter the template will be sele
 $config['stylesheet_compiler']['source_file'] = 'assets/css/less/main.less';
 $config['stylesheet_compiler']['css_file'] = 'assets/css/main.css';
 
-$config['stylesheet_compiler']['settings'][] = array('type' => 'title', 'label' => 'Default colors');
-$config['stylesheet_compiler']['settings']['background'] = array('type' => 'color', 'default' => '#fff', 'label' => 'Background color');
-$config['stylesheet_compiler']['settings']['default'] = array('type' => 'color', 'default' => '#0044de', 'label' => 'Default color');
-$config['stylesheet_compiler']['settings']['defaultHover'] = array('type' => 'color', 'default' => '#454D64', 'label' => 'Default Hover color');
-$config['stylesheet_compiler']['settings']['primary'] = array('type' => 'color', 'default' => '#0044de', 'label' => 'Primary color');
-$config['stylesheet_compiler']['settings']['secondary'] = array('type' => 'color', 'default' => '#6aabcf', 'label' => 'Secondary color');
-$config['stylesheet_compiler']['settings']['dark'] = array('type' => 'color', 'default' => '#3f4043', 'label' => 'Dark color');
-$config['stylesheet_compiler']['settings']['light'] = array('type' => 'color', 'default' => '#f4f4f4', 'label' => 'Light color');
-
 $config['stylesheet_compiler']['settings'][] = array('type' => 'delimiter');
 
-$config['stylesheet_compiler']['settings']['textDark'] = array('type' => 'color', 'default' => '#3f4043', 'label' => 'Text Dark');
-$config['stylesheet_compiler']['settings']['textLight'] = array('type' => 'color', 'default' => '#fff', 'label' => 'Text Light');
-$config['stylesheet_compiler']['settings']['silver'] = array('type' => 'color', 'default' => '#f3f3f3', 'label' => 'Silver');
+$config['stylesheet_compiler']['settings'][] = array('type' => 'title', 'label' => 'Default colors');
+$config['stylesheet_compiler']['settings']['background'] = array('type' => 'color', 'default' => '#fff', 'label' => 'Background color');
+
+$config['stylesheet_compiler']['settings']['default'] = array('type' => 'color', 'default' => '#212121', 'label' => 'Default color');
+$config['stylesheet_compiler']['settings']['primary'] = array('type' => 'color', 'default' => '#0044de', 'label' => 'Primary color');
+$config['stylesheet_compiler']['settings']['secondary'] = array('type' => 'color', 'default' => '#6aabcf', 'label' => 'Secondary color');
+
+$config['stylesheet_compiler']['settings'][] = array('type' => 'delimiter');
+$config['stylesheet_compiler']['settings'][] = array('type' => 'title', 'label' => 'Texts colors');
+$config['stylesheet_compiler']['settings']['textDark'] = array('type' => 'color', 'default' => '#212121', 'label' => 'Text Dark');
+$config['stylesheet_compiler']['settings']['textLight'] = array('type' => 'color', 'default' => '#f4f4f4', 'label' => 'Text Light');
+
+$config['stylesheet_compiler']['settings'][] = array('type' => 'delimiter');
+$config['stylesheet_compiler']['settings'][] = array('type' => 'title', 'label' => 'Other colors');
+$config['stylesheet_compiler']['settings']['dark'] = array('type' => 'color', 'default' => '#3f4043', 'label' => 'Dark color');
+$config['stylesheet_compiler']['settings']['light'] = array('type' => 'color', 'default' => '#fff', 'label' => 'Light color');
 $config['stylesheet_compiler']['settings']['grey'] = array('type' => 'color', 'default' => '#bfbfbf', 'label' => 'Grey');
+$config['stylesheet_compiler']['settings']['silver'] = array('type' => 'color', 'default' => '#f3f3f3', 'label' => 'Silver');
+
+$config['stylesheet_compiler']['settings'][] = array('type' => 'delimiter');
 
 $config['stylesheet_compiler']['settings'][] = array('type' => 'title', 'label' => 'Font Settings');
 
@@ -41,26 +48,45 @@ $config['stylesheet_compiler']['settings']['hr'] = array('type' => 'dropdown_bac
 $config['stylesheet_compiler']['settings']['hr']['options'] = array("'../img/hr.svg'" => 'Wave', "'../img/hr-zigzag.svg'" => 'Zig Zag', "'../img/hr-line.svg'" => 'Line', "'../img/hr-none.svg'" => 'None');
 
 
+$config['template_settings'][] = array('type' => 'delimiter');
+
 //Stylesheet Settings / accept type="dropdown" and type="text" and type="title" and type="delimiter"
+//Header settings
 $config['template_settings'][] = array('type' => 'title', 'label' => 'Header Options');
+
+$config['template_settings']['header_style'] = array('type' => 'dropdown_image', 'default' => 'header_style_2', 'label' => 'Navigation Style');
+$config['template_settings']['header_style']['options'] = array(
+    'header_style_1' => 'Header 1: One row - Left logo & Right navigation',
+    'header_style_2' => 'Header 2: One row - Left logo & Center navigation',
+    'header_style_3' => 'Header 3: One row - Left navigation & Center logo',
+    'header_style_4' => 'Header 4: One row - Center logo & Right navigation',
+    'header_style_5' => 'Header 5: Two rows - Center logo & Center navigation & Socials',
+    'header_style_6' => 'Header 6: Two rows - Center logo & Center navigation & Contacts',
+    'header_style_7' => 'Header 7: One row - Left logo & Left navigation & Primary Background',
+    'header_style_8' => 'Header 8: Two rows - Left logo & Center navigation',
+    'header_style_9' => 'Header 9: One row - Sidebar with Burger');
 
 $config['template_settings']['sticky_navigation'] = array('type' => 'dropdown', 'default' => 'sticky-nav', 'label' => 'Sticky Sidebar');
 $config['template_settings']['sticky_navigation']['options'] = array('sticky-nav' => 'Yes', '' => 'No');
 
-$config['template_settings']['preloader'] = array('type' => 'dropdown', 'default' => 'false', 'label' => 'Turn on preloader');
-$config['template_settings']['preloader']['options'] = array('true' => 'Yes', 'false' => 'No');
+$config['template_settings']['profile_link'] = array('type' => 'dropdown', 'default' => 'true', 'label' => 'Show Profile link', 'help' => 'You can hide the profile button from your website header');
+$config['template_settings']['profile_link']['options'] = array('true' => 'Yes', 'false' => 'No');
 
-$config['template_settings']['header_posts'] = array('type' => 'dropdown', 'default' => 'false', 'label' => 'Show posts button in Header');
+$config['template_settings']['search_bar'] = array('type' => 'dropdown', 'default' => 'true', 'label' => 'Show Search bar', 'help' => 'You can hide the search bar button from your website header');
+$config['template_settings']['search_bar']['options'] = array('true' => 'Yes', 'false' => 'No');
+
+$config['template_settings']['shopping_cart'] = array('type' => 'dropdown', 'default' => 'true', 'label' => 'Show Shopping cart', 'help' => 'You can hide the shopping cart button from your website header');
+$config['template_settings']['shopping_cart']['options'] = array('true' => 'Yes', 'false' => 'No');
+
+$config['template_settings']['header_posts'] = array('type' => 'dropdown', 'default' => 'false', 'label' => 'Show Posts button');
 $config['template_settings']['header_posts']['options'] = array('true' => 'Yes', 'false' => 'No');
 
-$config['template_settings']['header_search'] = array('type' => 'dropdown', 'default' => 'false', 'label' => 'Show search in Header');
-$config['template_settings']['header_search']['options'] = array('true' => 'Yes', 'false' => 'No');
+$config['template_settings'][] = array('type' => 'delimiter');
 
-$config['template_settings']['header_profile_link'] = array('type' => 'dropdown', 'default' => 'true', 'label' => 'Show Profile link in Header');
-$config['template_settings']['header_profile_link']['options'] = array('true' => 'Yes', 'false' => 'No');
+$config['template_settings'][] = array('type' => 'title', 'label' => 'Shop Options');
 
-$config['template_settings']['top_nav'] = array('type' => 'dropdown', 'default' => 'false', 'label' => 'Show Top Navigation');
-$config['template_settings']['top_nav']['options'] = array('true' => 'Yes', 'false' => 'No');
+$config['template_settings']['shop_sidebar'] = array('type' => 'dropdown', 'default' => 'true', 'label' => 'Show sidebar in shop');
+$config['template_settings']['shop_sidebar']['options'] = array('true' => 'Yes', 'false' => 'No');
 
 $config['template_settings'][] = array('type' => 'delimiter');
 
@@ -69,9 +95,12 @@ $config['template_settings'][] = array('type' => 'title', 'label' => 'Footer Opt
 $config['template_settings']['footer'] = array('type' => 'dropdown', 'default' => 'true', 'label' => 'Turn on Footer for the website', 'help' => 'You can hide the footer from your website');
 $config['template_settings']['footer']['options'] = array('true' => 'Yes', 'false' => 'No');
 
-$config['template_settings']['shopping_cart'] = array('type' => 'dropdown', 'default' => 'true', 'label' => 'Turn on Shopping cart in header', 'help' => 'You can hide the shopping cart button from your website header');
-$config['template_settings']['shopping_cart']['options'] = array('true' => 'Yes', 'false' => 'No');
+$config['template_settings'][] = array('type' => 'delimiter');
 
+$config['template_settings'][] = array('type' => 'title', 'label' => 'Other Options');
+
+$config['template_settings']['preloader'] = array('type' => 'dropdown', 'default' => 'false', 'label' => 'Turn on preloader');
+$config['template_settings']['preloader']['options'] = array('true' => 'Yes', 'false' => 'No');
 
 //Layouts Padding Top & Bottom classes definiton
 $config['layouts_css_classes'] = [];
@@ -118,35 +147,3 @@ $config['data-fields-product'][] = array(
     'name' => 'label-color',
     'type' => 'color'
 );
-
-
-//Header settings
-$config['stylesheet_compiler']['settings'][] = array('type' => 'title', 'label' => 'Header settings');
-$config['stylesheet_compiler']['settings']['header-background-color'] = array('type' => 'color', 'default' => '#fff', 'label' => 'Header background color');
-
-
-$config['template_settings']['header_style'] = array('type' => 'dropdown_image', 'default' => 'header_style_2', 'label' => 'Header Style');
-$config['template_settings']['header_style']['options'] = array(
-    'header_style_1' => 'Header 1: One row - Left logo & Right navigation',
-    'header_style_2' => 'Header 2: One row - Left logo & Center navigation',
-    'header_style_3' => 'Header 3: One row - Left navigation & Center logo',
-    'header_style_4' => 'Header 4: One row - Center logo & Right navigation',
-    'header_style_5' => 'Header 5: Two rows - Center logo & Center navigation & Socials',
-    'header_style_6' => 'Header 6: Two rows - Center logo & Center navigation & Contacts',
-    'header_style_7' => 'Header 7: One row - Left logo & Left navigation & Primary Background',
-    'header_style_8' => 'Header 8: Two rows - Left logo & Center navigation',
-    'header_style_9' => 'Header 9: One row - Sidebar with Burger');
-
-$config['template_settings']['profile_link'] = array('type' => 'dropdown', 'default' => 'true', 'label' => 'Show Profile link in header');
-$config['template_settings']['profile_link']['options'] = array('true' => 'Yes', 'false' => 'No');
-
-$config['template_settings']['search_bar'] = array('type' => 'dropdown', 'default' => 'true', 'label' => 'Show search bar in header');
-$config['template_settings']['search_bar']['options'] = array('true' => 'Yes', 'false' => 'No');
-
-$config['template_settings']['shop_sidebar'] = array('type' => 'dropdown', 'default' => 'false', 'label' => 'Show sidebar in shop');
-$config['template_settings']['shop_sidebar']['options'] = array('true' => 'Yes', 'false' => 'No');
-
-$config['template_settings']['shop_search'] = array('type' => 'dropdown', 'default' => 'false', 'label' => 'Show category search in shop');
-$config['template_settings']['shop_search']['options'] = array('true' => 'Yes', 'false' => 'No');
-
-

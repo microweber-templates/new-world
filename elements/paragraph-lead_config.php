@@ -1,7 +1,7 @@
 <?php
 
 $config = array();
-$config['name'] = "Highlighted Paragraph";
+$config['name'] = "Lead Paragraph";
 $config['author'] = "Microweber";
 $config['description'] = "";
 $config['website'] = "http://microweber.com";

@@ -17,7 +17,6 @@
 <div class="edit main-content">
     <section class="section d-flex">
         <div class="container align-self-center align-items-center">
-
             <!-- Headings -->
             <div class="row bg-silver">
                 <div class="col-lg-6 mx-auto text-center">
@@ -64,60 +63,37 @@
             <!-- Paragraphs -->
             <div class="row p-40">
                 <div class="col-lg-4 mx-auto">
-                    <p>Regular text<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <?php include(template_dir() . 'elements' . DS . 'paragraph.php'); ?>
                     <br/><br/>
                     <small>Small text<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
                 </div>
 
                 <div class="col-lg-4 mx-auto">
-                    <p class="lead">Lead text<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <?php include(template_dir() . 'elements' . DS . 'paragraph-lead.php'); ?>
                     <br/><br/>
-                    <p class="highlight">Highlighted text<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <?php include(template_dir() . 'elements' . DS . 'paragraph-highlight.php'); ?>
                 </div>
             </div>
 
             <!-- Lists -->
             <div class="row p-40 bg-silver">
                 <div class="col-lg-4 mx-auto text-center">
-                    <ol class="ol">
-                        <li><span>Peter Van Bouwel riep in 2006 Pglas in het leven</span></li>
-                        <li><span>Maar was toen al een tijdje in bijberoep aan de slag <br/>als installateur van glazen producten.</span></li>
-                        <li><span>Ik kende de stiel al toen ik voltijds met Pglas begon</span></li>
-                    </ol>
+                    <?php include(template_dir() . 'elements' . DS . 'ordered-list.php'); ?>
                 </div>
 
                 <div class="col-lg-4 mx-auto text-center">
-                    <ul class="ul">
-                        <li><span>Peter Van Bouwel riep in 2006 Pglas in het leven</span></li>
-                        <li><span>Maar was toen al een tijdje in bijberoep aan de slag als<br/> installateur van glazen producten.</span></li>
-                        <li><span>Ik kende de stiel al toen ik voltijds met Pglas begon</span></li>
-                    </ul>
+                    <?php include(template_dir() . 'elements' . DS . 'unordered-list.php'); ?>
                 </div>
             </div>
 
             <!-- Blockquotes -->
             <div class="row p-40">
                 <div class="col-lg-4 mx-auto text-left">
-                    <blockquote>
-                        Left aligned Blockquote. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci didunt ut labore et dolore
-                        <div class="testimonial">
-                            <img src="<?php print template_url(); ?>assets/img/testimonial.png"/>
-                            <span class="name">Margje Jutten</span>
-                            <span class="info">Homelesscup</span>
-                        </div>
-                    </blockquote>
+                    <?php include(template_dir() . 'elements' . DS . 'blockquote.php'); ?>
                 </div>
 
                 <div class="col-lg-4 mx-auto text-center">
-
-                    <blockquote>
-                        Centered Blockquote. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci didunt ut labore et dolore
-                        <div class="testimonial">
-                            <img src="<?php print template_url(); ?>assets/img/testimonial.png"/>
-                            <span class="name">Margje Jutten</span>
-                            <span class="info">Homelesscup</span>
-                        </div>
-                    </blockquote>
+                    <?php include(template_dir() . 'elements' . DS . 'blockquote.php'); ?>
                 </div>
             </div>
 
@@ -210,63 +186,6 @@
 
                 <div class="col-lg-2 mx-auto text-left">
                     <a href="#" class="button-8 button-red"><span>Read more</span></a>
-                </div>
-            </div>
-
-            <!-- Patterns -->
-            <div class="row m-b-40">
-                <div class="col-lg-6 p-40 mx-auto bg-waves primary">
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                </div>
-
-                <div class="col-lg-6 mx-auto">
-                    <div class="p-40 bg-pines primary">
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row bg-default">
-                <div class="col-lg-6 p-40 mx-auto bg-waves">
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                </div>
-
-                <div class="col-lg-6 mx-auto">
-                    <div class="p-40 bg-pines">
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Stamp with Backgrounded text -->
-            <div class="p-40 section-16">
-                <div class="row">
-                    <div class="col-12 text-center allow-drop">
-                        <div class="stamp">
-                            <i class="fa fa-calendar"></i>
-                        </div>
-                        <div class="position-relative p-b-50">
-                            <div class="text-background">Wish</div>
-                            <h2 class="m-b-20">Gratis fill &amp; go</h2>
-                            <p>Sed do eiusmod tempor incididunt u tempor <br>incididun. Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
                 </div>
             </div>
 

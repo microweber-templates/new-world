@@ -82,7 +82,7 @@
                             <div class="m-t-40 m-b-40 row">
                                 <div class="col-sm-4">
                                     <?php if ($itemTags): ?>
-                                        <div class="ventousx-tags">
+                                        <div class="posts-tags">
                                             <?php foreach ($itemTags as $tag): ?>
                                                 <span class="badge badge-primary"><?php echo $tag; ?></span>
                                             <?php endforeach; ?>

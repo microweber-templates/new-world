@@ -14,7 +14,7 @@ description: News 1
 
 <div class="row">
     <div class="col-xl-10 mx-auto">
-        <div class="row ventoux-news">
+        <div class="row new-world-news">
             <?php if (!empty($data)): ?>
                 <?php foreach ($data as $key => $item): ?>
                     <?php $itemData = content_data($item['id']); ?>

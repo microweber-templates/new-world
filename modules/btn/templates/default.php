@@ -15,14 +15,12 @@ description: Default
         mw.require('ui.css', true);
     </script>
 
-<?php
-if ($style == 'btn-default') {
-    $style = 1;
-}
-?>
-
 <?php if ($action AND $action == 'submit'): ?>
-    <?php if (!isset($style) OR $style == '1' OR $style == ''): ?>
+    <?php if (!isset($style) OR $style == '' OR $style == 'btn-default'): ?>
+        <button type="submit" id="<?php print $btn_id ?>" class="btn btn-primary">
+            <?php print $text; ?>
+        </button>
+    <?php elseif ($style == '1'): ?>
         <div class="button-1 <?php print $size; ?>" id="<?php print $btn_id ?>">
             <button type="submit"><?php print $text; ?></button>
             <div class="mask"></div>
@@ -52,7 +50,13 @@ if ($style == 'btn-default') {
         <button type="submit" class="button-8 button-red" id="<?php print $btn_id ?>"><span><?php print $text; ?></span></button>
     <?php endif; ?>
 <?php else: ?>
-    <?php if (!isset($style) OR $style == '1' OR $style == ''): ?>
+    <?php if (!isset($style) OR $style == '' OR $style == 'btn-default'): ?>
+        <a id="<?php print $btn_id ?>" href="<?php print $url; ?>" <?php if ($blank) {
+            print ' target="_blank" ';
+        } ?> class="btn btn-primary">
+            <?php print $text; ?>
+        </a>
+    <?php elseif ($style == '1'): ?>
         <div class="button-1 <?php print $size; ?>" id="<?php print $btn_id ?>">
             <a href="<?php print $url; ?>" <?php if ($blank) {
                 print ' target="_blank" ';

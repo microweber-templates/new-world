@@ -61,7 +61,7 @@ h2.hr:after {
 }
 
 h3.hr:after {
-  margin: 20px auto;
+  margin: 15px auto;
 }
 
 h4.hr:after {
@@ -94,7 +94,8 @@ hr.hr {
 
     &:after {
       display: block;
-      margin: 25px auto;
+      margin-left: auto;
+      margin-right: auto;
       width: 100%;
       text-align: center;
     }
@@ -108,7 +109,8 @@ hr.hr {
     &:after {
       display: block;
       width: 100%;
-      margin: 25px 0;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 }
@@ -307,6 +309,7 @@ h5 {
     line-height: 1.44;
     letter-spacing: 0.23px;
     padding-left: 30px;
+    text-align: left;
 
     @media screen and (max-width: 1199px) {
       font-size: @paragraph-lg;
@@ -323,12 +326,20 @@ h5 {
       content: '';
       width: 10px;
       height: 100%;
-      background-image: url('../img/hr-vertical.svg');
-      background-repeat: repeat-y;
-      background-size: cover;
-      object-fit: contain;
+      //background-image: url('../img/hr-vertical.svg');
+      //background-repeat: repeat-y;
+      //background-size: cover;
+      //object-fit: contain;
       position: absolute;
       margin-left: -30px;
+
+      background-color: @primary;
+      -webkit-mask-image: url('../img/hr-vertical.svg');
+      mask-image: url('../img/hr-vertical.svg');
+      -webkit-mask-repeat: repeat-y;
+      mask-repeat: repeat-y;
+      -webkit-mask-size: cover;
+      mask-size: cover;
     }
   }
 
@@ -4961,7 +4972,7 @@ a.dropdown-toggle::after {
 
 /* Elements */
 
-.ventoux-news {
+.new-world-news {
   .post-holder {
     margin: 20px auto;
     padding: 10px;
@@ -5084,7 +5095,7 @@ a.dropdown-toggle::after {
   }
 }
 
-.ventoux-news-1 {
+.new-world-news-1 {
   .post-holder {
     margin: 20px auto;
   }
@@ -5124,7 +5135,7 @@ a.dropdown-toggle::after {
       display: inline-block;
       position: relative;
       margin-right: 10px;
-      background: @secondary;
+      background: @primary;
       -webkit-border-radius: 0;
       -moz-border-radius: 0;
       border-radius: 0;
@@ -5144,7 +5155,7 @@ a.dropdown-toggle::after {
         height: 0;
         border-top: 13px solid transparent;
         border-bottom: 13px solid transparent;
-        border-left: 8px solid @secondary;
+        border-left: 8px solid @primary;
         position: absolute;
         right: -8px;
         top: 0;
@@ -5163,7 +5174,7 @@ a.dropdown-toggle::after {
   }
 }
 
-.ventoux-news-2 {
+.new-world-news-2 {
   .post-holder {
     margin: 20px auto;
   }
@@ -5204,7 +5215,7 @@ a.dropdown-toggle::after {
       display: inline-block;
       position: relative;
       margin-right: 10px;
-      background: @secondary;
+      background: @primary;
       -webkit-border-radius: 0;
       -moz-border-radius: 0;
       border-radius: 0;
@@ -5224,7 +5235,7 @@ a.dropdown-toggle::after {
         height: 0;
         border-top: 13px solid transparent;
         border-bottom: 13px solid transparent;
-        border-left: 8px solid @secondary;
+        border-left: 8px solid @primary;
         position: absolute;
         right: -8px;
         top: 0;
@@ -5266,7 +5277,7 @@ a.dropdown-toggle::after {
   }
 }
 
-.ventoux-news-3 {
+.new-world-news-3 {
   .post-holder {
     margin: 15px auto;
   }
@@ -5307,7 +5318,7 @@ a.dropdown-toggle::after {
       display: inline-block;
       position: relative;
       margin-right: 10px;
-      background: @secondary;
+      background: @primary;
       -webkit-border-radius: 0;
       -moz-border-radius: 0;
       border-radius: 0;
@@ -5327,7 +5338,7 @@ a.dropdown-toggle::after {
         height: 0;
         border-top: 13px solid transparent;
         border-bottom: 13px solid transparent;
-        border-left: 8px solid @secondary;
+        border-left: 8px solid @primary;
         position: absolute;
         right: -8px;
         top: 0;
@@ -5458,13 +5469,13 @@ a.dropdown-toggle::after {
   border-bottom: solid 2px rgba(179, 183, 197, 0.5);
 }
 
-.ventousx-tags {
+.posts-tags {
   .badge {
     height: 26px;
     display: inline-block;
     position: relative;
     margin-right: 10px;
-    background: @secondary;
+    background: @primary;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
@@ -5486,7 +5497,7 @@ a.dropdown-toggle::after {
       height: 0;
       border-top: 13px solid transparent;
       border-bottom: 13px solid transparent;
-      border-left: 8px solid @secondary;
+      border-left: 8px solid @primary;
       position: absolute;
       right: -8px;
       top: 0;
@@ -5698,7 +5709,7 @@ a.dropdown-toggle::after {
 }
 
 .blog-inner-2 {
-  .ventousx-tags {
+  .posts-tags {
     margin-bottom: 40px;
 
     @media screen and (max-width: 1199px) {

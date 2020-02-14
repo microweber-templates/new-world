@@ -17,7 +17,8 @@ $url_blank = get_option('url_blank', $params['id']);
                     <?php _e("Color"); ?>
                 </label>
                 <select class="mw-ui-field mw_option_field" name="button_style">
-                    <option <?php if ($style == '1' OR $style == '') {print 'selected';} ?> value="1"><?php _e("Default Button"); ?></option>
+                    <option <?php if (!isset($style) OR $style == '' OR $style == 'btn-default') {print 'selected';} ?> value="btn-default"><?php _e("Default Button"); ?></option>
+<!--                    <option --><?php //if ($style == '1') {print 'selected';} ?><!-- value="1">--><?php //_e("Style 1"); ?><!--</option>-->
 <!--                    <option --><?php //if ($style == '2') {print 'selected';} ?><!-- value="2">--><?php //_e("Red Button with Arrow"); ?><!--</option>-->
 <!--                    <option --><?php //if ($style == '3') {print 'selected';} ?><!-- value="3">--><?php //_e("Red Border White Button"); ?><!--</option>-->
 <!--                    <option --><?php //if ($style == '4') {print 'selected';} ?><!-- value="4">--><?php //_e("White Border Transparent Button"); ?><!--</option>-->

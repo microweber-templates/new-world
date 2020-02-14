@@ -1,3 +1,3 @@
 <div class="element" id="element-<?php print CONTENT_ID; ?>">
-    <p class="highlight">Inset: short piece of text that needs to be highlighted. De werkopdrachten stapelden zich te veel op om het nog langer louter als bijberoep te doen. </p>
+    <p class="lead">Lead text<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>

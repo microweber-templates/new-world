@@ -4,9 +4,9 @@
 
 type: layout
 
-name: Blog
+name: Blog - 1
 
-position: 14
+position: 1
 
 */
 

@@ -4,9 +4,9 @@
 
 type: layout
 
-name: News Posts
+name: Blog - 4
 
-position: 65
+position: 4
 
 */
 

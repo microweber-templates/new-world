@@ -17,12 +17,12 @@ description: Skin-1
     <div class="row">
         <div class="col-6">
             <div class="form-group">
-                <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="Naam"/>
+                <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="Name"/>
             </div>
         </div>
         <div class="col-6">
             <div class="form-group">
-                <input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Voornaam"/>
+                <input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Last name"/>
             </div>
         </div>
         <div class="col-12">
@@ -32,10 +32,7 @@ description: Skin-1
         </div>
         <div class="col-12">
             <div class="form-group">
-                <div class="button-2 button-md">
-                    <button type="submit">Schrijf in</button>
-                    <div class="mask"></div>
-                </div>
+                <button type="submit" class="btn btn-primary">Schrijf in</button>
             </div>
         </div>
     </div>

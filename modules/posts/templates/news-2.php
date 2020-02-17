@@ -31,10 +31,7 @@ description: News 3
                                             </a>
                                         <?php endif; ?>
 
-                                        <div class="button-2 button-md m-t-10">
-                                            <a href="<?php print $item['link'] ?>">Read now</a>
-                                            <div class="mask"></div>
-                                        </div>
+                                        <a href="<?php print $item['link'] ?>" class="btn btn-primary m-t-10">Read now</a>
                                     </div>
                                 </div>
                             </div>

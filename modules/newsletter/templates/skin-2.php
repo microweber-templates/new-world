@@ -17,16 +17,13 @@ description: Skin 2
     <div class="row">
         <div class="col-12 col-sm-7 p-0">
             <div class="form-group">
-                <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email"/>
+                <input type="email" name="email" id="email" class="form-control input-lg" placeholder="E-mail"/>
             </div>
         </div>
 
         <div class="col-12 col-sm-5 p-0">
             <div class="form-group">
-                <div class="button-2 button-md btn-block">
-                    <button type="submit">IK WIL WINNEN</button>
-                    <div class="mask"></div>
-                </div>
+                <button type="submit" class="btn btn-primary btn-block">IK WIL WINNEN</button>
             </div>
         </div>
     </div>

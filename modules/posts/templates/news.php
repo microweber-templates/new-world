@@ -34,7 +34,7 @@ description: News 1
                                             <p><?php print $item['description'] ?></p>
                                         <?php endif; ?>
 
-                                        <a href="<?php print $item['link'] ?>" itemprop="url" class="button-5 button-md m-t-10"><span>Read more</span></a>
+                                        <a href="<?php print $item['link'] ?>" itemprop="url" class="btn btn-primary m-t-10"><span>Read more</span></a>
                                     </div>
                                 </div>
                             </div>

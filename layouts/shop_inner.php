@@ -108,7 +108,7 @@ $prev = prev_content();
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="description">
-                                                    <div class="edit bold" field="content_body_short" rel="content">
+                                                    <div class="edit bold typography-area" field="content_body_short" rel="content">
                                                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
                                                     </div>
                                                 </div>
@@ -149,7 +149,7 @@ $prev = prev_content();
                             </div>
                         </div>
 
-                        <div class="bg-silver p-30 m-b-20">
+                        <div class="bg-silver p-t-30 p-b-30 m-b-20">
                             <div class="tabs">
                                 <!-- Nav tabs -->
                                 <ul class="nav" role="tablist">
@@ -163,7 +163,7 @@ $prev = prev_content();
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="description">
-                                                    <div class="edit" field="content_body" rel="content">
+                                                    <div class="edit typography-area" field="content_body" rel="content">
                                                         <h6 class="strong">How to write product descriptions that sell</h6>
                                                         <p class="strong">One of the best things you can do to make your store successful is invest some time in writing great product descriptions. You want to provide detailed yet concise information that will entice potential customers to buy.</p>
 

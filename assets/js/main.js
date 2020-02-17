@@ -19,6 +19,9 @@
             $('body.sticky-nav .navigation')
                 [$window.scrollTop() ? 'addClass' : 'removeClass']
             ('sticky');
+            $('body.sticky-nav')
+                [$window.scrollTop() ? 'addClass' : 'removeClass']
+            ('sticky-padding');
         }
     }
 

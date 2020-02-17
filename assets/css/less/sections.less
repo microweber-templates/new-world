@@ -791,14 +791,16 @@
 
   .background-image-holder {
     min-height: 400px;
+    height: 30.25vw;
+    max-height: 90vh;
+
+    @media screen and(max-width: 1440px) {
+      height: 56.25vw;
+    }
   }
 
-  h1, h2, h3, h4 {
-    color: @textLight;
-  }
-
-  h2 {
-    font-size: 66px;
+  .text-holder {
+    min-height: 400px;
   }
 
   .info-holder {
@@ -843,19 +845,6 @@
   }
 
   @media screen and (max-width: 991px) {
-    h2 {
-      font-family: SeasideGroove;
-      font-size: 90px;
-      letter-spacing: 5.18px;
-      text-align: center;
-      font-weight: normal;
-      line-height: 1;
-    }
-
-    h4 {
-      text-align: center;
-    }
-
     .socials-holder {
       display: none;
     }
@@ -927,10 +916,6 @@
       width: 280px;
       height: 280px;
       background-repeat: no-repeat;
-    }
-
-    h2 {
-      font-size: 80px;
     }
 
     .info-holder {

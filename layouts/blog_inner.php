@@ -12,25 +12,51 @@
         $itemTags = content_tags($post['id']);
         ?>
 
-        <section class="section-19">
-            <div class="container" data-parallax="">
-                <div class="background-image-holder d-flex <?php if ($picture == ''): ?>bg-primary<?php endif; ?>" <?php if ($picture != ''): ?>style="background-image: url('<?php print $picture; ?>');"<?php endif; ?>>
-                    <div class="row w-100 m-0 align-self-center">
-                        <div class="col-lg-12">
-                            <div class="d-flex w-100 h-100">
-                                <div class="w-100 align-self-center text-left info-holder allow-drop">
-                                    <h2 class="m-b-30"><?php echo $post['title']; ?></h2>
-                                    <h4><?php echo date('d M Y', strtotime($post['updated_at'])); ?></h4>
+        <?php if ($picture != '' AND $picture != false): ?>
+            <section class="section-19">
+                <div class="container">
+                    <div class="background-image-holder d-flex" style="background-image: url('<?php print $picture; ?>');">
+                        <div class="row w-100 m-0 align-self-center">
+                            <div class="col-lg-12">
+                                <div class="d-flex w-100 h-100">
+                                    <div class="w-100 align-self-center info-holder allow-drop text-white">
+                                        <h1 class="m-b-30"><?php echo $post['title']; ?></h1>
+                                        <h5><?php echo date('d M Y', strtotime($post['updated_at'])); ?></h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        <?php else: ?>
+            <section class="section-19">
+                <div class="container">
+                    <div class="text-holder d-flex bg-silver">
+                        <div class="row w-100 m-0 align-self-center">
+                            <div class="col-lg-12">
+                                <div class="d-flex w-100 h-100">
+                                    <div class="w-100 align-self-center info-holder allow-drop">
+                                        <h1 class="m-b-30 text-dark"><?php echo $post['title']; ?></h1>
+                                        <h5 class="text-primary"><?php echo date('d M Y', strtotime($post['updated_at'])); ?></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <?php endif; ?>
 
         <div class="blog-inner-page" id="blog-content-<?php print CONTENT_ID; ?>">
             <div class="container m-t-100 m-b-50">
+         <!--       <div class="m-b-40">
+                    <div class="text-left">
+                        <h1 class="m-b-30"><?php /*echo $post['title']; */?></h1>
+                        <h5 class="text-primary"><?php /*echo date('d M Y', strtotime($post['updated_at'])); */?></h5>
+                    </div>
+                </div>-->
+
                 <div class="row">
                     <div class="col-xl-6 mx-auto">
                         <div class="description edit dropcap typography-area" field="content" rel="content">

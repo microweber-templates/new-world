@@ -321,18 +321,18 @@ h5 {
 
   p.highlight {
     color: @default;
-    font-size: @paragraph-xl;
-    position: relative;
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.44;
-    letter-spacing: 0.23px;
-    padding-left: 30px;
-    text-align: left;
+    font-size: @paragraph-xl !important;
+    position: relative !important;
+    font-weight: 600 !important;
+    font-style: normal !important;
+    font-stretch: normal !important;
+    line-height: 1.44 !important;
+    letter-spacing: 0.23px !important;
+    padding-left: 30px !important;
+    text-align: left !important;
 
     @media screen and (max-width: 1199px) {
-      font-size: @paragraph-lg;
+      font-size: @paragraph-lg !important;
     }
 
     /*
@@ -365,16 +365,16 @@ h5 {
 
   p.lead {
     color: @default;
-    font-size: @title-sm;
-    position: relative;
-    font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.44;
-    letter-spacing: 0.23px;
+    font-size: @title-sm !important;
+    position: relative !important;
+    font-weight: 300 !important;
+    font-style: normal !important;
+    font-stretch: normal !important;
+    line-height: 1.44 !important;
+    letter-spacing: 0.23px !important;
 
     @media screen and (max-width: 1199px) {
-      font-size: @paragraph-lg;
+      font-size: @paragraph-lg !important;
     }
   }
 
@@ -1022,6 +1022,12 @@ body.page-loaded .js-ajax-loading {
   .container {
     width: 1440px;
     max-width: 1440px;
+  }
+}
+@media (min-width: 1660px) {
+  .container {
+    width: 1660px;
+    max-width: 1660px;
   }
 }
 
@@ -2412,72 +2418,6 @@ ul.socials-2 {
   font-size: 16px;
   color: @dark;
   line-height: 1.5;
-}
-
-/* Form holder */
-.leave-message-holder {
-  max-width: 750px;
-  margin: 0 auto;
-}
-
-.leave-message-holder .form-control {
-  border: 1px solid #cecece;
-  -webkit-border-radius: 33px;
-  -moz-border-radius: 33px;
-  border-radius: 33px;
-  font-size: 16px;
-  color: @dark;
-  font-weight: bold;
-  padding: 24px 20px;
-  max-width: 100%;
-  margin: 15px 0;
-}
-
-.leave-message-holder .form-control:focus {
-  /*border-color: @default;*/
-  outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(61, 0, 180, .6);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(61, 0, 180, .6);
-}
-
-.leave-message-holder .captcha-holder > input,
-.leave-message-holder .captcha-holder > div {
-  float: left;
-  display: block;
-}
-
-.leave-message-holder .captcha-holder > div {
-  border: 1px solid #cecece;
-  -webkit-border-radius: 33px;
-  -moz-border-radius: 33px;
-  border-radius: 33px;
-  font-size: 16px;
-  color: @dark;
-  font-weight: bold;
-  padding: 2px 14px;
-  max-width: 100%;
-  margin: 15px 0;
-  background: @light;
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
-  width: 40%;
-  height: 50px;
-
-}
-
-.leave-message-holder .captcha-holder > div img {
-  max-width: 100%;
-  max-height: 44px;
-}
-
-.leave-message-holder .captcha-holder > input {
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  width: 60%;
-}
-
-.leave-message-holder .m-t-15 {
-  margin-top: 15px !important;
 }
 
 /* Slick slider - Testimonials */

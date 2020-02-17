@@ -149,7 +149,7 @@ $prev = prev_content();
                             </div>
                         </div>
 
-                        <div class="bg-silver p-t-30 p-b-30 m-b-20">
+                        <div class="bg-silver p-30 m-b-20">
                             <div class="tabs">
                                 <!-- Nav tabs -->
                                 <ul class="nav" role="tablist">

@@ -50,25 +50,17 @@
 
         <div class="blog-inner-page" id="blog-content-<?php print CONTENT_ID; ?>">
             <div class="container m-t-100 m-b-50">
-         <!--       <div class="m-b-40">
-                    <div class="text-left">
-                        <h1 class="m-b-30"><?php /*echo $post['title']; */?></h1>
-                        <h5 class="text-primary"><?php /*echo date('d M Y', strtotime($post['updated_at'])); */?></h5>
-                    </div>
-                </div>-->
-
                 <div class="row">
                     <div class="col-xl-6 mx-auto">
                         <div class="description edit dropcap typography-area" field="content" rel="content">
                             <?php
+                            include(template_dir() . 'elements' . DS . 'paragraph-highlight.php');
                             include(template_dir() . 'elements' . DS . 'paragraph-lead.php');
                             include(template_dir() . 'elements' . DS . 'paragraph.php');
                             include(template_dir() . 'elements' . DS . 'titles' . DS . 'title-2.php');
                             include(template_dir() . 'elements' . DS . 'paragraph.php');
-                            include(template_dir() . 'elements' . DS . 'titles' . DS . 'title-3.php');
-                            include(template_dir() . 'elements' . DS . 'paragraph.php');
                             include(template_dir() . 'elements' . DS . 'blockquote.php');
-                            include(template_dir() . 'elements' . DS . 'titles' . DS . 'title-2.php');
+                            include(template_dir() . 'elements' . DS . 'titles' . DS . 'title-3.php');
                             include(template_dir() . 'elements' . DS . 'paragraph.php');
                             include(template_dir() . 'elements' . DS . 'ordered-list.php');
                             include(template_dir() . 'elements' . DS . 'paragraph.php');
@@ -99,8 +91,7 @@
         </div>
 
         <div class="edit safe-mode nodrop" field="blog-inner" rel="page">
-            <module type="layouts" template="skin-14"/>
-            <module type="layouts" template="skin-35"/>
+            <module type="comments" template="default"/>
         </div>
     </div>
 <?php include template_dir() . "footer.php"; ?>

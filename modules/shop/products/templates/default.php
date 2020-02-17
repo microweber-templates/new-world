@@ -105,8 +105,5 @@ if (!isset($tn[1])) {
 <?php endif; ?>
 
 <?php if (isset($pages_count) and $pages_count > 1 and isset($paging_param)): ?>
-    <div class="pagination-container">
-        <hr>
-        <?php print paging("num={$pages_count}&paging_param={$paging_param}&current_page={$current_page}") ?>
-    </div>
+    <module type="pagination" pages_count="<?php echo $pages_count; ?>" paging_param="<?php echo $paging_param; ?>" />
 <?php endif; ?>

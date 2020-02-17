@@ -13,7 +13,7 @@
         ?>
 
         <section class="section-19">
-            <div class="container">
+            <div class="container" data-parallax="">
                 <div class="background-image-holder d-flex <?php if ($picture == ''): ?>bg-primary<?php endif; ?>" <?php if ($picture != ''): ?>style="background-image: url('<?php print $picture; ?>');"<?php endif; ?>>
                     <div class="row w-100 m-0 align-self-center">
                         <div class="col-lg-12">

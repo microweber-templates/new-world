@@ -12,14 +12,25 @@ if (isset($_GET['search-type'])) {
     $searchType = htmlspecialchars($_GET['search-type']);
 }
 ?>
-
+<?php if ($searchType == 'blog' OR $searchType == ''): ?>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="m-auto allow-drop" style="max-width: 800px;">
+                        <h1 class="hr">Results found<span class="text-primary">.</span></h1>
+                        <p class="lead"><em><?php _e('Mentioning'); ?></em> &ldquo;<?php print $keywords; ?>&rdquo;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<?php endif; ?>
 
 <section>
     <div class="container">
         <?php if ($searchType == 'blog' OR $searchType == ''): ?>
-            <h4><em><?php _e('Results found mentioning'); ?></em> &ldquo;<?php print $keywords; ?>&rdquo;</h4>
-            <br/>
-            <br/>
+
             <module type="posts" limit="18" keyword="<?php print $keywords; ?>" description-length="70"/>
         <?php endif; ?>
     </div>

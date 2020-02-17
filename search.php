@@ -32,6 +32,7 @@ if (isset($_GET['search-type'])) {
         <?php if ($searchType == 'blog' OR $searchType == ''): ?>
 
             <module type="posts" limit="18" keyword="<?php print $keywords; ?>" description-length="70"/>
+            <module type="shop/products" limit="18" keyword="<?php print $keywords; ?>" description-length="70"/>
         <?php endif; ?>
     </div>
 </section>

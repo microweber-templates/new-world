@@ -765,6 +765,22 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
   justify-content: flex-end;
   align-items: center;
 
+  position: relative;
+
+  li.dropdown {
+    position: static;
+    a {
+      position: relative;
+    }
+  }
+
+  .dropdown-menu{
+    right: 0;
+    left: auto !important;
+    transform: unset !important;
+    margin-top:50px !important;
+  }
+
   .btn {
     padding-left: 15px !important;
     padding-right: 15px !important;

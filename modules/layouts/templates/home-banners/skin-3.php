@@ -4,7 +4,7 @@
 
 type: layout
 
-name: Home Video Banner
+name: Home Vimeo Video Banner
 
 position: 2
 
@@ -28,7 +28,7 @@ if ($vimeo_url) {
 } elseif (isset($params['data-vimeo-url'])) {
     $vimeo_url = $params['data-vimeo-url'];
 } else {
-    $vimeo_url = '328186174';
+    $vimeo_url = '22439234';
 }
 ?>
 <script>
@@ -51,8 +51,8 @@ if ($vimeo_url) {
         </div>
 
         <div class="w-100 align-self-center text-center info-holder allow-drop  edit safe-mode" field="layout-home-banners-skin-3-<?php print $params['id'] ?>" rel="module">
-            <h4>Bicycle Challenge</h4>
-            <h1>to Mont Ventoux</h1>
+            <h4>An amazing video</h4>
+            <h1>shooted in Bulgaria</h1>
             <br/>
             <br/>
             <div class="element d-inline-block m-3 cloneable">

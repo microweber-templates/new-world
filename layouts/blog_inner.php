@@ -54,17 +54,17 @@
                     <div class="col-xl-6 mx-auto">
                         <div class="description edit dropcap typography-area" field="content" rel="content">
                             <?php
-                            include(template_dir() . 'elements' . DS . 'paragraph-highlight.php');
-                            include(template_dir() . 'elements' . DS . 'paragraph-lead.php');
+                            //include(template_dir() . 'elements' . DS . 'paragraph-highlight.php');
+                            //include(template_dir() . 'elements' . DS . 'paragraph-lead.php');
                             include(template_dir() . 'elements' . DS . 'paragraph.php');
-                            include(template_dir() . 'elements' . DS . 'titles' . DS . 'title-2.php');
-                            include(template_dir() . 'elements' . DS . 'paragraph.php');
-                            include(template_dir() . 'elements' . DS . 'blockquote.php');
-                            include(template_dir() . 'elements' . DS . 'titles' . DS . 'title-3.php');
-                            include(template_dir() . 'elements' . DS . 'paragraph.php');
-                            include(template_dir() . 'elements' . DS . 'ordered-list.php');
-                            include(template_dir() . 'elements' . DS . 'paragraph.php');
-                            include(template_dir() . 'elements' . DS . 'unordered-list.php');
+                            //include(template_dir() . 'elements' . DS . 'titles' . DS . 'title-2.php');
+                            //include(template_dir() . 'elements' . DS . 'paragraph.php');
+                            //include(template_dir() . 'elements' . DS . 'blockquote.php');
+                            //include(template_dir() . 'elements' . DS . 'titles' . DS . 'title-3.php');
+                            //include(template_dir() . 'elements' . DS . 'paragraph.php');
+                           // include(template_dir() . 'elements' . DS . 'ordered-list.php');
+                            //include(template_dir() . 'elements' . DS . 'paragraph.php');
+                            //include(template_dir() . 'elements' . DS . 'unordered-list.php');
                             ?>
                         </div>
 

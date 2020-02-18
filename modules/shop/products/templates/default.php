@@ -10,9 +10,8 @@ description: Default
 
 */
 ?>
+
 <?php
-
-
 $tn = $tn_size;
 if (!isset($tn[0]) or ($tn[0]) == 150) {
     $tn[0] = 350;
@@ -20,9 +19,8 @@ if (!isset($tn[0]) or ($tn[0]) == 150) {
 if (!isset($tn[1])) {
     $tn[1] = $tn[0];
 }
-
-
 ?>
+
 <?php if (!empty($data)): ?>
     <div class="row shop-products">
         <?php foreach ($data as $item): ?>
@@ -105,5 +103,5 @@ if (!isset($tn[1])) {
 <?php endif; ?>
 
 <?php if (isset($pages_count) and $pages_count > 1 and isset($paging_param)): ?>
-    <module type="pagination" pages_count="<?php echo $pages_count; ?>" paging_param="<?php echo $paging_param; ?>" />
+    <module type="pagination" pages_count="<?php echo $pages_count; ?>" paging_param="<?php echo $paging_param; ?>"/>
 <?php endif; ?>

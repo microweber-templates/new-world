@@ -92,5 +92,5 @@ if ($columns_xl != null OR $columns_xl != false OR $columns_xl != '') {
 </div>
 
 <?php if (isset($pages_count) and $pages_count > 1 and isset($paging_param)): ?>
-    <?php print paging("num={$pages_count}&paging_param={$paging_param}&current_page={$current_page}") ?>
+    <module type="pagination" pages_count="<?php echo $pages_count; ?>" paging_param="<?php echo $paging_param; ?>" />
 <?php endif; ?>

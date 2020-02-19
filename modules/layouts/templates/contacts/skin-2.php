@@ -73,7 +73,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                                     </div>
                                     <div class="text-holder allow-drop">
                                         <p><strong>Other ways to contact us</strong></p>
-                                        <p>Emial: info@youremail.com</p>
+                                        <p>Email: info@youremail.com</p>
                                     </div>
 
                                     <div class="socials-holder">

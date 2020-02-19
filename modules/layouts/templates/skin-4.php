@@ -29,21 +29,21 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
         <div class="row">
             <div class="col-12 col-lg-4 text-center allow-drop m-t-30 cloneable">
                 <img src="<?php print template_url(); ?>assets/img/img-4.png" alt="" style="width:100%;"/>
-                <div class="element m-t-30 nodrop">
+                <div class="element m-t-30 nodrop cloneable">
                     <module type="btn" template="bootstrap" button_style="btn-primary" text="CALL TO ACTION" />
                 </div>
             </div>
 
             <div class="col-12 col-lg-4 text-center allow-drop m-t-30 cloneable">
                 <img src="<?php print template_url(); ?>assets/img/img-5.png" alt="" style="width:100%;"/>
-                <div class="element m-t-30 nodrop">
+                <div class="element m-t-30 nodrop cloneable">
                     <module type="btn" template="bootstrap" button_style="btn-primary" text="CALL TO ACTION" />
                 </div>
             </div>
 
             <div class="col-12 col-lg-4 text-center allow-drop m-t-30 cloneable">
                 <img src="<?php print template_url(); ?>assets/img/img-6.png" alt="" style="width:100%;"/>
-                <div class="element m-t-30 nodrop">
+                <div class="element m-t-30 nodrop cloneable">
                     <module type="btn" template="bootstrap" button_style="btn-primary" text="CALL TO ACTION" />
                 </div>
             </div>

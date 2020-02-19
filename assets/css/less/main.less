@@ -265,8 +265,6 @@ h5 {
     }*/
 }
 
-
-
 @import "mw";
 @import "color-loops";
 
@@ -1002,6 +1000,7 @@ body.page-loaded .js-ajax-loading {
     max-width: 1440px;
   }
 }
+
 @media (min-width: 1660px) {
   .container {
     width: 1660px;
@@ -2848,26 +2847,27 @@ ul.socials-2 {
 }
 
 /* Paging */
-.pagination > li{
+.pagination > li {
   margin: 5px 3px;
 }
+
 .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
   font-weight: bold;
   color: @textLight !important;
   background-color: @primary !important;
   border: 0 !important;
-  -webkit-border-radius:3px;
-  -moz-border-radius:3px;
-  border-radius:3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 
 .pagination > li > a, .pagination > li > span {
   color: @dark !important;
   background-color: @light !important;
   border: 0 !important;
-  -webkit-border-radius:3px;
-  -moz-border-radius:3px;
-  border-radius:3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 
 .pagination > .disabled > a, .pagination > .disabled > a:focus, .pagination > .disabled > a:hover, .pagination > .disabled > span, .pagination > .disabled > span:focus, .pagination > .disabled > span:hover {
@@ -2875,17 +2875,17 @@ ul.socials-2 {
   color: @dark !important;
   background-color: @silver !important;
   border: 0 !important;
-  -webkit-border-radius:3px;
-  -moz-border-radius:3px;
-  border-radius:3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 
 .pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus, .pagination > li > span:hover {
   color: @textLight !important;
   background-color: @primary !important;
-  -webkit-border-radius:3px;
-  -moz-border-radius:3px;
-  border-radius:3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 
 /* lists */
@@ -6234,4 +6234,15 @@ a.dropdown-toggle::after {
       color: @primary;
     }
   }
+}
+
+.module-categories-template-horizontal-list-1 ul.mw-cats-menu > li > ul {
+  display: block;
+  position: relative;
+  border: 0;
+  padding: 0;
+}
+
+.module-categories-template-horizontal-list-1 ul.mw-cats-menu > li:hover > ul {
+  padding: 0;
 }

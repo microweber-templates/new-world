@@ -946,6 +946,7 @@
     padding: 15px;
     margin-bottom: 30px;
     position: relative;
+    height:100%;
 
     &:before {
       position: absolute;
@@ -975,15 +976,20 @@
     position: relative;
     width: 100%;
     z-index: 2;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
 
     .content {
-      position: absolute;
+      position: relative;
       width: 100%;
       height: 100%;
       display: flex;
       flex-flow: column;
       align-items: center;
       justify-content: center;
+      display: flex;
     }
   }
 

@@ -43,7 +43,7 @@ description: Blog
                             </a>
 
                             <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
-                                <h3 class="m-b-10"><?php print $item['title'] ?></h3>
+                                <a href="<?php print $item['link'] ?>"><h3 class="m-b-10"><?php print $item['title'] ?></h3></a>
                             <?php endif; ?>
 
                             <small><?php echo date('d M Y', strtotime($item['posted_at'])); ?></small>

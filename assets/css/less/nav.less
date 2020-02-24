@@ -186,7 +186,7 @@ body.sticky-nav:not(.mw-live-edit) .navigation {
 }
 
 .navbar-header ul.header-contacts-list li a {
-  color: @textLight;
+  color: @textOnBackground;
   font-size: .75rem;
   padding: 5px;
   .mixin-inline-flex();
@@ -196,7 +196,7 @@ body.sticky-nav:not(.mw-live-edit) .navigation {
 .navigation-holder.not-transparent,
 .navigation.sticky {
   .navbar-header ul.header-contacts-list li a {
-    color: @textDark;
+    color: @textOnWhite;
   }
 }
 
@@ -1363,7 +1363,7 @@ body[data-lang="ar"] .dropdown-menu {
     .menu {
       overflow: auto;
       max-width: @sidebar-nav-width;
-      border-right: 1px solid @textLight;
+      border-right: 1px solid @textOnBackground;
     }
 
     .main {
@@ -1395,10 +1395,10 @@ body[data-lang="ar"] .dropdown-menu {
         padding: 0 0 1rem 0;
       }
       .menu .module-menu .list > li:not(:first-of-type) {
-        border-top: 1px solid @textLight;
+        border-top: 1px solid @textOnBackground;
       }
       .menu .module-menu .list > li:last-of-type {
-        border-bottom: 1px solid @textLight;
+        border-bottom: 1px solid @textOnBackground;
       }
       .menu .list > li > a {
         padding: 1rem 2rem;

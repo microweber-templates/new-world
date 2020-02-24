@@ -30,7 +30,7 @@
   }
 
   h1, h2, h3, h4, h5, h6, p, p.lead {
-    color: @textLight;
+    color: @textOnBackground;
   }
   .container {
     z-index: 9;
@@ -41,7 +41,7 @@
     height: 100%;
     text-align: right;
 
-    color: @textLight;
+    color: @textOnBackground;
     display: flex;
     flex-flow: column;
     align-self: center;
@@ -52,7 +52,7 @@
     ul li {
       display: block;
       a {
-        color: @textLight;
+        color: @textOnBackground;
         font-size: @title-sm;
         margin: 35px 40px 35px 0;
       }
@@ -86,7 +86,7 @@
   }
 
   h1, h2, h3, h4, h5, h6, p, p.lead {
-    color: @textLight;
+    color: @textOnBackground;
   }
 
   .container {
@@ -98,7 +98,7 @@
     height: 100%;
     text-align: right;
 
-    color: @textLight;
+    color: @textOnBackground;
     display: flex;
     flex-flow: column;
     align-self: center;
@@ -109,7 +109,7 @@
     ul li {
       display: block;
       a {
-        color: @textLight;
+        color: @textOnBackground;
         font-size: @title-sm;
         margin: 35px 40px 35px 0;
       }
@@ -508,14 +508,14 @@
     .icon, .mw-icon {
       margin-bottom: 30px;
       font-size: 55px;
-      color: @textLight;
+      color: @textOnBackground;
       display: block;
     }
   }
 
   h6 {
     font-size: 30px;
-    color: @textLight;
+    color: @textOnBackground;
     margin-bottom: 5px;
     font-weight: 500;
     font-style: normal;
@@ -525,7 +525,7 @@
   }
 
   p {
-    color: @textLight;
+    color: @textOnBackground;
   }
 
   .button-holder:before {
@@ -637,12 +637,14 @@
     flex-direction: column;
   }
 
+  h1, h2, h3, h4, h5, h6,
   p,
   span {
     font-size: 16px;
     line-height: 1.5;
-    color: @dark;
+    color: @textOnWhite;
   }
+
 
   p {
     margin-bottom: 10px;
@@ -712,11 +714,12 @@
     flex-direction: column;
   }
 
+  h1, h2, h3, h4, h5, h6,
   p,
   span {
     font-size: 16px;
     line-height: 1.5;
-    color: @dark;
+    color: @textOnWhite;
   }
 
   p {
@@ -782,6 +785,10 @@
       bottom: 50px;
       position: absolute;
     }
+  }
+
+  .text-white h1, .text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6, .text-white p {
+    color: @textOnBackground !important;
   }
 }
 
@@ -943,6 +950,10 @@
     margin: 10px 0;
   }
 
+  .text-white h1, .text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6, .text-white p {
+    color: @textOnBackground !important;
+  }
+
   .background-image-holder {
     -webkit-background-size: cover;
     background-size: cover;
@@ -964,13 +975,13 @@
   }
 
   .icon-holder {
-    color: @textLight;
+    color: @textOnBackground;
     margin-top: 10px;
     margin-bottom: 20px;
 
     i, span {
       font-size: 45px;
-      color: @textLight;
+      color: @textOnBackground;
       display: block;
     }
   }
@@ -1413,7 +1424,7 @@
   }
 
   h1, h2, h3, h4, h5, h6, p, p.lead {
-    color: @textLight;
+    color: @textOnBackground;
   }
   .container {
     z-index: 9;
@@ -1424,7 +1435,7 @@
     height: 100%;
     text-align: right;
 
-    color: @textLight;
+    color: @textOnBackground;
     display: flex;
     flex-flow: column;
     align-self: center;
@@ -1435,7 +1446,7 @@
     ul li {
       display: block;
       a {
-        color: @textLight;
+        color: @textOnBackground;
         font-size: @title-sm;
         margin: 35px 40px 35px 0;
       }

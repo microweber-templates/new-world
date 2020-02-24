@@ -29,9 +29,9 @@ $config['stylesheet_compiler']['settings'][] = array('type' => 'delimiter');
 $config['stylesheet_compiler']['settings'][] = array('type' => 'title', 'label' => 'Texts colors');
 $config['stylesheet_compiler']['settings']['textDark'] = array('type' => 'color', 'default' => '#212121', 'label' => 'Text Dark');
 $config['stylesheet_compiler']['settings']['textLight'] = array('type' => 'color', 'default' => '#f4f4f4', 'label' => 'Text Light');
-$config['stylesheet_compiler']['settings'][] = array('type' => 'delimiter');
-$config['stylesheet_compiler']['settings']['textOnWhite'] = array('type' => 'color', 'default' => '#212121', 'label' => 'Text on White');
-$config['stylesheet_compiler']['settings']['textOnBackground'] = array('type' => 'color', 'default' => '#fff', 'label' => 'Text on Background');
+//$config['stylesheet_compiler']['settings'][] = array('type' => 'delimiter');
+//$config['stylesheet_compiler']['settings']['textOnWhite'] = array('type' => 'color', 'default' => '#212121', 'label' => 'Text on White');
+//$config['stylesheet_compiler']['settings']['textOnBackground'] = array('type' => 'color', 'default' => '#fff', 'label' => 'Text on Background');
 
 $config['stylesheet_compiler']['settings'][] = array('type' => 'delimiter');
 $config['stylesheet_compiler']['settings'][] = array('type' => 'title', 'label' => 'Other colors');

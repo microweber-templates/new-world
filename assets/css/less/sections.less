@@ -620,8 +620,9 @@
 
   .info-holder {
     z-index: 9;
-    background: #fff;
+    background: @background;
     padding: 50px 70px;
+    border: 1px solid rgba(red(@textDark), green(@textDark), blue(@textDark), 0.3);
   }
 
   .flexbox-container {
@@ -637,14 +638,15 @@
     flex-direction: column;
   }
 
-  h1, h2, h3, h4, h5, h6,
+  h1, h2, h3, h4, h5, h6 {
+    color: @textDark;
+  }
   p,
   span {
     font-size: 16px;
     line-height: 1.5;
-    color: @textOnWhite;
+    color: @textDark;
   }
-
 
   p {
     margin-bottom: 10px;
@@ -696,8 +698,9 @@
 
   .info-holder {
     z-index: 9;
-    background: #fff;
+    background: @background;
     padding: 50px 70px;
+    border: 1px solid rgba(red(@textDark), green(@textDark), blue(@textDark), 0.3);
   }
 
   .flexbox-container {
@@ -714,12 +717,15 @@
     flex-direction: column;
   }
 
-  h1, h2, h3, h4, h5, h6,
+  h1, h2, h3, h4, h5, h6 {
+    color: @textDark;
+  }
+
   p,
   span {
     font-size: 16px;
     line-height: 1.5;
-    color: @textOnWhite;
+    color: @textDark;
   }
 
   p {

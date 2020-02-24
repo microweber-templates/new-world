@@ -25,7 +25,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
 <!--.home-slider .slide .img-holder.left-->
 
-<section class="section-27 js-header-transparent <?php print $layout_classes; ?> edit safe-mode nodrop" data-bg-contain data-overlay="1" field="layout-cta-skin-2-<?php print $params['id'] ?>" rel="module">
+<section class="section-27 js-header-transparent <?php print $layout_classes; ?> edit safe-mode nodrop" data-bg-cover data-overlay="1" field="layout-cta-skin-2-<?php print $params['id'] ?>" rel="module">
     <div class="background-image-holder d-flex w-100 justify-content-center bg-primary" style="background-image: url('<?php print template_url(); ?>assets/img/blue-bg.jpg');">
         <div class="container d-flex justify-content-center align-items-center">
             <div class="w-100 text-center info-holder allow-drop" data-aos="fade-down">

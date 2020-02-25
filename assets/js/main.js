@@ -549,36 +549,65 @@ function setPaddingToSections() {
             oneColumn = headerContainerWidth / 12;
         }
 
-        $('.section-16').each(function () {
-            var leftSide = $(this).find('.left-side');
-            leftSide.css({'padding-left': ((headerWidth - headerContainerWidth ) / 2) + 10 + oneColumn + 'px'});
-            leftSide.find('.info-holder').css({'margin-right': '-' + oneFluidColumn + 'px'});
-        })
-
-        $('.section-17').each(function () {
-            var rightSide = $(this).find('.right-side');
-            rightSide.css({'padding-right': ((headerWidth - headerContainerWidth ) / 2) + 10 + oneColumn + 'px'});
-            rightSide.find('.info-holder').css({'margin-left': '-' + oneFluidColumn + 'px'});
-        })
-
         $('.home-slider .container.info-holder').css({'padding-left': oneColumn + 'px', 'padding-right': oneColumn + 'px'});
         $('.home-slider .bx-controls-direction').css({'width': headerContainerWidth + 'px'});
-
     } else {
-        $('.section-16').each(function () {
-            var leftSide = $(this).find('.left-side');
-            leftSide.css({'padding-left': ''});
-            leftSide.find('.info-holder').css({'margin-right': ''});
-        })
-        $('.section-17').each(function () {
-            var rightSide = $(this).find('.right-side');
-            rightSide.css({'padding-right': ''});
-            rightSide.find('.info-holder').css({'margin-left': ''});
-        })
 
         $('.home-slider .container.info-holder').css({'padding-left': '40px', 'padding-right': '40px'});
         $('.home-slider .bx-controls-direction').css({'width': headerContainerWidth + 'px'});
+    }
 
+    if ($('html').attr('dir') == 'rtl') {
+        if ($(window).width() > 991) {
+            $('.section-16').each(function () {
+                var leftSide = $(this).find('.left-side');
+                leftSide.css({'padding-right': ((headerWidth - headerContainerWidth ) / 2) + 10 + oneColumn + 'px'});
+                leftSide.find('.info-holder').css({'margin-left': '-' + oneFluidColumn + 'px'});
+            })
+
+            $('.section-17').each(function () {
+                var rightSide = $(this).find('.right-side');
+                rightSide.css({'padding-left': ((headerWidth - headerContainerWidth ) / 2) + 10 + oneColumn + 'px'});
+                rightSide.find('.info-holder').css({'margin-right': '-' + oneFluidColumn + 'px'});
+            })
+        } else {
+            $('.section-16').each(function () {
+                var leftSide = $(this).find('.left-side');
+                leftSide.css({'padding-right': ''});
+                leftSide.find('.info-holder').css({'margin-left': ''});
+            })
+            
+            $('.section-17').each(function () {
+                var rightSide = $(this).find('.right-side');
+                rightSide.css({'padding-left': ''});
+                rightSide.find('.info-holder').css({'margin-right': ''});
+            })
+        }
+    } else {
+        if ($(window).width() > 991) {
+            $('.section-16').each(function () {
+                var leftSide = $(this).find('.left-side');
+                leftSide.css({'padding-left': ((headerWidth - headerContainerWidth ) / 2) + 10 + oneColumn + 'px'});
+                leftSide.find('.info-holder').css({'margin-right': '-' + oneFluidColumn + 'px'});
+            })
+
+            $('.section-17').each(function () {
+                var rightSide = $(this).find('.right-side');
+                rightSide.css({'padding-right': ((headerWidth - headerContainerWidth ) / 2) + 10 + oneColumn + 'px'});
+                rightSide.find('.info-holder').css({'margin-left': '-' + oneFluidColumn + 'px'});
+            })
+        } else {
+            $('.section-16').each(function () {
+                var leftSide = $(this).find('.left-side');
+                leftSide.css({'padding-left': ''});
+                leftSide.find('.info-holder').css({'margin-right': ''});
+            })
+            $('.section-17').each(function () {
+                var rightSide = $(this).find('.right-side');
+                rightSide.css({'padding-right': ''});
+                rightSide.find('.info-holder').css({'margin-left': ''});
+            });
+        }
     }
 }
 

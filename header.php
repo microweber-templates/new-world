@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#" <?php print lang_attributes(); ?>>
+<html prefix="og: http://ogp.me/ns#" dir="rtl" <?php //print lang_attributes(); ?>>
 
 <head>
 

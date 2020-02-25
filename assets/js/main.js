@@ -576,7 +576,7 @@ function setPaddingToSections() {
                 leftSide.css({'padding-right': ''});
                 leftSide.find('.info-holder').css({'margin-left': ''});
             })
-            
+
             $('.section-17').each(function () {
                 var rightSide = $(this).find('.right-side');
                 rightSide.css({'padding-left': ''});

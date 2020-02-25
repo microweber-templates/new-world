@@ -62,7 +62,7 @@ description: Skin 1 comments template
                                     </div>
                                 </div>
 
-                                <div class="col-sm-2">
+                                <div class="col-sm-3">
                                     <?php event_trigger('module.comments.item.before', $comment); ?>
                                 </div>
                             </div>

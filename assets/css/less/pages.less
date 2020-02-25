@@ -267,11 +267,11 @@
     border-bottom: 1px solid #ebebeb;
     padding-bottom: 20px;
 
-    h4{
+    h4 {
       width: calc(~"100% - 70px");
     }
 
-    .next-previous-content{
+    .next-previous-content {
 
     }
   }
@@ -322,13 +322,22 @@
     color: @textDark;
   }
 
+  .description-short {
+    margin-top: 20px;
+    h1, h2, h3, h4, h5, h6, span, p {
+      color: @textDark;
+    }
+  }
   .description {
     margin-top: 20px;
+    h1, h2, h3, h4, h5, h6 {
+      color: @textOnWhite;
+    }
 
     p {
       line-height: 1.5;
       font-size: @paragraph-lg;
-      color: @textDark;
+      color: @textOnWhite;
       text-align: justify;
       margin-bottom: 10px;
     }
@@ -345,7 +354,7 @@
 
   .description .table td {
     font-size: 16px;
-    color: @dark;
+    color: @textDark;
     font-weight: bold;
   }
 
@@ -426,7 +435,7 @@
 
   .product-specifications .table-striped th {
     background: transparent;
-    color: @dark;
+    color: @textDark;
     text-transform: uppercase;
   }
 
@@ -459,23 +468,28 @@
 
   .product-specifications .right-side h3 {
     font-size: 24px;
-    color: @dark;
+    color: @textDark;
     font-weight: bold;
     margin: 12px 0 25px 0;
   }
 
   .product-specifications .right-side p {
     font-size: 16px;
-    color: @dark;
+    color: @textDark;
   }
 
   .reviews {
     margin-top: 20px;
+
+    h1, h2, h3, h4, h5, h6, span, p {
+      color: @textOnWhite;
+    }
+
   }
 
   .reviews .heading h3 {
     font-size: @paragraph-lg;
-    color: @dark;
+    color: @textOnWhite;
     font-weight: bold;
     padding: 8px 0 25px 0px;
   }
@@ -489,7 +503,7 @@
   .reviews .review {
     background: @silver;
     padding: 15px 0;
-    color: @dark;
+    color: @textOnWhite;
     margin-bottom: 20px;
   }
 
@@ -521,14 +535,14 @@
   }
 
   .reviews .review .info h4 {
-    color: @dark;
+    color: @textOnWhite;
     font-size: 14px;
     font-weight: 700;
     margin: 0px 0 20px 0;
   }
 
   .reviews .review .info p {
-    color: @dark;
+    color: @textOnWhite;
     font-size: 14px;
   }
 
@@ -549,14 +563,14 @@
 
   .leave-review .right-side h3 {
     font-size: 24px;
-    color: @dark;
+    color: @textOnWhite;
     font-weight: bold;
     margin: 12px 0 25px 0;
   }
 
   .leave-review .right-side p {
     font-size: 16px;
-    color: @dark;
+    color: @textOnWhite;
   }
 
   .leave-review .form textarea {
@@ -570,7 +584,7 @@
 
   .leave-review .form .form-group label {
     font-size: 14px;
-    color: @dark;
+    color: @textOnWhite;
     line-height: 1.4;
     margin-bottom: 10px;
   }
@@ -580,7 +594,7 @@
     -moz-box-shadow: none;
     box-shadow: none;
     border: 2px solid #ddd;
-    color: @textDark;
+    color: @textOnWhite;
     font-size: 0.857rem;
     padding: 12px 20px;
     margin-bottom: 10px;

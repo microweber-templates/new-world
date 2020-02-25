@@ -107,7 +107,7 @@ $prev = prev_content();
 
                                         <div class="row">
                                             <div class="col-12">
-                                                <div class="description">
+                                                <div class="description-short">
                                                     <div class="edit typography-area" field="content_body_short" rel="content">
                                                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
                                                     </div>

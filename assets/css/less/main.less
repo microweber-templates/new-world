@@ -19,6 +19,7 @@ body {
   overflow-x: hidden;
   max-width: 100%;
   background: @background;
+  color: @textDark;
 }
 
 .main {
@@ -2938,6 +2939,9 @@ ul.socials-2 {
 
 /* Blog posts */
 .blog-posts {
+  .slick-arrow {
+    display: none;
+  }
   .post {
     margin-bottom: 30px !important;
 
@@ -3691,9 +3695,12 @@ ul.socials-2 {
     &:hover {
       background: @primary;
       cursor: pointer;
-      .price small, p, span {
+      .price .sum,
+      .price small,
+      .price .period, p, span {
         color: @textLight;
       }
+
       .price .period:after {
         background-color: @background;
 

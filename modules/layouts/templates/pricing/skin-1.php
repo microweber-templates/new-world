@@ -33,8 +33,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                     </div>
                 </div>
 
-                <div class="row pricing-list">
-                    <div class="col-sm-6 col-md mx-auto">
+                <div class="row pricing-list d-flex justify-content-center">
+                    <div class="col-sm-6 col-md">
                         <div class="plan">
                             <div class="heading">
                                 <p class="safe-element">Early Bird</p>
@@ -53,7 +53,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md mx-auto">
+                    <div class="col-sm-6 col-md">
                         <div class="plan">
                             <div class="heading">
                                 <p class="safe-element">Team</p>
@@ -73,7 +73,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md mx-auto">
+                    <div class="col-sm-6 col-md">
                         <div class="plan">
                             <div class="heading">
                                 <p class="safe-element">Personal</p>
@@ -93,7 +93,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md mx-auto">
+                    <div class="col-sm-6 col-md">
                         <div class="plan">
                             <div class="heading ">
                                 <p class="safe-element">Gold</p>

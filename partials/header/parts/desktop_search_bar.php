@@ -19,3 +19,9 @@
     </li>
 <?php endif; ?>
 
+<?php if (get_option('is_active', 'multilanguage_settings') == 'y'): ?>
+    <li class="btn-multilanguage ml-4">
+        <module type="multilanguage"/>
+    </li>
+<?php endif; ?>
+

@@ -1015,6 +1015,8 @@ $(".dropdown.has-sub-menu").on("click", function (e) {
     $(this).toggleClass('show');
 });
 
+/*
 $(document).on('click', '.dropdown.has-sub-menu > a', function (event) {
     event.preventDefault();
 });
+*/

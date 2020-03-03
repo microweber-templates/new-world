@@ -52,23 +52,19 @@
 
 <!-- Plugins -->
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;language=en-GB&amp;key=AIzaSyDbN7i-eF7dlNNp-bxbERNomOGYpZld3B0"></script>
-
-<script src="<?php print template_url(); ?>assets/plugins/elevatezoom/jquery.elevatezoom.js"></script>
-<script type="text/javascript" src="<?php print template_url(); ?>assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-<script src="<?php print template_url(); ?>assets/js/libs/anime.min.js"></script>
-<script src="<?php print template_url(); ?>assets/js/libs/jquery.sticky-sidebar.min.js"></script>
-
-<script type="text/javascript" src="<?php print template_url(); ?>assets/plugins/masonry/masonry.pkgd.min.js"></script>
-<script type="text/javascript" src="<?php print template_url(); ?>assets/plugins/masonry/isotope.pkgd.min.js"></script>
-
-
 <script>
     mw.lib.require('slick');
     mw.lib.require('collapse_nav');
 </script>
-<script src="<?php print template_url(); ?>assets/js/main.js"></script>
+
+<script src="<?php print template_url(); ?>dist/main.min.js"></script>
+
+
+
+
+
+
+
 
 
 </body>

@@ -1,0 +1,11 @@
+config/*
+vendor/*
+cache/*
+old_mw/
+phpinfo.php
+.idea
+.settings
+.env
+node_modules/
+/.settings
+/.project

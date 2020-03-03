@@ -186,7 +186,7 @@ body.sticky-nav:not(.mw-live-edit) .navigation {
 }
 
 .navbar-header ul.header-contacts-list li a {
-  color: @textLight;
+  color: @textOnBackground;
   font-size: .75rem;
   padding: 5px;
   .mixin-inline-flex();
@@ -196,7 +196,7 @@ body.sticky-nav:not(.mw-live-edit) .navigation {
 .navigation-holder.not-transparent,
 .navigation.sticky {
   .navbar-header ul.header-contacts-list li a {
-    color: @textDark;
+    color: @textOnWhite;
   }
 }
 
@@ -598,6 +598,19 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
   font-family: @header-menu-font-family;
   font-weight: @header-menu-font-weight;
   text-transform: @header-menu-text-transform;
+
+}
+
+.navigation .list {
+  .dropdown-menu {
+    span.name {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: calc(~"100% - 20px");
+      display: inline-block;
+    }
+  }
 }
 
 .navigation .list > li > a {
@@ -774,11 +787,11 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
     }
   }
 
-  .dropdown-menu{
+  .dropdown-menu {
     right: 0;
     left: auto !important;
     transform: unset !important;
-    margin-top:50px !important;
+    margin-top: 50px !important;
   }
 
   .btn {
@@ -1058,6 +1071,10 @@ body[data-lang="ar"] .dropdown-menu {
       background-color: @header-dropdown-back-on-hover;
     }
 
+    .navigation .menu .list > li > ul li:hover > a:focus {
+      color: @header-dropdown-back-color;
+    }
+
     .navigation .list li:hover > ul {
       opacity: 1;
       visibility: visible;
@@ -1119,6 +1136,21 @@ body[data-lang="ar"] .dropdown-menu {
         clear: both;
         padding: 10px 30px;
         text-align: left;
+      }
+
+      a.dropdown-toggle::after {
+        margin-top: 0px;
+      }
+      .list {
+        .dropdown {
+          span.name {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: calc(~"100% - 20px");
+            display: inline-block;
+          }
+        }
       }
 
       .list > li > ul a {
@@ -1331,7 +1363,7 @@ body[data-lang="ar"] .dropdown-menu {
     .menu {
       overflow: auto;
       max-width: @sidebar-nav-width;
-      border-right: 1px solid @textLight;
+      border-right: 1px solid @textOnBackground;
     }
 
     .main {
@@ -1363,10 +1395,10 @@ body[data-lang="ar"] .dropdown-menu {
         padding: 0 0 1rem 0;
       }
       .menu .module-menu .list > li:not(:first-of-type) {
-        border-top: 1px solid @textLight;
+        border-top: 1px solid @textOnBackground;
       }
       .menu .module-menu .list > li:last-of-type {
-        border-bottom: 1px solid @textLight;
+        border-bottom: 1px solid @textOnBackground;
       }
       .menu .list > li > a {
         padding: 1rem 2rem;

@@ -19,6 +19,7 @@ body {
   overflow-x: hidden;
   max-width: 100%;
   background: @background;
+  color: @textDark;
 }
 
 .main {
@@ -1307,6 +1308,7 @@ ul.socials-2 {
   border-radius: @borderRadiusButtons;
 }
 
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle,
 .btn-primary:hover,
 .btn-primary.focus,
 .btn-primary:focus {
@@ -2707,7 +2709,7 @@ ul.socials-2 {
 
   .slick-prev:before,
   .slick-next:before {
-    color: @dark;
+    color: @textOnWhite;
     font-size: 30px;
     padding: 5px;
     opacity: 1;
@@ -2715,7 +2717,7 @@ ul.socials-2 {
 
   .slick-prev:hover:before,
   .slick-next:hover:before {
-    color: @default;
+    color: @textOnWhite;
   }
 
   .slide-holder {
@@ -2745,7 +2747,7 @@ ul.socials-2 {
   }
 
   .slide .info-holder p {
-    color: @dark;
+    color: @textOnWhite;
     font-size: @paragraph-lg;
   }
 
@@ -2813,7 +2815,7 @@ ul.socials-2 {
 
   .slick-arrow:before {
     font-family: FontAwesome;
-    color: @textDark;
+    color: @textOnWhite;
     display: block;
     font-size: 20px;
   }
@@ -2937,6 +2939,9 @@ ul.socials-2 {
 
 /* Blog posts */
 .blog-posts {
+  .slick-arrow {
+    display: none;
+  }
   .post {
     margin-bottom: 30px !important;
 
@@ -3630,6 +3635,7 @@ ul.socials-2 {
         font-size: 75px;
         font-weight: bold;
         margin: 0 0px;
+        color: @textDark;
       }
 
       .price small {
@@ -3645,6 +3651,7 @@ ul.socials-2 {
         position: relative;
         display: block;
         margin-top: 20px;
+        color: @textDark;
       }
 
       .price .period:after {
@@ -3688,9 +3695,12 @@ ul.socials-2 {
     &:hover {
       background: @primary;
       cursor: pointer;
-      .price small, p, span {
+      .price .sum,
+      .price small,
+      .price .period, p, span {
         color: @textLight;
       }
+
       .price .period:after {
         background-color: @background;
 
@@ -3722,7 +3732,7 @@ footer ul li {
 }
 
 footer a {
-  color: @silver;
+  color: @textLight;
   text-decoration: none;
 }
 
@@ -3733,7 +3743,7 @@ footer a:hover {
 
 footer ul li a {
   display: block;
-  color: @silver;
+  color: @textLight;
   text-decoration: none;
   padding: 0px 0;
 }
@@ -4038,6 +4048,7 @@ footer {
   transform: translate3d(-50%, -50%, 0);
 }
 
+/*
 .module-menu {
   .dropdown-menu {
     min-width: 200px;
@@ -4091,7 +4102,7 @@ footer {
   .dropdown-menu > li > a:focus {
     background-color: transparent;
   }
-}
+}*/
 
 .slider-wrapper .swiper-slide {
   border-radius: 7px;
@@ -4164,67 +4175,6 @@ footer {
 footer a {
   transition: color .3s;
   text-decoration: none;
-}
-
-.member-nav > .dropdown > .dropdown-menu {
-  margin-top: 32px;
-}
-
-.sticky .member-nav .dropdown-menu {
-  margin-top: 22px;
-}
-
-@media (max-width: 991px) {
-  .member-nav > .dropdown > .dropdown-menu {
-    margin-top: 11px;
-  }
-
-  .sticky .member-nav .dropdown-menu {
-    margin-top: 11px;
-  }
-}
-
-.member-nav .dropdown-menu:before {
-  position: absolute;
-  top: -7px;
-  width: 15px;
-  height: 15px;
-  background: @defaultHover;
-  transform: rotate(45deg);
-  content: '';
-  left: 30px;
-}
-
-@media (max-width: 550px) {
-  .member-nav .dropdown-menu:before {
-    left: auto;
-    right: 20px;
-  }
-}
-
-@media (max-width: 450px) {
-  .member-nav .btn-cart {
-    position: static;
-  }
-
-  .member-nav > .dropdown.btn-cart > .dropdown-menu {
-    left: 0;
-    right: 0;
-    transform-origin: center top;
-  }
-
-  .member-nav > .dropdown > .dropdown-menu:before {
-    display: none;
-  }
-
-  .member-nav > .dropdown > .dropdown-menu {
-    margin-top: 0px;
-  }
-
-  .member-nav .shopping-cart-holder {
-    width: 100%
-  }
-
 }
 
 ul.socials li a {
@@ -4484,7 +4434,7 @@ ul.socials li a {
 a.dropdown-toggle::after {
   float: right;
   display: block;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .js-red-text {
@@ -4935,6 +4885,7 @@ a.dropdown-toggle::after {
     align-items: center;
     margin-bottom: 15px;
     position: relative;
+    overflow: hidden;
 
     .thumbnail {
       width: 100%;
@@ -4942,6 +4893,7 @@ a.dropdown-toggle::after {
       position: relative;
       background-size: cover !important;
       background-position: center center !important;
+      transition: transform .2s; /* Animation */
 
       img {
         width: 100%;
@@ -4950,6 +4902,10 @@ a.dropdown-toggle::after {
         height: 285px;
       }
 
+    }
+
+    &:hover .thumbnail {
+      transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
 
   }
@@ -4970,7 +4926,7 @@ a.dropdown-toggle::after {
   }
 
   .tags {
-    left: -10px;
+    left: 0px;
     position: absolute;
     z-index: 9;
     top: 20px;
@@ -5030,15 +4986,15 @@ a.dropdown-toggle::after {
 
     h2, h3 {
       margin-bottom: 10px;
-      color: @textLight;
+      color: @textOnBackground;
     }
 
     p {
-      color: @textLight;
+      color: @textOnBackground;
       margin-bottom: 10px;
     }
     small {
-      color: @textLight;
+      color: @textOnBackground;
     }
 
     .button-5 span {
@@ -5212,15 +5168,15 @@ a.dropdown-toggle::after {
 
     h2, h3 {
       margin-bottom: 10px;
-      color: @textLight;
+      color: @textOnBackground;
     }
 
     p {
-      color: @textLight;
+      color: @textOnBackground;
       margin-bottom: 10px;
     }
     small {
-      color: @textLight;
+      color: @textOnBackground;
     }
 
     .button-5 span {
@@ -5319,15 +5275,15 @@ a.dropdown-toggle::after {
     }
     h2, h3 {
       margin-bottom: 10px;
-      color: @textLight;
+      color: @textOnBackground;
     }
 
     p {
-      color: @textLight;
+      color: @textOnBackground;
       margin-bottom: 10px;
     }
     small {
-      color: @textLight;
+      color: @textOnBackground;
     }
 
     .button-5 span {
@@ -5760,7 +5716,7 @@ a.dropdown-toggle::after {
 
 .home-slider {
   h1, h2, h3, h4, h5, h6, p {
-    color: @textLight;
+    color: @textOnBackground;
   }
   p {
     font-size: @title-sm;
@@ -5828,7 +5784,7 @@ a.dropdown-toggle::after {
 
   .bx-wrapper .bx-controls-direction a:before {
     font-family: FontAwesome;
-    color: @textLight;
+    color: @textOnBackground;
     display: block;
     font-size: 20px;
     text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8);
@@ -6198,13 +6154,14 @@ a.dropdown-toggle::after {
 }
 
 .module-categories-template-horizontal-list-1 ul.mw-cats-menu {
+  text-align: left;
   li {
     display: block !important;
-
     a {
       font-size: @paragraph-lg;
       font-weight: bold;
       padding: 8px 10px;
+      color: @textDark;
 
       &:hover {
         color: @primary;
@@ -6245,4 +6202,28 @@ a.dropdown-toggle::after {
 
 .module-categories-template-horizontal-list-1 ul.mw-cats-menu > li:hover > ul {
   padding: 0;
+}
+
+.module-custom-fields textarea[name="Message"] {
+  min-height: 200px;
+}
+
+.faq-holder.styled .item {
+  width: 100%;
+}
+
+.module-multilanguage {
+  .mw-dropdown-default .mw-ui-btn {
+    background: @primary;
+    border-color: @primary;
+
+    .flag-icon {
+      margin-right: 10px;
+      font-size: 13px;
+    }
+  }
+
+  .flag-icon{
+    margin-right:10px;
+  }
 }

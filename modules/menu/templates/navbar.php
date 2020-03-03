@@ -33,7 +33,7 @@ $menu_filter['li_submenu_class'] = 'dropdown';
 $menu_filter['li_submenu_a_class'] = 'dropdown-toggle';
 
 $menu_filter['link'] = '<a itemprop="url" data-item-id="{id}" class="menu_element_link {active_class} {exteded_classes} {nest_level} {a_class}"  href="{url}"><span>{title}</span></a>';
-$menu_filter['li_submenu_a_link'] = '<a itemprop="url" data-item-id="{id}" href="{url}" class="menu_element_link {active_class} {exteded_classes} {nest_level} {li_submenu_a_class}" aria-haspopup="true" aria-expanded="false">{title} <span class="caret"></span></a>';
+$menu_filter['li_submenu_a_link'] = '<a itemprop="url" data-item-id="{id}" href="{url}" class="menu_element_link {active_class} {exteded_classes} {nest_level} {li_submenu_a_class}" aria-haspopup="true" aria-expanded="false"><span class="name">{title}</span> <span class="caret"></span></a>';
 
 $mt = menu_tree($menu_filter);
 

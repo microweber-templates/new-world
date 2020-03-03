@@ -15,7 +15,7 @@ description: Default
 <?php if (isset($data) and is_array($data)): ?>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="<?php print(site_url()); ?>"><?php print _e('Home'); ?></a></li>
+            <li class="breadcrumb-item"><a href="<?php print  $homepage['url']; ?>"><?php print $homepage['title']; ?></a></li>
 
             <?php foreach ($data as $item): ?>
                 <?php if (!($item['is_active'])): ?>

@@ -30,7 +30,7 @@
   }
 
   h1, h2, h3, h4, h5, h6, p, p.lead {
-    color: @textLight;
+    color: @textOnBackground;
   }
   .container {
     z-index: 9;
@@ -41,7 +41,7 @@
     height: 100%;
     text-align: right;
 
-    color: @textLight;
+    color: @textOnBackground;
     display: flex;
     flex-flow: column;
     align-self: center;
@@ -52,7 +52,7 @@
     ul li {
       display: block;
       a {
-        color: @textLight;
+        color: @textOnBackground;
         font-size: @title-sm;
         margin: 35px 40px 35px 0;
       }
@@ -86,7 +86,7 @@
   }
 
   h1, h2, h3, h4, h5, h6, p, p.lead {
-    color: @textLight;
+    color: @textOnBackground;
   }
 
   .container {
@@ -98,7 +98,7 @@
     height: 100%;
     text-align: right;
 
-    color: @textLight;
+    color: @textOnBackground;
     display: flex;
     flex-flow: column;
     align-self: center;
@@ -109,7 +109,7 @@
     ul li {
       display: block;
       a {
-        color: @textLight;
+        color: @textOnBackground;
         font-size: @title-sm;
         margin: 35px 40px 35px 0;
       }
@@ -287,6 +287,7 @@
     margin-top: 50px;
     margin-bottom: 50px;
 
+    .mw-icon,
     .icon {
       margin-bottom: 35px;
       font-size: 65px;
@@ -445,6 +446,7 @@
 
   .icon-holder {
     margin: 50px auto;
+    .mw-icon,
     .icon {
       margin-bottom: 20px;
       font-size: 55px;
@@ -506,14 +508,14 @@
     .icon, .mw-icon {
       margin-bottom: 30px;
       font-size: 55px;
-      color: @textLight;
+      color: @textOnBackground;
       display: block;
     }
   }
 
   h6 {
     font-size: 30px;
-    color: @textLight;
+    color: @textOnBackground;
     margin-bottom: 5px;
     font-weight: 500;
     font-style: normal;
@@ -523,7 +525,7 @@
   }
 
   p {
-    color: @textLight;
+    color: @textOnBackground;
   }
 
   .button-holder:before {
@@ -561,6 +563,7 @@
     width: calc(~"100% - 50px");
   }
 
+  .mw-icon,
   .icon {
     display: block;
     float: left;
@@ -617,8 +620,9 @@
 
   .info-holder {
     z-index: 9;
-    background: #fff;
+    background: @background;
     padding: 50px 70px;
+    border: 1px solid rgba(red(@textDark), green(@textDark), blue(@textDark), 0.3);
   }
 
   .flexbox-container {
@@ -634,11 +638,14 @@
     flex-direction: column;
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    color: @textDark;
+  }
   p,
   span {
     font-size: 16px;
     line-height: 1.5;
-    color: @dark;
+    color: @textDark;
   }
 
   p {
@@ -691,8 +698,9 @@
 
   .info-holder {
     z-index: 9;
-    background: #fff;
+    background: @background;
     padding: 50px 70px;
+    border: 1px solid rgba(red(@textDark), green(@textDark), blue(@textDark), 0.3);
   }
 
   .flexbox-container {
@@ -709,11 +717,15 @@
     flex-direction: column;
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    color: @textDark;
+  }
+
   p,
   span {
     font-size: 16px;
     line-height: 1.5;
-    color: @dark;
+    color: @textDark;
   }
 
   p {
@@ -780,6 +792,10 @@
       position: absolute;
     }
   }
+
+  .text-white h1, .text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6, .text-white p {
+    color: @textOnBackground !important;
+  }
 }
 
 /* *******************************************
@@ -806,12 +822,16 @@
   .info-holder {
     padding-left: 50px;
     padding-right: 50px;
+
+    h1, h2, h3, h4, h5, h6, p {
+      color: @textOnBackground !important;
+    }
   }
 
   blockquote:before,
   blockquote,
   blockquote .testimonial .name {
-    color: @textLight;
+    color: @textOnBackground;
     text-align: left;
   }
 
@@ -820,7 +840,7 @@
     height: 100%;
     text-align: right;
 
-    color: @textLight;
+    color: @textOnBackground;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -829,7 +849,7 @@
     ul li {
       display: block;
       a {
-        color: @textLight;
+        color: @textOnBackground;
         font-size: @title-sm;
         margin: 35px 40px 35px 0;
       }
@@ -940,12 +960,17 @@
     margin: 10px 0;
   }
 
+  .text-white h1, .text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6, .text-white p {
+    color: @textOnBackground !important;
+  }
+
   .background-image-holder {
     -webkit-background-size: cover;
     background-size: cover;
     padding: 15px;
     margin-bottom: 30px;
     position: relative;
+    height: 100%;
 
     &:before {
       position: absolute;
@@ -960,13 +985,13 @@
   }
 
   .icon-holder {
-    color: @textLight;
+    color: @textOnBackground;
     margin-top: 10px;
     margin-bottom: 20px;
 
     i, span {
       font-size: 45px;
-      color: @textLight;
+      color: @textOnBackground;
       display: block;
     }
   }
@@ -975,15 +1000,20 @@
     position: relative;
     width: 100%;
     z-index: 2;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
 
     .content {
-      position: absolute;
+      position: relative;
       width: 100%;
       height: 100%;
       display: flex;
       flex-flow: column;
       align-items: center;
       justify-content: center;
+      display: flex;
     }
   }
 
@@ -1352,7 +1382,7 @@
     -moz-border-radius: 3px;
     border-radius: 3px;
     padding-bottom: 50px;
-
+    .mw-icon,
     .icon {
       margin-bottom: 15px;
       font-size: 55px;
@@ -1365,6 +1395,7 @@
       * {
         color: @textLight;
       }
+      .mw-icon,
       .icon {
         color: @textLight;
       }
@@ -1403,7 +1434,7 @@
   }
 
   h1, h2, h3, h4, h5, h6, p, p.lead {
-    color: @textLight;
+    color: @textOnBackground;
   }
   .container {
     z-index: 9;
@@ -1414,7 +1445,7 @@
     height: 100%;
     text-align: right;
 
-    color: @textLight;
+    color: @textOnBackground;
     display: flex;
     flex-flow: column;
     align-self: center;
@@ -1425,7 +1456,7 @@
     ul li {
       display: block;
       a {
-        color: @textLight;
+        color: @textOnBackground;
         font-size: @title-sm;
         margin: 35px 40px 35px 0;
       }

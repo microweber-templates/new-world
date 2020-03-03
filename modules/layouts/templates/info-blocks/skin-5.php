@@ -33,7 +33,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             <h1 class="m-b-30">Making the web a better place with Microweber</h1>
                             <p>Microweber is an open-source content management system and website builder. It is based on the PHP programming language and the Laravel 5 web application framework, using drag and drop and allowing users to quickly create content, while scheduling and managing multiple
                                 displays.</p>
-                            <div class="element nodrop m-t-50 text-center text-lg-right">
+                            <div class="element m-t-50 text-center text-lg-right">
                                 <module type="btn" template="bootstrap" button_style="btn-primary" button_size="btn-lg" text="Become a Partner"/>
                             </div>
                         </div>

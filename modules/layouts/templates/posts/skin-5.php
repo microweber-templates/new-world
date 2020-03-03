@@ -26,10 +26,12 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
 <section class="section <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-posts-skin-5-<?php print $params['id'] ?>" rel="module">
     <div class="container allow-drop">
-        <div class="row element nodrop">
+        <div class="element">
+            <div class="row nodrop">
             <div class="col-12 text-center">
                 <h2 class="hr">Blog</h2>
             </div>
+        </div>
         </div>
 
         <module type="posts" template="news-3"/>

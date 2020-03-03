@@ -83,18 +83,30 @@ if (!isset($tn[1])) {
                             </a>
                         <?php endif; ?>
 
-                        <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
-                            <div class="row">
-                                <div class="col-6 price-holder">
-                                    <p><span class="price-old"><?php print currency_format(get_product_price($item['id'])); ?></span> <span class="price"><?php print currency_format(get_product_price($item['id'])); ?></span></p>
-                                </div>
-                                <div class="col-6 text-right">
-                                    <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
-                                        <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-primary btn-sm"><i class="material-icons">shopping_cart</i> Add to cart</a>
-                                    <?php endif; ?>
-                                </div>
+                        <div class="row">
+                            <div class="col-6 price-holder">
+                                <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
+                                    <?php if (isset($item['prices']) and is_array($item['prices'])) { ?>
+                                        <?php
+                                        $vals2 = array_values($item['prices']);
+                                        $val1 = array_shift($vals2);
+                                        ?>
+                                        <p>
+                                            <?php if (isset($item['original_price']) AND $item['original_price'] != ''): ?>
+                                                <span class="price-old"><?php print currency_format($item['original_price']); ?></span>
+                                            <?php endif; ?>
+                                            <span class="price"><?php print currency_format($val1); ?></span>
+                                        </p>
+                                    <?php } ?>
+                                <?php endif; ?>
                             </div>
-                        <?php endif; ?>
+
+                            <div class="col-6 text-right">
+                                <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
+                                    <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-primary btn-sm"><i class="material-icons">shopping_cart</i> Add to cart</a>
+                                <?php endif; ?>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -103,5 +115,5 @@ if (!isset($tn[1])) {
 <?php endif; ?>
 
 <?php if (isset($pages_count) and $pages_count > 1 and isset($paging_param)): ?>
-    <module type="pagination" pages_count="<?php echo $pages_count; ?>" paging_param="<?php echo $paging_param; ?>" />
+    <module type="pagination" pages_count="<?php echo $pages_count; ?>" paging_param="<?php echo $paging_param; ?>"/>
 <?php endif; ?>

@@ -7,6 +7,14 @@ if (isset($content_data['qty']) and $content_data['qty'] != 'nolimit' and intval
     $in_stock = false;
 }
 
+if (isset($content_data['qty']) and $content_data['qty'] == 'nolimit') {
+    $available_qty = 'unlimited';
+} elseif (isset($content_data['qty']) and $content_data['qty'] != 0) {
+    $available_qty = $content_data['qty'];
+} else {
+    $available_qty = 0;
+}
+
 $item = get_content_by_id(CONTENT_ID);
 $itemData = content_data($content['id']);
 $itemTags = content_tags($content['id']);
@@ -89,7 +97,6 @@ $prev = prev_content();
                                             </div>
                                         </div>
 
-
                                         <div class="row">
                                             <div class="col-12">
                                                 <table class="table w-100">
@@ -107,8 +114,8 @@ $prev = prev_content();
 
                                         <div class="row">
                                             <div class="col-12">
-                                                <div class="description">
-                                                    <div class="edit bold typography-area" field="content_body_short" rel="content">
+                                                <div class="description-short">
+                                                    <div class="edit typography-area" field="content_body_short" rel="content">
                                                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
                                                     </div>
                                                 </div>
@@ -123,9 +130,9 @@ $prev = prev_content();
                                             <div class="col-6 text-right">
                                                 <div class="availability">
                                                     <?php if ($in_stock == true): ?>
-                                                        <span class="text-success"><i class="fas fa-circle" style="font-size: 8px;"></i> <?php _e("In Stock") ?></span> <span class="text-muted">(122)</span>
+                                                        <span class="text-success"><i class="fas fa-circle" style="font-size: 8px;"></i> <?php _e("In Stock") ?></span> <span class="text-muted">(<?php echo $available_qty; ?>)</span>
                                                     <?php else: ?>
-                                                        <span class="text-danger"><i class="fas fa-circle" style="font-size: 8px;"></i> <?php _e("Out of Stock") ?></span> <span class="text-muted">(122)</span>
+                                                        <span class="text-danger"><i class="fas fa-circle" style="font-size: 8px;"></i> <?php _e("Out of Stock") ?></span>
                                                     <?php endif; ?>
                                                 </div>
                                             </div>

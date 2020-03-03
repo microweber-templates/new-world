@@ -36,11 +36,13 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                     </div>
 
                     <div class="col-md-6 right-side allow-drop">
-                        <div class="element nodrop clearfix">
+                        <div class="element">
+                        <div class="nodrop clearfix">
                             <div class="float-right" style="width: 80px;">
                                 <hr class="hr w-100 safe-element m-t-10"/>
                             </div>
                             <p class="m-b-20 text-primary" style="letter-spacing:1.5px;">Trust our best services</p>
+                        </div>
                         </div>
 
                         <h2 class="m-b-30">What we are <br class="d-none d-xl-block"/>doing best.</h2>

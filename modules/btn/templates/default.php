@@ -14,7 +14,6 @@ description: Default
         mw.require('tools.js', true);
         mw.require('ui.css', true);
     </script>
-
 <?php if ($action AND $action == 'submit'): ?>
     <?php if (!isset($style) OR $style == '' OR $style == 'btn-default'): ?>
         <button type="submit" id="<?php print $btn_id ?>" class="btn btn-primary">
@@ -95,10 +94,10 @@ description: Default
     <?php elseif ($style == '8'): ?>
         <a href="<?php print $url; ?>" <?php if ($blank) {
             print ' target="_blank" ';
-        } ?> class="button-8" id="<?php print $btn_id ?>"><span>Read more</span></a>
+        } ?> class="button-8" id="<?php print $btn_id ?>"><span><?php print $text; ?></span></a>
     <?php elseif ($style == '9'): ?>
         <a href="<?php print $url; ?>" <?php if ($blank) {
             print ' target="_blank" ';
-        } ?> class="button-8 button-red" id="<?php print $btn_id ?>"><span>Read more</span></a>
+        } ?> class="button-8 button-red" id="<?php print $btn_id ?>"><span><?php print $text; ?></span></a>
     <?php endif; ?>
 <?php endif; ?>

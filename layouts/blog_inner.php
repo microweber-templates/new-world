@@ -90,7 +90,7 @@
             </div>
         </div>
 
-        <div class="edit safe-mode nodrop" field="blog-inner" rel="page">
+        <div class="edit safe-mode nodrop blog-inner-page" field="blog-inner" rel="page">
             <module type="comments" template="default"/>
         </div>
     </div>

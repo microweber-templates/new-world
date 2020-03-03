@@ -22,7 +22,18 @@
 @paragraph-sm: 12px;
 
 /* Colors */
-@default: #212121;
+@light: #fff;
+@textLight: #f4f4f4;
+@textLightHover: lighten(@textLight, 20%);
+
+@dark: #212121;
+@textDark: #212121;
+@textDarkHover: lighten(@textDark, 20%);
+
+@textOnWhite: #212121;
+@textOnBackground: #fff;
+
+@default: @dark;
 @defaultHover: lighten(@default, 20%);
 
 @primary: #0044de;
@@ -31,13 +42,6 @@
 @secondary: #6aabcf;
 @secondaryHover: lighten(@secondary, 20%);
 
-@light: #fff;
-@textLight: #f4f4f4;
-@textLightHover: lighten(@textLight, 20%);
-
-@dark: #3f4043;
-@textDark: #212121;
-@textDarkHover: lighten(@textDark, 20%);
 
 @grey: #bfbfbf;
 @silver: #f3f3f3;
@@ -81,7 +85,7 @@
 
 /*Header Menu Navigation*/
 @header-menu-font-weight: 600;
-@header-menu-font-color: @textLight;
+@header-menu-font-color: @textOnBackground;
 @header-menu-font-color-on-hover: @primary;
 @header-menu-font-color-on-sticky: @textDark;
 @header-menu-font-size: 16px;
@@ -130,7 +134,7 @@
 @logo-space: 10px;
 @logo-mobile-space: 15px;
 @logo-height-container: auto;
-@logo-max-height: 100%;
+@logo-max-height: 100px;
 @logo-max-width: 100% !important;
 @mobile-logo-height-container: 36px;
 @mobile-logo-max-height: 100%;

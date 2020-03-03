@@ -10,18 +10,18 @@
 }
 
 .blog-inner-page ul.socials li a {
-  color: @dark;
+  color: @textDark;
   background: transparent;
 }
 
 .blog-inner-page ul.socials li a:hover {
-  color: @dark;
+  color: @textDark;
   background: @default;
 }
 
 .blog-inner-page .heading h1 {
   font-size: @title-lg;
-  color: @dark;
+  color: @textDark;
   font-weight: 600;
 
   @media screen and (max-width: 1199px) {
@@ -49,7 +49,7 @@
 
 .blog-inner-page .share-label {
   font-size: 18px;
-  color: @dark;
+  color: @textDark;
   font-weight: bold;
 }
 
@@ -84,7 +84,7 @@
 .blog-inner-page .comments .comment-holder .description,
 .blog-inner-page .comments .comment-holder .description p {
   font-size: 16px;
-  color: @dark;
+  color: @textDark;
   text-align: center;
 }
 
@@ -117,7 +117,7 @@
 
 .blog-inner-page .reviews .heading h3 {
   font-size: @paragraph-lg;
-  color: @dark;
+  color: @textDark;
   font-weight: bold;
   padding: 8px 0 25px 0px;
 }
@@ -131,7 +131,7 @@
 .blog-inner-page .reviews .review {
   background: @silver;
   padding: 15px 0;
-  color: @dark;
+  color: @textOnWhite;
   margin-bottom: 20px;
 }
 
@@ -163,14 +163,14 @@
 }
 
 .blog-inner-page .reviews .review .info h4 {
-  color: @dark;
+  color: @textOnWhite;
   font-size: 14px;
   font-weight: 700;
   margin: 10px 0 20px 0;
 }
 
 .blog-inner-page .reviews .review .info p {
-  color: @dark;
+  color: @textOnWhite;
   font-size: 14px;
 }
 
@@ -186,19 +186,19 @@
 
 .blog-inner-page .leave-review .left-side i {
   font-size: 50px;
-  color: @default
+  color: @textOnWhite
 }
 
 .blog-inner-page .leave-review .right-side h3 {
   font-size: 24px;
-  color: @dark;
+  color: @textOnWhite;
   font-weight: bold;
   margin: 12px 0 25px 0;
 }
 
 .blog-inner-page .leave-review .right-side p {
   font-size: 16px;
-  color: @dark;
+  color: @textOnWhite;
 }
 
 .blog-inner-page .leave-review .form textarea {
@@ -212,7 +212,7 @@
 
 .blog-inner-page .leave-review .form .form-group label {
   font-size: 14px;
-  color: @dark;
+  color: @textOnWhite;
   line-height: 1.4;
   margin-bottom: 10px;
 }
@@ -222,7 +222,7 @@
   -moz-box-shadow: none;
   box-shadow: none;
   border: 2px solid #ddd;
-  color: @textDark;
+  color: @textOnWhite;
   font-size: 0.857rem;
   padding: 12px 20px;
   margin-bottom: 10px;
@@ -245,13 +245,18 @@
   color: fade(@grey, 80%);
 }
 
+.blog-inner-page .reviews {
+  h1, h2, h3, h4, h5, h6, p, span {
+    color: @textOnWhite !important;
+  }
+}
+
 /* Page - Shop Inner */
 .relative {
   position: relative;
 }
 
 .shop-inner-page {
-
   .next-previous-content {
     .btn {
       padding: 4px 8px;
@@ -267,6 +272,14 @@
     margin-bottom: 20px;
     border-bottom: 1px solid #ebebeb;
     padding-bottom: 20px;
+
+    h4 {
+      width: calc(~"100% - 70px");
+    }
+
+    .next-previous-content {
+
+    }
   }
 
   .main-price {
@@ -315,13 +328,22 @@
     color: @textDark;
   }
 
+  .description-short {
+    margin-top: 20px;
+    h1, h2, h3, h4, h5, h6, span, p {
+      color: @textDark;
+    }
+  }
   .description {
     margin-top: 20px;
+    h1, h2, h3, h4, h5, h6 {
+      color: @textOnWhite;
+    }
 
     p {
       line-height: 1.5;
       font-size: @paragraph-lg;
-      color: @textDark;
+      color: @textOnWhite;
       text-align: justify;
       margin-bottom: 10px;
     }
@@ -338,7 +360,7 @@
 
   .description .table td {
     font-size: 16px;
-    color: @dark;
+    color: @textDark;
     font-weight: bold;
   }
 
@@ -419,7 +441,7 @@
 
   .product-specifications .table-striped th {
     background: transparent;
-    color: @dark;
+    color: @textDark;
     text-transform: uppercase;
   }
 
@@ -452,23 +474,28 @@
 
   .product-specifications .right-side h3 {
     font-size: 24px;
-    color: @dark;
+    color: @textDark;
     font-weight: bold;
     margin: 12px 0 25px 0;
   }
 
   .product-specifications .right-side p {
     font-size: 16px;
-    color: @dark;
+    color: @textDark;
   }
 
   .reviews {
     margin-top: 20px;
+
+    h1, h2, h3, h4, h5, h6, span, p {
+      color: @textOnWhite;
+    }
+
   }
 
   .reviews .heading h3 {
     font-size: @paragraph-lg;
-    color: @dark;
+    color: @textOnWhite;
     font-weight: bold;
     padding: 8px 0 25px 0px;
   }
@@ -482,7 +509,7 @@
   .reviews .review {
     background: @silver;
     padding: 15px 0;
-    color: @dark;
+    color: @textOnWhite;
     margin-bottom: 20px;
   }
 
@@ -514,14 +541,14 @@
   }
 
   .reviews .review .info h4 {
-    color: @dark;
+    color: @textOnWhite;
     font-size: 14px;
     font-weight: 700;
     margin: 0px 0 20px 0;
   }
 
   .reviews .review .info p {
-    color: @dark;
+    color: @textOnWhite;
     font-size: 14px;
   }
 
@@ -542,14 +569,14 @@
 
   .leave-review .right-side h3 {
     font-size: 24px;
-    color: @dark;
+    color: @textOnWhite;
     font-weight: bold;
     margin: 12px 0 25px 0;
   }
 
   .leave-review .right-side p {
     font-size: 16px;
-    color: @dark;
+    color: @textOnWhite;
   }
 
   .leave-review .form textarea {
@@ -563,7 +590,7 @@
 
   .leave-review .form .form-group label {
     font-size: 14px;
-    color: @dark;
+    color: @textOnWhite;
     line-height: 1.4;
     margin-bottom: 10px;
   }
@@ -573,7 +600,7 @@
     -moz-box-shadow: none;
     box-shadow: none;
     border: 2px solid #ddd;
-    color: @textDark;
+    color: @textOnWhite;
     font-size: 0.857rem;
     padding: 12px 20px;
     margin-bottom: 10px;

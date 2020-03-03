@@ -29,7 +29,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                 <div class="col-12 col-lg-12 col-xl-10 mx-auto">
 
                     <div class="row text-center text-white">
-                        <div class="col-12 col-sm-6 col-md-4 cloneable">
+                        <div class="col-12 col-sm-6 col-md-4 cloneable m-b-30">
                             <div class="background-image-holder" style="background-image: url('<?php print template_url(); ?>assets/img/feature-1.jpg');">
                                 <div class="square">
                                     <div class="content allow-drop">
@@ -43,7 +43,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             </div>
                         </div>
 
-                        <div class="col-12 col-sm-6 col-md-4 cloneable">
+                        <div class="col-12 col-sm-6 col-md-4 cloneable m-b-30">
                             <div class="background-image-holder" style="background-image: url('<?php print template_url(); ?>assets/img/feature-2.jpg');">
                                 <div class="square">
                                     <div class="content allow-drop">
@@ -58,7 +58,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             </div>
                         </div>
 
-                        <div class="col-12 col-sm-6 col-md-4 cloneable">
+                        <div class="col-12 col-sm-6 col-md-4 cloneable m-b-30">
                             <div class="background-image-holder" style="background-image: url('<?php print template_url(); ?>assets/img/feature-3.jpg');">
                                 <div class="square">
                                     <div class="content allow-drop">

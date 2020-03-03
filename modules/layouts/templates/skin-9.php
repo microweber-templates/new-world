@@ -23,7 +23,7 @@ if (!$classes['padding_bottom']) {
 $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
 ?>
 <?php
-$title = 'Contact Us';
+$title = 'Your Title Here';
 if (page_title()) {
     $title = page_title();
 }

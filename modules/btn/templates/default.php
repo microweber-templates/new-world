@@ -10,10 +10,7 @@ description: Default
 
 */
 ?>
-    <script>
-        mw.require('tools.js', true);
-        mw.require('ui.css', true);
-    </script>
+
 <?php if ($action AND $action == 'submit'): ?>
     <?php if (!isset($style) OR $style == '' OR $style == 'btn-default'): ?>
         <button type="submit" id="<?php print $btn_id ?>" class="btn btn-primary">

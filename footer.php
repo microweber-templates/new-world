@@ -50,8 +50,7 @@
 
 <?php include('footer_cart.php'); ?>
 
-<!-- Plugins -->
-<script src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;language=en-GB&amp;key=AIzaSyDbN7i-eF7dlNNp-bxbERNomOGYpZld3B0"></script>
+
 <script>
     mw.lib.require('slick');
     mw.lib.require('collapse_nav');

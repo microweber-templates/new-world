@@ -29,7 +29,7 @@ description: Footer
 
     <div class="row m-0 footer-newsletter">
         <div class="col-12 col-sm-9 p-0">
-            <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email"/>
+            <input type="email" name="email" class="form-control input-lg" placeholder="Email"/>
         </div>
 
         <div class="col-12 col-sm-3 p-0">

@@ -16,27 +16,28 @@
             <section class="section-19">
                 <div class="container">
                     <div class="background-image-holder d-flex" style="background-image: url('<?php print $picture; ?>');">
-                        <div class="row w-100 m-0 align-self-center">
+                        <?php /*<div class="row w-100 m-0 align-self-center">
                             <div class="col-lg-12">
                                 <div class="d-flex w-100 h-100">
-                                    <div class="w-100 align-self-center info-holder allow-drop text-white">
+                                    <div class="w-100 align-self-center info-holder text-white">
                                         <h1 class="m-b-30"><?php echo $post['title']; ?></h1>
                                         <h5><?php echo date('d M Y', strtotime($post['updated_at'])); ?></h5>
                                     </div>
                                 </div>
-                            </div>
+                            </div>*/ ?>
                         </div>
                     </div>
                 </div>
             </section>
         <?php else: ?>
+    <?php /*
             <section class="section-19">
                 <div class="container">
                     <div class="text-holder d-flex bg-silver">
                         <div class="row w-100 m-0 align-self-center">
                             <div class="col-lg-12">
                                 <div class="d-flex w-100 h-100">
-                                    <div class="w-100 align-self-center info-holder allow-drop">
+                                    <div class="w-100 align-self-center info-holder">
                                         <h1 class="m-b-30 text-dark"><?php echo $post['title']; ?></h1>
                                         <h5 class="text-primary"><?php echo date('d M Y', strtotime($post['updated_at'])); ?></h5>
                                     </div>
@@ -45,11 +46,19 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>*/ ?>
         <?php endif; ?>
 
+        <section class="section">
+            <div class="container">
+                <div class="text-holder text-center">
+                    <h1 class="m-b-30 text-dark"><?php echo $post['title']; ?></h1>
+                </div>
+            </div>
+        </section>
+
         <div class="blog-inner-page" id="blog-content-<?php print CONTENT_ID; ?>">
-            <div class="container m-t-100 m-b-50">
+            <div class="container m-t-30 m-b-50">
                 <div class="row">
                     <div class="col-xl-6 mx-auto">
                         <div class="description edit dropcap typography-area" field="content" rel="content">
@@ -66,6 +75,10 @@
                             //include(template_dir() . 'elements' . DS . 'paragraph.php');
                             //include(template_dir() . 'elements' . DS . 'unordered-list.php');
                             ?>
+                        </div>
+
+                        <div class="text-right m-b-20">
+                            <h6 class="text-dark"><?php echo date('d M Y', strtotime($post['updated_at'])); ?></h6>
                         </div>
 
                         <div class="border-top-bottom">

@@ -17,22 +17,22 @@ description: Skin-1
     <div class="row">
         <div class="col-6">
             <div class="form-group">
-                <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="Name"/>
+                <input type="text" name="first_name"  class="form-control input-lg" placeholder="Name"/>
             </div>
         </div>
         <div class="col-6">
             <div class="form-group">
-                <input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Last name"/>
+                <input type="text" name="last_name"  class="form-control input-lg" placeholder="Last name"/>
             </div>
         </div>
         <div class="col-12">
             <div class="form-group">
-                <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email"/>
+                <input type="email" name="email" class="form-control input-lg" placeholder="Email"/>
             </div>
         </div>
         <div class="col-12">
             <div class="form-group">
-                <button type="submit" class="btn btn-primary">Schrijf in</button>
+                <button type="submit" class="btn btn-primary"><?php _e('Submit'); ?></button>
             </div>
         </div>
     </div>

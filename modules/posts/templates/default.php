@@ -59,7 +59,9 @@ if ($columns_xl != null OR $columns_xl != false OR $columns_xl != '') {
                                         <?php if ($itemTags): ?>
                                             <div class="tags">
                                                 <?php foreach ($itemTags as $tag): ?>
-                                                    <span class="badge badge-primary"><?php echo $tag; ?></span>
+                                                    <?php if ($key < 3): ?>
+                                                        <span class="badge badge-primary"><?php echo $tag; ?></span>
+                                                    <?php endif; ?>
                                                 <?php endforeach; ?>
                                             </div>
                                         <?php endif; ?>

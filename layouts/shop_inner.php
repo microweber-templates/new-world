@@ -8,7 +8,7 @@ if (isset($content_data['qty']) and $content_data['qty'] != 'nolimit' and intval
 }
 
 if (isset($content_data['qty']) and $content_data['qty'] == 'nolimit') {
-    $available_qty = 'unlimited';
+    $available_qty = '';
 } elseif (isset($content_data['qty']) and $content_data['qty'] != 0) {
     $available_qty = $content_data['qty'];
 } else {
@@ -46,7 +46,7 @@ $prev = prev_content();
                                 <div class="product-info">
                                     <div class="product-info-content">
                                         <div class="heading">
-                                            <h4 class="edit d-inline-block" field="title" rel="content"><?php print content_title(); ?></h4>
+                                            <h1 class="edit d-inline-block" field="title" rel="content"><?php print content_title(); ?></h1>
 
                                             <div class="next-previous-content float-right">
                                                 <?php if ($prev != false) { ?>
@@ -93,7 +93,13 @@ $prev = prev_content();
 
                                         <div class="row main-price">
                                             <div class="col-12">
-                                                <p><span class="price-old"><?php print currency_format(get_product_price()); ?></span> <span class="price"><?php print currency_format(get_product_price()); ?></span></p>
+                                                <?php $prices = get_product_prices(content_id(), true); ?>
+                                                <?php if (isset($prices[0]) and is_array($prices)) { ?>
+                                                    <p>
+                                                        <?php if (isset($prices[0]['original_value'])): ?><span class="price-old"><?php print currency_format($prices[0]['original_value']); ?></span><?php endif; ?>
+                                                        <?php if (isset($prices[0]['value'])): ?><span class="price"><?php print currency_format($prices[0]['value']); ?></span><?php endif; ?>
+                                                    </p>
+                                                <?php } ?>
                                             </div>
                                         </div>
 
@@ -124,13 +130,13 @@ $prev = prev_content();
 
                                         <div class="row m-t-20">
                                             <div class="col-6">
-                                                <h5>Options</h5>
+                                                <h5><?php _e("Options") ?></h5>
                                             </div>
 
                                             <div class="col-6 text-right">
                                                 <div class="availability">
                                                     <?php if ($in_stock == true): ?>
-                                                        <span class="text-success"><i class="fas fa-circle" style="font-size: 8px;"></i> <?php _e("In Stock") ?></span> <span class="text-muted">(<?php echo $available_qty; ?>)</span>
+                                                        <span class="text-success"><i class="fas fa-circle" style="font-size: 8px;"></i> <?php _e("In Stock") ?></span> <span class="text-muted"><?php if ($available_qty != ''): ?>(<?php echo $available_qty; ?>)<?php endif; ?></span>
                                                     <?php else: ?>
                                                         <span class="text-danger"><i class="fas fa-circle" style="font-size: 8px;"></i> <?php _e("Out of Stock") ?></span>
                                                     <?php endif; ?>

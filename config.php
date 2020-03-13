@@ -1,14 +1,14 @@
 <?php
 
 $config = array();
-$config['name'] = "New World - Default";
+$config['name'] = "New World";
 $config['author'] = "Microweber";
 $config['version'] = 1.0;
 $config['url'] = "http://microweber.com";
 $config['standalone_module_skins'] = true;
 $config['framework'] = "bootstrap4";
 
-$config['is_default'] = 0; //if you set this parameter the template will be selected on the install screen
+$config['is_default'] = 1; //if you set this parameter the template will be selected on the install screen
 
 //Stylesheet Settings / accept type="color" and type="text" and type="title" and type="delimiter"
 $config['stylesheet_compiler']['source_file'] = 'assets/css/less/main.less';

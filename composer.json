@@ -5,10 +5,11 @@
   "keywords": [
     "microweber",
     "ecommerce",
+    "bootstrap",
     "default"
   ],
   "homepage": "https://microweber.com/",
-  "license": "Commercial",
+  "license": "MIT",
   "authors": [
     {
       "name": "MW Team",
@@ -17,9 +18,9 @@
   ],
   "support": {
     "email": "support@microweber.com",
-    "forum": "https://microweber.com/forum",
+    "forum": "https://microweber.org/community",
     "irc": "https://webchat.freenode.net/?embed=1&channels=#microweber",
-    "docs": "http://docs.microweber.com"
+    "docs": "http://docs.microweber.org"
   },
   "extra": {
     "preview_url": "http://templates.microweber.com/new-world/"

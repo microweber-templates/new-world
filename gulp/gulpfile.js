@@ -10,6 +10,7 @@ const watch = require('gulp-watch');
 const shell = require('gulp-shell');
 const gulpCopy = require('gulp-copy');
 const uglify = require('gulp-uglify');
+const rebaseUrls = require('gulp-css-url-fix');
 
 const config = require('./config');
 
@@ -47,6 +48,7 @@ const tplCSS = async (prod) => {
     return new Promise(resolve => {
     const files = config.css;
         let stream = gulp.src(files);
+        stream = stream.pipe(rebaseUrls())
         if(!prod) {
             stream = stream.pipe(sourcemaps.init())
         }

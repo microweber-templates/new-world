@@ -3,7 +3,7 @@
 $config = array();
 $config['name'] = "New World";
 $config['author'] = "Microweber";
-$config['version'] = 1.0;
+$config['version'] = 1.1;
 $config['url'] = "http://microweber.com";
 $config['standalone_module_skins'] = true;
 $config['framework'] = "bootstrap4";

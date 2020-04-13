@@ -1,15 +1,13 @@
 <?php
-
 /*
 
-type: layout
+  type: layout
 
-name: Default
+  name: Default
 
-description: Default
+  description: Default
 
-*/
-
+ */
 ?>
 
 <div class="alert alert-success margin-bottom-30" id="msg<?php print $form_id; ?>" style="display:none;">
@@ -29,7 +27,17 @@ description: Default
         </div>
 
         <div class="row">
-            <div class="col-12 text-center">
+            <div class="col-12 col-md-6 text-left">
+                <?php if (get_option('disable_captcha', $params['id']) != 'y'): ?>
+                    <div class="row">
+                        <div class="col-4"><label><?php _e("Security code"); ?></label></div>
+                        <div class="col-8 captcha-holder">
+                            <module type="captcha"/>
+                        </div>
+                    </div>
+                <?php endif; ?>
+            </div>
+            <div class="col-12 col-md-6 text-right">
                 <module type="btn" template="bootstrap" button_action="submit" button_style="btn-primary" text="Send message"/>
             </div>
         </div>

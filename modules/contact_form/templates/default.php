@@ -29,12 +29,7 @@
         <div class="row">
             <div class="col-12 col-md-6 text-left">
                 <?php if (get_option('disable_captcha', $params['id']) != 'y'): ?>
-                    <div class="row">
-                        <div class="col-4"><label><?php _e("Security code"); ?></label></div>
-                        <div class="col-8 captcha-holder">
-                            <module type="captcha"/>
-                        </div>
-                    </div>
+                    <module type="captcha"/>
                 <?php endif; ?>
             </div>
             <div class="col-12 col-md-6 text-right">

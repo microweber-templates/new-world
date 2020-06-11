@@ -43,7 +43,7 @@ if (is_logged() == true) {
         <div class="row">
             <div class="col-12 text-center">
                 <div class="m-auto allow-drop" style="max-width: 400px;">
-			<module type="users/login" />
+			        <module type="users/login" />
         </div>
         </div>
         </div>

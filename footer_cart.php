@@ -131,7 +131,7 @@
                 <div class="js-login-window">
                     <div class="icon"><i class="material-icons">person</i></div>
 
-                    <div type="users/login" id="loginModalModuleLogin"></div>
+                    <div type="users/login" template="popup" id="loginModalModuleLogin"></div>
                 </div>
 
                 <div class="js-register-window" style="display:none;">

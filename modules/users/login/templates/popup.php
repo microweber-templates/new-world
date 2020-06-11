@@ -64,6 +64,10 @@ description: Login default
                 </div>
             </div>
 
+            <?php if (isset($_GET['return_to'])): ?>
+                <input type="hidden" value="<?php echo $_GET['return_to']; ?>" name="return_to">
+            <?php endif; ?>
+
             <button type="submit" class="btn btn-default btn-lg btn-block m-t-10"><?php _e("Login"); ?></button>
         </form>
 

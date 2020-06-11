@@ -27,7 +27,7 @@
 
     <div class="row m-0 footer-newsletter">
         <div class="col-12 col-sm-9 p-0">
-            <input type="email" name="email" class="form-control input-lg" placeholder="Email"/>
+            <input type="email" name="email" required class="form-control input-lg" placeholder="Email"/>
         </div>
 
         <div class="col-12 col-sm-3 p-0">
@@ -35,18 +35,5 @@
         </div>
     </div>
 
-    <?php if (get_option('disable_captcha', $params['id']) != 'y'): ?>
-        <div class="row">
-            <div class="col-12">
-                <div class="control-group form-group">
-                    <label><?php _e("Security code"); ?></label>
-                    <div class="mw-ui-row captcha-holder">
-                        <div class="mw-ui-col">
-                            <module type="captcha"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <?php endif; ?>
+
 </form>

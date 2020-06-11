@@ -67,24 +67,23 @@
 
 <script>
     $(document).ready(function () {
+
         $('#loginModal').on('show.bs.modal', function (e) {
             $('#loginModalModuleLogin').reload_module();
             $('#loginModalModuleRegister').reload_module();
-        })
+        });
 
 
         $('#shoppingCartModal').on('show.bs.modal', function (e) {
             $('#js-ajax-cart-checkout-process').reload_module();
-        })
+        });
 
 
         mw.on('mw.cart.add', function (event, data) {
             $('#shoppingCartModal').modal('show');
 
 
-        })
-
-
+        });
 
         <?php if (isset($_GET['mw_payment_success'])) { ?>
         $('#js-ajax-cart-checkout-process').attr('mw_payment_success', true);
@@ -92,17 +91,22 @@
 
         <?php } ?>
 
-
-        $('.js-show-register-window').on('click', function () {
+        $('body').on('click', '.js-show-register-window', function (e) {
+            $('#loginModal').modal('show');
             $('.js-login-window').hide();
             $('.js-register-window').show();
-        })
-        $('.js-show-login-window').on('click', function () {
+            e.preventDefault();
+            e.stopPropagation();
+        });
+
+        $('.js-show-login-window').on('click', function (e) {
 
             $('.js-register-window').hide();
             $('.js-login-window').show();
-        })
-    })
+            e.preventDefault();
+            e.stopPropagation();
+        });
+    });
 </script>
 
 

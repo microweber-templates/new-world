@@ -108,7 +108,7 @@ description: Login default
         <p class="or"><span>or</span></p>
 
         <div class="act create">
-            <a href="#" class="js-show-register-window"><span>Create New Account</span></a>
+            <a href="<?php print register_url(); ?>" class="js-show-register-window"><span>Create New Account</span></a>
         </div>
     </div>
 <?php endif; ?>

@@ -67,9 +67,9 @@ if ($custom_classes === null OR $custom_classes === false OR $custom_classes == 
 
 <div class="mw-flex-row">
     <div class="mw-flex-col-xs-4 ">
-        <div class="mw-ui-field-holder">
-            <label class="mw-ui-label">Extra Small &lt; 576px</label>
-            <select name="columns-xs" class="mw-ui-field mw_option_field mw-full-width" data-option-group="<?php print $params['id']; ?>" data-columns="xs">
+        <div class="form-group">
+            <label class="control-label d-block">Extra Small &lt; 576px</label>
+            <select name="columns-xs" class="mw_option_field selectpicker" data-width="100%" data-option-group="<?php print $params['id']; ?>" data-columns="xs">
                 <option value="col-12" <?php if ($columns_xs == 'col-12'): ?>selected<?php endif; ?>>1 column</option>
                 <option value="col-6" <?php if ($columns_xs == 'col-6'): ?>selected<?php endif; ?>>2 columns</option>
                 <option value="col-4" <?php if ($columns_xs == 'col-4'): ?>selected<?php endif; ?>>3 columns</option>
@@ -80,9 +80,9 @@ if ($custom_classes === null OR $custom_classes === false OR $custom_classes == 
     </div>
 
     <div class="mw-flex-col-xs-4 ">
-        <div class="mw-ui-field-holder">
-            <label class="mw-ui-label">Small ≥ 576px</label>
-            <select name="columns-sm" class="mw-ui-field mw_option_field mw-full-width" data-option-group="<?php print $params['id']; ?>" data-columns="sm">
+        <div class="form-group">
+            <label class="control-label d-block">Small ≥ 576px</label>
+            <select name="columns-sm" class="mw_option_field selectpicker" data-width="100%" data-option-group="<?php print $params['id']; ?>" data-columns="sm">
                 <option value="col-sm-12" <?php if ($columns_sm == 'col-sm-12'): ?>selected<?php endif; ?>>1 column</option>
                 <option value="col-sm-6" <?php if ($columns_sm == 'col-sm-6'): ?>selected<?php endif; ?>>2 columns</option>
                 <option value="col-sm-4" <?php if ($columns_sm == 'col-sm-4'): ?>selected<?php endif; ?>>3 columns</option>
@@ -93,9 +93,9 @@ if ($custom_classes === null OR $custom_classes === false OR $custom_classes == 
     </div>
 
     <div class="mw-flex-col-xs-4 ">
-        <div class="mw-ui-field-holder">
-            <label class="mw-ui-label">Medium ≥ 768px</label>
-            <select name="columns-md" class="mw-ui-field mw_option_field mw-full-width" data-option-group="<?php print $params['id']; ?>" data-columns="md">
+        <div class="form-group">
+            <label class="control-label d-block">Medium ≥ 768px</label>
+            <select name="columns-md" class="mw_option_field selectpicker" data-width="100%" data-option-group="<?php print $params['id']; ?>" data-columns="md">
                 <option value="col-md-12" <?php if ($columns_md == 'col-md-12'): ?>selected<?php endif; ?>>1 column</option>
                 <option value="col-md-6" <?php if ($columns_md == 'col-md-6'): ?>selected<?php endif; ?>>2 columns</option>
                 <option value="col-md-4" <?php if ($columns_md == 'col-md-4'): ?>selected<?php endif; ?>>3 columns</option>
@@ -106,9 +106,9 @@ if ($custom_classes === null OR $custom_classes === false OR $custom_classes == 
     </div>
 
     <div class="mw-flex-col-xs-4 ">
-        <div class="mw-ui-field-holder">
-            <label class="mw-ui-label">Large ≥ 992px</label>
-            <select name="columns-lg" class="mw-ui-field mw_option_field mw-full-width" data-option-group="<?php print $params['id']; ?>" data-columns="lg">
+        <div class="form-group">
+            <label class="control-label d-block">Large ≥ 992px</label>
+            <select name="columns-lg" class="mw_option_field selectpicker" data-width="100%" data-option-group="<?php print $params['id']; ?>" data-columns="lg">
                 <option value="col-lg-12" <?php if ($columns_lg == 'col-lg-12'): ?>selected<?php endif; ?>>1 column</option>
                 <option value="col-lg-6" <?php if ($columns_lg == 'col-lg-6'): ?>selected<?php endif; ?>>2 columns</option>
                 <option value="col-lg-4" <?php if ($columns_lg == 'col-lg-4'): ?>selected<?php endif; ?>>3 columns</option>
@@ -119,9 +119,9 @@ if ($custom_classes === null OR $custom_classes === false OR $custom_classes == 
     </div>
 
     <div class="mw-flex-col-xs-4 ">
-        <div class="mw-ui-field-holder">
-            <label class="mw-ui-label">Extra large ≥ 1200px</label>
-            <select name="columns-xl" class="mw-ui-field mw_option_field mw-full-width" data-option-group="<?php print $params['id']; ?>" data-columns="xl">
+        <div class="form-group">
+            <label class="control-label d-block">Extra large ≥ 1200px</label>
+            <select name="columns-xl" class="mw_option_field selectpicker" data-width="100%" data-option-group="<?php print $params['id']; ?>" data-columns="xl">
                 <option value="col-xl-12" <?php if ($columns_xl == 'col-xl-12'): ?>selected<?php endif; ?>>1 column</option>
                 <option value="col-xl-6" <?php if ($columns_xl == 'col-xl-6'): ?>selected<?php endif; ?>>2 columns</option>
                 <option value="col-xl-4" <?php if ($columns_xl == 'col-xl-4'): ?>selected<?php endif; ?>>3 columns</option>
@@ -132,18 +132,18 @@ if ($custom_classes === null OR $custom_classes === false OR $custom_classes == 
     </div>
 
     <div class="mw-flex-col-xs-4 ">
-        <div class="mw-ui-field-holder">
-            <label class="mw-ui-label">Custom Classes</label>
-            <input name="custom-classes" class="mw-ui-field mw_option_field mw-full-width" data-option-group="<?php print $params['id']; ?>" value="<?php print $custom_classes; ?>" data-classes=""/>
+        <div class="form-group">
+            <label class="control-label d-block">Custom Classes</label>
+            <input name="custom-classes" class="mw_option_field form-control" data-option-group="<?php print $params['id']; ?>" value="<?php print $custom_classes; ?>" data-classes=""/>
         </div>
     </div>
 </div>
 
 <div class="mw-flex-row hidden">
     <div class="mw-flex-col-xs-12 ">
-        <div class="mw-ui-field-holder">
-            <label class="mw-ui-label">Columns</label>
-            <input name="columns" class="mw-ui-field mw_option_field mw-full-width" data-option-group="<?php print $params['id']; ?>" value="<?php print $columns; ?>"/>
+        <div class="form-group">
+            <label class="control-label d-block">Columns</label>
+            <input name="columns" class="mw_option_field form-control" data-option-group="<?php print $params['id']; ?>" value="<?php print $columns; ?>"/>
         </div>
     </div>
 </div>

@@ -61,7 +61,7 @@ if ($custom_classes === null OR $custom_classes === false OR $custom_classes == 
 
 <div class="mw-flex-row m-t-30">
     <div class="mw-flex-col-xs-4 ">
-        <h3>Posts Grid Settings</h3>
+        <h5 class="font-weight-bold">Posts Grid Settings</h5>
     </div>
 </div>
 

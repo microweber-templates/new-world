@@ -1,7 +1,7 @@
 #!/bin/bash
 
 eval `ssh-agent -s`
-ssh-add /c/work/ssh-key-petkomw/key.openssh
+ssh-add /d/Work/ssh-key-petkomw/key.openssh
 
 
 echo Set the new version. For example: 1.2.3

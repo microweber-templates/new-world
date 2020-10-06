@@ -17,7 +17,6 @@
     <meta property="og:description" content="{og_description}"/>
     <meta property="og:site_name" content="{og_site_name}"/>
     <script>
-
         mw.require('icon_selector.js');
         mw.lib.require('bootstrap4');
         mw.lib.require('bootstrap_select');

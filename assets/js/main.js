@@ -700,7 +700,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     if (!$('body').hasClass('mw-live-edit')) {
-        // AOS.init();
+         AOS.init();
     }
 })
 

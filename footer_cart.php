@@ -11,7 +11,7 @@
                 + '<section style="text-align: center;">'
                 + '<h5>' + title + '</h5>'
                 + '<p><?php _e("has been added to your cart"); ?></p><br />'
-                + '<div><a href="javascript:;" onclick="mw.tools.modal.remove(\'#AddToCartModal\')" class="pull-left mt-2"><?php _e("Continue shopping"); ?></a>'
+                + '<div><a href="javascript:;" onclick="mw.dialog.get(\'#AddToCartModal\').remove()" class="pull-left mt-2"><?php _e("Continue shopping"); ?></a>'
                 + '<a href="<?php print checkout_url(); ?>" class="btn-d pull-right"><?php _e("Checkout"); ?></a></section><div class="clearfix"></div></div>';
             return html;
         }

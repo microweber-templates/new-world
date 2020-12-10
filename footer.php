@@ -10,7 +10,7 @@
                     </div>
 
                     <div class="col-12 col-lg-12 col-xl-5 mx-auto text-center text-xl-left m-b-40 allow-drop">
-                        <module type="menu" template="simple" id="footer_menu" name="footer_menu_1"/>
+                        <module type="menu" template="simple" id="footer_menu" name="footer_menu"/>
                         <br/>
                         <p><?php print _lang('Microweber is free open source drag and dop website builder and CMS. It is under MIT license and we use Laravel  PHP framework', 'templates/new-world'); ?></p>
                     </div>

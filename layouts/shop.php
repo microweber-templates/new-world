@@ -7,7 +7,7 @@ content_type: dynamic
 name: Shop
 is_shop: y
 description: Showcase shop items in a sylish grid arrangement.
-position: 4
+position: 2
 */
 
 ?>

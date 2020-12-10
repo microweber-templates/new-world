@@ -5,7 +5,7 @@
 type: layout
 content_type: static
 name: Sign up
-position: 2
+position: 8
 description: Sign up layout
 
 */

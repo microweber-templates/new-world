@@ -5,7 +5,7 @@
   type: layout
   content_type: static
   name: Error 404
-  position: 11
+  position: 13
   description: Error 404
 
 */

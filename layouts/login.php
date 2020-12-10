@@ -5,7 +5,7 @@
 type: layout
 content_type: static
 name: Login
-position: 2
+position: 7
 description: Login layout
 
 */

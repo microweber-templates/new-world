@@ -5,7 +5,7 @@
 type: layout
 content_type: static
 name: Clean
-position: 2
+position: 14
 is_default: true
 description: Clean layout
 

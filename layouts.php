@@ -5,7 +5,7 @@
   type: layout
   content_type: static
   name: Layouts
-  position: 11
+  position: 12
   description: Home layout
 
 */

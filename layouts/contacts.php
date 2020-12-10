@@ -5,7 +5,7 @@
 type: layout
 content_type: static
 name: Contacts
-position: 4
+position: 6
 description: Contacts
 
 */

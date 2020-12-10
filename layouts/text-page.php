@@ -5,7 +5,7 @@
 type: layout
 content_type: static
 name: Text page
-position: 2
+position: 10
 description: Text layout
 
 */

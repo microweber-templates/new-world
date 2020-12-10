@@ -5,7 +5,7 @@
 type: layout
 content_type: static
 name: About us
-position: 2
+position: 5
 description: About us
 
 */

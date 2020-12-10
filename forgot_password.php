@@ -5,7 +5,7 @@
   type: layout
   content_type: static
   name: Forgot password
-  position: 11
+  position: 9
   description: Forgot password page
 
 */

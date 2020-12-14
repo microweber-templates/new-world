@@ -4,9 +4,9 @@
 
   type: layout
   content_type: static
-  name: Login
+  name: Register
   position: 11
-  description: Login page
+  description: Register page
 
 */
 

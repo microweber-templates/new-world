@@ -15,8 +15,15 @@ $itemTags = content_tags($post['id']);
 <?php if ($picture != '' AND $picture != false): ?>
     <section class="section-19">
         <div class="container">
-            <div class="background-image-holder d-flex" style="background-image: url('<?php print $picture; ?>');">
-                <?php /*<div class="row w-100 m-0 align-self-center">
+            <module type="pictures" content-id="<?php print CONTENT_ID; ?>" template="blog" />
+
+                <?php /*
+
+
+             <div class="background-image-holder d-flex" style="background-image: url('<?php print $picture; ?>');">
+
+
+ <div class="row w-100 m-0 align-self-center">
                             <div class="col-lg-12">
                                 <div class="d-flex w-100 h-100">
                                     <div class="w-100 align-self-center info-holder text-white">
@@ -52,7 +59,7 @@ $itemTags = content_tags($post['id']);
     <section class="section">
         <div class="container">
             <div class="text-holder text-center">
-                <h1 class="m-b-30 text-dark"><?php echo $post['title']; ?></h1>
+                <h1 class="m-b-30 text-dark edit plain-text" field="content" rel="content"><?php echo $post['title']; ?></h1>
             </div>
         </div>
     </section>

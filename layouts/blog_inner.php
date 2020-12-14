@@ -59,7 +59,7 @@ $itemTags = content_tags($post['id']);
     <section class="section">
         <div class="container">
             <div class="text-holder text-center">
-                <h1 class="m-b-30 text-dark edit plain-text" field="content" rel="content"><?php echo $post['title']; ?></h1>
+                <h1 class="m-b-30 text-dark edit plain-text" field="title" rel="content"><?php echo $post['title']; ?></h1>
             </div>
         </div>
     </section>

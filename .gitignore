@@ -9,3 +9,4 @@ phpinfo.php
 node_modules/
 /.settings
 /.project
+/nbproject/private/

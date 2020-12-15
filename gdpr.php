@@ -5,7 +5,7 @@
 type: layout
 content_type: dynamic
 name: GDPR
-position: 3
+position: 30
 description: GDPR
 
 */

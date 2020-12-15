@@ -52,7 +52,7 @@ if ($columns_xl != null OR $columns_xl != false OR $columns_xl != '') {
                         $itemTags = content_tags($item['id']);
                         ?>
 
-                        <div class="<?php print $columns; ?>" data-aos="fade-up" data-aos-delay="<?php echo $key; ?>00" itemscope itemtype="<?php print $schema_org_item_type_tag ?>">
+                        <div class="<?php print $columns; ?>" <?php if(is_live_edit()): ?>no-<?php endif;?>data-aos="fade-up" data-aos-delay="<?php echo $key; ?>00" itemscope itemtype="<?php print $schema_org_item_type_tag ?>">
                             <div class="post-holder">
                                 <a href="<?php print $item['link'] ?>" itemprop="url">
                                     <div class="thumbnail-holder">

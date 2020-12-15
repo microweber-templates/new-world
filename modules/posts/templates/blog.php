@@ -22,7 +22,7 @@ description: Blog
                         $itemTags = content_tags($item['id']);
                         ?>
 
-                        <div class="col-md-6 col-lg-4 <?php if ($key == 2 AND is_array($data) AND count($data) == 3): ?>d-block d-md-none d-lg-block<?php endif; ?>" data-aos="fade-up" data-aos-delay="<?php echo $key; ?>00" itemscope itemtype="<?php print $schema_org_item_type_tag ?>">
+                        <div class="col-md-6 col-lg-4 <?php if ($key == 2 AND is_array($data) AND count($data) == 3): ?>d-block d-md-none d-lg-block<?php endif; ?>" <?php if(is_live_edit()): ?>no-<?php endif;?>data-aos="fade-up" data-aos-delay="<?php echo $key; ?>00" itemscope itemtype="<?php print $schema_org_item_type_tag ?>">
                             <div class="post-holder">
                                 <a href="<?php print $item['link'] ?>" itemprop="url">
                                     <div class="thumbnail-holder">

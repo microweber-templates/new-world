@@ -18,7 +18,7 @@ description: Default Instagram Feed
         <div class="mw-instagram-feeds row">
             <?php foreach ($photos as $key => $photo): ?>
 
-                <div class="col-12 col-sm-4 col-lg-3 feed-photo" data-aos="fade-up" data-aos-delay="<?php echo $key; ?>00">
+                <div class="col-12 col-sm-4 col-lg-3 feed-photo" <?php if(is_live_edit()): ?>no-<?php endif;?>data-aos="fade-up" data-aos-delay="<?php echo $key; ?>00">
                     <a href="https://www.instagram.com/p/<?php print $photo['shortcode']; ?>" data-fancybox target="_blank">
                         <div class="background-holder" style="background: url('<?php print $photo['thumbnail_src']; ?>');">
                             <div class="info-holder">

@@ -155,6 +155,13 @@
 </div>
 
 <?php if (user_id()): ?>
+    <script>
+        $(document).ready(function () {
+            $('#ordersModal').on('shown.bs.modal', function (e) {
+                mw.reload_module('#user_orders_modal')
+            });
+        });
+    </script>
     <!-- Orders Modal -->
     <div class="modal fade my-orders-modal" id="ordersModal" tabindex="-1" role="dialog" aria-labelledby="ordersModalLabel">
         <div class="modal-dialog modal-lg" role="document">
@@ -164,7 +171,7 @@
                 </div>
 
                 <div class="modal-body">
-                    <module type="users/orders"/>
+                    <div type="users/orders" id="user_orders_modal"></div>
                 </div>
             </div>
         </div>

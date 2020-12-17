@@ -2,6 +2,10 @@ body.mw-live-edit {
     margin-top: 0 !important;
 }
 
+body.mw-live-edit [data-aos^=fade][data-aos^=fade]{
+    opacity: 1 !important;
+}
+
 .inline-block {
     display: inline-block !important;
 }

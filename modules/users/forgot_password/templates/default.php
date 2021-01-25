@@ -7,7 +7,7 @@
             <div class="box-title margin-bottom-20">
                 <h5 class="size-20">
                     <?php if (!isset($form_title) or $form_title == false): ?>
-                        <?php _e("Enter your username or email"); ?>
+                        <?php _lang("Enter your username or email", "templates/new-world"); ?>
                     <?php else: ?>
                         <?php print $form_title; ?>
                     <?php endif; ?>
@@ -24,9 +24,9 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fa fa-envelope"></i></span>
                             </div>
-                            <input required="" type="text" class="form-control" placeholder="<?php _e("Email or username"); ?>" name="username">
+                            <input required="" type="text" class="form-control" placeholder="<?php _lang("Email or username", "templates/new-world"); ?>" name="username">
                         </div>
-                        <b class="tooltip tooltip-bottom-right">Needed to verify your account</b>
+                        <b class="tooltip tooltip-bottom-right">"<?php _lang("Needed to verify your account", "templates/new-world"); ?></b>
                     </div>
 
                     <module type="captcha"/>

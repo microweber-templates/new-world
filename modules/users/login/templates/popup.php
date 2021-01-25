@@ -32,18 +32,18 @@ description: Login default
 
     <div id="user_login_holder_<?php print $params['id'] ?>">
 
-        <p>If you already have an account <br/>you can use it to log in.<br/><br/></p>
+        <p><?php _lang("If you already have an account" , "templates/new-world"); ?> <br/><?php _lang("you can use it to log in." , "templates/new-world"); ?><br/><br/></p>
 
         <form method="post" id="user_login_<?php print $params['id'] ?>" action="#" autocomplete="off">
 
             <div class="alert alert-mini alert-danger margin-bottom-30" style="margin: 0;display: none;"></div>
 
             <div class="form-group">
-                <input class="form-control input-lg" type="text" name="username" placeholder="Username or E-mail">
+                <input class="form-control input-lg" type="text" name="username" placeholder="<?php _lang("Username or E-mail" , "templates/new-world"); ?>">
             </div>
 
             <div class="form-group m-t-20">
-                <input class="form-control input-lg" type="password" name="password" placeholder="Password">
+                <input class="form-control input-lg" type="password" name="password" placeholder="<?php _lang("Password" , "templates/new-world"); ?>">
             </div>
 
             <?php if (isset($login_captcha_enabled) and $login_captcha_enabled): ?>
@@ -53,14 +53,14 @@ description: Login default
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <div class="form-group">
-                        <label class="styled-checkbox"> Remember me
+                        <label class="styled-checkbox"> <?php _lang("Login" , "templates/new-world"); ?><?php _lang("Remember me" , "templates/new-world"); ?>
                             <input type="checkbox" checked="checked">
                             <span class="checkmark"></span>
                         </label>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <p><a href="<?php print forgot_password_url(); ?>">Forgot your password ?</a></p>
+                    <p><a href="<?php print forgot_password_url(); ?>"><?php _lang("Forgot your password ?" , "templates/new-world"); ?></a></p>
                 </div>
             </div>
 
@@ -68,7 +68,7 @@ description: Login default
                 <input type="hidden" value="<?php echo $_GET['redirect']; ?>" name="redirect">
             <?php endif; ?>
 
-            <button type="submit" class="btn btn-default btn-lg btn-block m-t-10"><?php _e("Login"); ?></button>
+            <button type="submit" class="btn btn-default btn-lg btn-block m-t-10"><?php _lang("Login" , "templates/new-world"); ?></button>
         </form>
 
         <?php
@@ -112,7 +112,7 @@ description: Login default
         <p class="or"><span>or</span></p>
 
         <div class="act create">
-            <a href="<?php print register_url(); ?>" class="js-show-register-window"><span>Create New Account</span></a>
+            <a href="<?php print register_url(); ?>" class="js-show-register-window"><span><?php _lang("Create New Account" , "templates/new-world"); ?></span></a>
         </div>
     </div>
 <?php endif; ?>

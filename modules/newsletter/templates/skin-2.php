@@ -23,7 +23,7 @@ description: Skin 2
 
         <div class="col-12 col-sm-5 p-0">
             <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-block"><?php _e('Submit'); ?></button>
+                <button type="submit" class="btn btn-primary btn-block"><?php _lang('Submit', "templates/new-world"); ?></button>
             </div>
         </div>
     </div>

@@ -32,7 +32,7 @@ description: Skin-1
         </div>
         <div class="col-12">
             <div class="form-group">
-                <button type="submit" class="btn btn-primary"><?php _e('Submit'); ?></button>
+                <button type="submit" class="btn btn-primary"><?php _lang('Submit', "templates/new-world"); ?></button>
             </div>
         </div>
     </div>

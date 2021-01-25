@@ -75,106 +75,106 @@
 <div class="mw-flex-row slider-options">
     <div class="mw-flex-col-xs-4 ">
         <div class="form-group">
-            <label class="control-label d-block"><?php _e("Pager"); ?></label>
+            <label class="control-label d-block"><?php _lang("Pager", "templates/new-world"); ?></label>
             <select name="pager" class="mw_option_field selectpicker" data-width="100%" option_group="<?php print $params['id'] ?>">
-                <option value="false" <?php if ($pager == 'false'): ?> selected="selected" <?php endif ?>><?php _e("False"); ?></option>
-                <option value="true" <?php if ($pager == 'true'): ?> selected="selected" <?php endif ?>><?php _e("True"); ?></option>
+                <option value="false" <?php if ($pager == 'false'): ?> selected="selected" <?php endif ?>><?php _lang("False", "templates/new-world"); ?></option>
+                <option value="true" <?php if ($pager == 'true'): ?> selected="selected" <?php endif ?>><?php _lang("True", "templates/new-world"); ?></option>
             </select>
         </div>
     </div>
 
     <div class="mw-flex-col-xs-4 ">
         <div class="form-group">
-            <label class="control-label d-block"><?php _e("Controls"); ?></label>
+            <label class="control-label d-block"><?php _lang("Controls", "templates/new-world"); ?></label>
             <select name="controls" class="mw_option_field selectpicker" data-width="100%" option_group="<?php print $params['id'] ?>">
-                <option value="false" <?php if ($controls == 'false'): ?> selected="selected" <?php endif ?>><?php _e("False"); ?></option>
-                <option value="true" <?php if ($controls == 'true'): ?> selected="selected" <?php endif ?>><?php _e("True"); ?></option>
+                <option value="false" <?php if ($controls == 'false'): ?> selected="selected" <?php endif ?>><?php _lang("False", "templates/new-world"); ?></option>
+                <option value="true" <?php if ($controls == 'true'): ?> selected="selected" <?php endif ?>><?php _lang("True", "templates/new-world"); ?></option>
             </select>
         </div>
     </div>
 
     <div class="mw-flex-col-xs-4 ">
         <div class="form-group">
-            <label class="control-label d-block"><?php _e("Loop"); ?></label>
+            <label class="control-label d-block"><?php _lang("Loop", "templates/new-world"); ?></label>
             <select name="loop" class="mw_option_field selectpicker" data-width="100%" option_group="<?php print $params['id'] ?>">
-                <option value="false" <?php if ($loop == 'false'): ?> selected="selected" <?php endif ?>><?php _e("False"); ?></option>
-                <option value="true" <?php if ($loop == 'true'): ?> selected="selected" <?php endif ?>><?php _e("True"); ?></option>
+                <option value="false" <?php if ($loop == 'false'): ?> selected="selected" <?php endif ?>><?php _lang("False", "templates/new-world"); ?></option>
+                <option value="true" <?php if ($loop == 'true'): ?> selected="selected" <?php endif ?>><?php _lang("True", "templates/new-world"); ?></option>
             </select>
         </div>
     </div>
 
     <div class="mw-flex-col-xs-4 ">
         <div class="form-group">
-            <label class="control-label d-block"><?php _e("Adaptive Height"); ?></label>
+            <label class="control-label d-block"><?php _lang("Adaptive Height", "templates/new-world"); ?></label>
             <select name="adaptive_height" class="mw_option_field selectpicker" data-width="100%" option_group="<?php print $params['id'] ?>">
-                <option value="false" <?php if ($adaptiveHeight == 'false'): ?> selected="selected" <?php endif ?>><?php _e("False"); ?></option>
-                <option value="true" <?php if ($adaptiveHeight == 'true'): ?> selected="selected" <?php endif ?>><?php _e("True"); ?></option>
+                <option value="false" <?php if ($adaptiveHeight == 'false'): ?> selected="selected" <?php endif ?>><?php _lang("False", "templates/new-world"); ?></option>
+                <option value="true" <?php if ($adaptiveHeight == 'true'): ?> selected="selected" <?php endif ?>><?php _lang("True", "templates/new-world"); ?></option>
             </select>
         </div>
     </div>
 
     <div class="mw-flex-col-xs-4 ">
         <div class="form-group">
-            <label class="control-label d-block"><?php _e("Autoplay Speed"); ?></label>
+            <label class="control-label d-block"><?php _lang("Autoplay Speed" , "templates/new-world"); ?></label>
             <input type="text" value="<?php print $speed; ?>" name="speed" class="mw_option_field form-control" option_group="<?php print $params['id'] ?>"/>
         </div>
     </div>
 
     <div class="mw-flex-col-xs-4 ">
         <div class="form-group">
-            <label class="control-label d-block"><?php _e("Pause on hover"); ?></label>
+            <label class="control-label d-block"><?php _lang("Pause on hover", "templates/new-world"); ?></label>
             <select name="pause_on_hover" class="mw_option_field selectpicker" data-width="100%" option_group="<?php print $params['id'] ?>">
-                <option value="false" <?php if ($pauseOnHover == 'false'): ?> selected="selected" <?php endif ?>><?php _e("False"); ?></option>
-                <option value="true" <?php if ($pauseOnHover == 'true'): ?> selected="selected" <?php endif ?>><?php _e("True"); ?></option>
+                <option value="false" <?php if ($pauseOnHover == 'false'): ?> selected="selected" <?php endif ?>><?php _lang("False", "templates/new-world"); ?></option>
+                <option value="true" <?php if ($pauseOnHover == 'true'): ?> selected="selected" <?php endif ?>><?php _lang("True", "templates/new-world"); ?></option>
             </select>
         </div>
     </div>
 
     <div class="mw-flex-col-xs-4 ">
         <div class="form-group">
-            <label class="control-label d-block"><?php _e("Autoplay"); ?></label>
+            <label class="control-label d-block"><?php _lang("Autoplay", "templates/new-world"); ?></label>
             <select name="autoplay" class="mw_option_field selectpicker" data-width="100%" option_group="<?php print $params['id'] ?>">
-                <option value="false" <?php if ($autoplay == 'false'): ?> selected="selected" <?php endif ?>><?php _e("False"); ?></option>
-                <option value="true" <?php if ($autoplay == 'true'): ?> selected="selected" <?php endif ?>><?php _e("True"); ?></option>
+                <option value="false" <?php if ($autoplay == 'false'): ?> selected="selected" <?php endif ?>><?php _lang("False", "templates/new-world"); ?></option>
+                <option value="true" <?php if ($autoplay == 'true'): ?> selected="selected" <?php endif ?>><?php _lang("True", "templates/new-world"); ?></option>
             </select>
         </div>
     </div>
 
     <div class="mw-flex-col-xs-4 ">
         <div class="form-group">
-            <label class="control-label d-block"><?php _e("Draggable"); ?></label>
+            <label class="control-label d-block"><?php _lang("Draggable", "templates/new-world"); ?></label>
             <select name="draggable" class="mw_option_field selectpicker" data-width="100%" option_group="<?php print $params['id'] ?>">
-                <option value="false" <?php if ($draggable == 'false'): ?> selected="selected" <?php endif ?>><?php _e("False"); ?></option>
-                <option value="true" <?php if ($draggable == 'true'): ?> selected="selected" <?php endif ?>><?php _e("True"); ?></option>
+                <option value="false" <?php if ($draggable == 'false'): ?> selected="selected" <?php endif ?>><?php _lang("False", "templates/new-world"); ?></option>
+                <option value="true" <?php if ($draggable == 'true'): ?> selected="selected" <?php endif ?>><?php _lang("True", "templates/new-world"); ?></option>
             </select>
         </div>
     </div>
 
     <div class="mw-flex-col-xs-4 ">
         <div class="form-group">
-            <label class="control-label d-block"><?php _e("Fade"); ?>
+            <label class="control-label d-block"><?php _lang("Fade", "templates/new-world"); ?>
                 <small>(work only for 1 slide)</small>
             </label>
             <select name="fade" class="mw_option_field selectpicker" data-width="100%" option_group="<?php print $params['id'] ?>">
-                <option value="false" <?php if ($fade == 'false'): ?> selected="selected" <?php endif ?>><?php _e("False"); ?></option>
-                <option value="true" <?php if ($fade == 'true'): ?> selected="selected" <?php endif ?>><?php _e("True"); ?></option>
+                <option value="false" <?php if ($fade == 'false'): ?> selected="selected" <?php endif ?>><?php _lang("False", "templates/new-world"); ?></option>
+                <option value="true" <?php if ($fade == 'true'): ?> selected="selected" <?php endif ?>><?php _lang("True", "templates/new-world"); ?></option>
             </select>
         </div>
     </div>
 
     <div class="mw-flex-col-xs-4 ">
         <div class="form-group">
-            <label class="control-label d-block"><?php _e("Focus On Select"); ?></label>
+            <label class="control-label d-block"><?php _lang("Focus On Select", "templates/new-world"); ?></label>
             <select name="focus_on_select" class="mw_option_field selectpicker" data-width="100%" option_group="<?php print $params['id'] ?>">
-                <option value="false" <?php if ($focusOnSelect == 'false'): ?> selected="selected" <?php endif ?>><?php _e("False"); ?></option>
-                <option value="true" <?php if ($focusOnSelect == 'true'): ?> selected="selected" <?php endif ?>><?php _e("True"); ?></option>
+                <option value="false" <?php if ($focusOnSelect == 'false'): ?> selected="selected" <?php endif ?>><?php _lang("False", "templates/new-world"); ?></option>
+                <option value="true" <?php if ($focusOnSelect == 'true'): ?> selected="selected" <?php endif ?>><?php _lang("True", "templates/new-world"); ?></option>
             </select>
         </div>
     </div>
 
     <div class="mw-flex-col-xs-4 ">
         <div class="form-group">
-            <label class="control-label d-block"><?php _e("Center Padding"); ?></label>
+            <label class="control-label d-block"><?php _lang("Center Padding", "templates/new-world"); ?></label>
             <input name="center_padding" class="mw_option_field form-control" data-option-group="<?php print $params['id']; ?>" value="<?php print $centerPadding; ?>" placeholder="40px"/>
         </div>
     </div>

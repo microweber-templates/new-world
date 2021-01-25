@@ -109,7 +109,7 @@ $prev = prev_content();
                                                     <tbody>
                                                     <?php if (isset($content_data['sku'])): ?>
                                                         <tr>
-                                                            <th scope="row"><?php _e("SKU Number") ?></th>
+                                                            <th scope="row"><?php _lang("SKU Number", 'templates/new-world') ?></th>
                                                             <td>#<?php print $content_data['sku']; ?></td>
                                                         </tr>
                                                     <?php endif; ?>
@@ -130,15 +130,15 @@ $prev = prev_content();
 
                                         <div class="row m-t-20">
                                             <div class="col-6">
-                                                <h5><?php _e("Options") ?></h5>
+                                                <h5><?php _lang("Options", 'templates/new-world') ?></h5>
                                             </div>
 
                                             <div class="col-6 text-right">
                                                 <div class="availability">
                                                     <?php if ($in_stock == true): ?>
-                                                        <span class="text-success"><i class="fas fa-circle" style="font-size: 8px;"></i> <?php _e("In Stock") ?></span> <span class="text-muted"><?php if ($available_qty != ''): ?>(<?php echo $available_qty; ?>)<?php endif; ?></span>
+                                                        <span class="text-success"><i class="fas fa-circle" style="font-size: 8px;"></i> <?php _lang("In Stock", 'templates/new-world') ?></span> <span class="text-muted"><?php if ($available_qty != ''): ?>(<?php echo $available_qty; ?>)<?php endif; ?></span>
                                                     <?php else: ?>
-                                                        <span class="text-danger"><i class="fas fa-circle" style="font-size: 8px;"></i> <?php _e("Out of Stock") ?></span>
+                                                        <span class="text-danger"><i class="fas fa-circle" style="font-size: 8px;"></i> <?php _lang("Out of Stock", 'templates/new-world') ?></span>
                                                     <?php endif; ?>
                                                 </div>
                                             </div>
@@ -158,7 +158,7 @@ $prev = prev_content();
 
                         <div class="row m-t-20">
                             <div class="col-12 text-left">
-                                <h5 class="hr">Description and Reviews</h5>
+                                <h5 class="hr"> <?php _lang("Description and Reviews", 'templates/new-world') ?></h5>
                             </div>
                         </div>
 
@@ -166,8 +166,8 @@ $prev = prev_content();
                             <div class="tabs">
                                 <!-- Nav tabs -->
                                 <ul class="nav" role="tablist">
-                                    <li role="presentation" class="m-5 m-l-0"><a href="#product-information" aria-controls="product-information" role="tab" data-toggle="tab" class="btn btn-outline-primary shadow-md active">Description</a></li>
-                                    <li role="presentation" class="m-5"><a href="#reviews" aria-controls="reviews" role="tab" data-toggle="tab" class="btn btn-outline-primary shadow-md">Reviews</a></li>
+                                    <li role="presentation" class="m-5 m-l-0"><a href="#product-information" aria-controls="product-information" role="tab" data-toggle="tab" class="btn btn-outline-primary shadow-md active"><?php _lang("Description", 'templates/new-world') ?></a></li>
+                                    <li role="presentation" class="m-5"><a href="#reviews" aria-controls="reviews" role="tab" data-toggle="tab" class="btn btn-outline-primary shadow-md"><?php _lang("Reviews", 'templates/new-world') ?></a></li>
                                 </ul>
 
                                 <!-- Tab panes -->

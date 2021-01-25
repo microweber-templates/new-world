@@ -63,13 +63,13 @@ description: Add to cart
                         <button class="btn btn-default pull-right" type="button" disabled="disabled"
                                 onclick="Alert('<?php print addslashes(_e("This item is out of stock and cannot be ordered", true)); ?>');"><i
                                     class="icon-shopping-cart glyphicon glyphicon-shopping-cart"></i>
-                            <?php _e("Out of stock"); ?>
+                            <?php _lang("Out of stock", "templates/new-world"); ?>
                         </button>
                     <?php else: ?>
                         <button class="btn btn-default pull-right" type="button"
                                 onclick="mw.cart.add('.mw-add-to-cart-<?php print $params['id'] ?>','<?php print $v ?>', '<?php print $title; ?>');"><i
                                     class="icon-shopping-cart glyphicon glyphicon-shopping-cart"></i>
-                            <?php _e($button_text !== false ? $button_text : "Add to cart"); ?>
+                            <?php _lang($button_text, "templates/new-world" !== false ? $button_text : "Add to cart", "templates/new-world"); ?>
                         </button>
                         <?php $i++; endif; ?>
                 </div>

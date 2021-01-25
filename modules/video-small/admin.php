@@ -26,24 +26,24 @@
 
 
     <div class="mw-ui-btn-nav mw-ui-btn-nav-tabs">
-        <a class="mw-ui-btn active" href="javascript:;"><?php _e("Upload Video"); ?></a>
+        <a class="mw-ui-btn active" href="javascript:;"><?php _lang("Upload Video", "templates/new-world"); ?></a>
     </div>
     <div class="mw-ui-box mw-ui-box-content">
         <div class="tab" style="display: block">
             <div class="mw-ui-field-holder">
-                <label class="mw-ui-label"><?php _e("Upload Video from your computer"); ?></label>
+                <label class="mw-ui-label"><?php _lang("Upload Video from your computer", "templates/new-world"); ?></label>
                 <input onchange="setprior(2);" name="upload" id="upload_field"
                        class="mw-ui-field mw_option_field semi_hidden"
                        type="text" data-mod-name="<?php print $params['data-type'] ?>"
                        value="<?php print get_option('upload', $params['id']) ?>"/>
                 <span class="mw-ui-btn" id="upload_btn"><span
-                            class="mw-icon-upload"></span><?php _e("Browse"); ?></span>
+                            class="mw-icon-upload"></span><?php _lang("Browse", "templates/new-world"); ?></span>
             </div>
 
 
             <div class="mw-ui-progress" id="upload_status" style="display: none">
                 <div style="width: 0%" class="mw-ui-progress-bar"></div>
-                <div class="mw-ui-progress-info"><?php _e("Status"); ?>: <span class="mw-ui-progress-percent">0</span>
+                <div class="mw-ui-progress-info"><?php _lang("Status", "templates/new-world"); ?>: <span class="mw-ui-progress-percent">0</span>
                 </div>
             </div>
         </div>

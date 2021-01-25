@@ -42,7 +42,7 @@ if (isset($params['content-id'])) {
 
                 <?php if (is_string($key) and trim(strtolower($key)) == 'price'): ?>
                     <span class="mw-price-item-key mw-price-item-key-<?php print ($keyslug_class); ?>">
-                    <?php _e($key); ?>
+                    <?php _pang($key, "templates/new-world"); ?>
                 </span>
 
                 <?php else: ?>
@@ -57,13 +57,13 @@ if (isset($params['content-id'])) {
                     <button class="btn btn-default pull-right" type="button" disabled="disabled"
                             onclick="Alert('<?php print addslashes(_e("This item is out of stock and cannot be ordered", true)); ?>');">
                         <i class="icon-shopping-cart glyphicon glyphicon-shopping-cart"></i>
-                        <?php _e("Out of stock"); ?>
+                        <?php _pang("Out of stock", "templates/new-world"); ?>
                     </button>
                 <?php else: ?>
 
                     <button class="btn btn-primary float-right" type="button" onclick="mw.cart.add('.mw-add-to-cart-<?php print $params['id'] ?>','<?php print $v ?>', '<?php print $title; ?>');">
                         <i class="fas fa-shopping-cart"></i>
-                        <?php _e($button_text !== false ? $button_text : "Add to cart"); ?>
+                        <?php _pang($button_text, "templates/new-world" !== false ? $button_text : "Add to cart", "templates/new-world"); ?>
                     </button>
                     <div class="clearfix"></div>
                     <?php $i++; endif; ?>

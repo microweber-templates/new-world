@@ -28,29 +28,29 @@
         <div class="mw-ui-box mw-ui-box-important mw-ui-box-content" id="errnotification" style="display: none;margin-bottom: 12px;"></div>
 
         <div class="form-group">
-            <input class="form-control input-lg" type="text" name="username" value="<?php print $user['username']; ?>" placeholder="Username or E-mail">
+            <input class="form-control input-lg" type="text" name="username" value="<?php print $user['username']; ?>" placeholder=""<?php _lang('Username or E-mail', "templates/new-world"); ?>">
         </div>
 
         <div class="form-group">
-            <input class="form-control input-lg" type="email" name="email" value="<?php print $user['email']; ?>" placeholder="E-mail">
+            <input class="form-control input-lg" type="email" name="email" value="<?php print $user['email']; ?>" placeholder=""<?php _lang('E-mail', "templates/new-world"); ?>">
         </div>
 
         <div class="form-group">
-            <input class="form-control input-lg" type="text" name="first_name" value="<?php print $user['first_name']; ?>" placeholder="<?php _e('First name'); ?>">
+            <input class="form-control input-lg" type="text" name="first_name" value="<?php print $user['first_name']; ?>" placeholder="<?php _lang('First name', "templates/new-world"); ?>">
         </div>
 
         <div class="form-group">
-            <input class="form-control input-lg" type="text" name="last_name" value="<?php print $user['last_name']; ?>" placeholder="<?php _e('Last name'); ?>">
+            <input class="form-control input-lg" type="text" name="last_name" value="<?php print $user['last_name']; ?>" placeholder="<?php _lang('Last name', "templates/new-world"); ?>">
         </div>
 
         <div class="form-group">
-            <input class="form-control input-lg" type="password" name="password" placeholder="<?php _e('New Password'); ?>">
+            <input class="form-control input-lg" type="password" name="password" placeholder="<?php _lang('New Password', "templates/new-world"); ?>">
         </div>
 
         <div class="form-group">
-            <input class="form-control input-lg" type="password" name="password2" placeholder="<?php _e('Confirm Password'); ?>">
+            <input class="form-control input-lg" type="password" name="password2" placeholder="<?php _lang('Confirm Password', "templates/new-world"); ?>">
         </div>
 
-        <button type="button" class="btn btn-default btn-lg btn-block m-t-10" onclick="saveuserdata()"><?php _e('Save'); ?></button>
+        <button type="button" class="btn btn-default btn-lg btn-block m-t-10" onclick="saveuserdata()"><?php _lang('Save', "templates/new-world"); ?></button>
     </form>
 </div>

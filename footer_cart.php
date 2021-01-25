@@ -146,7 +146,7 @@
                     <p class="or"><span>or</span></p>
 
                     <div class="act login">
-                        <a href="#" class="js-show-login-window"><span>Back to Login</span></a>
+                        <a href="#" class="js-show-login-window"><span><?php _lang("Back to Login", "templates/new-world")</span></a>
                     </div>
                 </div>
             </div>

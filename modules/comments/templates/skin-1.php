@@ -52,7 +52,7 @@ description: Skin 1 comments template
                                             <h4><?php print $comment['comment_name'] ?> <?php print _e('says'); ?>:</h4>
                                             <?php if ($required_moderation != false and $comment['is_moderated'] == 0): ?>
                                                 <em class="comment-require-moderation">
-                                                    <?php _e("Your comment requires moderation"); ?>
+                                                    <?php _lang("Your comment requires moderation", "templates/new-world"); ?>
                                                 </em><br/>
                                             <?php endif; ?>
 
@@ -80,7 +80,7 @@ description: Skin 1 comments template
                 <div class="row m-t-50">
                     <div class="col-md-12">
                         <div class="text-center m-b-50">
-                            <p class="bold"><?php _e("No comments"); ?></p>
+                            <p class="bold"><?php _lang("No comments", "templates/new-world"); ?></p>
                         </div>
                     </div>
                 </div>
@@ -110,7 +110,7 @@ description: Skin 1 comments template
             <div class="col-12">
                 <div class="right-side-x">
                     <div class="reviews">
-                        <h4><?php _e("Leave a Comment"); ?></h4>
+                        <h4><?php _lang("Leave a Comment", "templates/new-world"); ?></h4>
                     </div>
 
                     <div class="form">
@@ -128,19 +128,19 @@ description: Skin 1 comments template
                                 <div class="col-12">
                                     <?php if ($cur_user == false) : ?>
                                         <div class="form-group">
-                                            <label class="control-label" for="comment_name">Name</label>
-                                            <input class="form-control" id="comment_name" name="comment_name" type="text" placeholder="Full name">
+                                            <label class="control-label" for="comment_name"><?php _lang("Name", "templates/new-world"); ?></label>
+                                            <input class="form-control" id="comment_name" name="comment_name" type="text" placeholder="<?php _lang("Full name", "templates/new-world"); ?>">
                                         </div>
 
                                         <div class="form-group">
-                                            <label class="control-label" for="comment_email">E-mail</label>
-                                            <input class="form-control" id="comment_email" name="comment_email" type="email" placeholder="E-mail address">
+                                            <label class="control-label" for="comment_email"><?php _lang("E-mail", "templates/new-world"); ?></label>
+                                            <input class="form-control" id="comment_email" name="comment_email" type="email" placeholder="<?php _lang("E-mail address", "templates/new-world"); ?>">
                                         </div>
                                     <?php else: ?>
                                         <div class="comments-user-profile" style="margin-bottom: 5px;">
-                                            <?php _e("You are commenting as"); ?>:
+                                            <?php _lang("You are commenting as", "templates/new-world"); ?>:
                                             <span class="comments-user-profile-username"> <?php print user_name($cur_user_data['id']); ?> </span>
-                                            <a href="<?php print api_link('logout') ?>" class="mw-ui-btn mw-ui-btn-outline mw-ui-btn-small mw-ui-btn-default float-right"><?php _e("Logout"); ?></a>
+                                            <a href="<?php print api_link('logout', "templates/new-world") ?>" class="mw-ui-btn mw-ui-btn-outline mw-ui-btn-small mw-ui-btn-default float-right"><?php _lang("Logout", "templates/new-world"); ?></a>
                                         </div>
                                     <?php endif; ?>
 
@@ -153,7 +153,7 @@ description: Skin 1 comments template
                                         <textarea class="form-control" id="comment_body" name="comment_body" placeholder="Type your message here"></textarea>
                                     </div>
 
-                                    <button type="submit" class="btn btn-primary btn-block"><?php print _e('Send Message'); ?></button>
+                                    <button type="submit" class="btn btn-primary btn-block"><?php print _lang('Send Message' , "templates/new-world"); ?></button>
                                 </div>
                             </div>
                         </form>
@@ -163,15 +163,15 @@ description: Skin 1 comments template
         </div>
     <?php else : ?>
         <div class="alert">
-            <?php _e("You have to"); ?>
+            <?php _lang("You have to", "templates/new-world"); ?>
             <a href='<?php print login_url(); ?>' class="comments-login-link">
-                <?php _e("log in"); ?>
+                <?php _lang("log in", "templates/new-world"); ?>
             </a>
-            <?php _e("or"); ?>
+            <?php _lang("or"); ?>
             <a class="comments-register-link" href='<?php print register_url(); ?>'>
-                <?php _e("register"); ?>
+                <?php _lang("register", "templates/new-world"); ?>
             </a>
-            <?php _e("to post a comment"); ?>
+            <?php _lang("to post a comment", "templates/new-world"); ?>
             .
         </div>
     <?php endif; ?>

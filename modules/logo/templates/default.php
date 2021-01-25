@@ -11,7 +11,7 @@ $size = $size . 'px';
 } ?>">
     <?php if ($logoimage == '' and $text == ''): ?>
         <?php if (is_live_edit()) : ?>
-        <span class="mw-logo-no-values"><?php _e('Logo'); ?></span>
+        <span class="mw-logo-no-values"><?php _lang('Logo',"templates/new-world"); ?></span>
     <?php endif; ?>
     <?php else: ?>
     <?php if ($logotype == 'image' or $logotype == false): ?>
@@ -27,7 +27,7 @@ $size = $size . 'px';
             } ?>/>
                 </span>
     <?php else: ?>
-        <span class="mw-logo-no-values"><?php _e('Logo'); ?></span>
+        <span class="mw-logo-no-values"><?php _lang('Logo', "templates/new-world"); ?></span>
     <?php endif; ?>
     <?php endif; ?>
     <?php if ($logotype == 'text' or $logotype == 'both'): ?>

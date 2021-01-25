@@ -18,8 +18,8 @@ if (isset($_GET['search-type'])) {
             <div class="row">
                 <div class="col-12 text-center">
                     <div class="m-auto allow-drop" style="max-width: 800px;">
-                        <h1 class="hr">Results found<span class="text-primary">.</span></h1>
-                        <p class="lead"><em><?php _e('Mentioning'); ?></em> &ldquo;<?php print $keywords; ?>&rdquo;</p>
+                        <h1 class="hr"><?php _lang('Results found', 'templates/new-world'); ?><span class="text-primary">.</span></h1>
+                        <p class="lead"><em><?php _lang('Mentioning', 'templates/new-world'); ?></em> &ldquo;<?php print $keywords; ?>&rdquo;</p>
                     </div>
                 </div>
             </div>

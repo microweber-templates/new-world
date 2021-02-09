@@ -5447,6 +5447,10 @@ ul.socials-2 li a:hover {
 .table-striped > tbody > tr:nth-of-type(odd) {
   background: rgba(61, 0, 180, 0.05);
 }
+.modal-content .table th {
+  background: none;
+  color: black;
+}
 /* Tabs */
 .tabs {
   margin-bottom: 10px;

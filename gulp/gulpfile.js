@@ -24,6 +24,46 @@ const cssMode = {
 };
 
 
+const customWatch = () => {
+    const res = [];
+    config.custom.forEach(a => {
+        return res.push(...a.input);
+    });
+    return res;
+};
+
+const custom = async (prod) => {
+    return new Promise(async resolve => {
+
+        config.custom.forEach(async a => {
+            const files = a.input;
+            a.cssMode = a.cssMode || 'less';
+            const outputArr = a.output.split('/');
+            const name = outputArr.pop();
+            const output = outputArr.join('/');
+            let stream = gulp.src(files);
+            if(!prod) {
+                stream = stream.pipe(sourcemaps.init());
+            }
+            stream = stream.pipe(cssMode[a.cssMode]());
+            stream = stream.pipe(rebaseUrls());
+
+            if(prod) {
+                stream = stream.pipe(cssmin());
+            }
+            stream = stream.pipe(concat(  name, {newLine: ';\r\n'}));
+
+            if(!prod) {
+                stream = stream.pipe(sourcemaps.write());
+            }
+            stream = stream.pipe(rename({suffix: a.suffix || ''}))
+                .pipe(gulp.dest(output))
+                .on("end", resolve);
+        });
+
+    });
+};
+
 const tplJS = async (prod) => {
     return new Promise(async resolve => {
         const files = config.js;
@@ -78,9 +118,16 @@ gulp.task('dev',  () => {
         count++;
         console.log(count + ' - css');
     });
+
+    watch(customWatch(),  { ignoreInitial: false }, async (files) => {
+        await custom();
+        count++;
+        console.log(count + ' - custom');
+    });
 });
 
 gulp.task('prod',  async () => {
     tplCSS(true);
     tplJS(true);
+    custom(true)
 });

@@ -23,12 +23,22 @@ const CSSFiles =  [
     source + '/css/custom.css'
 ];
 
+const custom = [
+    {
+        input: [ `${source}/css/less/main.less` ],
+        output: `${source}/css/main.css`,
+        cssMode: 'less',
+        suffix: ''
+    }
+];
+
 
 
 module.exports = {
-    cssMode: cssMode,
-    source: source,
-    target: target,
+    cssMode,
+    source,
+    target,
     js: JSFiles,
-    css: CSSFiles
-}
+    css: CSSFiles,
+    custom
+};

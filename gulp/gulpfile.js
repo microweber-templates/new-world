@@ -46,7 +46,7 @@ const custom = async (prod) => {
                 stream = stream.pipe(sourcemaps.init());
             }
             stream = stream.pipe(cssMode[a.cssMode]());
-            stream = stream.pipe(rebaseUrls());
+            //stream = stream.pipe(rebaseUrls());
 
             if(prod) {
                 stream = stream.pipe(cssmin());
@@ -82,13 +82,13 @@ const tplJS = async (prod) => {
         .pipe(gulp.dest(dest))
         .on("end", resolve);
     });
-}
+};
 
 const tplCSS = async (prod) => {
     return new Promise(resolve => {
     const files = config.css;
         let stream = gulp.src(files);
-        stream = stream.pipe(rebaseUrls())
+        // stream = stream.pipe(rebaseUrls())
         if(!prod) {
             stream = stream.pipe(sourcemaps.init())
         }
@@ -110,19 +110,22 @@ gulp.task('dev',  () => {
     watch( mwpath + '/**/*.js',  { ignoreInitial: false }, async (files) => {
         await tplJS();
         count++;
-        console.log(count + ' - js');
+    }).on('all', function(path, stats) {
+        console.log(`File ${path} was changed`);
     });
 
     watch([mwpath + '/**/*.scss', mwpath + '/**/*.css', mwpath + '/**/*.less'],  { ignoreInitial: false }, async (files) => {
         await tplCSS();
         count++;
-        console.log(count + ' - css');
+    }).on('all', function(path, stats) {
+        console.log(`File ${path} was changed`);
     });
 
     watch(customWatch(),  { ignoreInitial: false }, async (files) => {
         await custom();
         count++;
-        console.log(count + ' - custom');
+    }).on('all', function(path, stats) {
+        console.log(`File ${path} was changed`);
     });
 });
 

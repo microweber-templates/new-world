@@ -16,6 +16,8 @@
     <meta property="og:image" content="{content_image}"/>
     <meta property="og:description" content="{og_description}"/>
     <meta property="og:site_name" content="{og_site_name}"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap">
     <script>
         mw.require('icon_selector.js');
         mw.lib.require('bootstrap4');

@@ -22,7 +22,7 @@
                     </div>
 
                     <div class="col-12 col-sm col-lg-6 col-xl mx-auto text-white text-center text-sm-right allow-drop">
-                        <h6 class="m-t-5">Social Networks</h6>
+                        <h6 class="m-t-5"><?php print _lang('Social Networks', 'templates/new-world'); ?></h6>
 
                         <module type="social_links" id="footer_socials"/>
                     </div>
@@ -57,14 +57,5 @@
 </script>
 
 <script src="<?php print template_url(); ?>dist/main.min.js"></script>
-
-
-
-
-
-
-
-
-
 </body>
 </html>

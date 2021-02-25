@@ -132,12 +132,12 @@ description: Default comments template
                                                 <div class="col-12">
                                                     <?php if ($cur_user == false) : ?>
                                                         <div class="form-group">
-                                                            <label class="control-label" for="comment_name">"<?php _lang("Name", "templates/new-world"); ?></label>
+                                                            <label class="control-label" for="comment_name"><?php _lang("Name", "templates/new-world"); ?></label>
                                                             <input class="form-control" id="comment_name" name="comment_name" type="text" placeholder="<?php _lang("Full name", "templates/new-world"); ?>">
                                                         </div>
 
                                                         <div class="form-group">
-                                                            <label class="control-label" for="comment_email">"<?php _lang("E-mail", "templates/new-world"); ?></label>
+                                                            <label class="control-label" for="comment_email"><?php _lang("E-mail", "templates/new-world"); ?></label>
                                                             <input class="form-control" id="comment_email" name="comment_email" type="email" placeholder=""<?php _lang("E-mail address", "templates/new-world"); ?>">
                                                         </div>
                                                     <?php else: ?>
@@ -153,7 +153,7 @@ description: Default comments template
                                                     <?php } ?>
 
                                                     <div class="form-group">
-                                                        <label class="control-label" for="comment_body">Message</label>
+                                                        <label class="control-label" for="comment_body"><?php _lang("Message", "templates/new-world"); ?></label>
                                                         <textarea class="form-control" id="comment_body" name="comment_body" style="height:200px;" placeholder="<?php _lang("Type your message here", "templates/new-world"); ?>"></textarea>
                                                     </div>
 

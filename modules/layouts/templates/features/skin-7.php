@@ -36,8 +36,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                                         <div class="icon-holder nodrop">
                                             <i class="icon mw-micon-solid-Like safe-element"></i>
                                         </div>
-                                        <h3>It Is Awesome!</h3>
-                                        <p class="m-t-10">Microweber is one of the best website builders and CMS in the world. Use it for your own project, website or online store, for free!</p>
+                                        <h3><?php _lang("It Is Awesome!", "templates/new-world"); ?></h3>
+                                        <p class="m-t-10">Microweber <?php _lang("is one of the best website builders and CMS in the world. Use it for your own project, website or online store, for free!", "templates/new-world"); ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -51,8 +51,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                                             <i class="icon mw-micon-solid-Hand safe-element"></i>
                                         </div>
 
-                                        <h3>It Is Free</h3>
-                                        <p class="m-t-10">Microweber is one of the best website builders and CMS in the world. Use it for your own project, website or online store, for free!</p>
+                                        <h3><?php _lang("It Is Free", "templates/new-world"); ?></h3>
+                                        <p class="m-t-10">Microweber <?php _lang("is one of the best website builders and CMS in the world. Use it for your own project, website or online store, for free!", "templates/new-world"); ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -65,8 +65,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                                         <div class="icon-holder nodrop">
                                             <i class="icon mw-micon-solid-Hipo safe-element"></i>
                                         </div>
-                                        <h3>It Is Powerful</h3>
-                                        <p class="m-t-10">Microweber is one of the best website builders and CMS in the world. Use it for your own project, website or online store, for free!</p>
+                                        <h3><?php _lang("It Is Powerful", "templates/new-world"); ?></h3>
+                                        <p class="m-t-10">Microweber <?php _lang("is one of the best website builders and CMS in the world. Use it for your own project, website or online store, for free!", "templates/new-world"); ?></p>
                                     </div>
                                 </div>
                             </div>

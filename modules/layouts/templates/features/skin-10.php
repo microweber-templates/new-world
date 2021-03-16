@@ -32,56 +32,56 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                         <div class="col-12 col-sm-6 col-md-3 mx-auto cloneable">
                             <div class="icon-holder shadow-md">
                                 <i class="icon mw-micon-Student-Hat safe-element"></i>
-                                <h4>Lessons</h4>
+                                <h4><?php _lang("Lessons", "templates/new-world"); ?></h4>
                             </div>
                         </div>
 
                         <div class="col-12 col-sm-6 col-md-3 mx-auto cloneable">
                             <div class="icon-holder shadow-md">
                                 <i class="icon mw-micon-Computer-2 safe-element"></i>
-                                <h4>Development</h4>
+                                <h4><?php _lang("Development", "templates/new-world"); ?></h4>
                             </div>
                         </div>
 
                         <div class="col-12 col-sm-6 col-md-3 mx-auto cloneable">
                             <div class="icon-holder shadow-md">
                                 <i class="icon mw-micon-Vector-4 safe-element"></i>
-                                <h4>UI/UX Design</h4>
+                                <h4>UI/UX <?php _lang("Design", "templates/new-world"); ?></h4>
                             </div>
                         </div>
 
                         <div class="col-12 col-sm-6 col-md-3 mx-auto cloneable">
                             <div class="icon-holder shadow-md">
                                 <i class="icon mw-micon-Cloud safe-element"></i>
-                                <h4>Hosting</h4>
+                                <h4><?php _lang("Hosting", "templates/new-world"); ?></h4>
                             </div>
                         </div>
 
                         <div class="col-12 col-sm-6 col-md-3 mx-auto cloneable">
                             <div class="icon-holder shadow-md">
                                 <i class="icon mw-micon-Gamepad-2 safe-element"></i>
-                                <h4>Game</h4>
+                                <h4><?php _lang("Game", "templates/new-world"); ?></h4>
                             </div>
                         </div>
 
                         <div class="col-12 col-sm-6 col-md-3 mx-auto cloneable">
                             <div class="icon-holder shadow-md">
                                 <i class="icon mw-micon-Add-Cart safe-element"></i>
-                                <h4>Online Store</h4>
+                                <h4><?php _lang("Online Store", "templates/new-world"); ?></h4>
                             </div>
                         </div>
 
                         <div class="col-12 col-sm-6 col-md-3 mx-auto cloneable">
                             <div class="icon-holder shadow-md">
                                 <i class="icon mw-micon-Soup safe-element"></i>
-                                <h4>Food</h4>
+                                <h4><?php _lang("Food", "templates/new-world"); ?></h4>
                             </div>
                         </div>
 
                         <div class="col-12 col-sm-6 col-md-3 mx-auto cloneable">
                             <div class="icon-holder shadow-md">
                                 <i class="icon mw-micon-Money-2 safe-element"></i>
-                                <h4>Money</h4>
+                                <h4><?php _lang("Money", "templates/new-world"); ?></h4>
                             </div>
                         </div>
                     </div>

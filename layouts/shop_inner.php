@@ -74,7 +74,7 @@ $prev = prev_content();
                                         </div>
 
                                         <div class="row">
-                                            <div class="col" title="Rating points: <?php echo get_rating_points('content_id=' . $content['id'] . ''); ?>" data-toggle="tooltip">
+                                            <div class="col-auto" title="Rating points: <?php echo get_rating_points('content_id=' . $content['id'] . ''); ?>" data-toggle="tooltip">
                                                 <module type="rating" content_id="<?php print $content['id'] ?>"/>
                                             </div>
 

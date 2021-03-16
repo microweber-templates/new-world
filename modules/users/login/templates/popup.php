@@ -53,7 +53,7 @@ description: Login default
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <div class="form-group">
-                        <label class="styled-checkbox"> <?php _lang("Login" , "templates/new-world"); ?><?php _lang("Remember me" , "templates/new-world"); ?>
+                        <label class="styled-checkbox"><?php _lang("Remember me" , "templates/new-world"); ?>
                             <input type="checkbox" checked="checked">
                             <span class="checkmark"></span>
                         </label>

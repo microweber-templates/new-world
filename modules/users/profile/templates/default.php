@@ -1,28 +1,30 @@
 <?php $user = get_user_by_id(user_id()); ?>
-<script>
-    saveuserdata = function () {
-        var data = mw.serializeFields('#user-data');
-        if (data.password != data.password2) {
-            mw.$('#errnotification').html('Passwords do not match').show();
-            return false;
-        } else {
-            mw.$('#errnotification').hide();
+    <script>
+        saveuserdata = function () {
+            var data = mw.serializeFields('#user-data');
+            if (data.password != data.password2) {
+                mw.$('#errnotification').html('Passwords do not match').show();
+                return false;
+            } else {
+                mw.$('#errnotification').hide();
 
-            if (data.password == '') {
-                delete data.password;
-                delete data.password2;
+                if (data.password == '') {
+                    delete data.password;
+                    delete data.password2;
+                }
             }
+            mw.tools.loading('#user-data')
+            $.post("<?php print api_url(); ?>save_user", data, function () {
+                mw.tools.loading('#user-data', false);
+            });
         }
-        mw.tools.loading('#user-data')
-        $.post("<?php print api_url(); ?>save_user", data, function () {
-            mw.tools.loading('#user-data', false);
-        });
-    }
-</script>
+    </script>
 
-    <p><?php _lang('From this window you can edit your profile.', "templates/new-world"); ?><br/><br/></p>
-
-    <form method="post" id="user-data">
+    <form class="col-6 mb-5 mx-auto" method="post" id="user-data">
+        <div class="my-3">
+            <h5 class="mb-2"><?php _lang('Edit profile', "templates/new-world"); ?></h5>
+            <small class="text-muted d-block mb-2"><?php _lang('From this page you can edit your profile', "templates/new-world"); ?></small>
+        </div>
         <div class="mw-ui-box mw-ui-box-important mw-ui-box-content" id="errnotification" style="display: none;margin-bottom: 12px;"></div>
 
         <div class="form-group">
@@ -31,8 +33,8 @@
         </div>
 
         <div class="form-group">
-            <label class="control-label"><?php _lang("E-mail", "templates/new-world"); ?></label>
-            <input class="form-control input-lg" type="email" name="email" value="<?php print $user['email']; ?>" placeholder="<?php _lang('E-mail', "templates/new-world"); ?>">
+            <label class="control-label"><?php _lang("Email", "templates/new-world"); ?></label>
+            <input class="form-control input-lg" type="email" name="email" value="<?php print $user['email']; ?>" placeholder="<?php _lang('Email', "templates/new-world"); ?>">
         </div>
 
         <div class="form-group">
@@ -57,3 +59,4 @@
 
         <button type="button" class="btn btn-default btn-lg btn-block m-t-10" onclick="saveuserdata()"><?php _lang('Save', "templates/new-world"); ?></button>
     </form>
+

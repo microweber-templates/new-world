@@ -20,35 +20,35 @@ if (is_logged() == true) {
 ?>
 
 <div class="edit main-content" rel="content" field="new-world_content">
-<section class="section  p-t-50 p-b-50" rel="module">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <div class="m-auto allow-drop" style="max-width: 800px;">
-						<h1>
-						Login <span class="text-primary">.</span>
-						</h1>
-								
-						<module type="breadcrumb" />
-                   
-                    <hr class="hr m-t-0">
+    <section class="section  p-t-50 p-b-50" rel="module">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="m-auto allow-drop" style="max-width: 800px;">
+                        <h1>
+                            Login <span class="text-primary">.</span>
+                        </h1>
+
+                        <module type="breadcrumb"/>
+
+                        <hr class="hr m-t-0">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="section-22 p-b-30">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <div class="m-auto allow-drop" style="max-width: 400px;">
-			        <module type="users/login" template="popup"  />
+    <section class="section-22 p-b-30">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="m-auto allow-drop" style="max-width: 400px;">
+                        <module type="users/login" template="popup"/>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-        </div>
-        </div>
-</section>
+    </section>
 </div>
 
 

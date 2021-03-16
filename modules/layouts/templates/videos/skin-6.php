@@ -49,13 +49,13 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                         <div class="col-sm-10 mx-sm-auto mx-xl-0 col-xl-5 video-holder d-flex align-items-center justify-content-center">
                             <div class="w-100">
                                 <div class="div-table">
-                                    <div class="div-table-cell">
-                                        <div class="button-holder">
+                                    <div class="div-table-cell d-flex justify-content-center">
+                                        <div class="d-flex position-absolute align-self-center">
                                             <a class="popup-vimeo btn btn-primary btn-play" href="https://vimeo.com/279249292"><i class="fa fa-play"></i></a>
                                         </div>
 
                                         <div class="img">
-                                            <img src="<?php print template_url(); ?>assets/img/video-bg.jpg"/>
+                                            <img src="<?php print template_url(); ?>assets/img/video-bg.jpg">
                                         </div>
                                     </div>
                                 </div>

@@ -29,9 +29,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     <div class="background-image-holder d-flex w-100 justify-content-center" style="background-image: url('<?php print template_url(); ?>assets/img/slide-1.jpg');">
         <div class="container d-flex justify-content-center align-items-center">
             <div class="w-100 text-left info-holder allow-drop" <?php if(is_live_edit()): ?>no-<?php endif;?>data-aos="fade-down">
-                <h1>This is the default <br/>template of Microweber</h1>
+                <h1><?php _lang("This is the default", "templates/new-world"); ?> <br/><?php _lang("template of Microweber", "templates/new-world"); ?></h1>
                 <br/>
-                <p class="lead">Drag and drop open-source website builder<br/>and CMS of new generation.</p>
+                <p class="lead"><?php _lang("Drag and drop open-source website builder", "templates/new-world"); ?><br/><?php _lang("and CMS of new generation.", "templates/new-world"); ?></p>
                 <br/>
                 <br/>
                 <div class="element d-inline-block cloneable">

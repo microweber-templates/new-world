@@ -52,8 +52,8 @@ if ($vimeo_url) {
         </div>
 
         <div class="w-100 align-self-center text-center info-holder allow-drop  edit safe-mode" field="layout-home-banners-skin-3-<?php print $params['id'] ?>" rel="module">
-            <h4>An amazing video</h4>
-            <h1>shooted in Bulgaria</h1>
+            <h4><?php _lang("An amazing video", "templates/new-world"); ?></h4>
+            <h1><?php _lang("shooted in Bulgaria", "templates/new-world"); ?></h1>
 
         </div>
 

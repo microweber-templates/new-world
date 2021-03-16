@@ -27,8 +27,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     <div class="container">
         <div class="row">
             <div class="col-xl-10 mx-auto allow-drop text-center">
-                <h2 class="m-b-10">Ask Your Question to Us</h2>
-                <p class="lead">Read what our lients says for our services.</p>
+                <h2 class="m-b-10"><?php _lang("Ask Your Question to Us", "templates/new-world"); ?></h2>
+                <p class="lead"><?php _lang("Read what our lients says for our services.", "templates/new-world"); ?></p>
                 <br />
                 <br />
             </div>

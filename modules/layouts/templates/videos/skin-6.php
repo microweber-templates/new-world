@@ -51,7 +51,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                                 <div class="div-table">
                                     <div class="div-table-cell d-flex justify-content-center">
                                         <div class="d-flex position-absolute align-self-center">
-                                            <a class="popup-vimeo btn btn-primary btn-play" href="https://vimeo.com/279249292"><i class="fa fa-play"></i></a>
+                                            <module class="popup-vimeo" type="btn" template="bootstrap" icon="&lt;i class='fa fa-play'&gt;&lt;/i&gt;" text="$notext" button_style="btn-primary"/>
+
+
                                         </div>
 
                                         <div class="img">

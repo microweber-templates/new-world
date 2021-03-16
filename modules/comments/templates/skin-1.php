@@ -49,7 +49,7 @@ description: Skin 1 comments template
                                             <div class="avatar" style="background-image: url('<?php print template_url(); ?>assets/img/noavatar.png');"></div>
                                         </div>
                                         <div class="info">
-                                            <h4><?php print $comment['comment_name'] ?> <?php print _e('says'); ?>:</h4>
+                                            <h4><?php print $comment['comment_name'] ?> <?php _e('says'); ?>:</h4>
                                             <?php if ($required_moderation != false and $comment['is_moderated'] == 0): ?>
                                                 <em class="comment-require-moderation">
                                                     <?php _lang("Your comment requires moderation", "templates/new-world"); ?>
@@ -153,7 +153,7 @@ description: Skin 1 comments template
                                         <textarea class="form-control" id="comment_body" name="comment_body" placeholder="Type your message here"></textarea>
                                     </div>
 
-                                    <button type="submit" class="btn btn-primary btn-block"><?php print _lang('Send Message' , "templates/new-world"); ?></button>
+                                    <button type="submit" class="btn btn-primary btn-block"><?php _lang('Send Message' , "templates/new-world"); ?></button>
                                 </div>
                             </div>
                         </form>

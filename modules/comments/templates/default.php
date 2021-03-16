@@ -51,7 +51,7 @@ description: Default comments template
                                                             <div class="avatar" style="background-image: url('<?php print template_url(); ?>assets/img/noavatar.png');"></div>
                                                         </div>
                                                         <div class="info">
-                                                            <h5><?php print $comment['comment_name'] ?> <?php print _e('says'); ?>:</h5>
+                                                            <h5><?php print $comment['comment_name'] ?> <?php _e('says'); ?>:</h5>
                                                             <?php if ($required_moderation != false and $comment['is_moderated'] == 0): ?>
                                                                 <em class="comment-require-moderation">
                                                                     <?php _lang("Your comment requires moderation" , "templates/new-world"); ?>
@@ -157,7 +157,7 @@ description: Default comments template
                                                         <textarea class="form-control" id="comment_body" name="comment_body" style="height:200px;" placeholder="<?php _lang("Type your message here", "templates/new-world"); ?>"></textarea>
                                                     </div>
 
-                                                    <button type="submit" class="btn btn-primary btn-block"><?php print _lang('Send Message', "templates/new-world"); ?></button>
+                                                    <button type="submit" class="btn btn-primary btn-block"><?php _lang('Send Message', "templates/new-world"); ?></button>
                                                 </div>
                                             </div>
                                         </form>

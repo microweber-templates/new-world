@@ -28,9 +28,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
         <div class="row flexbox-container">
             <div class="col-12 col-lg-6 col-xl-7 left-side text-center text-lg-left">
                 <div class="info-holder shadow-sm allow-drop" <?php if(is_live_edit()): ?>no-<?php endif;?>data-aos="fade-up">
-                    <h2 class="hr">Do design and code</h2>
-                    <p>Microweber is an open-source content management system and website builder. It is based on the PHP programming language and the Laravel 5 web application framework, using drag and drop and allowing users to quickly create content, while scheduling and managing
-                        multipledisplays.</p>
+                    <h2 class="hr"><?php _lang("Do design and code", "templates/new-world"); ?></h2>
+                    <p><?php _lang("Microweber is an open-source content management system and website builder. It is based on the PHP programming language and the Laravel 5 web application framework, using drag and drop and allowing users to quickly create content, while scheduling and managing
+                        multipledisplays.", "templates/new-world"); ?></p>
                     <div class="element">
                         <br />
                         <module type="btn" button_text="More about this" button_style="8"/>

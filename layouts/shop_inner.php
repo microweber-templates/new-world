@@ -34,7 +34,6 @@ $prev = prev_content();
     <div class="shop-inner-page" id="shop-content-<?php print CONTENT_ID; ?>">
         <section class="p-t-100 p-b-50 fx-particles">
             <div class="container">
-
                 <div class="row">
                     <div class="col-xl-10 mx-auto">
                         <div class="row product-holder justify-content-xl-between">
@@ -83,7 +82,7 @@ $prev = prev_content();
                                             </div>
 
                                             <div class="col text-center bold">
-                                                <span class="">Write a Review</span>
+                                                <span class=""><?php _lang("Write a Review", 'templates/new-world') ?></span>
                                             </div>
 
                                             <div class="col">
@@ -122,7 +121,7 @@ $prev = prev_content();
                                             <div class="col-12">
                                                 <div class="description-short">
                                                     <div class="edit typography-area" field="content_body_short" rel="content">
-                                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                                                        <p><?php _lang("There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.", 'templates/new-world') ?> </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -177,22 +176,22 @@ $prev = prev_content();
                                             <div class="col-md-12">
                                                 <div class="description">
                                                     <div class="edit typography-area" field="content_body" rel="content">
-                                                        <h6 class="strong">How to write product descriptions that sell</h6>
-                                                        <p class="strong">One of the best things you can do to make your store successful is invest some time in writing great product descriptions. You want to provide detailed yet concise information that will entice potential customers to buy.</p>
+                                                        <h6 class="strong"><?php _lang("How to write product descriptions that sell", 'templates/new-world') ?></h6>
+                                                        <p class="strong"><?php _lang("One of the best things you can do to make your store successful is invest some time in writing great product descriptions. You want to provide detailed yet concise information that will entice potential customers to buy.", 'templates/new-world') ?></p>
 
-                                                        <h6 class="strong">Think like a consumer</h6>
-                                                        <p class="strong">Think about what you as a consumer would want to know, then include those features in your description. For clothes: materials and fit. For food: ingredients and how it was prepared. Bullets are your friends when listing
+                                                        <h6 class="strong"><?php _lang("Think like a consumer", 'templates/new-world') ?></h6>
+                                                        <p class="strong"><?php _lang("Think about what you as a consumer would want to know, then include those features in your description. For clothes: materials and fit. For food: ingredients and how it was prepared. Bullets are your friends when listing
                                                             features — try to
-                                                            limit each one to 5-8 words.</p>
+                                                            limit each one to 5-8 words.", 'templates/new-world') ?></p>
 
-                                                        <h6 class="strong">Find differentiators</h6>
-                                                        <p class="strong">Pepper your features with details that show how the product stands out against similar offerings. For clothes: is it vintage or hard to find? For art: is the artist well known? For home décor: is it a certain style like
+                                                        <h6 class="strong"><?php _lang("Find differentiators", 'templates/new-world') ?></h6>
+                                                        <p class="strong"><?php _lang("Pepper your features with details that show how the product stands out against similar offerings. For clothes: is it vintage or hard to find? For art: is the artist well known? For home décor: is it a certain style like
                                                             mid-century modern?
-                                                            Unique product descriptions not only help you stand out, they improve your SEO.</p>
+                                                            Unique product descriptions not only help you stand out, they improve your SEO.", 'templates/new-world') ?></p>
 
-                                                        <h6 class="strong">Keep it simple</h6>
-                                                        <p class="strong">Provide enough detail to help consumers make an informed decision, but don’t overwhelm with a laundry list of features or flowery language. Densely pack your descriptions with useful information and watch products fly off the
-                                                            shelf.</p>
+                                                        <h6 class="strong"><?php _lang("Keep it simple", 'templates/new-world') ?></h6>
+                                                        <p class="strong"><?php _lang("Provide enough detail to help consumers make an informed decision, but don’t overwhelm with a laundry list of features or flowery language. Densely pack your descriptions with useful information and watch products fly off the
+                                                            shelf", 'templates/new-world') ?>.</p>
                                                     </div>
                                                 </div>
                                             </div>

@@ -31,9 +31,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                 <div class="row m-0">
                     <div class="col-12 col-md-6 bg-primary text-left cloneable">
                         <div class="allow-drop padding-holder d-flex flex-column">
-                            <h2>Meet us on the following events</h2>
+                            <h2><?php _lang("Meet us on the following events", "templates/new-world"); ?></h2>
                             <br/>
-                            <p class="lead"><strong>Contact us today to book your appintment with our representatives.</strong></p>
+                            <p class="lead"><strong><?php _lang("Meet us on the following events", "templates/new-world"); ?>Meet us on the following events</strong></p>
 
                             <div class="element button-holder mt-auto">
                                 <module type="btn" template="bootstrap" button_style="btn-outline-primary" button_size="btn-lg" template="bootstrap" button_text="SET A MEETING"/>
@@ -43,11 +43,11 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
                     <div class="col-12 col-md-6 text-center allow-drop cloneable background-image-holder" style="background-image: url('<?php print template_url(); ?>assets/img/meeting.png');">
                         <div class="allow-drop padding-holder d-flex flex-column justify-content-center align-items-center">
-                            <h2>18-20 SEP</h2>
+                            <h2>18-20 <?php _lang("Created for Your", "templates/new-world"); ?>SEP</h2>
                             <br/>
-                            <p class="lead"><strong>Webit.Festival 2020 Valencia, Spain</strong></p>
+                            <p class="lead"><strong><?php _lang("Webit.Festival 2020 Valencia, Spain", "templates/new-world"); ?></strong></p>
                             <br/>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                            <p><?php _lang("There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. ", "templates/new-world"); ?></p>
                             <div class="element button-holder">
                                 <module type="btn" template="bootstrap" button_style="btn-outline-primary" button_size="btn-lg" button_text="CONTACT US"/>
                             </div>

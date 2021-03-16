@@ -39,7 +39,7 @@ if (page_title()) {
                     <module type="breadcrumb"/>
                     <hr class="hr m-t-0"/>
 
-                    <p class="lead">Say Helllo to us!</p>
+                    <p class="lead"><?php _lang("Say Helllo to us!", "templates/new-world"); ?></p>
                 </div>
             </div>
         </div>

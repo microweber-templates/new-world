@@ -41,13 +41,13 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             <div class="float-right" style="width: 80px;">
                                 <hr class="hr w-100 safe-element m-t-10"/>
                             </div>
-                            <p class="m-b-20 text-primary" style="letter-spacing:1.5px;">Trust our best services</p>
+                            <p class="m-b-20 text-primary" style="letter-spacing:1.5px;"><?php _lang("Trust our best services", "templates/new-world"); ?></p>
                         </div>
                         </div>
 
-                        <h2 class="m-b-30">What we are <br class="d-none d-xl-block"/>doing best.</h2>
-                        <p>Microweber is an open-source content management system and website builder. It is based on the PHP programming language and the Laravel 5 web application framework, using drag and drop and allowing users to quickly create content, while scheduling and managing multiple
-                            displays.</p>
+                        <h2 class="m-b-30"><?php _lang("What we are ", "templates/new-world"); ?><br class="d-none d-xl-block"/><?php _lang("doing best.", "templates/new-world"); ?></h2>
+                        <p><?php _lang("Microweber is an open-source content management system and website builder. It is based on the PHP programming language and the Laravel 5 web application framework, using drag and drop and allowing users to quickly create content, while scheduling and managing multiple
+                            displays.", "templates/new-world"); ?></p>
 
                         <br/>
                         <br/>
@@ -60,7 +60,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                                 <i class="mw-micon-Telephone safe-element"></i>
                             </div>
                             <div>
-                                <p>Make a call</p>
+                                <p><?php _lang("Make a call", "templates/new-world"); ?></p>
                                 <h4>00 1 234 567 890</h4>
                             </div>
                         </div>

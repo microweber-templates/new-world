@@ -28,8 +28,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     <div class="container">
         <div class="row element m-b-40">
             <div class="col-12 text-center allow-drop">
-                <h2 class="hr"><?php _lang("Our Partners", "templates/new-world"); ?></h2>
-                <p><?php _lang("Lorem Ipsum is simply dummy text of the printing and typesetting industry.", "templates/new-world"); ?></p>
+                <h2 class="hr">Our Partners</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
         </div>
 

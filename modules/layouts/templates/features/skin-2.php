@@ -35,9 +35,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             </div>
 
                             <div class="allow-drop">
-                                <h4 class="m-b-30"><?php _lang("Beautiful Website", "templates/new-world"); ?></h4>
+                                <h4 class="m-b-30">Beautiful Website</h4>
 
-                                <p><?php _lang("It is a long established fact that a reader will be distracted by the readable content of a page when .", "templates/new-world"); ?></p>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when .</p>
                             </div>
                         </div>
                     </div>
@@ -49,9 +49,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             </div>
 
                             <div class="allow-drop">
-                                <h4 class="m-b-30"><?php _lang("Modern Design", "templates/new-world"); ?></h4>
+                                <h4 class="m-b-30">Modern Design</h4>
 
-                                <p><?php _lang("It is a long established fact that a reader will be distracted by the readable content of a page when .", "templates/new-world"); ?></p>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when .</p>
                             </div>
                         </div>
                     </div>
@@ -63,9 +63,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             </div>
 
                             <div class="allow-drop">
-                                <h4 class="m-b-30"><?php _lang("Easy Interface", "templates/new-world"); ?></h4>
+                                <h4 class="m-b-30">Easy Interface</h4>
 
-                                <p><?php _lang("It is a long established fact that a reader will be distracted by the readable content of a page when .", "templates/new-world"); ?></p>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when .</p>
                             </div>
                         </div>
                     </div>
@@ -78,8 +78,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
                             <div class="allow-drop">
 
-                                <h4 class="m-b-30"><?php _lang("Drag and Drop", "templates/new-world"); ?></h4>
-                                <p><?php _lang("It is a long established fact that a reader will be distracted by the readable content of a page when .", "templates/new-world"); ?></p>
+                                <h4 class="m-b-30">Drag and Drop</h4>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when .</p>
                             </div>
                         </div>
                     </div>
@@ -91,9 +91,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             </div>
 
                             <div class="allow-drop">
-                                <h4 class="m-b-30"><?php _lang("Online Store", "templates/new-world"); ?></h4>
+                                <h4 class="m-b-30">Online Store</h4>
 
-                                <p><?php _lang("It is a long established fact that a reader will be distracted by the readable content of a page when .", "templates/new-world"); ?></p>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when .</p>
                             </div>
                         </div>
                     </div>
@@ -105,9 +105,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             </div>
 
                             <div class="allow-drop">
-                                <h4 class="m-b-30"><?php _lang("Easy Interface", "templates/new-world"); ?></h4>
+                                <h4 class="m-b-30">Easy Interface</h4>
 
-                                <p><?php _lang("It is a long established fact that a reader will be distracted by the readable content of a page when .", "templates/new-world"); ?></p>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when .</p>
                             </div>
                         </div>
                     </div>

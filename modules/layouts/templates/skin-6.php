@@ -30,7 +30,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                 <div class="col-12 mx-auto text-center">
                     <div class="title-holder">
                         <div><i class="fab fa-instagram"></i></div>
-                        <h2>#<?php _lang("NATURE", "templates/new-world"); ?></h2>
+                        <h2>#NATURE</h2>
                     </div>
 
                     <module type="instagram_feed" data-instagram="tour_alagoas" data-items="8" />

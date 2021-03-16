@@ -32,7 +32,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                 <div class="row info-holder">
                     <div class="col-9 col-sm-7 col-md-8">
                         <div class="h-100 d-flex align-items-center justify-content-left">
-                            <h3 class="m-b-5"><?php _lang("Call to Action Section Here", "templates/new-world"); ?></h3>
+                            <h3 class="m-b-5">Call to Action Section Here</h3>
                         </div>
                     </div>
 

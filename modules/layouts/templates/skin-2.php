@@ -28,8 +28,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     <div class="container" style="max-width:750px;">
         <div class="row">
             <div class="col-12 text-center allow-drop">
-                <h2 class="hr"><?php _lang("Build a website, it's easy and free", "templates/new-world"); ?></h2>
-                <p class="lead"><?php _lang("Professional developers can freely access the code, exchanging their knowledge and contributions with the rest of the open-source community", "templates/new-world"); ?></p>
+                <h2 class="hr">Build a website, it's easy and free</h2>
+                <p class="lead">Professional developers can freely access the code, exchanging their knowledge and contributions with the rest of the open-source community</p>
             </div>
         </div>
     </div>

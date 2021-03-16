@@ -29,9 +29,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             <div class="col-xl-10 mx-auto">
                 <div class="row">
                     <div class="col-xl-6 text-center text-lg-left m-b-40 allow-drop">
-                        <h2 class="hr"><?php _lang("Why to Contact Us?", "templates/new-world"); ?></h2>
-                        <p><?php _lang("Microweber is an open-source content management system and website builder.
-                            It is based on the PHP programming language and the Laravel 5 web application framework, using drag and drop and allowing users to quickly create content, while scheduling and managing multiple displays.", "templates/new-world"); ?></p>
+                        <h2 class="hr">Why to Contact Us?</h2>
+                        <p>Microweber is an open-source content management system and website builder.
+                            It is based on the PHP programming language and the Laravel 5 web application framework, using drag and drop and allowing users to quickly create content, while scheduling and managing multiple displays.</p>
                         <br/>
                         <br/>
 
@@ -48,8 +48,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                                         <i class="mw-icon mw-micon-Building safe-element"></i>
                                     </div>
                                     <div class="text-holder allow-drop">
-                                        <p><strong><?php _lang("Address", "templates/new-world"); ?></strong></p>
-                                        <p><?php _lang("Sofia, Bulgaria, bul. Cherni Vruh 47. Floor 5, Building A", "templates/new-world"); ?></p>
+                                        <p><strong>Address</strong></p>
+                                        <p>Sofia, Bulgaria, bul. Cherni Vruh 47. Floor 5, Building A</p>
                                     </div>
                                 </div>
                             </div>
@@ -60,7 +60,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                                         <i class="mw-icon mw-micon-Smartphone-3 safe-element"></i>
                                     </div>
                                     <div class="text-holder allow-drop">
-                                        <p><strong><?php _lang("Phone", "templates/new-world"); ?></strong></p>
+                                        <p><strong>Phone</strong></p>
                                         <p>00359 878 998 778 ( Office ) 00359 878 887 887 ( Sales)</p>
                                     </div>
                                 </div>
@@ -72,8 +72,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                                         <i class="mw-icon mw-micon-Email safe-element"></i>
                                     </div>
                                     <div class="text-holder allow-drop">
-                                        <p><strong><?php _lang("Other ways to contact us", "templates/new-world"); ?></strong></p>
-                                        <p><?php _lang("Email", "templates/new-world"); ?>: info@youremail.com</p>
+                                        <p><strong>Other ways to contact us</strong></p>
+                                        <p>Email: info@youremail.com</p>
                                     </div>
 
                                     <div class="socials-holder">

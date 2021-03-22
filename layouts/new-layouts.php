@@ -4,9 +4,9 @@
 
   type: layout
   content_type: static
-  name: typography
-  position: 26
-  description: New Typography for Drag N drop
+  name: new-layouts
+  position: 25
+  description: New Layouts for Drag N drop
 
 */
 
@@ -17,9 +17,9 @@
     $module_layouts = module_templates('layouts');
     $i=0;
     foreach ($module_layouts as $module) {
-        if (strpos($module['layout_file'], 'typography/') !== false) {
+        if (strpos($module['layout_file'], 'drag-n-drop/') !== false) {
             $i++;
-            print 'Typography-'.$i.'<module type="layouts"  template="' . ($module['layout_file']) . '" template_order_number="'.$i.'" id="mod-' . md5($module['name']) . '" />';
+            print 'DragNDropLayouts-'.$i.'<module type="layouts"  template="' . ($module['layout_file']) . '" template_order_number="'.$i.'" id="mod-' . md5($module['name']) . '" />';
         }
     }
     ?>

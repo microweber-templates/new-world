@@ -27,7 +27,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 <section class="section <?php print $layout_classes; ?> edit safe-mode " field="layout-drag-n-drop-skin-4-<?php print $params['id'] ?>" rel="module">
     <div class="container">
         <div class="row d-flex justify-content-center">
-           <div class="col-md-6 col d-flex">
+           <div class="col-md-5 col d-flex">
                <div class="col-md-6 col">
                    <div class="mb-3"><i class="mdi mdi-earth" style="font-size: 25px;"></i></div>
                    <h6 class="mb-3 font-weight-bold">Awesome title</h6>

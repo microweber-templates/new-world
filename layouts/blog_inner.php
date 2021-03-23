@@ -72,7 +72,7 @@ $itemTags = content_tags($post['id']);
                         <?php
                         //include(template_dir() . 'elements' . DS . 'paragraph-highlight.php');
                         //include(template_dir() . 'elements' . DS . 'paragraph-lead.php');
-                        include(template_dir() . 'elements' . DS . 'paragraph.php');
+//                        include(template_dir() . 'elements' . DS . 'paragraph.php');
                         //include(template_dir() . 'elements' . DS . 'titles' . DS . 'title-2.php');
                         //include(template_dir() . 'elements' . DS . 'paragraph.php');
                         //include(template_dir() . 'elements' . DS . 'blockquote.php');

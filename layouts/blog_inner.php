@@ -61,20 +61,23 @@ $itemTags = content_tags($post['id']);
             <div class="text-holder text-center">
                 <h1 class="m-b-30 text-dark edit plain-text" field="title" rel="content"><?php echo $post['title']; ?></h1>
             </div>
+            <div class="text-center">
+                <h6 class="text-dark"><?php echo date('d M Y', strtotime($post['updated_at'])); ?></h6>
+            </div>
         </div>
     </section>
 
     <div class="blog-inner-page" id="blog-content-<?php print CONTENT_ID; ?>">
-        <div class="container m-t-30 m-b-50">
+        <div class="container  m-b-50">
             <div class="row">
                 <div class="col-xl-6 mx-auto">
                     <div class="description edit dropcap typography-area" field="content" rel="content">
                         <?php
                         //include(template_dir() . 'elements' . DS . 'paragraph-highlight.php');
                         //include(template_dir() . 'elements' . DS . 'paragraph-lead.php');
-                        include(template_dir() . 'elements' . DS . 'paragraph.php');
+//                        include(template_dir() . 'elements' . DS . 'paragraph.php');
                         //include(template_dir() . 'elements' . DS . 'titles' . DS . 'title-2.php');
-                        //include(template_dir() . 'elements' . DS . 'paragraph.php');
+                        include(elements_path() . DS . 'paragraph-highlight.php');
                         //include(template_dir() . 'elements' . DS . 'blockquote.php');
                         //include(template_dir() . 'elements' . DS . 'titles' . DS . 'title-3.php');
                         //include(template_dir() . 'elements' . DS . 'paragraph.php');
@@ -84,9 +87,7 @@ $itemTags = content_tags($post['id']);
                         ?>
                     </div>
 
-                    <div class="text-right m-b-20">
-                        <h6 class="text-dark"><?php echo date('d M Y', strtotime($post['updated_at'])); ?></h6>
-                    </div>
+
 
                     <div class="border-top-bottom">
                         <div class="m-t-40 m-b-40 row">

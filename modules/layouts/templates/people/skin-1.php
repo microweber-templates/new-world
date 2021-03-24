@@ -27,8 +27,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
         <div class="container align-self-centerx">
             <div class="row">
                 <div class="col-xl-8 col-lg-8 text-center m-b-20 mx-auto">
-                    <h1 class="m-b-10"><?php _lang("Our Team", "templates/new-world"); ?></h1>
-                    <p class="lead"><?php _lang("It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.", "templates/new-world"); ?> </p>
+                    <h1 class="m-b-10">Our Team</h1>
+                    <p class="lead">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
                     <hr class="hr"/>
                 </div>
             </div>
@@ -40,8 +40,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             <div class="background-image-holder" style="background-image: url('<?php print template_url(); ?>assets/img/people-1.jpg');">
                                 <div class="square">
                                     <div class="content allow-drop">
-                                        <h5><?php _lang("Charley Doe", "templates/new-world"); ?></h5>
-                                        <p class="m-t-10"><?php _lang("Charley is a senior developer in our company. He is doing great code and software solutions. Educated in Sofia, Bulgaria.", "templates/new-world"); ?></p>
+                                        <h5>Charley Doe</h5>
+                                        <p class="m-t-10">Charley is a senior developer in our company. He is doing great code and software solutions. Educated in Sofia, Bulgaria.</p>
 
                                         <div class="element socials-holder">
                                             <module type="social_links"/>
@@ -55,8 +55,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             <div class="background-image-holder" style="background-image: url('<?php print template_url(); ?>assets/img/people-2.jpg');">
                                 <div class="square">
                                     <div class="content allow-drop">
-                                        <h5><?php _lang("Charley Doe", "templates/new-world"); ?></h5>
-                                        <p class="m-t-10"><?php _lang("Charley is a senior developer in our company. He is doing great code and software solutions. Educated in Sofia, Bulgaria.", "templates/new-world"); ?></p>
+                                        <h5>Charley Doe</h5>
+                                        <p class="m-t-10">Charley is a senior developer in our company. He is doing great code and software solutions. Educated in Sofia, Bulgaria.</p>
 
                                         <div class="element socials-holder">
                                             <module type="social_links"/>
@@ -70,8 +70,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             <div class="background-image-holder" style="background-image: url('<?php print template_url(); ?>assets/img/people-3.jpg');">
                                 <div class="square">
                                     <div class="content allow-drop">
-                                        <h5><?php _lang("Charley Doe", "templates/new-world"); ?></h5>
-                                        <p class="m-t-10"><?php _lang("Charley is a senior developer in our company. He is doing great code and software solutions. Educated in Sofia, Bulgaria.", "templates/new-world"); ?></p>
+                                        <h5>Charley Doe</h5>
+                                        <p class="m-t-10">Charley is a senior developer in our company. He is doing great code and software solutions. Educated in Sofia, Bulgaria.</p>
 
                                         <div class="element socials-holder">
                                             <module type="social_links"/>
@@ -85,8 +85,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             <div class="background-image-holder" style="background-image: url('<?php print template_url(); ?>assets/img/people-4.jpg');">
                                 <div class="square">
                                     <div class="content allow-drop">
-                                        <h5><?php _lang("harley Doe", "templates/new-world"); ?>C</h5>
-                                        <p class="m-t-10"><?php _lang("Charley is a senior developer in our company. He is doing great code and software solutions. Educated in Sofia, Bulgaria.", "templates/new-world"); ?></p>
+                                        <h5>Charley Doe</h5>
+                                        <p class="m-t-10">Charley is a senior developer in our company. He is doing great code and software solutions. Educated in Sofia, Bulgaria.</p>
 
                                         <div class="element socials-holder">
                                             <module type="social_links"/>
@@ -100,8 +100,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             <div class="background-image-holder" style="background-image: url('<?php print template_url(); ?>assets/img/people-5.jpg');">
                                 <div class="square">
                                     <div class="content allow-drop">
-                                        <h5><?php _lang("Charley Doe", "templates/new-world"); ?></h5>
-                                        <p class="m-t-10"><?php _lang("Charley is a senior developer in our company. He is doing great code and software solutions. Educated in Sofia, Bulgaria.", "templates/new-world"); ?></p>
+                                        <h5>Charley Doe</h5>
+                                        <p class="m-t-10">Charley is a senior developer in our company. He is doing great code and software solutions. Educated in Sofia, Bulgaria.</p>
 
                                         <div class="element socials-holder">
                                             <module type="social_links"/>
@@ -115,8 +115,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             <div class="background-image-holder" style="background-image: url('<?php print template_url(); ?>assets/img/people-6.jpg');">
                                 <div class="square">
                                     <div class="content allow-drop">
-                                        <h5><?php _lang("Charley Doe", "templates/new-world"); ?></h5>
-                                        <p class="m-t-10"><?php _lang("Charley is a senior developer in our company. He is doing great code and software solutions. Educated in Sofia, Bulgaria.", "templates/new-world"); ?></p>
+                                        <h5>Charley Doe</h5>
+                                        <p class="m-t-10">Charley is a senior developer in our company. He is doing great code and software solutions. Educated in Sofia, Bulgaria.</p>
 
                                         <div class="element socials-holder">
                                             <module type="social_links"/>

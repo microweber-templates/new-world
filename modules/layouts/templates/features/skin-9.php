@@ -35,9 +35,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             </div>
 
                             <div class="allow-drop">
-                                <h4 class="m-b-20"><?php _lang("Development", "templates/new-world"); ?></h4>
+                                <h4 class="m-b-20">Development</h4>
 
-                                <p><?php _lang("Lorem Ipsum is simply dummy text of the printing and typesetting industry.", "templates/new-world"); ?></p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             </div>
                         </div>
                     </div>
@@ -49,9 +49,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             </div>
 
                             <div class="allow-drop">
-                                <h4 class="m-b-20"><?php _lang("Lessons", "templates/new-world"); ?></h4>
+                                <h4 class="m-b-20">Lessons</h4>
 
-                                <p><?php _lang("Lorem Ipsum is simply dummy text of the printing and typesetting industry.", "templates/new-world"); ?></p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             </div>
                         </div>
                     </div>
@@ -63,9 +63,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             </div>
 
                             <div class="allow-drop">
-                                <h4 class="m-b-20"><?php _lang("Development", "templates/new-world"); ?></h4>
+                                <h4 class="m-b-20">Development</h4>
 
-                                <p><?php _lang("Lorem Ipsum is simply dummy text of the printing and typesetting industry.", "templates/new-world"); ?></p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             </div>
                         </div>
                     </div>
@@ -78,8 +78,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
                             <div class="allow-drop">
 
-                                <h4 class="m-b-20"><?php _lang("Online Store", "templates/new-world"); ?></h4>
-                                <p><?php _lang("Lorem Ipsum is simply dummy text of the printing and typesetting industry.", "templates/new-world"); ?></p>
+                                <h4 class="m-b-20">Online Store</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             </div>
                         </div>
                     </div>

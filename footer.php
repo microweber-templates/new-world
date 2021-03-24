@@ -12,7 +12,7 @@
                     <div class="col-12 col-lg-12 col-xl-5 mx-auto text-center text-xl-left m-b-40 allow-drop">
                         <module type="menu" template="simple" id="footer_menu" name="footer_menu"/>
                         <br/>
-                        <p><?php print _lang('Microweber is free open source drag and drop website builder and CMS. It is under MIT license and we use Laravel PHP framework', 'templates/new-world'); ?></p>
+                        <p><?php _lang('Microweber is free open source drag and drop website builder and CMS. It is under MIT license and we use Laravel PHP framework', 'templates/new-world'); ?></p>
                     </div>
 
                     <div class="col-12 col-sm col-lg-6 col-xl mx-auto text-white allow-drop">
@@ -22,7 +22,7 @@
                     </div>
 
                     <div class="col-12 col-sm col-lg-6 col-xl mx-auto text-white text-center text-sm-right allow-drop">
-                        <h6 class="m-t-5"><?php print _lang('Social Networks', 'templates/new-world'); ?></h6>
+                        <h6 class="m-t-5"><?php _lang('Social Networks', 'templates/new-world'); ?></h6>
 
                         <module type="social_links" id="footer_socials"/>
                     </div>

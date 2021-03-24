@@ -30,7 +30,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                 <div class="row">
                     <div class="col-md-12 col-lg-4 col-xl-4">
                         <div class="p-40 text-center text-lg-left">
-                            <h3><?php _lang("Service and contact", "templates/new-world"); ?></h3>
+                            <h3>Service and contact</h3>
                         </div>
                     </div>
 
@@ -41,8 +41,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             </div>
 
                             <div class="info allow-drop">
-                                <h4 class="m-b-10"><?php _lang("Need help?", "templates/new-world"); ?></h4>
-                                <p><?php _lang("Contact us at", "templates/new-world"); ?> +000 111 222</p>
+                                <h4 class="m-b-10">Need help?</h4>
+                                <p>Contact us at +000 111 222</p>
                             </div>
                         </div>
                     </div>
@@ -54,8 +54,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             </div>
 
                             <div class="info allow-drop">
-                                <h4 class="m-b-10"><?php _lang("Chat", "templates/new-world"); ?></h4>
-                                <p><?php _lang("Chat with our friendly team!", "templates/new-world"); ?></p>
+                                <h4 class="m-b-10">Chat</h4>
+                                <p>Chat with our friendly team!</p>
                                 <br />
 
                                 <module type="btn" template="bootstrap" button_style="btn-primary" text="Chat now" />

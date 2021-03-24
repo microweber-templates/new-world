@@ -210,7 +210,7 @@ $prev = prev_content();
                         <div class="edit safe-mode nodrop m-t-40" field="related_products" rel="inherit">
                             <div class="row m-t-20">
                                 <div class="col-12 text-left">
-                                    <h5 class="hr"><?php print _lang('Related products', 'templates/new-world'); ?></h5>
+                                    <h5 class="hr"><?php _lang('Related products', 'templates/new-world'); ?></h5>
                                 </div>
                             </div>
 

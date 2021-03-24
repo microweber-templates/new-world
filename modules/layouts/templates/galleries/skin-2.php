@@ -28,7 +28,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
         <div class="container align-self-centerx">
             <div class="row">
                 <div class="col-12 col-xl-12 mx-auto text-center">
-                    <h2 class="hr"><?php _lang("Explore the features", "templates/new-world"); ?></h2>
+                    <h2 class="hr">Explore the features</h2>
 
                     <module type="slider" template="bxslider-skin-2" />
                 </div>

@@ -31,11 +31,11 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                 <div class="col-12">
                     <div class="safe-mode nodrop mx-auto p-5" style="max-width: 780px;">
                         <blockquote class="safe-element text-white">
-                            <?php _lang("Long quote text on the image. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci didunt ut labore et dolore", "templates/new-world"); ?>
+                            Long quote text on the image. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci didunt ut labore et dolore
                             <div class="testimonial">
                                 <img src="<?php print template_url(); ?>assets/img/testimonial.png"/>
-                                <span class="name"><?php _lang("John Doe", "templates/new-world"); ?></span>
-                                <span class="info"><?php _lang("Developer", "templates/new-world"); ?></span>
+                                <span class="name">John Doe</span>
+                                <span class="info">Developer</span>
                             </div>
                         </blockquote>
                     </div>

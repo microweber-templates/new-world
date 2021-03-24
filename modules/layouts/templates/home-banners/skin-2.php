@@ -30,7 +30,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     <div class="background-image-holder d-flex w-100 justify-content-center" style="background-image: url('<?php print template_url(); ?>assets/img/slide-1.jpg');">
         <div class="container d-flex justify-content-center align-items-center">
             <div class="w-100 text-center info-holder allow-drop" <?php if(is_live_edit()): ?>no-<?php endif;?>data-aos="fade-down">
-                <h1><?php _lang("Title Goes Here", "templates/new-world"); ?></h1>
+                <h1>Title Goes Here</h1>
             </div>
         </div>
 

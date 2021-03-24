@@ -9,10 +9,13 @@ is_shop: y
 description: Showcase shop items in a sylish grid arrangement.
 position: 2
 */
-
 ?>
 
 <?php include template_dir() . "header.php"; ?>
+
+<?php
+$shop_sidebar = 'true';
+?>
 
 <div class="x-edit" rel="content" field="new-world_content">
     <module type="layouts" template="skin-9"/>
@@ -27,7 +30,7 @@ position: 2
 
                     <?php if ($shop_sidebar == 'true'): ?>
                         <div class="col-sm-12 col-md-4 col-lg-3 col-xl-2">
-                            <?php include('shop_sidebar.php'); ?>
+                            <?php include(__DIR__ . DS .'shop_sidebar.php'); ?>
                         </div>
                     <?php endif; ?>
                 </div>

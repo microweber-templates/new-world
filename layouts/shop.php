@@ -17,7 +17,7 @@ position: 2
 $shop_sidebar = 'true';
 ?>
 
-<div class="x-edit" rel="content" field="new-world_content">
+<div class="edit" rel="content" field="new-world_content">
     <module type="layouts" template="skin-9"/>
 
     <div class="container safe-mode nodrop">

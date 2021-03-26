@@ -73,24 +73,6 @@ $prev = prev_content();
                                         </div>
                                     </div>
 
-                                    <div class="row">
-                                        <div class="col-auto" title="Rating points: <?php echo get_rating_points('content_id=' . $content['id'] . ''); ?>" data-toggle="tooltip">
-                                            <module type="rating" content_id="<?php print $content['id'] ?>"/>
-                                        </div>
-
-                                        <div class="col text-center  bold">
-                                            <span class="count"><?php echo get_comments('content_id=' . $content['id'] . '&count=1'); ?></span> <?php if (get_comments('content_id=' . $content['id'] . '&count=1') == 1): ?>review<?php else: ?>reviews<?php endif; ?>
-                                        </div>
-
-                                        <div class="col text-center bold">
-                                            <span class=""><?php _lang("Write a Review", 'templates/new-world') ?></span>
-                                        </div>
-
-                                        <div class="col">
-                                            <hr class="hr w-100" style="margin-top:8px;"/>
-                                        </div>
-                                    </div>
-
                                     <div class="row main-price">
                                         <div class="col-12">
                                             <?php $prices = get_product_prices(content_id(), true); ?>
@@ -124,14 +106,7 @@ $prev = prev_content();
                                                             features — try to
                                                             limit each one to 5-8 words.", 'templates/new-world') ?></p>
 
-                                                    <h6 class="strong"><?php _lang("Find differentiators", 'templates/new-world') ?></h6>
-                                                    <p class="strong"><?php _lang("Pepper your features with details that show how the product stands out against similar offerings. For clothes: is it vintage or hard to find? For art: is the artist well known? For home décor: is it a certain style like
-                                                            mid-century modern?
-                                                            Unique product descriptions not only help you stand out, they improve your SEO.", 'templates/new-world') ?></p>
 
-                                                    <h6 class="strong"><?php _lang("Keep it simple", 'templates/new-world') ?></h6>
-                                                    <p class="strong"><?php _lang("Provide enough detail to help consumers make an informed decision, but don’t overwhelm with a laundry list of features or flowery language. Densely pack your descriptions with useful information and watch products fly off the
-                                                            shelf", 'templates/new-world') ?>.</p>
                                                 </div>
                                             </div>
                                         </div>

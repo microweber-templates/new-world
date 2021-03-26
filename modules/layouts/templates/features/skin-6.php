@@ -25,7 +25,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
 <section class="section-13 <?php //print $layout_classes; ?> edit safe-mode nodrop" data-background-position="center center" field="layout-features-skin-6-<?php print $params['id'] ?>" rel="module">
     <div class="d-flex w-100 background-image-holder <?php print $layout_classes; ?>" style="background-image:url('<?php print template_url(); ?>assets/img/features-bg.png');">
-        <div class="container align-self-centerx">
+        <div class="container align-self-center">
             <div class="row">
                 <div class="col-12 col-xl-12 mx-auto text-center">
                     <div class="row">

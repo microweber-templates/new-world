@@ -12,6 +12,7 @@ description: Default
 ?>
 
 <?php
+
 $tn = $tn_size;
 if (!isset($tn[0]) or ($tn[0]) == 150) {
     $tn[0] = 350;
@@ -29,6 +30,15 @@ if (!isset($tn[1])) {
             <?php
             $itemData = content_data($item['id']);
             $itemTags = content_tags($item['id']);
+
+            $in_stock = true;
+            if (isset($itemData['qty']) and $itemData['qty'] != 'nolimit' and intval($itemData['qty']) == 0) {
+            $in_stock = false;
+            }
+
+            ?>
+
+            <?php
 
             if (!isset($itemData['label'])) {
                 $itemData['label'] = '';
@@ -101,10 +111,15 @@ if (!isset($tn[1])) {
                                     <?php endif; ?>
                                 <?php endif; ?>
                             </div>
+<!--                            --><?php //dd($in_stock); ?>
 
-                            <div class="col-6 text-right">
+                            <div class="col-6 d-flex justify-content-end">
                                 <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
-                                    <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-primary"><i class="material-icons">shopping_cart</i> Add to cart</a>
+                                    <?php if ($in_stock == true): ?>
+                                    <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-primary"><i class="material-icons">shopping_cart</i> <?php _e("Add to cart"); ?></a>
+                                    <?php else: ?>
+                                    <span class="text-danger"><i class="fas fa-circle mr-1" style="font-size: 11px;"></i> <?php _lang("Out of Stock", 'templates/new-world') ?></span>
+                                    <?php endif; ?>
                                 <?php endif; ?>
                             </div>
                         </div>

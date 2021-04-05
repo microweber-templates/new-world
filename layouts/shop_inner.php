@@ -32,12 +32,12 @@ $prev = prev_content();
 
 ?>
 
-<div class="shop-inner-page" id="shop-content-<?php print CONTENT_ID; ?>">
-    <section class="p-t-100 p-b-50 fx-particles">
+<div class="shop-inner-page" id="shop-content-<?php print CONTENT_ID; ?>" field="shop-inner-page" rel="page">
+    <section class="p-5 mb-5 fx-particles">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-10 mx-auto">
-                    <div class="row product-holder justify-content-xl-between">
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="row product-holder">
                         <div class="col-12 col-md-6 col-xl-6">
                             <module type="pictures" rel="content" template="skin-6"/>
                         </div>
@@ -74,51 +74,18 @@ $prev = prev_content();
                                     </div>
 
                                     <div class="row main-price">
-                                        <div class="col-12">
-                                            <?php $prices = get_product_prices(content_id(), true); ?>
-                                            <?php if (isset($prices[0]) and is_array($prices)) { ?>
-                                                <p>
-                                                    <?php if (isset($prices[0]['original_value'])): ?><span class="price-old"><?php print currency_format($prices[0]['original_value']); ?></span><?php endif; ?>
-                                                    <?php if (isset($prices[0]['value'])): ?><span class="price"><?php print currency_format($prices[0]['value']); ?></span><?php endif; ?>
-                                                </p>
-                                            <?php } ?>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-12 mt-3">
-                                            <?php if (isset($content_data['sku'])): ?>
-                                                <?php _lang("SKU Number", 'templates/new-world') ?>
-                                                - <?php print $content_data['sku']; ?>
-                                            <?php endif; ?>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-12">
-                                               <div class="description">
-                                                <div class="edit typography-area" field="content_body" rel="content">
-                                                    <h6 class="strong"><?php _lang("How to write product descriptions that sell", 'templates/new-world') ?></h6>
-                                                    <p class="strong"><?php _lang("One of the best things you can do to make your store successful is invest some time in writing great product descriptions. You want to provide detailed yet concise information that will entice potential customers to buy.", 'templates/new-world') ?></p>
-
-                                                    <h6 class="strong"><?php _lang("Think like a consumer", 'templates/new-world') ?></h6>
-                                                    <p class="strong"><?php _lang("Think about what you as a consumer would want to know, then include those features in your description. For clothes: materials and fit. For food: ingredients and how it was prepared. Bullets are your friends when listing
-                                                            features — try to
-                                                            limit each one to 5-8 words.", 'templates/new-world') ?></p>
-
-
-                                                </div>
+                                        <div class="col-12 d-flex">
+                                            <div class="col-6">
+                                                <?php $prices = get_product_prices(content_id(), true); ?>
+                                                <?php if (isset($prices[0]) and is_array($prices)) { ?>
+                                                    <p>
+                                                        <?php if (isset($prices[0]['original_value'])): ?><span class="price-old"><?php print currency_format($prices[0]['original_value']); ?></span><?php endif; ?>
+                                                        <?php if (isset($prices[0]['value'])): ?><span class="price"><?php print currency_format($prices[0]['value']); ?></span><?php endif; ?>
+                                                    </p>
+                                                <?php } ?>
                                             </div>
-                                        </div>
-                                    </div>
 
-                                    <div class="row m-t-20">
-                                        <div class="col-6">
-                                            <h5><?php _lang("Options", 'templates/new-world') ?></h5>
-                                        </div>
-
-                                        <div class="col-6 text-right">
-                                            <div class="availability">
+                                            <div class="availability col-6 text-right align-self-center">
                                                 <?php if ($in_stock == true): ?>
                                                     <span class="text-success"><i class="fas fa-circle" style="font-size: 8px;"></i> <?php _lang("In Stock", 'templates/new-world') ?></span> <span class="text-muted"><?php if ($available_qty != ''): ?>(<?php echo $available_qty; ?>)<?php endif; ?></span>
                                                 <?php else: ?>
@@ -128,34 +95,51 @@ $prev = prev_content();
                                         </div>
                                     </div>
 
-                                    <div class="bold">
-                                        <module type="shop/cart_add"/>
+                                    <div class="row">
+                                        <div class="col-12 mt-3">
+                                            <?php if (isset($content_data['sku'])): ?>
+                                                <?php _lang("SKU", 'templates/new-world') ?>
+                                                - <?php print $content_data['sku']; ?>
+                                            <?php endif; ?>
+                                        </div>
                                     </div>
 
-                                    <div class="edit safe-mode nodrop element text-right m-t-20" field="post_share_1" rel="inherit">
-                                        <module type="sharer" id="product-top-sharer" class="d-inline-block">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="description">
+                                                <div class="edit" field="content_body" rel="content">
+                                                    <p><?php _lang("How to write product descriptions that sell", 'templates/new-world') ?></p>
+                                                    <p><?php _lang("One of the best things you can do to make your store successful is invest some time in writing great product descriptions. You want to provide detailed yet concise information that will entice potential customers to buy.", 'templates/new-world') ?></p>
+
+                                                    <p><?php _lang("Think like a consumer", 'templates/new-world') ?></p>
+                                                    <p><?php _lang("Think about what you as a consumer would want to know, then include those features in your description. For clothes: materials and fit. For food: ingredients and how it was prepared. Bullets are your friends when listing
+                                                            features — try to
+                                                            limit each one to 5-8 words.", 'templates/new-world') ?></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bold">
+                                        <module type="shop/cart_add"/>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="edit safe-mode nodrop m-t-40" field="related_products" rel="inherit">
-                        <div class="row m-t-20">
-                            <div class="col-12 text-left">
-                                <h5 class="hr"><?php _lang('Related products', 'templates/new-world'); ?></h5>
-                            </div>
+                    <div class="edit safe-mode nodrop mt-5" field="related_products" rel="module">
+                        <div class="col-12 text-left">
+                            <h5><?php _lang('Related products', 'templates/new-world'); ?></h5>
+                            <hr style="opacity: 0.2;">
                         </div>
 
-                        <div class="row">
-                            <div class="col-12">
-                                <module type="shop/products" template="skin-1" related="true" limit="4" hide_paging="true"/>
-                            </div>
+                        <div class="col-12">
+                            <module type="shop/products" template="skin-7" related="true" limit="4" hide_paging="true"/>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 </div>

@@ -25,8 +25,8 @@ if (isset($params['content-id'])) {
 <br class="mw-add-to-cart-spacer"/>
 
 <div class="row product-custom-fields-holder">
-    <div class="col-sm-4">&nbsp;</div>
-    <div class="col-sm-8">
+    <div class="col-sm-4 col">&nbsp;</div>
+    <div class="col-sm-8 col">
         <module type="custom_fields" data-content-id="<?php print intval($for_id); ?>" data-skip-type="price" id="cart_fields_<?php print $params['id'] ?>"/>
     </div>
 </div>

@@ -87,15 +87,15 @@ if (!isset($tn[1])) {
                     <div class="m-t-20">
                         <?php if ($show_fields == false or in_array('title', $show_fields)): ?>
                             <a href="<?php print $item['link'] ?>">
-                                <div class="heading-holder">
+                                <div class="heading-holder text-md-left text-center">
                                     <h5><?php print $item['title'] ?></h5>
                                 </div>
                             </a>
                         <?php endif; ?>
 
 
-                        <div class="row">
-                            <div class="col-6 price-holder">
+                        <div class="row justify-content-center mt-md-0 mt-3">
+                            <div class="col-6 price-holder justify-content-md-start justify-content-center">
                                 <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
                                     <?php if (isset($item['prices']) and is_array($item['prices'])): ?>
                                         <?php
@@ -111,9 +111,8 @@ if (!isset($tn[1])) {
                                     <?php endif; ?>
                                 <?php endif; ?>
                             </div>
-<!--                            --><?php //dd($in_stock); ?>
 
-                            <div class="col-6 d-flex justify-content-end">
+                            <div class="col-sm-6 col-12 d-flex justify-content-md-end justify-content-center mt-md-0 mt-3">
                                 <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
                                     <?php if ($in_stock == true): ?>
                                     <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-primary"><i class="material-icons">shopping_cart</i> <?php _e("Add to cart"); ?></a>

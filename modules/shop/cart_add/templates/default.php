@@ -36,7 +36,7 @@ if (isset($params['content-id'])) {
         <?php $i = 1;
 
         foreach ($data as $key => $v): ?>
-            <div class="mw-price-item">
+            <div class="mw-price-item text-md-left text-center">
 
                 <?php $keyslug_class = str_slug(strtolower($key)); ?>
 
@@ -51,10 +51,10 @@ if (isset($params['content-id'])) {
                 </span>
                 <?php endif; ?>:
 
-                <span class="mw-price-item-value"><?php print currency_format($v); ?></span>
+                <span class="mw-price-item-value mb-md-0 mb-3"><?php print currency_format($v); ?></span>
 
                 <?php if (!isset($in_stock) or $in_stock == false) : ?>
-                    <button class="btn btn-default pull-right" type="button"
+                    <button class="btn btn-default float-md-right" type="button"
                             onclick="alert('<?php print addslashes(_e("This item is out of stock and cannot be ordered", true)); ?>');">
                         <i class="icon-shopping-cart glyphicon glyphicon-shopping-cart"></i>
                         <?php _lang("Out of stock", "templates/new-world"); ?>

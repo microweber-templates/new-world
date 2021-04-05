@@ -33,7 +33,7 @@ $prev = prev_content();
 ?>
 
 <div class="shop-inner-page" id="shop-content-<?php print CONTENT_ID; ?>" field="shop-inner-page" rel="page">
-    <section class="p-5 mb-5 fx-particles">
+    <section class="p-md-5 mb-md-5 fx-particles">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-10">

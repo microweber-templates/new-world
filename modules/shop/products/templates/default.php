@@ -94,7 +94,7 @@ if (!isset($tn[1])) {
                         <?php endif; ?>
 
 
-                        <div class="row justify-content-center mt-md-0 mt-3">
+                        <div class="row justify-content-center">
                             <div class="col-6 price-holder justify-content-md-start justify-content-center">
                                 <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
                                     <?php if (isset($item['prices']) and is_array($item['prices'])): ?>

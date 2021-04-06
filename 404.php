@@ -14,7 +14,7 @@
 <?php include template_dir() . "header.php"; ?>
 
 <div class="edit main-content" rel="content" field="new-world_content">
-    <module type="layouts" template="skin-5"/>
+    <module type="layouts" template="404"/>
 </div>
 
 <?php include template_dir() . "footer.php"; ?>

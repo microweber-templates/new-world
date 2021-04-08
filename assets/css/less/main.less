@@ -4606,10 +4606,11 @@ a.dropdown-toggle::after {
 
   /* Start of .checkout-modal */
 
-  .checkout-modal .modal-header {
+  .checkout-modal .checkout-modal-header {
     padding: 0rem;
     padding-bottom: 0;
   }
+
 
   .checkout-modal .step-button {
     text-align: center;
@@ -4762,7 +4763,7 @@ a.dropdown-toggle::after {
   }
 
   @media screen and (max-width: 991px) {
-    .checkout-modal .modal-header {
+    .checkout-modal .checkout-modal-header {
       padding: 0rem;
       padding-bottom: 0;
     }
@@ -4802,7 +4803,7 @@ a.dropdown-toggle::after {
     }
   }
   @media screen and (max-width: 575px) {
-    .checkout-modal .modal-header {
+    .checkout-modal .checkout-modal-header {
       padding: 0rem;
       padding-bottom: 0;
     }
@@ -4849,6 +4850,9 @@ a.dropdown-toggle::after {
 
   .dropdown-menu.shopping-cart .products {
     padding-bottom: 0;
+      overflow: auto;
+      height: 400px;
+      max-height: 400px;
   }
   .dropdown-menu.shopping-cart .product-item {
     padding: 0.7rem 0;
@@ -6255,8 +6259,9 @@ a.dropdown-toggle::after {
   }
 }
 
-.checkout-modal .modal-header .close {
+.checkout-modal .checkout-modal-header .close {
   font-size: 16px !important;
+    padding: 1rem 1rem;
 }
 
 .modal-content {
@@ -6265,7 +6270,6 @@ a.dropdown-toggle::after {
     color: black;
   }
 }
-
 
 .modal-content {
   .btn-lg {
@@ -6279,6 +6283,6 @@ a.dropdown-toggle::after {
 
 .not_found_img img{
     width: 70%;
-    
 }
+
 

@@ -10598,6 +10598,7 @@ a.dropdown-toggle::after {
   background-color: #f4f4f4;
   padding: 0;
   border: 1px solid #ffffff;
+  min-width: 25rem;
 }
 .member-nav .dropdown-menu.shopping-cart:before {
   display: none;

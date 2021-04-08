@@ -23,19 +23,6 @@
 /*Header social*/
 /*Logo on Header*/
 /*Social icons General*/
-.typography-area ul:not(.ul),
-.typography-area ol:not(.ol) {
-  padding-left: 15px;
-}
-.typography-area ul:not(.ul) li {
-  display: list-item;
-  list-style-type: disc;
-}
-.typography-area ol:not(.ol) li {
-  list-style-type: decimal;
-  display: list-item;
-  list-style-type: disc;
-}
 .typography-area img {
   max-width: 100%;
 }

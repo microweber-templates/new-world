@@ -22,12 +22,6 @@ if (!$classes['padding_bottom']) {
 
 $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
 ?>
-<!---->
-<!--<style>-->
-<!--    .not_found_text h1 {-->
-<!--        color: #0044de;-->
-<!--    }-->
-<!--</style>-->
 
 <section class="section <?php print $layout_classes; ?> edit safe-mode" field="layout-404-<?php print $params['id'] ?>" rel="module">
     <div class="container">
@@ -38,10 +32,10 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                  message code that means the website you
                   were trying to reach couldn't be found on the server", "templates/new-world"); ?>.
                 </p>
-                <module type="btn" button_size="px-6" button_text="Go back" />
+                <module type="btn" button_size="px-6" button_text="Go back"/>
             </div>
 
-            <div class="col-8 text-center">
+            <div class="col-8 text-center not_found_img">
                 <img src="<?php print template_url(); ?>assets/img/404_graphic.png"/>
             </div>
         </div>

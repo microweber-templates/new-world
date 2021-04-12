@@ -1,0 +1,27 @@
+<?php
+
+/*
+
+type: layout
+
+name: skin-1
+
+description: skin-1
+
+*/
+
+?>
+<?php if (isset($data) and is_array($data)): ?>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb p-0">
+            <li class="breadcrumb-item"><a href="<?php print  $homepage['url']; ?>"><?php print $homepage['title']; ?></a></li>
+            <?php foreach ($data as $item): ?>
+                <?php if (!($item['is_active'])): ?>
+                    <li class="breadcrumb-item"><a href="<?php print($item['url']); ?>"><?php print($item['title']); ?></a></li>
+                <?php else: ?>
+                    <li class="breadcrumb-item active" aria-current="page"><?php print($item['title']); ?></li>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </ol>
+    </nav>
+<?php endif; ?>

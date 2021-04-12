@@ -33,6 +33,11 @@ if (!isset($tn[1])) {
             $itemData = content_data($item['id']);
             $itemTags = content_tags($item['id']);
 
+            $in_stock = true;
+            if (isset($itemData['qty']) and $itemData['qty'] != 'nolimit' and intval($itemData['qty']) == 0) {
+                $in_stock = false;
+            }
+
             if (!isset($itemData['label'])) {
                 $itemData['label'] = '';
             }
@@ -61,7 +66,7 @@ if (!isset($tn[1])) {
                     <?php endif; ?>
 
                     <?php if ($show_fields == false or in_array('thumbnail', $show_fields)): ?>
-                        <div class="image" style="background-image: url('<?php print thumbnail($item['image'], 450, 450); ?>');">
+                        <div class="image" style="background-image: url('<?php print thumbnail($item['image'], 650, 650); ?>');">
                             <a href="<?php print $item['link'] ?>" class="d-flex h-100 w-100"></a>
                             <?php /*<div class="hover">
                                 <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
@@ -102,9 +107,13 @@ if (!isset($tn[1])) {
                                 <?php endif; ?>
                             </div>
 
-                            <div class="col-6 text-right">
+                            <div class="col-sm-6 col-12 d-flex justify-content-md-end justify-content-center mt-md-0 mt-3">
                                 <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
-                                    <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-primary btn-sm"><i class="material-icons">shopping_cart</i> Add to cart</a>
+                                    <?php if ($in_stock == true): ?>
+                                        <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-primary"><i class="material-icons">shopping_cart</i> <?php _e("Add to cart"); ?></a>
+                                    <?php else: ?>
+                                        <span class="text-danger"><i class="fas fa-circle mr-1" style="font-size: 11px;"></i> <?php _lang("Out of Stock", 'templates/new-world') ?></span>
+                                    <?php endif; ?>
                                 <?php endif; ?>
                             </div>
                         </div>

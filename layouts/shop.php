@@ -13,6 +13,12 @@ position: 2
 
 <?php include template_dir() . "header.php"; ?>
 
+<?php
+if (!isset($shop_sidebar)) {
+    $shop_sidebar = false;
+}
+?>
+
 <div class="edit" rel="content" field="new-world_content">
     <module type="layouts" template="skin-9"/>
 

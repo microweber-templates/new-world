@@ -6619,16 +6619,13 @@ ul.socials-2 li a:hover {
   text-decoration: none;
 }
 .shop-products .product .image {
-  padding: 15px;
-  position: relative;
-  background-origin: content-box;
-  height: 360px;
-  width: 100%;
-  background-position: center center;
-  -webkit-background-size: contain;
-  background-size: contain;
-  background-repeat: no-repeat;
-  border: 1px solid #f3f3f3;
+    padding-top: 118%;
+    position: relative;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid #f3f3f3;
 }
 .shop-products .product:hover .image {
   border: 1px solid #0044de;

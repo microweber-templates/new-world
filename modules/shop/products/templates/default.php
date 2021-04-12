@@ -70,8 +70,9 @@ if (!isset($tn[1])) {
                     <?php endif; ?>
 
                     <?php if ($show_fields == false or in_array('thumbnail', $show_fields)): ?>
+                    <a href="<?php print $item['link'] ?>" class="d-flex h-100 w-100">
                         <div class="image" style="background-image: url('<?php print thumbnail($item['image'], 700, 700); ?>');">
-                            <a href="<?php print $item['link'] ?>" class="d-flex h-100 w-100"></a>
+
                             <?php /*<div class="hover">
                                 <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
                                     <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-primary"><i class="material-icons">shopping_cart</i></a>
@@ -81,6 +82,7 @@ if (!isset($tn[1])) {
                                 <?php endif; ?>
                             </div>*/ ?>
                         </div>
+                    </a>
                     <?php endif; ?>
 
 

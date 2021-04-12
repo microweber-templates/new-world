@@ -13,10 +13,6 @@ position: 2
 
 <?php include template_dir() . "header.php"; ?>
 
-<?php
-$shop_sidebar = 'true';
-?>
-
 <div class="edit" rel="content" field="new-world_content">
     <module type="layouts" template="skin-9"/>
 

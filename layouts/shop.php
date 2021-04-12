@@ -14,7 +14,9 @@ position: 2
 <?php include template_dir() . "header.php"; ?>
 
 <?php
-$shop_sidebar = 'true';
+if (!isset($shop_sidebar)) {
+    $shop_sidebar = false;
+}
 ?>
 
 <div class="edit" rel="content" field="new-world_content">

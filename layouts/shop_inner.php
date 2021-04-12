@@ -32,41 +32,42 @@ $prev = prev_content();
 
 ?>
 
+<?php $maxLines = 6; ?>
+
+
+<style>
+
+    .mw-tpl-new-world-product-description{
+        overflow:hidden;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: <?php print $maxLines ?>
+    }
+    .mw-tpl-new-world-product-description.active{
+        display: block;
+        overflow: visible;
+        text-overflow: unset;
+        -webkit-line-clamp: none;
+    }
+
+</style>
 
 <script>
-    $(document).ready(function() {
-        var showChar = 1000;
-        var ellipsestext = "...";
-        var moretext = "more";
-        var lesstext = "less";
-        $('.more').each(function() {
-            var content = $(this).html();
-
-            if(content.length > showChar) {
-                var c = content.substr(0, showChar);
-                var h = content.substr(showChar-1, content.length - showChar);
-
-                var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
-
-                $(this).html(html);
-            }
-
-        });
-
-        $(".morelink").click(function(){
-            if($(this).hasClass("less")) {
-                $(this).removeClass("less");
-                $(this).html(moretext);
-            } else {
-                $(this).addClass("less");
-                $(this).html(lesstext);
-            }
-            $(this).parent().prev().toggle();
-            $(this).prev().toggle();
-            return false;
-        });
-    });
+    $(document).ready(function (){
+        var el = $('.mw-tpl-new-world-product-description');
+        var more = $('<span class="btn btn-link"><?php _lang('More', 'templates/new-world'); ?>...</span>');
+        if( el[0].offsetHeight < el[0].scrollHeight) {
+            el.after(more);
+        }
+        el.add(more).one('mousedown touchstart', function (){
+            more.remove();
+            el.addClass('active')
+        })
+    })
 </script>
+
+
 
 
 <div class="shop-inner-page" id="shop-content-<?php print CONTENT_ID; ?>" field="shop-inner-page" rel="page">
@@ -145,24 +146,7 @@ $prev = prev_content();
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="description">
-                                                <div class="edit" field="content_body" rel="content">
-
-                                                    <style scoped>
-                                                        a {
-                                                            color: #0254EB
-                                                        }
-                                                        a:visited {
-                                                            color: #0254EB
-                                                        }
-                                                        a.morelink {
-                                                            text-decoration:none;
-                                                            outline: none;
-                                                        }
-                                                        .morecontent span {
-                                                            display: none;
-                                                        }
-
-                                                    </style>
+                                                <div class="edit mw-tpl-new-world-product-description" field="content_body" rel="content">
                                                     <p class="comment more"><?php _lang("How to write product descriptions that sell
                                                     One of the best things you can do to make your store successful is invest some time in writing great product descriptions. You want to provide detailed yet concise information that will entice potential customers to buy.
                                                     Think like a consumer

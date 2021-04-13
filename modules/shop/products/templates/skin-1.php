@@ -92,7 +92,7 @@ if (!isset($tn[1])) {
                         <?php endif; ?>
 
                         <div class="row">
-                            <div class="col-5 price-holder">
+                            <div class="col-6 price-holder">
                                 <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
                                     <?php if (isset($item['prices']) and is_array($item['prices'])) { ?>
                                         <?php
@@ -109,7 +109,7 @@ if (!isset($tn[1])) {
                                 <?php endif; ?>
                             </div>
 
-                            <div class="col-7 d-flex justify-content-end">
+                            <div class="col-6 d-flex justify-content-end">
                                 <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
                                     <?php if ($in_stock == true): ?>
                                         <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-primary"><i class="material-icons">shopping_cart</i><span class="name-of-product-shop "><?php _e("Add to cart"); ?></span></a>

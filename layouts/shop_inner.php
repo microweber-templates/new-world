@@ -173,7 +173,7 @@ $prev = prev_content();
                         </div>
 
                         <div class="col-12">
-                            <module type="shop/products" template="skin-7" related="true" limit="4" hide_paging="true"/>
+                            <module type="shop/products" template="skin-1" related="true" limit="4" hide_paging="true"/>
                         </div>
                     </div>
                 </div>

@@ -44,7 +44,7 @@ description: Account - Orders
 
                         <h3><?php echo _lang('Current orders', 'template/new-world'); ?></h3>
 
-                        <module type="users/orders"/>
+                        <module type="users/orders" template="orders_inside" />
                     </div>
                 </div>
             </div>

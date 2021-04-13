@@ -97,7 +97,7 @@ if (!isset($tn[1])) {
 
 
                         <div class="row justify-content-center">
-                            <div class="col-6 price-holder justify-content-md-start justify-content-center">
+                            <div class="col-6 price-holder ">
                                 <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
                                     <?php if (isset($item['prices']) and is_array($item['prices'])): ?>
                                         <?php
@@ -114,10 +114,10 @@ if (!isset($tn[1])) {
                                 <?php endif; ?>
                             </div>
 
-                            <div class="col-sm-6 col-12 d-flex justify-content-md-end justify-content-center mt-md-0 mt-3">
+                            <div class="col-6 d-flex justify-content-end">
                                 <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
                                     <?php if ($in_stock == true): ?>
-                                    <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-primary"><i class="material-icons">shopping_cart</i> <?php _e("Add to cart"); ?></a>
+                                    <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-primary"><i class="material-icons">shopping_cart</i> <span class="name-of-product-shop "><?php _e("Add to cart"); ?></a>
                                     <?php else: ?>
                                     <span class="text-danger"><i class="fas fa-circle mr-1" style="font-size: 11px;"></i> <?php _lang("Out of Stock", 'templates/new-world') ?></span>
                                     <?php endif; ?>

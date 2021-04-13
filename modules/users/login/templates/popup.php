@@ -65,7 +65,7 @@ description: Login default
             </div>
 
             <?php if (isset($_GET['redirect'])): ?>
-                <input type="hidden" value="<?php echo $_GET['redirect']; ?>" name="redirect">
+                <input type="hidden" value="<?php echo mw()->format->clean_xss($_GET['redirect']); ?>" name="redirect">
             <?php endif; ?>
 
             <button type="submit" class="btn btn-default btn-lg btn-block m-t-10"><?php _lang("Login" , "templates/new-world"); ?></button>

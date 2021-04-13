@@ -20,7 +20,7 @@
         }
     </script>
 
-    <form class="col-6 mb-5 mx-auto" method="post" id="user-data">
+    <form class="col-12 mb-5 mx-auto" method="post" id="user-data">
         <div class="my-3">
             <h5 class="mb-2"><?php _lang('Edit profile', "templates/new-world"); ?></h5>
             <small class="text-muted d-block mb-2"><?php _lang('From this page you can edit your profile', "templates/new-world"); ?></small>

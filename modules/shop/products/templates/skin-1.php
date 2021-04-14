@@ -112,9 +112,9 @@ if (!isset($tn[1])) {
                             <div class="col-6 d-flex justify-content-end pl-0">
                                 <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
                                     <?php if ($in_stock == true): ?>
-                                        <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-primary"><i class="material-icons">shopping_cart</i> <span class="name-of-product-shop"><?php _lang("Add to cart", 'templates/new-world') ?></a>
+                                        <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-primary"><i class="material-icons">shopping_cart</i> <span class="name-of-product-shop "><?php _e("Add to cart"); ?></a>
                                     <?php else: ?>
-                                        <a href="javascript:;" onclick="alert(mw.lang('This product is out of stock'));" class="btn btn-danger"><i class="material-icons">remove_shopping_cart</i> <span class="name-of-product-shop"><?php _lang("Out of stock", 'templates/new-world') ?></a>
+                                        <span class="text-danger p-1"><i class="material-icons" style="font-size: 18px;">remove_shopping_cart</i> <?php _lang("Out of Stock", 'templates/new-world') ?></span>
                                     <?php endif; ?>
                                 <?php endif; ?>
                             </div>

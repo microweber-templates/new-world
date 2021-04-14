@@ -75,9 +75,9 @@ $prev = prev_content();
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-10">
+                            <module class="d-flex justify-content-start" type="breadcrumb" template="skin-1"/>
                     <div class="row product-holder">
                         <div class="col-12 col-md-6 col-xl-6">
-                            <module class="d-flex justify-content-start" type="breadcrumb" template="skin-1"/>
                             <module type="pictures" rel="content" template="skin-6"/>
                         </div>
 

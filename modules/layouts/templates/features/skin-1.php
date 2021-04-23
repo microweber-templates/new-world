@@ -69,48 +69,6 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             </div>
                         </div>
                     </div>
-
-                    <div class="m-b-40 col-sm-6 col-lg-4 cloneable">
-                        <div class="card shadow-sm">
-                            <div class="stamp">
-                                <i class="mw-micon-Mouse-3 safe-element"></i>
-                            </div>
-
-                            <div class="allow-drop">
-
-                                <h4 class="m-b-30">Drag and Drop</h4>
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when .</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="m-b-40 col-sm-6 col-lg-4 cloneable">
-                        <div class="card shadow-sm">
-                            <div class="stamp">
-                                <i class="mw-micon-Hanger safe-element"></i>
-                            </div>
-
-                            <div class="allow-drop">
-                                <h4 class="m-b-30">Online Store</h4>
-
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when .</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="m-b-40 col-sm-6 col-lg-4 cloneable">
-                        <div class="card shadow-sm">
-                            <div class="stamp">
-                                <i class="mw-micon-Duplicate-Window safe-element"></i>
-                            </div>
-
-                            <div class="allow-drop">
-                                <h4 class="m-b-30">Easy Interface</h4>
-
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when .</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

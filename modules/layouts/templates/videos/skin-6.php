@@ -35,7 +35,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                                 <div class="float-right" style="width: 80px;">
                                     <hr class="hr w-100 safe-element m-t-10" style="background-color: #fff;"/>
                                 </div>
-                                <p class="m-b-20" style="letter-spacing:1.5px;">Introduction Video</p>
+                                <p class="m-b-20" style="letter-spacing:1.5px;">Introduction</p>
                             </div>
 
                             <h2 class="m-b-30">How we growth <br class="d-none d-xl-block"/>our business.</h2>
@@ -50,11 +50,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             <div class="w-100">
                                 <div class="div-table">
                                     <div class="div-table-cell d-flex justify-content-center">
-                                        <div class="d-flex position-absolute align-self-center">
-                                            <module class="popup-vimeo" type="btn" template="bootstrap" icon="&lt;i class='fa fa-play'&gt;&lt;/i&gt;" text="$notext" button_style="btn-primary"/>
-
-
-                                        </div>
+<!--                                        <div class="d-flex position-absolute align-self-center">-->
+<!--                                            <module class="popup-vimeo" type="btn" template="bootstrap" icon="&lt;i class='fa fa-play'&gt;&lt;/i&gt;" text="$notext" button_style="btn-primary"/>-->
+<!--                                        </div>-->
 
                                         <div class="img">
                                             <img src="<?php print template_url(); ?>assets/img/video-bg.jpg">

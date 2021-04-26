@@ -73,17 +73,17 @@ $itemTags = content_tags($post['id']);
                 <div class="col-xl-6 mx-auto">
                     <div class="description edit dropcap typography-area" field="content" rel="content">
                         <?php
-                        //include(template_dir() . 'elements' . DS . 'paragraph-highlight.php');
-                        //include(template_dir() . 'elements' . DS . 'paragraph-lead.php');
-//                        include(template_dir() . 'elements' . DS . 'paragraph.php');
-                        //include(template_dir() . 'elements' . DS . 'titles' . DS . 'title-2.php');
+                        //element_display('paragraph-highlight.php');
+                        //element_display('paragraph-lead.php');
+//                        element_display('paragraph.php');
+                        //element_display('titles' . DS . 'title-2.php');
                         include(elements_path() . DS . 'paragraph-highlight.php');
-                        //include(template_dir() . 'elements' . DS . 'blockquote.php');
-                        //include(template_dir() . 'elements' . DS . 'titles' . DS . 'title-3.php');
-                        //include(template_dir() . 'elements' . DS . 'paragraph.php');
-                        // include(template_dir() . 'elements' . DS . 'ordered-list.php');
-                        //include(template_dir() . 'elements' . DS . 'paragraph.php');
-                        //include(template_dir() . 'elements' . DS . 'unordered-list.php');
+                        //element_display('blockquote.php');
+                        //element_display('titles' . DS . 'title-3.php');
+                        //element_display('paragraph.php');
+                        // element_display('ordered-list.php');
+                        //element_display('paragraph.php');
+                        //element_display('unordered-list.php');
                         ?>
                     </div>
 

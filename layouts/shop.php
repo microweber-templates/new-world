@@ -37,10 +37,8 @@ if (!isset($shop_sidebar)) {
 
                     <?php if ($shop_sidebar == 'true'): ?>
                         <div class="col-sm-12 col-md-4 col-lg-3 col-xl-2">
-                            <div class="col-sm-12 col-md-4 col-lg-3 col-xl-2">
-                                <div class="edit" rel="content" field="shop-sidebar">
-                                    <?php include(__DIR__ . DS .'shop_sidebar.php'); ?>
-                                </div>
+                            <div class="edit" rel="content" field="shop-sidebar">
+                                <?php include(__DIR__ . DS .'shop_sidebar.php'); ?>
                             </div>
                         </div>
                     <?php endif; ?>

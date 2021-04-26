@@ -24,7 +24,7 @@ description: Checkout
     <div class="container checkout-modal">
         <div class="row">
             <div class="col-12 ">
-                <module type="shop/checkout" id="cart_checkout"/>
+                <module type="shop/checkout" id="cart_checkout" class="no-settings"/>
             </div>
         </div>
     </div>

@@ -11,18 +11,14 @@ $size = $size . 'px';
 } ?>">
     <?php if ($logoimage == '' and $text == ''): ?>
         <?php if (is_live_edit()) : ?>
-        <span class="mw-logo-no-values"><?php _lang('Logo',"templates/new-world"); ?></span>
-    <?php endif; ?>
+            <span class="mw-logo-no-values"><?php _lang('Logo',"templates/new-world"); ?></span>
+        <?php endif; ?>
     <?php else: ?>
     <?php if ($logotype == 'image' or $logotype == false): ?>
     <?php if ($logoimage != '' and $logoimage != false): ?>
-        <span class="mw-ui-col-x" style="width: <?php print $size; ?>">
-                    <?php if ($logoimage_inverse != '' and $logoimage_inverse != false): ?>
-                        <img src="<?php print $logoimage_inverse; ?>" alt="" style="max-width: 100%; width: <?php print $size; ?>;" class="logo logo-dark" <?php if (in_live_edit()) {
-                            print 'onclick="javascript:mw.drag.module_settings();void(0);"';
-                        } ?>/>
-                    <?php endif; ?>
-            <img src="<?php print $logoimage; ?>" alt="" style="max-width: 100%; width: <?php print $size; ?>;" class="logo logo-light" <?php if (in_live_edit()) {
+         <span class="mw-ui-col-x" style="width: <?php print $size; ?>">
+
+            <img src="<?php print $logoimage; ?>" alt="" style="max-width: 100%; width: <?php print $size; ?>;" class="logo " <?php if (in_live_edit()) {
                 print 'onclick="javascript:mw.drag.module_settings();void(0);"';
             } ?>/>
                 </span>
@@ -33,11 +29,6 @@ $size = $size . 'px';
     <?php if ($logotype == 'text' or $logotype == 'both'): ?>
         <script>
             mw.lib.require('fitty');
-
-            $(document).ready(function () {
-                //fitty(document.getElementById('fitty-<?php print $params['id'] ?>-1'));
-                //fitty(document.getElementById('fitty-<?php print $params['id'] ?>-2'));
-            });
         </script>
     <?php if ($text == '') {
         $text = 'Logo';

@@ -1,7 +1,7 @@
 <nav class="navigation">
     <div class="container">
         <div class="navbar-header">
-            <module type="logo" class="logo" id="header-logo" data-alt-logo="true"/>
+            <module type="logo" class="logo" id="header-logo" data-alt-logo="false"/>
             <div class="menu-overlay">
                 <div class="menu">
                     <div class="toggle-inside-menu">

@@ -26,7 +26,7 @@
             </div>
 
             <div class="container main-header">
-                <module type="logo" class="logo mr-3" id="header-logo" data-alt-logo="true"/>
+                <module type="logo" class="logo mr-3" id="header-logo" data-alt-logo="false"/>
 
                 <div class="secondary-menu">
                     <?php //include('parts/mobile_search_bar.php'); ?>

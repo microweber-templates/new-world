@@ -35,7 +35,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                     <br/>
                     <br/>
                 </div>
-                <div class="element m-t-20">
+                <div class="mw-module-container-center no-element m-t-20">
                     <module type="btn" template="bootstrap" button_style="btn-primary" text="Learn more"/>
                 </div>
             </div>

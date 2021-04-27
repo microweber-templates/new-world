@@ -15,6 +15,7 @@
                 rect.top <= (window.innerHeight || document.documentElement.clientHeight)
             );
         },
+        stickyNav: function () {}
     }
 
     window.defaultTheme = defaultTheme;

@@ -1,7 +1,7 @@
 <!-- Shopping Cart Modal -->
 <div class="modal fade " id="shoppingCartModal" tabindex="-1" role="dialog" aria-labelledby="shoppingCartModalLabel">
     <div class="modal-dialog modal-lg" role="document">
-        <div type="shop/checkout" template="modal" id="js-ajax-cart-checkout-process"></div>
+        <div type="shop/checkout" template="modal" id="js-ajax-cart-checkout-process" class="no-settings"></div>
     </div>
 </div>
 

@@ -14,19 +14,12 @@ description: Default Twitter Feed
 
 <style>
 
-    .twitter-feed-title {
-        background: #43ACEF;
-        color: #fff;
-        font-size: 26px;
-        padding: 10px 25px;
-    }
-
     .twitter-feed-default ul {
         list-style-type: none;
     }
 
     .twitter-feed-default ul li {
-        background: #E8F5F9;
+        background: #ffffff;
         padding: 25px;
         border: 1px solid #43ACEF;
         border-bottom: 0;
@@ -42,7 +35,7 @@ description: Default Twitter Feed
         text-decoration: none;
     }
 
-    .twitter-feed-default ul li span {
+    .twitter-feed-default ul li .mw-twitter-feed-content {
         color: #757575;
     }
     
@@ -54,10 +47,7 @@ description: Default Twitter Feed
     .twitter-feed-default ul li i {
         background: #fff;
         color: #78AEDF;
-        padding: 7px;
         font-size: 20px;
-        margin-right: 10px;
-        margin-bottom: 10px;
     }
 
 
@@ -65,10 +55,15 @@ description: Default Twitter Feed
 
 <?php if ($items): ?>
     <div class="twitter-feed-default">
-        <div class="twitter-feed-title">Twitter Feed</div>
-        <ul class="widget-twitter margin-bottom-60">
+        <ul class="widget-twitter margin-bottom-60 col-md-2">
             <?php foreach ($items as $tweet): ?>
-                <li><i class="fa fa-twitter"></i><span>
+                <li class="d-inline-block"><i class="fa fa-twitter"></i>
+                   <span class="mw-twitter-feed-content">
+                       <small>
+                           <a href="<?php print $tweet['url']; ?>" target="_blank"><?php print $tweet['ago']; ?></a>
+                       </small>
+                       <br>
+                       <br>
                         <?php
 
                         $tweetText = $tweet['text'];
@@ -82,8 +77,7 @@ description: Default Twitter Feed
                         $tweetText = preg_replace($mentionPattern, '<a href="http://twitter.com/$1">@$1</a>', $tweetText);
 
                         print ($tweetText); ?>
-                    </span>
-                    <small><a href="<?php print $tweet['url']; ?>" target="_blank"><?php print $tweet['ago']; ?></a></small>
+                   </span>
                 </li>
             <?php endforeach; ?>
         </ul>

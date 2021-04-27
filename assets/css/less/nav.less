@@ -5,17 +5,8 @@
  **************** Navigation *************** *
  ******************************************* */
 
-.navigation-holder {
-  position: relative;
-  z-index: 10;
 
-  //position: fixed;
-  width: 100%;
-}
 
-.navigation-holder:not(.not-transparent) {
-  height: 0;
-}
 
 .navigation {
   margin-bottom: 0;
@@ -38,19 +29,8 @@
   text-decoration: none;
 }
 
-.navigation-holder.not-transparent,
-.navigation-holder.not-transparent .navigation:not(.sticky) {
-  position: relative !important;
-}
 
-.navigation-holder.not-transparent .navigation,
-.sticky-nav .sticky {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 100;
-  background: @background;
-}
+
 
 .navigation.sticky {
   border-bottom: 2px solid #e5e5e5;
@@ -118,25 +98,17 @@
 }
 
 /* Sticky nav */
-html:not(.sidebar-nav-website) body.sticky-nav .sticky:after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 7px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), transparent);
-  bottom: -7px;
-  z-index: 2;
+
+
+.navigation-holder{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #fff;
 }
 
-body.sticky-nav:not(.mw-live-edit) .navigation {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  max-width: 100%;
-  left: 0;
-  right: 0;
-  margin: auto;
+.mw-live-edit .navigation-holder{
+    top: 55px;
 }
 
 .container-fluid > .navbar-collapse,
@@ -162,8 +134,8 @@ body.sticky-nav:not(.mw-live-edit) .navigation {
   margin: 0;
 
   li a {
-    background: @header-social-icons-back-color;
-    color: @header-social-icons-color;
+/*    background: @header-social-icons-back-color;
+    color: @header-social-icons-color;*/
     font-size: 18px;
     padding: 0;
     margin: 0;
@@ -598,7 +570,7 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
   font-family: @header-menu-font-family;
   font-weight: @header-menu-font-weight;
   text-transform: @header-menu-text-transform;
-
+    color: @header-menu-font-color-on-sticky;
 }
 
 .navigation .list {
@@ -617,13 +589,8 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
   display: block;
   text-decoration: none;
   position: relative;
-  color: @header-menu-font-color;
+  color: #333;
   padding: .7rem .5rem;
-}
-
-.not-transparent .navigation .list > li > a,
-.navigation.sticky .list > li > a {
-  color: @header-menu-font-color-on-sticky;
 }
 
 .navigation .list li > a:after {
@@ -835,14 +802,14 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
 }
 
 .member-nav .dropdown-toggle > i {
-  color: @member-nav-icons-color;
+  color: @textDark;
   font-size: 22px;
   line-height: 28px;
 }
 
 .not-transparent .navigation .member-nav .dropdown-toggle > i,
 .navigation.sticky .member-nav .dropdown-toggle > i {
-  color: @header-menu-font-color-on-sticky;
+  color: @textDark;
 }
 
 .member-nav a:after {

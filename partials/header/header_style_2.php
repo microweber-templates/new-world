@@ -1,7 +1,7 @@
 <nav class="navigation">
     <div class="container">
         <div class="navbar-header">
-            <module type="logo" class="logo" id="header-logo" data-alt-logo="true"/>
+            <module type="logo" class="logo" id="header-logo" data-alt-logo="false"/>
             <div class="menu-overlay">
                 <div class="menu">
                     <div class="toggle-inside-menu">
@@ -13,7 +13,9 @@
                     </div>
                     <?php //include('parts/mobile_search_bar.php'); ?>
                     <?php include('parts/mobile_profile_link.php'); ?>
-                    <module type="menu" name="header_menu" id="header_menu" template="navbar"/>
+                   <div class="mw-module-container-center">
+                       <module  type="menu" name="header_menu" id="header_menu" template="navbar"/>
+                   </div>
                 </div>
             </div>
             <ul class="member-nav main-member-nav visible-search">

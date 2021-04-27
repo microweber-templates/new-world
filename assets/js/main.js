@@ -15,25 +15,10 @@
                 rect.top <= (window.innerHeight || document.documentElement.clientHeight)
             );
         },
-        stickyNav: function () {
-            $('body.sticky-nav .navigation')
-                [$window.scrollTop() ? 'addClass' : 'removeClass']
-            ('sticky');
-            $('body.sticky-nav')
-                [$window.scrollTop() ? 'addClass' : 'removeClass']
-            ('sticky-padding');
-        }
     }
 
     window.defaultTheme = defaultTheme;
 
-    $window.on('load', function () {
-        defaultTheme.stickyNav();
-
-        $window.on('scroll resize', function () {
-            defaultTheme.stickyNav();
-        });
-    });
 
     $document.ready(function () {
         $(document).ready(function () {

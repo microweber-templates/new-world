@@ -3,7 +3,7 @@
         <div class="navbar-header">
             <div class="main-header">
                 <module type="contact_header" class="header-contacts hidden-xs" id="header-contacts"/>
-                <module type="logo" class="logo" id="header-logo" data-alt-logo="true"/>
+                <module type="logo" class="logo" id="header-logo" data-alt-logo="false"/>
                 <ul class="member-nav main-member-nav visible-search">
                     <?php include('parts/desktop_profile_link.php'); ?>
                     <?php include('parts/shopping_cart.php'); ?>

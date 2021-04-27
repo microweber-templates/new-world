@@ -62,37 +62,37 @@
             <!-- Paragraphs -->
             <div class="row p-40">
                 <div class="col-lg-4 mx-auto">
-                    <?php include(template_dir() . 'elements' . DS . 'paragraph.php'); ?>
+                    <?php element_display('paragraph.php'); ?>
                     <br/><br/>
                     <small><?php _lang("Small text", "templates/new-world"); ?><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
                 </div>
 
                 <div class="col-lg-4 mx-auto">
-                    <?php include(template_dir() . 'elements' . DS . 'paragraph-lead.php'); ?>
+                    <?php element_display('paragraph-lead.php'); ?>
                     <br/><br/>
-                    <?php include(template_dir() . 'elements' . DS . 'paragraph-highlight.php'); ?>
+                    <?php element_display('paragraph-highlight.php'); ?>
                 </div>
             </div>
 
             <!-- Lists -->
             <div class="row p-40 bg-silver">
                 <div class="col-lg-4 mx-auto text-center">
-                    <?php include(template_dir() . 'elements' . DS . 'ordered-list.php'); ?>
+                    <?php element_display('ordered-list.php'); ?>
                 </div>
 
                 <div class="col-lg-4 mx-auto text-center">
-                    <?php include(template_dir() . 'elements' . DS . 'unordered-list.php'); ?>
+                    <?php element_display('unordered-list.php'); ?>
                 </div>
             </div>
 
             <!-- Blockquotes -->
             <div class="row p-40">
                 <div class="col-lg-4 mx-auto text-left">
-                    <?php include(template_dir() . 'elements' . DS . 'blockquote.php'); ?>
+                    <?php element_display('blockquote.php'); ?>
                 </div>
 
                 <div class="col-lg-4 mx-auto text-center">
-                    <?php include(template_dir() . 'elements' . DS . 'blockquote.php'); ?>
+                    <?php element_display('blockquote.php'); ?>
                 </div>
             </div>
 

@@ -2,20 +2,20 @@
     <div class="container color-background-container">
         <div class="navbar-header">
             <div class="main-header">
-                <module type="logo" class="logo mr-3" id="header-logo" data-alt-logo="true"/>
+                <module type="logo" class="logo mr-3" id="header-logo" data-alt-logo="false"/>
                 <div class="menu-overlay">
                     <div class="menu">
                         <div class="toggle-inside-menu">
-                            <a href="javascript:;" class="js-menu-toggle mobile-menu-btn">                
+                            <a href="javascript:;" class="js-menu-toggle mobile-menu-btn">
                                 <span></span>
                                 <span></span>
                                 <span></span>
                             </a>
                         </div>
-                        <?php //include('parts/mobile_search_bar.php'); ?> 
-                        <?php include('parts/mobile_profile_link.php'); ?> 
+                        <?php //include('parts/mobile_search_bar.php'); ?>
+                        <?php include('parts/mobile_profile_link.php'); ?>
                         <module type="menu" name="header_menu" id="header_menu" template="navbar"/>
-                        
+
                     </div>
                 </div>
                 <?php if ($shopping_cart == 'true' or $profile_link == 'true' or $search_bar == 'true'): ?>
@@ -25,7 +25,7 @@
                         <?php include('parts/desktop_search_bar.php'); ?>
                         <li class="">
                             <div class="toggle ml-3">
-                                <a href="javascript:;" class="js-menu-toggle mobile-menu-btn">                
+                                <a href="javascript:;" class="js-menu-toggle mobile-menu-btn">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -36,7 +36,7 @@
                 <?php endif; ?>
                 <?php if ($shopping_cart == 'false' and $profile_link == 'false' and $search_bar == 'false'): ?>
                     <div class="toggle">
-                        <a href="javascript:;" class="js-menu-toggle mobile-menu-btn">                
+                        <a href="javascript:;" class="js-menu-toggle mobile-menu-btn">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -44,7 +44,7 @@
                     </div>
                 <?php endif; ?>
             </div>
-            <div class="down-header">  
+            <div class="down-header">
                 <div class="secondary-menu">
                     <module type="menu" name="secondary_menu" id="secondary_menu" template="navbar"/>
                 </div>

@@ -1,5 +1,14 @@
 @import "vars";
 
+body{
+    --primary: @primary;
+    --textLight: @textLight;
+    --textDark: @textDark;
+    --light: @light;
+    --dark: @dark;
+    --textLightHover: @textLightHover;
+    --textDarkHover: @textDarkHover;
+}
 body {
   font-family: @fontFamily;
   outline: none !important;
@@ -24,7 +33,6 @@ body {
 a{
   color: @primary;
 }
-
 
 .main {
   position: relative;
@@ -6304,4 +6312,13 @@ i.checkout-v2-remove-icon {
     font-size: 24px;
     color: #6c757d!important;
 }
+
+.mw-tags-btn-light {
+    border-color: @textLightHover;
+}
+
+.mw-active-tag-skin-1 {
+    text-decoration: underline;
+}
+
 

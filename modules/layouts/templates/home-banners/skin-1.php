@@ -36,7 +36,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                 <br/>
 
                 <div class="element">
-                    <a href="" class="btn btn-primary">Call to action</a>
+                    <module type="btn" button_text="Call to action">
                 </div>
             </div>
         </div>

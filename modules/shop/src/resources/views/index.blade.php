@@ -7,16 +7,16 @@
 
                 <div class="col-md-9">
 
-                    {{--    <div class="row">
-                            <div class="col-md-8"> {!! $products->search() !!}</div>
-                            <div class="col-md-2">
-                                {!! $products->limit(); !!}
-                            </div>
-                            <div class="col-md-2">
-                                {!! $products->sort(); !!}
-                            </div>
+                    <div class="row">
+                        <div class="col-md-8"> {!! $products->search() !!}</div>
+                        <div class="col-md-2">
+                            {!! $products->limit(); !!}
                         </div>
-                        --}}
+                        <div class="col-md-2">
+                            {!! $products->sort(); !!}
+                        </div>
+                    </div>
+
                     <div class="row shop-products related-products">
 
                         @php $i=0; @endphp

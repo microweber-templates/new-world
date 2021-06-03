@@ -19,9 +19,13 @@
                         --}}
                     <div class="row shop-products related-products">
 
+                        @php $i=0; @endphp
+
                         @foreach($products->results() as $product)
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-4 item-{{$product->id}}"
-                                 itemtype="http://schema.org/Product">
+
+                            @php $i++; @endphp
+
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-4 item-{{$product->id}}" itemtype="http://schema.org/Product" data-aos="fade-up" data-aos-delay="<?php echo $i; ?>00">
                                 <div class="product">
 
                                     <input type="hidden" name="price" value="{{$product->price}}">

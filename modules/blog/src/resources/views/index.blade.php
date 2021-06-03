@@ -19,8 +19,10 @@
             </div>
 
                  <div class="row new-world-news">
+                     @php $i=0; @endphp
                 @foreach($posts->results() as $post)
-                <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="000" itemscope="" itemtype="http://schema.org/Article">
+                         @php $i++; @endphp
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="<?php echo $i; ?>00" itemscope="" itemtype="http://schema.org/Article">
                     <div class="post-holder">
                         <a href="{{site_url($post->url)}}" itemprop="url">
                             <div class="thumbnail-holder">

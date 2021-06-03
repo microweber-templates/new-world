@@ -1,67 +1,54 @@
 {!! $posts->scripts() !!}
 
-<section class="section section-blog">
+
+<section class="section safe-mode nodrop">
     <div class="container">
     <div class="row">
-
-            <div class="col-md-3">
-                <div class="card">
-
-                    {!! $posts->filtersActive() !!}
-
-                    {!! $posts->tags() !!}
-
-                    {!! $posts->categories() !!}
-
-                    {!! $posts->filters() !!}
-
-                 </div>
-            </div>
-
-
-        <div class="col-md-9">
-
+        <div class="col-xl-12 mx-auto">
             <div class="row">
-                <div class="col-md-8"> {!! $posts->search() !!} </div>
+                <div class="col-md-3 pt-4"> {!! $posts->search() !!} </div>
+                <div class="col-md-7"></div>
 
-                <div class="col-md-2">
+
+                <div class="col-md-1">
                     {!! $posts->limit(); !!}
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-1">
                     {!! $posts->sort(); !!}
                 </div>
             </div>
-            <div class="row">
-            @foreach($posts->results() as $post)
-                    <div class="col-md-3">
-            <div class="post" style="margin-top:25px;">
 
-                <img src="{{$post->thumbnail(400,400)}}" alt="" width="400px">
+                 <div class="row new-world-news">
+                @foreach($posts->results() as $post)
+                <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="000" itemscope="" itemtype="http://schema.org/Article">
+                    <div class="post-holder">
+                        <a href="{{site_url($post->url)}}" itemprop="url">
+                            <div class="thumbnail-holder">
+                                <div class="tags">
+                                    @foreach($post->tags as $tag)
+                                    <span class="badge badge-primary">{{$tag->name}}</span>
+                                    @endforeach
+                                </div>
 
-                <h4>{{$post->title}}</h4>
-                <p>{{$post->content_text}}</p>
-                <br />
-                <small>Posted At:{{$post->posted_at}}</small>
-                <br />
-                <a href="{{site_url($post->url)}}">View</a>
-                <hr />
-                @foreach($post->tags as $tag)
-                   <span class="badge badge-success"><a href="?tags={{$tag->slug}}">{{$tag->name}}</a></span>
+                                <div class="thumbnail" style="background: url('{{$post->thumbnail(400,400)}}')">
+                                    <!--<img src="{{$post->thumbnail(400,400)}}"/>-->
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="{{site_url($post->url)}}"><h3 class="m-b-10">{{$post->title}}</h3></a>
+
+                        <small>{{$post->posted_at}}</small>
+
+                        <a href="{{site_url($post->url)}}" itemprop="url" class="button-8 m-t-20"><span>{{_e('Read more')}}</span></a>
+                    </div>
+                </div>
                 @endforeach
+                </div>
+
+                 {!! $posts->pagination() !!}
 
             </div>
-            </div>
-            @endforeach
-            </div>
-
-            {!! $posts->pagination() !!}
-
-            <br />
-            <p>
-                Displaying {{$posts->count()}} of {{ $posts->total() }} result(s).
-            </p>
-        </div>
-
-        </div>
-        </div>
+    </div>
+    </div>
 </section>

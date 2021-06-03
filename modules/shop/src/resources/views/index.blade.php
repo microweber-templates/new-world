@@ -1,83 +1,89 @@
 {!! $products->scripts() !!}
 
-<section class="section section-blog">
-    <div class="container">
+<div class="container">
     <div class="row">
+        <div class="col-xl-12 mx-auto">
+            <div class="row justify-content-between">
 
-        <div class="col-md-3">
-            <div class="card">
+                <div class="col-md-9">
 
-                {!! $products->filtersActive() !!}
+                    {{--    <div class="row">
+                            <div class="col-md-8"> {!! $products->search() !!}</div>
+                            <div class="col-md-2">
+                                {!! $products->limit(); !!}
+                            </div>
+                            <div class="col-md-2">
+                                {!! $products->sort(); !!}
+                            </div>
+                        </div>
+                        --}}
+                    <div class="row shop-products related-products">
 
-                {!! $products->tags() !!}
+                        @foreach($products->results() as $product)
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-4 item-{{$product->id}}"
+                                 itemtype="http://schema.org/Product">
+                                <div class="product">
 
-                {!! $products->categories() !!}
+                                    <input type="hidden" name="price" value="{{$product->price}}">
+                                    <input type="hidden" name="content_id" value="{{$product->id}}">
 
-                {!! $products->filters() !!}
+                                    <a href="{{site_url($product->url)}}" class="d-flex h-100 w-100">
+                                        <div class="image"
+                                             style="background-image: url('{{$product->thumbnail(650,650)}}');">
+                                        </div>
+                                    </a>
 
-             </div>
-        </div>
+                                    <div class="m-t-20">
+                                        <a href="{{site_url($product->url)}}">
+                                            <div class="heading-holder text-md-left text-center">
+                                                <h5>{{$product->title}}</h5>
+                                            </div>
+                                        </a>
 
+                                        <div class="row justify-content-center">
+                                            <div class="col-6 price-holder ">
+                                                <p>
+                                                    <span class="price">$ {{$product->price}}</span>
+                                                </p>
+                                            </div>
 
-        <div class="col-md-9">
+                                            <div class="col-6 d-flex justify-content-end">
+                                                <a href="javascript:;"
+                                                   onclick="mw.cart.add('.shop-products .item-{{$product->id}}');"
+                                                   class="btn btn-primary">
+                                                    <i class="material-icons">shopping_cart</i> <span
+                                                        class="name-of-product-shop ">Add to cart</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
 
-            <div class="row">
-                <div class="col-md-8"> {!! $products->search() !!}</div>
-                <div class="col-md-2">
-                    {!! $products->limit(); !!}
+                    </div>
+
+                    {!! $products->pagination() !!}
+
                 </div>
-                <div class="col-md-2">
-                    {!! $products->sort(); !!}
+
+
+                <div class="col-md-3">
+                    <div class="card">
+
+                        {!! $products->filtersActive() !!}
+
+                        {!! $products->tags() !!}
+
+                        {!! $products->categories() !!}
+
+                        {!! $products->filters() !!}
+
+                    </div>
                 </div>
+
             </div>
-            <div class="row">
-            @foreach($products->results() as $product)
-                    <div class="col-md-3">
-            <div class="post" style="margin-top:25px;">
-
-                <img src="{{$product->thumbnail(400,400)}}" alt="" width="400px">
-
-                <h4>{{$product->title}}</h4>
-                <p>{{$product->content_text}}</p>
-                <br />
-                <small>Posted At:{{$product->posted_at}}</small>
-                <br />
-                <a href="{{site_url($product->url)}}">View</a>
-                <hr />
-                @foreach($product->tags as $tag)
-                   <span class="badge badge-success"><a href="?tags={{$tag->slug}}">{{$tag->name}}</a></span>
-                @endforeach
-
-                @php
-                    $resultCustomFields = $product->customField()->with('fieldValue')->get();
-                @endphp
-                @foreach ($resultCustomFields as $resultCustomField)
-                    {{--@if ($resultCustomField->type !== 'date')
-                        @continue
-                    @endif--}}
-                    {{$resultCustomField->name}}:
-                    @php
-                        $customFieldValues = $resultCustomField->fieldValue()->get();
-                    @endphp
-                    @foreach($customFieldValues as $customFieldValue)
-                        {{$customFieldValue->value}};
-                    @endforeach
-
-                @endforeach
-            </div>
-            </div>
-            @endforeach
-            </div>
-
-            {!! $products->pagination() !!}
-
-            <br />
-            <p>
-                Displaying {{$products->count()}} of {{ $products->total() }} result(s).
-            </p>
-        </div>
-
 
         </div>
-        </div>
-</section>
+    </div>
+</div>

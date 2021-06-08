@@ -65,7 +65,7 @@ if(isset($post['title'])){
     <section class="section">
         <div class="container">
             <div class="text-holder text-center">
-                <h1 class="m-b-30 text-dark"><?php echo $post['title']; ?></h1>
+                <h1 class="m-b-30 text-dark"><?php echo $post_title ; ?></h1>
             </div>
         </div>
     </section>

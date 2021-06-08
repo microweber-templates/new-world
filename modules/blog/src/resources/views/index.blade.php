@@ -5,19 +5,32 @@
 <div class="row">
     <div class="col-xl-12 mx-auto">
         <div class="row">
-            <div class="col-md-3 pt-4"> {!! $posts->search() !!} </div>
-            <div class="col-md-7"></div>
 
+            <div class="col-md-3">
+                <div class="card">
 
-            <div class="col-md-1">
-                {!! $posts->limit(); !!}
+                    {!! $posts->filtersActive() !!}
+
+                    {!! $posts->search() !!}
+
+                    {!! $posts->tags() !!}
+
+                    {!! $posts->categories() !!}
+
+                    {!! $posts->filters() !!}
+
+                </div>
             </div>
-            <div class="col-md-1">
-                {!! $posts->sort(); !!}
-            </div>
+
         </div>
 
              <div class="row new-world-news">
+
+             @if(empty($posts->results()))
+                {{_e('No results for this criteria.')}}
+             @endif
+
+
                  @php $i=0; @endphp
             @foreach($posts->results() as $post)
                      @php $i++; @endphp

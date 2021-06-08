@@ -7,23 +7,23 @@ $picture = get_picture(CONTENT_ID);
 if (!$picture) {
     $picture = '';
 }
+$itemData = [];
+if($post and isset($post['id'])){
+    $itemData = content_data($post['id']);
+}
 
-$itemData = content_data($post['id']);
-$itemTags = content_tags($post['id']);
+$itemTags = [];
+if($post and isset($post['id'])){
+    $itemTags = content_tags($post['id']);
+}
+
 ?>
 
 <?php if ($picture != '' AND $picture != false): ?>
     <section class="section-19">
         <div class="container">
-            <module type="pictures" content-id="<?php print CONTENT_ID; ?>" template="blog" />
-
-                <?php /*
-
-
-             <div class="background-image-holder d-flex" style="background-image: url('<?php print $picture; ?>');">
-
-
- <div class="row w-100 m-0 align-self-center">
+            <div class="background-image-holder d-flex" style="background-image: url('<?php print $picture; ?>');">
+                <?php /*<div class="row w-100 m-0 align-self-center">
                             <div class="col-lg-12">
                                 <div class="d-flex w-100 h-100">
                                     <div class="w-100 align-self-center info-holder text-white">
@@ -59,35 +59,43 @@ $itemTags = content_tags($post['id']);
     <section class="section">
         <div class="container">
             <div class="text-holder text-center">
-                <h1 class="m-b-30 text-dark edit plain-text" field="title" rel="content"><?php echo $post['title']; ?></h1>
-            </div>
-            <div class="text-center">
-                <h6 class="text-dark"><?php echo date('d M Y', strtotime($post['updated_at'])); ?></h6>
+                <h1 class="m-b-30 text-dark"><?php echo $post['title']; ?></h1>
             </div>
         </div>
     </section>
 
     <div class="blog-inner-page" id="blog-content-<?php print CONTENT_ID; ?>">
-        <div class="container  m-b-50">
+        <div class="container m-t-30 m-b-50">
             <div class="row">
                 <div class="col-xl-6 mx-auto">
                     <div class="description edit dropcap typography-area" field="content" rel="content">
                         <?php
-                        //element_display('paragraph-highlight.php');
-                        //element_display('paragraph-lead.php');
-//                        element_display('paragraph.php');
-                        //element_display('titles' . DS . 'title-2.php');
-                        include(elements_path() . DS . 'paragraph-highlight.php');
-                        //element_display('blockquote.php');
-                        //element_display('titles' . DS . 'title-3.php');
-                        //element_display('paragraph.php');
-                        // element_display('ordered-list.php');
-                        //element_display('paragraph.php');
-                        //element_display('unordered-list.php');
+
+//                        element_display('paragraph');
+//                        element_display('paragraph');
+//                        element_display('unordered-list');
+//                        element_display('paragraph');
+//                        element_display('blockquote');
+//                        element_display('paragraph');
+//                        element_display('paragraph');
+
+                        //include(template_dir() . 'elements' . DS . 'paragraph-highlight.php');
+                        //include(template_dir() . 'elements' . DS . 'paragraph-lead.php');
+                        //include(template_dir() . 'elements' . DS . 'paragraph.php');
+                        //include(template_dir() . 'elements' . DS . 'titles' . DS . 'title-2.php');
+                        //include(template_dir() . 'elements' . DS . 'paragraph.php');
+                        //include(template_dir() . 'elements' . DS . 'blockquote.php');
+                        //include(template_dir() . 'elements' . DS . 'titles' . DS . 'title-3.php');
+                        //include(template_dir() . 'elements' . DS . 'paragraph.php');
+                        // include(template_dir() . 'elements' . DS . 'ordered-list.php');
+                        //include(template_dir() . 'elements' . DS . 'paragraph.php');
+                        //include(template_dir() . 'elements' . DS . 'unordered-list.php');
                         ?>
                     </div>
 
-
+                    <div class="text-right m-b-20">
+                        <h6 class="text-dark"><?php echo date('d M Y', strtotime($post['updated_at'])); ?></h6>
+                    </div>
 
                     <div class="border-top-bottom">
                         <div class="m-t-40 m-b-40 row">

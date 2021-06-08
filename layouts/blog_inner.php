@@ -18,9 +18,15 @@ if($post and isset($post['id'])){
 }
 
 $post_title = 'Title';
+$post_updated_at = date('Y-m-d His');
 
 if(isset($post['title'])){
     $post_title = $post['title'];
+}
+
+
+if(isset($post['updated_at'])){
+    $post_updated_at = $post['updated_at'];
 }
 
 ?>
@@ -100,7 +106,7 @@ if(isset($post['title'])){
                     </div>
 
                     <div class="text-right m-b-20">
-                        <h6 class="text-dark"><?php echo date('d M Y', strtotime($post['updated_at'])); ?></h6>
+                        <h6 class="text-dark"><?php echo date('d M Y', strtotime($post_updated_at)); ?></h6>
                     </div>
 
                     <div class="border-top-bottom">

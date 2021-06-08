@@ -17,6 +17,12 @@ if($post and isset($post['id'])){
     $itemTags = content_tags($post['id']);
 }
 
+$post_title = 'Title';
+
+if(isset($post['title'])){
+    $post_title = $post['title'];
+}
+
 ?>
 
 <?php if ($picture != '' AND $picture != false): ?>

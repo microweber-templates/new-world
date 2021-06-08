@@ -16,7 +16,7 @@ description: Blog
 
     <div class="edit main-content" rel="content" field="new-world_content">
         <module type="layouts" template="skin-9"/>
-        <module type="blog" />
+        <module type="layouts" template="posts/skin-1"/>
     </div>
 
 <?php include template_dir() . "footer.php"; ?>

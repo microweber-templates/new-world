@@ -93,7 +93,7 @@
 /*Header style 4*/
 .header_style_4 .member-nav {
     flex: 1;
-    .mixin-flex-row ();
+    @include  mixin-flex-row ();
     justify-content: flex-start;
 }
 
@@ -103,7 +103,7 @@
 
 @media screen and (min-width: $burgerOpenMedia) {
     .header_style_4 .menu-overlay .module-menu .list {
-        .mixin-flex-row ();
+        @include mixin-flex-row ();
         justify-content: flex-end;
     }
 
@@ -160,7 +160,7 @@
 }
 
 .header_style_5 .main-header .logo {
-    .mixin-flex-row ();
+    @include mixin-flex-row ();
     @include mixin-flex-center();
 }
 
@@ -202,7 +202,7 @@
 }
 
 .header_style_6 .main-header .logo {
-    .mixin-flex-row ();
+    @include mixin-flex-row ();
     @include mixin-flex-center();
 }
 
@@ -293,7 +293,7 @@ html:not(.mobile-menu-active) {
 }
 
 .header_style_7 .main-header .logo {
-    .mixin-flex-row ();
+    @include mixin-flex-row ();
     @include mixin-flex-center();
 }
 
@@ -333,7 +333,7 @@ html:not(.mobile-menu-active) {
 }
 
 .header_style_8 .up-header .list {
-    .mixin-flex-row ();
+    @include mixin-flex-row ();
     justify-content: flex-end;
     li {
         margin: 0;
@@ -358,7 +358,7 @@ html:not(.mobile-menu-active) {
 }
 
 .header_style_8 .main-header .logo {
-    .mixin-flex-row ();
+    @include mixin-flex-row ();
     @include mixin-flex-center();
 }
 
@@ -492,7 +492,7 @@ html:not(.mobile-menu-active) {
 
             .member-nav {
                 flex: 1;
-                .mixin-flex-row-nowrap ();
+                @include mixin-flex-row-nowrap ();
                 justify-content: flex-end;
             }
 

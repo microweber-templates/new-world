@@ -14,8 +14,8 @@
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
-    transition: height @include 4s;
-    transition: background @include 4s;
+    transition: height 4s;
+    transition: background 4s;
     background: rgba(red($light), green($light), blue($light), .15);
 }
 
@@ -163,7 +163,7 @@
 
 .navbar-header ul.header-contacts-list li a {
     color: $textOnBackground;
-    font-size: @include 75rem;
+    font-size:  75rem;
     padding: 5px;
     @include mixin-inline-flex();
     @include mixin-flex-center();
@@ -593,7 +593,7 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
     text-decoration: none;
     position: relative;
     color: #333;
-    padding: .7rem @include 5rem;
+    padding: .7rem 5rem;
 }
 
 .navigation .list li > a:before {
@@ -648,7 +648,7 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
 }
 
 .navigation .list > li > ul a {
-    padding: .5rem @include 7rem;
+    padding: .5rem 7rem;
     color: $header-dropdown-color;
 }
 
@@ -700,7 +700,7 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
 }
 
 .member-nav .dropdown-menu:not(.shopping-cart) a {
-    padding: .5rem @include 7rem;
+    padding: .5rem 7rem;
     color: $header-dropdown-color;
     font-family: $fontFamily;
     font-size: $header-menu-font-size;
@@ -842,19 +842,18 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
 
 .member-nav .search button {
     outline: none;
-    .border-radius(0) !important;
 }
 
 .member-nav .search .dropdown-menu {
-    padding-left: @include 5rem;
-    padding-right: @include 5rem;
+    padding-left:  5rem;
+    padding-right:  5rem;
 }
 
 .member-nav .search input {
     background: $light;
-    font-size: @include 9rem;
+    font-size:  9rem;
     @include border-radius(0px);
-    padding: .4rem @include 7rem;
+    padding: .4rem 7rem;
     outline: none;
     border: 0;
     flex: 1;
@@ -963,7 +962,7 @@ body[data-lang="ar"] .dropdown-menu {
 }
 
 .member-nav > .dropdown > .dropdown-menu {
-    margin-top: @include 7rem;
+    margin-top:  7rem;
 }
 
 .member-nav .dropdown-menu:before {
@@ -987,7 +986,7 @@ body[data-lang="ar"] .dropdown-menu {
     font-size: 0 !important;
     line-height: 0;
     position: relative !important;
-    .mixin-flex-row() !important;
+    @include mixin-flex-row();
     width: 32px;
     height: 32px;
     padding: 0px !important;
@@ -1068,7 +1067,7 @@ body[data-lang="ar"] .dropdown-menu {
 
         /*See more icon*/
         .navigation .menu .collapseNav-initialized {
-            .mixin-flex-row() !important;
+            @include mixin-flex-row();
             align-items: center;
         }
 
@@ -1204,7 +1203,7 @@ body[data-lang="ar"] .dropdown-menu {
 
         .member-nav {
             flex: 1;
-            .mixin-flex-row-nowrap ();
+            @include mixin-flex-row-nowrap ();
             justify-content: flex-end;
         }
 
@@ -1566,7 +1565,7 @@ body[data-lang="ar"] .dropdown-menu {
 /*Secondary menu*/
 .navigation .secondary-menu {
     width: 100%;
-    .mixin-flex-row ();
+    @include mixin-flex-row ();
     flex: 1;
 }
 
@@ -1653,7 +1652,7 @@ body[data-lang="ar"] .dropdown-menu {
 
     /*See more icon for secondary menu*/
     .navigation .secondary-menu .collapseNav-initialized {
-        .mixin-flex-row() !important;
+        @include mixin-flex-row();
         align-items: center;
     }
 

@@ -11,7 +11,7 @@ $config['framework'] = "bootstrap4";
 $config['is_default'] = 1; //if you set this parameter the template will be selected on the install screen
 
 //Stylesheet Settings / accept type="color" and type="text" and type="title" and type="delimiter"
-$config['stylesheet_compiler']['source_file'] = 'assets/css/less/main.less';
+$config['stylesheet_compiler']['source_file'] = 'assets/css/scss/main.scss';
 $config['stylesheet_compiler']['css_file'] = 'assets/css/main.css';
 
 $config['stylesheet_compiler']['settings'][] = array('type' => 'delimiter');

@@ -1,0 +1,23 @@
+@import "vars";
+
+@include generate-spacer-row(15);
+@mixin generate-spacer-row($n, $i: 1) when ($i =< $n){
+.row-mx-#{i} {
+    $row-step:(1px * $i);
+    margin-left: -$row-step!important;
+    margin-right: -$row-step!important;
+
+}
+    @include generate-spacer-row($n, ($i + 1));
+}
+
+@include generate-spacer-col(15);
+@mixin generate-spacer-col($n, $i: 1) when ($i =< $n){
+.col-px-#{i} {
+    $col-step:(1px * $i);
+    padding-left: $col-step!important;
+    padding-right: $col-step!important;
+
+}
+    @include generate-spacer-col($n, ($i + 1));
+}

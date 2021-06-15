@@ -1,38 +1,30 @@
 
 /*Flex mixin*/
 @import "vars";
+
 .inline-flex,
-.flex-inline,
-@include mixin-inline-flex {
-    display: -webkit-inline-box;
-    display: -moz-inline-box;
-    display: ms-inline-flexbox;
-    display: -webkit-inline-flex;
+.flex-inline {
     display: inline-flex;
 }
 .flex,
-.flex-row,
-@include mixin-flex-row {
+.flex-row {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
-.flex-row-nowrap,
-@include mixin-flex-row-nowrap {
+.flex-row-nowrap {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
 }
 .row-reverse,
-.flex-row-reverse,
-@include mixin-flex-row-reverse {
+.flex-row-reverse {
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
 }
-.flex-column,
-@include mixin-flex-column {
+.flex-column {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -40,13 +32,11 @@
     flex-wrap: wrap;
     flex-direction: column;
 }
-.flex-column-reverse,
-@include mixin-flex-column-reverse {
+.flex-column-reverse {
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
 }
-.flex-center,
-@include mixin-flex-center {
+.flex-center  {
     align-items: center;
     justify-content: center;
 }
@@ -54,7 +44,16 @@
     position: relative;
 }
 .overlay:after{
-    @include overlay($background: $dark , $alpha: 0.5);
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    background-color: $dark;
+    opacity: .5;
 }
 .overlay-opacity-0:after{
     opacity: 0!important;
@@ -94,16 +93,7 @@
     z-index: 1;
 }
 @mixin overlay($background: $dark , $alpha: 0.5){
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    background-color: $background;
-    opacity: $alpha;
+
 }
 @mixin gradient-overlay($opacity: 0.5){
     content: '';
@@ -164,9 +154,11 @@ $icon-container-2: 5rem;
 $icon-container-3: 7rem;
 
 @mixin icon(){
-    @include mixin-inline-flex();
-    /*@include mixin-flex-center();*/
+
+    /* align-items: center;
+    justify-content: center;*/
     /*    background: transparent;*/
+    display: inline-flex;
     @include border-radius(100%);
     padding: 0.1rem;
     line-height: 1;

@@ -117,7 +117,8 @@
 .container > .navbar-collapse,
 .container > .navbar-header {
     width: 100%;
-    @include mixin-flex-row-nowrap();
+    display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     margin-right: 0;
     margin-left: 0;
@@ -165,8 +166,10 @@
     color: $textOnBackground;
     font-size:  75rem;
     padding: 5px;
-    @include mixin-inline-flex();
-    @include mixin-flex-center();
+    display: inline-flex;
+     align-items: center;
+    justify-content: center;
+
 }
 
 .navigation-holder.not-transparent,
@@ -215,7 +218,9 @@ body[data-lang="ar"] .navbar-header ul.header-contacts-list li a span:nth-of-typ
     font-weight: bold;
     text-decoration: none;
     padding-left: 0 !important;
-    @include mixin-flex-row();
+    display: flex;
+
+    flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
     height: 100%;
@@ -229,7 +234,9 @@ body[data-lang="ar"] .navbar-header ul.header-contacts-list li a span:nth-of-typ
     position: relative;
     height: $logo-height-container;
     @include transition(all, 0.3s, ease);
-    @include mixin-flex-row();
+    display: flex;
+
+    flex-wrap: wrap;
     margin: $logo-space 0;
 }
 
@@ -238,7 +245,7 @@ body[data-lang="ar"] .navbar-header ul.header-contacts-list li a span:nth-of-typ
 }
 
 .navigation .navbar-header .logo a {
-    @include mixin-inline-flex();
+    display: inline-flex;
     align-items: center;
     justify-content: flex-start;
     height: 100%;
@@ -514,7 +521,9 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
 }
 
 .mobile-menu-label b {
-    @include mixin-flex-row();
+    display: flex;
+
+    flex-wrap: wrap;
     @include transition(all, 0.5s, ease);
     position: absolute;
     right: 0;
@@ -725,7 +734,9 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
 }
 
 .navigation .menu .list > li.mobile-search form {
-    @include mixin-flex-row-nowrap();
+     display: flex;
+
+    flex-wrap: nowrap;
     align-items: center;
 }
 
@@ -862,8 +873,11 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
 .member-nav .search .dropdown-menu i {
     color: fade($dark, 70%);
     background: $light;
-    @include mixin-flex-row();
-    @include flex-center();
+    display: flex;
+
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 body:not([data-lang="ar"]) .member-nav .search .dropdown-menu i {
@@ -986,7 +1000,9 @@ body[data-lang="ar"] .dropdown-menu {
     font-size: 0 !important;
     line-height: 0;
     position: relative !important;
-    @include mixin-flex-row();
+    display: flex;
+
+    flex-wrap: wrap;
     width: 32px;
     height: 32px;
     padding: 0px !important;
@@ -1067,7 +1083,9 @@ body[data-lang="ar"] .dropdown-menu {
 
         /*See more icon*/
         .navigation .menu .collapseNav-initialized {
-            @include mixin-flex-row();
+            display: flex;
+
+    flex-wrap: wrap;
             align-items: center;
         }
 
@@ -1203,7 +1221,8 @@ body[data-lang="ar"] .dropdown-menu {
 
         .member-nav {
             flex: 1;
-            @include mixin-flex-row-nowrap ();
+            display: flex;
+            flex-wrap: nowrap;
             justify-content: flex-end;
         }
 
@@ -1344,7 +1363,7 @@ body[data-lang="ar"] .dropdown-menu {
         }
 
         .main {
-            width: calc(#{"100%"} - $sidebar-nav-width);
+            width: calc(100% - #{$sidebar-nav-width});
             right: -$sidebar-nav-width;
         }
 
@@ -1565,7 +1584,8 @@ body[data-lang="ar"] .dropdown-menu {
 /*Secondary menu*/
 .navigation .secondary-menu {
     width: 100%;
-    @include mixin-flex-row ();
+    display: flex;
+    flex-wrap: wrap;
     flex: 1;
 }
 
@@ -1609,7 +1629,9 @@ body[data-lang="ar"] .dropdown-menu {
 }
 
 .navigation .secondary-menu .list > li.mobile-search form {
-    @include mixin-flex-row-nowrap();
+     display: flex;
+
+    flex-wrap: nowrap;
     align-items: center;
 }
 
@@ -1652,7 +1674,9 @@ body[data-lang="ar"] .dropdown-menu {
 
     /*See more icon for secondary menu*/
     .navigation .secondary-menu .collapseNav-initialized {
-        @include mixin-flex-row();
+        display: flex;
+
+    flex-wrap: wrap;
         align-items: center;
     }
 
@@ -1679,22 +1703,27 @@ body[data-lang="ar"] .dropdown-menu {
     }
 
     .mobile-menu-label {
-        @include mixin-inline-flex();
+        display: inline-flex;
     }
 
     .extra-toggle {
         width: 34px;
         height: 30px;
         @include border-radius(50%);
-        @include mixin-flex-center();
-        @include mixin-flex-row();
+         align-items: center;
+    justify-content: center;
+        display: flex;
+
+    flex-wrap: wrap;
         cursor: pointer;
     }
 
     .navigation .secondary-menu .module-menu > ul {
         margin-top: 20px;
         padding-bottom: 160px;
-        @include mixin-flex-column();
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .navigation .secondary-menu {

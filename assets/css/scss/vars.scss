@@ -51,16 +51,16 @@ $white: #ffff;
 
 /* Basic Meida Queries */
 $up-media-desktop: 1366px;
-@media-desktop: 1365px;
+$media-desktop: 1365px;
 $up-media-laptop: 1200px;
-@media-laptop: 1199px;
+$media-laptop: 1199px;
 $up-media-tablet: 992px;
-@media-tablet: 991px; //col-sm to col-md
+$media-tablet: 991px; //col-sm to col-md
 $up-media-mobile: 768px;
-@media-mobile: 767px;
+$media-mobile: 767px;
 $up-media-samll-mobile: 576px;
-@media-samll-mobile: 575px; //col to col-sm
-@media-end: 320px;
+$media-samll-mobile: 575px; //col to col-sm
+$media-end: 320px;
 
 /* Elements */
 $hr: '../img/hr.svg';
@@ -96,6 +96,7 @@ $header-menu-font-size: 16px;
 $header-menu-text-transform: inherit;
 $header-menu-font-family: $fontFamily;
 $small-navbar-menu-font-size: calc($header-menu-font-size - 2px);
+
 
 /*Header Dropdown menu*/
 $header-dropdown-color: $textLight;

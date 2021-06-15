@@ -3,7 +3,7 @@
 *****************************/
 
 /* Background */
-$background: #fff;
+$background: #ffffff;
 
 /* Font Size and Family */
 $fontFamily: 'Jost', sans-serif;
@@ -24,7 +24,7 @@ $paragraph-sm: 12px;
 $paragraph-color: #707070;
 
 /* Colors */
-$light: #fff;
+$light: #ffffff;
 $textLight: #f4f4f4;
 $textLightHover: lighten($textLight, 20%);
 
@@ -33,7 +33,7 @@ $textDark: #2c2c2c;
 $textDarkHover: lighten($textDark, 20%);
 
 $textOnWhite: #212121;
-$textOnBackground: #fff;
+$textOnBackground: #ffffff;
 
 $default: $dark;
 $defaultHover: lighten($default, 20%);
@@ -47,7 +47,7 @@ $secondaryHover: lighten($secondary, 20%);
 
 $grey: #bfbfbf;
 $silver: #f3f3f3;
-$white: #ffff;
+$white: #ffffff;
 
 /* Basic Meida Queries */
 $up-media-desktop: 1366px;

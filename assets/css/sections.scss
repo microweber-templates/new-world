@@ -137,7 +137,7 @@
         color: $textLight;
     }
 
-    @media screen and (max-width: @media-samll-mobile) {
+    @media screen and (max-width: $media-samll-mobile) {
         .h-100 {
             height: auto;
         }
@@ -152,7 +152,7 @@
     .info-holder {
         padding: 40px 30px;
 
-        @media screen and (max-width: @media-samll-mobile) {
+        @media screen and (max-width: $media-samll-mobile) {
             height: 370px;
         }
     }

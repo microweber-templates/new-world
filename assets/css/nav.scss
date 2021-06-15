@@ -1412,7 +1412,7 @@ body[data-lang="ar"] .dropdown-menu {
     /***** End Sidebar navigation menu *****/
 }
 
-@media (max-width: @media-desktop) {
+@media (max-width: $media-desktop) {
     html.sidebar-nav-website.mobile-menu-active,
     html.sidebar-nav-website.mobile-menu-active body {
         overflow: hidden;
@@ -1453,7 +1453,7 @@ body[data-lang="ar"] .dropdown-menu {
     }
 }
 
-@media (max-width: @media-mobile) {
+@media (max-width: $media-mobile) {
     .mobile-menu-active.sidebar-nav-website body.sticky-nav:not(.mw-live-edit) .js-sidebar-nav {
         width: calc(#{"100%"});
         left: $sidebar-nav-width;
@@ -1484,7 +1484,7 @@ body[data-lang="ar"] .dropdown-menu {
     }
 }
 
-@media (max-width: @media-mobile) {
+@media (max-width: $media-mobile) {
     html:not(.sidebar-nav-website) .navigation .menu {
         padding-bottom: 220px;
     }
@@ -1527,7 +1527,7 @@ body[data-lang="ar"] .dropdown-menu {
     }
 }
 
-@media (max-width: @media-samll-mobile) {
+@media (max-width: $media-samll-mobile) {
     html:not(.sidebar-nav-website) .navigation .menu {
         width: calc(#{"100% - 30px"});
     }
@@ -1836,7 +1836,7 @@ body[data-lang="ar"] .dropdown-menu {
     }
 }
 
-@media screen and (max-width: @media-mobile) {
+@media screen and (max-width: $media-mobile) {
     .navigation .secondary-menu .container {
         padding-left: 15px;
         padding-right: 15px;

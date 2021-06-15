@@ -1,0 +1,39 @@
+/*
+Error: Invalid CSS after "...-spacer-row(15)": expected "{", was ";"
+        on line 3 of C:\xampp\htdocs\mw\userfiles\templates\new-new-world\assets\css\sass\margins.scss
+
+1: @import "vars";
+2: 
+3: .generate-spacer-row(15);
+4: .generate-spacer-row(@n, @i: 1) when (@i =< @n) {
+5:     .row-mx-@{i} {
+6:         @row-step:(1px * @i);
+7:         margin-left: -@row-step!important;
+8:         margin-right: -@row-step!important;
+
+Backtrace:
+C:\xampp\htdocs\mw\userfiles\templates\new-new-world\assets\css\sass\margins.scss:3
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...-spacer-row(15)\": expected \"{\", was \";\"\A         on line 3 of C:\xampp\htdocs\mw\userfiles\templates\new-new-world\assets\css\sass\margins.scss\A \A 1: @import \"vars\";\A 2: \A 3: .generate-spacer-row(15);\A 4: .generate-spacer-row(@n, @i: 1) when (@i =< @n) {\A 5:     .row-mx-@{i} {\A 6:         @row-step:(1px * @i);\A 7:         margin-left: -@row-step!important;\A 8:         margin-right: -@row-step!important;"; }

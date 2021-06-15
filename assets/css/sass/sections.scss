@@ -1,0 +1,1490 @@
+@import "vars";
+
+/* *******************************************
+ ************** Section ************** *
+ ******************************************* */
+
+.section {
+  min-height: 100px;
+  padding: 30px 0;
+}
+
+/* *******************************************
+ ************** Section 2 ************** *
+ ******************************************* */
+
+.section-2 {
+  padding: 30px 0 0 0;
+
+  .background-image-holder {
+    min-height: 50vh;
+    height: 750px;
+    max-height: 100vh;
+  }
+
+  &.vh-80 {
+    .background-image-holder {
+      min-height: 80vh;
+      height: 80vh;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6, p, p.lead {
+    color: @textOnBackground;
+  }
+  .container {
+    z-index: 9;
+  }
+  .socials-holder {
+    z-index: 9;
+    right: 0;
+    height: 100%;
+    text-align: right;
+
+    color: @textOnBackground;
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+
+    ul li {
+      display: block;
+      a {
+        color: @textOnBackground;
+        font-size: @title-sm;
+        margin: 35px 40px 35px 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .socials-holder {
+      display: none;
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 3 ************** *
+ ******************************************* */
+
+.section-3 {
+  padding: 30px 0 0 0;
+
+  .background-image-holder {
+    min-height: 20vh;
+    height: 350px;
+    max-height: 50vh;
+  }
+
+  &.vh-100 {
+    .background-image-holder {
+      min-height: 100vh;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6, p, p.lead {
+    color: @textOnBackground;
+  }
+
+  .container {
+    z-index: 9;
+  }
+  .socials-holder {
+    z-index: 9;
+    right: 0;
+    height: 100%;
+    text-align: right;
+
+    color: @textOnBackground;
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+
+    ul li {
+      display: block;
+      a {
+        color: @textOnBackground;
+        font-size: @title-sm;
+        margin: 35px 40px 35px 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .socials-holder {
+      display: none;
+    }
+  }
+
+}
+
+/* *******************************************
+ ************** Section 4 ************** *
+ ******************************************* */
+
+.section-4 {
+  .bg-secondary {
+    background-clip: content-box !important;
+  }
+
+  * {
+    color: @textLight;
+  }
+
+  @media screen and (max-width: @media-samll-mobile) {
+    .h-100 {
+      height: auto;
+    }
+
+    //.button-6,
+    .module-btn {
+      bottom: 0;
+      position: absolute;
+    }
+  }
+
+  .info-holder {
+    padding: 40px 30px;
+
+    @media screen and (max-width: @media-samll-mobile) {
+      height: 370px;
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 5 ************** *
+ ******************************************* */
+
+.section-5 {
+  .picrow {
+    margin-bottom: 10px;
+  }
+
+  .photo-container {
+    position: relative;
+  }
+
+  .photo-container .image-thumb {
+    padding: 0px 5px !important;
+    width: calc(~"100% - 10px");
+    background: transparent;
+  }
+
+  @media screen and (max-width: 575px) {
+
+  }
+}
+
+/* *******************************************
+ ************** Section 6 ************** *
+ ******************************************* */
+
+.section-6 {
+  padding: 30px 0;
+
+  /* h1,h2,h3,h4,h5,h6,p{
+     color: @default;
+   }*/
+
+  .mwembed {
+    height: auto !important;
+    width: auto !important;
+  }
+
+  @media screen and (max-width: 1199px) {
+    .info-holder {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  }
+
+  .div-table-cell {
+    position: relative;
+    .button-holder {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 7 ************** *
+ ******************************************* */
+
+.section-7 {
+
+  .card {
+    height: 100%;
+    background: @background;
+    border: 0;
+    padding: 40px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+
+    .stamp {
+      margin-left: 0;
+      margin-bottom: 30px;
+      color: @textLight;
+      font-size: 35px;
+
+      i {
+        color: @textDark;
+      }
+
+      @media screen and (max-width: 767px) {
+        font-size: 30px;
+        width: 80px;
+        height: 60px;
+        padding: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    &.dark {
+      background: @default;
+      h1, h2, h3, h4, p {
+        color: @textLight;
+      }
+
+      i {
+        color: @textLight;
+      }
+    }
+    &:hover {
+      background: @primary;
+      h1, h2, h3, h4, p {
+        color: @textLight;
+      }
+
+      i {
+        color: @textLight;
+      }
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 8 ************** *
+ ******************************************* */
+
+.section-8 {
+  position: relative;
+  z-index: 9;
+
+  .icon-holder {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .mw-icon,
+    .icon {
+      margin-bottom: 35px;
+      font-size: 65px;
+      color: @primary;
+      display: block;
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 9 ************** *
+ ******************************************* */
+
+.section-9 {
+  padding: 0;
+  z-index: -1;
+  .background-image-holder {
+    position: relative;
+    height: 575px;
+    max-height: 100vh;
+    //min-height: 100vh;
+
+    /*&:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 300px;
+      background: rgba(255, 255, 255, 1);
+      background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 1%, rgba(255, 255, 255, 0.72) 29%, rgba(255, 255, 255, 0) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(1%, rgba(255, 255, 255, 1)), color-stop(29%, rgba(255, 255, 255, 0.72)), color-stop(100%, rgba(255, 255, 255, 0)));
+      background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 1%, rgba(255, 255, 255, 0.72) 29%, rgba(255, 255, 255, 0) 100%);
+      background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 1%, rgba(255, 255, 255, 0.72) 29%, rgba(255, 255, 255, 0) 100%);
+      background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 1%, rgba(255, 255, 255, 0.72) 29%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 1%, rgba(255, 255, 255, 0.72) 29%, rgba(255, 255, 255, 0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
+    }*/
+  }
+
+  .container {
+    padding: 160px 0 320px 0;
+  }
+
+  @media screen and (max-width: 1199px) {
+    .container {
+      padding: 120px 0 240px 0;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .container {
+      padding: 120px 0 240px 0;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .container {
+      padding: 80px 0 160px 0;
+    }
+  }
+
+  .blockquote-holder {
+    max-width: 680px;
+
+    padding-bottom: 400px;
+    @media screen and (min-width: 1441px) {
+      padding-bottom: 600px;
+    }
+  }
+
+}
+
+.mw-live-edit {
+  .section-9 {
+    margin-top: 0px;
+  }
+}
+
+.section-9.no-gradient {
+  margin-top: 0px;
+  .background-image-holder {
+    min-height: 70vh;
+    &:before {
+      display: none;
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 10 ************** *
+ ******************************************* */
+
+.section-10 {
+  .mwembed {
+    height: auto !important;
+  }
+
+  .new-world-testimonials-2 .info-holder {
+    text-align: left !important;
+  }
+  .video-left {
+    .video-holder {
+      @media screen and (min-width: 992px) {
+        padding-right: 4.15%;
+      }
+    }
+  }
+  .video-right {
+    @media screen and (max-width: 991px) {
+      .left-side {
+        order: 1 !important;
+      }
+
+      .right-side {
+        order: 2 !important;
+      }
+    }
+    .video-holder {
+      @media screen and (min-width: 992px) {
+        padding-left: 4.15%;
+      }
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 11 ************** *
+ ******************************************* */
+
+.section-11 {
+  i.fab {
+    font-size: 36px;
+    color: @primary;
+    margin-bottom: 30px;
+  }
+
+  .title-holder {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+/* *******************************************
+ ************** Section 12 ************** *
+ ******************************************* */
+
+.section-12 {
+  position: relative;
+  z-index: 9;
+
+  .icon-holder {
+    margin: 50px auto;
+    .mw-icon,
+    .icon {
+      margin-bottom: 20px;
+      font-size: 55px;
+      color: @primary;
+      display: block;
+    }
+  }
+
+  h6 {
+    font-size: @title-md;
+    color: @textDark;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  p {
+    color: @textDark;
+  }
+
+  .button-holder:before {
+    opacity: 0;
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 991px) {
+    h6 {
+      font-size: @title-sm;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .button-holder {
+      margin-top: 30px;
+      padding: 40px 0 50px 0;
+      &:before {
+        opacity: 1;
+      }
+    }
+
+    .icon-holder {
+      margin: 20px auto;
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 13 ************** *
+ ******************************************* */
+
+.section-13 {
+  position: relative;
+  z-index: 9;
+
+  .icon-holder {
+    margin: 50px auto;
+    .icon, .mw-icon {
+      margin-bottom: 30px;
+      font-size: 55px;
+      color: @textOnBackground;
+      display: block;
+    }
+  }
+
+  h6 {
+    font-size: 30px;
+    color: @textOnBackground;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  p {
+    color: @textOnBackground;
+  }
+
+  .button-holder:before {
+    opacity: 0;
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 991px) {
+    h6 {
+      font-size: @title-sm;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .button-holder {
+      margin-top: 30px;
+      padding: 40px 0 50px 0;
+      &:before {
+        opacity: 1;
+      }
+    }
+
+    .icon-holder {
+      margin: 20px auto;
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 14 ************** *
+ ******************************************* */
+
+.section-14 {
+  .info {
+    float: left;
+    width: calc(~"100% - 50px");
+  }
+
+  .mw-icon,
+  .icon {
+    display: block;
+    float: left;
+    width: 50px;
+    margin-bottom: 20px;
+
+    i {
+      font-size: 38px;
+      color: @textLight;
+      opacity: 0.5;
+      margin-top: 5px;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .info,
+    .icon {
+      float: none;
+      width: 100%;
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 15 ************** *
+ ******************************************* */
+
+.section-15 {
+  min-height: 100px;
+  padding: 30px 0;
+
+  background-color: @default;
+
+  .container {
+    padding: 0 10%;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 991px) {
+    .slider-wrapper {
+      max-width: 100%;
+    }
+
+  }
+}
+
+/* *******************************************
+ ************** Section 16 ************** *
+ ******************************************* */
+
+.section-16 {
+  min-height: 100px;
+  padding: 30px 0;
+
+  .info-holder {
+    z-index: 9;
+    background: @background;
+    padding: 50px 70px;
+    border: 1px solid rgba(red(@textDark), green(@textDark), blue(@textDark), 0.3);
+  }
+
+  .flexbox-container {
+    justify-content: center;
+  }
+
+  .left-side {
+    padding: 120px 60px;
+    min-height: 550px;
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: @textDark;
+  }
+  p,
+  span {
+    font-size: 16px;
+    line-height: 1.5;
+    color: @textDark;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  .img-holder {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  @media screen and (max-width: 1199px) {
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    .left-side {
+      min-height: auto;
+      padding: 10px;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .img-holder {
+      padding-top: 56.25%; /* 16:9 Aspect Ratio */
+      //padding-top: 75%; /* 4:3 Aspect Ratio */
+    }
+
+    .flexbox-container {
+      flex-direction: column-reverse;
+    }
+
+    .info-holder {
+      padding: 50px 20px;
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 17 ************** *
+ ******************************************* */
+
+.section-17 {
+  min-height: 100px;
+  padding: 30px 0;
+
+  .info-holder {
+    z-index: 9;
+    background: @background;
+    padding: 50px 70px;
+    border: 1px solid rgba(red(@textDark), green(@textDark), blue(@textDark), 0.3);
+  }
+
+  .flexbox-container {
+    //align-items: center;
+    justify-content: center;
+  }
+
+  .right-side {
+    padding: 120px 60px;
+    min-height: 550px;
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: @textDark;
+  }
+
+  p,
+  span {
+    font-size: 16px;
+    line-height: 1.5;
+    color: @textDark;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (max-width: 991px) {
+
+    .right-side {
+      min-height: auto;
+      padding: 10px;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .flexbox-container {
+      flex-direction: column;
+    }
+  }
+
+  .img-holder {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  @media screen and (max-width: 991px) {
+    .img-holder {
+      padding-top: 56.25%; /* 16:9 Aspect Ratio */
+      //padding-top: 75%; /* 4:3 Aspect Ratio */
+    }
+
+    .info-holder {
+      padding: 50px 20px;
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 18 ************** *
+ ******************************************* */
+
+.section-18 {
+  .padding-holder {
+    padding: 50px 30px;
+    @media screen and (min-width: 1200px) {
+      min-height: 680px;
+      height: 100%;
+    }
+    max-height: calc(~'100vh - 100px');
+  }
+
+  .button-holder {
+    @media screen and (max-width: 1199px) {
+      margin-top: 30px !important;
+    }
+  }
+
+  .background-image-holder .button-holder {
+    @media screen and (min-width: 1200px) {
+      bottom: 50px;
+      position: absolute;
+    }
+  }
+
+  .text-white h1, .text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6, .text-white p {
+    color: @textOnBackground !important;
+  }
+}
+
+/* *******************************************
+ ************** Section 19 ************** *
+ ******************************************* */
+
+.section-19 {
+  padding: 30px 0 0 0;
+
+  .background-image-holder {
+    min-height: 400px;
+    height: 30.25vw;
+    max-height: 90vh;
+
+    /*position: relative;
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: rgba(red(@default), green(@default), blue(@default), .3);
+      content: '';
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }*/
+
+    > div{
+      z-index: 2;
+    }
+
+    @media screen and(max-width: 1440px) {
+      height: 56.25vw;
+    }
+  }
+
+  .text-holder {
+    min-height: 400px;
+  }
+
+  .info-holder {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    h1, h2, h3, h4, h5, h6, p {
+      color: @textOnBackground !important;
+    }
+  }
+
+  blockquote:before,
+  blockquote,
+  blockquote .testimonial .name {
+    color: @textOnBackground;
+    text-align: left;
+  }
+
+  .socials-holder {
+    right: 0;
+    height: 100%;
+    text-align: right;
+
+    color: @textOnBackground;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+    ul li {
+      display: block;
+      a {
+        color: @textOnBackground;
+        font-size: @title-sm;
+        margin: 35px 40px 35px 0;
+      }
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .stamp {
+      background: transparent !important;
+      width: auto;
+      height: auto;
+      max-width: 450px;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .socials-holder {
+      display: none;
+    }
+
+    .stamp {
+      padding: 35px;
+      position: absolute;
+      z-index: 999;
+      //margin-top: 80px;
+      left: 0;
+      right: 0;
+    }
+
+    .background-image-holder.cuted {
+      &:after {
+        display: block;
+        width: 100%;
+        position: absolute;
+        content: '';
+        background: url('../img/divider.svg');
+        -webkit-background-size: cover;
+        background-size: cover;
+        height: 140px;
+        z-index: 9;
+        top: calc(~"100% - 140px");
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+      }
+
+      margin-bottom: 140px;
+    }
+
+    blockquote:before,
+    blockquote,
+    blockquote .testimonial .name {
+      text-align: center;
+    }
+
+    blockquote {
+      font-size: @paragraph-lg;
+    }
+
+    blockquote:before {
+      font-size: @paragraph-xl;
+    }
+
+    .align-self-end {
+      align-self: flex-start !important;
+      text-align: center;
+    }
+
+    .info-holder {
+      padding-bottom: 10px;
+      margin: 50px auto 30px auto;
+    }
+
+  }
+
+  @media screen and (max-width: 767px) {
+    blockquote:before {
+      margin: 5px auto;
+    }
+
+    .stamp {
+      margin-top: 0;
+      width: 280px;
+      height: 280px;
+      background-repeat: no-repeat;
+    }
+
+    .info-holder {
+      padding-bottom: 10px;
+      padding-left: 0;
+      padding-right: 0;
+      margin: 30px auto 10px;
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 20 ************** *
+ ******************************************* */
+
+.section-20 {
+  position: relative;
+  z-index: 9;
+
+  h3 {
+    font-size: 30px;
+    margin: 10px 0;
+  }
+
+  .text-white h1, .text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6, .text-white p {
+    color: @textOnBackground !important;
+  }
+
+  .background-image-holder {
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 15px;
+    margin-bottom: 30px;
+    position: relative;
+    height: 100%;
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: rgba(red(@default), green(@default), blue(@default), .5);
+      content: '';
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+  }
+
+  .icon-holder {
+    color: @textOnBackground;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    i, span {
+      font-size: 45px;
+      color: @textOnBackground;
+      display: block;
+    }
+  }
+
+  .square {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+
+    .content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
+  }
+
+  .square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  .slick-dots {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .slick-dots li {
+    display: inline-block;
+    font-size: 0px;
+    margin: 0 5px;
+  }
+
+  .slick-dots li button {
+    border: 0;
+    height: 11px;
+    width: 11px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
+    background: #c2c2c2;
+  }
+
+  .slick-dots li.slick-active button {
+    background: @default;
+    height: 16px;
+    width: 16px;
+  }
+
+  .slick-dots li button:before {
+    display: none;
+  }
+
+  @media screen and (max-width: 1199px) {
+    .slide.slick-center {
+      margin-top: 0px;
+    }
+
+    .slick-dots {
+      margin-top: 30px;
+    }
+  }
+
+}
+
+/* *******************************************
+ ************** Section 21 ************** *
+ ******************************************* */
+
+.section-21 {
+  .twitter-holder {
+    padding: 30px;
+    background: @primary;
+      .module{
+          max-width: 100%;
+      }
+  }
+}
+
+/* *******************************************
+ ************** Section 22 ************** *
+ ******************************************* */
+
+.section-22 {
+  .box {
+    margin-bottom: 30px;
+    padding: 25px 30px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+
+    @media screen and (max-width: 575px) {
+      justify-content: center;
+      flex-flow: column;
+      align-items: start;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background: @primary;
+      * {
+        color: @textLight;
+      }
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .icon-holder {
+      float: left;
+      font-size: 35px;
+      width: 60px;
+      text-align: left;
+      @media screen and (max-width: 575px) {
+        margin-bottom: 10px;
+      }
+    }
+    .text-holder {
+      float: left;
+      width: calc(~"100% - 60px");
+    }
+
+    p {
+      font-size: @paragraph-lg;
+      line-height: 1.35;
+    }
+  }
+
+  ul.socials {
+    margin: 0;
+    li {
+      margin-left: 7px;
+      margin-right: 0;
+
+      a {
+        background: transparent;
+        color: @textDark;
+        font-size: 20px;
+        height: 29px;
+        width: 29px;
+
+      }
+    }
+  }
+
+  .socials-holder {
+    right: 30px;
+    bottom: 47px;
+    position: absolute;
+  }
+
+}
+
+/* *******************************************
+ ************** Section 23 ************** *
+ ******************************************* */
+
+.section-23 {
+
+  p {
+    font-size: @paragraph-lg;
+    line-height: 1.5;
+  }
+
+  .card {
+    height: 100%;
+    background: @background;
+    border: 0;
+    padding: 30px 10px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    text-align: center;
+
+    .stamp {
+      margin: 0 auto;
+      margin-bottom: 10px;
+      color: @textLight;
+      font-size: 55px;
+
+      i {
+        color: @primary;
+      }
+
+      @media screen and (max-width: 767px) {
+        font-size: 30px;
+        width: 80px;
+        height: 80px;
+        padding: 26px;
+      }
+    }
+
+    &.dark {
+      background: @default;
+      h1, h2, h3, h4, p {
+        color: @textLight;
+      }
+
+      i {
+        color: @textLight;
+      }
+    }
+    &:hover {
+      background: @primary;
+      h1, h2, h3, h4, p {
+        color: @textLight;
+      }
+
+      i {
+        color: @textLight;
+      }
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 24 ************** *
+ ******************************************* */
+
+.section-24 {
+  position: relative;
+  z-index: 9;
+
+  .background-image-holder {
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 15px;
+    margin-bottom: 30px;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: rgba(red(@primary), green(@primary), blue(@primary), .8);
+      content: '';
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      visibility: hidden;
+    }
+  }
+
+  .icon-holder {
+    color: @textLight;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    i, span {
+      font-size: 45px;
+      color: @textLight;
+      display: block;
+    }
+  }
+
+  .square {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    visibility: hidden;
+
+    .content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        font-size: @paragraph-lg;
+      }
+    }
+  }
+
+  .square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  .background-image-holder {
+    &:hover {
+      cursor: pointer;
+      .square {
+        visibility: visible;
+      }
+      &:before {
+        visibility: visible;
+      }
+    }
+  }
+  ul.socials {
+    margin: 0 0 20px 0;
+  }
+  ul.socials li {
+    margin: 0 2px;
+  }
+  ul.socials li a,
+  ul.socials li a:hover {
+    background: transparent;
+    font-size: 24px;
+  }
+  ul.socials li a:hover {
+    color: rgba(red(@textLight), green(@textLight), blue(@textLight), 0.5)
+  }
+
+  .socials-holder {
+    position: absolute;
+    bottom: 0;
+  }
+
+}
+
+/* *******************************************
+ ************** Section 25 ************** *
+ ******************************************* */
+
+.section-25 {
+  min-height: 100px;
+  padding: 30px 0;
+
+  .img-holder {
+    padding: 0 70px;
+    position: relative;
+    min-height: 500px;
+    margin-bottom: 20px;
+
+    .image-1 {
+      width: 80%;
+      height: 80%;
+
+      position: absolute;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center center;
+      top: 0;
+      left: 0;
+    }
+
+    .image-2 {
+      width: 70%;
+      height: 70%;
+
+      position: absolute;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center center;
+      border: 15px solid @background;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 26 ************** *
+ ******************************************* */
+
+.section-26 {
+  position: relative;
+  z-index: 9;
+
+  @media screen and (max-width: 576px) {
+    .features-holder > div {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (min-width: 576px) {
+    .features-holder > div:nth-child(odd) {
+      margin-top: 40px;
+    }
+  }
+
+  .icon-holder {
+    padding-top: 50px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding-bottom: 50px;
+    .mw-icon,
+    .icon {
+      margin-bottom: 15px;
+      font-size: 55px;
+      color: @primary;
+      display: block;
+    }
+
+    &:hover {
+      background-color: @primary;
+      * {
+        color: @textLight;
+      }
+      .mw-icon,
+      .icon {
+        color: @textLight;
+      }
+    }
+  }
+}
+
+/* *******************************************
+ ************** Section 27 ************** *
+ ******************************************* */
+
+.section-27 {
+  padding: 30px 0 0 0;
+
+  @media screen and (min-width: 1440px) {
+    h1 {
+      font-size: 100px;
+    }
+
+    h2 {
+      font-size: 46px;
+    }
+  }
+
+  .background-image-holder {
+    min-height: 50vh;
+    height: 750px;
+    max-height: 80vh;
+  }
+
+  &.vh-80 {
+    .background-image-holder {
+      min-height: 80vh;
+      height: 80vh;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6, p, p.lead {
+    color: @textOnBackground;
+  }
+  .container {
+    z-index: 9;
+  }
+  .socials-holder {
+    z-index: 9;
+    right: 0;
+    height: 100%;
+    text-align: right;
+
+    color: @textOnBackground;
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+
+    ul li {
+      display: block;
+      a {
+        color: @textOnBackground;
+        font-size: @title-sm;
+        margin: 35px 40px 35px 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .socials-holder {
+      display: none;
+    }
+  }
+}

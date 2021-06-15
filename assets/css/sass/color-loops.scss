@@ -1,0 +1,35 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Jun 28, 2019, 11:47:53 AM
+    Author     : m.petkov
+*/
+
+@import "vars";
+/*Color mixer*/
+
+
+@each $name, $color in $colors {
+    .bg-#{name},
+    .badge-#{name},
+    .icon-bg-#{name},
+    .hr-bg-#{name}{
+        background-color: $color;
+    }
+    .module-hr-bg-#{name} div[class*="hr-"]{
+        background-color: $color!important;
+    }
+    .text-#{name} {
+        color: $color!important;
+    }
+    .text-#{name}>*:not(font),
+    .text-#{name} .btn-link,
+    .icon-#{name}{
+        color: $color!important;
+    }
+}
+
+

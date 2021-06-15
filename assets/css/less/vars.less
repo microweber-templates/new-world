@@ -1,0 +1,153 @@
+/****************************
+           GENERAL
+*****************************/
+
+/* Background */
+@background: #fff;
+
+/* Font Size and Family */
+@fontFamily: 'Lato', sans-serif;
+
+@bodyFontSize: 16px;
+
+@title-xl: 50px;
+@title-lg: 46px;
+@title-md: 36px;
+@title-sm: 24px;
+@title-xs: 18px;
+
+@paragraph-xl: 18px;
+@paragraph-lg: 16px;
+@paragraph-md: 14px;
+@paragraph-sm: 12px;
+
+/* Colors */
+@light: #fff;
+@textLight: #f4f4f4;
+@textLightHover: lighten(@textLight, 20%);
+
+@dark: #212121;
+@textDark: #212121;
+@textDarkHover: lighten(@textDark, 20%);
+
+@textOnWhite: #212121;
+@textOnBackground: #fff;
+
+@default: @dark;
+@defaultHover: lighten(@default, 20%);
+
+@primary: #0044de;
+@primaryHover: lighten(@primary, 20%);
+
+@secondary: #6aabcf;
+@secondaryHover: lighten(@secondary, 20%);
+
+
+@grey: #bfbfbf;
+@silver: #f3f3f3;
+
+/* Basic Meida Queries */
+@up-media-desktop: 1366px;
+@media-desktop: 1365px;
+@up-media-laptop: 1200px;
+@media-laptop: 1199px;
+@up-media-tablet: 992px;
+@media-tablet: 991px; //col-sm to col-md
+@up-media-mobile: 768px;
+@media-mobile: 767px;
+@up-media-samll-mobile: 576px;
+@media-samll-mobile: 575px; //col to col-sm
+@media-end: 320px;
+
+/* Elements */
+@hr: '../img/hr.svg';
+
+/* Radiuses */
+@borderRadiusInputs: 3px;
+@borderRadiusButtons: 3px;
+
+/*Colors for color mixer*/
+@colors: @default, @primary, @secondary, @dark, @textLight, @grey;
+@names: default, primary, secondary, dark, light, "grey";
+
+/****************************
+           HEADER
+*****************************/
+@header-background-color: darken(@primary, 0%);
+
+/*When to open Main Menu Burger*/
+@burgerOpenMedia: 1200px;
+@downMedia: 1199px;
+
+/*When to open Second Menu Burger*/
+@burgerOpenMediaSecond: 1200px;
+@downMediaSecond: 1199px;
+
+/*Header Menu Navigation*/
+@header-menu-font-weight: 600;
+@header-menu-font-color: @textOnBackground;
+@header-menu-font-color-on-hover: @primary;
+@header-menu-font-color-on-sticky: @textDark;
+@header-menu-font-size: 16px;
+@header-menu-text-transform: inherit;
+@header-menu-font-family: @fontFamily;
+@small-navbar-menu-font-size: calc(@header-menu-font-size - 2px);
+
+/*Header Dropdown menu*/
+@header-dropdown-color: @textLight;
+@header-dropdown-color-on-hover: fade(@header-dropdown-color, 80%);
+@header-dropdown-back-on-hover: fade(@textLight, 3%);
+@header-dropdown-back-color: @textDark;
+@header-dropdown-border-color: fade(@textLight, 10%);
+
+/*Mobile Main Menu Navigation*/
+@mobile-main-menu-font-color: @textDark;
+@mobile-main-menu-font-active-color: @header-menu-font-color-on-hover;
+@mobile-main-menu-background-color: darken(@textLight, 0%);
+@mobile-main-menu-overlay-color: fade(@textDark, 50%);
+@mobile-search-overlay-color: fade(@textLight, 50%);
+@mobile-toggle-inside-menu-color: @textDark;
+
+/*Mobile Main Menu Navigation*/
+@mobile-second-menu-font-color: @mobile-main-menu-font-color;
+@mobile-second-menu-font-active-color: @mobile-main-menu-font-active-color;
+@mobile-second-menu-background-color: @mobile-main-menu-background-color;
+
+/*Sidebar nav*/
+@sidebar-nav-width: 340px;
+@sidebar-nav-mobile-media-toggle-vissible-part: 64px;
+@sidebar-nav-mobile-media-width-breakpoint: calc(@sidebar-nav-width + @sidebar-nav-mobile-media-toggle-vissible-part);
+
+/*Header member nav*/
+@member-nav-icons-color: @header-menu-font-color;
+@shopping-basket-label-back-color: @primary;
+@shopping-basket-label-text-color: @textLight;
+
+/*Header burger*/
+@burger-color: @header-menu-font-color;
+
+/*Header social*/
+@header-social-icons-color: @header-menu-font-color;
+@header-social-icons-back-color: transparent;
+
+/*Logo on Header*/
+@logo-space: 10px;
+@logo-mobile-space: 15px;
+@logo-height-container: auto;
+@logo-max-height: 100px;
+@logo-max-width: 100% !important;
+@mobile-logo-height-container: 36px;
+@mobile-logo-max-height: 100%;
+
+/*Social icons General*/
+@social-icons-width: 2.4rem;
+@social-icons-height: 2.4rem;
+@social-icons-font-size: 1.2rem;
+@social-icons-color: @dark;
+@social-icons-back-color: @textLight;
+@social-icons-color-on-hover: @social-icons-color;
+@social-icons-back-color-on-hover: darken(@social-icons-back-color, 5%);
+
+
+
+

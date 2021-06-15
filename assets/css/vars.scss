@@ -28,8 +28,8 @@ $light: #ffffff;
 $textLight: #f4f4f4;
 $textLightHover: lighten($textLight, 20%);
 
-$dark: #707070;
-$textDark: #2c2c2c;
+$dark: #212121;
+$textDark: #212121;
 $textDarkHover: lighten($textDark, 20%);
 
 $textOnWhite: #212121;
@@ -38,7 +38,7 @@ $textOnBackground: #ffffff;
 $default: $dark;
 $defaultHover: lighten($default, 20%);
 
-$primary: #2c2c2c;
+$primary: #0044de;
 $primaryHover: lighten($primary, 20%);
 
 $secondary: #6aabcf;

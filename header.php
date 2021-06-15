@@ -43,10 +43,7 @@
 
     <?php print get_template_stylesheet(); ?>
 
-
-
-    <
-    <![endif]-->
+ 
 
     <?php include('template_settings.php'); ?>
 </head>

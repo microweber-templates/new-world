@@ -2,7 +2,7 @@
     <div class="container color-background-container">
         <div class="navbar-header">
             <div class="main-header">
-                <module type="logo" class="logo mr-3" id="header-logo" data-alt-logo="false"/>
+                <module type="logo" class="logo me-3" id="header-logo" data-alt-logo="false"/>
                 <div class="menu-overlay">
                     <div class="menu">
                         <div class="toggle-inside-menu">
@@ -24,7 +24,7 @@
                         <?php include('parts/shopping_cart.php'); ?>
                         <?php include('parts/desktop_search_bar.php'); ?>
                         <li class="">
-                            <div class="toggle ml-3">
+                            <div class="toggle ms-3">
                                 <a href="javascript:;" class="js-menu-toggle mobile-menu-btn">
                                     <span></span>
                                     <span></span>

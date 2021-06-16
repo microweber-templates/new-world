@@ -26,7 +26,7 @@
             </div>
 
             <div class="container main-header">
-                <module type="logo" class="logo mr-3" id="header-logo" data-alt-logo="false"/>
+                <module type="logo" class="logo me-3" id="header-logo" data-alt-logo="false"/>
 
                 <div class="secondary-menu">
                     <?php //include('parts/mobile_search_bar.php'); ?>
@@ -40,7 +40,7 @@
                         <?php include('parts/shopping_cart.php'); ?>
                         <?php include('parts/desktop_search_bar.php'); ?>
                         <li class="">
-                            <div class="extra-toggle ml-3">
+                            <div class="extra-toggle ms-3">
                                 <a href="javascript:;" class="js-extra-menu-toggle mobile-menu-btn">
                                     <span></span>
                                     <span></span>

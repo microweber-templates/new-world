@@ -13,10 +13,12 @@ const uglify = require('gulp-uglify');
 const rebaseUrls = require('gulp-css-url-fix');
 
 const config = require('./config');
+const cssnano = require('gulp-cssnano');
 
 let count = 0;
 const mwpath = config.source;
-const dest = config.target;
+const cssTarget = config.cssTarget || config.target;
+const jsTarget = config.jsTarget || config.target;
 
 const cssMode = {
     sass: sass,
@@ -79,7 +81,7 @@ const tplJS = async (prod) => {
         }
         stream.pipe(concat(  'main.js', {newLine: ';\r\n'}))
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest(dest))
+        .pipe(gulp.dest(jsTarget))
         .on("end", resolve);
     });
 };
@@ -101,7 +103,7 @@ const tplCSS = async (prod) => {
             stream = stream.pipe(sourcemaps.write());
         }
         stream = stream.pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest(dest))
+        .pipe(gulp.dest(cssTarget))
         .on("end", resolve);
     });
 }

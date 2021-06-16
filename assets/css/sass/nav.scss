@@ -16,14 +16,14 @@
   border-radius: 0;
   transition: height .4s;
   transition: background .4s;
-  background: rgba(red(@light), green(@light), blue(@light), .15);
+  background: rgba(red($light), green($light), blue($light), .15);
 }
 
 .navigation .logo a .logo-text,
 .navigation .logo .logo-text,
 .navigation .logo a,
 .navigation .logo a span {
-  color: @dark;
+  color: $dark;
   font-size: 28px;
   font-weight: bold;
   text-decoration: none;
@@ -93,7 +93,7 @@
 .navigation {
   border: 0;
   border-radius: 0;
-  .transition(all, 0.3s, ease);
+  transition: all, 0.3s;
   position: relative;
 }
 
@@ -117,7 +117,7 @@
 .container > .navbar-collapse,
 .container > .navbar-header {
   width: 100%;
-  .mixin-flex-row-nowrap();
+  display: flex; flex-wrap: nowrap;
   align-items: center;
   margin-right: 0;
   margin-left: 0;
@@ -138,8 +138,8 @@
   margin: 0;
 
   li a {
-/*    background: @header-social-icons-back-color;
-    color: @header-social-icons-color;*/
+/*    background: $header-social-icons-back-color;
+    color: $header-social-icons-color;*/
     font-size: 18px;
     padding: 0;
     margin: 0;
@@ -148,8 +148,8 @@
   }
 
   a:hover {
-    background: @header-social-icons-back-color;
-    color: @header-social-icons-color;
+    background: $header-social-icons-back-color;
+    color: $header-social-icons-color;
   }
 }
 
@@ -162,17 +162,17 @@
 }
 
 .navbar-header ul.header-contacts-list li a {
-  color: @textOnBackground;
+  color: $textOnBackground;
   font-size: .75rem;
   padding: 5px;
-  .mixin-inline-flex();
-  .mixin-flex-center();
+  display: inline-flex;
+  display: flex; align-items: center;
 }
 
 .navigation-holder.not-transparent,
 .navigation.sticky {
   .navbar-header ul.header-contacts-list li a {
-    color: @textOnWhite;
+    color: $textOnWhite;
   }
 }
 
@@ -202,7 +202,7 @@ body[data-lang="ar"] .navbar-header ul.header-contacts-list li a span:nth-of-typ
 }
 
 .navbar-header ul.socials.header-social-phone li a {
-  color: @light;
+  color: $light;
 }
 
 /*Logo settings*/
@@ -210,12 +210,13 @@ body[data-lang="ar"] .navbar-header ul.header-contacts-list li a span:nth-of-typ
 .logo .logo-text,
 .logo a,
 .logo a span {
-  color: @dark;
+  color: $dark;
   font-size: 28px;
   font-weight: bold;
   text-decoration: none;
   padding-left: 0 !important;
-  .mixin-flex-row();
+  display: flex;
+    flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
   height: 100%;
@@ -227,45 +228,46 @@ body[data-lang="ar"] .navbar-header ul.header-contacts-list li a span:nth-of-typ
 
 .navigation .navbar-header .logo {
   position: relative;
-  height: @logo-height-container;
-  .transition(all, 0.3s, ease);
-  .mixin-flex-row();
-  margin: @logo-space 0;
+  height: $logo-height-container;
+  transition: all, 0.3s;
+  display: flex;
+    flex-wrap: wrap;
+  margin: $logo-space 0;
 }
 
 .navigation.sticky .navbar-header .logo {
-  .transition(all, 0.3s, ease);
+  transition: all, 0.3s;
 }
 
 .navigation .navbar-header .logo a {
-  .mixin-inline-flex();
+  display: inline-flex;
   align-items: center;
   justify-content: flex-start;
   height: 100%;
 }
 
 .navigation .navbar-header .logo img {
-  max-height: @logo-max-height;
-  .transition(all, 0.3s, ease);
+  max-height: $logo-max-height;
+  transition: all, 0.3s;
 }
 
 .navigation.sticky .navbar-header .logo img {
-  .transition(all, 0.3s, ease);
+  transition: all, 0.3s;
 }
 
 @media screen and (min-width: 768px) {
   .navigation .navbar-header .logo img {
-    max-width: @logo-max-width;
+    max-width: $logo-max-width;
   }
 }
 
 @media (max-width: 575px) {
   .navigation .navbar-header .logo {
-    margin: @logo-mobile-space 0;
+    margin: $logo-mobile-space 0;
   }
 
   .navigation .navbar-header .logo img {
-    max-height: @mobile-logo-max-height;
+    max-height: $mobile-logo-max-height;
     width: auto !important;
   }
 
@@ -311,7 +313,7 @@ body[data-lang="ar"] .navigation .navbar-header .toggle-inside-menu {
 }
 
 .toggle-inside-menu .mobile-menu-btn span {
-  background: @mobile-toggle-inside-menu-color;
+  background: $mobile-toggle-inside-menu-color;
 }
 
 html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
@@ -319,11 +321,11 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
 }
 
 .extra-toggle .mobile-menu-btn.active span {
-  background: @burger-color;
+  background: $burger-color;
 }
 
 .mobile-menu-btn {
-  color: @dark;
+  color: $dark;
   font-size: 16px;
   text-decoration: none;
   display: inline-block;
@@ -332,7 +334,7 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
   width: 34px;
   height: 22px;
   text-transform: uppercase;
-  .transition(all, 0.5s, ease);
+  transition: all 0.5s ease;
   top: 0;
 
 }
@@ -345,7 +347,7 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
 
 .mobile-menu-btn span {
   position: absolute;
-  .transition(all, 0.5s, ease);
+    transition: all 0.5s ease;
   display: inline-block;
   height: 2px;
   width: 33px;
@@ -356,7 +358,7 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
 
 .navigation.sticky .mobile-menu-btn span,
 .not-transparent.navigation-holder .mobile-menu-btn span {
-  background: @mobile-toggle-inside-menu-color;
+  background: $mobile-toggle-inside-menu-color;
 }
 
 .mobile-menu-btn span:first-child {
@@ -443,7 +445,7 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
   margin: auto;
   pointer-events: none;
   border-radius: 50%;
-  background-color: @burger-color;
+  background-color: $burger-color;
 }
 
 .mobile-menu-btn-2 span:nth-child(1) {
@@ -480,7 +482,7 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
   margin-top: -1px;
   width: 10px;
   height: 2px;
-  background-color: @mobile-main-menu-font-color;
+  background-color: $mobile-main-menu-font-color;
   transform: rotate(90deg);
   transition: transform .25s ease-in-out;
 }
@@ -497,7 +499,7 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
   margin-top: -1px;
   width: 10px;
   height: 2px;
-  background-color: @mobile-main-menu-font-color;
+  background-color: $mobile-main-menu-font-color;
 }
 
 /*End Sidebar Nav menu collapse icon*/
@@ -514,8 +516,9 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
 }
 
 .mobile-menu-label b {
-  .mixin-flex-row();
-  .transition(all, 0.5s, ease);
+  display: flex;
+    flex-wrap: wrap;
+    transition: all 0.5s ease;
   position: absolute;
   right: 0;
   width: 100%;
@@ -523,7 +526,7 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
   align-items: center;
   justify-content: flex-start;
   font-weight: 600;
-  color: @header-menu-font-color;
+  color: $header-menu-font-color;
 }
 
 .mobile-menu-label b + b {
@@ -549,7 +552,7 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
 }
 
 .navigation .navbar-header .cart a {
-  color: @light;
+  color: $light;
   font-size: 24px;
 }
 
@@ -568,12 +571,12 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
 }
 
 .navigation .list li a {
-  .transition(all, 0.3s, ease);
-  font-size: @header-menu-font-size;
-  font-family: @header-menu-font-family;
-  font-weight: @header-menu-font-weight;
-  text-transform: @header-menu-text-transform;
-    color: @header-menu-font-color-on-sticky;
+  transition: all, 0.3s;
+  font-size: $header-menu-font-size;
+  font-family: $header-menu-font-family;
+  font-weight: $header-menu-font-weight;
+  text-transform: $header-menu-text-transform;
+    color: $header-menu-font-color-on-sticky;
 }
 
 .navigation .list {
@@ -582,7 +585,7 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      width: calc(~"100% - 20px");
+      width: calc(#{"100% - 20px"});
       display: inline-block;
     }
   }
@@ -598,9 +601,9 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
 
 .navigation .list li > a:after {
   content: '';
-  .transition(all, 0.3s, ease);
+  transition: all, 0.3s;
   transform: rotate(0);
-  top: calc(~"50% - 1.5px");
+  top: calc(#{"50% - 1.5px"});
 }
 
 body:not([data-lang="ar"]) .navigation .list li.has-sub-menu > a:after {
@@ -618,15 +621,15 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
 .navigation .list > li > a:hover,
 .navigation .list > li.active > a,
 .navigation .list > li.active-parent > a {
-  color: @header-menu-font-color-on-hover;
-  .transition(all, 0.3s, ease);
+  color: $header-menu-font-color-on-hover;
+  transition: all, 0.3s;
 }
 
 .dropdown-menu .dropdown-menu {
   display: block;
   opacity: 0;
   visibility: hidden;
-  .transition(all, 0.3s, ease);
+  transition: all, 0.3s;
   top: 0;
   left: 100%;
 }
@@ -639,19 +642,19 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
 
 .navigation .list > li > ul a {
   padding: .5rem .7rem;
-  color: @header-dropdown-color;
+  color: $header-dropdown-color;
 }
 
 .dropdown-menu > li > a {
   display: block;
   clear: both;
-  font-weight: @header-menu-font-weight;
-  text-transform: @header-menu-text-transform;
+  font-weight: $header-menu-font-weight;
+  text-transform: $header-menu-text-transform;
   text-decoration: none;
 }
 
 .navigation .menu .list {
-  .transition(all, 0.3s, ease);
+  transition: all, 0.3s;
 }
 
 .navigation .list > li:hover {
@@ -668,8 +671,8 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
 }
 
 .navigation .dropdown-menu {
-  background: @header-dropdown-back-color;
-  border: 1px solid @header-dropdown-border-color;
+  background: $header-dropdown-back-color;
+  border: 1px solid $header-dropdown-border-color;
 }
 
 .navigation .module-menu .dropdown-menu {
@@ -678,35 +681,35 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
 }
 
 /*.navigation .list>li>ul a:hover {
-    background-color: @header-dropdown-back-on-hover;
-    color: @header-dropdown-color-on-hover;
+    background-color: $header-dropdown-back-on-hover;
+    color: $header-dropdown-color-on-hover;
 }*/
 .navigation .list .dropdown:hover .dropdown-menu {
   margin: 0;
 }
 
 .member-nav .dropdown-menu li a {
-  .transition(all, 0.3s, ease);
+  transition: all, 0.3s;
 }
 
 .member-nav .dropdown-menu:not(.shopping-cart) a {
   padding: .5rem .7rem;
-  color: @header-dropdown-color;
-  font-family: @fontFamily;
-  font-size: @header-menu-font-size;
+  color: $header-dropdown-color;
+  font-family: $fontFamily;
+  font-size: $header-menu-font-size;
 }
 
 .member-nav .dropdown-menu:not(.shopping-cart) li:not(:first-child) a:hover {
-  color: @header-dropdown-color-on-hover;
+  color: $header-dropdown-color-on-hover;
 }
 
 .member-nav .btn-member .dropdown-menu li:not(:first-of-type) a:hover {
-  background: @header-dropdown-back-on-hover;
+  background: $header-dropdown-back-on-hover;
 }
 
 .member-nav .shopping-cart-holder .btn:hover {
-  background: fade(@primary, 90%);
-  color: @dark;
+  background: fade-out($primary, 90%);
+  color: $dark;
 }
 
 .navigation .menu .list > li.mobile-search,
@@ -715,14 +718,14 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
 }
 
 .navigation .menu .list > li.mobile-search form {
-  .mixin-flex-row-nowrap();
+  display: flex; flex-wrap: nowrap;
   align-items: center;
 }
 
 .mobile-search button {
   border: none;
   color: white;
-  background: @primary;
+  background: $primary;
   height: 45px;
   text-align: center;
   width: auto;
@@ -734,11 +737,11 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
   border: none;
   height: 45px;
   width: 100%;
-  color: @dark;
+  color: $dark;
 }
 
 .mobile-search .fa {
-  color: @dark;
+  color: $dark;
   margin: 0 14px;
 }
 
@@ -784,14 +787,14 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
 }
 
 .member-nav .dropdown-toggle > span {
-  color: @shopping-basket-label-text-color;
+  color: $shopping-basket-label-text-color;
   font-size: 11px;
   border-radius: 50%;
   padding: 0;
   display: inline-flex;
   position: absolute;
   z-index: 1;
-  background-color: @shopping-basket-label-back-color;
+  background-color: $shopping-basket-label-back-color;
   min-width: 16px;
   min-height: 16px;
   align-items: center;
@@ -801,18 +804,18 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
 }
 
 .member-nav-inverse .member-nav .dropdown-toggle > span {
-  color: @dark;
+  color: $dark;
 }
 
 .member-nav .dropdown-toggle > i {
-  color: @textDark;
+  color: $textDark;
   font-size: 22px;
   line-height: 28px;
 }
 
 .not-transparent .navigation .member-nav .dropdown-toggle > i,
 .navigation.sticky .member-nav .dropdown-toggle > i {
-  color: @textDark;
+  color: $textDark;
 }
 
 .member-nav a:after {
@@ -821,7 +824,7 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
 
 .member-nav .search button.dropdown-toggle {
   margin-right: 0;
-  color: @member-nav-icons-color;
+  color: $member-nav-icons-color;
   border: 0;
   background: transparent;
 }
@@ -841,7 +844,7 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
 }
 
 .member-nav .search input {
-  background: @light;
+  background: $light;
   font-size: .9rem;
   border-radius:0px;
   padding: .4rem .7rem;
@@ -851,10 +854,12 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
 }
 
 .member-nav .search .dropdown-menu i {
-  color: fade(@dark, 70%);
-  background: @light;
-  .mixin-flex-row();
-  .flex-center();
+  color: fade($dark, 70%);
+  background: $light;
+  display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 body:not([data-lang="ar"]) .member-nav .search .dropdown-menu i {
@@ -875,7 +880,7 @@ body[data-lang="ar"]  .member-nav .search .dropdown-menu i {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 5px solid @dark;
+  border-bottom: 5px solid $dark;
   content: '';
   display: block;
   position: absolute;
@@ -892,40 +897,40 @@ body[data-lang="ar"]  .member-nav .search .dropdown-menu i {
 
 .member-nav .shopping-cart-holder .product {
   padding: 10px 0;
-  border-bottom: 1px solid fade(@primary, 20%);
+  border-bottom: 1px solid fade($primary, 20%);
 }
 
 .member-nav .shopping-cart-holder .product .remove {
   position: absolute;
   right: 10px;
-  color: @primary;
+  color: $primary;
   line-height: 0;
   top: 10px;
 }
 
 .member-nav .shopping-cart-holder .product .remove:hover {
   background: transparent;
-  color: lighten(@primary, 20%);
+  color: lighten($primary, 20%);
 }
 
 .member-nav .shopping-cart-holder .product h5 {
-  color: @light;
+  color: $light;
   font-size: 14px;
 }
 
 .member-nav .shopping-cart-holder .product .qty {
-  color: fade(@primary, 90%);
+  color: fade($primary, 90%);
 }
 
 .member-nav .shopping-cart-holder .product .price {
-  color: @light;
+  color: $light;
   font-size: 14px;
   font-weight: bold;
 }
 
 .member-nav .shopping-cart-holder .total p {
   font-size: 16px;
-  color: @light;
+  color: $light;
   margin: 15px 0 10px 0;
 }
 
@@ -937,11 +942,11 @@ body[data-lang="ar"]  .member-nav .search .dropdown-menu i {
 
 .dropdown-menu {
   border-radius: 0;
-  color: @dark;
+  color: $dark;
   display: block;
   opacity: 0;
   visibility: hidden;
-  .transition(all, 0.3s, ease);
+  transition: all, 0.3s;
   min-width: 15rem;
   /*    top: 100%;*/
 }
@@ -971,7 +976,7 @@ body[data-lang="ar"] .dropdown-menu {
 
 .member-nav .dropdown-menu,
 .member-nav .dropdown-menu:before {
-  background-color: @header-dropdown-back-color;
+  background-color: $header-dropdown-back-color;
 }
 
 /*See more icon*/
@@ -979,7 +984,8 @@ body[data-lang="ar"] .dropdown-menu {
   font-size: 0 !important;
   line-height: 0;
   position: relative !important;
-  .mixin-flex-row() !important;
+    display: flex;
+    flex-wrap: wrap;
   width: 32px;
   height: 32px;
   padding: 0px !important;
@@ -1006,15 +1012,15 @@ body[data-lang="ar"] .dropdown-menu {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: fade(@burger-color, 80%);
-  .transition(all, 0.3s, ease);
+  background-color: fade($burger-color, 80%);
+  transition: all, 0.3s;
 
 }
 
 .navigation .sub-menu-more > a:hover span,
 .navigation .sub-menu-more > a:hover span:after,
 .navigation .sub-menu-more > a:hover span:before {
-  background-color: fade(@burger-color, 40%);
+  background-color: fade($burger-color, 40%);
 }
 
 .navigation .sub-menu-more > a span:after,
@@ -1024,25 +1030,25 @@ body[data-lang="ar"] .dropdown-menu {
 }
 
 /*!!! Only for main header menu !!!*/
-@media screen and (min-width: @burgerOpenMedia) {
+@media screen and (min-width: $burgerOpenMedia) {
   html:not(.sidebar-nav-website) {
     .navigation .menu .small-navbar .list li a {
-      font-size: @small-navbar-menu-font-size;
+      font-size: $small-navbar-menu-font-size;
     }
 
     .navigation .menu .list > li:hover > a {
-      color: @header-menu-font-color-on-hover;
-      .transition(all, 0.3s, ease);
+      color: $header-menu-font-color-on-hover;
+      transition: all, 0.3s;
 
     }
 
     .navigation .menu .list > li > ul li:hover > a {
-      color: @header-dropdown-color-on-hover;
-      background-color: @header-dropdown-back-on-hover;
+      color: $header-dropdown-color-on-hover;
+      background-color: $header-dropdown-back-on-hover;
     }
 
     .navigation .menu .list > li > ul li:hover > a:focus {
-      color: @header-dropdown-back-color;
+      color: $header-dropdown-back-color;
     }
 
     .navigation .list li:hover > ul {
@@ -1060,7 +1066,8 @@ body[data-lang="ar"] .dropdown-menu {
 
     /*See more icon*/
     .navigation .menu .collapseNav-initialized {
-      .mixin-flex-row() !important;
+        display: flex;
+        flex-wrap: wrap;
       align-items: center;
     }
 
@@ -1082,7 +1089,7 @@ body[data-lang="ar"] .dropdown-menu {
   }
 }
 
-@media screen and (max-width: @downMedia) {
+@media screen and (max-width: $downMedia) {
   .navigation {
     .menu {
       .sub-menu-more {
@@ -1102,7 +1109,7 @@ body[data-lang="ar"] .dropdown-menu {
       }
 
       .list > li > a {
-        color: @mobile-main-menu-font-color;
+        color: $mobile-main-menu-font-color;
         clear: both;
         padding: 10px 30px;
         text-align: left;
@@ -1117,14 +1124,14 @@ body[data-lang="ar"] .dropdown-menu {
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            width: calc(~"100% - 20px");
+            width: calc(#{"100% - 20px"});
             display: inline-block;
           }
         }
       }
 
       .list > li > ul a {
-        color: fade(@mobile-main-menu-font-color, 70%);
+        color: fade($mobile-main-menu-font-color, 70%);
       }
 
       .list > li > ul > li a {
@@ -1135,23 +1142,23 @@ body[data-lang="ar"] .dropdown-menu {
         padding: 8px 50px;
       }
       .list > li a:hover {
-        background-color: @header-dropdown-back-on-hover;
-        color: @mobile-main-menu-font-color;
+        background-color: $header-dropdown-back-on-hover;
+        color: $mobile-main-menu-font-color;
       }
 
       .dropdown-menu > .active > a,
       .dropdown-menu > .active > a:focus {
-        background-color: @header-dropdown-back-on-hover;
-        color: @mobile-main-menu-font-color;
+        background-color: $header-dropdown-back-on-hover;
+        color: $mobile-main-menu-font-color;
       }
 
       .list > li.active-parent > a,
       .list > li.active > a {
-        color: @mobile-main-menu-font-active-color;
+        color: $mobile-main-menu-font-active-color;
       }
 
       .list > li.active li.active-parent > a {
-        color: @mobile-main-menu-font-color;
+        color: $mobile-main-menu-font-color;
       }
 
       .show > .dropdown-menu {
@@ -1164,7 +1171,7 @@ body[data-lang="ar"] .dropdown-menu {
       }
 
       .list .dropdown.show {
-        background: @mobile-search-overlay-color;
+        background: $mobile-search-overlay-color;
         margin: 0 20px;
         padding-bottom: 15px;
       }
@@ -1196,7 +1203,9 @@ body[data-lang="ar"] .dropdown-menu {
 
     .member-nav {
       flex: 1;
-      .mixin-flex-row-nowrap ();
+        display: flex;
+
+        flex-wrap: nowrap;
       justify-content: flex-end;
     }
 
@@ -1215,9 +1224,9 @@ body[data-lang="ar"] .dropdown-menu {
         left: 0;
         height: 100%;
         padding: 0 !important;
-        background: @mobile-main-menu-overlay-color;
+        background: $mobile-main-menu-overlay-color;
         opacity: 0;
-        .transition(all, 0.3s, ease);
+        transition: all, 0.3s;
         z-index: 10;
       }
 
@@ -1229,14 +1238,14 @@ body[data-lang="ar"] .dropdown-menu {
         top: 0;
         right: 0;
         padding: 20px 0 40px 0;
-        background: @mobile-main-menu-background-color;
-        min-height: calc(~"100vh");
+        background: $mobile-main-menu-background-color;
+        min-height: calc(#{"100vh"});
         transform: scaleY(1) scaleX(0) translateX(400px);
         transform-origin: right 0;
-        .transition(all, 0.3s, ease);
+        transition: all, 0.3s;
         max-width: 100%;
         width: 100%;
-        .box-shadow(0px, 35px, 60px, 0px, 0.6);
+        box-shadow: 0px 35px 60px 0px rgba(0,0,0,0.6);
         z-index: 10;
       }
 
@@ -1273,7 +1282,7 @@ body[data-lang="ar"] .dropdown-menu {
       .list > li.mobile-search {
         display: block;
         width: 100%;
-        background: lighten(@light, 0%);
+        background: lighten($light, 0%);
         padding: 0 15px;
         background-clip: content-box;
         clear: both;
@@ -1292,16 +1301,16 @@ body[data-lang="ar"] .dropdown-menu {
   .sidebar-nav-website .navigation {
     .menu-overlay {
       visibility: visible;
-      width: @sidebar-nav-width;
+      width: $sidebar-nav-width;
       position: fixed;
       top: 0;
       left: 0;
       height: 100%;
       padding: 0 !important;
       opacity: 1;
-      .transition(all, 0.3s, ease);
+      transition: all, 0.3s;
       z-index: 1;
-      margin-left: -@sidebar-nav-width;
+      margin-left: -$sidebar-nav-width;
     }
 
     .menu {
@@ -1312,11 +1321,11 @@ body[data-lang="ar"] .dropdown-menu {
       top: 0;
       left: 0;
       padding: 0px 0 40px;
-      background: @mobile-main-menu-background-color;
-      height: calc(~"100vh");
-      .transition(all, 0.3s, ease);
+      background: $mobile-main-menu-background-color;
+      height: calc(#{"100vh"});
+      transition: all, 0.3s;
       max-width: 100%;
-      width: @sidebar-nav-width;
+      width: $sidebar-nav-width;
       z-index: 1;
     }
   }
@@ -1332,17 +1341,17 @@ body[data-lang="ar"] .dropdown-menu {
 
     .menu {
       overflow: auto;
-      max-width: @sidebar-nav-width;
-      border-right: 1px solid @textOnBackground;
+      max-width: $sidebar-nav-width;
+      border-right: 1px solid $textOnBackground;
     }
 
     .main {
-      width: calc(~"100%" - @sidebar-nav-width);
-      right: -@sidebar-nav-width;
+      width: calc(#{"100%" - $sidebar-nav-width});
+      right: -$sidebar-nav-width;
     }
 
     body.sticky-nav:not(.mw-live-edit) .js-sidebar-nav {
-      width: calc(~"100%");
+      width: calc(#{"100%"});
       margin: 0;
       left: 0;
     }
@@ -1351,7 +1360,7 @@ body[data-lang="ar"] .dropdown-menu {
   .sidebar-nav-website {
     .main {
       width: 100%;
-      .transition(all, 0.3s, ease);
+      transition: all, 0.3s;
       position: relative;
       right: 0;
     }
@@ -1365,10 +1374,10 @@ body[data-lang="ar"] .dropdown-menu {
         padding: 0 0 1rem 0;
       }
       .menu .module-menu .list > li:not(:first-of-type) {
-        border-top: 1px solid @textOnBackground;
+        border-top: 1px solid $textOnBackground;
       }
       .menu .module-menu .list > li:last-of-type {
-        border-bottom: 1px solid @textOnBackground;
+        border-bottom: 1px solid $textOnBackground;
       }
       .menu .list > li > a {
         padding: 1rem 2rem;
@@ -1386,18 +1395,18 @@ body[data-lang="ar"] .dropdown-menu {
   /***** End Sidebar navigation menu *****/
 }
 
-@media (max-width: @media-desktop) {
+@media (max-width: $media-desktop) {
   html.sidebar-nav-website.mobile-menu-active,
   html.sidebar-nav-website.mobile-menu-active body {
     overflow: hidden;
   }
 
   .mobile-menu-active.sidebar-nav-website .main {
-    width: calc(~"100%");
+    width:  100% ;
   }
 
   .mobile-menu-active.sidebar-nav-website body.sticky-nav:not(.mw-live-edit) .js-sidebar-nav {
-    width: calc(~"100%");
+    width:  100% ;
   }
 
   .sidebar-nav-website .navigation .menu-overlay {
@@ -1405,17 +1414,17 @@ body[data-lang="ar"] .dropdown-menu {
     margin-left: 0;
     visibility: hidden;
     opacity: 0;
-    .transition(all, 1s, ease);
+      transition: all 1s ease;
   }
 
   .mobile-menu-active.sidebar-nav-website .menu-overlay {
     visibility: visible;
     opacity: 1;
-    background-color: @mobile-main-menu-overlay-color;
+    background-color: $mobile-main-menu-overlay-color;
   }
 
   .sidebar-nav-website .navigation .menu {
-    margin-left: -@sidebar-nav-width;
+    margin-left: -$sidebar-nav-width;
   }
 
   .mobile-menu-active.sidebar-nav-website .navigation .menu {
@@ -1427,10 +1436,10 @@ body[data-lang="ar"] .dropdown-menu {
   }
 }
 
-@media (max-width: @media-mobile) {
+@media (max-width: $media-mobile) {
   .mobile-menu-active.sidebar-nav-website body.sticky-nav:not(.mw-live-edit) .js-sidebar-nav {
-    width: calc(~"100%");
-    left: @sidebar-nav-width;
+    width:  100% ;
+    left: $sidebar-nav-width;
   }
 
   .sidebar-nav-website .navigation .menu ul {
@@ -1438,27 +1447,27 @@ body[data-lang="ar"] .dropdown-menu {
   }
 
   .sidebar-nav-website .navigation .menu {
-    min-height: calc(~"100vh");
+    min-height:  100vh ;
   }
 }
 
-@media (max-width: @sidebar-nav-mobile-media-width-breakpoint) {
+@media (max-width: $sidebar-nav-mobile-media-width-breakpoint) {
   .sidebar-nav-website .navigation .menu {
-    width: calc(~"100vw" - @sidebar-nav-mobile-media-toggle-vissible-part);
-    max-width: calc(~"100vw" - @sidebar-nav-mobile-media-toggle-vissible-part);
-    margin-left: calc(~"-100vw" - @sidebar-nav-mobile-media-toggle-vissible-part);
+    width: calc(#{"100vw" - $sidebar-nav-mobile-media-toggle-vissible-part});
+    max-width: calc(#{"100vw" - $sidebar-nav-mobile-media-toggle-vissible-part});
+    margin-left: calc(#{"-100vw" - $sidebar-nav-mobile-media-toggle-vissible-part});
   }
 
   .mobile-menu-active.sidebar-nav-website body.sticky-nav:not(.mw-live-edit) .js-sidebar-nav {
-    left: calc(~"100vw" - @sidebar-nav-mobile-media-toggle-vissible-part);
+    left: calc(#{"100vw" - $sidebar-nav-mobile-media-toggle-vissible-part});
   }
 
   .mobile-menu-active.sidebar-nav-website .main {
-    right: calc(~"-100vw +" @sidebar-nav-mobile-media-toggle-vissible-part);
+    right: calc(#{"-100vw +" $sidebar-nav-mobile-media-toggle-vissible-part});
   }
 }
 
-@media (max-width: @media-mobile) {
+@media (max-width: $media-mobile) {
   html:not(.sidebar-nav-website) .navigation .menu {
     padding-bottom: 220px;
   }
@@ -1492,8 +1501,8 @@ body[data-lang="ar"] .dropdown-menu {
   }
 
   .navbar-header ul.socials.header-social-phone li a {
-    color: @dark;
-    background-color: @light;
+    color: $dark;
+    background-color: $light;
   }
 
   .navbar-header ul.header-contacts-list-phone {
@@ -1501,9 +1510,9 @@ body[data-lang="ar"] .dropdown-menu {
   }
 }
 
-@media (max-width: @media-samll-mobile) {
+@media (max-width: $media-samll-mobile) {
   html:not(.sidebar-nav-website) .navigation .menu {
-    width: calc(~"100% - 30px");
+    width: calc(#{"100% - 30px"});
   }
 
   .member-nav .btn-cart,
@@ -1531,7 +1540,7 @@ body[data-lang="ar"] .dropdown-menu {
     right: 0;
     top: 100%;
     bottom: 0;
-    background-color: @mobile-search-overlay-color;
+    background-color: $mobile-search-overlay-color;
     height: 100vh;
     z-index: 0;
     width: 100%;
@@ -1558,7 +1567,8 @@ body[data-lang="ar"] .dropdown-menu {
 /*Secondary menu*/
 .navigation .secondary-menu {
   width: 100%;
-  .mixin-flex-row ();
+  display: flex;
+    flex-wrap: wrap;
   flex: 1;
 }
 
@@ -1576,10 +1586,10 @@ body[data-lang="ar"] .dropdown-menu {
   display: block;
   opacity: 0;
   visibility: hidden;
-  .transition(all, 0.3s, ease);
+  transition: all, 0.3s;
   top: 100%;
   position: absolute;
-  background-color: @primary;
+  background-color: $primary;
 }
 
 .navigation .secondary-menu > li > a {
@@ -1602,12 +1612,12 @@ body[data-lang="ar"] .dropdown-menu {
 }
 
 .navigation .secondary-menu .list > li.mobile-search form {
-  .mixin-flex-row-nowrap();
+  display: flex; flex-wrap: nowrap;
   align-items: center;
 }
 
 .navigation .secondary-menu .list > li.mobile-search {
-  background: @light;
+  background: $light;
 }
 
 /* Mega DropDown Secondary menu in huge resolution */
@@ -1626,26 +1636,27 @@ body[data-lang="ar"] .dropdown-menu {
     }
 }*/
 /* END Mega DropDown Secondary menu in huge resolution */
-@media screen and (min-width: @downMediaSecond) {
+@media screen and (min-width: $downMediaSecond) {
 
   .navigation .secondary-menu .small-navbar .list li a {
-    font-size: @small-navbar-menu-font-size;
+    font-size: $small-navbar-menu-font-size;
   }
 
   .navigation .secondary-menu .list > li:hover > a {
-    color: @header-menu-font-color-on-hover;
-    .transition(all, 0.3s, ease);
+    color: $header-menu-font-color-on-hover;
+    transition: all, 0.3s;
 
   }
 
   .navigation .secondary-menu .list > li > ul li:hover > a {
-    color: @header-dropdown-color-on-hover;
-    background-color: @header-dropdown-back-on-hover;
+    color: $header-dropdown-color-on-hover;
+    background-color: $header-dropdown-back-on-hover;
   }
 
   /*See more icon for secondary menu*/
   .navigation .secondary-menu .collapseNav-initialized {
-    .mixin-flex-row() !important;
+      display: flex;
+      flex-wrap: wrap;
     align-items: center;
   }
 
@@ -1666,42 +1677,48 @@ body[data-lang="ar"] .dropdown-menu {
   /*End See more icon*/
 }
 
-@media screen and (max-width: @downMediaSecond) {
+@media screen and (max-width: $downMediaSecond) {
   .navigation .secondary-menu .sub-menu-more {
     display: none !important;
   }
 
   .mobile-menu-label {
-    .mixin-inline-flex();
+    display: inline-flex;
   }
 
   .extra-toggle {
     width: 34px;
     height: 30px;
     border-radius: 50%;
-    .mixin-flex-center();
-    .mixin-flex-row();
+    display: flex; align-items: center;
+    display: flex;
+    flex-wrap: wrap;
     cursor: pointer;
   }
 
   .navigation .secondary-menu .module-menu > ul {
     margin-top: 20px;
     padding-bottom: 160px;
-    .mixin-flex-column();
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      -ms-flex-direction: column;
+      flex-wrap: wrap;
+      flex-direction: column;
   }
 
   .navigation .secondary-menu {
     position: absolute;
     right: 0;
     left: 0;
-    top: calc(~"-100vh");
+    top: calc(#{"-100vh"});
     margin-left: auto;
     margin-right: auto;
     padding: 0 0 20px 0;
-    background-color: @mobile-second-menu-background-color;
-    min-height: calc(~"100vh");
-    transform-origin: top 0;
-    .transition(all, 0.3s, ease);
+    background-color: $mobile-second-menu-background-color;
+    min-height: 100vh;
+    transform-origin: left top;
+    transition: all, 0.3s;
     max-width: 100%;
     width: 100%;
     z-index: -1;
@@ -1737,13 +1754,13 @@ body[data-lang="ar"] .dropdown-menu {
 
   .navigation .secondary-menu .list > li > ul a,
   .navigation .secondary-menu .list > li > a {
-    color: @mobile-second-menu-font-color;
+    color: $mobile-second-menu-font-color;
     clear: both;
     padding: 10px 30px;
   }
 
   .navigation .secondary-menu .list > li > ul a {
-    color: fade(@mobile-second-menu-font-color, 70%);
+    color: fade($mobile-second-menu-font-color, 70%);
   }
 
   .navigation .secondary-menu .list > li > ul > li a {
@@ -1755,23 +1772,23 @@ body[data-lang="ar"] .dropdown-menu {
   }
 
   .navigation .secondary-menu .list > li a:hover {
-    background-color: @header-dropdown-back-on-hover;
-    color: @mobile-second-menu-font-color;
+    background-color: $header-dropdown-back-on-hover;
+    color: $mobile-second-menu-font-color;
   }
 
   .navigation .secondary-menu .dropdown-menu > .active > a,
   .navigation .secondary-menu .dropdown-menu > .active > a:focus {
-    background-color: @header-dropdown-back-on-hover;
-    color: @mobile-second-menu-font-color;
+    background-color: $header-dropdown-back-on-hover;
+    color: $mobile-second-menu-font-color;
   }
 
   .navigation .secondary-menu .list > li.active-parent > a,
   .navigation .secondary-menu .list > li.active > a {
-    color: @mobile-second-menu-font-active-color;
+    color: $mobile-second-menu-font-active-color;
   }
 
   .navigation .secondary-menu .list > li.active li.active-parent > a {
-    color: @mobile-second-menu-font-color;
+    color: $mobile-second-menu-font-color;
   }
 
   .navigation .secondary-menu .has-sub-menu ul.dropdown-menu {
@@ -1800,7 +1817,7 @@ body[data-lang="ar"] .dropdown-menu {
   }
 }
 
-@media screen and (max-width: @media-mobile) {
+@media screen and (max-width: $media-mobile) {
   .navigation .secondary-menu .container {
     padding-left: 15px;
     padding-right: 15px;
@@ -1822,8 +1839,8 @@ body[data-lang="ar"] .dropdown-menu {
     height: 280px;
     left: 0;
     position: absolute;
-    background: @background;
-    border-top: 2px solid rgba(red(@default), green(@default), blue(@default), 0.1);
+    background: $background;
+    border-top: 2px solid rgba(red($default), green($default), blue($default), 0.1);
     @media screen and (min-width: 992px) and (max-width: 1439px) {
       height: 560px;
     }
@@ -1839,7 +1856,7 @@ body[data-lang="ar"] .dropdown-menu {
     .container:before {
       content: '';
       right: 30px;
-      border: solid rgba(red(@default), green(@default), blue(@default), 0.1);
+      border: solid rgba(red($default), green($default), blue($default), 0.1);
       border-width: 0 2px 2px 0;
       display: inline-block;
       padding: 7px;
@@ -1886,7 +1903,7 @@ body[data-lang="ar"] .dropdown-menu {
     }
   }
 
-  @media screen and (max-width: @media-mobile) {
+  @media screen and (max-width: $media-mobile) {
     .posts-menu {
       height: 100vh;
       position: fixed;
@@ -1917,7 +1934,7 @@ body[data-lang="ar"] .dropdown-menu {
           padding: 15px 0;
           margin-left: 0;
           margin-bottom: 0;
-          border-bottom: 2px solid rgba(red(@default), green(@default), blue(@default), 0.1);
+          border-bottom: 2px solid rgba(red($default), green($default), blue($default), 0.1);
           float: none;
           width: 300px;
 

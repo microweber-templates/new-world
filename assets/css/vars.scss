@@ -95,7 +95,7 @@ $header-menu-font-color-on-sticky: $textDark;
 $header-menu-font-size: 16px;
 $header-menu-text-transform: inherit;
 $header-menu-font-family: $fontFamily;
-$small-navbar-menu-font-size: calc($header-menu-font-size - 2px);
+$small-navbar-menu-font-size: calc(#{$header-menu-font-size "-" 2px});
 
 
 /*Header Dropdown menu*/
@@ -121,7 +121,7 @@ $mobile-second-menu-background-color: $mobile-main-menu-background-color;
 /*Sidebar nav*/
 $sidebar-nav-width: 340px;
 $sidebar-nav-mobile-media-toggle-vissible-part: 64px;
-$sidebar-nav-mobile-media-width-breakpoint: calc($sidebar-nav-width + $sidebar-nav-mobile-media-toggle-vissible-part);
+$sidebar-nav-mobile-media-width-breakpoint: calc(#{$sidebar-nav-width "+" $sidebar-nav-mobile-media-toggle-vissible-part});
 
 /*Header member nav*/
 $member-nav-icons-color: $header-menu-font-color;

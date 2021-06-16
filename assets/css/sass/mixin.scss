@@ -12,7 +12,6 @@
 .mixin-flex-row {
 
     display: flex;
-
     flex-wrap: wrap;
 }
 .flex-row-nowrap,
@@ -103,65 +102,41 @@
 
 
 
-.box-shadow (@x: 0px, @y: 3px, @blur: 5px, @ofset: 0px, @alpha: 0.5,) {
-    -webkit-box-shadow: @x @y @blur @ofset rgba(0, 0, 0, @alpha);
-    -moz-box-shadow: @x @y @blur @ofset rgba(0, 0, 0, @alpha);
-    box-shadow: @x @y @blur @ofset rgba(0, 0, 0, @alpha);
-}
-.transition(@prop: all, @time: 0.3s, @ease:ease-in-out) {
-    -webkit-transition: @prop @time @ease;
-    -moz-transition: @prop @time @ease;
-    -o-transition: @prop @time @ease;
-    -ms-transition: @prop @time @ease;
-    transition: @prop @time @ease;
-}
-.reflect(@length: 50%, @opacity: 0.2){
-    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(@length, transparent), to(rgba(255,255,255,@opacity)));
-}
+
+
+
 
 section:not(.block-style) .has-style,
 section:not(.block-style).has-style{
     border-radius:0;
-    .box-shadow(0px, 0px, 5px, 0px, 0);
-    border: 1px solid @light;
-    background-color: @light;
+
+    border: 1px solid $light;
+    background-color: $light;
 }
 /* Icon Style */
-@icon-size:2rem;
-@icon-container-1: 3rem;
-@icon-container-2: 5rem;
-@icon-container-3: 7rem;
+$icon-size:2rem;
+$icon-container-1: 3rem;
+$icon-container-2: 5rem;
+$icon-container-3: 7rem;
 
-.icon(){
-    .mixin-inline-flex();
-    /*.mixin-flex-center();*/
-    /*    background: transparent;*/
-    border-radius: 100%;
-    padding: 0.1rem;
-    line-height: 1;
-    /* background-clip: content-box;*/
-}
 
 
 
 .icons {
-    .icon();
-    /*.has-style();*/
+    display: inline-flex;
+    padding: 0.1rem;
+    line-height: 1;
     border-radius: 50%;
 }
 
-.icon-size(@width: @icon-container-1, @height: @width, @size:@icon-size){
-    /*  width: @width;
-        height: @height;*/
-    font-size: @size;
-}
+
 .icon-style-1{
-    .icon-size();
+    font-size: $icon-size;
 }
 .icon-style-2  {
-    .icon-size(@icon-container-2, @icon-container-2, @icon-size*1.5);
+     font-size: $icon-size*1.5
 }
 .icon-style-3 {
-    .icon-size(@icon-container-3, @icon-container-3, @icon-size*2);
+    font-size: $icon-size*2
 }
 /* Icon Style */

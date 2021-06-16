@@ -10,18 +10,18 @@
 }
 
 .blog-inner-page ul.socials li a {
-  color: @textDark;
+  color: $textDark;
   background: transparent;
 }
 
 .blog-inner-page ul.socials li a:hover {
-  color: @textDark;
+  color: $textDark;
   background: @default;
 }
 
 .blog-inner-page .heading h1 {
   font-size: @title-lg;
-  color: @textDark;
+  color: $textDark;
   font-weight: 600;
 
   @media screen and (max-width: 1199px) {
@@ -49,7 +49,7 @@
 
 .blog-inner-page .share-label {
   font-size: 18px;
-  color: @textDark;
+  color: $textDark;
   font-weight: bold;
 }
 
@@ -84,7 +84,7 @@
 .blog-inner-page .comments .comment-holder .description,
 .blog-inner-page .comments .comment-holder .description p {
   font-size: 16px;
-  color: @textDark;
+  color: $textDark;
   text-align: center;
 }
 
@@ -117,7 +117,7 @@
 
 .blog-inner-page .reviews .heading h3 {
   font-size: @paragraph-lg;
-  color: @textDark;
+  color: $textDark;
   font-weight: bold;
   padding: 8px 0 25px 0px;
 }
@@ -131,7 +131,7 @@
 .blog-inner-page .reviews .review {
   background: @silver;
   padding: 15px 0;
-  color: @textOnWhite;
+  color: $textOnWhite;
   margin-bottom: 20px;
 }
 
@@ -163,14 +163,14 @@
 }
 
 .blog-inner-page .reviews .review .info h4 {
-  color: @textOnWhite;
+  color: $textOnWhite;
   font-size: 14px;
   font-weight: 700;
   margin: 10px 0 20px 0;
 }
 
 .blog-inner-page .reviews .review .info p {
-  color: @textOnWhite;
+  color: $textOnWhite;
   font-size: 14px;
 }
 
@@ -186,19 +186,19 @@
 
 .blog-inner-page .leave-review .left-side i {
   font-size: 50px;
-  color: @textOnWhite
+  color: $textOnWhite
 }
 
 .blog-inner-page .leave-review .right-side h3 {
   font-size: 24px;
-  color: @textOnWhite;
+  color: $textOnWhite;
   font-weight: bold;
   margin: 12px 0 25px 0;
 }
 
 .blog-inner-page .leave-review .right-side p {
   font-size: 16px;
-  color: @textOnWhite;
+  color: $textOnWhite;
 }
 
 .blog-inner-page .leave-review .form textarea {
@@ -212,7 +212,7 @@
 
 .blog-inner-page .leave-review .form .form-group label {
   font-size: 14px;
-  color: @textOnWhite;
+  color: $textOnWhite;
   line-height: 1.4;
   margin-bottom: 10px;
 }
@@ -222,7 +222,7 @@
   -moz-box-shadow: none;
   box-shadow: none;
   border: 2px solid #ddd;
-  color: @textOnWhite;
+  color: $textOnWhite;
   font-size: 0.857rem;
   padding: 12px 20px;
   margin-bottom: 10px;
@@ -246,7 +246,7 @@
 
 .blog-inner-page .reviews {
   h1, h2, h3, h4, h5, h6, p, span {
-    color: @textOnWhite !important;
+    color: $textOnWhite !important;
   }
 }
 
@@ -284,7 +284,7 @@
   .main-price {
     font-weight: bold;
     .price {
-      color: @primary;
+      color: $primary;
       font-size: @title-sm;
 
       span {
@@ -310,7 +310,7 @@
 
   .mw-price-item-value,
   .mw-price-item-key {
-    color: @textDark;
+    color: $textDark;
     font-size: @paragraph-lg;
     font-weight: bold;
     margin-top: 10px;
@@ -318,31 +318,31 @@
   }
 
   p.labels {
-    color: @textDark;
+    color: $textDark;
     font-size: 14px;
     line-height: 1.8;
   }
 
   p.labels span {
-    color: @textDark;
+    color: $textDark;
   }
 
   .description-short {
     margin-top: 20px;
     h1, h2, h3, h4, h5, h6, span, p {
-      color: @textDark;
+      color: $textDark;
     }
   }
   .description {
     margin-top: 20px;
     h1, h2, h3, h4, h5, h6 {
-      color: @textOnWhite;
+      color: $textOnWhite;
     }
 
     p {
       line-height: 1.5;
       font-size: @paragraph-lg;
-      color: @textOnWhite;
+      color: $textOnWhite;
       text-align: justify;
       margin-bottom: 10px;
     }
@@ -359,7 +359,7 @@
 
   .description .table td {
     font-size: 16px;
-    color: @textDark;
+    color: $textDark;
     font-weight: bold;
   }
 
@@ -385,7 +385,7 @@
   .quantity .plus {
     display: block;
     float: left;
-    background: lighten(@primary, 15%);
+    background: lighten($primary, 15%);
     color: #fff;
     border: 0;
     margin: 0;
@@ -440,7 +440,7 @@
 
   .product-specifications .table-striped th {
     background: transparent;
-    color: @textDark;
+    color: $textDark;
     text-transform: uppercase;
   }
 
@@ -473,28 +473,28 @@
 
   .product-specifications .right-side h3 {
     font-size: 24px;
-    color: @textDark;
+    color: $textDark;
     font-weight: bold;
     margin: 12px 0 25px 0;
   }
 
   .product-specifications .right-side p {
     font-size: 16px;
-    color: @textDark;
+    color: $textDark;
   }
 
   .reviews {
     margin-top: 20px;
 
     h1, h2, h3, h4, h5, h6, span, p {
-      color: @textOnWhite;
+      color: $textOnWhite;
     }
 
   }
 
   .reviews .heading h3 {
     font-size: @paragraph-lg;
-    color: @textOnWhite;
+    color: $textOnWhite;
     font-weight: bold;
     padding: 8px 0 25px 0px;
   }
@@ -508,7 +508,7 @@
   .reviews .review {
     background: @silver;
     padding: 15px 0;
-    color: @textOnWhite;
+    color: $textOnWhite;
     margin-bottom: 20px;
   }
 
@@ -540,14 +540,14 @@
   }
 
   .reviews .review .info h4 {
-    color: @textOnWhite;
+    color: $textOnWhite;
     font-size: 14px;
     font-weight: 700;
     margin: 0px 0 20px 0;
   }
 
   .reviews .review .info p {
-    color: @textOnWhite;
+    color: $textOnWhite;
     font-size: 14px;
   }
 
@@ -568,14 +568,14 @@
 
   .leave-review .right-side h3 {
     font-size: 24px;
-    color: @textOnWhite;
+    color: $textOnWhite;
     font-weight: bold;
     margin: 12px 0 25px 0;
   }
 
   .leave-review .right-side p {
     font-size: 16px;
-    color: @textOnWhite;
+    color: $textOnWhite;
   }
 
   .leave-review .form textarea {
@@ -589,7 +589,7 @@
 
   .leave-review .form .form-group label {
     font-size: 14px;
-    color: @textOnWhite;
+    color: $textOnWhite;
     line-height: 1.4;
     margin-bottom: 10px;
   }
@@ -599,7 +599,7 @@
     -moz-box-shadow: none;
     box-shadow: none;
     border: 2px solid #ddd;
-    color: @textOnWhite;
+    color: $textOnWhite;
     font-size: 0.857rem;
     padding: 12px 20px;
     margin-bottom: 10px;
@@ -741,7 +741,7 @@
       }
 
       a.active {
-        border-color: @primary;
+        border-color: $primary;
         -webkit-box-shadow: 0 0 17px rgba(200, 200, 200, 0.5);
         -moz-box-shadow: 0 0 17px rgba(200, 200, 200, 0.5);
         box-shadow: 0 0 17px rgba(200, 200, 200, 0.5);
@@ -810,7 +810,7 @@
 
 .shop-inner-page .product-gallery .slick-arrow:before {
   font-family: FontAwesome;
-  color: @light;
+  color: $light;
   display: block;
   font-size: 20px;
   text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8);
@@ -846,7 +846,7 @@
 .shop-inner-page .product-info .heading {
   h1 {
     font-size: @title-sm;
-    color: @textDark;
+    color: $textDark;
 
     font-weight: bold;
     font-style: normal;
@@ -876,7 +876,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  border: 10px solid @light;
+  border: 10px solid $light;
   z-index: 50;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
@@ -919,7 +919,7 @@
   left: 0;
   bottom: 10px;
   width: 100%;
-  background-color: @primary;
+  background-color: $primary;
   text-align: center;
   padding: 17px 0px;
   -webkit-transition: all 0.3s ease-out;
@@ -931,7 +931,7 @@
 }
 
 .projects .masonry-gallery .image-holder__descr {
-  background-color: fade(@primary, 80%);
+  background-color: fade($primary, 80%);
   text-align: left;
   padding: 15px 20px;
 }
@@ -947,7 +947,7 @@
 }
 
 .projects .masonry-gallery .image-holder__descr .image-holder__description {
-  color: @light;
+  color: $light;
   font-size: 16px;
   white-space: nowrap;
   overflow: hidden;
@@ -957,7 +957,7 @@
 .masonry-gallery .image-holder__heading {
   font-size: 1.07692rem;
   font-weight: 400;
-  color: @light;
+  color: $light;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
@@ -986,7 +986,7 @@
   display: inline-block;
   font-family: 'FontAwesome';
   font-size: 1.23077rem;
-  color: @dark;
+  color: $dark;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -1265,7 +1265,7 @@
 }
 
 .checkout-modal .js-shopping-cart .products .product:hover {
-  background: @light;
+  background: $light;
 }
 
 .checkout-modal .js-shopping-cart .products .product .action {
@@ -1274,7 +1274,7 @@
 }
 
 .checkout-modal .js-shopping-cart .products .product .action a {
-  color: @primary;
+  color: $primary;
   opacity: 1;
   display: inline-block;
 }
@@ -1444,7 +1444,7 @@
 }
 
 .login-modal .modal-body .form-control {
-  background: @light;
+  background: $light;
   border: 1px solid #c3c3c3;
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
@@ -1485,7 +1485,7 @@
 }
 
 .login-modal .socials-login a {
-  color: @light;
+  color: $light;
   flex: 1;
   padding: 5px 10px;
   font-size: 24px;
@@ -1630,7 +1630,7 @@
 
 .portfolio-inner-page .heading h1 {
   font-size: 36px;
-  color: @dark;
+  color: $dark;
   font-weight: bold;
 }
 
@@ -1641,7 +1641,7 @@
 .portfolio-inner-page .description p {
   line-height: 1.5;
   font-size: 16px;
-  color: @dark;
+  color: $dark;
   text-align: justify;
   margin-bottom: 10px;
 }
@@ -1657,7 +1657,7 @@
 
 .portfolio-inner-page .description .table td {
   font-size: 16px;
-  color: @dark;
+  color: $dark;
   font-weight: bold;
 }
 
@@ -1687,7 +1687,7 @@
 
 .portfolio-inner-page .project-gallery .slick-arrow:before {
   font-family: FontAwesome;
-  color: @light;
+  color: $light;
   display: block;
   font-size: 20px;
   text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8);
@@ -1738,7 +1738,7 @@
 }
 
 .portfolio-projects .project h3 {
-  color: @dark;
+  color: $dark;
   font-weight: bold;
   font-size: 17px;
   margin: 25px 0 15px 0;

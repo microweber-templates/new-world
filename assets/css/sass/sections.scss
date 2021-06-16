@@ -30,7 +30,7 @@
   }
 
   h1, h2, h3, h4, h5, h6, p, p.lead {
-    color: @textOnBackground;
+    color: $textOnBackground;
   }
   .container {
     z-index: 9;
@@ -41,7 +41,7 @@
     height: 100%;
     text-align: right;
 
-    color: @textOnBackground;
+    color: $textOnBackground;
     display: flex;
     flex-flow: column;
     align-self: center;
@@ -52,7 +52,7 @@
     ul li {
       display: block;
       a {
-        color: @textOnBackground;
+        color: $textOnBackground;
         font-size: @title-sm;
         margin: 35px 40px 35px 0;
       }
@@ -86,7 +86,7 @@
   }
 
   h1, h2, h3, h4, h5, h6, p, p.lead {
-    color: @textOnBackground;
+    color: $textOnBackground;
   }
 
   .container {
@@ -98,7 +98,7 @@
     height: 100%;
     text-align: right;
 
-    color: @textOnBackground;
+    color: $textOnBackground;
     display: flex;
     flex-flow: column;
     align-self: center;
@@ -109,7 +109,7 @@
     ul li {
       display: block;
       a {
-        color: @textOnBackground;
+        color: $textOnBackground;
         font-size: @title-sm;
         margin: 35px 40px 35px 0;
       }
@@ -134,10 +134,10 @@
   }
 
   * {
-    color: @textLight;
+    color: $textLight;
   }
 
-  @media screen and (max-width: @media-samll-mobile) {
+  @media screen and (max-width: $media-samll-mobile) {
     .h-100 {
       height: auto;
     }
@@ -152,7 +152,7 @@
   .info-holder {
     padding: 40px 30px;
 
-    @media screen and (max-width: @media-samll-mobile) {
+    @media screen and (max-width: $media-samll-mobile) {
       height: 370px;
     }
   }
@@ -236,11 +236,11 @@
     .stamp {
       margin-left: 0;
       margin-bottom: 30px;
-      color: @textLight;
+      color: $textLight;
       font-size: 35px;
 
       i {
-        color: @textDark;
+        color: $textDark;
       }
 
       @media screen and (max-width: 767px) {
@@ -255,21 +255,21 @@
     &.dark {
       background: @default;
       h1, h2, h3, h4, p {
-        color: @textLight;
+        color: $textLight;
       }
 
       i {
-        color: @textLight;
+        color: $textLight;
       }
     }
     &:hover {
-      background: @primary;
+      background: $primary;
       h1, h2, h3, h4, p {
-        color: @textLight;
+        color: $textLight;
       }
 
       i {
-        color: @textLight;
+        color: $textLight;
       }
     }
   }
@@ -291,7 +291,7 @@
     .icon {
       margin-bottom: 35px;
       font-size: 65px;
-      color: @primary;
+      color: $primary;
       display: block;
     }
   }
@@ -423,7 +423,7 @@
 .section-11 {
   i.fab {
     font-size: 36px;
-    color: @primary;
+    color: $primary;
     margin-bottom: 30px;
   }
 
@@ -450,14 +450,14 @@
     .icon {
       margin-bottom: 20px;
       font-size: 55px;
-      color: @primary;
+      color: $primary;
       display: block;
     }
   }
 
   h6 {
     font-size: @title-md;
-    color: @textDark;
+    color: $textDark;
     margin-bottom: 10px;
     font-weight: 500;
     font-style: normal;
@@ -467,7 +467,7 @@
   }
 
   p {
-    color: @textDark;
+    color: $textDark;
   }
 
   .button-holder:before {
@@ -508,14 +508,14 @@
     .icon, .mw-icon {
       margin-bottom: 30px;
       font-size: 55px;
-      color: @textOnBackground;
+      color: $textOnBackground;
       display: block;
     }
   }
 
   h6 {
     font-size: 30px;
-    color: @textOnBackground;
+    color: $textOnBackground;
     margin-bottom: 5px;
     font-weight: 500;
     font-style: normal;
@@ -525,7 +525,7 @@
   }
 
   p {
-    color: @textOnBackground;
+    color: $textOnBackground;
   }
 
   .button-holder:before {
@@ -572,7 +572,7 @@
 
     i {
       font-size: 38px;
-      color: @textLight;
+      color: $textLight;
       opacity: 0.5;
       margin-top: 5px;
     }
@@ -622,7 +622,7 @@
     z-index: 9;
     background: @background;
     padding: 50px 70px;
-    border: 1px solid rgba(red(@textDark), green(@textDark), blue(@textDark), 0.3);
+    border: 1px solid rgba(red($textDark), green($textDark), blue($textDark), 0.3);
   }
 
   .flexbox-container {
@@ -639,13 +639,13 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    color: @textDark;
+    color: $textDark;
   }
   p,
   span {
     font-size: 16px;
     line-height: 1.5;
-    color: @textDark;
+    color: $textDark;
   }
 
   p {
@@ -700,7 +700,7 @@
     z-index: 9;
     background: @background;
     padding: 50px 70px;
-    border: 1px solid rgba(red(@textDark), green(@textDark), blue(@textDark), 0.3);
+    border: 1px solid rgba(red($textDark), green($textDark), blue($textDark), 0.3);
   }
 
   .flexbox-container {
@@ -718,14 +718,14 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    color: @textDark;
+    color: $textDark;
   }
 
   p,
   span {
     font-size: 16px;
     line-height: 1.5;
-    color: @textDark;
+    color: $textDark;
   }
 
   p {
@@ -794,7 +794,7 @@
   }
 
   .text-white h1, .text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6, .text-white p {
-    color: @textOnBackground !important;
+    color: $textOnBackground !important;
   }
 }
 
@@ -840,14 +840,14 @@
     padding-right: 50px;
 
     h1, h2, h3, h4, h5, h6, p {
-      color: @textOnBackground !important;
+      color: $textOnBackground !important;
     }
   }
 
   blockquote:before,
   blockquote,
   blockquote .testimonial .name {
-    color: @textOnBackground;
+    color: $textOnBackground;
     text-align: left;
   }
 
@@ -856,7 +856,7 @@
     height: 100%;
     text-align: right;
 
-    color: @textOnBackground;
+    color: $textOnBackground;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -865,7 +865,7 @@
     ul li {
       display: block;
       a {
-        color: @textOnBackground;
+        color: $textOnBackground;
         font-size: @title-sm;
         margin: 35px 40px 35px 0;
       }
@@ -977,7 +977,7 @@
   }
 
   .text-white h1, .text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6, .text-white p {
-    color: @textOnBackground !important;
+    color: $textOnBackground !important;
   }
 
   .background-image-holder {
@@ -1001,13 +1001,13 @@
   }
 
   .icon-holder {
-    color: @textOnBackground;
+    color: $textOnBackground;
     margin-top: 10px;
     margin-bottom: 20px;
 
     i, span {
       font-size: 45px;
-      color: @textOnBackground;
+      color: $textOnBackground;
       display: block;
     }
   }
@@ -1089,7 +1089,7 @@
 .section-21 {
   .twitter-holder {
     padding: 30px;
-    background: @primary;
+    background: $primary;
       .module{
           max-width: 100%;
       }
@@ -1116,9 +1116,9 @@
 
     &:hover {
       cursor: pointer;
-      background: @primary;
+      background: $primary;
       * {
-        color: @textLight;
+        color: $textLight;
       }
     }
 
@@ -1155,7 +1155,7 @@
 
       a {
         background: transparent;
-        color: @textDark;
+        color: $textDark;
         font-size: 20px;
         height: 29px;
         width: 29px;
@@ -1196,11 +1196,11 @@
     .stamp {
       margin: 0 auto;
       margin-bottom: 10px;
-      color: @textLight;
+      color: $textLight;
       font-size: 55px;
 
       i {
-        color: @primary;
+        color: $primary;
       }
 
       @media screen and (max-width: 767px) {
@@ -1214,21 +1214,21 @@
     &.dark {
       background: @default;
       h1, h2, h3, h4, p {
-        color: @textLight;
+        color: $textLight;
       }
 
       i {
-        color: @textLight;
+        color: $textLight;
       }
     }
     &:hover {
-      background: @primary;
+      background: $primary;
       h1, h2, h3, h4, p {
-        color: @textLight;
+        color: $textLight;
       }
 
       i {
-        color: @textLight;
+        color: $textLight;
       }
     }
   }
@@ -1253,7 +1253,7 @@
       position: absolute;
       left: 0;
       top: 0;
-      background: rgba(red(@primary), green(@primary), blue(@primary), .8);
+      background: rgba(red($primary), green($primary), blue($primary), .8);
       content: '';
       width: 100%;
       height: 100%;
@@ -1263,13 +1263,13 @@
   }
 
   .icon-holder {
-    color: @textLight;
+    color: $textLight;
     margin-top: 10px;
     margin-bottom: 20px;
 
     i, span {
       font-size: 45px;
-      color: @textLight;
+      color: $textLight;
       display: block;
     }
   }
@@ -1324,7 +1324,7 @@
     font-size: 24px;
   }
   ul.socials li a:hover {
-    color: rgba(red(@textLight), green(@textLight), blue(@textLight), 0.5)
+    color: rgba(red($textLight), green($textLight), blue($textLight), 0.5)
   }
 
   .socials-holder {
@@ -1405,18 +1405,18 @@
     .icon {
       margin-bottom: 15px;
       font-size: 55px;
-      color: @primary;
+      color: $primary;
       display: block;
     }
 
     &:hover {
-      background-color: @primary;
+      background-color: $primary;
       * {
-        color: @textLight;
+        color: $textLight;
       }
       .mw-icon,
       .icon {
-        color: @textLight;
+        color: $textLight;
       }
     }
   }
@@ -1453,7 +1453,7 @@
   }
 
   h1, h2, h3, h4, h5, h6, p, p.lead {
-    color: @textOnBackground;
+    color: $textOnBackground;
   }
   .container {
     z-index: 9;
@@ -1464,7 +1464,7 @@
     height: 100%;
     text-align: right;
 
-    color: @textOnBackground;
+    color: $textOnBackground;
     display: flex;
     flex-flow: column;
     align-self: center;
@@ -1475,7 +1475,7 @@
     ul li {
       display: block;
       a {
-        color: @textOnBackground;
+        color: $textOnBackground;
         font-size: @title-sm;
         margin: 35px 40px 35px 0;
       }

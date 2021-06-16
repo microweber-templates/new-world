@@ -3,26 +3,28 @@
 *****************************/
 
 /* Background */
-$background: #fff;
+$background: #ffffff;
 
 /* Font Size and Family */
-$fontFamily: 'Lato', sans-serif;
+$fontFamily: 'Jost', sans-serif;
 
-$bodyFontSize: 16px;
+$bodyFontSize: 18px;
 
-$title-xl: 50px;
-$title-lg: 46px;
-$title-md: 36px;
+$title-xl: 36px;
+$title-lg: 32px;
+$title-md: 28px;
 $title-sm: 24px;
-$title-xs: 18px;
+$title-xs: 22px;
+$title-xxs: 20px;
 
 $paragraph-xl: 18px;
 $paragraph-lg: 16px;
 $paragraph-md: 14px;
 $paragraph-sm: 12px;
+$paragraph-color: #707070;
 
 /* Colors */
-$light: #fff;
+$light: #ffffff;
 $textLight: #f4f4f4;
 $textLightHover: lighten($textLight, 20%);
 
@@ -31,7 +33,7 @@ $textDark: #212121;
 $textDarkHover: lighten($textDark, 20%);
 
 $textOnWhite: #212121;
-$textOnBackground: #fff;
+$textOnBackground: #ffffff;
 
 $default: $dark;
 $defaultHover: lighten($default, 20%);
@@ -45,6 +47,7 @@ $secondaryHover: lighten($secondary, 20%);
 
 $grey: #bfbfbf;
 $silver: #f3f3f3;
+$white: #ffffff;
 
 /* Basic Meida Queries */
 $up-media-desktop: 1366px;
@@ -67,6 +70,8 @@ $borderRadiusInputs: 3px;
 $borderRadiusButtons: 3px;
 
 /*Colors for color mixer*/
+
+
 $colors: ("default":  $default, "secondary": $secondary, "primary": $primary, "dark": $dark, "light": $light, "grey": $grey );
 
 /****************************
@@ -90,7 +95,7 @@ $header-menu-font-color-on-sticky: $textDark;
 $header-menu-font-size: 16px;
 $header-menu-text-transform: inherit;
 $header-menu-font-family: $fontFamily;
-$small-navbar-menu-font-size: #{$header-menu-font-size - 2px};
+$small-navbar-menu-font-size: calc(#{$header-menu-font-size "-" 2px});
 
 
 /*Header Dropdown menu*/
@@ -116,7 +121,7 @@ $mobile-second-menu-background-color: $mobile-main-menu-background-color;
 /*Sidebar nav*/
 $sidebar-nav-width: 340px;
 $sidebar-nav-mobile-media-toggle-vissible-part: 64px;
-$sidebar-nav-mobile-media-width-breakpoint: #{$sidebar-nav-width + $sidebar-nav-mobile-media-toggle-vissible-part};
+$sidebar-nav-mobile-media-width-breakpoint: calc(#{$sidebar-nav-width "+" $sidebar-nav-mobile-media-toggle-vissible-part});
 
 /*Header member nav*/
 $member-nav-icons-color: $header-menu-font-color;

@@ -105,7 +105,7 @@ if(isset($post['updated_at'])){
                         ?>
                     </div>
 
-                    <div class="text-right m-b-20">
+                    <div class="text-end m-b-20">
                         <h6 class="text-dark"><?php echo date('d M Y', strtotime($post_updated_at)); ?></h6>
                     </div>
 
@@ -121,8 +121,8 @@ if(isset($post['updated_at'])){
                                 <?php endif; ?>
                             </div>
                             <div class="col-sm-8">
-                                <module type="sharer" id="post-bottom-sharer" template="skin-1" class="float-right" style="xwidth: calc(100% - 45px);"/>
-                                <div class="float-right">Share</div>
+                                <module type="sharer" id="post-bottom-sharer" template="skin-1" class="float-end" style="xwidth: calc(100% - 45px);"/>
+                                <div class="float-end">Share</div>
                             </div>
                         </div>
                     </div>

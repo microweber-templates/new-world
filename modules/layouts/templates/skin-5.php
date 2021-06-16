@@ -29,7 +29,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
         <div class="row">
             <div class="col-xl-10 mx-auto">
                 <div class="row m-0">
-                    <div class="col-12 col-md-6 bg-primary text-left cloneable">
+                    <div class="col-12 col-md-6 bg-primary text-start cloneable">
                         <div class="allow-drop padding-holder d-flex flex-column">
                             <h2>Meet us on the following events</h2>
                             <br/>

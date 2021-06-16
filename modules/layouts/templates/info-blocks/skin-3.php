@@ -29,7 +29,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             <div class="col-xl-10 mx-auto">
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="text-center text-lg-left">
+                        <div class="text-center text-lg-start">
                             <div class="m-b-20">
                                 <img src="<?php print template_url(); ?>assets/img/img-5.png" alt=""/>
                             </div>
@@ -43,7 +43,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="text-center text-lg-left">
+                        <div class="text-center text-lg-start">
                             <div class="m-b-20">
                                 <img src="<?php print template_url(); ?>assets/img/img-6.png" alt=""/>
                             </div>

@@ -28,7 +28,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
         <div class="container align-self-centerx">
             <div class="row">
                 <div class="col-12 col-xl-12 mx-auto">
-                    <div class="row text-center text-md-left">
+                    <div class="row text-center text-md-start">
                         <div class="icon-holder col-12 col-sm-6 mx-auto col-md-3 cloneable allow-drop">
                             <i class="icon mw-micon-solid-Like safe-element"></i>
                             <h3>It Is Awesome!</h3>

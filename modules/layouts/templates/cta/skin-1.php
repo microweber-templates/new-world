@@ -36,7 +36,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                         </div>
                     </div>
 
-                    <div class="col-sm-5 col-md-4 text-sm-right">
+                    <div class="col-sm-5 col-md-4 text-sm-end">
                         <module type="btn" template="bootstrap" text="Call To Action"/>
                     </div>
                 </div>

@@ -27,12 +27,12 @@
         </div>
 
         <div class="row">
-            <div class="col-12 col-md-6 text-left">
+            <div class="col-12 col-md-6 text-start">
                 <?php if (get_option('disable_captcha', $params['id']) != 'y'): ?>
                     <module type="captcha"/>
                 <?php endif; ?>
             </div>
-            <div class="col-12 col-md-6 text-right">
+            <div class="col-12 col-md-6 text-end">
                 <module type="btn" template="bootstrap" button_action="submit" button_style="btn-primary" text="Send message"/>
             </div>
         </div>

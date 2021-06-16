@@ -36,7 +36,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             </div>
                         </div>
 
-                        <div class="col-xl-5 info-holder text-left">
+                        <div class="col-xl-5 info-holder text-start">
                             <div class="px-xl-4 allow-drop">
                                 <h2 class="m-b-30">Watch Our Video Here</h2>
                                 <h3 class="m-b-30">Learn more about the company</h3>

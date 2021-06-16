@@ -87,7 +87,7 @@
 
             <!-- Blockquotes -->
             <div class="row p-40">
-                <div class="col-lg-4 mx-auto text-left">
+                <div class="col-lg-4 mx-auto text-start">
                     <?php element_display('blockquote.php'); ?>
                 </div>
 
@@ -98,7 +98,7 @@
 
             <!-- Buttons -->
             <div class="row p-40 bg-silver">
-                <div class="col-lg-4 mx-auto text-left">
+                <div class="col-lg-4 mx-auto text-start">
                     <div class="button-1">
                         <a href="#"><?php _lang("LARGE BUTTON", "templates/new-world"); ?></a>
                         <div class="mask"></div>
@@ -120,7 +120,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 mx-auto text-left">
+                <div class="col-lg-4 mx-auto text-start">
                     <div class="button-1 button-md">
                         <a href="#"><?php _lang("MEDIUM BUTTON", "templates/new-world"); ?></a>
                         <div class="mask"></div>
@@ -144,7 +144,7 @@
             </div>
 
             <div class="row bg-default m-t-40 p-40">
-                <div class="col-lg-4 mx-auto text-left">
+                <div class="col-lg-4 mx-auto text-start">
                     <a href="#" class="button-4"><span><?php _lang("White stroke", "templates/new-world"); ?></span></a>
 
                     <br/>
@@ -158,7 +158,7 @@
                     <div class="button-6"><a href="#"><?php _lang("Large button with arrow", "templates/new-world"); ?></a></div>
                 </div>
 
-                <div class="col-lg-4 mx-auto text-left">
+                <div class="col-lg-4 mx-auto text-start">
 
                     <a href="#" class="button-4 button-md"><span><?php _lang("White stroke", "templates/new-world"); ?></span></a>
 
@@ -175,15 +175,15 @@
             </div>
 
             <div class="row bg-default m-b-40 p-40">
-                <div class="col-lg-2 mx-auto text-left">
+                <div class="col-lg-2 mx-auto text-start">
                     <a href="#" class="button-7"><span><?php _lang("Read more", "templates/new-world"); ?></span></a>
                 </div>
 
-                <div class="col-lg-2 mx-auto text-left">
+                <div class="col-lg-2 mx-auto text-start">
                     <a href="#" class="button-8"><span><?php _lang("Read more", "templates/new-world"); ?></span></a>
                 </div>
 
-                <div class="col-lg-2 mx-auto text-left">
+                <div class="col-lg-2 mx-auto text-start">
                     <a href="#" class="button-8 button-red"><span><?php _lang("Read more", "templates/new-world"); ?></span></a>
                 </div>
             </div>

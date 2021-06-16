@@ -89,7 +89,7 @@ if (!isset($tn[1])) {
                     <div class="m-t-20">
                         <?php if ($show_fields == false or in_array('title', $show_fields)): ?>
                             <a href="<?php print $item['link'] ?>">
-                                <div class="heading-holder text-md-left text-center">
+                                <div class="heading-holder text-md-start text-center">
                                     <h5><?php print $item['title'] ?></h5>
                                 </div>
                             </a>

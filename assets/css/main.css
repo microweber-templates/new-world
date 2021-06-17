@@ -13719,8 +13719,8 @@ html:not(.mobile-menu-active) .header_style_7 .member-nav .dropdown-toggle > spa
       height: 29px;
       width: 29px; }
 .section-22 .socials-holder {
-  right: 30px;
-  bottom: 47px;
+  right: 180px;
+  bottom: 67px;
   position: absolute; }
 
 /* *******************************************
@@ -21077,8 +21077,8 @@ footer ul.socials {
       height: 29px;
       width: 29px; }
 .section-22 .socials-holder {
-  right: 30px;
-  bottom: 47px;
+  right: 180px;
+  bottom: 67px;
   position: absolute; }
 
 /* *******************************************
@@ -24390,5 +24390,8 @@ i.checkout-v2-remove-icon {
 
 .mw-active-tag-skin-1 {
   text-decoration: underline; }
+
+.form-group {
+  margin-bottom: 1rem; }
 
 /*# sourceMappingURL=main.css.map */

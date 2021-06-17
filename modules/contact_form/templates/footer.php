@@ -31,7 +31,7 @@
         </div>
 
         <div class="col-12 col-sm-3 p-0">
-            <button class="btn btn-primary btn-block text-center" type="submit" style="padding: 7px 0 !important;"><?php _e('Go'); ?></button>
+            <button class="btn btn-primary btn-block text-center" type="submit" style="padding: 7px 12px !important;"><?php _e('Go'); ?></button>
         </div>
     </div>
 

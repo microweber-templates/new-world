@@ -23,7 +23,7 @@ description: Default
 
         <div class="col-12 col-sm-3 p-0">
             <div class="form-group">
-                <button class="btn btn-primary btn-block text-center" type="submit" style="padding: 7px 0 !important;"><i class="fas fa-arrow-right m-0 float-none"></i></button>
+                <button class="btn btn-primary btn-block text-center" type="submit" style="padding: 7px 12px !important;"><i class="fas fa-arrow-right m-0 float-none"></i></button>
             </div>
         </div>
     </div>

@@ -18060,6 +18060,9 @@ section:not(.block-style).has-style {
 ul.socials.center {
   text-align: center; }
 
+a {
+  text-decoration: none; }
+
 ul.socials {
   margin-top: 20px; }
   ul.socials li {

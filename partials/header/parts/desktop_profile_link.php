@@ -15,7 +15,7 @@
         });
     </script>
     <li class="dropdown btn-member ms-4">
-        <a href="#" class="dropdown-toggle btn btn-primary" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle-o d-none"></i><?php if (user_id()): ?><?php print user_name(); ?><?php else: ?><?php _e('Log in'); ?><?php endif; ?></a>
+        <a href="#" class="dropdown-toggle btn btn-primary" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle-o d-none"></i><?php if (user_id()): ?><?php print user_name(); ?><?php else: ?><?php _e('Log in'); ?><?php endif; ?></a>
         <ul class="dropdown-menu">
             <?php if (user_id()): ?>
                 <li><a href="#" data-toggle="modal" data-target="#loginModal"><?php _lang("Profile", "templates/new-world"); ?></a></li>

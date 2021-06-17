@@ -16,7 +16,7 @@
     </script>
     <ul class="list">
         <li class="mobile-profile">
-            <a href="#" class="dropdown-toggle opacity-8" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><i class="fa fa-user-circle-o"></i> <span><?php _lang("Hi", "templates/new-world"); ?>,<?php if (user_id()): ?> <?php print user_name(); ?> <?php else: ?> Guest <?php endif; ?> <span class="caret"></span></span></a>
+            <a href="#" class="dropdown-toggle opacity-8" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><i class="fa fa-user-circle-o"></i> <span><?php _lang("Hi", "templates/new-world"); ?>,<?php if (user_id()): ?> <?php print user_name(); ?> <?php else: ?> Guest <?php endif; ?> <span class="caret"></span></span></a>
             <ul class="dropdown-menu">
                 <?php if (user_id()): ?>
                     <li><a href="#" data-toggle="modal" data-target="#loginModal"><?php _lang("Profile", "templates/new-world"); ?></a></li>

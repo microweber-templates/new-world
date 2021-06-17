@@ -485,6 +485,7 @@ html:not(.mobile-menu-active) {
           color: $mobile-main-menu-font-color;
         }
 
+
         .show > .dropdown-menu {
           display: block;
           position: relative;
@@ -492,6 +493,7 @@ html:not(.mobile-menu-active) {
           margin: 0 auto;
           max-width: 100%;
           margin-top: 0;
+
         }
 
         .list .dropdown.show {

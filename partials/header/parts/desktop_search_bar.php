@@ -1,6 +1,6 @@
 <?php if ($search_bar == 'true'): ?>
     <li class="search dropdown ms-4">
-        <button class="btn-search dropdown-toggle" type="button" id="dropdown_search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn-search dropdown-toggle" type="button" id="dropdown_search" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-search"></i>
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdown_search">

@@ -36,7 +36,10 @@ const customWatch = () => {
 
 const custom = async (prod) => {
     return new Promise(async resolve => {
-
+if(!config.custom){
+    resolve()
+    return;
+}
         config.custom.forEach(async a => {
             const files = a.input;
             a.cssMode = a.cssMode || 'less';
@@ -89,6 +92,10 @@ const tplJS = async (prod) => {
 const tplCSS = async (prod) => {
     return new Promise(resolve => {
     const files = config.css;
+    if(!files) {
+        resolve()
+        return;
+    }
         let stream = gulp.src(files);
         // stream = stream.pipe(rebaseUrls())
         if(!prod) {

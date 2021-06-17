@@ -39,6 +39,6 @@ module.exports = {
     source,
     target,
     js: JSFiles,
-    css: CSSFiles,
-    custom
+    // css: CSSFiles,
+    // custom
 };

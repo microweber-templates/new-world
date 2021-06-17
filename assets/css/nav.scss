@@ -661,10 +661,12 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
   z-index: 10;
 }
 
-.show > .dropdown-menu {
+.show > .dropdown-menu,
+.show + .dropdown-menu{
   opacity: 1;
   visibility: visible;
 }
+
 
 .dropdown-menu > li > a:focus {
   background-color: transparent;
@@ -761,7 +763,7 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
   }
 
   .dropdown-menu {
-    right: 0;
+    right: 0 !important;
     left: auto !important;
     transform: unset !important;
     margin-top: 50px !important;

@@ -905,11 +905,10 @@ $(document).on("click", ".menu .module-menu .has-sub-menu > a", function (e) {
 $(".menu .mobile-profile.has-sub-menu > a").on("click", function (e) {
     var parent = $(this).parent();
     var ul = parent.children('ul');
-    console.log($('.mobile-menu-active').length > 0);
     if (ul.length === 1 && $('.mobile-menu-active').length > 0) {
         e.preventDefault();
         ul.slideToggle(function () {
-            if (this.style.display == 'none') {
+            if (this.style.display === 'none') {
                 this.style.display = '';
             }
         });
@@ -995,6 +994,10 @@ $(document).ready(function () {
             // e.preventDefault();
         })
     }
+    var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+    var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+        return new bootstrap.Dropdown(dropdownToggleEl)
+    })
 });
 
 $(".dropdown.has-sub-menu").on("click", function (e) {

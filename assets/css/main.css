@@ -9955,7 +9955,8 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
 .navigation .list > li:hover {
   z-index: 10; }
 
-.show > .dropdown-menu {
+.show > .dropdown-menu,
+.show + .dropdown-menu {
   opacity: 1;
   visibility: visible; }
 
@@ -10036,7 +10037,7 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
     .member-nav li.dropdown a {
       position: relative; }
   .member-nav .dropdown-menu {
-    right: 0;
+    right: 0 !important;
     left: auto !important;
     transform: unset !important;
     margin-top: 50px !important; }
@@ -16174,7 +16175,8 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
 .navigation .list > li:hover {
   z-index: 10; }
 
-.show > .dropdown-menu {
+.show > .dropdown-menu,
+.show + .dropdown-menu {
   opacity: 1;
   visibility: visible; }
 
@@ -16255,7 +16257,7 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
     .member-nav li.dropdown a {
       position: relative; }
   .member-nav .dropdown-menu {
-    right: 0;
+    right: 0 !important;
     left: auto !important;
     transform: unset !important;
     margin-top: 50px !important; }
@@ -24390,5 +24392,3 @@ i.checkout-v2-remove-icon {
 
 .mw-active-tag-skin-1 {
   text-decoration: underline; }
-
-/*# sourceMappingURL=main.css.map */

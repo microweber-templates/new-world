@@ -1,9 +1,10 @@
+<?php $rand = uniqid(); ?>
+
 <script>mw.moduleCSS("<?php print modules_url(); ?>users/users_modules.css")</script>
 
-
-<?php if (is_logged() == false): ?>
+<?php if (is_logged() == false): ?> 
     <div class="iq-works-box text-start m-40 boots-form">
-        <div class="box-static box-border-top padding-30" id="form-holder{rand}">
+        <div class="box-static box-border-top padding-30" id="form-holder<?php echo $rand;?>">
             <div class="box-title margin-bottom-20">
                 <h5 class="size-20">
                     <?php if (!isset($form_title) or $form_title == false): ?>
@@ -16,7 +17,7 @@
 
             <div class="alert alert-mini alert-danger margin-bottom-10" style="margin: 0;display: none;"></div>
             <br/>
-            <form method="post" id="user_forgot_password_form{rand}" action="#" autocomplete="off">
+            <form method="post" id="user_forgot_password_form<?php echo $rand;?>" action="#" autocomplete="off">
                 <div class="clearfix">
                     <!-- Email -->
                     <div class="form-group">

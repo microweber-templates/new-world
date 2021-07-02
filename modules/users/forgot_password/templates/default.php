@@ -2,7 +2,7 @@
 
 <script>mw.moduleCSS("<?php print modules_url(); ?>users/users_modules.css")</script>
 
-<?php if (is_logged() == false): ?> 
+<?php if (is_logged() == false): ?>
     <div class="iq-works-box text-start m-40 boots-form">
         <div class="box-static box-border-top padding-30" id="form-holder<?php echo $rand;?>">
             <div class="box-title margin-bottom-20">

@@ -24392,3 +24392,8 @@ i.checkout-v2-remove-icon {
 
 .mw-active-tag-skin-1 {
   text-decoration: underline; }
+
+select.form-control {
+  appearance: auto; }
+
+/*# sourceMappingURL=main.css.map */

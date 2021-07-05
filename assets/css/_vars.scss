@@ -1,0 +1,330 @@
+
+
+
+
+
+/****************************
+          GENERAL
+*****************************/
+
+
+// Color system
+
+// scss-docs-start gray-color-variables
+$white:    $light !default;
+$gray-100: #f8f9fa !default;
+$background: #ffffff !default;
+
+
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    $dark !default;
+// scss-docs-end gray-color-variables
+
+// fusv-disable
+// scss-docs-start gray-colors-map
+$grays: (
+        "100": $gray-100,
+        "200": $gray-200,
+        "300": $gray-300,
+        "400": $gray-400,
+        "500": $gray-500,
+        "600": $gray-600,
+        "700": $gray-700,
+        "800": $gray-800,
+        "900": $gray-900
+) !default;
+// scss-docs-end gray-colors-map
+// fusv-enable
+
+// scss-docs-start color-variables
+$blue:    #0d6efd !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #d63384 !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #198754 !default;
+$teal:    #20c997 !default;
+$cyan:    #0dcaf0 !default;
+
+
+// scss-docs-end color-variables
+
+// scss-docs-start colors-map
+$colors: (
+        "blue":       $blue,
+        "indigo":     $indigo,
+        "purple":     $purple,
+        "pink":       $pink,
+        "red":        $red,
+        "orange":     $orange,
+        "yellow":     $yellow,
+        "green":      $green,
+        "teal":       $teal,
+        "cyan":       $cyan,
+        "white":      $white,
+        "gray":       $gray-600,
+        "gray-dark":  $gray-800
+) !default;
+// scss-docs-end colors-map
+
+// scss-docs-start theme-color-variables
+// $primary:       $blue !default;
+//$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-900 !default;
+$body-bg:         $background !default;
+
+
+
+$body-bg:                   $white !default;
+$body-color:                $textDark !default;
+$body-text-align:           null !default;
+
+
+// scss-docs-end theme-color-variables
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Font Size and Family */
+$fontFamily: 'Lato', sans-serif;
+
+$bodyFontSize: 16px;
+
+$title-xl: 50px;
+$title-lg: 46px;
+$title-md: 36px;
+$title-sm: 24px;
+$title-xs: 18px;
+
+$paragraph-xl: 18px;
+$paragraph-lg: 16px;
+$paragraph-md: 14px;
+$paragraph-sm: 12px;
+
+/* Colors */
+$light: #fff;
+$textLight: #f4f4f4;
+$textLightHover: lighten($textLight, 20%);
+
+$dark: #212121;
+$textDark: #212121;
+$textDarkHover: lighten($textDark, 20%);
+
+$textOnWhite: #212121;
+$textOnBackground: #fff;
+
+$default: $dark;
+$defaultHover: lighten($default, 20%);
+
+$primary: #0044de;
+$primaryHover: lighten($primary, 20%);
+
+$secondary: #6aabcf;
+$secondaryHover: lighten($secondary, 20%);
+
+
+$grey: #bfbfbf;
+$silver: #f3f3f3;
+
+/* Basic Meida Queries */
+$up-media-desktop: 1366px;
+$media-desktop: 1365px;
+$up-media-laptop: 1200px;
+$media-laptop: 1199px;
+$up-media-tablet: 992px;
+$media-tablet: 991px; //col-sm to col-md
+$up-media-mobile: 768px;
+$media-mobile: 767px;
+$up-media-samll-mobile: 576px;
+$media-samll-mobile: 575px; //col to col-sm
+$media-end: 320px;
+
+/* Elements */
+$hr: '../img/hr.svg';
+
+
+
+/* Background */
+$background: $light;
+
+
+/* Radiuses */
+$borderRadiusInputs: 3px;
+$borderRadiusButtons: 3px;
+
+/*Colors for color mixer*/
+$colors: ("default":  $default, "secondary": $secondary, "primary": $primary, "dark": $dark, "light": $light, "grey": $grey );
+
+/****************************
+           HEADER
+*****************************/
+$header-background-color: darken($primary, 0%);
+
+/*When to open Main Menu Burger*/
+$burgerOpenMedia: 1200px;
+$downMedia: 1199px;
+
+/*When to open Second Menu Burger*/
+$burgerOpenMediaSecond: 1200px;
+$downMediaSecond: 1199px;
+
+/*Header Menu Navigation*/
+$header-menu-font-weight: 600;
+$header-menu-font-color: $textOnBackground;
+$header-menu-font-color-on-hover: $primary;
+$header-menu-font-color-on-sticky: $textDark;
+$header-menu-font-size: 16px;
+$header-menu-text-transform: inherit;
+$header-menu-font-family: $fontFamily;
+$small-navbar-menu-font-size: #{$header-menu-font-size - 2px};
+
+
+/*Header Dropdown menu*/
+$header-dropdown-color: $textLight;
+$header-dropdown-color-on-hover: fade($header-dropdown-color, 80%);
+$header-dropdown-back-on-hover: fade($textLight, 3%);
+$header-dropdown-back-color: $textDark;
+$header-dropdown-border-color: fade($textLight, 10%);
+
+/*Mobile Main Menu Navigation*/
+$mobile-main-menu-font-color: $textDark;
+$mobile-main-menu-font-active-color: $header-menu-font-color-on-hover;
+$mobile-main-menu-background-color: darken($textLight, 0%);
+$mobile-main-menu-overlay-color: fade($textDark, 50%);
+$mobile-search-overlay-color: fade($textLight, 50%);
+$mobile-toggle-inside-menu-color: $textDark;
+
+/*Mobile Main Menu Navigation*/
+$mobile-second-menu-font-color: $mobile-main-menu-font-color;
+$mobile-second-menu-font-active-color: $mobile-main-menu-font-active-color;
+$mobile-second-menu-background-color: $mobile-main-menu-background-color;
+
+/*Sidebar nav*/
+$sidebar-nav-width: 340px;
+$sidebar-nav-mobile-media-toggle-vissible-part: 64px;
+$sidebar-nav-mobile-media-width-breakpoint: #{$sidebar-nav-width + $sidebar-nav-mobile-media-toggle-vissible-part};
+
+/*Header member nav*/
+$member-nav-icons-color: $header-menu-font-color;
+$shopping-basket-label-back-color: $primary;
+$shopping-basket-label-text-color: $textLight;
+
+/*Header burger*/
+$burger-color: $header-menu-font-color;
+
+/*Header social*/
+$header-social-icons-color: $header-menu-font-color;
+$header-social-icons-back-color: transparent;
+
+/*Logo on Header*/
+$logo-space: 10px;
+$logo-mobile-space: 15px;
+$logo-height-container: auto;
+$logo-max-height: 100px;
+$logo-max-width: 100% !important;
+$mobile-logo-height-container: 36px;
+$mobile-logo-max-height: 100%;
+
+/*Social icons General*/
+$social-icons-width: 2.4rem;
+$social-icons-height: 2.4rem;
+$social-icons-font-size: 1.2rem;
+$social-icons-color: $dark;
+$social-icons-back-color: $textLight;
+$social-icons-color-on-hover: $social-icons-color;
+$social-icons-back-color-on-hover: darken($social-icons-back-color, 5%);
+
+
+
+
+
+
+
+@import "../plugins/bootstrap5/scss/mixins";
+@import "../plugins/bootstrap5/scss/functions";
+@import "../plugins/bootstrap5/scss/variables";
+@import "../plugins/bootstrap5/scss/bootstrap";
+
+
+
+
+.overlay{
+  position: relative;
+}
+.overlay:after{
+
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: $dark;
+  opacity: .5;
+}
+
+
+
+
+
+
+
+section:not(.block-style) .has-style,
+section:not(.block-style).has-style{
+  border-radius:0;
+
+  border: 1px solid $light;
+  background-color: $light;
+}
+/* Icon Style */
+$icon-size:2rem;
+$icon-container-1: 3rem;
+$icon-container-2: 5rem;
+$icon-container-3: 7rem;
+
+
+
+
+.icons {
+  display: inline-flex;
+  padding: 0.1rem;
+  line-height: 1;
+  border-radius: 50%;
+}
+
+
+.icon-style-1{
+  font-size: $icon-size;
+}
+.icon-style-2  {
+  font-size: $icon-size*1.5
+}
+.icon-style-3 {
+  font-size: $icon-size*2
+}
+/* Icon Style */

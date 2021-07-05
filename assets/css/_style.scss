@@ -1,9 +1,6 @@
-/****************************
-           GENERAL
-*****************************/
 
 /* Background */
-$background: #fff;
+$background: red;
 
 /* Font Size and Family */
 $fontFamily: 'Lato', sans-serif;
@@ -147,7 +144,5 @@ $social-icons-color: $dark;
 $social-icons-back-color: $textLight;
 $social-icons-color-on-hover: $social-icons-color;
 $social-icons-back-color-on-hover: darken($social-icons-back-color, 5%);
-
-
 
 

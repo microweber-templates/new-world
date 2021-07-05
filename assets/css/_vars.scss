@@ -1,8 +1,3 @@
-
-
-
-
-
 /****************************
           GENERAL
 *****************************/
@@ -11,11 +6,9 @@
 // Color system
 
 // scss-docs-start gray-color-variables
-$white:    $light !default;
+
 $gray-100: #f8f9fa !default;
 $background: #ffffff !default;
-
-
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
@@ -24,7 +17,12 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    $dark !default;
+$light:         $gray-100 !default;
+$white:         $light !default;
+$dark:          $gray-900 !default;
+
+
+
 // scss-docs-end gray-color-variables
 
 // fusv-disable
@@ -44,7 +42,7 @@ $grays: (
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue:    #0d6efd !default;
+$blue:    #0044de !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
@@ -77,16 +75,19 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-// $primary:       $blue !default;
-//$secondary:     $gray-600 !default;
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
-$body-bg:         $background !default;
+$body-bg:       $background !default;
+$black:         $dark !default;
+$textDark:      $dark !default;
+$textLight:     gray !default;
 
+
+$theme-colors: $colors;
 
 
 $body-bg:                   $white !default;
@@ -95,18 +96,6 @@ $body-text-align:           null !default;
 
 
 // scss-docs-end theme-color-variables
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Font Size and Family */
 $fontFamily: 'Lato', sans-serif;
@@ -126,7 +115,6 @@ $paragraph-sm: 12px;
 
 /* Colors */
 $light: #fff;
-$textLight: #f4f4f4;
 $textLightHover: lighten($textLight, 20%);
 
 $dark: #212121;
@@ -134,12 +122,11 @@ $textDark: #212121;
 $textDarkHover: lighten($textDark, 20%);
 
 $textOnWhite: #212121;
-$textOnBackground: #fff;
 
 $default: $dark;
 $defaultHover: lighten($default, 20%);
 
-$primary: #0044de;
+//$primary: #0044de;
 $primaryHover: lighten($primary, 20%);
 
 $secondary: #6aabcf;
@@ -191,6 +178,7 @@ $downMedia: 1199px;
 $burgerOpenMediaSecond: 1200px;
 $downMediaSecond: 1199px;
 
+$textOnBackground: $textLight !default;
 /*Header Menu Navigation*/
 $header-menu-font-weight: 600;
 $header-menu-font-color: $textOnBackground;
@@ -287,12 +275,6 @@ $social-icons-back-color-on-hover: darken($social-icons-back-color, 5%);
   background-color: $dark;
   opacity: .5;
 }
-
-
-
-
-
-
 
 section:not(.block-style) .has-style,
 section:not(.block-style).has-style{

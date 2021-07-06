@@ -6328,3 +6328,8 @@ i.checkout-v2-remove-icon {
 select.form-control {
     appearance: auto;
 }
+
+.sticky-nav-disabled .navigation-holder {
+
+    position: unset;
+}

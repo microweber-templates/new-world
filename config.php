@@ -71,7 +71,7 @@ $config['template_settings']['header_style']['options'] = array(
     'header_style_9' => 'Header 9: One row - Sidebar with Burger');
 
 $config['template_settings']['sticky_navigation'] = array('type' => 'dropdown', 'default' => 'sticky-nav', 'label' => 'Sticky Navigation');
-$config['template_settings']['sticky_navigation']['options'] = array('sticky-nav' => 'Yes', '' => 'No');
+$config['template_settings']['sticky_navigation']['options'] = array('sticky-nav' => 'Yes', 'sticky-nav-disabled' => 'No');
 
 $config['template_settings']['profile_link'] = array('type' => 'dropdown', 'default' => 'true', 'label' => 'Show Profile link', 'help' => 'You can hide the profile button from your website header');
 $config['template_settings']['profile_link']['options'] = array('true' => 'Yes', 'false' => 'No');

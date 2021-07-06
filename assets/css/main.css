@@ -10548,7 +10548,7 @@ body[data-lang="ar"] .dropdown-menu {
     margin-left: 0; }
 
   body:not([data-lang="ar"]) .navigation .list li > a:after {
-    right: 0;
+    right: 245px;
     margin-right: 25px; }
 
   body[data-lang="ar"] .navigation .list li > a:after {
@@ -24601,7 +24601,7 @@ body[data-lang="ar"] .dropdown-menu {
     margin-left: 0; }
 
   body:not([data-lang="ar"]) .navigation .list li > a:after {
-    right: 0;
+    right: 245px;
     margin-right: 25px; }
 
   body[data-lang="ar"] .navigation .list li > a:after {

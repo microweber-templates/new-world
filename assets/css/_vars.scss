@@ -1,9 +1,101 @@
 /****************************
-           GENERAL
+          GENERAL
 *****************************/
 
-/* Background */
-$background: #fff;
+
+// Color system
+
+// scss-docs-start gray-color-variables
+
+$gray-100: #f8f9fa !default;
+$background: #ffffff !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$light:         $gray-100 !default;
+$white:         $light !default;
+$dark:          $gray-900 !default;
+
+
+
+// scss-docs-end gray-color-variables
+
+// fusv-disable
+// scss-docs-start gray-colors-map
+$grays: (
+        "100": $gray-100,
+        "200": $gray-200,
+        "300": $gray-300,
+        "400": $gray-400,
+        "500": $gray-500,
+        "600": $gray-600,
+        "700": $gray-700,
+        "800": $gray-800,
+        "900": $gray-900
+) !default;
+// scss-docs-end gray-colors-map
+// fusv-enable
+
+// scss-docs-start color-variables
+$blue:    #0044de !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #d63384 !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #198754 !default;
+$teal:    #20c997 !default;
+$cyan:    #0dcaf0 !default;
+
+
+// scss-docs-end color-variables
+
+// scss-docs-start colors-map
+$colors: (
+        "blue":       $blue,
+        "indigo":     $indigo,
+        "purple":     $purple,
+        "pink":       $pink,
+        "red":        $red,
+        "orange":     $orange,
+        "yellow":     $yellow,
+        "green":      $green,
+        "teal":       $teal,
+        "cyan":       $cyan,
+        "white":      $white,
+        "gray":       $gray-600,
+        "gray-dark":  $gray-800
+) !default;
+// scss-docs-end colors-map
+
+// scss-docs-start theme-color-variables
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$body-bg:       $background !default;
+$black:         $dark !default;
+$textDark:      $dark !default;
+$textLight:     gray !default;
+
+
+$theme-colors: $colors;
+
+
+$body-bg:                   $white !default;
+$body-color:                $textDark !default;
+$body-text-align:           null !default;
+
+
+// scss-docs-end theme-color-variables
 
 /* Font Size and Family */
 $fontFamily: 'Lato', sans-serif;
@@ -23,7 +115,6 @@ $paragraph-sm: 12px;
 
 /* Colors */
 $light: #fff;
-$textLight: #f4f4f4;
 $textLightHover: lighten($textLight, 20%);
 
 $dark: #212121;
@@ -31,12 +122,11 @@ $textDark: #212121;
 $textDarkHover: lighten($textDark, 20%);
 
 $textOnWhite: #212121;
-$textOnBackground: #fff;
 
 $default: $dark;
 $defaultHover: lighten($default, 20%);
 
-$primary: #0044de;
+//$primary: #0044de;
 $primaryHover: lighten($primary, 20%);
 
 $secondary: #6aabcf;
@@ -62,6 +152,12 @@ $media-end: 320px;
 /* Elements */
 $hr: '../img/hr.svg';
 
+
+
+/* Background */
+$background: $light;
+
+
 /* Radiuses */
 $borderRadiusInputs: 3px;
 $borderRadiusButtons: 3px;
@@ -82,6 +178,7 @@ $downMedia: 1199px;
 $burgerOpenMediaSecond: 1200px;
 $downMediaSecond: 1199px;
 
+$textOnBackground: $textLight !default;
 /*Header Menu Navigation*/
 $header-menu-font-weight: 600;
 $header-menu-font-color: $textOnBackground;
@@ -151,3 +248,65 @@ $social-icons-back-color-on-hover: darken($social-icons-back-color, 5%);
 
 
 
+
+
+
+@import "../plugins/bootstrap5/scss/mixins";
+@import "../plugins/bootstrap5/scss/functions";
+@import "../plugins/bootstrap5/scss/variables";
+@import "../plugins/bootstrap5/scss/bootstrap";
+
+
+
+
+.overlay{
+  position: relative;
+}
+.overlay:after{
+
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: $dark;
+  opacity: .5;
+}
+
+section:not(.block-style) .has-style,
+section:not(.block-style).has-style{
+  border-radius:0;
+
+  border: 1px solid $light;
+  background-color: $light;
+}
+/* Icon Style */
+$icon-size:2rem;
+$icon-container-1: 3rem;
+$icon-container-2: 5rem;
+$icon-container-3: 7rem;
+
+
+
+
+.icons {
+  display: inline-flex;
+  padding: 0.1rem;
+  line-height: 1;
+  border-radius: 50%;
+}
+
+
+.icon-style-1{
+  font-size: $icon-size;
+}
+.icon-style-2  {
+  font-size: $icon-size*1.5
+}
+.icon-style-3 {
+  font-size: $icon-size*2
+}
+/* Icon Style */

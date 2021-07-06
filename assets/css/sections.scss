@@ -1,4 +1,4 @@
-@import "vars";
+
 
 /* *******************************************
  ************** Section ************** *
@@ -632,14 +632,13 @@
   .left-side {
     padding: 120px 60px;
     min-height: 550px;
-
     justify-content: center;
     display: flex;
     flex-direction: column;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    color: $textDark;
+    color: $textLight !important;;
   }
   p,
   span {
@@ -718,7 +717,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    color: $textDark;
+    color: $textLight !important;
   }
 
   p,
@@ -1090,6 +1089,11 @@
   .twitter-holder {
     padding: 30px;
     background: $primary;
+
+      a {
+        color: $textLight;
+      }
+
       .module{
           max-width: 100%;
       }

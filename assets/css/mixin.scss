@@ -1,6 +1,5 @@
 
 /*Flex mixin*/
-@import "vars";
 .inline-flex,
 .flex-inline,
 .mixin-inline-flex {
@@ -46,22 +45,7 @@
     align-items: center;
     justify-content: center;
 }
-.overlay{
-    position: relative;
-}
-.overlay:after{
 
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    background-color: $dark;
-    opacity: .5;
-}
 .overlay-opacity-0:after{
     opacity: 0!important;
 }
@@ -101,42 +85,3 @@
 }
 
 
-
-
-
-
-
-section:not(.block-style) .has-style,
-section:not(.block-style).has-style{
-    border-radius:0;
-
-    border: 1px solid $light;
-    background-color: $light;
-}
-/* Icon Style */
-$icon-size:2rem;
-$icon-container-1: 3rem;
-$icon-container-2: 5rem;
-$icon-container-3: 7rem;
-
-
-
-
-.icons {
-    display: inline-flex;
-    padding: 0.1rem;
-    line-height: 1;
-    border-radius: 50%;
-}
-
-
-.icon-style-1{
-    font-size: $icon-size;
-}
-.icon-style-2  {
-     font-size: $icon-size*1.5
-}
-.icon-style-3 {
-    font-size: $icon-size*2
-}
-/* Icon Style */

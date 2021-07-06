@@ -95,7 +95,7 @@ $small-navbar-menu-font-size: #{$header-menu-font-size - 2px};
 
 /*Header Dropdown menu*/
 $header-dropdown-color: $textLight;
-$header-dropdown-color-on-hover: fade($header-dropdown-color, 80%);
+$header-dropdown-color-on-hover: fade-in($header-dropdown-color, .8);
 $header-dropdown-back-on-hover: fade($textLight, 3%);
 $header-dropdown-back-color: $textDark;
 $header-dropdown-border-color: fade($textLight, 10%);

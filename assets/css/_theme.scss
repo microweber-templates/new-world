@@ -1,13 +1,4 @@
 
-body{
-    --primary: $primary;
-    --textLight: $textLight;
-    --textDark: $textDark;
-    --light: $light;
-    --dark: $dark;
-    --textLightHover: $textLightHover;
-    --textDarkHover: $textDarkHover;
-}
 body {
     font-family: $fontFamily;
     outline: none !important;

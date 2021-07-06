@@ -22622,15 +22622,6 @@ ul, li {
   border-radius: 15px; }
 
 body {
-  --primary: $primary;
-  --textLight: $textLight;
-  --textDark: $textDark;
-  --light: $light;
-  --dark: $dark;
-  --textLightHover: $textLightHover;
-  --textDarkHover: $textDarkHover; }
-
-body {
   font-family: "Lato", sans-serif;
   outline: none !important; }
 

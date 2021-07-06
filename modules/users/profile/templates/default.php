@@ -27,33 +27,33 @@
         </div>
         <div class="mw-ui-box mw-ui-box-important mw-ui-box-content" id="errnotification" style="display: none;margin-bottom: 12px;"></div>
 
-        <div class="form-group">
-            <label class="control-label"><?php _lang("Username", "templates/new-world"); ?></label>
+        <div class="form-group mb-2">
+            <label class="control-label mb-2"><?php _lang("Username", "templates/new-world"); ?></label>
             <input class="form-control input-lg" type="text" name="username" value="<?php print $user['username']; ?>" placeholder="<?php _lang('Username', "templates/new-world"); ?>">
         </div>
 
-        <div class="form-group">
-            <label class="control-label"><?php _lang("Email", "templates/new-world"); ?></label>
+        <div class="form-group mb-2">
+            <label class="control-label mb-2"><?php _lang("Email", "templates/new-world"); ?></label>
             <input class="form-control input-lg" type="email" name="email" value="<?php print $user['email']; ?>" placeholder="<?php _lang('Email', "templates/new-world"); ?>">
         </div>
 
-        <div class="form-group">
-            <label class="control-label"><?php _lang("First name", "templates/new-world"); ?></label>
+        <div class="form-group mb-2">
+            <label class="control-label mb-2"><?php _lang("First name", "templates/new-world"); ?></label>
             <input class="form-control input-lg" type="text" name="first_name" value="<?php print $user['first_name']; ?>" placeholder="<?php _lang('First name', "templates/new-world"); ?>">
         </div>
 
-        <div class="form-group">
-            <label class="control-label"><?php _lang("Last name", "templates/new-world"); ?></label>
+        <div class="form-group mb-2">
+            <label class="control-label mb-2"><?php _lang("Last name", "templates/new-world"); ?></label>
             <input class="form-control input-lg" type="text" name="last_name" value="<?php print $user['last_name']; ?>" placeholder="<?php _lang('Last name', "templates/new-world"); ?>">
         </div>
 
-        <div class="form-group">
-            <label class="control-label"><?php _lang("New Password", "templates/new-world"); ?></label>
+        <div class="form-group mb-2">
+            <label class="control-label mb-2"><?php _lang("New Password", "templates/new-world"); ?></label>
             <input class="form-control input-lg" type="password" name="password" placeholder="<?php _lang('New Password', "templates/new-world"); ?>">
         </div>
 
-        <div class="form-group">
-            <label class="control-label"><?php _lang("Confirm Password", "templates/new-world"); ?></label>
+        <div class="form-group mb-2">
+            <label class="control-label mb-2"><?php _lang("Confirm Password", "templates/new-world"); ?></label>
             <input class="form-control input-lg" type="password" name="password2" placeholder="<?php _lang('Confirm Password', "templates/new-world"); ?>">
         </div>
 

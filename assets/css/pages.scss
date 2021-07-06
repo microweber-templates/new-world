@@ -231,16 +231,16 @@
 }
 
 .blog-inner-page .leave-review .form .form-group .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: fade($grey, 80%);
+  color: fade-in($grey, .8);
   opacity: 1; /* Firefox */
 }
 
 .blog-inner-page .leave-review .form .form-group .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: fade($grey, 80%);
+  color: fade-in($grey, .8);
 }
 
 .blog-inner-page .leave-review .form .form-group .form-control::-ms-input-placeholder { /* Microsoft Edge */
-  color: fade($grey, 80%);
+  color: fade-in($grey, .8);
 }
 
 .blog-inner-page .reviews {
@@ -609,16 +609,16 @@
   }
 
   .leave-review .form .form-group .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: fade($grey, 80%);
+    color: fade-in($grey, .8);
     opacity: 1; /* Firefox */
   }
 
   .leave-review .form .form-group .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: fade($grey, 80%);
+    color: fade-in($grey, .8);
   }
 
   .leave-review .form .form-group .form-control::-ms-input-placeholder { /* Microsoft Edge */
-    color: fade($grey, 80%);
+    color: fade-in($grey, .8);
   }
 
   @media screen and (max-width: 991px) {

@@ -855,7 +855,7 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
 }
 
 .member-nav .search .dropdown-menu i {
-  color: fade($dark, 70%);
+  color: fade-in($dark, .7);
   background: $light;
   display: flex;
     flex-wrap: wrap;
@@ -898,7 +898,7 @@ body[data-lang="ar"]  .member-nav .search .dropdown-menu i {
 
 .member-nav .shopping-cart-holder .product {
   padding: 10px 0;
-  border-bottom: 1px solid fade($primary, 20%);
+  border-bottom: 1px solid fade-in($primary, .7);
 }
 
 .member-nav .shopping-cart-holder .product .remove {
@@ -920,7 +920,7 @@ body[data-lang="ar"]  .member-nav .search .dropdown-menu i {
 }
 
 .member-nav .shopping-cart-holder .product .qty {
-  color: fade($primary, 90%);
+  color: fade-in($primary, .9);
 }
 
 .member-nav .shopping-cart-holder .product .price {
@@ -1013,7 +1013,7 @@ body[data-lang="ar"] .dropdown-menu {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: fade($burger-color, 80%);
+  background-color: fade-in($burger-color, .8);
   transition: all, 0.3s;
 
 }
@@ -1021,7 +1021,7 @@ body[data-lang="ar"] .dropdown-menu {
 .navigation .sub-menu-more > a:hover span,
 .navigation .sub-menu-more > a:hover span:after,
 .navigation .sub-menu-more > a:hover span:before {
-  background-color: fade($burger-color, 40%);
+  background-color: fade-in($burger-color, .4);
 }
 
 .navigation .sub-menu-more > a span:after,
@@ -1069,7 +1069,7 @@ body[data-lang="ar"] .dropdown-menu {
     .navigation .menu .collapseNav-initialized {
         display: flex;
         flex-wrap: wrap;
-      align-items: center;
+        align-items: center;
     }
 
     .navigation-holder:not(.header_style_3) .navigation .menu .sub-menu-more > .dropdown-menu {
@@ -1132,7 +1132,7 @@ body[data-lang="ar"] .dropdown-menu {
       }
 
       .list > li > ul a {
-        color: fade($mobile-main-menu-font-color, 70%);
+        color: fade-in($mobile-main-menu-font-color, .7);
       }
 
       .list > li > ul > li a {
@@ -1761,7 +1761,7 @@ body[data-lang="ar"] .dropdown-menu {
   }
 
   .navigation .secondary-menu .list > li > ul a {
-    color: fade($mobile-second-menu-font-color, 70%);
+    color: fade-in($mobile-second-menu-font-color, .7);
   }
 
   .navigation .secondary-menu .list > li > ul > li a {

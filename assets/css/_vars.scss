@@ -173,11 +173,11 @@ $colors: ("default":  $default, "secondary": $secondary, "primary": $primary, "d
 $header-background-color: darken($primary, 0%);
 
 /*When to open Main Menu Burger*/
-$burgerOpenMedia: 1200px;
+$burgerOpenMedia: 1199px;
 $downMedia: 1199px;
 
 /*When to open Second Menu Burger*/
-$burgerOpenMediaSecond: 1200px;
+$burgerOpenMediaSecond: 1199px;
 $downMediaSecond: 1199px;
 
 $textOnBackground: $textLight !default;

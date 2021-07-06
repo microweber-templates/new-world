@@ -602,14 +602,6 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
   top: calc(#{"50% - 1.5px"});
 }
 
-body:not([data-lang="ar"]) .navigation .list li.has-sub-menu > a:after {
-  margin-left: 10px;
-}
-
-body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
-  margin-right: 10px;
-}
-
 .navigation li:hover > a:after {
   transform: rotate(-90deg);
 }
@@ -626,8 +618,22 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
   opacity: 0;
   visibility: hidden;
   transition: all, 0.3s;
-  top: 0;
-  left: 100%;
+  //top: 0;
+  //left: 100%;
+}
+
+.dropdown-has-child {
+    &:after {
+        content: "";
+        display: inline-block;
+        margin-left: 0.255em;
+        vertical-align: 0.255em;
+        content: "";
+        border-top: 0.3em solid;
+        border-right: 0.3em solid transparent;
+        border-bottom: 0;
+        border-left: 0.3em solid transparent;
+    }
 }
 
 .navigation .list > li {
@@ -1026,6 +1032,20 @@ body[data-lang="ar"] .dropdown-menu {
   content: '';
   display: block;
 }
+body.sticky-nav {
+    .navigation .menu .collapseNav-initialized {
+        margin-bottom: 0px;
+    }
+}
+
+.navigation ul.list {
+    display: block;
+
+    @media screen and (min-width: $burgerOpenMedia) {
+        display: none;
+
+    }
+}
 
 /*!!! Only for main header menu !!!*/
 @media screen and (min-width: $burgerOpenMedia) {
@@ -1045,13 +1065,12 @@ body[data-lang="ar"] .dropdown-menu {
       background-color: $header-dropdown-back-on-hover;
     }
 
-    .navigation .menu .list > li > ul li:hover > a:focus {
-      color: $header-dropdown-back-color;
-    }
 
     .navigation .list li:hover > ul {
       opacity: 1;
       visibility: visible;
+        display: block;
+
     }
 
     .mw-live-edit .navigation .menu-overlay {
@@ -1062,12 +1081,15 @@ body[data-lang="ar"] .dropdown-menu {
       display: none;
     }
 
+
+
     /*See more icon*/
     .navigation .menu .collapseNav-initialized {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        margin-bottom: 0px;
+
+
 
     }
 
@@ -1479,10 +1501,6 @@ body[data-lang="ar"] .dropdown-menu {
     margin-left: 0;
   }
 
-  body:not([data-lang="ar"]) .navigation .list li > a:after {
-    right: 245px;
-    margin-right: 25px;
-  }
 
   body[data-lang="ar"] .navigation .list li > a:after {
     left: 0;

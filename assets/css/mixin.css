@@ -1,29 +1,4 @@
 /*Flex mixin*/
-/****************************
-           GENERAL
-*****************************/
-/* Background */
-/* Font Size and Family */
-/* Colors */
-/* Basic Meida Queries */
-/* Elements */
-/* Radiuses */
-/*Colors for color mixer*/
-/****************************
-           HEADER
-*****************************/
-/*When to open Main Menu Burger*/
-/*When to open Second Menu Burger*/
-/*Header Menu Navigation*/
-/*Header Dropdown menu*/
-/*Mobile Main Menu Navigation*/
-/*Mobile Main Menu Navigation*/
-/*Sidebar nav*/
-/*Header member nav*/
-/*Header burger*/
-/*Header social*/
-/*Logo on Header*/
-/*Social icons General*/
 .inline-flex,
 .flex-inline,
 .mixin-inline-flex {
@@ -65,21 +40,6 @@
   align-items: center;
   justify-content: center; }
 
-.overlay {
-  position: relative; }
-
-.overlay:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: block;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  background-color: #212121;
-  opacity: .5; }
-
 .overlay-opacity-0:after {
   opacity: 0 !important; }
 
@@ -116,29 +76,5 @@
 .overlay * {
   position: relative;
   z-index: 1; }
-
-section:not(.block-style) .has-style,
-section:not(.block-style).has-style {
-  border-radius: 0;
-  border: 1px solid #fff;
-  background-color: #fff; }
-
-/* Icon Style */
-.icons {
-  display: inline-flex;
-  padding: 0.1rem;
-  line-height: 1;
-  border-radius: 50%; }
-
-.icon-style-1 {
-  font-size: 2rem; }
-
-.icon-style-2 {
-  font-size: 3rem; }
-
-.icon-style-3 {
-  font-size: 4rem; }
-
-/* Icon Style */
 
 /*# sourceMappingURL=mixin.css.map */

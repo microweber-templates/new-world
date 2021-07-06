@@ -1,138 +1,54 @@
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+Error: Undefined variable: "$colors".
+        on line 15 of C:\xampp\htdocs\microweber\userfiles\templates\new-world\assets\css\color-loops.scss
+
+10: 
+11: //@import "vars";
+12: /*Color mixer*\/
+13: 
+14: 
+15: @each $name, $color in $colors {
+16:     .bg-#{name},
+17:     .badge-#{name},
+18:     .icon-bg-#{name},
+19:     .hr-bg-#{name}{
+20:         background-color: $color;
+
+Backtrace:
+C:\xampp\htdocs\microweber\userfiles\templates\new-world\assets\css\color-loops.scss:15
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:233:in `visit_each'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 */
-/*
-    Created on : Jun 28, 2019, 11:47:53 AM
-    Author     : m.petkov
-*/
-/****************************
-           GENERAL
-*****************************/
-/* Background */
-/* Font Size and Family */
-/* Colors */
-/* Basic Meida Queries */
-/* Elements */
-/* Radiuses */
-/*Colors for color mixer*/
-/****************************
-           HEADER
-*****************************/
-/*When to open Main Menu Burger*/
-/*When to open Second Menu Burger*/
-/*Header Menu Navigation*/
-/*Header Dropdown menu*/
-/*Mobile Main Menu Navigation*/
-/*Mobile Main Menu Navigation*/
-/*Sidebar nav*/
-/*Header member nav*/
-/*Header burger*/
-/*Header social*/
-/*Logo on Header*/
-/*Social icons General*/
-/*Color mixer*/
-.bg-name,
-.badge-name,
-.icon-bg-name,
-.hr-bg-name {
-  background-color: #212121; }
-
-.module-hr-bg-name div[class*="hr-"] {
-  background-color: #212121 !important; }
-
-.text-name {
-  color: #212121 !important; }
-
-.text-name > *:not(font),
-.text-name .btn-link,
-.icon-name {
-  color: #212121 !important; }
-
-.bg-name,
-.badge-name,
-.icon-bg-name,
-.hr-bg-name {
-  background-color: #6aabcf; }
-
-.module-hr-bg-name div[class*="hr-"] {
-  background-color: #6aabcf !important; }
-
-.text-name {
-  color: #6aabcf !important; }
-
-.text-name > *:not(font),
-.text-name .btn-link,
-.icon-name {
-  color: #6aabcf !important; }
-
-.bg-name,
-.badge-name,
-.icon-bg-name,
-.hr-bg-name {
-  background-color: #0044de; }
-
-.module-hr-bg-name div[class*="hr-"] {
-  background-color: #0044de !important; }
-
-.text-name {
-  color: #0044de !important; }
-
-.text-name > *:not(font),
-.text-name .btn-link,
-.icon-name {
-  color: #0044de !important; }
-
-.bg-name,
-.badge-name,
-.icon-bg-name,
-.hr-bg-name {
-  background-color: #212121; }
-
-.module-hr-bg-name div[class*="hr-"] {
-  background-color: #212121 !important; }
-
-.text-name {
-  color: #212121 !important; }
-
-.text-name > *:not(font),
-.text-name .btn-link,
-.icon-name {
-  color: #212121 !important; }
-
-.bg-name,
-.badge-name,
-.icon-bg-name,
-.hr-bg-name {
-  background-color: #fff; }
-
-.module-hr-bg-name div[class*="hr-"] {
-  background-color: #fff !important; }
-
-.text-name {
-  color: #fff !important; }
-
-.text-name > *:not(font),
-.text-name .btn-link,
-.icon-name {
-  color: #fff !important; }
-
-.bg-name,
-.badge-name,
-.icon-bg-name,
-.hr-bg-name {
-  background-color: #bfbfbf; }
-
-.module-hr-bg-name div[class*="hr-"] {
-  background-color: #bfbfbf !important; }
-
-.text-name {
-  color: #bfbfbf !important; }
-
-.text-name > *:not(font),
-.text-name .btn-link,
-.icon-name {
-  color: #bfbfbf !important; }
-
-/*# sourceMappingURL=color-loops.css.map */
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$colors\".\A         on line 15 of C:\xampp\htdocs\microweber\userfiles\templates\new-world\assets\css\color-loops.scss\A \A 10: \A 11: //@import \"vars\";\A 12: /*Color mixer*/\A 13: \A 14: \A 15: @each $name, $color in $colors {\A 16:     .bg-#{name},\A 17:     .badge-#{name},\A 18:     .icon-bg-#{name},\A 19:     .hr-bg-#{name}{\A 20:         background-color: $color;"; }

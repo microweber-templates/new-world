@@ -36174,6 +36174,9 @@ footer ul.socials {
 .section-dark {
   background: #0044de; }
 
+.member-nav.main-member-nav {
+  margin-bottom: 0px !important; }
+
 /* *******************************************
  ************** Section ************** *
  ******************************************* */

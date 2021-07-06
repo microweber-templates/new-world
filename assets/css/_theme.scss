@@ -3991,6 +3991,10 @@ footer {
     background: $primary;
 }
 
+.member-nav.main-member-nav {
+    margin-bottom: 0px!important;
+}
+
 @import "sections";
 @import "pages";
 

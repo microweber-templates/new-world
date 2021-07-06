@@ -30,10 +30,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-default: #212121;
+  --bs-default: #212529;
   --bs-secondary: #6aabcf;
   --bs-primary: #0044de;
-  --bs-dark: #212121;
+  --bs-dark: #212529;
   --bs-light: #fff;
   --bs-grey: #bfbfbf;
   --bs-blue: #0044de;
@@ -1666,15 +1666,15 @@ progress {
   border-color: #e9e9ea; }
 
 .table-dark {
-  --bs-table-bg: #212121;
-  --bs-table-striped-bg: #2c2c2c;
+  --bs-table-bg: #212529;
+  --bs-table-striped-bg: #2c3033;
   --bs-table-striped-color: #f8f9fa;
-  --bs-table-active-bg: #373737;
+  --bs-table-active-bg: #373a3e;
   --bs-table-active-color: #f8f9fa;
-  --bs-table-hover-bg: #313131;
+  --bs-table-hover-bg: #313539;
   --bs-table-hover-color: #f8f9fa;
   color: #f8f9fa;
-  border-color: #373737; }
+  border-color: #373a3e; }
 
 .table-responsive {
   overflow-x: auto;
@@ -8756,7 +8756,7 @@ textarea.form-control-lg {
   top: 0;
   left: 0;
   z-index: 0;
-  background-color: #212121;
+  background-color: #212529;
   opacity: .5; }
 
 section:not(.block-style) .has-style,

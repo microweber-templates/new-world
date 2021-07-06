@@ -84,7 +84,7 @@ $danger:        $red !default;
 $body-bg:       $background !default;
 $black:         $dark !default;
 $textDark:      $dark !default;
-$textLight:     gray !default;
+$textLight:     $light !default;
 
 
 $theme-colors: $colors;
@@ -116,9 +116,9 @@ $paragraph-sm: 12px;
 /* Colors */
 $light: #fff;
 $textLightHover: lighten($textLight, 20%);
-
-$dark: #212121;
-$textDark: #212121;
+//
+//$dark: #212121;
+//$textDark: #212121;
 $textDarkHover: lighten($textDark, 20%);
 
 $textOnWhite: #212121;

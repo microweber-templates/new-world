@@ -2947,7 +2947,7 @@ ul.socials-2 {
 /* Blog posts */
 .blog-posts {
     .slick-arrow {
-        display: none;
+        display: none!important;
     }
     .post {
         margin-bottom: 30px !important;
@@ -6324,3 +6324,5 @@ select.form-control {
 .sticky-nav-disabled .navigation-holder {
     position: unset;
 }
+
+

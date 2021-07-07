@@ -9909,11 +9909,12 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
   color: #0044de;
   transition: all, 0.3s; }
 
-.dropdown-menu .dropdown-menu {
+.dropdown-menu {
   display: block;
   opacity: 0;
   visibility: hidden;
-  transition: all, 0.3s; }
+  transition: all, 0.3s;
+  left: -1px; }
 
 .dropdown-has-child:after {
   content: "";
@@ -23964,11 +23965,12 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
   color: #0044de;
   transition: all, 0.3s; }
 
-.dropdown-menu .dropdown-menu {
+.dropdown-menu {
   display: block;
   opacity: 0;
   visibility: hidden;
-  transition: all, 0.3s; }
+  transition: all, 0.3s;
+  left: -1px; }
 
 .dropdown-has-child:after {
   content: "";
@@ -35430,7 +35432,7 @@ ul.socials-2 li a:hover {
 
 /* Blog posts */
 .blog-posts .slick-arrow {
-  display: none; }
+  display: none !important; }
 .blog-posts .post {
   margin-bottom: 30px !important; }
   .blog-posts .post .description {

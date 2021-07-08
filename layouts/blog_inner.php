@@ -121,8 +121,8 @@ if(isset($post['updated_at'])){
                                 <?php endif; ?>
                             </div>
                             <div class="col-sm-8">
-                                <module type="sharer" id="post-bottom-sharer" template="skin-1" class="float-right " style="xwidth: calc(100% - 45px);"/>
-                                <div class="float-right ">Share</div>
+                                <module type="sharer" id="post-bottom-sharer" template="skin-1" class="float-end " style="xwidth: calc(100% - 45px);"/>
+                                <div class="float-end ">Share</div>
                             </div>
                         </div>
                     </div>

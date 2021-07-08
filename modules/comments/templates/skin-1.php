@@ -140,7 +140,7 @@ description: Skin 1 comments template
                                         <div class="comments-user-profile" style="margin-bottom: 5px;">
                                             <?php _lang("You are commenting as", "templates/new-world"); ?>:
                                             <span class="comments-user-profile-username"> <?php print user_name($cur_user_data['id']); ?> </span>
-                                            <a href="<?php print api_link('logout', "templates/new-world") ?>" class="mw-ui-btn mw-ui-btn-outline mw-ui-btn-small mw-ui-btn-default float-end"><?php _lang("Logout", "templates/new-world"); ?></a>
+                                            <a href="<?php print api_link('logout', "templates/new-world") ?>" class="mw-ui-btn mw-ui-btn-outline mw-ui-btn-small mw-ui-btn-default float-right "><?php _lang("Logout", "templates/new-world"); ?></a>
                                         </div>
                                     <?php endif; ?>
 

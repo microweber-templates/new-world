@@ -29,7 +29,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             <div class="col-xl-11 mx-auto bg-default bg-content-box">
                 <div class="row">
                     <div class="col-md-12 col-lg-4 col-xl-4">
-                        <div class="p-40 text-center text-lg-start">
+                        <div class="p-40 text-center text-lg-start text-lg-left ">
                             <h3>Service and contact</h3>
                         </div>
                     </div>

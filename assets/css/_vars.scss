@@ -101,9 +101,6 @@ $body-text-align:           null !default;
 $fontFamily: 'Lato', sans-serif;
 $font-family-base: $fontFamily;
 
-
-$bodyFontSize: 16px;
-
 $title-xl: 50px;
 $title-lg: 46px;
 $title-md: 36px;
@@ -114,6 +111,51 @@ $paragraph-xl: 18px;
 $paragraph-lg: 16px;
 $paragraph-md: 14px;
 $paragraph-sm: 12px;
+
+//BOOTSTRAP 5
+$spacer: 1rem !default;
+
+$spacers: (
+    0: 0,
+    1: $spacer / 4,
+    2: $spacer / 2,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+) !default;
+
+
+$font-size-root:              null !default;
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm:                $font-size-base * .875 !default;
+$font-size-lg:                $font-size-base * 1.25 !default;
+
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+$font-weight-bolder:          bolder !default;
+
+$font-weight-base:            $font-weight-normal !default;
+$h1-font-size:                $title-xl !default;
+$h2-font-size:                $title-lg !default;
+$h3-font-size:                $title-md !default;
+$h4-font-size:                $title-sm !default;
+$h5-font-size:                $title-xs !default;
+$h6-font-size:                $font-size-base !default;
+
+// scss-docs-start headings-variables
+$headings-margin-bottom:      $spacer / 2 !default;
+$headings-font-family:        null !default;
+$headings-font-style:         null !default;
+$headings-font-weight:        700 !default;
+$headings-line-height:        1.2 !default;
+$headings-color:              null !default;
+// scss-docs-end headings-variables
+
+$bodyFontSize: 16px;
+
+
 
 /* Colors */
 $light: #fff;

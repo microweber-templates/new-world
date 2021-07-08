@@ -59,7 +59,7 @@ $prev = prev_content();
                                     <div class="heading">
                                         <h1 class="edit d-inline-block" field="title" rel="content"><?php print content_title(); ?></h1>
 
-                                        <div class="next-previous-content float-end">
+                                        <div class="next-previous-content float-right ">
                                             <?php if ($prev != false) { ?>
                                                 <a href="<?php print content_link($prev['id']); ?>" class="prev-content tip btn btn-outline-default" data-tip="#prev-tip"><i class="fas fa-chevron-left"></i></a>
                                                 <div id="prev-tip" style="display: none">

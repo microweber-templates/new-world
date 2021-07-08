@@ -982,11 +982,14 @@ $(".secondary-menu .mobile-profile.has-sub-menu > a").on("click", function (e) {
 });
 
 $(document).ready(function () {
+	
+	/*
     $('.navigation .menu .list.menu-root').collapseNav({
         responsive: 1,
         mobile_break: 992,
         li_class: 'has-sub-menu dropdown'
     });
+	*/
 
     if ($(window).width() <= 991) {
         $('.navigation .menu .list.menu-root .has-sub-menu a.dropdown-toggle').attr('href', 'javascript:;');

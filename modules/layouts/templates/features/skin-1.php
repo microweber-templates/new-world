@@ -29,7 +29,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             <div class="col-12 col-lg-12 col-xl-10 mx-auto">
                 <div class="row">
                     <div class="m-b-40 col-sm-6 col-lg-4 cloneable">
-                        <div class="card shadow-sm">
+                        <div class="card shadow-md">
                             <div class="stamp">
                                 <i class="mw-micon-Monitor-2 safe-element"></i>
                             </div>
@@ -43,7 +43,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                     </div>
 
                     <div class="m-b-40 col-sm-6 col-lg-4 cloneable">
-                        <div class="card shadow-sm">
+                        <div class="card shadow-md">
                             <div class="stamp">
                                 <i class="mw-micon-Earphones safe-element"></i>
                             </div>
@@ -57,7 +57,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                     </div>
 
                     <div class="m-b-40 col-sm-6 col-lg-4 cloneable">
-                        <div class="card shadow-sm">
+                        <div class="card shadow-md">
                             <div class="stamp">
                                 <i class="mw-micon-Duplicate-Window safe-element"></i>
                             </div>

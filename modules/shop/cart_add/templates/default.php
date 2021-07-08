@@ -61,7 +61,7 @@ if (isset($params['content-id'])) {
                     </button>
                 <?php else: ?>
 
-                    <button class="btn btn-primary float-right " type="button" onclick="mw.cart.add('.mw-add-to-cart-<?php print $params['id'] ?>','<?php print $v ?>', '<?php print $title; ?>');">
+                    <button class="btn btn-primary float-end " type="button" onclick="mw.cart.add('.mw-add-to-cart-<?php print $params['id'] ?>','<?php print $v ?>', '<?php print $title; ?>');">
                         <i class="fas fa-shopping-cart"></i>
                         <?php _lang($button_text !== false ? $button_text : "Add to cart", "templates/new-world"); ?>
                     </button>

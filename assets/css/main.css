@@ -8945,7 +8945,8 @@ hr.hr {
   -webkit-mask-repeat: repeat-x !important;
   mask-repeat: repeat-x !important;
   -webkit-mask-size: contain !important;
-  mask-size: contain !important; }
+  mask-size: contain !important;
+  opacity: 1 !important; }
 
 .text-center h1.hr, .text-center .hr.h1, .text-center h2.hr, .text-center .hr.h2, .text-center h3.hr, .text-center .hr.h3, .text-center h4.hr, .text-center .hr.h4, .text-center h5.hr, .text-center .hr.h5, .text-center h6.hr, .text-center .hr.h6 {
   margin-bottom: 10px; }

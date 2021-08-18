@@ -5,7 +5,6 @@
 /* Colors */
 /* Basic Meida Queries */
 /* Elements */
-/* Background */
 /* Radiuses */
 /*Colors for color mixer*/
 /****************************
@@ -31,7 +30,7 @@
  */
 :root {
   --bs-default: #212529;
-  --bs-secondary: #6aabcf;
+  --bs-secondary: #6c757d;
   --bs-primary: #0044de;
   --bs-dark: #212529;
   --bs-light: #fff;
@@ -69,7 +68,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #ffffff;
+  background-color: #f8f9fa;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(33, 37, 41, 0); }
 
@@ -476,7 +475,7 @@ progress {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #ffffff;
+  background-color: #f8f9fa;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -1600,15 +1599,15 @@ progress {
   border-color: #bbc8e3; }
 
 .table-secondary {
-  --bs-table-bg: #e1eef5;
-  --bs-table-striped-bg: #d7e4eb;
+  --bs-table-bg: #e2e3e5;
+  --bs-table-striped-bg: #d8dadc;
   --bs-table-striped-color: #212529;
-  --bs-table-active-bg: #cedae1;
+  --bs-table-active-bg: #cfd0d2;
   --bs-table-active-color: #212529;
-  --bs-table-hover-bg: #d3dfe6;
+  --bs-table-hover-bg: #d4d5d7;
   --bs-table-hover-color: #212529;
   color: #212529;
-  border-color: #cedae1; }
+  border-color: #cfd0d2; }
 
 .table-success {
   --bs-table-bg: #d1e7dd;
@@ -1989,9 +1988,9 @@ textarea.form-control-lg {
   .form-range:focus {
     outline: 0; }
     .form-range:focus::-webkit-slider-thumb {
-      box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.25rem rgba(0, 68, 222, 0.25); }
+      box-shadow: 0 0 0 1px #f8f9fa, 0 0 0 0.25rem rgba(0, 68, 222, 0.25); }
     .form-range:focus::-moz-range-thumb {
-      box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.25rem rgba(0, 68, 222, 0.25); }
+      box-shadow: 0 0 0 1px #f8f9fa, 0 0 0 0.25rem rgba(0, 68, 222, 0.25); }
   .form-range::-moz-focus-outer {
     border: 0; }
   .form-range::-webkit-slider-thumb {
@@ -3283,8 +3282,8 @@ textarea.form-control-lg {
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
     color: #495057;
-    background-color: #ffffff;
-    border-color: #dee2e6 #dee2e6 #ffffff; }
+    background-color: #f8f9fa;
+    border-color: #dee2e6 #dee2e6 #f8f9fa; }
   .nav-tabs .dropdown-menu {
     margin-top: -1px;
     border-top-left-radius: 0;
@@ -3624,9 +3623,6 @@ textarea.form-control-lg {
   margin-bottom: -0.5rem;
   margin-left: -0.5rem;
   border-bottom: 0; }
-  .card-header-tabs .nav-link.active {
-    background-color: #f8f9fa;
-    border-bottom-color: #f8f9fa; }
 
 .card-header-pills {
   margin-right: -0.5rem;
@@ -3696,7 +3692,7 @@ textarea.form-control-lg {
   font-size: 1rem;
   color: #212529;
   text-align: left;
-  background-color: #ffffff;
+  background-color: #f8f9fa;
   border: 0;
   border-radius: 0;
   overflow-anchor: none;
@@ -3736,7 +3732,7 @@ textarea.form-control-lg {
   margin-bottom: 0; }
 
 .accordion-item {
-  background-color: #ffffff;
+  background-color: #f8f9fa;
   border: 1px solid rgba(33, 37, 41, 0.125); }
   .accordion-item:first-of-type {
     border-top-left-radius: 0.25rem;
@@ -6166,7 +6162,7 @@ textarea.form-control-lg {
   background-color: #343a40 !important; }
 
 .bg-body {
-  background-color: #ffffff !important; }
+  background-color: #f8f9fa !important; }
 
 .bg-transparent {
   background-color: transparent !important; }

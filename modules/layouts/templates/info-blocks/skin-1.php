@@ -40,7 +40,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                         </div>
                     </div>
 
-                    <div class="order-1 order-xl-2 text-start text-left text-sm-center text-xl-start col-lg-6 m-b-20">
+                    <div class="order-1 order-xl-2 text-start text-start text-sm-center text-xl-start col-lg-6 m-b-20">
                         <img src="<?php print template_url(); ?>assets/img/img-3.png" alt=""/>
                     </div>
                 </div>

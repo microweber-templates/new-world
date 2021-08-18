@@ -29,7 +29,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             <div class="col-xl-10 mx-auto">
                 <div class="row">
                     <div class="col-12 col-lg-8">
-                        <div class="text-start text-left m-b-10">
+                        <div class="text-start text-start m-b-10">
                             <h2 class="hr">Last blog posts</h2>
                             <a href="#" class="btn btn-link float-right ">Browse Articles</a>
                         </div>

@@ -3432,8 +3432,8 @@ ul.socials-2 {
         top:0;
         left:0;
         z-index: 1;
-        overflow-y: auto;
-        overflow-x: hidden;
+        //overflow-y: auto;
+        //overflow-x: hidden;
         a {
             display: block;
             height: 120px;
@@ -3444,35 +3444,8 @@ ul.socials-2 {
             margin: 0 5px 10px;
         }
     }
-}.shop-inner-gallery {
-     padding-inline-start: 140px;
-     position: relative;
-     .shop-inner-big-image {
-         img {
-             width: 100%;
-         }
-     }
+}
 
-     .shop-inner-gallery-thumbnails{
-         position: absolute;
-         width: 120px;
-         height: 100%;
-         top:0;
-         left:0;
-         z-index: 1;
-         overflow-y: auto;
-         overflow-x: hidden;
-         a {
-             display: block;
-             height: 120px;
-             width: 100%;
-             background-position: center center;
-             background-size: cover;
-             background-repeat: no-repeat;
-             margin: 0 5px 10px;
-         }
-     }
- }
 
 
 /* Shop products */

@@ -8,7 +8,6 @@
 // scss-docs-start gray-color-variables
 
 $gray-100: #f8f9fa !default;
-$background: #ffffff !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
@@ -20,6 +19,7 @@ $gray-900: #212529 !default;
 $light:         $gray-100 !default;
 $white:         $light !default;
 $dark:          $gray-900 !default;
+$background:    $gray-100 !default;
 
 
 
@@ -90,7 +90,6 @@ $textLight:     $light !default;
 $theme-colors: $colors;
 
 
-$body-bg:                   $white !default;
 $body-color:                $textDark !default;
 $body-text-align:           null !default;
 
@@ -173,7 +172,6 @@ $defaultHover: lighten($default, 20%);
 //$primary: #0044de;
 $primaryHover: lighten($primary, 20%);
 
-$secondary: #6aabcf;
 $secondaryHover: lighten($secondary, 20%);
 
 
@@ -195,11 +193,6 @@ $media-end: 320px;
 
 /* Elements */
 $hr: '../img/hr.svg';
-
-
-
-/* Background */
-$background: $light;
 
 
 /* Radiuses */

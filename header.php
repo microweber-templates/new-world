@@ -20,11 +20,17 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap">
     <script>
         mw.require('icon_selector.js');
+        mw.lib.require('collapse_nav');
         mw.lib.require('bootstrap5js');
         mw.lib.require('bootstrap_select');
 
         mw.iconLoader()
-            .addIconSet('materialDesignIcons');
+            .addIconSet('materialDesignIcons')
+            .addIconSet('fontAwesome')
+            .addIconSet('iconsMindLine')
+            .addIconSet('iconsMindSolid')
+            .addIconSet('mwIcons')
+            .addIconSet('materialIcons');
     </script>
 
     <script>

@@ -151,3 +151,12 @@ $config['data-fields-product'][] = array(
     'name' => 'label-color',
     'type' => 'color'
 );
+
+
+$config['legacy-edit-fields'] = array(
+    [
+        'new-world_content' => 'content',
+        'new-world_content' => 'content',
+
+    ]
+);

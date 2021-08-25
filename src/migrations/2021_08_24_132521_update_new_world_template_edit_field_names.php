@@ -16,7 +16,6 @@ class UpdateNewWorldTemplateEditFieldNames extends Migration
         if (Schema::hasTable('content_fields')) {
             DB::table('content_fields')
                 ->where('field', 'new-world_content')
-                ->where('rel', 'content')
                 ->update(['field' => 'content']);
         }
 

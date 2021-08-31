@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$header-background-color".
-        on line 42 of C:\xampp\htdocs\microweber\userfiles\templates\new-world\assets\css\header-styles.scss
+        on line 42 of C:\xampp\htdocs\microweber_new\userfiles\templates\new-world\assets\css\header-styles.scss
 
 37:     height: 100%;
 38:     display: block;
@@ -15,7 +15,7 @@ Error: Undefined variable: "$header-background-color".
 47: @media screen and (min-width: 1451px) {
 
 Backtrace:
-C:\xampp\htdocs\microweber\userfiles\templates\new-world\assets\css\header-styles.scss:42
+C:\xampp\htdocs\microweber_new\userfiles\templates\new-world\assets\css\header-styles.scss:42
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -62,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$header-background-color\".\A         on line 42 of C:\xampp\htdocs\microweber\userfiles\templates\new-world\assets\css\header-styles.scss\A \A 37:     height: 100%;\A 38:     display: block;\A 39:     top: 0;\A 40:     left: 0;\A 41: \A 42:     background-color: $header-background-color;\A 43:     opacity: 1;\A 44:   z-index: -1;\A 45: }\A 46: \A 47: @media screen and (min-width: 1451px) {"; }
+  content: "Error: Undefined variable: \"$header-background-color\".\A         on line 42 of C:\xampp\htdocs\microweber_new\userfiles\templates\new-world\assets\css\header-styles.scss\A \A 37:     height: 100%;\A 38:     display: block;\A 39:     top: 0;\A 40:     left: 0;\A 41: \A 42:     background-color: $header-background-color;\A 43:     opacity: 1;\A 44:   z-index: -1;\A 45: }\A 46: \A 47: @media screen and (min-width: 1451px) {"; }

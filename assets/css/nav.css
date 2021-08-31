@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$light".
-        on line 15 of C:\xampp\htdocs\microweber\userfiles\templates\new-world\assets\css\nav.scss
+        on line 15 of C:\xampp\htdocs\microweber_new\userfiles\templates\new-world\assets\css\nav.scss
 
 10:   -webkit-border-radius: 0;
 11:   -moz-border-radius: 0;
@@ -15,7 +15,7 @@ Error: Undefined variable: "$light".
 20: .navigation .logo a,
 
 Backtrace:
-C:\xampp\htdocs\microweber\userfiles\templates\new-world\assets\css\nav.scss:15
+C:\xampp\htdocs\microweber_new\userfiles\templates\new-world\assets\css\nav.scss:15
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/funcall.rb:186:in `perform_arg'
@@ -78,4 +78,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$light\".\A         on line 15 of C:\xampp\htdocs\microweber\userfiles\templates\new-world\assets\css\nav.scss\A \A 10:   -webkit-border-radius: 0;\A 11:   -moz-border-radius: 0;\A 12:   border-radius: 0;\A 13:   transition: height .4s;\A 14:   transition: background .4s;\A 15:   background: rgba(red($light), green($light), blue($light), .15);\A 16: }\A 17: \A 18: .navigation .logo a .logo-text,\A 19: .navigation .logo .logo-text,\A 20: .navigation .logo a,"; }
+  content: "Error: Undefined variable: \"$light\".\A         on line 15 of C:\xampp\htdocs\microweber_new\userfiles\templates\new-world\assets\css\nav.scss\A \A 10:   -webkit-border-radius: 0;\A 11:   -moz-border-radius: 0;\A 12:   border-radius: 0;\A 13:   transition: height .4s;\A 14:   transition: background .4s;\A 15:   background: rgba(red($light), green($light), blue($light), .15);\A 16: }\A 17: \A 18: .navigation .logo a .logo-text,\A 19: .navigation .logo .logo-text,\A 20: .navigation .logo a,"; }

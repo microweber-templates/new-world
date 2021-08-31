@@ -61,7 +61,7 @@ $prev = prev_content();
 
                                         <div class="next-previous-content float-end">
                                             <?php if ($prev != false) { ?>
-                                                <a href="<?php print content_link($prev['id']); ?>" class="prev-content tip btn btn-outline-default" data-tip="#prev-tip"><i class="fas fa-chevron-left"></i></a>
+                                                <a href="<?php print content_link($prev['id']); ?>" class="prev-content tip btn btn-outline-default" data-tip="#prev-tip"><i class="mdi mdi-arrow-left"></i></a>
                                                 <div id="prev-tip" style="display: none">
                                                     <div class="next-previous-tip-content text-center">
                                                         <img src="<?php print get_picture($prev['id']); ?>" alt="" width="90"/>
@@ -71,7 +71,7 @@ $prev = prev_content();
                                             <?php } ?>
 
                                             <?php if ($next != false) { ?>
-                                                <a href="<?php print $next['url']; ?>" class="next-content tip btn btn-outline-default" data-tip="#next-tip"><i class="fas fa-chevron-right"></i></a>
+                                                <a href="<?php print $next['url']; ?>" class="next-content tip btn btn-outline-default" data-tip="#next-tip"><i class="mdi mdi-arrow-right"></i></a>
 
                                                 <div id="next-tip" style="display: none">
                                                     <div class="next-previous-tip-content text-center">
@@ -98,9 +98,9 @@ $prev = prev_content();
 
                                             <div class="availability col-6 text-end align-self-center">
                                                 <?php if ($in_stock == true): ?>
-                                                    <span class="text-success"><i class="fas fa-circle" style="font-size: 8px;"></i> <?php _lang("In Stock", 'templates/new-world') ?></span> <span class="text-muted"><?php if ($available_qty != ''): ?>(<?php echo $available_qty; ?>)<?php endif; ?></span>
+                                                    <span class="text-success"><i class="mdi mdi-circle" style="font-size: 8px;"></i> <?php _lang("In Stock", 'templates/new-world') ?></span> <span class="text-muted"><?php if ($available_qty != ''): ?>(<?php echo $available_qty; ?>)<?php endif; ?></span>
                                                 <?php else: ?>
-                                                    <span class="text-danger"><i class="fas fa-circle" style="font-size: 8px;"></i> <?php _lang("Out of Stock", 'templates/new-world') ?></span>
+                                                    <span class="text-danger"><i class="mdi mdi-circle" style="font-size: 8px;"></i> <?php _lang("Out of Stock", 'templates/new-world') ?></span>
                                                 <?php endif; ?>
                                             </div>
                                         </div>

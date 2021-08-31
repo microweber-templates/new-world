@@ -32,9 +32,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                     <div class="row justify-content-xl-between">
                         <div class="col-sm-10 mx-sm-auto mx-xl-0 col-xl-6 info-holder allow-drop">
                             <div class="element nodrop clearfix">
-                                <div class="float-right " style="width: 80px;">
-                                    <hr class="hr w-100 safe-element m-t-10" style="background-color: #fff;"/>
-                                </div>
+                                <h5 class="float-end " style="width: 80px;">
+                                    <hr class="hr w-100 safe-element" style="background-color: #fff;"/>
+                                </h5>
                                 <p class="m-b-20" style="letter-spacing:1.5px;">Introduction</p>
                             </div>
 

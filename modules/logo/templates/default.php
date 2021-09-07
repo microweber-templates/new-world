@@ -18,7 +18,7 @@ $size = $size . 'px';
     <?php if ($logoimage != '' and $logoimage != false): ?>
          <span class="mw-ui-col-x" style="width: <?php print $size; ?>">
 
-            <img src="<?php print $logoimage; ?>" alt="" style="max-width: 100%; width: <?php print $size; ?>;" class="logo " <?php if (in_live_edit()) {
+            <img src="<?php print $logoimage; ?>" alt="<?php print htmlentities(addslashes($logo_title)); ?>" style="max-width: 100%; width: <?php print $size; ?>;" class="logo " <?php if (in_live_edit()) {
                 print 'onclick="javascript:mw.drag.module_settings();void(0);"';
             } ?>/>
                 </span>

@@ -76,20 +76,19 @@ h5.hr:after {
 }
 
 hr.hr {
-    display: inline-block!important;;
+    display: inline-block;
     min-height: auto !important;
-    border: 0!important;;
-    width: 65%!important;;
-    max-width: 150px!important;;
-    height: 8px!important;
-    background-color: $primary!important;;
-    -webkit-mask-image: url($hr)!important;;
-    mask-image: url($hr)!important;;
-    -webkit-mask-repeat: repeat-x!important;;
-    mask-repeat: repeat-x!important;;
-    -webkit-mask-size: contain!important;;
-    mask-size: contain!important;;
-    opacity: 1 !important;
+    border: 0;
+    width: 65%;
+    max-width: 150px;
+    height: 8px;
+    background-color: $primary;
+    -webkit-mask-image: url($hr);
+    mask-image: url($hr);
+    -webkit-mask-repeat: repeat-x;
+    mask-repeat: repeat-x;
+    -webkit-mask-size: contain;
+    mask-size: contain;
 }
 
 .text-center {
@@ -269,8 +268,7 @@ h5 {
     }*/
 }
 
-@import "mw";
-@import "color-loops";
+
 
 .cuted:after,
 .cuted-top:before,
@@ -612,9 +610,9 @@ h5 {
 }
 
 .shadow-sm {
-    -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 6px 0px, rgba(0, 0, 0, 0.23) 0px 3px 6px 0px !important;
-    -moz-box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 6px 0px, rgba(0, 0, 0, 0.23) 0px 3px 6px 0px !important;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 6px 0px, rgba(0, 0, 0, 0.23) 0px 3px 6px 0px !important;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
 }
 
 .shadow-md {
@@ -970,41 +968,46 @@ body.page-loaded .js-ajax-loading {
  ******************************************* */
 @media (min-width: 768px) and (max-width: 991px) {
     .container {
-        width: 90%!important;
+        width: 90%;
     }
 }
 
 @media (min-width: 1366px) and (max-width: 1439px) {
     .container {
-        width: 1336px!important;
-        max-width: 1336px!important;
+        width: 1336px;
+        max-width: 1336px;
     }
 }
 
 @media (max-width: 1365px) {
+    .container,
+    .container,
     .container {
-        width: 90%!important;
-        max-width: 90%!important;
+        width: 90%;
+        max-width: 90%;
     }
 }
 
 @media (max-width: 991px) {
+    .container,
+    .container,
     .container {
-        width: 100%!important;
-        max-width: 100%!important;
+        width: 100%;
+        max-width: 100%;
     }
 }
 
 @media (min-width: 1440px) {
     .container {
-        width: 1440px!important;
-        max-width: 1440px!important;
+        width: 1440px;
+        max-width: 1440px;
     }
 }
+
 @media (min-width: 1660px) {
     .container {
-        width: 1660px!important;
-        max-width: 1660px!important;
+        width: 1660px;
+        max-width: 1660px;
     }
 }
 
@@ -1014,13 +1017,13 @@ body.page-loaded .js-ajax-loading {
     }
 }
 
-
+/*
 @media (min-width: 1650px) {
   .container {
     width: 1650px;
     max-width: 1650px;
   }
-}
+}*/
 
 /* *******************************************
  **************** Navigation *************** *
@@ -1044,7 +1047,7 @@ ul.socials.center {
 }
 
 a {
-    text-decoration: none!important;
+    text-decoration: none;
 }
 
 ul.socials {
@@ -3416,37 +3419,6 @@ ul.socials-2 {
     }
 
 }
-.shop-inner-gallery {
-    padding-inline-start: 140px;
-    position: relative;
-    .shop-inner-big-image {
-        img {
-            width: 100%;
-        }
-    }
-
-    .shop-inner-gallery-thumbnails{
-        position: absolute;
-        width: 120px;
-        height: 100%;
-        top:0;
-        left:0;
-        z-index: 1;
-        //overflow-y: auto;
-        //overflow-x: hidden;
-        a {
-            display: block;
-            height: 120px;
-            width: 100%;
-            background-position: center center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            margin: 0 5px 10px;
-        }
-    }
-}
-
-
 
 /* Shop products */
 .shop-products {
@@ -3739,11 +3711,6 @@ ul.socials-2 {
                 background-color: $background;
 
             }
-
-            .btn {
-                border-color: #ffffff;
-                color: #ffffff;
-            }
         }
     }
 }
@@ -4019,8 +3986,7 @@ footer {
     margin-bottom: 0px!important;
 }
 
-@import "sections";
-@import "pages";
+
 
 .feature-grid .img-holder {
     position: absolute;

@@ -7,9 +7,9 @@
 
 // scss-docs-start import-stack
 // Configuration
-//@import "functions";
+@import "functions";
 //@import "variables2";
-//@import "mixins";
+@import "mixins";
 @import "utilities";
 
 // Layout & components

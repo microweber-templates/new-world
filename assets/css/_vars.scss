@@ -3,11 +3,13 @@
 *****************************/
 
 
+
 // Color system
 
 // scss-docs-start gray-color-variables
 
 $gray-100: #f8f9fa !default;
+$background: #ffffff !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
@@ -19,7 +21,7 @@ $gray-900: #212529 !default;
 $light:         $gray-100 !default;
 $white:         $light !default;
 $dark:          $gray-900 !default;
-$background:    $gray-100 !default;
+$black:          $gray-900 !default;
 
 
 
@@ -72,6 +74,8 @@ $colors: (
         "gray":       $gray-600,
         "gray-dark":  $gray-800
 ) !default;
+
+
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
@@ -87,9 +91,19 @@ $textDark:      $dark !default;
 $textLight:     $light !default;
 
 
-$theme-colors: $colors;
+$theme-colors: (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+);
 
 
+$body-bg:                   $white !default;
 $body-color:                $textDark !default;
 $body-text-align:           null !default;
 
@@ -99,6 +113,9 @@ $body-text-align:           null !default;
 /* Font Size and Family */
 $fontFamily: 'Lato', sans-serif;
 $font-family-base: $fontFamily;
+
+
+$bodyFontSize: 16px;
 
 $title-xl: 50px;
 $title-lg: 46px;
@@ -110,51 +127,6 @@ $paragraph-xl: 18px;
 $paragraph-lg: 16px;
 $paragraph-md: 14px;
 $paragraph-sm: 12px;
-
-//BOOTSTRAP 5
-$spacer: 1rem !default;
-
-$spacers: (
-    0: 0,
-    1: $spacer / 4,
-    2: $spacer / 2,
-    3: $spacer,
-    4: $spacer * 1.5,
-    5: $spacer * 3,
-) !default;
-
-
-$font-size-root:              null !default;
-$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
-$font-size-sm:                $font-size-base * .875 !default;
-$font-size-lg:                $font-size-base * 1.25 !default;
-
-$font-weight-lighter:         lighter !default;
-$font-weight-light:           300 !default;
-$font-weight-normal:          400 !default;
-$font-weight-bold:            700 !default;
-$font-weight-bolder:          bolder !default;
-
-$font-weight-base:            $font-weight-normal !default;
-$h1-font-size:                $title-xl !default;
-$h2-font-size:                $title-lg !default;
-$h3-font-size:                $title-md !default;
-$h4-font-size:                $title-sm !default;
-$h5-font-size:                $title-xs !default;
-$h6-font-size:                $font-size-base !default;
-
-// scss-docs-start headings-variables
-$headings-margin-bottom:      $spacer / 2 !default;
-$headings-font-family:        null !default;
-$headings-font-style:         null !default;
-$headings-font-weight:        700 !default;
-$headings-line-height:        1.2 !default;
-$headings-color:              null !default;
-// scss-docs-end headings-variables
-
-$bodyFontSize: 16px;
-
-
 
 /* Colors */
 $light: #fff;
@@ -172,6 +144,7 @@ $defaultHover: lighten($default, 20%);
 //$primary: #0044de;
 $primaryHover: lighten($primary, 20%);
 
+$secondary: #6aabcf;
 $secondaryHover: lighten($secondary, 20%);
 
 
@@ -193,6 +166,11 @@ $media-end: 320px;
 
 /* Elements */
 $hr: '../img/hr.svg';
+
+
+
+/* Background */
+$background: $light;
 
 
 /* Radiuses */
@@ -288,10 +266,14 @@ $social-icons-back-color-on-hover: darken($social-icons-back-color, 5%);
 
 
 
-@import "../plugins/bootstrap5/scss/mixins";
-@import "../plugins/bootstrap5/scss/functions";
-@import "../plugins/bootstrap5/scss/variables";
+
+@import "../plugins/bootstrap5/scss/bootstrap-grid";
+@import "../plugins/bootstrap5/scss/bootstrap-reboot";
+@import "../plugins/bootstrap5/scss/bootstrap-utilities";
 @import "../plugins/bootstrap5/scss/bootstrap";
+
+
+
 
 
 

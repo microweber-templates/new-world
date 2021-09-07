@@ -8,11 +8,12 @@ and open the template in the editor.
     Author     : m.petkov
 */
 
-//@import "vars";
+
 /*Color mixer*/
 
 
 @each $name, $color in $colors {
+    .btn-#{name},
     .bg-#{name},
     .badge-#{name},
     .icon-bg-#{name},

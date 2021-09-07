@@ -13,10 +13,15 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.0",
     "gulp-watch": "^5.0.0",
-    "jshint": "^2.10.2"
+    "jshint": "^2.10.2",
+    "sass": "^1.39.0"
   },
   "dependencies": {
     "gulp-copy": "^4.0.1",
     "gulp-less": "^4.0.1"
+  },
+  "sass": "../assets/css/main.scss",
+  "scripts": {
+    "css": "sass --style expanded --source-map --embed-sources --no-error-css  ../assets/css/main.scss ../assets/css/main.css"
   }
 }

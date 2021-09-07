@@ -25,6 +25,7 @@
         mw.require('icon_selector.js');
         mw.lib.require('bootstrap5js');
         mw.lib.require('bootstrap_select');
+        mw.lib.require('collapse_nav');
 
         mw.iconLoader()
             .addIconSet('materialDesignIcons')
@@ -39,6 +40,7 @@
         $(document).ready(function () {
             $('.selectpicker').selectpicker();
         });
+
     </script>
 
 

@@ -46,14 +46,14 @@ $prev = prev_content();
     <section class="p-md-5 mb-md-5 fx-particles">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xl-10">
+                <div class="col-lg-10">
                     <module class="d-flex justify-content-start" type="breadcrumb" template="skin-1"/>
                     <div class="row product-holder">
-                        <div class="col-12 col-md-6 col-xl-6">
+                        <div class="col-12 col-md-6 col-lg-6">
                             <module type="pictures" rel="content" template="skin-6"/>
                         </div>
 
-                        <div class="col-12 col-md-6 col-xl-6 relative product-info-wrapper">
+                        <div class="col-12 col-md-6 col-lg-6 relative product-info-wrapper">
                             <div class="product-info">
                                 <div class="product-info-content">
                                     <div class="heading">

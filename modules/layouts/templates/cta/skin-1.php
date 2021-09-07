@@ -27,7 +27,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 <section class="section-4 <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-cta-skin-1-<?php print $params['id'] ?>" rel="module">
     <div class="container">
         <div class="row">
-            <div class="col-xl-10 mx-auto position-relative bg-primary">
+            <div class="col-lg-10 mx-auto position-relative bg-primary">
 
                 <div class="row info-holder">
                     <div class="col-9 col-sm-7 col-md-8">

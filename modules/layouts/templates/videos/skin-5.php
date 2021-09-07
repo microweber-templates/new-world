@@ -30,7 +30,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             <div class="row">
                 <div class="col-12 mx-auto">
                     <div class="row">
-                        <div class="offset-xl-1 col-xl-4 info-holder allow-drop">
+                        <div class="offset-lg-1 col-lg-4 info-holder allow-drop">
                             <p class="m-b-20" style="letter-spacing:1.5px;">Introduction Video</p>
                             <h2 class="m-b-30">How we growth <br />our business.</h2>
                             <p>Microweber is an open-source content management system and website builder. It is based on the PHP programming language and the Laravel 5 web application framework, using drag and drop and allowing users to quickly create content, while scheduling and managing multiple displays.</p>
@@ -39,7 +39,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             </div>
                         </div>
 
-                        <div class="col-sm-10 mx-sm-auto col-xl-6 video-holder">
+                        <div class="col-sm-10 mx-sm-auto col-lg-6 video-holder">
                             <module type="video" url="https://vimeo.com/98679934"/>
                         </div>
                     </div>

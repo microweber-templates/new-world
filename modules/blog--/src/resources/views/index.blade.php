@@ -3,7 +3,7 @@
 
 <div class="container">
 <div class="row">
-    <div class="col-xl-12 mx-auto">
+    <div class="col-lg-12 mx-auto">
         <div class="row">
 
             <div class="col-md-3">
@@ -52,7 +52,7 @@
 
                     <a href="{{site_url($post->url)}}"><h3 class="m-b-10">{{$post->title}}</h3></a>
 
-                    <small>{{$post->posted_at}}</small>
+                    <small>{{$post->created_at}}</small>
 
                     <a href="{{site_url($post->url)}}" itemprop="url" class="button-8 m-t-20"><span>{{_e('Read more')}}</span></a>
                 </div>

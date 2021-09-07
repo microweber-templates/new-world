@@ -190,7 +190,7 @@
 
             <!-- Forms -->
             <div class="row">
-                <div class="col-xl-4 mx-auto">
+                <div class="col-lg-4 mx-auto">
                     <form>
                         <fieldset>
                             <div class="form-group">
@@ -226,7 +226,7 @@
                     </form>
                 </div>
 
-                <div class="col-xl-4 mx-auto">
+                <div class="col-lg-4 mx-auto">
                     <div class="form-group">
                         <fieldset disabled="">
                             <label class="control-label" for="disabledInput"><?php _lang("Disabled input", "templates/new-world"); ?></label>
@@ -287,7 +287,7 @@
             </div>
 
             <div class="row m-t-20">
-                <div class="col-xl-3 offset-xl-1">
+                <div class="col-lg-3 offset-lg-1">
                     <h5>Display Block</h5>
 
                     <div class="form-group">
@@ -328,7 +328,7 @@
                     </div>
                 </div>
 
-                <div class="col-xl-8 mx-auto">
+                <div class="col-lg-8 mx-auto">
                     <h5>Display Inline</h5>
 
                     <div class="form-group">

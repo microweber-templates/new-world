@@ -25,7 +25,7 @@ if ($slides_lg === null OR $slides_lg === false OR $slides_lg == '') {
     $slides_lg = '2';
 }
 
-$slides_xl = get_option('slides-xl', $params['id']);
+$slides_xl = get_option('slides-lg', $params['id']);
 if ($slides_xl === null OR $slides_xl === false OR $slides_xl == '') {
     $slides_xl = '2';
 }

@@ -15,7 +15,7 @@ description: Default comments template
 <?php $rand = rand(); ?>
 <div class="container m-b-40">
     <div class="row">
-        <div class="col-xl-6 mx-auto">
+        <div class="col-lg-6 mx-auto">
             <div class="bg-silver p-30">
                 <div class="row">
                     <div class="col-12">

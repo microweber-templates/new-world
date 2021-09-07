@@ -22,18 +22,18 @@ if ($columns) {
 }
 
 
-$columns_xl = get_option('columns-xl', $params['id']);
+$columns_xl = get_option('columns-lg', $params['id']);
 $thumb_quality = '1920';
 if ($columns_xl != null OR $columns_xl != false OR $columns_xl != '') {
-    if ($columns_xl == 'col-xl-12') {
+    if ($columns_xl == 'col-lg-12') {
         $thumbs_columns = 1;
-    } else if ($columns_xl == 'col-xl-6') {
+    } else if ($columns_xl == 'col-lg-6') {
         $thumbs_columns = 2;
-    } else if ($columns_xl == 'col-xl-4') {
+    } else if ($columns_xl == 'col-lg-4') {
         $thumbs_columns = 3;
-    } else if ($columns_xl == 'col-xl-3') {
+    } else if ($columns_xl == 'col-lg-3') {
         $thumbs_columns = 4;
-    } else if ($columns_xl == 'col-xl-2') {
+    } else if ($columns_xl == 'col-lg-2') {
         $thumbs_columns = 6;
     }
 
@@ -43,7 +43,7 @@ if ($columns_xl != null OR $columns_xl != false OR $columns_xl != '') {
 
 
     <div class="row">
-        <div class="col-xl-12 mx-auto">
+        <div class="col-lg-12 mx-auto">
             <div class="row new-world-news">
                 <?php if (!empty($data)): ?>
                     <?php foreach ($data as $key => $item): ?>
@@ -78,7 +78,7 @@ if ($columns_xl != null OR $columns_xl != false OR $columns_xl != '') {
                                     <a href="<?php print $item['link'] ?>"><h3 class="m-b-10"><?php print $item['title'] ?></h3></a>
                                 <?php endif; ?>
 
-                                <small><?php echo date('d M Y', strtotime($item['posted_at'])); ?></small>
+                                <small><?php echo date('d M Y', strtotime($item['created_at'])); ?></small>
 
                                 <?php if (!isset($show_fields) or $show_fields == false or in_array('description', $show_fields)): ?>
                                     <p><?php print $item['description'] ?></p>

@@ -34,8 +34,8 @@ $size = $size . 'px';
         $text = 'Logo';
     } ?>
         <span class="mw-ui-col-x">
-                <div class="logo logo-dark"><span class="logo-text"><span id="fitty-<?php print $params['id'] ?>-1" style="font-family: '<?php print $font_family_safe; ?>';font-size:<?php print $font_size; ?>px;line-height: 66px;"><?php print $text; ?></span></span></div>
-                <div class="logo logo-light"><span class="logo-text"><span id="fitty-<?php print $params['id'] ?>-2" style="font-family: '<?php print $font_family_safe; ?>';font-size:<?php print $font_size; ?>px;line-height: 66px;"><?php print $text; ?></span></span></div>
+                <div class="logo logo-dark"><span class="logo-text"><span id="fitty-<?php print $params['id'] ?>-1" style="font-family: <?php print $font_family_safe; ?>;font-size:<?php print $font_size; ?>px;line-height: 66px;"><?php print $text; ?></span></span></div>
+                <div class="logo logo-light"><span class="logo-text"><span id="fitty-<?php print $params['id'] ?>-2" style="font-family: <?php print $font_family_safe; ?>;font-size:<?php print $font_size; ?>px;line-height: 66px;"><?php print $text; ?></span></span></div>
             </span>
     <?php endif; ?>
     <?php endif; ?>

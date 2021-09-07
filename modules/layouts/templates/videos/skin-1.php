@@ -30,7 +30,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             <div class="row">
                 <div class="col-12 mx-auto">
                     <div class="row">
-                        <div class="offset-xl-1 col-xl-5 info-holder allow-drop">
+                        <div class="offset-lg-1 col-lg-5 info-holder allow-drop">
                             <h2 class="m-b-30">Watch Our Video Here</h2>
                             <h3 class="m-b-30">Learn more about the company</h3>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -43,7 +43,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             </div>
                         </div>
 
-                        <div class="col-sm-10 mx-sm-auto col-xl-5 video-holder">
+                        <div class="col-sm-10 mx-sm-auto col-lg-5 video-holder">
                             <module type="video" url="https://vimeo.com/326854751"/>
                         </div>
                     </div>

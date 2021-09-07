@@ -27,7 +27,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     <div class="d-flex w-100">
         <div class="container align-self-centerx">
             <div class="row">
-                <div class="col-12 col-xl-10 mx-auto text-center">
+                <div class="col-12 col-lg-10 mx-auto text-center">
                     <h2 class="m-b-30">Our Projects Gallery</h2>
                     <p class="lead">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                     <br/>

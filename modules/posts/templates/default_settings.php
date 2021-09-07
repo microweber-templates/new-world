@@ -5,7 +5,7 @@
 
 $columns = get_option('columns', $params['id']);
 if ($columns === null OR $columns === false OR $columns == '') {
-    $columns = 'col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3';
+    $columns = 'col-12 col-sm-6 col-md-4 col-lg-3 col-lg-3';
 }
 
 $columns_xs = get_option('columns-xs', $params['id']);
@@ -28,9 +28,9 @@ if ($columns_lg === null OR $columns_lg === false OR $columns_lg == '') {
     $columns_lg = 'col-lg-3';
 }
 
-$columns_xl = get_option('columns-xl', $params['id']);
+$columns_xl = get_option('columns-lg', $params['id']);
 if ($columns_xl === null OR $columns_xl === false OR $columns_xl == '') {
-    $columns_xl = 'col-xl-3';
+    $columns_xl = 'col-lg-3';
 }
 
 
@@ -121,12 +121,12 @@ if ($custom_classes === null OR $custom_classes === false OR $custom_classes == 
     <div class="mw-flex-col-xs-4 ">
         <div class="form-group">
             <label class="control-label d-block">Extra large ≥ 1200px</label>
-            <select name="columns-xl" class="mw_option_field selectpicker" data-width="100%" data-option-group="<?php print $params['id']; ?>" data-columns="xl">
-                <option value="col-xl-12" <?php if ($columns_xl == 'col-xl-12'): ?>selected<?php endif; ?>>1 column</option>
-                <option value="col-xl-6" <?php if ($columns_xl == 'col-xl-6'): ?>selected<?php endif; ?>>2 columns</option>
-                <option value="col-xl-4" <?php if ($columns_xl == 'col-xl-4'): ?>selected<?php endif; ?>>3 columns</option>
-                <option value="col-xl-3" <?php if ($columns_xl == 'col-xl-3'): ?>selected<?php endif; ?>>4 columns</option>
-                <option value="col-xl-2" <?php if ($columns_xl == 'col-xl-2'): ?>selected<?php endif; ?>>6 columns</option>
+            <select name="columns-lg" class="mw_option_field selectpicker" data-width="100%" data-option-group="<?php print $params['id']; ?>" data-columns="xl">
+                <option value="col-lg-12" <?php if ($columns_xl == 'col-lg-12'): ?>selected<?php endif; ?>>1 column</option>
+                <option value="col-lg-6" <?php if ($columns_xl == 'col-lg-6'): ?>selected<?php endif; ?>>2 columns</option>
+                <option value="col-lg-4" <?php if ($columns_xl == 'col-lg-4'): ?>selected<?php endif; ?>>3 columns</option>
+                <option value="col-lg-3" <?php if ($columns_xl == 'col-lg-3'): ?>selected<?php endif; ?>>4 columns</option>
+                <option value="col-lg-2" <?php if ($columns_xl == 'col-lg-2'): ?>selected<?php endif; ?>>6 columns</option>
             </select>
         </div>
     </div>

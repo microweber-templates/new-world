@@ -28,9 +28,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     <div class="d-flex w-100">
         <div class="container align-self-center info-holder">
             <div class="row">
-                <div class="col-12 col-xl-8 mx-auto">
-                    <div class="row justify-content-xl-between">
-                        <div class="col-sm-10 mx-sm-auto mx-xl-0 col-xl-6 info-holder allow-drop">
+                <div class="col-12 col-lg-8 mx-auto">
+                    <div class="row justify-content-lg-between">
+                        <div class="col-sm-10 mx-sm-auto mx-lg-0 col-lg-6 info-holder allow-drop">
                             <div class="element nodrop clearfix">
                                 <div class="float-right " style="width: 80px;">
                                     <hr class="hr w-100 safe-element m-t-10" style="background-color: #fff;"/>
@@ -38,7 +38,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                                 <p class="m-b-20" style="letter-spacing:1.5px;">Introduction</p>
                             </div>
 
-                            <h2 class="m-b-30">How we growth <br class="d-none d-xl-block"/>our business.</h2>
+                            <h2 class="m-b-30">How we growth <br class="d-none d-lg-block"/>our business.</h2>
                             <p>Microweber is an open-source content management system and website builder. It is based on the PHP programming language and the Laravel 5 web application framework, using drag and drop and allowing users to quickly create content, while scheduling and managing multiple
                                 displays.</p>
                             <div class="element m-t-40">
@@ -46,7 +46,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             </div>
                         </div>
 
-                        <div class="col-sm-10 mx-sm-auto mx-xl-0 col-xl-5 video-holder d-flex align-items-center justify-content-center">
+                        <div class="col-sm-10 mx-sm-auto mx-lg-0 col-lg-5 video-holder d-flex align-items-center justify-content-center">
                             <div class="w-100">
                                 <div class="div-table">
                                     <div class="div-table-cell d-flex justify-content-center">

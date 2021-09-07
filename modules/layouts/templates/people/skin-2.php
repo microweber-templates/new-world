@@ -26,7 +26,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     <div class="d-flex w-100">
         <div class="container align-self-centerx">
             <div class="row">
-                <div class="col-xl-8 col-lg-8 text-center m-b-20 mx-auto">
+                <div class="col-lg-8 col-lg-8 text-center m-b-20 mx-auto">
                     <h1 class="m-b-10">Our Team</h1>
                     <p class="lead">It is a long established fact that a reader will be distracted. </p>
                     <hr class="hr"/>
@@ -34,7 +34,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             </div>
 
             <div class="row">
-                <div class="col-xl-10 mx-auto">
+                <div class="col-lg-10 mx-auto">
                     <module type="teamcard" template="skin-2"/>
                 </div>
             </div>

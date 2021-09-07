@@ -26,7 +26,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 <section class="section-7 <?php echo $layout_classes; ?> edit safe-mode nodrop" field="layout-features-skin-1-<?php print $params['id'] ?>" rel="module">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-12 col-xl-10 mx-auto">
+            <div class="col-12 col-lg-12 col-lg-10 mx-auto">
                 <div class="row">
                     <div class="m-b-40 col-sm-6 col-lg-4 cloneable">
                         <div class="card shadow-md">

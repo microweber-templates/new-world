@@ -23,7 +23,7 @@ if (!isset($tn[1])) {
 ?>
 
 <?php if (!empty($data)): ?>
-    <div class="row shop-products">
+    <div class="row shop-products pt-7">
         <?php foreach ($data as $item): ?>
             <?php $categories = content_categories($item['id']); ?>
 
@@ -55,7 +55,7 @@ if (!isset($tn[1])) {
             }
             ?>
 
-            <div class="col-12 col-md-6 col-lg-4 col-xl-4 item-<?php print $item['id'] ?>" data-masonry-filter="<?php print $itemCats; ?>" itemscope
+            <div class="col-12 col-md-6 col-lg-4 col-lg-4 item-<?php print $item['id'] ?>" data-masonry-filter="<?php print $itemCats; ?>" itemscope
                  itemtype="<?php print $schema_org_item_type_tag ?>">
                 <div class="product">
                     <?php if (is_array($item['prices'])): ?>

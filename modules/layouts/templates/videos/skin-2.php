@@ -30,14 +30,14 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             <div class="row">
                 <div class="col-12 mx-auto">
                     <div class="row">
-                        <div class="col-sm-10 offset-xl-1 col-xl-5 video-holder bg-bottom">
+                        <div class="col-sm-10 offset-lg-1 col-lg-5 video-holder bg-bottom">
                             <div class="">
                                 <module type="video" url="https://vimeo.com/326854751"/>
                             </div>
                         </div>
 
-                        <div class="col-xl-5 info-holder text-start">
-                            <div class="px-xl-4 allow-drop">
+                        <div class="col-lg-5 info-holder text-start">
+                            <div class="px-lg-4 allow-drop">
                                 <h2 class="m-b-30">Watch Our Video Here</h2>
                                 <h3 class="m-b-30">Learn more about the company</h3>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>

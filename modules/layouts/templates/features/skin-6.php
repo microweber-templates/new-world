@@ -27,7 +27,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     <div class="d-flex w-100 background-image-holder <?php print $layout_classes; ?>" style="background-image:url('<?php print template_url(); ?>assets/img/features-bg.png');">
         <div class="container align-self-center">
             <div class="row">
-                <div class="col-12 col-xl-12 mx-auto text-center text-white">
+                <div class="col-12 col-lg-12 mx-auto text-center text-white">
                     <div class="row">
                         <div class="icon-holder col-12 col-sm-3 mx-auto cloneable">
                             <i class="icon mw-micon-Sunglasses-2 safe-element"></i>

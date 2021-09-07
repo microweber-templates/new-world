@@ -27,7 +27,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 <section class="section-18 <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-skin-5-<?php print $params['id'] ?>" rel="module">
     <div class="container text-white">
         <div class="row">
-            <div class="col-xl-10 mx-auto">
+            <div class="col-lg-10 mx-auto">
                 <div class="row m-0">
                     <div class="col-12 col-md-6 bg-primary text-start text-start cloneable">
                         <div class="allow-drop padding-holder d-flex flex-column">

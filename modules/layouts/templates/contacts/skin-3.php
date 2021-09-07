@@ -26,7 +26,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 <section class="section <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-contacts-skin-3-<?php print $params['id'] ?>" rel="module">
     <div class="container">
         <div class="row">
-            <div class="col-xl-10 mx-auto">
+            <div class="col-lg-10 mx-auto">
                 <module type="google_maps" />
             </div>
         </div>

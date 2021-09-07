@@ -40,7 +40,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                 <br/>
                 <br/>
                 <div class="element d-inline-block cloneable">
-                    <module type="btn" template="bootstrap" button_style="btn-outline-primary" button_size="btn-md" text="Start Now"/>
+                    <module type="btn" template="bootstrap" button_style="btn-outline-dark" button_size="btn-md" text="Start Now"/>
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$textOnBackground".
-        on line 33 of C:\xampp\htdocs\microweber\userfiles\templates\new-world\assets\css\sections.scss
+        on line 33 of C:\xampp\htdocs\microweber_new\userfiles\templates\new-world\assets\css\sections.scss
 
 28:       height: 80vh;
 29:     }
@@ -15,7 +15,7 @@ Error: Undefined variable: "$textOnBackground".
 38:   .socials-holder {
 
 Backtrace:
-C:\xampp\htdocs\microweber\userfiles\templates\new-world\assets\css\sections.scss:33
+C:\xampp\htdocs\microweber_new\userfiles\templates\new-world\assets\css\sections.scss:33
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -73,4 +73,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$textOnBackground\".\A         on line 33 of C:\xampp\htdocs\microweber\userfiles\templates\new-world\assets\css\sections.scss\A \A 28:       height: 80vh;\A 29:     }\A 30:   }\A 31: \A 32:   h1, h2, h3, h4, h5, h6, p, p.lead {\A 33:     color: $textOnBackground;\A 34:   }\A 35:   .container {\A 36:     z-index: 9;\A 37:   }\A 38:   .socials-holder {"; }
+  content: "Error: Undefined variable: \"$textOnBackground\".\A         on line 33 of C:\xampp\htdocs\microweber_new\userfiles\templates\new-world\assets\css\sections.scss\A \A 28:       height: 80vh;\A 29:     }\A 30:   }\A 31: \A 32:   h1, h2, h3, h4, h5, h6, p, p.lead {\A 33:     color: $textOnBackground;\A 34:   }\A 35:   .container {\A 36:     z-index: 9;\A 37:   }\A 38:   .socials-holder {"; }

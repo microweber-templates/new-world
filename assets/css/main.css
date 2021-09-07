@@ -22232,6 +22232,9 @@ ul.socials-2 li a:hover {
       color: #f8f9fa; }
     .pricing-list .plan:hover .price .period:after {
       background-color: #f8f9fa; }
+    .pricing-list .plan:hover .btn {
+      border-color: #ffffff;
+      color: #ffffff; }
 
 /* *******************************************
  ************** Footer ********************* *

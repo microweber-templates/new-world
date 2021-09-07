@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$textDark".
-        on line 12 of C:\xampp\htdocs\microweber\userfiles\templates\new-world\assets\css\pages.scss
+        on line 12 of C:\xampp\htdocs\microweber_new\userfiles\templates\new-world\assets\css\pages.scss
 
 7: .blog-inner-page .padding {
 8:   max-width: 780px;
@@ -15,7 +15,7 @@ Error: Undefined variable: "$textDark".
 17:   color: $textDark;
 
 Backtrace:
-C:\xampp\htdocs\microweber\userfiles\templates\new-world\assets\css\pages.scss:12
+C:\xampp\htdocs\microweber_new\userfiles\templates\new-world\assets\css\pages.scss:12
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -62,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$textDark\".\A         on line 12 of C:\xampp\htdocs\microweber\userfiles\templates\new-world\assets\css\pages.scss\A \A 7: .blog-inner-page .padding {\A 8:   max-width: 780px;\A 9: }\A 10: \A 11: .blog-inner-page ul.socials li a {\A 12:   color: $textDark;\A 13:   background: transparent;\A 14: }\A 15: \A 16: .blog-inner-page ul.socials li a:hover {\A 17:   color: $textDark;"; }
+  content: "Error: Undefined variable: \"$textDark\".\A         on line 12 of C:\xampp\htdocs\microweber_new\userfiles\templates\new-world\assets\css\pages.scss\A \A 7: .blog-inner-page .padding {\A 8:   max-width: 780px;\A 9: }\A 10: \A 11: .blog-inner-page ul.socials li a {\A 12:   color: $textDark;\A 13:   background: transparent;\A 14: }\A 15: \A 16: .blog-inner-page ul.socials li a:hover {\A 17:   color: $textDark;"; }

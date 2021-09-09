@@ -12,7 +12,7 @@
 
 ?>
 <?php include template_dir() . "header.php"; ?>
-<div class="main-content edit" rel="content" field="new-world_content">
+<div class="main-content edit" rel="module" field="new-world_content">
 <?php
 $module_layouts = module_templates('layouts');
 foreach($module_layouts as $module){
@@ -21,7 +21,7 @@ foreach($module_layouts as $module){
 ?>
 </div>
 <?php /*
-<div class="main-content edit" rel="content" field="new-world_content">
+<div class="main-content edit" rel="module" field="new-world_content">
     <module type="layouts" template="home-banners/skin-1"/>
     <module type="layouts" template="pricing/skin-1"/>
     <module type="layouts" template="cta/skin-2"/>

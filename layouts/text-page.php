@@ -14,7 +14,7 @@ description: Text layout
 ?>
 <?php include template_dir() . "header.php"; ?>
 
-<div class="edit main-content" rel="content" field="content">
+<div class="edit main-content" rel="module" field="content">
     <module type="layouts" template="skin-5"/>
 </div>
 

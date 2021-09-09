@@ -41,7 +41,7 @@ description: Sign up layout
     }
 </style>
 
-<div class="edit main-content bg-silver" rel="content" field="content">
+<div class="edit main-content bg-silver" rel="module" field="content">
     <module type="layouts" template="skin-37"/>
     <module type="layouts" template="diagonal-bottom" data-orientation="reverse" data-color="silver"/>
     <module type="layouts" template="skin-52" style="margin-top: -245px;"/>

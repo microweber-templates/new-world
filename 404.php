@@ -13,7 +13,7 @@
 ?>
 <?php include template_dir() . "header.php"; ?>
 
-<div class="edit main-content" rel="content" field="new-world_content">
+<div class="edit main-content" rel="module" field="new-world_content">
     <module type="layouts" template="404"/>
 </div>
 

@@ -50,14 +50,14 @@ $prev = prev_content();
                     <module class="d-flex justify-content-start" type="breadcrumb" template="skin-1"/>
                     <div class="row product-holder">
                         <div class="col-12 col-md-6 col-lg-6">
-                            <module type="pictures" rel="module" template="skin-6"/>
+                            <module type="pictures" rel="content" template="skin-6"/>
                         </div>
 
                         <div class="col-12 col-md-6 col-lg-6 relative product-info-wrapper">
                             <div class="product-info">
                                 <div class="product-info-content">
                                     <div class="heading">
-                                        <h1 class="edit d-inline-block" field="title" rel="module"><?php print content_title(); ?></h1>
+                                        <h1 class="edit d-inline-block" field="title" rel="content"><?php print content_title(); ?></h1>
 
                                         <div class="next-previous-content float-end">
                                             <?php if ($prev != false) { ?>
@@ -118,7 +118,7 @@ $prev = prev_content();
                                     <div class="row mb-5">
                                         <div class="col-12">
                                             <div class="description">
-                                                <div class="edit mw-tpl-new-world-product-description" field="content_body" rel="module">
+                                                <div class="edit mw-tpl-new-world-product-description" field="content_body" rel="content">
                                                     <p class="comment more"><?php _lang("How to write product descriptions that sell
                                                     One of the best things you can do to make your store successful is invest some time in writing great product descriptions. You want to provide detailed yet concise information that will entice potential customers to buy.
                                                     Think like a consumer
@@ -138,7 +138,7 @@ $prev = prev_content();
                         </div>
                     </div>
 
-                    <div class="edit safe-mode nodrop mt-5" field="related_products" rel="module">
+                    <div class="edit safe-mode nodrop mt-5" field="related_products" rel="content">
                         <div class="col-12 text-start">
                             <h5><?php _lang('Related products', 'templates/new-world'); ?></h5>
                             <hr style="opacity: 0.2;">

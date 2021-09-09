@@ -80,7 +80,7 @@ if(isset($post['updated_at'])){
         <div class="container m-t-30 m-b-50">
             <div class="row">
                 <div class="col-lg-6 mx-auto">
-                    <div class="description edit dropcap typography-area" field="content" rel="module">
+                    <div class="description edit dropcap typography-area" field="content" rel="content">
                         <?php
 
 //                        element_display('paragraph');

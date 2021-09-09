@@ -14,7 +14,7 @@ description: About us
 ?>
 <?php include template_dir() . "header.php"; ?>
 
-    <div class="edit main-content" rel="module" field="content">
+    <div class="edit main-content" rel="content" field="content">
         <module type="layouts" template="skin-9"/>
         <module type="layouts" template="features/skin-9"/>
         <module type="layouts" template="galleries/skin-3"/>

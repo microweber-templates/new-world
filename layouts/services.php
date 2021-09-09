@@ -13,7 +13,7 @@ description: Services
 ?>
 <?php include template_dir() . "header.php"; ?>
 
-    <div class="edit main-content" rel="module" field="content">
+    <div class="edit main-content" rel="content" field="content">
         <module type="layouts" template="skin-9"/>
         <module type="layouts" template="features/skin-10"/>
         <module type="layouts" template="skin-10"/>

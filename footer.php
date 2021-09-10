@@ -4,9 +4,11 @@
             <div class="edit nodrop safe-mode" field="new-world_footer" rel="global">
                 <div class="row">
                     <div class="col-12 col-lg-12 col-lg-3 mx-auto logo-column text-center text-lg-start m-b-20 allow-drop">
-                        <img src="<?php print template_url(); ?>assets/img/logo_footer.png" alt="" class="m-b-10"/>
-                        <br/>
-                        <br/>
+                        <div class="m-b-10">
+                            <img src="<?php print template_url(); ?>assets/img/logo_footer.png" alt="" />
+                            <br/>
+                            <br/>
+                        </div>
                     </div>
 
                     <div class="col-12 col-lg-12 col-lg-5 mx-auto text-center text-lg-start m-b-40 allow-drop">

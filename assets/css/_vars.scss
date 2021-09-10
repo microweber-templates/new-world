@@ -111,7 +111,7 @@ $body-text-align:           null !default;
 // scss-docs-end theme-color-variables
 
 /* Font Size and Family */
-$fontFamily: 'Lato', sans-serif;
+$fontFamily: 'Lato', sans-serif !default;
 $font-family-base: $fontFamily;
 
 

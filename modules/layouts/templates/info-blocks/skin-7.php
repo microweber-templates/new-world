@@ -26,7 +26,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 <section class="section-16 <?php print $layout_classes; ?> fx-particles edit safe-mode nodrop" field="layout-info-blocks-skin-7-<?php print $params['id'] ?>" rel="module">
     <div class="container-fluid">
         <div class="row flexbox-container">
-            <div class="col-12 col-lg-6 col-lg-7 left-side text-center text-lg-start text-lg-left ">
+            <div class="col-12 col-lg-6 col-xl-7 left-side text-center text-lg-start text-lg-left ">
                 <div class="info-holder shadow-md allow-drop" <?php if(is_live_edit()): ?>no-<?php endif;?>data-aos="fade-up">
                     <h2 class="hr">Do design and code</h2>
                     <p>Microweber is an open-source content management system and website builder. It is based on the PHP programming language and the Laravel 5 web application framework, using drag and drop and allowing users to quickly create content, while scheduling and managing
@@ -38,7 +38,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                 </div>
             </div>
 
-            <div class="col-12 col-lg-6 col-lg-5 img-holder" style="background-image: url('<?php print template_url(); ?>assets/img/img-2.png');"></div>
+            <div class="col-12 col-lg-6 col-xl-5 img-holder" style="background-image: url('<?php print template_url(); ?>assets/img/img-2.png');"></div>
         </div>
     </div>
 </section>

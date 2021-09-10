@@ -19,18 +19,17 @@ $config['is_default'] = 1; //if you set this parameter the template will be sele
 $config['stylesheet_compiler']['source_file'] = 'assets/css/main.scss';
 $config['stylesheet_compiler']['css_file'] = 'assets/css/main.css';
 
-$config['stylesheet_compiler']['settings'][] = array('type' => 'delimiter');
+
 
 $config['stylesheet_compiler']['settings'][] = array('type' => 'title', 'label' => 'Default colors');
 $config['stylesheet_compiler']['settings']['background'] = array('type' => 'color', 'default' => '#fff', 'label' => 'Background color');
 $config['stylesheet_compiler']['settings'][] = array('type' => 'delimiter');
-//$config['stylesheet_compiler']['settings']['default'] = array('type' => 'color', 'default' => '#212121', 'label' => 'Default color');
 $config['stylesheet_compiler']['settings']['primary'] = array('type' => 'color', 'default' => '#0044de', 'label' => 'Primary color');
-//$config['stylesheet_compiler']['settings']['secondary'] = array('type' => 'color', 'default' => '#6aabcf', 'label' => 'Secondary color');
 $config['stylesheet_compiler']['settings']['dark'] = array('type' => 'color', 'default' => '#3f4043', 'label' => 'Dark color');
 $config['stylesheet_compiler']['settings']['light'] = array('type' => 'color', 'default' => '#fff', 'label' => 'Light color');
 
 $config['stylesheet_compiler']['settings'][] = array('type' => 'delimiter');
+
 $config['stylesheet_compiler']['settings'][] = array('type' => 'title', 'label' => 'Texts colors');
 $config['stylesheet_compiler']['settings']['textDark'] = array('type' => 'color', 'default' => '#212121', 'label' => 'Text Dark');
 $config['stylesheet_compiler']['settings']['textLight'] = array('type' => 'color', 'default' => '#f4f4f4', 'label' => 'Text Light');
@@ -39,12 +38,7 @@ $config['stylesheet_compiler']['settings']['textLight'] = array('type' => 'color
 //$config['stylesheet_compiler']['settings']['textOnBackground'] = array('type' => 'color', 'default' => '#fff', 'label' => 'Text on Background');
 
 $config['stylesheet_compiler']['settings'][] = array('type' => 'delimiter');
-$config['stylesheet_compiler']['settings'][] = array('type' => 'title', 'label' => 'Other colors');
 
-//$config['stylesheet_compiler']['settings']['grey'] = array('type' => 'color', 'default' => '#bfbfbf', 'label' => 'Grey');
-//$config['stylesheet_compiler']['settings']['silver'] = array('type' => 'color', 'default' => '#f3f3f3', 'label' => 'Silver');
-
-$config['stylesheet_compiler']['settings'][] = array('type' => 'delimiter');
 
 $config['stylesheet_compiler']['settings'][] = array('type' => 'title', 'label' => 'Font Settings');
 

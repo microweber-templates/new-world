@@ -19,7 +19,7 @@ if (is_logged() == true) {
 }
 ?>
 
-<div class="edit main-content" rel="module" field="new-world_content">
+<div class="edit main-content" rel="content" field="content">
     <section class="section  p-t-50 p-b-50" rel="module">
         <div class="container">
             <div class="row">

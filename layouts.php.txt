@@ -12,7 +12,7 @@
 
 ?>
 <?php include template_dir() . "header.php"; ?>
-<div class="main-content edit" rel="module" field="new-world_content">
+<div class="main-content edit" rel="content" field="content">
 <?php
 $module_layouts = module_templates('layouts');
 foreach($module_layouts as $module){

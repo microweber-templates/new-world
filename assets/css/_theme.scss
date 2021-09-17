@@ -731,7 +731,7 @@ h5 {
     outline: 0 !important;
     color: $textDark;
     //font-size: $paragraph-md;
-    height: calc(1.5em + .75rem + 4px);
+    min-height: calc(1.5em + .75rem + 4px);
 }
 
 .form-control:focus {

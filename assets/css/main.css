@@ -21690,7 +21690,7 @@ h5, .h5 {
   box-shadow: none !important;
   outline: 0 !important;
   color: #212529;
-  height: calc(1.5em + .75rem + 4px); }
+  min-height: calc(1.5em + .75rem + 4px); }
 
 .form-control:focus {
   border-color: #0044de;

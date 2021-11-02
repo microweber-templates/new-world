@@ -29,9 +29,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             <div class="col-lg-10 mx-auto">
                 <div class="row">
                     <div class="col-12 col-lg-8">
-                        <div class="text-start text-start m-b-10">
+                        <div class="text-left text-start m-b-10">
                             <h2 class="hr">Last blog posts</h2>
-                            <a href="#" class="btn btn-link float-right ">Browse Articles</a>
+                            <a href="#" class="btn btn-link float-right float-end">Browse Articles</a>
                         </div>
 
                         <module type="posts" template="skin-1"/>

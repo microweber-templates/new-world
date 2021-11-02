@@ -117,7 +117,7 @@ if (!isset($tn[1])) {
                             <div class="col-6 d-flex justify-content-end">
                                 <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
                                     <?php if ($in_stock == true): ?>
-                                    <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-primary"><i class="mdi mdi-cart"></i> <span class="name-of-product-shop "><?php _e("Add to cart"); ?></a>
+                                    <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-primary"><i class="mdi mdi-cart"></i> <span class="name-of-product-shop mt-1"><?php _e("Add to cart"); ?></a>
                                     <?php else: ?>
                                         <span class="text-danger p-1"><i class="material-icons" style="font-size: 18px;">remove_shopping_cart</i> <?php _lang("Out of Stock", 'templates/new-world') ?></span>
                                     <?php endif; ?>

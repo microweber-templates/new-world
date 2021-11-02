@@ -52,10 +52,10 @@
 
 <?php include('footer_cart.php'); ?>
 
-<!--
+
 <script>
     mw.lib.require('slick');
-</script>-->
+</script>
 
 <script src="<?php print template_url(); ?>dist/main.min.js"></script>
 </body>

@@ -4871,7 +4871,7 @@ a.dropdown-toggle::after {
     }
     @media screen and (max-width: 575px) {
         .dropdown-menu.shopping-cart {
-            //min-width: 25rem;
+            min-width: 21rem;
         }
 
         .dropdown-menu.shopping-cart .total {

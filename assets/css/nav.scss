@@ -1541,7 +1541,7 @@ body.sticky-nav {
 
   .member-nav > .dropdown.btn-cart > .dropdown-menu,
   .member-nav.visible-search > .dropdown.search > .dropdown-menu {
-    width: 100%;
+    width: auto;
   }
 
   .member-nav.visible-search > .dropdown.search > .dropdown-menu:after {

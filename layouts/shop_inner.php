@@ -96,7 +96,7 @@ $prev = prev_content();
                                                 <?php } ?>
                                             </div>
 
-                                            <div class="availability col-6 text-end align-self-center">
+                                            <div class="availability col-6 text-end text-right align-self-center">
                                                 <?php if ($in_stock == true): ?>
                                                     <span class="text-success"><i class="mdi mdi-circle" style="font-size: 8px;"></i> <?php _lang("In Stock", 'templates/new-world') ?></span> <span class="text-muted"><?php if ($available_qty != ''): ?>(<?php echo $available_qty; ?>)<?php endif; ?></span>
                                                 <?php else: ?>
@@ -139,7 +139,7 @@ $prev = prev_content();
                     </div>
 
                     <div class="edit safe-mode nodrop mt-5" field="related_products" rel="content">
-                        <div class="col-12 text-start">
+                        <div class="col-12 text-start text-left">
                             <h5><?php _lang('Related products', 'templates/new-world'); ?></h5>
                             <hr style="opacity: 0.2;">
                         </div>

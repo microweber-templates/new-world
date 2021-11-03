@@ -27,7 +27,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     <div class="container">
         <div class="row">
             <div class="col-lg-10 mx-auto">
-                <div class="row d-flex justify-content-center text-center text-start m-b-20">
+                <div class="row d-flex justify-content-center text-center text-start text-left m-b-20">
                     <div class="col-12">
                         <h2 class="hr">See our plans</h2>
                     </div>

@@ -7,7 +7,7 @@
                         <h3>The last from<br/>blog here</h3>
                     </div>
                     <div class="col-lg-9">
-                        <div class="btn-posts text-end d-block d-lg-none">
+                        <div class="btn-posts text-end text-right d-block d-lg-none">
                             <a href="javascript:;" class="btn btn-primary js-show-posts">Close <span class="fas fa-times"></span></a>
                         </div>
 

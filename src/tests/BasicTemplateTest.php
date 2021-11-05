@@ -1,5 +1,5 @@
 <?php
-namespace MicroweberPackages\Templates\new-world\tests;
+namespace MicroweberPackages\Templates\new_world\tests;
 
 use MicroweberPackages\Core\tests\TestCase;
 

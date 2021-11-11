@@ -26,7 +26,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 <section class="section <?php echo $layout_classes; ?> edit safe-mode nodrop" field="layout-pricing-skin-1-<?php print $params['id'] ?>" rel="module">
     <div class="container">
         <div class="row">
-            <div class="col-lg-10 mx-auto">
+            <div class="col-xl-10 mx-auto">
                 <div class="row d-flex justify-content-center text-center text-start text-left m-b-20">
                     <div class="col-12">
                         <h2 class="hr">See our plans</h2>

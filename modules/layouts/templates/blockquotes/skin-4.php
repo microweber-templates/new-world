@@ -29,7 +29,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             <div class="row">
                 <div class="col-lg-8 col-lg-8 text-center m-b-20 mx-auto">
                     <h1 class="m-b-10">Clients Opinions</h1>
-                    <p class="lead">Read what our lients says for our services.</p>
+                    <p class="lead">Read what our clients says for our services.</p>
                 </div>
             </div>
 

@@ -15,19 +15,29 @@ class UpdateNewWorldTemplateEditFieldNames extends Migration
     {
         if (Schema::hasTable('content_fields')) {
 
-            $fields = DB::table('content_fields')->where('field', 'new-world_content')->get();
+            $fields = DB::table('content_fields')
+                ->whereIn('field', ['new-world_content', 'content'])
+                ->where('rel_type', 'content')
+                ->get();
+
             if ($fields) {
                 foreach ($fields as $field) {
+                    // move to content table
+                    DB::table('content')
+                        ->where('id', $field->rel_id)
+                        ->limit(1)
+                        ->update(['content' => $field->value]);
+
                     //clean old fields
-                     DB::table('content_fields')
+                    DB::table('content_fields')
                         ->where('field', 'content')
                         ->where('rel_id', $field->rel_id)
                         ->where('rel_type', $field->rel_type)
                         ->delete();
 
                     DB::table('content_fields')
-                        ->where('id',$field->id)
-                        ->update(['field' => 'content']);
+                        ->where('id', $field->id)
+                        ->delete();
 
                 }
             }

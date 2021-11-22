@@ -43,7 +43,7 @@ description: Testimonials Default
     });
 </script>
 
-<div class="slider-wrapper p-b-10">
+<div class="slider-wrapper p-b-10" style="background-color: #212529;">
     <div class="slick-testimonials inverse">
         <?php if (isset($data)): ?>
             <?php foreach ($data as $item) { ?>

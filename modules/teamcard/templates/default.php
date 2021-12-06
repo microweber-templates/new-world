@@ -14,7 +14,7 @@ description: Default
 <div class="row teamcard">
     <?php
     $count = 0;
-    $default_img = template_url() . 'assets/uploads/team1.jpg';
+    $default_img = template_url() . 'assets/img/people-1.jpg';
     if (isset($data) AND !empty($data)): ?>
         <?php foreach ($data as $slide):
             $count++;

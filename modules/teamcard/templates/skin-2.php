@@ -11,7 +11,12 @@ description: Skin - 2
 */
 ?>
 
-
+<script>
+    $(document).ready(function () {
+        // isotope filtering panel
+        masonryInit()
+    });
+</script>
 <?php if (isset($data) AND !empty($data)) : ?>
     <?php
     foreach ($data as $slide) {

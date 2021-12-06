@@ -519,6 +519,48 @@ function percent(num_amount, num_total) {
 }
 
 
+
+function masonryInit(){
+    $('.masonry-team .js-masonry-grid-works-filter').on('click', 'a:not(.all)', function (e) {
+        e.preventDefault();
+
+        $('body').find('a.all').removeClass('btn-primary list-masonry-grid-works-filter__link_active');
+        $('body').find('a.all').addClass('btn-outline-primary shadow-md');
+
+        $(this).addClass('btn-primary list-masonry-grid-works-filter__link_active');
+        $(this).removeClass('btn-outline-primary shadow-md');
+
+        istotopeFilter();
+    });
+
+    $('.masonry-team .js-masonry-grid-works-filter').on('click', 'a.list-masonry-grid-works-filter__link_active', function (e) {
+        e.preventDefault();
+
+        $(this).removeClass('btn-primary list-masonry-grid-works-filter__link_active');
+        $(this).addClass('btn-outline-primary shadow-md');
+
+        istotopeFilter();
+    });
+
+
+    $('.masonry-team .js-masonry-grid-works-filter').on('click', 'a.all', function (e) {
+        e.preventDefault();
+
+        $('.masonry-team .js-masonry-grid-works-filter .list-masonry-grid-works-filter__item a.list-masonry-grid-works-filter__link_active').each(function (index) {
+            $(this).removeClass('btn-primary list-masonry-grid-works-filter__link_active');
+            $(this).addClass('btn-outline-primary shadow-md');
+        });
+
+        $(this).removeClass('btn-outline-primary shadow-md');
+        $(this).addClass('btn-primary list-masonry-grid-works-filter__link_active');
+
+        istotopeFilter();
+    });
+}
+
+
+
+
 function setPaddingToSections() {
     if ($(window).width() > 991) {
         var headerWidth = $('.navigation-holder').width();
@@ -642,44 +684,9 @@ $(window).on('load', function () {
     }, 10);
 });
 
-
 $(document).ready(function () {
     // isotope filtering panel
-    $('.masonry-team .js-masonry-grid-works-filter').on('click', 'a:not(.all)', function (e) {
-        e.preventDefault();
-
-        $('body').find('a.all').removeClass('btn-primary list-masonry-grid-works-filter__link_active');
-        $('body').find('a.all').addClass('btn-outline-primary shadow-md');
-
-        $(this).addClass('btn-primary list-masonry-grid-works-filter__link_active');
-        $(this).removeClass('btn-outline-primary shadow-md');
-
-        istotopeFilter();
-    });
-
-    $('.masonry-team .js-masonry-grid-works-filter').on('click', 'a.list-masonry-grid-works-filter__link_active', function (e) {
-        e.preventDefault();
-
-        $(this).removeClass('btn-primary list-masonry-grid-works-filter__link_active');
-        $(this).addClass('btn-outline-primary shadow-md');
-
-        istotopeFilter();
-    });
-
-
-    $('.masonry-team .js-masonry-grid-works-filter').on('click', 'a.all', function (e) {
-        e.preventDefault();
-
-        $('.masonry-team .js-masonry-grid-works-filter .list-masonry-grid-works-filter__item a.list-masonry-grid-works-filter__link_active').each(function (index) {
-            $(this).removeClass('btn-primary list-masonry-grid-works-filter__link_active');
-            $(this).addClass('btn-outline-primary shadow-md');
-        });
-
-        $(this).removeClass('btn-outline-primary shadow-md');
-        $(this).addClass('btn-primary list-masonry-grid-works-filter__link_active');
-
-        istotopeFilter();
-    });
+    masonryInit()
 });
 /* ###################### Masonry Gallery with Magnific Popup ###################### */
 

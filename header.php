@@ -41,7 +41,7 @@
 
     </script>
 
-    <script src="<?php print template_url() ?>assets/js/main.js"></script>
+<!--    <script src="--><?php //print template_url() ?><!--assets/js/main.js"></script>-->
 
     <?php print get_template_stylesheet(); ?>
 

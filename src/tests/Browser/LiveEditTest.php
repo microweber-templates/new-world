@@ -5,6 +5,7 @@ namespace tests\Browser;
 
 use Laravel\Dusk\Browser;
 use Tests\Browser\Components\AdminLogin;
+use Tests\Browser\Components\AdminTemplate;
 use Tests\Browser\Components\ChekForJavascriptErrors;
 use Tests\Browser\Components\LiveEditModuleAdd;
 use Tests\DuskTestCase;
@@ -22,6 +23,15 @@ class TemplateTest extends DuskTestCase
             $browser->within(new AdminLogin(), function ($browser) {
                 $browser->fillForm();
             });
+
+            $browser->within(new AdminTemplate(), function ($browser) {
+                $browser->changeTemplate('default');
+            });
+
+            $browser->pause(8000);
+
+
+            return;
 
             $browser->visit($siteUrl . '?editmode=y');
             $browser->pause(4000);

@@ -25,13 +25,10 @@ class TemplateTest extends DuskTestCase
             });
 
             $browser->within(new AdminTemplate(), function ($browser) {
-                $browser->changeTemplate('default');
+                $browser->changeTemplate('new-world');
             });
 
             $browser->pause(8000);
-
-
-            return;
 
             $browser->visit($siteUrl . '?editmode=y');
             $browser->pause(4000);

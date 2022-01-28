@@ -1040,10 +1040,10 @@ body.sticky-nav {
 .navigation ul.list {
     display: block;
 
-    @media screen and (min-width: $burgerOpenMedia) {
+/*    @media screen and (min-width: $burgerOpenMedia) {
         display: none;
 
-    }
+    }*/
 }
 
 /*!!! Only for main header menu !!!*/

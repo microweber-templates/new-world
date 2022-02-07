@@ -1,6 +1,6 @@
 <?php
 
-namespace tests\Browser;
+namespace MicroweberPackages\Template\NewWorld\tests\Browser;
 
 
 use Laravel\Dusk\Browser;
@@ -10,7 +10,7 @@ use Tests\Browser\Components\ChekForJavascriptErrors;
 use Tests\Browser\Components\LiveEditModuleAdd;
 use Tests\DuskTestCase;
 
-class TemplateTest extends DuskTestCase
+class LiveEditTest extends DuskTestCase
 {
     public $siteUrl = 'http://127.0.0.1:8000/';
 

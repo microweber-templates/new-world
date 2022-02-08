@@ -52,6 +52,12 @@ class NewWorldLiveEditTemplateTest extends DuskTestCase
             $browser->pause(1000);
             $browser->waitForText('template of Microweber');
 
+            $browser->within(new ChekForJavascriptErrors(), function ($browser) {
+                $browser->validate();
+            });
+
+
+
             $checkIds = [
                 'header-logo',
                 'footer_newsletter',

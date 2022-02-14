@@ -49,13 +49,11 @@ class NewWorldLiveEditTemplateTest extends DuskTestCase
 
 
             $testUrl = content_link($findPage->id);
- 
+
 
             $browser->visit($testUrl . '?editmode=y');
             $browser->visit($testUrl);
             $browser->pause(5000);
-
-            dump($findPage->toArray());
 
             $browser->waitForText('template of Microweber',30);
 

@@ -20,37 +20,44 @@ class NewWorldLiveEditTemplateTest extends DuskTestCase
 
     public function testHomepageCreate()
     {
-        $user = User::where('is_admin', '=', '1')->first();
-        Auth::login($user);
 
-        $pageTitle = 'Homepage'.uniqid();
+        $this->browse(function (Browser $browser)  {
 
-        $newCleanPage = save_content([
-            'subtype' => 'static',
-            'content_type' => 'page',
-            'layout_file' => 'index.php',
-            'title' => $pageTitle,
-            'active_site_template'=> $this->template_name,
-            'is_active' => 1,
-        ]);
-
-        $findPage = Page::whereId($newCleanPage)->first();
-        $this->assertEquals($findPage->id, $newCleanPage);
-
-
-
-
-        $testUrl = content_link($findPage->id);
-
-        $this->browse(function (Browser $browser) use ($testUrl,$findPage) {
 
             $browser->within(new AdminLogin(), function ($browser) {
                 $browser->fillForm();
             });
 
+            $user = User::where('is_admin', '=', '1')->first();
+            Auth::login($user);
+
+            $pageTitle = 'Homepage'.uniqid();
+
+            $newCleanPage = save_content([
+                'subtype' => 'static',
+                'content_type' => 'page',
+                'layout_file' => 'index.php',
+                'title' => $pageTitle,
+                'active_site_template'=> $this->template_name,
+                'is_active' => 1,
+            ]);
+
+            $findPage = Page::whereId($newCleanPage)->first();
+            $this->assertEquals($findPage->id, $newCleanPage);
+
+
+
+
+            $testUrl = content_link($findPage->id);
+ 
+
             $browser->visit($testUrl . '?editmode=y');
-            $browser->pause(1000);
-            $browser->waitForText('template of Microweber');
+            $browser->visit($testUrl);
+            $browser->pause(5000);
+
+            dump($findPage->toArray());
+
+            $browser->waitForText('template of Microweber',30);
 
             $browser->within(new ChekForJavascriptErrors(), function ($browser) {
                 $browser->validate();

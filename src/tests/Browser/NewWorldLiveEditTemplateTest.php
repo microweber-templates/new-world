@@ -45,15 +45,11 @@ class NewWorldLiveEditTemplateTest extends DuskTestCase
             $findPage = Page::whereId($newCleanPage)->first();
             $this->assertEquals($findPage->id, $newCleanPage);
 
-
-
-
             $testUrl = content_link($findPage->id);
 
-
             $browser->visit($testUrl . '?editmode=y');
-            $browser->visit($testUrl);
-            $browser->pause(5000);
+
+            $browser->pause(15000);
 
             $browser->waitForText('template of Microweber',30);
 

@@ -7,17 +7,29 @@ use Laravel\Dusk\Browser;
 use MicroweberPackages\Page\Models\Page;
 use MicroweberPackages\Template\NewWorld\tests\Browser\Components\NewWorldShopProductLinksScraper;
 use MicroweberPackages\User\Models\User;
+use Tests\Browser\Components\AdminContentMultilanguage;
 use Tests\Browser\Components\AdminLogin;
 use Tests\Browser\Components\ChekForJavascriptErrors;
 use Tests\DuskTestCase;
+use Tests\DuskTestCaseMultilanguage;
 
-class NewWorldMultilanguageShopTest extends DuskTestCase
+class NewWorldMultilanguageShopTest extends DuskTestCaseMultilanguage
 {
     public $template_name = 'new-world';
 
     public function testShopVisit()
     {
         $this->browse(function (Browser $browser) {
+
+            // Activate multilanguage
+            $browser->within(new AdminLogin(), function ($browser) {
+                $browser->fillForm();
+            });
+
+            $browser->within(new AdminContentMultilanguage(), function ($browser) {
+                $browser->addLanguage('bg_BG');
+                $browser->addLanguage('en_US');
+            });
 
             if (defined('TEMPLATE_DIR') == false) {
                 define('TEMPLATE_DIR', templates_path() . $this->template_name . DS);

@@ -25,7 +25,41 @@ class NewWorldLiveEditTemplateTest extends DuskTestCase
             $findShop = Page::where('is_shop', 1)->first();
 
             $browser->visit($findShop->link());
-            $browser->pause(4000);
+            $browser->waitForText('Shop');
+            $browser->pause(3000);
+
+            $currencySymbol = get_currency_symbol();
+
+            $productLinksFromShop = $browser->script("
+
+                var links = [];
+                $('.product').each(function(index) {
+
+                    var product = {};
+                    product.link = $('.product').eq(index).find('a').attr('href');
+                    product.title = $('.product').eq(index).find('.heading-holder').text().trim();
+
+                    var scrapedPrice = $('.product').eq(index).find('.price').text().trim();
+                    scrapedPrice = scrapedPrice.replace('$currencySymbol', '');
+                    scrapedPrice = scrapedPrice.replace(' ', '');
+                    product.price = scrapedPrice;
+
+                    product.content_id = $('.product').eq(index).find('[name=\"content_id\"]').val();
+                    links.push(product);
+                });
+
+                return links;
+            ");
+
+
+            foreach ($productLinksFromShop[0] as $product) {
+
+                $browser->visit($product['link']);
+                $browser->waitForText($product['title']);
+                $browser->assertSee($product['title']);
+                $browser->assertSee($product['price']);
+
+            }
 
 
         });

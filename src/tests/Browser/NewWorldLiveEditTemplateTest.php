@@ -19,16 +19,20 @@ class NewWorldLiveEditTemplateTest extends DuskTestCase
     {
         $this->browse(function (Browser $browser) {
 
+            if (defined('TEMPLATE_DIR') == false) {
+                define('TEMPLATE_DIR', templates_path() . $this->template_name . DS);
+            }
 
-            $browser->within(new NewWorldShopProductLinksScraper(), function ($browser) {
-                $productLinksFromShop = $browser->scrapLinks();
-                foreach ($productLinksFromShop[0] as $product) {
+            app()->template_manager->boot_template();
 
+            $linkScraper = new NewWorldShopProductLinksScraper();
+            $browser->within($linkScraper, function ($browser) use ($linkScraper) {
+               $browser->scrapLinks();
+                foreach ($linkScraper->getLinks() as $product) {
                     $browser->visit($product['link']);
                     $browser->waitForText($product['title']);
                     $browser->assertSee($product['title']);
                     $browser->assertSee($product['price']);
-
                 }
             });
 

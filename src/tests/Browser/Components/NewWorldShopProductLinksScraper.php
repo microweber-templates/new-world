@@ -15,7 +15,7 @@ class NewWorldShopProductLinksScraper extends BaseComponent
      */
     public function selector()
     {
-        return '.module-shop-products';
+        return '.container';
     }
 
     /**
@@ -39,17 +39,20 @@ class NewWorldShopProductLinksScraper extends BaseComponent
         return [];
     }
 
+    public $productLinks;
     public function scrapLinks(Browser $browser)
     {
         $findShop = Page::where('is_shop', 1)->first();
 
         $browser->visit($findShop->link());
+        $browser->pause(3000);
+
         $browser->waitForText('Shop');
         $browser->pause(3000);
 
         $currencySymbol = get_currency_symbol();
 
-        $productLinksFromShop = $browser->script("
+        $this->productLinks = $browser->script("
 
                 var links = [];
                 $('.product').each(function(index) {
@@ -68,8 +71,12 @@ class NewWorldShopProductLinksScraper extends BaseComponent
                 });
 
                 return links;
-            ");
+            ")[0];
 
-        return $productLinksFromShop;
+    }
+
+    public function getLinks()
+    {
+        return $this->productLinks;
     }
 }

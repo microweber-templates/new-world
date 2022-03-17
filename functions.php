@@ -1,10 +1,6 @@
 <?php
 
-
 autoload_add_namespace(__DIR__ . '/src/', 'MicroweberPackages\\Template\\NewWorld\\');
-
-
-
 
 api_expose('theme_colors_palette_css');
 
@@ -17,14 +13,11 @@ api_expose_admin('theme_css_styles_save');
 
 function theme_css_styles_save($params = false)
 {
-
-
     $option = array();
     $option['option_value'] = json_encode($params);
     $option['option_key'] = 'new-world_theme_less_vars';
     $option['option_group'] = 'template';
     save_option($option);
-
 }
 
 

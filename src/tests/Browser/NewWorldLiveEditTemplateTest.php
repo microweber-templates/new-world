@@ -29,10 +29,13 @@ class NewWorldLiveEditTemplateTest extends DuskTestCase
             $browser->within($linkScraper, function ($browser) use ($linkScraper) {
                $browser->scrapLinks();
                 foreach ($linkScraper->getLinks() as $product) {
+
                     $browser->visit($product['link']);
+                    $browser->pause(1000);
                     $browser->waitForText($product['title']);
                     $browser->assertSee($product['title']);
                     $browser->assertSee($product['price']);
+
                 }
             });
 

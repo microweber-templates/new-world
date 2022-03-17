@@ -2,16 +2,13 @@
 
 namespace MicroweberPackages\Template\NewWorld\tests\Browser;
 
-
 use Illuminate\Support\Facades\Auth;
 use Laravel\Dusk\Browser;
-use MicroweberPackages\App\Http\Controllers\FrontendController;
 use MicroweberPackages\Page\Models\Page;
+use MicroweberPackages\Template\NewWorld\tests\Browser\Components\NewWorldShopProductLinksScraper;
 use MicroweberPackages\User\Models\User;
 use Tests\Browser\Components\AdminLogin;
-use Tests\Browser\Components\AdminTemplate;
 use Tests\Browser\Components\ChekForJavascriptErrors;
-use Tests\Browser\Components\LiveEditModuleAdd;
 use Tests\DuskTestCase;
 
 class NewWorldLiveEditTemplateTest extends DuskTestCase
@@ -22,44 +19,18 @@ class NewWorldLiveEditTemplateTest extends DuskTestCase
     {
         $this->browse(function (Browser $browser) {
 
-            $findShop = Page::where('is_shop', 1)->first();
 
-            $browser->visit($findShop->link());
-            $browser->waitForText('Shop');
-            $browser->pause(3000);
+            $browser->within(new NewWorldShopProductLinksScraper(), function ($browser) {
+                $productLinksFromShop = $browser->scrapLinks();
+                foreach ($productLinksFromShop[0] as $product) {
 
-            $currencySymbol = get_currency_symbol();
+                    $browser->visit($product['link']);
+                    $browser->waitForText($product['title']);
+                    $browser->assertSee($product['title']);
+                    $browser->assertSee($product['price']);
 
-            $productLinksFromShop = $browser->script("
-
-                var links = [];
-                $('.product').each(function(index) {
-
-                    var product = {};
-                    product.link = $('.product').eq(index).find('a').attr('href');
-                    product.title = $('.product').eq(index).find('.heading-holder').text().trim();
-
-                    var scrapedPrice = $('.product').eq(index).find('.price').text().trim();
-                    scrapedPrice = scrapedPrice.replace('$currencySymbol', '');
-                    scrapedPrice = scrapedPrice.replace(' ', '');
-                    product.price = scrapedPrice;
-
-                    product.content_id = $('.product').eq(index).find('[name=\"content_id\"]').val();
-                    links.push(product);
-                });
-
-                return links;
-            ");
-
-
-            foreach ($productLinksFromShop[0] as $product) {
-
-                $browser->visit($product['link']);
-                $browser->waitForText($product['title']);
-                $browser->assertSee($product['title']);
-                $browser->assertSee($product['price']);
-
-            }
+                }
+            });
 
 
         });

@@ -57,12 +57,10 @@ class NewWorldMultilanguageShopTest extends DuskTestCaseMultilanguage
 
 
             // Switch back to Bulgarian
-            $browser->pause(1000);
+            $browser->pause(2000);
             $browser->within(new LiveEditSwitchLanguage(), function ($browser) {
                 $browser->switchLanguage('bg_BG');
             });
-            $browser->pause(1000);
-
 
             $linkScraper = new NewWorldShopProductLinksScraper();
             $browser->within($linkScraper, function ($browser) use ($linkScraper) {

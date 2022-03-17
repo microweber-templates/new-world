@@ -42,9 +42,14 @@ class NewWorldShopProductLinksScraper extends BaseComponent
     public $productLinks;
     public function scrapLinks(Browser $browser)
     {
-        $findShop = Page::where('is_shop', 1)->first();
+        $findHome = Page::where('is_home', 1)->first();
 
-        $browser->visit($findShop->link());
+        $browser->visit($findHome->link());
+        $browser->waitForText('Shop');
+
+        $shopLink = $browser->script("return $('#header_menu').find('a:contains(\"Shop\")').first().attr('href')");
+        $browser->visit($shopLink[0]);
+
         $browser->pause(3000);
 
         $browser->waitForText('Shop');

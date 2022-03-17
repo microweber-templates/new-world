@@ -36,7 +36,6 @@ class NewWorldMultilanguageShopTest extends DuskTestCase
                 $browser->waitForText($product['title']);
                 $browser->assertSee($product['title']);
                 $browser->assertSee($product['price']);
-
             }
 
         });

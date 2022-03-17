@@ -18,11 +18,24 @@ class NewWorldLiveEditTemplateTest extends DuskTestCase
 {
     public $template_name = 'new-world';
 
+    public function testShopVisit()
+    {
+        $this->browse(function (Browser $browser) {
+
+            $findShop = Page::where('is_shop', 1)->first();
+
+            $browser->visit($findShop->link());
+            $browser->pause(4000);
+
+
+        });
+
+    }
+
     public function testHomepageCreate()
     {
 
         $this->browse(function (Browser $browser)  {
-
 
             $browser->within(new AdminLogin(), function ($browser) {
                 $browser->fillForm();

@@ -39,7 +39,6 @@ class NewWorldLiveEditTemplateTest extends DuskTestCase
 
             }
 
-
         });
 
     }

@@ -10,6 +10,7 @@ use MicroweberPackages\User\Models\User;
 use Tests\Browser\Components\AdminContentMultilanguage;
 use Tests\Browser\Components\AdminLogin;
 use Tests\Browser\Components\ChekForJavascriptErrors;
+use Tests\Browser\Components\LiveEditSwitchLanguage;
 use Tests\DuskTestCase;
 use Tests\DuskTestCaseMultilanguage;
 
@@ -48,7 +49,38 @@ class NewWorldMultilanguageShopTest extends DuskTestCaseMultilanguage
                 $browser->waitForText($product['title']);
                 $browser->assertSee($product['title']);
                 $browser->assertSee($product['price']);
+
+                $browser->within(new ChekForJavascriptErrors(), function ($browser) {
+                    $browser->validate();
+                });
             }
+
+
+            // Switch back to Bulgarian
+            $browser->pause(1000);
+            $browser->within(new LiveEditSwitchLanguage(), function ($browser) {
+                $browser->switchLanguage('bg_BG');
+            });
+            $browser->pause(1000);
+
+
+            $linkScraper = new NewWorldShopProductLinksScraper();
+            $browser->within($linkScraper, function ($browser) use ($linkScraper) {
+                $browser->scrapLinks();
+            });
+
+            foreach ($linkScraper->getLinks() as $product) {
+                $browser->visit($product['link']);
+                $browser->pause(1000);
+                $browser->waitForText($product['title']);
+                $browser->assertSee($product['title']);
+                $browser->assertSee($product['price']);
+
+                $browser->within(new ChekForJavascriptErrors(), function ($browser) {
+                    $browser->validate();
+                });
+            }
+
 
         });
 

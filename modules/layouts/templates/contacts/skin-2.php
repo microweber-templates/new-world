@@ -40,7 +40,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                         </div>
                     </div>
 
-                    <div class="col-lg-5 offset-lg-1">
+                    <div class="col-lg-6">
                         <div class="row">
                             <div class="col-12 cloneable">
                                 <div class="shadow-md box">

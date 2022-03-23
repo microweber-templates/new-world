@@ -25,14 +25,12 @@
         </div>
     </div>
 
-    <div class="row m-0 footer-newsletter">
-        <div class="col-10 p-0">
-            <input type="email" name="email" required class="form-control input-lg" placeholder="Email"/>
-        </div>
+    <div class="footer-newsletter">
 
-        <div class="col-2 p-0">
-            <button class="btn btn-primary btn-block text-center" type="submit" style="padding: 7px 12px !important;"><?php _e('Go'); ?></button>
-        </div>
+            <input type="email" name="email" required class="form-control input-lg" placeholder="Email"/>
+
+            <button class="btn btn-primary btn-block text-center" type="submit"><?php _e('Go'); ?></button>
+
     </div>
 
 

@@ -6055,16 +6055,21 @@ a.dropdown-toggle::after {
 }
 
 .footer-newsletter {
-    -webkit-border-radius: $borderRadiusInputs;
-    -moz-border-radius: $borderRadiusInputs;
     border-radius: $borderRadiusInputs;
     overflow: hidden;
-
-    input, button {
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
-        border-radius: 0;
+    input{
+        width: 100%;
+        background-color: $gray-900;
+        &:focus{
+            background-color: $gray-900;
+        }
     }
+    button{
+        width: 100%;
+        margin: 20px 0 0;
+        border-radius: 30px;
+    }
+
 }
 
 .twitter-feed-skin-1 {
@@ -6203,12 +6208,16 @@ a.dropdown-toggle::after {
                 content: '\f054';
                 font-family: "Font Awesome 5 Free" !important;
                 font-weight: 900;
-                margin-right: 13px;
+                margin-inline-end: 13px;
                 font-size: 12px;
                 color: #b9b9b9;
             }
         }
     }
+}
+
+html[dir="rtl"] .module-categories-template-horizontal-list-1 ul.mw-cats-menu {
+    text-align: right;
 }
 
 .shop-tags {

@@ -62,11 +62,11 @@
     flex-wrap: wrap;
   }
 
-  body:not([data-lang="ar"]) .header_style_1 .member-nav {
+  html[dir="ltr"] body .header_style_1 .member-nav {
     padding-left: 30px;
   }
 
-  body[data-lang="ar"] .header_style_1 .member-nav {
+  html[dir="rtl"] body .header_style_1 .member-nav {
     padding-right: 30px;
   }
 }

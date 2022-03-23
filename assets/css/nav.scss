@@ -179,11 +179,11 @@
   line-height: 0;
 }
 
-body:not([data-lang="ar"]) .navbar-header ul.header-contacts-list li a span:nth-of-type(2) {
+html[dir="ltr"] body .navbar-header ul.header-contacts-list li a span:nth-of-type(2) {
   margin-left: 7px;
 }
 
-body[data-lang="ar"] .navbar-header ul.header-contacts-list li a span:nth-of-type(2) {
+html[dir="rtl"] body .navbar-header ul.header-contacts-list li a span:nth-of-type(2) {
   margin-right: 7px;
 }
 
@@ -291,19 +291,19 @@ body[data-lang="ar"] .navbar-header ul.header-contacts-list li a span:nth-of-typ
   width: 34px;
 }
 
-body:not([data-lang="ar"]) .navigation .navbar-header .toggle {
+html[dir="ltr"] body .navigation .navbar-header .toggle {
   text-align: right;
 }
 
-body[data-lang="ar"] .navigation .navbar-header .toggle {
+html[dir="rtl"] body .navigation .navbar-header .toggle {
   text-align: left;
 }
 
-body:not([data-lang="ar"]) .navigation .navbar-header .toggle-inside-menu {
+html[dir="ltr"] body .navigation .navbar-header .toggle-inside-menu {
   margin-left: 15px;
 }
 
-body[data-lang="ar"] .navigation .navbar-header .toggle-inside-menu {
+html[dir="rtl"] body .navigation .navbar-header .toggle-inside-menu {
   margin-right: 15px;
 }
 
@@ -757,7 +757,7 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
   position: relative;
 
   li.dropdown {
-    position: static;
+    position: relative;
     a {
       position: relative;
     }
@@ -865,11 +865,11 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
     justify-content: center;
 }
 
-body:not([data-lang="ar"]) .member-nav .search .dropdown-menu i {
+html[dir="ltr"] body .member-nav .search .dropdown-menu i {
   padding: 0 0 0 0.5rem;
 }
 
-body[data-lang="ar"]  .member-nav .search .dropdown-menu i {
+html[dir="rtl"] body  .member-nav .search .dropdown-menu i {
   padding: 0 0.5rem 0 0;
 }
 
@@ -954,8 +954,12 @@ body[data-lang="ar"]  .member-nav .search .dropdown-menu i {
   /*    top: 100%;*/
 }
 
-body[data-lang="ar"] .dropdown-menu {
-  text-align: right;
+.navigation .menu .list > li a,
+html[dir="rtl"] body .dropdown,
+html[dir="rtl"] body .dropdown-menu,
+html[dir="rtl"] body .dropdown-menu a,
+html[dir="rtl"] body .dropdown a {
+  text-align: right !important;
 }
 
 .dropdown-menu li {
@@ -1195,7 +1199,7 @@ body.sticky-nav {
 
       .list .dropdown.show {
         background: $mobile-search-overlay-color;
-        margin: 0 20px;
+
         padding-bottom: 15px;
       }
 
@@ -1501,7 +1505,7 @@ body.sticky-nav {
   }
 
 
-  body[data-lang="ar"] .navigation .list li > a:after {
+  html[dir="rtl"] body .navigation .list li > a:after {
     left: 0;
     margin-left: 25px;
   }
@@ -1967,5 +1971,81 @@ body.sticky-nav {
       }
     }
   }
+}
+
+.dropdown-toggle-v2-list-item{
+    position: relative !important;
+}
+.dropdown-menu-v2{
+    background-color: $gray-900;
+    padding: 10px;
+    position: absolute;
+    top: 45px;
+    left:0;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    z-index: 10;
+    i{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        color: $gray-900;
+        font-size: 22px;
+        line-height: 28px;
+        background-color: #fff;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .dropdown-menu-v2{
+
+        left:-65px;
+    }
+}
+.dropdown-toggle-v2{
+    outline: none;
+    border-radius: 0 !important;
+    margin-right: 0;
+    color: #f8f9fa;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    i{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        color: $gray-900;
+        font-size: 22px;
+        line-height: 28px;
+        background-color: #fff;
+    }
+
+
+}
+
+.dropdown-toggle-v2-list-item-active {
+    .dropdown-menu-v2{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.dropdown-menu.shopping-cart{
+    transform: translate3d(50%, 7px, 0) !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+@media (max-width: 600px) {
+    .dropdown-menu.shopping-cart{
+        transform: translate3d(85%, 7px, 0) !important;
+
+    }
+    html[dir="rtl"] {
+        transform: translate3d(0, 7px, 0) !important;
+
+    }
 }
 

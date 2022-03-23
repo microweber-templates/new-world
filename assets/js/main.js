@@ -988,6 +988,7 @@ $(".secondary-menu .mobile-profile.has-sub-menu > a").on("click", function (e) {
     }
 });
 
+
 $(document).ready(function () {
 
     $('.navigation .menu .list.menu-root').collapseNav({
@@ -1005,6 +1006,18 @@ $(document).ready(function () {
     var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
     var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
         return new bootstrap.Dropdown(dropdownToggleEl)
+    })
+
+    $('.dropdown-toggle-v2').on('click', function (e){
+        e.preventDefault();
+        var cls = 'dropdown-toggle-v2-list-item-active';
+        var $node = $(this).parent();
+        $node.toggleClass(cls);
+        if($node.hasClass(cls)) {
+            setTimeout(function (){
+                $node.find('input').focus()
+            }, 100)
+        }
     })
 });
 

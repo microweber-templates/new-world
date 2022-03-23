@@ -26,3 +26,13 @@
     color: $breadcrumb-active-color;
   }
 }
+
+html[dir="rtl"] {
+    .breadcrumb-item {
+        + .breadcrumb-item {
+            &:before {
+                float: right;
+            }
+        }
+    }
+}

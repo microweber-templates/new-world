@@ -1627,6 +1627,10 @@
   text-align: left;
 }
 
+html[dir="rtl"] .portfolio-inner-page .heading {
+    text-align: right;
+}
+
 .portfolio-inner-page .heading h1 {
   font-size: 36px;
   color: $dark;

@@ -11404,10 +11404,10 @@ textarea.form-control-lg {
   list-style: none; }
 
 .breadcrumb-item + .breadcrumb-item {
-  padding-left: 0.5rem; }
+  padding-inline-start: 0.5rem; }
   .breadcrumb-item + .breadcrumb-item::before {
     float: left;
-    padding-right: 0.5rem;
+    padding-inline-end: 0.5rem;
     color: #6c757d;
     content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */; }
 .breadcrumb-item.active {
@@ -19479,6 +19479,9 @@ body.sticky-nav .navigation .menu .collapseNav-initialized {
 
 .portfolio-inner-page .heading {
   text-align: left; }
+
+html[dir="rtl"] .portfolio-inner-page .heading {
+  text-align: right; }
 
 .portfolio-inner-page .heading h1, .portfolio-inner-page .heading .h1 {
   font-size: 36px;

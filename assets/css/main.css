@@ -16907,8 +16907,7 @@ html[dir="rtl"] body .navbar-header ul.header-contacts-list li a span:nth-of-typ
     margin: 15px 0; }
 
   .navigation .navbar-header .logo img {
-    max-height: 100%;
-    width: auto !important; } }
+    max-height: 100%; } }
 /*END Logo settings*/
 @media screen and (max-width: 767px) {
   body.lock-scroll-extra-menu {
@@ -22161,8 +22160,7 @@ html[dir="rtl"] body .navbar-header ul.header-contacts-list li a span:nth-of-typ
     margin: 15px 0; }
 
   .navigation .navbar-header .logo img {
-    max-height: 100%;
-    width: auto !important; } }
+    max-height: 100%; } }
 /*END Logo settings*/
 @media screen and (max-width: 767px) {
   body.lock-scroll-extra-menu {
@@ -27798,3 +27796,5 @@ and open the template in the editor.
 .text-name .btn-link,
 .icon-name {
   color: #bfbfbf !important; }
+
+/*# sourceMappingURL=main.css.map */

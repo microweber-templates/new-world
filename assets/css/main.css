@@ -18483,6 +18483,8 @@ body.sticky-nav .navigation .menu .collapseNav-initialized {
   padding-bottom: 20px; }
   .shop-inner-page .heading h4, .shop-inner-page .heading .h4 {
     width: calc(100% - 70px); }
+.shop-inner-page .next-previous-content {
+  direction: ltr; }
 .shop-inner-page .main-price {
   font-weight: bold; }
   .shop-inner-page .main-price .price {

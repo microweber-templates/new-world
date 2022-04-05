@@ -10,8 +10,7 @@
 }
 
 .breadcrumb-item {
-  // The separator between breadcrumbs (by default, a forward-slash: "/")
-  + .breadcrumb-item {
+   + .breadcrumb-item {
     padding-inline-start: $breadcrumb-item-padding-x;
 
     &::before {

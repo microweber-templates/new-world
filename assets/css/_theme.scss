@@ -6142,19 +6142,16 @@ a.dropdown-toggle::after {
     .control-label,
     .form-check-label {
         left: 0;
-        position: absolute;
+        display: block;
         margin-top: 10px;
     }
 
     .custom-control {
-        margin-left: 0px !important;
-        margin-right: 20px;
+        margin-inline-start: 0px !important;
+        margin-inline-end: 20px;
         display: inline-block;
     }
 
-    .form-group {
-        //margin-bottom: 0.5rem;
-    }
 }
 
 .starrr {

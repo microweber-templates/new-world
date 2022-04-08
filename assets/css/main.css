@@ -17469,7 +17469,7 @@ html[dir="rtl"] body .member-nav .search .dropdown-menu i {
   min-width: 15rem;
   /*    top: 100%;*/ }
 
-.navigation .menu .list > li a,
+html[dir="rtl"] .navigation .menu .list > li a,
 html[dir="rtl"] body .dropdown,
 html[dir="rtl"] body .dropdown-menu,
 html[dir="rtl"] body .dropdown-menu a,
@@ -22722,7 +22722,7 @@ html[dir="rtl"] body .member-nav .search .dropdown-menu i {
   min-width: 15rem;
   /*    top: 100%;*/ }
 
-.navigation .menu .list > li a,
+html[dir="rtl"] .navigation .menu .list > li a,
 html[dir="rtl"] body .dropdown,
 html[dir="rtl"] body .dropdown-menu,
 html[dir="rtl"] body .dropdown-menu a,
@@ -27558,11 +27558,11 @@ a.dropdown-toggle::after {
   .product-custom-fields-holder .control-label,
   .product-custom-fields-holder .form-check-label {
     left: 0;
-    position: absolute;
+    display: block;
     margin-top: 10px; }
   .product-custom-fields-holder .custom-control {
-    margin-left: 0px !important;
-    margin-right: 20px;
+    margin-inline-start: 0px !important;
+    margin-inline-end: 20px;
     display: inline-block; }
 
 .starrr {
@@ -27796,5 +27796,3 @@ and open the template in the editor.
 .text-name .btn-link,
 .icon-name {
   color: #bfbfbf !important; }
-
-/*# sourceMappingURL=main.css.map */

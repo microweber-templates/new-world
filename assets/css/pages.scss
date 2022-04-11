@@ -275,10 +275,13 @@
       width: calc(#{"100% - 70px"});
     }
 
-    .next-previous-content {
 
-    }
   }
+
+    .next-previous-content {
+        direction: ltr;
+    }
+
 
   .main-price {
     font-weight: bold;

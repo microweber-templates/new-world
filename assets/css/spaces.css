@@ -17,9 +17,6 @@ select {
 img, fieldset {
   border: none; }
 
-ul, li {
-  list-style: none; }
-
 .right {
   text-align: right !important; }
 

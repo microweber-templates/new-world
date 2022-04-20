@@ -37,7 +37,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             <div class=" m-b-20">
                                 <div class="allow-drop">
                                     <h2 class="m-b-30">It is the new generation</h2>
-                                    <p>Microweber is an open-source content management system and website builder. It is based on the PHP programming language and the Laravel 5 web application framework.</p>
+                                    <p>The Website builder is an open-source content management system and website builder. It is based on the PHP programming language and the Laravel 5 web application framework.</p>
                                 </div>
                             </div>
                         </div>
@@ -51,7 +51,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             <div class=" m-b-20">
                                 <div class="allow-drop">
                                     <h2 class="m-b-30">Unique design</h2>
-                                    <p>Microweber is an open-source content management system and website builder. It is based on the PHP programming language and the Laravel 5 web application framework.</p>
+                                    <p>The Website builder is an open-source content management system and website builder. It is based on the PHP programming language and the Laravel 5 web application framework.</p>
                                 </div>
                             </div>
                         </div>

@@ -357,6 +357,7 @@
                 $('.portfolio-inner-page .project-gallery').each(function () {
                     var el = $(this);
                     el.slick({
+                        rtl:$('html').attr("dir") == "rtl",
                         centerMode: true,
                         centerPadding: '0px',
                         slidesToShow: 1,

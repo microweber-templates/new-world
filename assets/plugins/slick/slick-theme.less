@@ -61,7 +61,7 @@
     opacity: @slick-opacity-default;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    
+
     & when ( @slick-font-family = 'slick' ) {
         /* Icons */
         @font-face {
@@ -78,7 +78,7 @@
     left: -25px;
     [dir="rtl"] & {
         left: auto;
-        right: -25px;
+        //right: -25px;
     }
     &:before {
         content: @slick-prev-character;
@@ -91,7 +91,7 @@
 .slick-next {
     right: -25px;
     [dir="rtl"] & {
-        left: -25px;
+        //left: -25px;
         right: auto;
     }
     &:before {

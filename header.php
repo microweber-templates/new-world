@@ -40,10 +40,9 @@
         });
 
     </script>
-    
+
     <?php print get_template_stylesheet(); ?>
 
-    <link rel="stylesheet" href="<?php print template_url(); ?>assets/css/rtl-changes.css"/>
 
 
 

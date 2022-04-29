@@ -11,6 +11,12 @@ $searchType = '';
 if (isset($_GET['search-type'])) {
     $searchType = htmlspecialchars($_GET['search-type']);
 }
+if(function_exists('xss_clean')){
+    $keywords = xss_clean($keywords);
+    $searchType = xss_clean($searchType);
+}
+
+
 ?>
 <?php if ($searchType == 'blog' OR $searchType == ''): ?>
     <section class="section">

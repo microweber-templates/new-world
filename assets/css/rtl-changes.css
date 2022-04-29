@@ -1,3 +1,4 @@
+@charset "UTF-8";
 [dir="rtl"] .text-right, [dir="rtl"] .text-end {
   text-align: left !important; }
 [dir="rtl"] .text-left, [dir="rtl"] .text-left {
@@ -62,5 +63,9 @@
   left: unset; }
 [dir="rtl"] .slick-testimonials .slick-next, [dir="rtl"] .slick-next {
   right: unset; }
+[dir="rtl"] .slick-testimonials .slick-prev:before, [dir="rtl"] .slick-prev:before {
+  content: "" !important; }
+[dir="rtl"] .slick-testimonials .slick-next:before, [dir="rtl"] .slick-next:before {
+  content: "" !important; }
 
 /*# sourceMappingURL=rtl-changes.css.map */

@@ -379,19 +379,27 @@
     });
 
 
-    $window.on('load', function () {
-        /* ###################### Project Gallery ###################### */
+    if(typeof stickySidebar !== 'undefined'){
+        $window.on('load', function () {
+            /* ###################### Project Gallery ###################### */
 
-        var pInfo = $('.project-info');
+            var pInfo = $('.project-info');
 
-        pInfo.stickySidebar({
-            containerSelector: '.project-holder',
-            innerWrapperSelector: '.project-info-content',
-            topSpacing: 115,
-            bottomSpacing: 115
-        });
-    })
+            pInfo.stickySidebar({
+                containerSelector: '.project-holder',
+                innerWrapperSelector: '.project-info-content',
+                topSpacing: 115,
+                bottomSpacing: 115
+            });
+        })
+    }
 
+
+
+
+
+
+    if(typeof magnificPopup !== 'undefined'){
     $document.ready(function () {
         /* ###################### Magnific Popup with Video ###################### */
         $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
@@ -404,6 +412,9 @@
             fixedContentPos: false
         });
     });
+    }
+
+
     /* ###################### Magnific Popup with Video ###################### */
 
     /* ###################### Zoom Container Open Image ###################### */
@@ -461,20 +472,32 @@ $(document).ready(function () {
     $('#mw-template-new-world').removeClass('module');
 })
 
-/*$(document).ready(function () {
- $('.navigation .menu .list.menu-root').collapseNav({
- responsive: 1,
- mobile_break: 992,
- li_class: 'has-sub-menu dropdown'
- });
+/*
+$(document).ready(function () {
 
- if ($(window).width() <= 991) {
- $('.navigation .menu .list.menu-root .has-sub-menu a.dropdown-toggle').attr('href', 'javascript:;');
- $('.navigation .menu .list.menu-root .has-sub-menu').on('click', function (e) {
- // e.preventDefault();
- })
- }
- })*/
+
+    $('.navigation .menu .list.menu-root').collapseNav({
+        responsive: 1,
+        mobile_break: 992,
+        li_class: 'has-sub-menu dropdown'
+    });
+
+
+    if ($(window).width() <= 991) {
+        $('.navigation .menu .list.menu-root .has-sub-menu a.dropdown-toggle').attr('href', 'javascript:;');
+        $('.navigation .menu .list.menu-root .has-sub-menu').on('click', function (e) {
+            // e.preventDefault();
+        })
+    }
+    var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+    var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+        return new bootstrap.Dropdown(dropdownToggleEl)
+    })
+});*/
+
+$(".dropdown.has-sub-menu").on("click", function (e) {
+    $(this).toggleClass('show');
+});
 
 /* Ajax Loading */
 $(window).on('load', function () {
@@ -676,30 +699,42 @@ var masonryGrid = $('.masonry-team .js-masonry-grid-works');
 
 $(window).on('load', function () {
     // masonry grid
-    setTimeout(function () {
-        masonryGrid.masonry({
-            itemSelector: '.js-masonry-grid-works__item',
-            columnWidth: '.js-masonry-grid-works__sizer',
-            percentPosition: true
-        }).isotope();
-    }, 10);
+    if (masonryGrid.masonry) {
+
+        setTimeout(function () {
+            masonryGrid.masonry({
+                itemSelector: '.js-masonry-grid-works__item',
+                columnWidth: '.js-masonry-grid-works__sizer',
+                percentPosition: true
+            }).isotope();
+        }, 10);
+    }
 });
 
 $(document).ready(function () {
     // isotope filtering panel
-    masonryInit()
+    if (typeof $.fn.masonry !== undefined) {
+        masonryInit()
+    }
+
 });
 /* ###################### Masonry Gallery with Magnific Popup ###################### */
 
 
 $(document).ready(function () {
     if (!$('body').hasClass('mw-live-edit')) {
-         AOS.init();
+        if (typeof AOS !== 'undefined') {
+            AOS.init();
+
+        }
     }
 })
 
 
 /* ###################### Elevate Zoom ###################### */
+
+if(typeof elevateZoom !== 'undefined'){
+
 $(document).ready(function () {
 
     var elevateZoomTurnOn = $(document).width() > 991 ? true : false;
@@ -761,6 +796,8 @@ $(document).ready(function () {
         });
     }
 });
+}
+
 /* ###################### Elevate Zoom ###################### */
 
 
@@ -992,10 +1029,10 @@ $(".secondary-menu .mobile-profile.has-sub-menu > a").on("click", function (e) {
 
 $(document).ready(function () {
 
-    $('.navigation .menu .list.menu-root').collapseNav({
+    $('#header_menu.module-menu .list').collapseNav({
         responsive: 1,
         mobile_break: 992,
-        li_class: 'has-sub-menu dropdown'
+        li_class: 'dropdown'
     });
 
     if ($(window).width() <= 991) {

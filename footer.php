@@ -56,7 +56,32 @@
 <script>
     mw.lib.require('slick');
 </script>
+<script>
 
-<script src="<?php print template_url(); ?>dist/main.min.js"></script>
+    $(document).ready(function () {
+
+
+        $('.navigation .menu .list.menu-root').collapseNav({
+            responsive: 1,
+            mobile_break: 992,
+            more_text: '<?php _ejs("More"); ?>',
+            li_class: 'has-sub-menu dropdown'
+        });
+
+
+        if ($(window).width() <= 991) {
+            $('.navigation .menu .list.menu-root .has-sub-menu a.dropdown-toggle').attr('href', 'javascript:;');
+            $('.navigation .menu .list.menu-root .has-sub-menu').on('click', function (e) {
+                // e.preventDefault();
+            })
+        }
+        var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+        var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+            return new bootstrap.Dropdown(dropdownToggleEl)
+        })
+    });
+</script>
+
+<script src="<?php print template_url(); ?>assets/js/main.js"></script>
 </body>
 </html>

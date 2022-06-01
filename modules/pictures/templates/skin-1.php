@@ -18,7 +18,7 @@ description: Slick Brands
                 $('<?php print '#' . $params['id']; ?> .slick-brands').each(function () {
                     var el = $(this);
                     el.slick({
-                        rtl:$('html').attr("dir") == "rtl",
+                        rtl: document.documentElement.dir === 'rtl',
                         centerMode: true,
                         centerPadding: '0px',
                         slidesToShow: 5,

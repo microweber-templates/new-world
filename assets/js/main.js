@@ -357,7 +357,7 @@
                 $('.portfolio-inner-page .project-gallery').each(function () {
                     var el = $(this);
                     el.slick({
-                        rtl:$('html').attr("dir") == "rtl",
+                        rtl: document.documentElement.dir === 'rtl',
                         centerMode: true,
                         centerPadding: '0px',
                         slidesToShow: 1,
@@ -775,6 +775,7 @@ $(document).ready(function () {
         eGallery.each(function () {
             var el = $(this);
             el.slick({
+                rtl: document.documentElement.dir === 'rtl',
                 centerMode: true,
                 centerPadding: '0',
                 slidesToShow: 5,

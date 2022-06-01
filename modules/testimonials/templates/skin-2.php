@@ -18,7 +18,7 @@ description:  Skin 2
             $('<?php print '#' . $params['id']; ?> .slick-testimonials-3').each(function () {
                 var el = $(this);
                 el.slick({
-                    rtl:$('html').attr("dir") == "rtl",
+                    rtl: document.documentElement.dir === 'rtl',
                     centerMode: true,
                     centerPadding: '0px',
                     slidesToShow: 3,

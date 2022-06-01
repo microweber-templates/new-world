@@ -15,6 +15,7 @@ description: Default
 <script>
     $(document).ready(function () {
         $('<?php echo '#' . $params['id']; ?> .timeline').slick({
+            rtl: document.documentElement.dir === 'rtl',
             infinite: false,
             slidesToShow: 4,
             slidesToScroll: 1,

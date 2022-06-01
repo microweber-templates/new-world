@@ -27,14 +27,13 @@ description: Default
         }
     </style>
     <script>
-        alert(2222)
-        /* ###################### Slick   ###################### */
+         /* ###################### Slick   ###################### */
         $(document).ready(function () {
             if ($('<?php print '#' . $params['id']; ?> .slick-gallery').length > 0) {
                 $('<?php print '#' . $params['id']; ?> .slick-gallery').each(function () {
                     var el = $(this);
                     el.slick({
-                        rtl:$('html').attr("dir") == "rtl",
+                        rtl: document.documentElement.dir === 'rtl',
                         centerMode: true,
                         centerPadding: '0px',
                         slidesToShow: 5,

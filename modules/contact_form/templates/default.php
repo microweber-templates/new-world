@@ -29,7 +29,7 @@
             ?>
             <div class="col-12">
                 <?php if ($require_terms && $require_terms_when == 'b'): ?>
-                    <module type="users/terms" data-for="contact_form_default"/>
+                    <module type="users/terms" data-for="contact_form_default" />
                 <?php endif; ?>
             </div>
         </div>

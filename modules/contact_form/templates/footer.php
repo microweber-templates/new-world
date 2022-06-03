@@ -23,6 +23,11 @@
         <div class="col-12">
             <module type="custom_fields"/>
         </div>
+        <div class="col-12">
+            <?php if ($require_terms && $require_terms_when == 'b'): ?>
+                <module type="users/terms" data-for="contact_form_default"/>
+            <?php endif; ?>
+        </div>
     </div>
 
     <div class="footer-newsletter">

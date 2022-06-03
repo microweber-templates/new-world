@@ -24,6 +24,14 @@
             <div class="col-12">
                 <module type="custom_fields" default-fields="Your Name[type=text,field_size=6,show_placeholder=true], E-mail Address[type=email,field_size=6,show_placeholder=true], Phone[type=phone,field_size=6,show_placeholder=true], Company[type=text,field_size=6,show_placeholder=true], Message[type=textarea,field_size=12,show_placeholder=true]" input_class="form-control"/>
             </div>
+            <?php
+           // dd($require_terms);
+            ?>
+            <div class="col-12">
+                <?php if ($require_terms && $require_terms_when == 'b'): ?>
+                    <module type="users/terms" data-for="contact_form_default"/>
+                <?php endif; ?>
+            </div>
         </div>
 
         <div class="row">

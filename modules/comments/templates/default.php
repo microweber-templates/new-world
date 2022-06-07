@@ -144,7 +144,7 @@ description: Default comments template
                                                         <div class="comments-user-profile" style="margin-bottom: 5px;">
                                                             <?php _lang("You are commenting as"); ?>:
                                                             <span class="comments-user-profile-username"> <?php print user_name($cur_user_data['id']); ?> </span>
-                                                            <a href="<?php print api_link('logout') ?>" class="mw-ui-btn mw-ui-btn-outline mw-ui-btn-small mw-ui-btn-default float-right "><?php _lang("Logout", "templates/new-world"); ?></a>
+                                                            <a href="<?php print logout_url() ?>" class="mw-ui-btn mw-ui-btn-outline mw-ui-btn-small mw-ui-btn-default float-right "><?php _lang("Logout", "templates/new-world"); ?></a>
                                                         </div>
                                                     <?php endif; ?>
 

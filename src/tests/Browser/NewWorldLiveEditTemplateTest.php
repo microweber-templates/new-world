@@ -73,7 +73,7 @@ class NewWorldLiveEditTemplateTest extends DuskTestCase
 
             $browser->visit($testUrl . '?editmode=y');
 
-            $browser->pause(15000);
+            $browser->pause(10000);
 
             $browser->waitForText('template of Microweber',30);
 

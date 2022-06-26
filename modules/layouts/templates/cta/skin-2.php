@@ -29,7 +29,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     <div class="background-image-holder d-flex w-100 justify-content-center bg-primary" style="background-image: url('<?php print template_url(); ?>assets/img/blue-bg.jpg');">
         <div class="container d-flex justify-content-center align-items-center">
             <div class="w-100 text-center info-holder allow-drop" <?php if(is_live_edit()): ?>no-<?php endif;?>data-aos="fade-down">
-                <h3>Enjoy the Power of Default.</h3>
+                <h3>Enjoy the Power of the Website Builder</h3>
                 <br/>
                 <br/>
                 <br/>

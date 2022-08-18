@@ -49,7 +49,7 @@ if (isset($json) == false or count($json) == 0) {
         <div class="card">
             <div class="card-header" id="header-item-<?php print $edit_field_key ?>">
                 <h5 class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-accordion-item-<?php print $edit_field_key . '-' . $key ?>" aria-expanded="true" aria-controls="collapse-accordion-item-<?php print $edit_field_key . '-' . $key ?>">
+                    <button class="btn btn-link" data-bs-toggle="collapse"  data-bs-target="#collapse-accordion-item-<?php print $edit_field_key . '-' . $key ?>" aria-expanded="true" aria-controls="collapse-accordion-item-<?php print $edit_field_key . '-' . $key ?>">
                         <?php print isset($slide['icon']) ? $slide['icon'] . ' ' : ''; ?><?php print isset($slide['title']) ? $slide['title'] : ''; ?>
                     </button>
                 </h5>

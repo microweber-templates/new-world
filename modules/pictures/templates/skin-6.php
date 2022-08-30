@@ -22,7 +22,7 @@ if (is_array($data)): ?>
             <div class="shop-inner-gallery-thumbnails">
                 <?php $count = -1; foreach ($data as $item): $count++; ?>
                     <a
-                        href="<?php print thumbnail($item['filename'], 1920, 1920); ?>"
+                        href="<?php print thumbnail($item['filename'], 1280, 1280); ?>"
                         onclick="setProductImage('<?php print $pictureElementId; ?>', '<?php print thumbnail($item['filename'], 1920, 1920); ?>', <?php print $count; ?>);return false;"
                         style="background-image: url('<?php print thumbnail ($item['filename'], 200, 200); ?>');">
                     </a>

@@ -4,9 +4,9 @@
 
 type: layout
 
-name: Tabs 1
+name: Skin 1
 
-description: Tabs 1
+description: Skin 1
 
 */
 ?>
@@ -63,7 +63,7 @@ if (function_exists('tab_content') === false) {
 
 
 <div id="mw-tabs-module-<?php print $params['id'] ?>" class="mw-tabs-box-wrapper mw-module-tabs-skin-default">
-    <div class="tabs-2 m-t-30">
+    <div class="tabs">
         <ul id="q-tabs-<?php print $params['id'] ?>" class="nav nav-tabs" role="tablist">
             <?php
             $count = -1;
@@ -71,7 +71,7 @@ if (function_exists('tab_content') === false) {
                 $count++;
                 ?>
                 <li role="presentation" <?php if ($count == 0): ?>class="active"<?php endif; ?>>
-                    <a href="#tab-<?php print $params['id'] ?><?php print $count ?>" aria-controls="tab-<?php print $params['id'] ?><?php print $count ?>" role="tab" data-bs-toggle="tab">
+                    <a class="btn btn-outline-primary"  href="#tab-<?php print $params['id'] ?><?php print $count ?>" aria-controls="tab-<?php print $params['id'] ?><?php print $count ?>" role="tab" data-bs-toggle="tab">
 
 
                         <?php
@@ -79,9 +79,9 @@ if (function_exists('tab_content') === false) {
 
                         ?>
 
+                        <?php print $icon; ?>
 
-
-                        <span><?php print $icon; ?><?php print tab_content($slide, $count, 'title', $default_content, $has_default); ?></span>
+                        <span><?php print tab_content($slide, $count, 'title', $default_content, $has_default); ?></span>
                     </a>
                 </li>
             <?php } ?>

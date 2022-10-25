@@ -71,18 +71,12 @@ if (function_exists('tab_content') === false) {
                 $count++;
                 ?>
                 <?php
-                $icon = tab_content($slide, $count, 'icon', $default_content, $has_default);
-                if (strpos($icon, '</') !== false) {
-                    $picon = $icon;
-                } else {
-                    $picon = 'icon ' . $icon . '';
-                }
+                $icon = tab_content($slide, $count, 'icon', $default_content, $has_default); ?>
 
-                $picon = '';
-                ?>
+
 
                 <li role="presentation" <?php if ($count == 0): ?>class="active"<?php endif; ?>>
-                    <a href="#tab-<?php print $params['id'] ?><?php print $count ?>" aria-controls="tab-<?php print $params['id'] ?><?php print $count ?>" role="tab" data-toggle="tab" class="<?php print $picon; ?>"><span><?php print tab_content($slide, $count, 'title', $default_content, $has_default); ?></span></a>
+                    <a href="#tab-<?php print $params['id'] ?><?php print $count ?>" aria-controls="tab-<?php print $params['id'] ?><?php print $count ?>" role="tab" data-bs-toggle="tab"><?php print $icon; ?><span><?php print tab_content($slide, $count, 'title', $default_content, $has_default); ?></span></a>
                 </li>
             <?php } ?>
         </ul>

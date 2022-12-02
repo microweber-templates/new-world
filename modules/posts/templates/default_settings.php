@@ -67,8 +67,8 @@ if ($custom_classes === null OR $custom_classes === false OR $custom_classes == 
 
 <div class="mw-flex-row">
     <div class="mw-flex-col-xs-4 ">
-        <div class="form-group">
-            <label class="control-label d-block">Extra Small &lt; 576px</label>
+        <div class="form-group mb-2">
+            <label class="control-label mb-2 d-block">Extra Small &lt; 576px</label>
             <select name="columns-xs" class="mw_option_field selectpicker" data-width="100%" data-option-group="<?php print $params['id']; ?>" data-columns="xs">
                 <option value="col-12" <?php if ($columns_xs == 'col-12'): ?>selected<?php endif; ?>>1 column</option>
                 <option value="col-6" <?php if ($columns_xs == 'col-6'): ?>selected<?php endif; ?>>2 columns</option>
@@ -80,8 +80,8 @@ if ($custom_classes === null OR $custom_classes === false OR $custom_classes == 
     </div>
 
     <div class="mw-flex-col-xs-4 ">
-        <div class="form-group">
-            <label class="control-label d-block">Small ≥ 576px</label>
+        <div class="form-group mb-2">
+            <label class="control-label mb-2 d-block">Small ≥ 576px</label>
             <select name="columns-sm" class="mw_option_field selectpicker" data-width="100%" data-option-group="<?php print $params['id']; ?>" data-columns="sm">
                 <option value="col-sm-12" <?php if ($columns_sm == 'col-sm-12'): ?>selected<?php endif; ?>>1 column</option>
                 <option value="col-sm-6" <?php if ($columns_sm == 'col-sm-6'): ?>selected<?php endif; ?>>2 columns</option>
@@ -93,8 +93,8 @@ if ($custom_classes === null OR $custom_classes === false OR $custom_classes == 
     </div>
 
     <div class="mw-flex-col-xs-4 ">
-        <div class="form-group">
-            <label class="control-label d-block">Medium ≥ 768px</label>
+        <div class="form-group mb-2">
+            <label class="control-label mb-2 d-block">Medium ≥ 768px</label>
             <select name="columns-md" class="mw_option_field selectpicker" data-width="100%" data-option-group="<?php print $params['id']; ?>" data-columns="md">
                 <option value="col-md-12" <?php if ($columns_md == 'col-md-12'): ?>selected<?php endif; ?>>1 column</option>
                 <option value="col-md-6" <?php if ($columns_md == 'col-md-6'): ?>selected<?php endif; ?>>2 columns</option>
@@ -106,8 +106,8 @@ if ($custom_classes === null OR $custom_classes === false OR $custom_classes == 
     </div>
 
     <div class="mw-flex-col-xs-4 ">
-        <div class="form-group">
-            <label class="control-label d-block">Large ≥ 992px</label>
+        <div class="form-group mb-2">
+            <label class="control-label mb-2 d-block">Large ≥ 992px</label>
             <select name="columns-lg" class="mw_option_field selectpicker" data-width="100%" data-option-group="<?php print $params['id']; ?>" data-columns="lg">
                 <option value="col-lg-12" <?php if ($columns_lg == 'col-lg-12'): ?>selected<?php endif; ?>>1 column</option>
                 <option value="col-lg-6" <?php if ($columns_lg == 'col-lg-6'): ?>selected<?php endif; ?>>2 columns</option>
@@ -119,8 +119,8 @@ if ($custom_classes === null OR $custom_classes === false OR $custom_classes == 
     </div>
 
     <div class="mw-flex-col-xs-4 ">
-        <div class="form-group">
-            <label class="control-label d-block">Extra large ≥ 1200px</label>
+        <div class="form-group mb-2">
+            <label class="control-label mb-2 d-block">Extra large ≥ 1200px</label>
             <select name="columns-lg" class="mw_option_field selectpicker" data-width="100%" data-option-group="<?php print $params['id']; ?>" data-columns="xl">
                 <option value="col-lg-12" <?php if ($columns_xl == 'col-lg-12'): ?>selected<?php endif; ?>>1 column</option>
                 <option value="col-lg-6" <?php if ($columns_xl == 'col-lg-6'): ?>selected<?php endif; ?>>2 columns</option>
@@ -132,8 +132,8 @@ if ($custom_classes === null OR $custom_classes === false OR $custom_classes == 
     </div>
 
     <div class="mw-flex-col-xs-4 ">
-        <div class="form-group">
-            <label class="control-label d-block">Custom Classes</label>
+        <div class="form-group mb-2">
+            <label class="control-label mb-2 d-block">Custom Classes</label>
             <input name="custom-classes" class="mw_option_field form-control" data-option-group="<?php print $params['id']; ?>" value="<?php print $custom_classes; ?>" data-classes=""/>
         </div>
     </div>
@@ -141,8 +141,8 @@ if ($custom_classes === null OR $custom_classes === false OR $custom_classes == 
 
 <div class="mw-flex-row hidden">
     <div class="mw-flex-col-xs-12 ">
-        <div class="form-group">
-            <label class="control-label d-block">Columns</label>
+        <div class="form-group mb-2">
+            <label class="control-label mb-2 d-block">Columns</label>
             <input name="columns" class="mw_option_field form-control" data-option-group="<?php print $params['id']; ?>" value="<?php print $columns; ?>"/>
         </div>
     </div>

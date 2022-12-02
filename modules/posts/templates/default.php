@@ -42,6 +42,7 @@ if ($columns_xl != null OR $columns_xl != false OR $columns_xl != '') {
 ?>
 
 
+<div class="container-fluid">
     <div class="row">
         <div class="col-lg-12 mx-auto">
             <div class="row new-world-news">
@@ -78,13 +79,21 @@ if ($columns_xl != null OR $columns_xl != false OR $columns_xl != '') {
                                     <a href="<?php print $item['link'] ?>"><h3 class="m-b-10"><?php print $item['title'] ?></h3></a>
                                 <?php endif; ?>
 
+                                <?php if (!isset($show_fields) or $show_fields == false or in_array('created_at', $show_fields)): ?>
+
                                 <small><?php echo date('d M Y', strtotime($item['created_at'])); ?></small>
+                                <?php endif; ?>
 
                                 <?php if (!isset($show_fields) or $show_fields == false or in_array('description', $show_fields)): ?>
                                     <p><?php print $item['description'] ?></p>
                                 <?php endif; ?>
 
+                                <?php if (!isset($show_fields) or $show_fields == false or in_array('read_more', $show_fields)): ?>
+
                                 <a href="<?php print $item['link'] ?>" itemprop="url" class="button-8 m-t-20"><span>Read more</span></a>
+                                <?php endif; ?>
+
+
                             </div>
                         </div>
                     <?php endforeach; ?>
@@ -92,6 +101,7 @@ if ($columns_xl != null OR $columns_xl != false OR $columns_xl != '') {
             </div>
         </div>
     </div>
+</div>
 
 <?php if (isset($pages_count) and $pages_count > 1 and isset($paging_param)): ?>
     <module type="pagination" pages_count="<?php echo $pages_count; ?>" paging_param="<?php echo $paging_param; ?>"/>

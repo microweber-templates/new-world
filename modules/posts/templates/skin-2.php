@@ -12,6 +12,7 @@ description: Sidebar Posts
 ?>
 
 
+<div class="container-fluid">
     <div class="row blog-posts-2">
         <?php if (!empty($data)): ?>
             <?php foreach ($data as $item): ?>
@@ -32,6 +33,7 @@ description: Sidebar Posts
             <?php endforeach; ?>
         <?php endif; ?>
     </div>
+</div>
 
 <?php if (isset($pages_count) and $pages_count > 1 and isset($paging_param)): ?>
     <module type="pagination" pages_count="<?php echo $pages_count; ?>" paging_param="<?php echo $paging_param; ?>"/>

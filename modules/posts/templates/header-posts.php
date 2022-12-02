@@ -15,9 +15,13 @@
                     </div>
                 <?php endif; ?>
 
+                <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
+
                 <div class="info">
                     <h5><?php print $item['title'] ?></h5>
                 </div>
+                <?php endif; ?>
+
             </div>
         <?php endforeach; ?>
     <?php endif; ?>

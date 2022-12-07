@@ -22,6 +22,11 @@ class NewWorldMultilanguageShopTest extends DuskTestCaseMultilanguage
     {
         $this->browse(function (Browser $browser) {
 
+            $browser->within(new ChekForJavascriptErrors(), function ($browser) {
+                $browser->validate();
+            });
+
+
             // Activate multilanguage
             $browser->within(new AdminLogin(), function ($browser) {
                 $browser->fillForm();

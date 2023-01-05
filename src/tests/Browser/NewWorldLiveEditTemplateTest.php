@@ -37,6 +37,11 @@ class NewWorldLiveEditTemplateTest extends DuskTestCase
                 $browser->assertSee($product['title']);
                 $browser->assertSee($product['price']);
 
+                $browser->within(new ChekForJavascriptErrors(), function ($browser) {
+                    $browser->validate();
+                });
+
+
             }
 
         });

@@ -17,6 +17,23 @@
     }
   ],
   "extra": {
+    "categoreis": [
+      "ecommerce",
+    ],
+    "colors": [
+      {
+        "name": "Blue",
+        "hex": "#0044de"
+      },
+      {
+        "name": "Black",
+        "hex": "#212529"
+      },
+      {
+        "name": "White",
+        "hex": "#fff"
+      },
+    ],
     "preview_url": "https://templates.microweber.com/new-world/"
   },
   "target-dir": "new-world"

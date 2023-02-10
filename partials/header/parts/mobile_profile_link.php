@@ -19,11 +19,11 @@
             <a href="#" class="dropdown-toggle opacity-8" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><i class="fa fa-user-circle-o"></i> <span><?php _lang("Hi", "templates/new-world"); ?>,<?php if (user_id()): ?> <?php print user_name(); ?> <?php else: ?> Guest <?php endif; ?> <span class="caret"></span></span></a>
             <ul class="dropdown-menu">
                 <?php if (user_id()): ?>
-                    <li><a href="#" data-toggle="modal" data-target="#loginModal"><?php _lang("Profile", "templates/new-world"); ?></a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#ordersModal"><?php _lang("My Orders", "templates/new-world"); ?></a></li>
+                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"><?php _lang("Profile", "templates/new-world"); ?></a></li>
+                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#ordersModal"><?php _lang("My Orders", "templates/new-world"); ?></a></li>
                 <?php else: ?>
-                    <li><a href="#" class="js-login-modal" data-toggle="modal" data-target="#loginModal"><?php _lang("Login", "templates/new-world"); ?></a></li>
-                    <li><a href="#" class="js-register-modal" data-toggle="modal" data-target="#loginModal"><?php _lang("Register", "templates/new-world"); ?></a></li>
+                    <li><a href="#" class="js-login-modal" data-bs-toggle="modal" data-bs-target="#loginModal"><?php _lang("Login", "templates/new-world"); ?></a></li>
+                    <li><a href="#" class="js-register-modal" data-bs-toggle="modal" data-bs-target="#loginModal"><?php _lang("Register", "templates/new-world"); ?></a></li>
                 <?php endif; ?>
 
                 <?php if (is_admin()): ?>

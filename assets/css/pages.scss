@@ -245,7 +245,7 @@
 
 .blog-inner-page .reviews {
   h1, h2, h3, h4, h5, h6, p, span {
-    color: $textOnWhite !important;
+    color: $textOnWhite $mw-importance;
   }
 }
 
@@ -692,7 +692,7 @@
 
       img {
         max-height: 100%;
-        /*position: relative !important;*/
+        /*position: relative $mw-importance;*/
         left: 0;
         right: 0;
         margin: 0 auto;
@@ -756,11 +756,11 @@
         font-size: 0;
         border: 0;
         background: none;
-        //display: none !important;
+        //display: none $mw-importance;
       }
 
       &:hover .slick-arrow {
-        display: block !important;
+        display: block $mw-importance;
       }
 
       .slick-arrow:before {
@@ -803,11 +803,11 @@
   font-size: 0;
   border: 0;
   background: none;
-  display: none !important;
+  display: none $mw-importance;
 }
 
 .shop-inner-page .product-gallery:hover .slick-arrow {
-  display: block !important;
+  display: block $mw-importance;
 }
 
 .shop-inner-page .product-gallery .slick-arrow:before {
@@ -1186,10 +1186,10 @@
 }
 
 .checkout-modal .modal-content {
-  border: 1px solid #c3c3c3 !important;
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  box-shadow: none !important;
+  border: 1px solid #c3c3c3 $mw-importance;
+  -webkit-box-shadow: none $mw-importance;
+  -moz-box-shadow: none $mw-importance;
+  box-shadow: none $mw-importance;
   background: #f5f5f5;
   color: #505050;
 }
@@ -1358,7 +1358,7 @@
 
 .checkout-modal .js-step-content .fields .field-holder .form-control,
 .checkout-modal .js-step-content .fields .field-holder .bootstrap-select {
-  width: 100% !important;
+  width: 100% $mw-importance;
 }
 
 .checkout-modal .js-step-content .fields .field-holder .bootstrap-select .btn {
@@ -1412,10 +1412,10 @@
 }
 
 .login-modal .modal-content {
-  border: 1px solid #c3c3c3 !important;
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  box-shadow: none !important;
+  border: 1px solid #c3c3c3 $mw-importance;
+  -webkit-box-shadow: none $mw-importance;
+  -moz-box-shadow: none $mw-importance;
+  box-shadow: none $mw-importance;
   background: #f5f5f5;
   color: #505050;
 }
@@ -1604,8 +1604,8 @@
 }
 
 .login-modal .personal-data {
-  color: #bbbbbb !important;
-  text-align: justify !important;
+  color: #bbbbbb $mw-importance;
+  text-align: justify $mw-importance;
 }
 
 @media screen and (max-width: 520px) {
@@ -1684,11 +1684,11 @@ html[dir="rtl"] .portfolio-inner-page .heading {
   font-size: 0;
   border: 0;
   background: none;
-  display: none !important;
+  display: none $mw-importance;
 }
 
 .portfolio-inner-page .project-gallery:hover .slick-arrow {
-  display: block !important;
+  display: block $mw-importance;
 }
 
 .portfolio-inner-page .project-gallery .slick-arrow:before {

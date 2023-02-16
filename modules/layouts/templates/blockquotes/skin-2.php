@@ -24,7 +24,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 ?>
 
 
-<section class="section edit safe-mode nodrop" data-background-position="center bottom" field="layout-blockquotes-skin-2-<?php print $params['id'] ?>" rel="module">
+<section class="section edit safe-mode nodrop layout-blockquotes-block" data-background-position="center bottom" field="layout-blockquotes-skin-2-<?php print $params['id'] ?>" rel="module">
     <div class="background-image-holder d-flex w-100 <?php print $layout_classes; ?>" style="background-image: url('<?php print template_url(); ?>assets/img/blockquote-1.jpg');">
         <div class="container">
             <div class="row element">

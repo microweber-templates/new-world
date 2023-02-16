@@ -279,33 +279,33 @@ html:not(.mobile-menu-active) {
     &.navigation-holder.not-transparent .navigation .logo.logo-dark,
     &.navigation-holder .navigation.sticky .logo.logo-dark,
     &.navigation-holder.not-transparent .navigation.sticky .logo.logo-dark {
-      display: none !important;
+      display: none $mw-importance;
     }
     &.navigation-holder .navigation .logo.logo-light,
     &.navigation-holder.not-transparent .navigation .logo.logo-light,
     &.navigation-holder .navigation.sticky .logo.logo-light,
     &.navigation-holder.not-transparent .navigation.sticky .logo.logo-light {
-      display: flex !important;
+      display: flex $mw-importance;
     }
 
     .navigation.sticky {
-      border: 0 !important;
+      border: 0 $mw-importance;
     }
 
     .navigation .list > li > a {
-      color: $textDark !important;
+      color: $textDark $mw-importance;
     }
 
     .navigation .member-nav .dropdown-toggle > i, .navigation .member-nav .dropdown-toggle > i,
     .navigation .member-nav .dropdown-toggle > i, .not-transparent .navigation .member-nav .dropdown-toggle > i,
     .navigation.sticky .member-nav .dropdown-toggle > i, .not-transparent .navigation .member-nav .dropdown-toggle > i,
     .navigation.sticky .member-nav .dropdown-toggle > i, .not-transparent .navigation .member-nav .dropdown-toggle > i {
-      color: $textDark !important;
+      color: $textDark $mw-importance;
     }
 
     .member-nav .dropdown-toggle > span {
-      background-color: $textLight !important;
-      color: $textDark !important;
+      background-color: $textLight $mw-importance;
+      color: $textDark $mw-importance;
     }
   }
 }
@@ -432,7 +432,7 @@ html:not(.mobile-menu-active) {
     .navigation {
       .menu {
         .sub-menu-more {
-          display: none !important;
+          display: none $mw-importance;
         }
 
         ul {
@@ -502,8 +502,8 @@ html:not(.mobile-menu-active) {
         }
 
         .has-sub-menu ul.dropdown-menu {
-          position: static !important;
-          transform: unset !important;
+          position: static $mw-importance;
+          transform: unset $mw-importance;
           opacity: 1;
           visibility: visible;
           display: none;
@@ -519,7 +519,7 @@ html:not(.mobile-menu-active) {
       }
 
       .menu-overlay[class*="pl-"] {
-        padding: 0 !important;
+        padding: 0 $mw-importance;
       }
 
       .navbar-header .toggle {
@@ -582,7 +582,7 @@ html:not(.mobile-menu-active) {
           top: 0;
           left: 0;
           height: 100%;
-          padding: 0 !important;
+          padding: 0 $mw-importance;
           opacity: 1;
           transition: all, 0.3s;
           z-index: 1;

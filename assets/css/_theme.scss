@@ -1,7 +1,7 @@
 
 body {
     font-family: $fontFamily;
-    outline: none !important;
+    outline: none $mw-importance;
 }
 
 img {
@@ -77,7 +77,7 @@ h5.hr:after {
 
 hr.hr {
     display: inline-block;
-    min-height: auto !important;
+    min-height: auto $mw-importance;
     border: 0;
     width: 65%;
     max-width: 150px;
@@ -107,7 +107,7 @@ hr.hr {
 
 .text-left {
     h1.hr, h2.hr, h3.hr, h4.hr, h5.hr, h6.hr {
-        margin-left: 0 !important;
+        margin-left: 0 $mw-importance;
 
         &:after {
             display: block;
@@ -210,7 +210,7 @@ h5 {
 
 .text-white {
     h1, h2, h3, h4, h5, h6, p {
-        color: $textLight !important;
+        color: $textLight $mw-importance;
     }
 }
 
@@ -249,15 +249,15 @@ h5 {
 }
 
 .bg-primary {
-    background-color: $primary !important;
+    background-color: $primary $mw-importance;
 }
 
 .bg-secondary {
-    background-color: $secondary !important;
+    background-color: $secondary $mw-importance;
 }
 
 .bg-silver {
-    background-color: $silver !important;
+    background-color: $silver $mw-importance;
 }
 
 .bg-content-box {
@@ -278,8 +278,9 @@ h5 {
 
 .main-content {
     overflow: hidden;
+    color: $textDark;
     p {
-        color: $textDark;
+
         font-size: $paragraph-xl;
 
         font-weight: normal;
@@ -299,18 +300,18 @@ h5 {
 
     p.highlight {
         color: $default;
-        font-size: $paragraph-xl !important;
-        position: relative !important;
-        font-weight: 600 !important;
-        font-style: normal !important;
-        font-stretch: normal !important;
-        line-height: 1.44 !important;
-        letter-spacing: 0.23px !important;
-        padding-left: 30px !important;
-        text-align: left !important;
+        font-size: $paragraph-xl $mw-importance;
+        position: relative $mw-importance;
+        font-weight: 600 $mw-importance;
+        font-style: normal $mw-importance;
+        font-stretch: normal $mw-importance;
+        line-height: 1.44 $mw-importance;
+        letter-spacing: 0.23px $mw-importance;
+        padding-left: 30px $mw-importance;
+        text-align: left $mw-importance;
 
         @media screen and (max-width: 1199px) {
-            font-size: $paragraph-lg !important;
+            font-size: $paragraph-lg $mw-importance;
         }
 
         /*
@@ -343,16 +344,16 @@ h5 {
 
     p.lead {
         color: $default;
-        font-size: $title-sm !important;
-        position: relative !important;
-        font-weight: normal !important;
-        font-style: normal !important;
-        font-stretch: normal !important;
-        line-height: 1.44 !important;
-        letter-spacing: 0.23px !important;
+        font-size: $title-sm $mw-importance;
+        position: relative $mw-importance;
+        font-weight: normal $mw-importance;
+        font-style: normal $mw-importance;
+        font-stretch: normal $mw-importance;
+        line-height: 1.44 $mw-importance;
+        letter-spacing: 0.23px $mw-importance;
 
         @media screen and (max-width: 1199px) {
-            font-size: $paragraph-lg !important;
+            font-size: $paragraph-lg $mw-importance;
         }
     }
 
@@ -364,7 +365,7 @@ h5 {
         line-height: 1.32;
         letter-spacing: 0.35px;
         text-align: center;
-        color: #303953;
+        color: inherit;
 
         &:before {
             width: 100%;
@@ -577,25 +578,25 @@ h5 {
 
     @media (min-width: 1200px) {
         .hidden-lg {
-            display: none !important;
+            display: none $mw-importance;
         }
     }
 
     @media (max-width: 1199px) and (min-width: 992px) {
         .hidden-md {
-            display: none !important;
+            display: none $mw-importance;
         }
     }
 
     @media (max-width: 991px) and (min-width: 768px) {
         .hidden-sm {
-            display: none !important;
+            display: none $mw-importance;
         }
     }
 
     @media (max-width: 767px) {
         .hidden-xs {
-            display: none !important;
+            display: none $mw-importance;
         }
 
     }
@@ -610,9 +611,9 @@ h5 {
 }
 
 .shadow-sm {
-    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
-    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.23) $mw-importance;
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.23) $mw-importance;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.23) $mw-importance;
 }
 
 .shadow-md {
@@ -725,10 +726,10 @@ h5 {
     -moz-border-radius: $borderRadiusInputs;
     border-radius: $borderRadiusInputs;
     border-color: #d8d8d8;
-    -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
-    box-shadow: none !important;
-    outline: 0 !important;
+    -webkit-box-shadow: none $mw-importance;
+    -moz-box-shadow: none $mw-importance;
+    box-shadow: none $mw-importance;
+    outline: 0 $mw-importance;
     color: $textDark;
     //font-size: $paragraph-md;
     min-height: calc(1.5em + .75rem + 4px);
@@ -736,8 +737,8 @@ h5 {
 
 .form-control:focus {
     border-color: $primary;
-    -webkit-box-shadow: 0 0 10px rgba(red($primary), green($primary), blue($primary), .5) !important;
-    box-shadow: 0 0 10px rgba(red($primary), green($primary), blue($primary), .5) !important;
+    -webkit-box-shadow: 0 0 10px rgba(red($primary), green($primary), blue($primary), .5) $mw-importance;
+    box-shadow: 0 0 10px rgba(red($primary), green($primary), blue($primary), .5) $mw-importance;
 }
 
 .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -757,10 +758,10 @@ h5 {
 .btn:focus,
 .btn-group .dropdown-toggle:active,
 .btn-group.show .dropdown-toggle {
-    -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
-    box-shadow: none !important;
-    outline: 0 !important;
+    -webkit-box-shadow: none $mw-importance;
+    -moz-box-shadow: none $mw-importance;
+    box-shadow: none $mw-importance;
+    outline: 0 $mw-importance;
 }
 
 .module {
@@ -888,7 +889,7 @@ h5 {
     }
 
     .dropdown-menu {
-        margin-top: -1px !important;
+        margin-top: -1px $mw-importance;
     }
 
     .dropdown-toggle::after {
@@ -899,9 +900,9 @@ h5 {
 
     .btn.dropdown-toggle,
     .dropdown-menu {
-        -webkit-border-radius: 0 !important;
-        -moz-border-radius: 0 !important;
-        border-radius: 0 !important;
+        -webkit-border-radius: 0 $mw-importance;
+        -moz-border-radius: 0 $mw-importance;
+        border-radius: 0 $mw-importance;
     }
 
     .btn.dropdown-toggle, .bootstrap-select .dropdown-menu {
@@ -1085,18 +1086,18 @@ ul.socials {
 
 ul.socials.labels {
     margin-top: 0;
-    text-align: right !important;
+    text-align: right $mw-importance;
     li {
         display: inline-block;
         color: $default;
         margin-left: 5px;
-        margin-right: 0px !important;
+        margin-right: 0px $mw-importance;
         width: auto;
     }
 
     li a {
         display: block;
-        color: $textLight !important;
+        color: $textLight $mw-importance;
         text-decoration: none;
         background: rgba(61, 0, 180, 0.03);
         height: 30px;
@@ -1339,12 +1340,12 @@ ul.socials-2 {
 .btn-outline-primary.active.focus,
 .btn-outline-primary.active:focus,
 .btn-outline-primary.active {
-    color: $textLight !important;
-    background-color: $primary !important;
-    border: 1px solid $primary !important;
-    -webkit-border-radius: $borderRadiusButtons !important;
-    -moz-border-radius: $borderRadiusButtons !important;
-    border-radius: $borderRadiusButtons !important;
+    color: $textLight $mw-importance;
+    background-color: $primary $mw-importance;
+    border: 1px solid $primary $mw-importance;
+    -webkit-border-radius: $borderRadiusButtons $mw-importance;
+    -moz-border-radius: $borderRadiusButtons $mw-importance;
+    border-radius: $borderRadiusButtons $mw-importance;
 }
 
 .btn-link {
@@ -1366,7 +1367,7 @@ ul.socials-2 {
 .btn-play {
     width: 85px;
     height: 85px;
-    border-radius: 100% !important;
+    border-radius: 100% $mw-importance;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1638,7 +1639,7 @@ ul.socials-2 {
     color: $textLight;
     cursor: pointer;
     position: relative;
-    text-decoration: none !important;
+    text-decoration: none $mw-importance;
     text-transform: uppercase;
     overflow: hidden;
 
@@ -1702,7 +1703,7 @@ ul.socials-2 {
     color: $textLight;
     cursor: pointer;
     position: relative;
-    text-decoration: none !important;
+    text-decoration: none $mw-importance;
     text-transform: uppercase;
     overflow: hidden;
 
@@ -1859,8 +1860,8 @@ ul.socials-2 {
 }
 
 .button-7 {
-    color: $textLight !important;
-    text-decoration: none !important;
+    color: $textLight $mw-importance;
+    text-decoration: none $mw-importance;
     font-size: $paragraph-xl;
     font-weight: 600;
     font-style: normal;
@@ -1919,9 +1920,9 @@ ul.socials-2 {
 }
 
 .button-8 {
-    color: $primary !important;
-    text-decoration: none !important;
-    font-size: $paragraph-xl !important;
+    color: $primary $mw-importance;
+    text-decoration: none $mw-importance;
+    font-size: $paragraph-xl $mw-importance;
     font-weight: 600;
     font-style: normal;
     font-stretch: normal;
@@ -1933,12 +1934,12 @@ ul.socials-2 {
     z-index: 2;
 
     span {
-        font-size: $paragraph-xl !important;
+        font-size: $paragraph-xl $mw-importance;
         display: block;
         z-index: 2;
         padding-right: 20px;
         transition: all .2s linear 0s;
-        color: $primary !important;
+        color: $primary $mw-importance;
     }
 
     span:after {
@@ -1966,7 +1967,7 @@ ul.socials-2 {
     }
 
     &.button-red {
-        color: $primary !important;
+        color: $primary $mw-importance;
         span:after {
             color: $primary;
         }
@@ -2229,13 +2230,13 @@ ul.socials-2 {
 
 @media screen and (max-width: 991px) {
     .tabs-2 .nav-tabs > li {
-        width: 50% !important;
+        width: 50% $mw-importance;
     }
 }
 
 @media screen and (max-width: 767px) {
     .tabs-2 .nav-tabs > li {
-        width: 100% !important;
+        width: 100% $mw-importance;
     }
 }
 
@@ -2295,7 +2296,7 @@ ul.socials-2 {
 .field-holder select:not(.selectpicker) {
     float: left;
     display: block;
-    width: auto !important;
+    width: auto $mw-importance;
 }
 
 .field-holder .btn,
@@ -2394,7 +2395,7 @@ ul.socials-2 {
 .accordions .panel-body {
     padding: 15px;
     border: 1px solid #f9f9f9;
-    border-top: 0 !important;
+    border-top: 0 $mw-importance;
 }
 
 .accordions .panel-body,
@@ -2666,11 +2667,11 @@ ul.socials-2 {
     font-size: 0;
     border: 0;
     background: none;
-    display: none !important;
+    display: none $mw-importance;
 }
 
 .slick-testimonials-2:hover .slick-arrow {
-    display: block !important;
+    display: block $mw-importance;
 }
 
 .slick-testimonials-2 .slick-arrow:before {
@@ -2861,18 +2862,18 @@ ul.socials-2 {
 
 .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
     font-weight: bold;
-    color: $textLight !important;
-    background-color: $primary !important;
-    border: 0 !important;
+    color: $textLight $mw-importance;
+    background-color: $primary $mw-importance;
+    border: 0 $mw-importance;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
 
 .pagination > li > a, .pagination > li > span {
-    color: $dark !important;
-    background-color: $light !important;
-    border: 0 !important;
+    color: $dark $mw-importance;
+    background-color: $light $mw-importance;
+    border: 0 $mw-importance;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -2880,17 +2881,17 @@ ul.socials-2 {
 
 .pagination > .disabled > a, .pagination > .disabled > a:focus, .pagination > .disabled > a:hover, .pagination > .disabled > span, .pagination > .disabled > span:focus, .pagination > .disabled > span:hover {
 
-    color: $dark !important;
-    background-color: $silver !important;
-    border: 0 !important;
+    color: $dark $mw-importance;
+    background-color: $silver $mw-importance;
+    border: 0 $mw-importance;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
 
 .pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus, .pagination > li > span:hover {
-    color: $textLight !important;
-    background-color: $primary !important;
+    color: $textLight $mw-importance;
+    background-color: $primary $mw-importance;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -2946,10 +2947,10 @@ ul.socials-2 {
 /* Blog posts */
 .blog-posts {
     .slick-arrow {
-        display: none!important;
+        display: none $mw-importance2;
     }
     .post {
-        margin-bottom: 30px !important;
+        margin-bottom: 30px $mw-importance;
 
         .description {
             min-height: 260px;
@@ -3859,8 +3860,8 @@ footer {
         li {
             margin: 0 10px;
             width: auto;
-            display: inline-block !important;
-            border: 0 !important;
+            display: inline-block $mw-importance;
+            border: 0 $mw-importance;
             a {
                 display: block;
                 text-decoration: none;
@@ -3870,9 +3871,9 @@ footer {
                 border-radius: 100%;
                 text-align: center;
                 position: relative;
-                padding: 0 !important;
-                font-size: 20px !important;
-                background: transparent !important;
+                padding: 0 $mw-importance;
+                font-size: 20px $mw-importance;
+                background: transparent $mw-importance;
                 width: auto;
 
                 color: $textLight;
@@ -3896,7 +3897,7 @@ footer {
 
         .logo-column,
         .logo-column p {
-            text-align: center !important;
+            text-align: center $mw-importance;
         }
 
         .newsletter-form {
@@ -3926,7 +3927,7 @@ footer {
         ul.socials {
             li {
                 a {
-                    font-size: $title-lg !important;
+                    font-size: $title-lg $mw-importance;
 
                 }
             }
@@ -3983,7 +3984,7 @@ footer {
 }
 
 .member-nav.main-member-nav {
-    margin-bottom: 0px!important;
+    margin-bottom: 0px$mw-importance;
 }
 
 
@@ -4003,12 +4004,12 @@ footer {
     }
 
     .project-info-content {
-        position: static !important;
-        -webkit-transform: none !important;
-        -moz-transform: none !important;
-        -ms-transform: none !important;
-        -o-transform: none !important;
-        transform: none !important;
+        position: static $mw-importance;
+        -webkit-transform: none $mw-importance;
+        -moz-transform: none $mw-importance;
+        -ms-transform: none $mw-importance;
+        -o-transform: none $mw-importance;
+        transform: none $mw-importance;
     }
 
 }
@@ -4436,9 +4437,9 @@ ul.socials li a {
 }
 
 a.dropdown-toggle::after {
-    float: right;
-    display: block;
-    margin-top: 8px;
+
+    display: none   ;
+
 }
 
 .js-red-text {
@@ -4544,10 +4545,10 @@ a.dropdown-toggle::after {
                 -webkit-border-radius: 0;
                 -moz-border-radius: 0;
                 border-radius: 0;
-                -webkit-box-shadow: none !important;
-                -moz-box-shadow: none !important;
-                box-shadow: none !important;
-                outline: none !important;
+                -webkit-box-shadow: none $mw-importance;
+                -moz-box-shadow: none $mw-importance;
+                box-shadow: none $mw-importance;
+                outline: none $mw-importance;
             }
             input {
                 padding: 0px 10px 2px 20px;
@@ -4563,7 +4564,7 @@ a.dropdown-toggle::after {
             button:before {
                 display: inline-block;
                 content: '\f002';
-                font-family: "Font Awesome 5 Free" !important;
+                font-family: "Font Awesome 5 Free" $mw-importance;
                 font-weight: 900;
                 font-size: 16px;
                 color: $textDark;
@@ -4705,7 +4706,7 @@ a.dropdown-toggle::after {
     }
 
     .item-title a {
-        color: $textDark !important;
+        color: $textDark $mw-importance;
     }
 
     .checkout-modal .checkout-modal-amount-holder .checkout-modal-promocode-holder,
@@ -4737,11 +4738,11 @@ a.dropdown-toggle::after {
     .checkout-modal .js-step-content .form-row .field-holder .bootstrap-select,
     .checkout-modal .js-step-content .row .field-holder .form-control,
     .checkout-modal .js-step-content .form-row .field-holder .form-control {
-        width: 100% !important
+        width: 100% $mw-importance
     }
     .checkout-modal .js-step-content .row .field-holder .form-control.input-md,
     .checkout-modal .js-step-content .form-row .field-holder .form-control.input-md {
-        padding-right: 2rem !important;
+        padding-right: 2rem $mw-importance;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -4756,10 +4757,10 @@ a.dropdown-toggle::after {
         content: ''
     }
     .checkout-modal .mw-ui-check input[type=checkbox] + span:after {
-        left: 0 !important;
-        width: 100% !important;
-        height: 100% !important;
-        top: 1px !important;
+        left: 0 $mw-importance;
+        width: 100% $mw-importance;
+        height: 100% $mw-importance;
+        top: 1px $mw-importance;
     }
 
     @media screen and (max-width: 991px) {
@@ -4899,8 +4900,8 @@ a.dropdown-toggle::after {
             width: 100%;
             height: 285px;
             position: relative;
-            background-size: cover !important;
-            background-position: center center !important;
+            background-size: cover $mw-importance;
+            background-position: center center $mw-importance;
             transition: transform .2s; /* Animation */
 
             img {
@@ -4977,7 +4978,7 @@ a.dropdown-toggle::after {
     }
 
     a h3:hover {
-        color: $primary !important;
+        color: $primary $mw-importance;
         text-decoration: underline;
     }
 
@@ -5020,8 +5021,8 @@ a.dropdown-toggle::after {
         padding-top: 56.25%; /* 16:9 Aspect Ratio */
         width: 100%;
         position: relative;
-        background-size: cover !important;
-        background-position: center center !important;
+        background-size: cover $mw-importance;
+        background-position: center center $mw-importance;
         -webkit-background-size: cover;
     }
     small {
@@ -5099,8 +5100,8 @@ a.dropdown-toggle::after {
         padding-top: 56.25%; /* 16:9 Aspect Ratio */
         width: 100%;
         position: relative;
-        background-size: cover !important;
-        background-position: center center !important;
+        background-size: cover $mw-importance;
+        background-position: center center $mw-importance;
         -webkit-background-size: cover;
     }
 
@@ -5202,8 +5203,8 @@ a.dropdown-toggle::after {
         padding-top: 56.25%; /* 16:9 Aspect Ratio */
         width: 100%;
         position: relative;
-        background-size: cover !important;
-        background-position: center center !important;
+        background-size: cover $mw-importance;
+        background-position: center center $mw-importance;
         -webkit-background-size: cover;
     }
 
@@ -5316,7 +5317,7 @@ a.dropdown-toggle::after {
             display: block;
             width: 100%;
             height: 100%;
-            text-decoration: none !important;
+            text-decoration: none $mw-importance;
             position: relative;
         }
         .background-holder {
@@ -5492,10 +5493,10 @@ a.dropdown-toggle::after {
     min-height: 212px;
 
     a {
-        text-decoration: none !important;
+        text-decoration: none $mw-importance;
     }
     h4, p {
-        color: $textLight !important;
+        color: $textLight $mw-importance;
     }
 
     .link {
@@ -5567,7 +5568,7 @@ a.dropdown-toggle::after {
 }
 
 .mwembed {
-    height: auto !important;
+    height: auto $mw-importance;
 }
 
 .vimeo-bg-wrapper,
@@ -5607,7 +5608,7 @@ a.dropdown-toggle::after {
     a{
         width: 85px;
         height: 85px;
-        border-radius: 100%!important;
+        border-radius: 100%$mw-importance;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -5656,7 +5657,7 @@ a.dropdown-toggle::after {
     }
     .socials.labels.center {
         margin-bottom: 20px;
-        text-align: left !important;
+        text-align: left $mw-importance;
         li {
             margin: 0 5px 0 0;
         }
@@ -5698,7 +5699,7 @@ a.dropdown-toggle::after {
         text-align: center;
 
         &:hover {
-            text-decoration: none !important;
+            text-decoration: none $mw-importance;
         }
     }
 
@@ -5726,13 +5727,13 @@ a.dropdown-toggle::after {
     }
 
     .bx-pager-link {
-        width: 6px !important;
-        height: 6px !important;
-        opacity: 0.5 !important;
-        background-color: $textLight !important;
+        width: 6px $mw-importance;
+        height: 6px $mw-importance;
+        opacity: 0.5 $mw-importance;
+        background-color: $textLight $mw-importance;
 
         &.active {
-            opacity: 1 !important;
+            opacity: 1 $mw-importance;
         }
     }
     .bx-pager-item {
@@ -5791,10 +5792,10 @@ a.dropdown-toggle::after {
     }
 
     .bx-wrapper {
-        -webkit-box-shadow: none !important;
-        -moz-box-shadow: none !important;
-        box-shadow: none !important;
-        border: 0 !important;
+        -webkit-box-shadow: none $mw-importance;
+        -moz-box-shadow: none $mw-importance;
+        box-shadow: none $mw-importance;
+        border: 0 $mw-importance;
     }
 
     .bx-wrapper .bx-controls-direction {
@@ -5808,8 +5809,8 @@ a.dropdown-toggle::after {
     .bx-wrapper .bx-controls-direction a {
         background: none;
         font-size: 0;
-        text-indent: 0 !important;
-        text-decoration: none !important;
+        text-indent: 0 $mw-importance;
+        text-decoration: none $mw-importance;
     }
 
     .bx-wrapper .bx-controls-direction a:before {
@@ -5844,17 +5845,17 @@ a.dropdown-toggle::after {
     }
 
     .bx-wrapper .bx-pager.bx-default-pager a {
-        border: 0 !important;
-        height: 14px !important;
-        width: 14px !important;
-        -webkit-border-radius: 14px !important;
-        -moz-border-radius: 14px !important;
-        border-radius: 14px !important;
-        background: $background !important;
+        border: 0 $mw-importance;
+        height: 14px $mw-importance;
+        width: 14px $mw-importance;
+        -webkit-border-radius: 14px $mw-importance;
+        -moz-border-radius: 14px $mw-importance;
+        border-radius: 14px $mw-importance;
+        background: $background $mw-importance;
     }
 
     .bx-wrapper .bx-pager.bx-default-pager a.active {
-        background: $primary !important;
+        background: $primary $mw-importance;
     }
 
 }
@@ -5891,17 +5892,17 @@ a.dropdown-toggle::after {
     }
 
     .bx-wrapper {
-        -webkit-box-shadow: none !important;
-        -moz-box-shadow: none !important;
-        box-shadow: none !important;
-        border: 0 !important;
+        -webkit-box-shadow: none $mw-importance;
+        -moz-box-shadow: none $mw-importance;
+        box-shadow: none $mw-importance;
+        border: 0 $mw-importance;
     }
 
     .bx-wrapper .bx-controls-direction a {
         background: none;
         font-size: 0;
-        text-indent: 0 !important;
-        text-decoration: none !important;
+        text-indent: 0 $mw-importance;
+        text-decoration: none $mw-importance;
     }
 
     .bx-wrapper .bx-controls-direction a:before {
@@ -5933,17 +5934,17 @@ a.dropdown-toggle::after {
     }
 
     .bx-wrapper .bx-pager.bx-default-pager a {
-        border: 0 !important;
-        height: 14px !important;
-        width: 14px !important;
-        -webkit-border-radius: 14px !important;
-        -moz-border-radius: 14px !important;
-        border-radius: 14px !important;
-        background: $background !important;
+        border: 0 $mw-importance;
+        height: 14px $mw-importance;
+        width: 14px $mw-importance;
+        -webkit-border-radius: 14px $mw-importance;
+        -moz-border-radius: 14px $mw-importance;
+        border-radius: 14px $mw-importance;
+        background: $background $mw-importance;
     }
 
     .bx-wrapper .bx-pager.bx-default-pager a.active {
-        background: $primary !important;
+        background: $primary $mw-importance;
     }
 
 }
@@ -6147,7 +6148,7 @@ a.dropdown-toggle::after {
     }
 
     .custom-control {
-        margin-inline-start: 0px !important;
+        margin-inline-start: 0px $mw-importance;
         margin-inline-end: 20px;
         display: inline-block;
     }
@@ -6164,7 +6165,7 @@ a.dropdown-toggle::after {
 
         &:before {
             content: "\f005";
-            font-family: "Font Awesome 5 Free" !important;
+            font-family: "Font Awesome 5 Free" $mw-importance;
             font-weight: 900;
         }
     }
@@ -6189,7 +6190,7 @@ a.dropdown-toggle::after {
 .module-categories-template-horizontal-list-1 ul.mw-cats-menu {
     text-align: left;
     li {
-        display: block !important;
+        display: block $mw-importance;
         a {
             font-size: $paragraph-lg;
             font-weight: bold;
@@ -6203,7 +6204,7 @@ a.dropdown-toggle::after {
             &:before {
                 display: inline-block;
                 content: '\f054';
-                font-family: "Font Awesome 5 Free" !important;
+                font-family: "Font Awesome 5 Free" $mw-importance;
                 font-weight: 900;
                 margin-inline-end: 13px;
                 font-size: 12px;
@@ -6291,25 +6292,25 @@ html[dir="rtl"] .module-categories-template-horizontal-list-1 ul.mw-cats-menu {
 
 @media only screen and (max-width: 415px) {
     .name-of-product-shop {
-        display: none!important;
+        display: none$mw-importance;
     }
 }
 
 @media only screen and (min-width: 700px) {
     .name-of-product-shop {
-        display: none!important;
+        display: none$mw-importance;
     }
 }
 
 @media only screen and (min-width: 1460px) {
     .name-of-product-shop {
-        display: flex!important;
+        display: flex$mw-importance;
     }
 }
 
 i.checkout-v2-remove-icon {
     font-size: 24px;
-    color: #6c757d!important;
+    color: #6c757d$mw-importance;
 }
 
 .mw-tags-btn-light {
@@ -6330,5 +6331,5 @@ select.form-control {
 }
 
 .container .container {
-    width: auto!important;
+    width: auto$mw-importance;
 }

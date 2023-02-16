@@ -16,7 +16,7 @@
 .section-2,
 .main-content .section-2 {
     h1, h2, h3, h4, h5, h6, p, p.lead {
-        color: $textOnBackground !important;
+        color: $textOnBackground $mw-importance;
     }
 }
 .section-2 {
@@ -134,7 +134,7 @@
 
 .section-4 {
   .bg-secondary {
-    background-clip: content-box !important;
+    background-clip: content-box $mw-importance;
   }
 
   * {
@@ -176,7 +176,7 @@
   }
 
   .photo-container .image-thumb {
-    padding: 0px 5px !important;
+    padding: 0px 5px $mw-importance;
     width: calc(100% - 10px);
     background: transparent;
   }
@@ -198,8 +198,8 @@
    }*/
 
   .mwembed {
-    height: auto !important;
-    width: auto !important;
+    height: auto $mw-importance;
+    width: auto $mw-importance;
   }
 
   @media screen and (max-width: 1199px) {
@@ -389,11 +389,11 @@
 
 .section-10 {
   .mwembed {
-    height: auto !important;
+    height: auto $mw-importance;
   }
 
   .new-world-testimonials-2 .info-holder {
-    text-align: left !important;
+    text-align: left $mw-importance;
   }
   .video-left {
     .video-holder {
@@ -405,11 +405,11 @@
   .video-right {
     @media screen and (max-width: 991px) {
       .left-side {
-        order: 1 !important;
+        order: 1 $mw-importance;
       }
 
       .right-side {
-        order: 2 !important;
+        order: 2 $mw-importance;
       }
     }
     .video-holder {
@@ -642,7 +642,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    color: $textDark !important;;
+    color: $textDark $mw-importance;;
   }
   p,
   span {
@@ -721,7 +721,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    color: $textDark !important;
+    color: $textDark $mw-importance;
   }
 
   p,
@@ -785,7 +785,7 @@
 
   .button-holder {
     @media screen and (max-width: 1199px) {
-      margin-top: 30px !important;
+      margin-top: 30px $mw-importance;
     }
   }
 
@@ -797,7 +797,7 @@
   }
 
   .text-white h1, .text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6, .text-white p {
-    color: $textOnBackground !important;
+    color: $textOnBackground $mw-importance;
   }
 }
 
@@ -843,7 +843,7 @@
     padding-right: 50px;
 
     h1, h2, h3, h4, h5, h6, p {
-      color: $textOnBackground !important;
+      color: $textOnBackground $mw-importance;
     }
   }
 
@@ -876,7 +876,7 @@
   }
   @media screen and (min-width: 992px) {
     .stamp {
-      background: transparent !important;
+      background: transparent $mw-importance;
       width: auto;
       height: auto;
       max-width: 450px;
@@ -934,7 +934,7 @@
     }
 
     .align-self-end {
-      align-self: flex-start !important;
+      align-self: flex-start $mw-importance;
       text-align: center;
     }
 
@@ -980,7 +980,7 @@
   }
 
   .text-white h1, .text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6, .text-white p {
-    color: $textOnBackground !important;
+    color: $textOnBackground $mw-importance;
   }
 
   .background-image-holder {

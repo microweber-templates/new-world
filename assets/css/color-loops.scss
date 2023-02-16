@@ -21,15 +21,15 @@ and open the template in the editor.
         background-color: $color;
     }
     .module-hr-bg-#{name} div[class*="hr-"]{
-        background-color: $color!important;
+        background-color: $color$mw-importance;
     }
     .text-#{name} {
-        color: $color!important;
+        color: $color$mw-importance;
     }
     .text-#{name}>*:not(font),
     .text-#{name} .btn-link,
     .icon-#{name}{
-        color: $color!important;
+        color: $color$mw-importance;
     }
 }
 

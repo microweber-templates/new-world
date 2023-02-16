@@ -44,21 +44,21 @@
 .navigation-holder:not(.not-transparent) {
   .navigation {
     .logo.logo-dark {
-      display: none !important;
+      display: none $mw-importance;
     }
 
     .logo.logo-light {
-      display: flex !important;
+      display: flex $mw-importance;
     }
   }
 
   .navigation.sticky {
     .logo.logo-dark {
-      display: flex !important;
+      display: flex $mw-importance;
     }
 
     .logo.logo-light {
-      display: none !important;
+      display: none $mw-importance;
     }
   }
 }
@@ -66,21 +66,21 @@
 .navigation-holder.not-transparent {
   .navigation {
     .logo.logo-dark {
-      display: flex !important;
+      display: flex $mw-importance;
     }
 
     .logo.logo-light {
-      display: none !important;
+      display: none $mw-importance;
     }
   }
 
   .navigation.sticky {
     .logo.logo-dark {
-      display: flex !important;
+      display: flex $mw-importance;
     }
 
     .logo.logo-light {
-      display: none !important;
+      display: none $mw-importance;
     }
   }
 }
@@ -209,7 +209,7 @@ html[dir="rtl"] body .navbar-header ul.header-contacts-list li a span:nth-of-typ
   font-size: 28px;
   font-weight: bold;
   text-decoration: none;
-  padding-left: 0 !important;
+  padding-left: 0 $mw-importance;
   display: flex;
     flex-wrap: wrap;
   align-items: center;
@@ -218,7 +218,7 @@ html[dir="rtl"] body .navbar-header ul.header-contacts-list li a span:nth-of-typ
 }
 
 .logo a span {
-  width: auto !important;
+  width: auto $mw-importance;
 }
 
 .navigation .navbar-header .logo {
@@ -263,7 +263,7 @@ html[dir="rtl"] body .navbar-header ul.header-contacts-list li a span:nth-of-typ
 
   .navigation .navbar-header .logo img {
     max-height: $mobile-logo-max-height;
-    //width: auto !important;
+    //width: auto $mw-importance;
   }
 
 }
@@ -765,15 +765,15 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
   }
 
   .dropdown-menu {
-    right: 0 !important;
-    left: auto !important;
-    transform: unset !important;
-    margin-top: 50px !important;
+    right: 0 $mw-importance;
+    left: auto $mw-importance;
+    transform: unset $mw-importance;
+    margin-top: 50px $mw-importance;
   }
 
   .btn {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+    padding-left: 15px $mw-importance;
+    padding-right: 15px $mw-importance;
   }
 }
 
@@ -819,11 +819,11 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
 
 .not-transparent .navigation .member-nav .dropdown-toggle > i,
 .navigation.sticky .member-nav .dropdown-toggle > i {
-  color: $textDark;
+  color: inherit;
 }
 
 .member-nav a:after {
-  display: none !important;
+  display: none $mw-importance;
 }
 
 .member-nav .search button.dropdown-toggle {
@@ -839,7 +839,7 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
 
 .member-nav .search button {
   outline: none;
-  border-radius: 0 !important;
+  border-radius: 0 $mw-importance;
 }
 
 .member-nav .search .dropdown-menu {
@@ -960,7 +960,7 @@ html[dir="rtl"] body .dropdown,
 html[dir="rtl"] body .dropdown-menu,
 html[dir="rtl"] body .dropdown-menu a,
 html[dir="rtl"] body .dropdown a {
-  text-align: right !important;
+  text-align: right $mw-importance;
 }
 
 .dropdown-menu li {
@@ -989,14 +989,14 @@ html[dir="rtl"] body .dropdown a {
 
 /*See more icon*/
 .navigation .sub-menu-more > a {
-  font-size: 0 !important;
+  font-size: 0 $mw-importance;
   line-height: 0;
-  position: relative !important;
+  position: relative $mw-importance;
     display: flex;
     flex-wrap: wrap;
   width: 32px;
   height: 32px;
-  padding: 0px !important;
+  padding: 0px $mw-importance;
   align-items: center;
 }
 
@@ -1108,7 +1108,7 @@ body.sticky-nav {
     }
 
     .navigation-holder:not(.header_style_3) .navigation .menu .sub-menu-more .dropdown-menu li:hover > a:after {
-      transform: rotate(90deg) !important;
+      transform: rotate(90deg) $mw-importance;
     }
 
     /*End See more icon*/
@@ -1121,7 +1121,7 @@ body.sticky-nav {
   .navigation {
     .menu {
       .sub-menu-more {
-        display: none !important;
+        display: none $mw-importance;
       }
 
       ul {
@@ -1205,8 +1205,8 @@ body.sticky-nav {
       }
 
       .has-sub-menu ul.dropdown-menu {
-        position: static !important;
-        transform: unset !important;
+        position: static $mw-importance;
+        transform: unset $mw-importance;
         opacity: 1;
         visibility: visible;
         display: none;
@@ -1222,7 +1222,7 @@ body.sticky-nav {
     }
 
     .menu-overlay[class*="pl-"] {
-      padding: 0 !important;
+      padding: 0 $mw-importance;
     }
 
     .navbar-header .toggle {
@@ -1251,7 +1251,7 @@ body.sticky-nav {
         top: 0;
         left: 0;
         height: 100%;
-        padding: 0 !important;
+        padding: 0 $mw-importance;
         background: $mobile-main-menu-overlay-color;
         opacity: 0;
         transition: all, 0.3s;
@@ -1334,7 +1334,7 @@ body.sticky-nav {
       top: 0;
       left: 0;
       height: 100%;
-      padding: 0 !important;
+      padding: 0 $mw-importance;
       opacity: 1;
       transition: all, 0.3s;
       z-index: 1;
@@ -1688,7 +1688,7 @@ body.sticky-nav {
   }
 
   .navigation-holder:not(.header_style_3) .navigation .secondary-menu .sub-menu-more .dropdown-menu li:hover > a:after {
-    transform: rotate(90deg) !important;
+    transform: rotate(90deg) $mw-importance;
   }
 
   /*End See more icon*/
@@ -1696,7 +1696,7 @@ body.sticky-nav {
 
 @media screen and (max-width: $downMediaSecond) {
   .navigation .secondary-menu .sub-menu-more {
-    display: none !important;
+    display: none $mw-importance;
   }
 
   .mobile-menu-label {
@@ -1809,8 +1809,8 @@ body.sticky-nav {
   }
 
   .navigation .secondary-menu .has-sub-menu ul.dropdown-menu {
-    position: static !important;
-    transform: unset !important;
+    position: static $mw-importance;
+    transform: unset $mw-importance;
     opacity: 1;
     visibility: visible;
     display: none;
@@ -1975,7 +1975,7 @@ body.sticky-nav {
 }
 
 .dropdown-toggle-v2-list-item{
-    position: relative !important;
+    position: relative $mw-importance;
 }
 .dropdown-menu-v2{
     background-color: $gray-900;
@@ -2008,7 +2008,7 @@ body.sticky-nav {
 }
 .dropdown-toggle-v2{
     outline: none;
-    border-radius: 0 !important;
+    border-radius: 0 $mw-importance;
     margin-right: 0;
     color: #f8f9fa;
     border: 0;
@@ -2036,16 +2036,16 @@ body.sticky-nav {
 }
 
 .dropdown-menu.shopping-cart{
-    transform: translate3d(50%, 7px, 0) !important;
+    transform: translate3d(50%, 7px, 0) $mw-importance;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
 }
 @media (max-width: 600px) {
     .dropdown-menu.shopping-cart{
-        transform: translate3d(85%, 7px, 0) !important;
+        transform: translate3d(85%, 7px, 0) $mw-importance;
 
     }
     html[dir="rtl"] {
-        transform: translate3d(0, 7px, 0) !important;
+        transform: translate3d(0, 7px, 0) $mw-importance;
 
     }
 }

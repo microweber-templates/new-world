@@ -20,7 +20,7 @@ class NewWorldLiveEditTemplateTest extends DuskTestCase
         $this->browse(function (Browser $browser) {
 
             if (defined('TEMPLATE_DIR') == false) {
-                define('TEMPLATE_DIR', templates_path() . $this->template_name . DS);
+                define('TEMPLATE_DIR', templates_dir() . $this->template_name . DS);
             }
 
             app()->template_manager->boot_template();

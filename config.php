@@ -3,7 +3,7 @@
 $config = array();
 $config['name'] = "New World";
 $config['author'] = "Microweber";
-$config['version'] = '6.1';
+$config['version'] = '6.2';
 $config['url'] = "http://microweber.com";
 $config['standalone_module_skins'] = true;
 $config['framework'] = "bootstrap5";
@@ -12,6 +12,12 @@ $config['settings']['service_provider'] = [
     \MicroweberPackages\Template\NewWorld\TemplateServiceProvider::class
 ];
 
+$config['settings']['autoload_namespace'] = [
+    [
+        'path' => __DIR__ . '/src/',
+        'namespace' => 'MicroweberPackages\\Template\\NewWorld'
+    ],
+];
 
 $config['is_default'] = 1; //if you set this parameter the template will be selected on the install screen
 

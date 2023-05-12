@@ -1,6 +1,6 @@
 <?php
 
-autoload_add_namespace(__DIR__ . '/src/', 'MicroweberPackages\\Template\\NewWorld\\');
+//autoload_add_namespace(__DIR__ . '/src/', 'MicroweberPackages\\Template\\NewWorld\\');
 
 api_expose('theme_colors_palette_css');
 
@@ -53,4 +53,10 @@ function theme_css_styles_get_less_vars()
     }
 
 
+}
+
+
+function test_new_world_theme_function()
+{
+    return 1;
 }

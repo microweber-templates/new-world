@@ -37,11 +37,7 @@ class NewWorldMultilanguageShopTest extends DuskTestCaseMultilanguage
                 $browser->addLanguage('en_US');
             });
 
-            if (defined('TEMPLATE_DIR') == false) {
-                define('TEMPLATE_DIR', templates_dir() . $this->template_name . DS);
-            }
 
-            app()->template_manager->boot_template();
 
             $linkScraper = new NewWorldShopProductLinksScraper();
             $browser->within($linkScraper, function ($browser) use ($linkScraper) {

@@ -12,6 +12,10 @@ description: Title with text, image and video
 
 <?php include THIS_TEMPLATE_DIR. "header.php"; ?>
 
-title , text, image, video
+<h1>
+    title , text, image, video
+</h1>
+
 
 <?php include   TEMPLATE_DIR.  "footer.php"; ?>
+

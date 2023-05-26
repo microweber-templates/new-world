@@ -11,6 +11,8 @@ description: Title with image
 
 <?php include THIS_TEMPLATE_DIR. "header.php"; ?>
 
-title image
+<h1>
+    title image
+</h1>
 
 <?php include   TEMPLATE_DIR.  "footer.php"; ?>

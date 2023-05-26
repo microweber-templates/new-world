@@ -1,3 +1,16 @@
+<?php
+/*
+
+type: layout
+content_type: post
+name: Title with text
+position: 3
+description: Title with text
+
+*/
+?>
+
+
 <?php include template_dir() . "header.php"; ?>
 <div class="main-content" id="blog-content-<?php print CONTENT_ID; ?>">
 <?php

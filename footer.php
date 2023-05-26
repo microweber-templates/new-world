@@ -1,3 +1,9 @@
+<?php
+if (isset($_GET['preview_layout'])) {
+    $footer = 'false';
+}
+?>
+
 <?php if ($footer == 'true'): ?>
     <footer class="p-t-60 p-b-60">
         <div class="container">

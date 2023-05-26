@@ -55,6 +55,17 @@
 <?php endif; ?>
 
 <div class="main">
+
+    <?php
+    $showNavigation = true;
+    if (isset($_GET['preview_layout'])) {
+        $showNavigation = false;
+    }
+    ?>
+
+    <?php
+    if ($showNavigation):
+    ?>
     <div class="navigation-holder <?php print $header_style; ?><?php if ($search_bar == 'false'): ?> no_search_bar <?php endif; ?>">
         <?php if ($header_style == 'header_style_1'): ?>
             <?php include('partials/header/header_style_1.php'); ?>
@@ -79,3 +90,4 @@
         <?php endif; ?>
     </div>
 
+<?php endif; ?>

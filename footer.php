@@ -1,6 +1,6 @@
 <?php
 if (isset($_GET['preview_layout'])) {
-    $footer = 'false';
+    //$footer = 'false';
 }
 ?>
 

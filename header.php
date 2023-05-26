@@ -59,7 +59,7 @@
     <?php
     $showNavigation = true;
     if (isset($_GET['preview_layout'])) {
-        $showNavigation = false;
+       // $showNavigation = false;
     }
     ?>
 

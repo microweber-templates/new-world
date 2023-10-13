@@ -6327,7 +6327,7 @@ select.form-control {
 }
 
 .sticky-nav-disabled .navigation-holder {
-    position: unset;
+    position: unset !important;
 }
 
 .container .container {

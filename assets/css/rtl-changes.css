@@ -1,71 +1,79 @@
-@charset "UTF-8";
-[dir="rtl"] .text-right, [dir="rtl"] .text-end {
-  text-align: left !important; }
-[dir="rtl"] .text-left, [dir="rtl"] .text-left {
-  text-align: right !important; }
-[dir="rtl"] .text-md-right, [dir="rtl"] .text-md-end {
-  text-align: left !important; }
-[dir="rtl"] .text-md-left, [dir="rtl"] .text-md-left {
-  text-align: right !important; }
-[dir="rtl"] .text-lg-right, [dir="rtl"] .text-lg-end {
-  text-align: left !important; }
-[dir="rtl"] .text-lg-left, [dir="rtl"] .text-lg-left {
-  text-align: right !important; }
-[dir="rtl"] .text-xl-right, [dir="rtl"] .text-xl-end {
-  text-align: left !important; }
-[dir="rtl"] .text-xl-left, [dir="rtl"] .text-xl-left {
-  text-align: right !important; }
-[dir="rtl"] .text-sm-right, [dir="rtl"] .text-sm-end {
-  text-align: left !important; }
-[dir="rtl"] .text-sm-left, [dir="rtl"] .text-sm-left {
-  text-align: right !important; }
-[dir="rtl"] .text-right, [dir="rtl"] .text-end {
-  text-align: left !important; }
-[dir="rtl"] .text-left, [dir="rtl"] .text-left {
-  text-align: right !important; }
-[dir="rtl"] .text-md-right, [dir="rtl"] .text-md-end {
-  text-align: left !important; }
-[dir="rtl"] .text-md-left, [dir="rtl"] .text-md-left {
-  text-align: right !important; }
-[dir="rtl"] .text-lg-right, [dir="rtl"] .text-lg-end {
-  text-align: left !important; }
-[dir="rtl"] .text-lg-left, [dir="rtl"] .text-lg-left {
-  text-align: right !important; }
-[dir="rtl"] .text-xl-right, [dir="rtl"] .text-xl-end {
-  text-align: left !important; }
-[dir="rtl"] .text-xl-left, [dir="rtl"] .text-xl-left {
-  text-align: right !important; }
-[dir="rtl"] .text-sm-right, [dir="rtl"] .text-sm-end {
-  text-align: left !important; }
-[dir="rtl"] .text-sm-left, [dir="rtl"] .text-sm-left {
-  text-align: right !important; }
-[dir="rtl"] .float-right, [dir="rtl"] .float-end {
-  text-align: left !important; }
-[dir="rtl"] .float-left, [dir="rtl"] .float-left {
-  text-align: right !important; }
-[dir="rtl"] .float-md-right, [dir="rtl"] .float-md-end {
-  text-align: left !important; }
-[dir="rtl"] .float-md-left, [dir="rtl"] .float-md-left {
-  text-align: right !important; }
-[dir="rtl"] .float-lg-right, [dir="rtl"] .float-lg-end {
-  text-align: left !important; }
-[dir="rtl"] .float-lg-left, [dir="rtl"] .float-lg-left {
-  text-align: right !important; }
-[dir="rtl"] .float-xl-right, [dir="rtl"] .float-xl-end {
-  text-align: left !important; }
-[dir="rtl"] .float-xl-left, [dir="rtl"] .float-xl-left {
-  text-align: right !important; }
-[dir="rtl"] .float-sm-right, [dir="rtl"] .float-sm-end {
-  text-align: left !important; }
-[dir="rtl"] .float-sm-left, [dir="rtl"] .float-sm-left {
-  text-align: right !important; }
-[dir="rtl"] .slick-testimonials .slick-prev, [dir="rtl"] .slick-prev {
-  left: unset; }
-[dir="rtl"] .slick-testimonials .slick-next, [dir="rtl"] .slick-next {
-  right: unset; }
-[dir="rtl"] .slick-testimonials .slick-prev:before, [dir="rtl"] .slick-prev:before {
-  content: "" !important; }
-[dir="rtl"] .slick-testimonials .slick-next:before, [dir="rtl"] .slick-next:before {
-  content: "" !important; }
+/*
+Error: Undefined variable: "$mw-importance".
+        on line 5 of D:\xampp\htdocs\git\microweber-dev-dusk\userfiles\templates\new-world\assets\css\rtl-changes.scss
 
-/*# sourceMappingURL=rtl-changes.css.map */
+1: [dir="rtl"] {
+2: 
+3: 
+4:     .text-right, .text-end {
+5:         text-align: left $mw-importance;
+6:     }
+7: 
+8:     .text-left, .text-left {
+9:         text-align: right $mw-importance;
+10:     }
+
+Backtrace:
+D:\xampp\htdocs\git\microweber-dev-dusk\userfiles\templates\new-world\assets\css\rtl-changes.scss:5
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$mw-importance\".\A         on line 5 of D:\xampp\htdocs\git\microweber-dev-dusk\userfiles\templates\new-world\assets\css\rtl-changes.scss\A \A 1: [dir=\"rtl\"] {\A 2: \A 3: \A 4:     .text-right, .text-end {\A 5:         text-align: left $mw-importance;\A 6:     }\A 7: \A 8:     .text-left, .text-left {\A 9:         text-align: right $mw-importance;\A 10:     }"; }

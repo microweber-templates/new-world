@@ -104,28 +104,28 @@
     }
   }
 
-  .form-check-input {
-    @include form-validation-state-selector($state) {
-      border-color: $color;
-
-      &:checked {
-        background-color: $color;
-      }
-
-      &:focus {
-        box-shadow: $focus-box-shadow;
-      }
-
-      ~ .form-check-label {
-        color: $color;
-      }
-    }
-  }
-  .form-check-inline .form-check-input {
-    ~ .#{$state}-feedback {
-      margin-left: .5em;
-    }
-  }
+  //.form-check-input {
+  //  @include form-validation-state-selector($state) {
+  //    border-color: $color;
+  //
+  //    &:checked {
+  //      background-color: $color;
+  //    }
+  //
+  //    &:focus {
+  //      box-shadow: $focus-box-shadow;
+  //    }
+  //
+  //    ~ .form-check-label {
+  //      color: $color;
+  //    }
+  //  }
+  //}
+  //.form-check-inline .form-check-input {
+  //  ~ .#{$state}-feedback {
+  //    margin-left: .5em;
+  //  }
+  //}
 
   .input-group .form-control,
   .input-group .form-select {

@@ -5,8 +5,9 @@ namespace MicroweberPackages\Template\NewWorld\tests\Browser\Components;
 use Laravel\Dusk\Browser;
 use Laravel\Dusk\Component as BaseComponent;
 use MicroweberPackages\Page\Models\Page;
+use Tests\DuskTestCase;
 
-class NewWorldShopProductLinksScraper extends BaseComponent
+class NewWorldShopProductLinksScraper extends DuskTestCase
 {
     /**
      * Get the root selector for the component.

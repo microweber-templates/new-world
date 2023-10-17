@@ -54,7 +54,7 @@ if (!isset($tn[1])) {
             ?>
 
             <div class="col-12 col-md-6 col-lg-4 col-lg-3 item-<?php print $item['id'] ?>" data-masonry-filter="<?php print $itemCats; ?>" itemscope itemtype="<?php print $schema_org_item_type_tag ?>">
-                <div class="product">
+                <div class="product position-relative">
                     <?php if (is_array($item['prices'])): ?>
                         <?php foreach ($item['prices'] as $k => $v): ?>
                             <input type="hidden" name="price" value="<?php print $v ?>"/>

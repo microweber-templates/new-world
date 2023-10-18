@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$colors".
-        on line 15 of C:\xampp\htdocs\microweber\userfiles\templates\new-world\assets\css\color-loops.scss
+        on line 15 of D:\xampp\htdocs\git\microweber-dev-dusk\userfiles\templates\new-world\assets\css\color-loops.scss
 
 10: 
 11: 
@@ -15,7 +15,7 @@ Error: Undefined variable: "$colors".
 20:     .hr-bg-#{name}{
 
 Backtrace:
-C:\xampp\htdocs\microweber\userfiles\templates\new-world\assets\css\color-loops.scss:15
+D:\xampp\htdocs\git\microweber-dev-dusk\userfiles\templates\new-world\assets\css\color-loops.scss:15
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:233:in `visit_each'
@@ -51,4 +51,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$colors\".\A         on line 15 of C:\xampp\htdocs\microweber\userfiles\templates\new-world\assets\css\color-loops.scss\A \A 10: \A 11: \A 12: /*Color mixer*/\A 13: \A 14: \A 15: @each $name, $color in $colors {\A 16:     .btn-#{name},\A 17:     .bg-#{name},\A 18:     .badge-#{name},\A 19:     .icon-bg-#{name},\A 20:     .hr-bg-#{name}{"; }
+  content: "Error: Undefined variable: \"$colors\".\A         on line 15 of D:\xampp\htdocs\git\microweber-dev-dusk\userfiles\templates\new-world\assets\css\color-loops.scss\A \A 10: \A 11: \A 12: /*Color mixer*/\A 13: \A 14: \A 15: @each $name, $color in $colors {\A 16:     .btn-#{name},\A 17:     .bg-#{name},\A 18:     .badge-#{name},\A 19:     .icon-bg-#{name},\A 20:     .hr-bg-#{name}{"; }

@@ -66,7 +66,7 @@
     <?php
     if ($showNavigation):
     ?>
-    <div class="navigation-holder <?php print $header_style; ?><?php if ($search_bar == 'false'): ?> no_search_bar <?php endif; ?>">
+    <div class="sticky-nav-disabled navigation-holder <?php print $header_style; ?><?php if ($search_bar == 'false'): ?> no_search_bar <?php endif; ?>">
         <?php if ($header_style == 'header_style_1'): ?>
             <?php include('partials/header/header_style_1.php'); ?>
         <?php elseif ($header_style == 'header_style_2'): ?>

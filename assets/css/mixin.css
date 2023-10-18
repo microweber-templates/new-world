@@ -1,80 +1,69 @@
-/*Flex mixin*/
-.inline-flex,
-.flex-inline,
-.mixin-inline-flex {
-  display: inline-flex; }
+/*
+Error: Undefined variable: "$mw-importance".
+        on line 50 of D:\xampp\htdocs\git\microweber-dev-dusk\userfiles\templates\new-world\assets\css\mixin.scss
 
-.flex,
-.flex-row,
-.mixin-flex-row {
-  display: flex;
-  flex-wrap: wrap; }
+45:     align-items: center;
+46:     justify-content: center;
+47: }
+48: 
+49: .overlay-opacity-0:after{
+50:     opacity: 0$mw-importance;
+51: }
+52: .overlay-opacity-1:after{
+53:     opacity: 0.1$mw-importance;
+54: }
+55: .overlay-opacity-2:after{
 
-.flex-row-nowrap,
-.mixin-flex-row-nowrap {
-  display: flex;
-  flex-wrap: nowrap; }
-
-.row-reverse,
-.flex-row-reverse,
-.mixin-flex-row-reverse {
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse; }
-
-.flex-column,
-.mixin-flex-column {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  -ms-flex-direction: column;
-  flex-wrap: wrap;
-  flex-direction: column; }
-
-.flex-column-reverse,
-.mixin-flex-column-reverse {
-  -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse; }
-
-.flex-center,
-.mixin-flex-center {
-  align-items: center;
-  justify-content: center; }
-
-.overlay-opacity-0:after {
-  opacity: 0 !important; }
-
-.overlay-opacity-1:after {
-  opacity: 0.1 !important; }
-
-.overlay-opacity-2:after {
-  opacity: 0.2 !important; }
-
-.overlay-opacity-3:after {
-  opacity: 0.3 !important; }
-
-.overlay-opacity-4:after {
-  opacity: 0.4 !important; }
-
-.overlay-opacity-5:after {
-  opacity: 0.5 !important; }
-
-.overlay-opacity-6:after {
-  opacity: 0.6 !important; }
-
-.overlay-opacity-7:after {
-  opacity: 0.7 !important; }
-
-.overlay-opacity-8:after {
-  opacity: 0.8 !important; }
-
-.overlay-opacity-9:after {
-  opacity: 0.9 !important; }
-
-.overlay-opacity-10:after {
-  opacity: 1 !important; }
-
-.overlay * {
-  position: relative;
-  z-index: 1; }
-
-/*# sourceMappingURL=mixin.css.map */
+Backtrace:
+D:\xampp\htdocs\git\microweber-dev-dusk\userfiles\templates\new-world\assets\css\mixin.scss:50
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$mw-importance\".\A         on line 50 of D:\xampp\htdocs\git\microweber-dev-dusk\userfiles\templates\new-world\assets\css\mixin.scss\A \A 45:     align-items: center;\A 46:     justify-content: center;\A 47: }\A 48: \A 49: .overlay-opacity-0:after{\A 50:     opacity: 0$mw-importance;\A 51: }\A 52: .overlay-opacity-1:after{\A 53:     opacity: 0.1$mw-importance;\A 54: }\A 55: .overlay-opacity-2:after{"; }

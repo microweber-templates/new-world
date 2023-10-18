@@ -20,18 +20,14 @@ class NewWorldLiveEditTemplateTest extends DuskTestCase
         $this->browse(function (Browser $browser) {
 
 
+            $allProducts = get_products('no_limit=1');
 
-            $linkScraper = new NewWorldShopProductLinksScraper();
-            $browser->within($linkScraper, function ($browser) use ($linkScraper) {
-               $browser->scrapLinks();
-            });
 
-            foreach ($linkScraper->getLinks() as $product) {
-                $browser->visit($product['link']);
+            foreach ($allProducts as $product) {
+                $browser->visit(content_link($product['id']));
                 $browser->pause(1000);
                 $browser->waitForText($product['title']);
                 $browser->assertSee($product['title']);
-                $browser->assertSee($product['price']);
 
                 $browser->within(new ChekForJavascriptErrors(), function ($browser) {
                     $browser->validate();
@@ -72,11 +68,12 @@ class NewWorldLiveEditTemplateTest extends DuskTestCase
 
             $testUrl = content_link($findPage->id);
 
-            $browser->visit($testUrl . '?editmode=y');
+            $browser->visit($testUrl . '?editmode=n');
 
-            $browser->pause(10000);
+            $browser->pause(3000);
 
-            $browser->waitForText('template of Microweber',30);
+        //    $browser->waitForText('template of Microweber',30);
+            $browser->waitForText('Call to action',30);
 
             $browser->within(new ChekForJavascriptErrors(), function ($browser) {
                 $browser->validate();

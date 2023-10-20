@@ -35,8 +35,8 @@ if (!isset($itemData['label-color'])) {
     $itemData['label-color'] = '';
 }
 
-$next = next_content();
-$prev = prev_content();
+$next = next_content($content['id']);
+$prev = prev_content($content['id']);
 
 
 ?>

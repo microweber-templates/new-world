@@ -20,7 +20,7 @@ if (!$classes['padding_bottom']) {
     $classes['padding_bottom'] = 'p-b-50';
 }
 
-$layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
+$layout_classes = $layout_classes ?? ''; $layout_classes .= ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
 ?>
 
 <div class="edit safe-mode nodrop" field="layout-blockquotes-skin-3-<?php print $params['id'] ?>" rel="module">

@@ -20,7 +20,7 @@ if (!$classes['padding_bottom']) {
     $classes['padding_bottom'] = 'p-b-10';
 }
 
-$layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
+$layout_classes = $layout_classes ?? ''; $layout_classes .= ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
 ?>
 
 

@@ -20,7 +20,7 @@ if (!$classes['padding_bottom']) {
     $classes['padding_bottom'] = 'p-b-50';
 }
 
-$layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
+$layout_classes = $layout_classes ?? ''; $layout_classes .= ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
 ?>
 
 <section class="section-8 <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-features-skin-5-<?php print $params['id'] ?>" rel="module">
@@ -50,7 +50,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                             <i class="icon mw-micon-Mouse-3 safe-element"></i>
                             <h5>Drag and Drop</h5>
                         </div>
-               
+
                         <div class="icon-holder col-6 col-sm-3 mx-auto cloneable">
                             <i class="icon mw-micon-Hanger safe-element"></i>
                             <h5>Online Store</h5>
